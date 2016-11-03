@@ -1,0 +1,208 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "base";
+
+/*
+ * - FONTS --------------------------------------------------------------------
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro|arvo|Trirong:500|Palanquin+Dark|Muli|Overlock|Corben|Lato|Unica+One|Questrial|Julius+Sans+One');
+
+@font-face {
+    font-family: BebasNeue;
+    font-weight: bold;
+    src: url("/fonts/BebasNeue Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'LeagueGothic';
+    font-weight: normal;
+    font-style: normal;
+    src: url("/fonts/leaguegothic-condensed-regular-webfont.ttf") format("truetype");
+}
+
+body {
+    background-color: #f0f0f0;
+    overflow: hidden;
+    // background: url('/img/bg.png');
+}
+
+@mixin abs-centered() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+$lineColor: #fff;
+@mixin line-color {
+    background-color: $lineColor;
+}
+
+
+$indexContent-width : 300px;
+$indexContent-height :300px;
+
+#indexContent {
+    @include abs-centered();
+    height: $indexContent-height;
+    width: $indexContent-width;
+    margin-top: - $indexContent-height / 2;
+    margin-left: - $indexContent-width / 2;
+    // @include debug(#aaa);
+}
+
+$bar-size: 2px;
+$root-width: 10px;
+$root-height: $bar-size;
+
+$margin-left: 0px;
+
+
+#root {
+    @include abs-centered();
+    margin-top: - $root-height / 2;
+    margin-left: $margin-left - $root-width - ($bar-size / 2);
+    width: $root-width;
+    height: $root-height;
+    @include line-color();
+}
+
+$bar-height: 100px;
+
+#bar {
+    @include abs-centered();
+    margin-top: - $bar-height / 2;
+    margin-left: $margin-left - $bar-size / 2;
+    width: $bar-size;
+    height: $bar-height;
+    @include line-color();
+}
+
+
+@mixin hline-tmpl {
+
+    width: 1000px;
+    height: $root-height;
+    @include line-color();
+}
+
+#hline {
+    position: absolute;
+    top: 50%;
+    left : 0;
+    margin-top: - $root-height / 2;
+    margin-left: -1000px;
+    @include hline-tmpl();
+}
+
+$hline-margin: 140px;
+#hline1 {
+    @include abs-centered();;
+    margin-left: $hline-margin;
+    margin-top: - $bar-height / 2;
+    @include hline-tmpl();
+}
+
+#hline2 {
+    @include abs-centered();
+    margin-left: $hline-margin;
+    margin-top: ($bar-height / 2) - $bar-size ;
+    @include hline-tmpl();
+}
+
+
+@mixin branch-tmpl() {
+    @include abs-centered();
+    width: $root-width;
+    height: $root-height;
+    @include line-color();
+}
+
+#branch1 {
+    margin-left: $margin-left + $bar-size / 2;
+    margin-top: - $bar-height / 2;
+    @include branch-tmpl();
+}
+
+#branch2 {
+    margin-left: $margin-left + $bar-size / 2;
+    margin-top: ($bar-height / 2) - $bar-size ;
+    @include branch-tmpl();
+}
+
+
+
+#atinfo {
+    position: absolute;
+    height: 40px;
+    width: $margin-left + ($indexContent-width / 2) - ( 2 * $root-width) + 5px;
+    text-align: right;
+    line-height: 40px;
+    top: 50%;
+    margin-top: -18px;
+    font-size: 90px;
+    color : #0072BC;
+    font-family: 'LeagueGothic', sans-serif;
+    // @include debug(green);
+}
+
+@mixin text-tmpl() {
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    width: - $margin-left + ($indexContent-width / 2) - ( 2 * $root-width) - 20px;
+    height: 30px;
+    line-height: 30px;
+
+    font-size: 150%;
+    color: #ED1C24;
+    font-family: 'BebasNeue', sans-serif;
+    text-align: right;
+    white-space:nowrap;
+    // @include debug(green);
+}
+
+#text1 {
+    margin-top: -12px - ($bar-height / 2);
+    letter-spacing: 0.4px;
+    @include text-tmpl();
+}
+
+#text2 {
+    margin-top: -15px + ($bar-height / 2);
+    letter-spacing: 2.8px;
+    @include text-tmpl();
+}
+
+#link1 {
+    position: absolute;
+    height: 20px;
+    width: - $margin-left + ($indexContent-width / 2) - ( 2 * $root-width) - 50px;
+    right: 50px;
+    line-height: 20px;
+    top: 50%;
+    margin-top: -15px - ($bar-height / 2) + ($bar-height / 2) - 10px;
+    font-size: 100%;
+    color: #666;
+    font-family: 'Muli', sans-serif;
+    text-align: center;
+    // @include debug(green);
+}
+
+#link2 {
+    position: absolute;
+    height: 20px;
+    width: - $margin-left + ($indexContent-width / 2) - ( 2 * $root-width) - 50px;
+    right: 50px;
+    line-height: 20px;
+    top: 50%;
+    margin-top: -15px - ($bar-height / 2) + ($bar-height / 2) + 20px;
+    font-size: 100%;
+    color: #666;
+    font-family: 'Muli', sans-serif;
+    text-align: center;
+    // @include debug(green);
+}

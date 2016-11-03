@@ -1,0 +1,12 @@
+/vendor/
+composer.phar
+
+.buildpath
+.project
+.settings/
+
+var/cache/
+var/logs/
+
+.sass-cache/
+.idea

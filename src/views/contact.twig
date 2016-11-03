@@ -1,0 +1,33 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div id="contact" class="screen"style="display : table">
+
+	<div class="screenTopBar">
+		<ul class="menu">
+		  	<li><a href="/">HOME</a></li>
+		  	<li><a href="/services">SERVICES</a></li>
+		</ul>
+	</div>
+	<div class="cell text-center">
+	
+		<div class="page">
+		
+			<h1>Bonjour,</h1>
+			
+			{{ form_start(form) }}
+			
+			{{ form_errors(form) }}
+			
+			{{ form_widget(form) }}
+			
+			<input type="submit" class="button large expanded" value="Envoyer">
+			
+			{{ form_end(form) }}
+		</div>
+	</div>
+
+</div>
+
+{% endblock %}

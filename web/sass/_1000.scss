@@ -1,0 +1,67 @@
+/*
+ * - HEADER -------------------------------------------------------------------
+*/
+#header {
+  height : 100px;
+}
+
+#headerWrapper {
+  width :  1200px;
+}
+
+
+/*
+ * - NAV ----------------------------------------------------------------------
+*/
+nav ul {
+  margin-top : 30px;
+}
+
+nav ul li {
+  float :  left;
+  height : 50px;
+}
+
+nav ul li a {
+  font-size : 110%;
+  height :          100%;
+  line-height :     50px;
+  padding :       0 20px;
+}
+
+
+/*
+ * - PAGES --------------------------------------------------------------------
+*/
+.pageContent {
+  width :  1000px;
+  margin :   auto;
+}
+
+.pageContent h1 {
+  height :      50px;
+  line-height : 50px;
+  font-size :   300%;
+}
+
+
+
+/*
+ * - slider
+*/
+$sliderW : 730px;
+$sliderH : 500px;
+#slider {
+  width :     $sliderW;
+  height :    $sliderH;
+}
+
+
+/*
+ * - PAGE 1 -------------------------------------------------------------------
+*/
+#page1 {
+  padding-top :   150px;
+  padding-bottom : 50px;
+}
+
