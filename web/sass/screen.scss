@@ -36,6 +36,23 @@ body {
     left: 50%;
 }
 
+#point {
+    position : absolute;
+    left: -30px;
+    width: 30px;
+    height: 2px;
+    background-color: red;
+}
+
+#point2 {
+    position : absolute;
+    left: -30px;
+    width: 30px;
+    height: 2px;
+    background-color: red;
+}
+
+
 $lineColor: #ccc;
 @mixin line-color {
     background-color: $lineColor;
@@ -142,7 +159,8 @@ $hline-margin: $indexContent-width / 2;
     top: 50%;
     margin-top: -18px;
     font-size: 90px;
-    color : #0072BC;
+    // color : #0072BC;
+    color : #fff;
     font-family: 'LeagueGothic', sans-serif;
     // @include debug(green);
 }
@@ -156,7 +174,8 @@ $hline-margin: $indexContent-width / 2;
     line-height: 30px;
 
     font-size: 25px;
-    color: #ED1C24;
+    // color: #ED1C24;
+    color: #fff;
     font-family: 'BebasNeue', sans-serif;
     white-space:nowrap;
     // @include debug(green);
