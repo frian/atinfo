@@ -106,20 +106,15 @@ $(function() {
 
     var windowWidth, lineLength, barHeight, contentWidth;
 
-    var speed;
-    var count = 0;
-
     var line = $("#hline");
     var line1 = $("#hline1");
     var line2 = $("#hline2");
     var lines = $("#hline1, #hline2");
     var root = $("#root");
-    var branch1 = $("#2ranch1");
+    var branch1 = $("#branch1");
     var branch2 = $("#branch2");
-    var branches = $("#branch1, #branch1");
+    var branches = $("#branch1, #branch2");
     var bar = $("#bar");
-
-    var lineTimer, lineTimer2, rootTimer, barTimer, branchTimer, pointTimer;
 
     function drawLine() {
 
@@ -179,7 +174,7 @@ $(function() {
             width: 10
           },
           {
-            duration: 200,
+            duration: 100,
             complete: function() {
                $("#text1, #text2").css('color', '#ccc');
                drawLines();
@@ -213,10 +208,12 @@ $(function() {
             translateX: lineLength - 30
         },
         {
-            duration: 300,
+            duration: 600,
             easing: "linear",
             complete: function() {
                 point.remove();
+
+                $("#atinfo").css('color', '#0072BC')
 
                 var div = $("<div>", {id: "point"});
                 div.css('width', 0);
@@ -239,41 +236,26 @@ $(function() {
             duration: 300,
             easing: "linear",
             complete: function() {
-                // point.remove();
-                //
-                // var div = $("<div>", {id: "point"});
-                // div.css('width', 0);
-                // div.css('left', 0);
-                // $("#root").append(div);
-                // drawPointInRoot();
+                point.remove();
+
+                var div = $("<div>", {id: "point"});
+                div.css('width', 2);
+                div.css('height', 10);
+                div.css('left', 0);
+                div.css('top', (barHeight / 2) - 5);
+
+                var div2 = $("<div>", {id: "point2"});
+                div2.css('width', 2);
+                div2.css('height', 10);
+                div2.css('left', 0);
+                div2.css('top', (barHeight / 2) - 5);
+
+
+                $("#bar").append(div, div2);
+
+                drawPointInBar();
             }
         });
-
-        count++;
-        // point.css('left' , ( count * 2 ) - 30);
-        if (count > 30 / 2) {
-            point.remove();
-
-            var div = $("<div>", {id: "point"});
-            div.css('width', 2);
-            div.css('height', 10);
-            div.css('left', 0);
-            div.css('top', (barHeight / 2) - 5);
-
-            var div2 = $("<div>", {id: "point2"});
-            div2.css('width', 2);
-            div2.css('height', 10);
-            div2.css('left', 0);
-            div2.css('top', (barHeight / 2) - 5);
-
-
-            $("#bar").append(div, div2);
-
-            count = 0;
-            drawPointInBar();
-
-            return;
-        }
     }
 
     function drawPointInBar() {
@@ -281,85 +263,96 @@ $(function() {
         var point = $("#point");
         var point2 = $("#point2");
 
-        count++;
-        point.css('top' , (barHeight / 2) - (count * 2) - 5 );
-        point2.css('top' , (barHeight / 2) + (count * 2) - 5 );
-        if (count > (barHeight - 10) / 4) {
 
-            point.remove();
-            point2.remove();
+        point.velocity(
+        {
+            top: 0
+        },
+        {
+            duration: 300,
+            easing: "linear",
+            complete: function() {
+                point.remove();
+            }
+        });
 
-            var div = $("<div>", {id: "point"});
-            div.css('width', 10);
-            div.css('left', 0);
+        point2.velocity(
+        {
+            top: barHeight - 10
+        },
+        {
+            duration: 300,
+            easing: "linear",
+            complete: function() {
 
-            var div2 = $("<div>", {id: "point2"});
-            div2.css('width', 10);
-            div2.css('left', 0);
+                point.remove();
+                point2.remove();
 
-            $("#branch1").append(div);
-            $("#branch2").append(div2);
+                var div = $("<div>", {id: "point"});
+                div.css('width', 0);
+                div.css('left', 0);
 
-            count = 0;
-            drawPointsInBranches();
-            return;
-        }
-        pointTimer = setTimeout(drawPointInBar, speed);
+                var div2 = $("<div>", {id: "point2"});
+                div2.css('width', 0);
+                div2.css('left', 0);
+
+                $("#branch1").append(div);
+                $("#branch2").append(div2);
+
+                drawPointsInBranches();
+            }
+        });
     }
 
     function drawPointsInBranches() {
 
-        var point = $("#point");
-        var point2 = $("#point2");
+        var points = $("#point, #point2");
 
-        count++;
-        point.css('left' , ( count * 2 ));
-        point2.css('left' , ( count * 2 ));
-        if (count > 10 / 2) {
+        points.velocity(
+        {
+            width: 10
+        },
+        {
+            duration: 100,
+            easing: "linear",
+            complete: function() {
 
-            point.remove();
-            point2.remove();
+                points.remove();
 
-            $("#text1, #text2").css('color', '#ED1C24');
-            // $("#text1, #text2").delay(50).animate({'color': "#ccc"}, 200);
+                $("#text1, #text2").css('color', '#ED1C24');
 
-            var div = $("<div>", {id: "point"});
-            div.css('width', 10);
-            div.css('left', 0);
+                var div = $("<div>", {id: "point"});
+                div.css('width', 30);
+                div.css('left', 0);
 
-            var div2 = $("<div>", {id: "point2"});
-            div2.css('width', 10);
-            div2.css('left', 0);
+                var div2 = $("<div>", {id: "point2"});
+                div2.css('width', 30);
+                div2.css('left', 0);
 
-            $("#hline1").append(div);
-            $("#hline2").append(div2);
+                $("#hline1").append(div);
+                $("#hline2").append(div2);
 
-            count = 0;
-            drawPointInLines();
-
-            return;
-        }
-        pointTimer = setTimeout(drawPointsInBranches, speed);
+                drawPointInLines();
+            }
+        });
     }
 
     function drawPointInLines() {
 
-        var point = $("#point");
-        var point2 = $("#point2");
+        var points = $("#point, #point2");
 
-        count++;
-        point.css('left' , ( count * 6 ));
-        point2.css('left' , ( count * 6 ));
-        if (count > (lineLength) / 4) {
-
-            point.remove();
-            point2.remove();
-
-            light();
-
-            return;
-        }
-        pointTimer = setTimeout(drawPointInLines, speed);
+        points.velocity(
+        {
+            translateX: lineLength
+        },
+        {
+            duration: 600,
+            easing: "linear",
+            complete: function() {
+                points.remove();
+                light();
+            }
+        });
     }
 
     function light() {
@@ -370,22 +363,20 @@ $(function() {
     }
 
     function resetAnim() {
-        clearTimeout(lineTimer);
-        clearTimeout(lineTimer2);
-        clearTimeout(rootTimer);
-        clearTimeout(barTimer);
-        clearTimeout(branchTimer);
-        clearTimeout(pointTimer)
 
-        count = 0;
         line.css('width' , 0);
         line.css('margin-left' , -lineLength);
         line1.css('width' , 0);
         line2.css('width' , 0);
         root.css('width' , 0);
         bar.css('height' , 0);
+        bar.css('margin-top' , 0);
         branch1.css('width' , 0);
         branch2.css('width' , 0);
+
+        $("#hline, #hline1, #hline2, #root, #branch1, #branch2, #bar").velocity("stop");
+
+        $("#atinfo, #text1, #text2").css('color', '#fff');
     }
 
     function config() {
@@ -394,12 +385,10 @@ $(function() {
 
         barHeight = 100;
         contentWidth = 300;
-        speed = 30;
 
         if (windowWidth >= 700) {
             barHeight = 200;
             contentWidth = 500;
-            speed = 1;
         }
 
         lineLength = ((window.innerWidth - contentWidth) / 2) - 20; // -20 margin
@@ -428,7 +417,6 @@ $(function() {
 
         timer = window.setTimeout(function() {
 
-            count = 0;
             config();
             resetAnim();
             drawLine();
