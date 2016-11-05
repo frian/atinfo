@@ -104,11 +104,7 @@ $(function() {
      * -- Animation
      */
 
-    var windowWidth;
-    var lineLength;
-    var barHeight;
-    var contentWidth;
-
+    var windowWidth, lineLength, barHeight, contentWidth;
 
     var speed = 0.1;
     var count = 0;
@@ -121,18 +117,10 @@ $(function() {
     var branch2 = $("#branch2");
     var bar = $("#bar");
 
-    var lineTimer,
-        lineTimer2,
-        lineTimer3,
-        rootTimer,
-        barTimer,
-        branch1Timer,
-        branch2Timer
-        ;
+    var lineTimer, lineTimer2, rootTimer, barTimer, branchTimer;
 
     function drawLine() {
         if (lineLength < 20 ) {
-            count = 0;
             drawRoot();
             return;
         }
@@ -174,6 +162,12 @@ $(function() {
        branch1.css('width' , count * 1);
        branch2.css('width' , count * 1);
        if (count > 10) {
+
+           if (lineLength < 20 ) {
+               count = 0;
+               return;
+           }
+
            count = 0;
            drawLine2();
            return;
@@ -185,7 +179,34 @@ $(function() {
        count++;
        line1.css('width' , count * 3);
        line2.css('width' , count * 3);
-       if (count > 920 / 4) {
+       if (count > lineLength / 3) {
+
+
+            $("#hline").css({'background-color': "#f00"});
+            $("#hline").delay(100).animate({'background-color': "#fff"}, 1000);
+
+            setTimeout(function() {
+                $("#root").css({'background-color': "#f00"});
+                $("#root").delay(100).animate({'background-color': "#fff"}, 900);
+            }, 100);
+
+            setTimeout(function() {
+                $("#bar").css({'background-color': "#f00"});
+                $("#bar").delay(200).animate({'background-color': "#fff"}, 800);
+            }, 200);
+
+            setTimeout(function() {
+                $("#branch1, #branch2").css({'background-color': "#f00"});
+                $("#branch1, #branch2").delay(300).animate({'background-color': "#fff"}, 700);
+            }, 200);
+
+            setTimeout(function() {
+                $("#hline1, #hline2").css({'background-color': "#f00"});
+                $("#hline1, #hline2").delay(400).animate({'background-color': "#fff"}, 600);
+            }, 200);
+
+
+
            return;
        }
        lineTimer2 = setTimeout(drawLine2, speed);
@@ -194,11 +215,9 @@ $(function() {
     function resetAnim() {
         clearTimeout(lineTimer);
         clearTimeout(lineTimer2);
-        clearTimeout(lineTimer3);
         clearTimeout(rootTimer);
         clearTimeout(barTimer);
-        clearTimeout(branch1Timer);
-        clearTimeout(branch2Timer);
+        clearTimeout(branchTimer);
 
         count = 0;
         line.css('width' , 0);
@@ -224,7 +243,6 @@ $(function() {
         }
 
         lineLength = ((window.innerWidth - contentWidth) / 2) - 20; // -20 margin
-
     }
 
     config();

@@ -9,7 +9,7 @@
  * - FONTS --------------------------------------------------------------------
 */
 
-@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro|arvo|Trirong:500|Palanquin+Dark|Muli|Overlock|Corben|Lato|Unica+One|Questrial|Julius+Sans+One');
+@import url('https://fonts.googleapis.com/css?family=Muli');
 
 @font-face {
     font-family: BebasNeue;
@@ -51,7 +51,7 @@ $indexContent-height :300px;
     width: $indexContent-width;
     margin-top: - $indexContent-height / 2;
     margin-left: - $indexContent-width / 2;
-    @include debug(#aaa);
+    // @include debug(#aaa);
 }
 
 $bar-size: 2px;
@@ -117,7 +117,7 @@ $bar-height: 100px;
     @include hline-tmpl();
 }
 
-$hline-margin: 140px;
+$hline-margin: $indexContent-width / 2;
 #hline1 {
     @include abs-centered();;
     margin-left: $hline-margin;
@@ -144,72 +144,68 @@ $hline-margin: 140px;
     font-size: 90px;
     color : #0072BC;
     font-family: 'LeagueGothic', sans-serif;
-    @include debug(green);
+    // @include debug(green);
 }
 
 @mixin text-tmpl() {
     position: absolute;
     top: 50%;
-    right: 25px;
+    right: 20px;
     width: - $margin-left + ($indexContent-width / 2) - ( 2 * $root-width) - 20px;
     height: 30px;
     line-height: 30px;
 
-    font-size: 150%;
+    font-size: 25px;
     color: #ED1C24;
     font-family: 'BebasNeue', sans-serif;
-    text-align: right;
     white-space:nowrap;
-    @include debug(green);
+    // @include debug(green);
 }
 
 #text1 {
     margin-top: -12px - ($bar-height / 2);
-    letter-spacing: 0.4px;
+    letter-spacing: 1px;
     @include text-tmpl();
 }
 
 #text2 {
     margin-top: -15px + ($bar-height / 2);
-    letter-spacing: 2.8px;
+    letter-spacing: 3px;
     @include text-tmpl();
 }
 
-#link1 {
+@mixin link-tmpl() {
     position: absolute;
     height: 20px;
     width: - $margin-left + ($indexContent-width / 2) - ( 2 * $root-width) - 50px;
     right: 50px;
     line-height: 20px;
     top: 50%;
-    margin-top: -15px - ($bar-height / 2) + ($bar-height / 2) - 10px;
     font-size: 100%;
     color: #666;
     font-family: 'Muli', sans-serif;
     text-align: center;
-    // @include debug(green);
+}
+
+#link1 {
+    margin-top: -15px - ($bar-height / 2) + ($bar-height / 2) - 10px;
+    @include link-tmpl;
 }
 
 #link2 {
-    position: absolute;
-    height: 20px;
-    width: - $margin-left + ($indexContent-width / 2) - ( 2 * $root-width) - 50px;
-    right: 50px;
-    line-height: 20px;
-    top: 50%;
     margin-top: -15px - ($bar-height / 2) + ($bar-height / 2) + 20px;
-    font-size: 100%;
-    color: #666;
-    font-family: 'Muli', sans-serif;
-    text-align: center;
-    // @include debug(green);
+    @include link-tmpl;
 }
 
 @media all and (min-width: 40em) {
 
     $bar-height: 200px;
 
-    $hline-margin: 250px;
+    $indexContent-width : 500px;
+    $indexContent-height :500px;
+
+    $hline-margin: $indexContent-width / 2;
+
     #hline1 {
         margin-top: - $bar-height / 2;
         margin-left: $hline-margin;
@@ -236,9 +232,6 @@ $hline-margin: 140px;
         margin-top: -15px + ($bar-height / 2);
     }
 
-    $indexContent-width : 500px;
-    $indexContent-height :500px;
-
     #indexContent {
         height: $indexContent-height;
         width: $indexContent-width;
@@ -255,11 +248,10 @@ $hline-margin: 140px;
     }
 
     @mixin text-tmpl() {
-        right: 25px;
         width: - $margin-left + ($indexContent-width / 2) - ( 2 * $root-width) - 20px;
         height: 30px;
         line-height: 30px;
-        font-size: 280%;
+        font-size: 50px;
     }
 
     #text1 {
@@ -269,6 +261,7 @@ $hline-margin: 140px;
 
     #text2 {
         margin-top: -15px + ($bar-height / 2);
+        letter-spacing: 6px;
         @include text-tmpl();
     }
 }
