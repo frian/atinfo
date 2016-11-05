@@ -112,117 +112,145 @@ $(function() {
     var line = $("#hline");
     var line1 = $("#hline1");
     var line2 = $("#hline2");
+    var lines = $("#hline1, #hline2");
     var root = $("#root");
-    var branch1 = $("#branch1");
+    var branch1 = $("#2ranch1");
     var branch2 = $("#branch2");
+    var branches = $("#branch1, #branch1");
     var bar = $("#bar");
 
     var lineTimer, lineTimer2, rootTimer, barTimer, branchTimer, pointTimer;
 
     function drawLine() {
+
         if (lineLength < 20 ) {
             drawRoot();
             return;
         }
-       count++;
-       line.css('width' , count * 4);
-       if (count >= lineLength / 4) {
-           $("#atinfo").css('color', '#ccc');
-           count = 0;
-           drawRoot();
-           return;
-       }
-       lineTimer = setTimeout(drawLine, speed);
+
+        line.velocity(
+        {
+            width: lineLength
+        },
+        {
+            duration: 1000,
+            complete: function() {
+                $("#atinfo").css('color', '#ddd')
+                drawRoot();
+            }
+        });
     }
 
     function drawRoot() {
-        count++;
-        root.css('width' , count * 1);
-        if (count > 10) {
-           count = 0;
-           drawBar();
-           return;
-        }
-        rootTimer = setTimeout(drawRoot, 20);
+
+        root.velocity(
+          {
+            width: 10
+          },
+          {
+            duration: 200,
+            complete: function() {
+               drawBar();
+            }
+          }
+        );
     }
 
     function drawBar() {
-        count++;
-        bar.css('height' , count * 1);
-        bar.css('margin-top' , -count / 2);
-        if (count >= barHeight) {
-            count = 0;
-            drawBranch1();
-            return;
+
+        bar.velocity(
+        {
+            height: barHeight,
+            "margin-top" : -(barHeight / 2)
+        },
+        {
+            duration: 500,
+            complete: function() {
+                drawBranches()
+            }
         }
-        barTimer = setTimeout(drawBar, speed);
+        );
     }
 
-    function drawBranch1() {
-       count++;
-       branch1.css('width' , count * 1);
-       branch2.css('width' , count * 1);
-       if (count > 10) {
+    function drawBranches() {
 
-           $("#text1, #text2").css('color', '#ccc');
-
-           if (lineLength < 20 ) {
-               count = 0;
-               return;
-           }
-
-           count = 0;
-           drawLine2();
-           return;
-       }
-       branchTimer = setTimeout(drawBranch1, speed);
+        branches.velocity(
+          {
+            width: 10
+          },
+          {
+            duration: 200,
+            complete: function() {
+               $("#text1, #text2").css('color', '#ccc');
+               drawLines();
+            }
+          }
+        );
     }
 
-    function drawLine2() {
-       count++;
-       line1.css('width' , count * 3);
-       line2.css('width' , count * 3);
-       if (count > lineLength / 3) {
+    function drawLines() {
 
-
-           var div = $("<div>", {id: "point"});
-           $("#hline").append(div);
-           count = 0;
-           drawPointInLine();
-           return;
-       }
-       lineTimer2 = setTimeout(drawLine2, speed);
+        lines.velocity(
+        {
+            width: lineLength
+        },
+        {
+            duration: 1000,
+            complete: function() {
+                var point = $("<div>", {id: "point"});
+                line.append(point);
+                drawPointInLine()
+            }
+        });
     }
 
     function drawPointInLine() {
 
         var point = $("#point");
 
-        count++;
-        point.css('left' , ( count * 4 ));
-        if (count > (lineLength) / 4) {
+        point.velocity(
+        {
+            translateX: lineLength - 30
+        },
+        {
+            duration: 300,
+            easing: "linear",
+            complete: function() {
+                point.remove();
 
-            $("#atinfo").css('color', '#0072BC');
-            // $("#atinfo").delay(50).animate({'color': "#ccc"}, 50);
-
-            count = 0;
-            point.remove();
-            var div = $("<div>", {id: "point"});
-            div.css('width', 10);
-            $("#root").append(div);
-            drawPointInRoot();
-            return;
-        }
-        pointTimer = setTimeout(drawPointInLine, speed);
+                var div = $("<div>", {id: "point"});
+                div.css('width', 0);
+                div.css('left', 0);
+                $("#root").append(div);
+                drawPointInRoot();
+            }
+        });
     }
 
     function drawPointInRoot() {
 
         var point = $("#point");
 
+        point.velocity(
+        {
+            width: 10
+        },
+        {
+            duration: 300,
+            easing: "linear",
+            complete: function() {
+                // point.remove();
+                //
+                // var div = $("<div>", {id: "point"});
+                // div.css('width', 0);
+                // div.css('left', 0);
+                // $("#root").append(div);
+                // drawPointInRoot();
+            }
+        });
 
         count++;
-        point.css('left' , ( count * 2 ) - 30);
+        // point.css('left' , ( count * 2 ) - 30);
         if (count > 30 / 2) {
             point.remove();
 
@@ -246,7 +274,6 @@ $(function() {
 
             return;
         }
-        pointTimer = setTimeout(drawPointInRoot, speed);
     }
 
     function drawPointInBar() {
@@ -321,8 +348,8 @@ $(function() {
         var point2 = $("#point2");
 
         count++;
-        point.css('left' , ( count * 4 ));
-        point2.css('left' , ( count * 4 ));
+        point.css('left' , ( count * 6 ));
+        point2.css('left' , ( count * 6 ));
         if (count > (lineLength) / 4) {
 
             point.remove();
@@ -339,6 +366,7 @@ $(function() {
 
         $("#hline, #root, #bar, #branch1, #branch2, #hline1, #hline2").css({'background-color': "#999"});
         $("#hline, #root, #bar, #branch1, #branch2, #hline1, #hline2").delay(100).animate({'background-color': "#ccc"}, 1000);
+        console.timeEnd('fn1')
     }
 
     function resetAnim() {
@@ -366,11 +394,12 @@ $(function() {
 
         barHeight = 100;
         contentWidth = 300;
-        speed = 10;
+        speed = 30;
 
         if (windowWidth >= 700) {
             barHeight = 200;
             contentWidth = 500;
+            speed = 1;
         }
 
         lineLength = ((window.innerWidth - contentWidth) / 2) - 20; // -20 margin
@@ -382,7 +411,7 @@ $(function() {
 
     resetAnim();
 
-
+    console.time('fn1')
     // start the cycle
     drawLine();
 
