@@ -25,7 +25,7 @@
 }
 
 body {
-    background-color: #f0f0f0;
+    background-color: #eee;
     overflow: hidden;
     // background: url('/img/bg.png');
 }
@@ -36,7 +36,7 @@ body {
     left: 50%;
 }
 
-$lineColor: #fff;
+$lineColor: #ccc;
 @mixin line-color {
     background-color: $lineColor;
 }
@@ -51,7 +51,7 @@ $indexContent-height :300px;
     width: $indexContent-width;
     margin-top: - $indexContent-height / 2;
     margin-left: - $indexContent-width / 2;
-    // @include debug(#aaa);
+    @include debug(#aaa);
 }
 
 $bar-size: 2px;
@@ -65,7 +65,7 @@ $margin-left: 0px;
     @include abs-centered();
     margin-top: - $root-height / 2;
     margin-left: $margin-left - $root-width - ($bar-size / 2);
-    width: $root-width;
+    // width: $root-width;
     height: $root-height;
     @include line-color();
 }
@@ -77,14 +77,33 @@ $bar-height: 100px;
     margin-top: - $bar-height / 2;
     margin-left: $margin-left - $bar-size / 2;
     width: $bar-size;
-    height: $bar-height;
+    // height: $bar-height;
     @include line-color();
 }
 
 
+@mixin branch-tmpl() {
+    @include abs-centered();
+    // width: $root-width;
+    height: $root-height;
+    @include line-color();
+}
+
+#branch1 {
+    margin-left: $margin-left + $bar-size / 2;
+    margin-top: - $bar-height / 2;
+    @include branch-tmpl();
+}
+
+#branch2 {
+    margin-left: $margin-left + $bar-size / 2;
+    margin-top: ($bar-height / 2) - $bar-size ;
+    @include branch-tmpl();
+}
+
 @mixin hline-tmpl {
 
-    width: 1000px;
+    // width: 1000px;
     height: $root-height;
     @include line-color();
 }
@@ -92,9 +111,9 @@ $bar-height: 100px;
 #hline {
     position: absolute;
     top: 50%;
-    left : 0;
+    left : 0px;
     margin-top: - $root-height / 2;
-    margin-left: -1000px;
+    // margin-left: -1000px;
     @include hline-tmpl();
 }
 
@@ -114,27 +133,6 @@ $hline-margin: 140px;
 }
 
 
-@mixin branch-tmpl() {
-    @include abs-centered();
-    width: $root-width;
-    height: $root-height;
-    @include line-color();
-}
-
-#branch1 {
-    margin-left: $margin-left + $bar-size / 2;
-    margin-top: - $bar-height / 2;
-    @include branch-tmpl();
-}
-
-#branch2 {
-    margin-left: $margin-left + $bar-size / 2;
-    margin-top: ($bar-height / 2) - $bar-size ;
-    @include branch-tmpl();
-}
-
-
-
 #atinfo {
     position: absolute;
     height: 40px;
@@ -146,7 +144,7 @@ $hline-margin: 140px;
     font-size: 90px;
     color : #0072BC;
     font-family: 'LeagueGothic', sans-serif;
-    // @include debug(green);
+    @include debug(green);
 }
 
 @mixin text-tmpl() {
@@ -162,7 +160,7 @@ $hline-margin: 140px;
     font-family: 'BebasNeue', sans-serif;
     text-align: right;
     white-space:nowrap;
-    // @include debug(green);
+    @include debug(green);
 }
 
 #text1 {
@@ -205,4 +203,72 @@ $hline-margin: 140px;
     font-family: 'Muli', sans-serif;
     text-align: center;
     // @include debug(green);
+}
+
+@media all and (min-width: 40em) {
+
+    $bar-height: 200px;
+
+    $hline-margin: 250px;
+    #hline1 {
+        margin-top: - $bar-height / 2;
+        margin-left: $hline-margin;
+    }
+
+    #hline2 {
+        margin-left: $hline-margin;
+        margin-top: ($bar-height / 2) - $bar-size ;
+    }
+
+    #branch1 {
+        margin-top: - $bar-height / 2;
+    }
+
+    #branch2 {
+        margin-top: ($bar-height / 2) - $bar-size ;
+    }
+
+    #text1 {
+        margin-top: -12px - ($bar-height / 2);
+    }
+
+    #text2 {
+        margin-top: -15px + ($bar-height / 2);
+    }
+
+    $indexContent-width : 500px;
+    $indexContent-height :500px;
+
+    #indexContent {
+        height: $indexContent-height;
+        width: $indexContent-width;
+        margin-top: - $indexContent-height / 2;
+        margin-left: - $indexContent-width / 2;
+    }
+
+    #atinfo {
+        height: 40px;
+        width: $margin-left + ($indexContent-width / 2) - ( 2 * $root-width) + 5px;
+        line-height: 40px;
+        margin-top: -18px;
+        font-size: 160px;
+    }
+
+    @mixin text-tmpl() {
+        right: 25px;
+        width: - $margin-left + ($indexContent-width / 2) - ( 2 * $root-width) - 20px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 280%;
+    }
+
+    #text1 {
+        margin-top: -12px - ($bar-height / 2);
+        @include text-tmpl();
+    }
+
+    #text2 {
+        margin-top: -15px + ($bar-height / 2);
+        @include text-tmpl();
+    }
 }
