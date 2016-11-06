@@ -161,6 +161,7 @@ $(function() {
           },
           {
             duration: rootDuration * 2,
+            delay: $("#atinfo").width(),
             easing: "linear",
             complete: function() {
                drawBar();
@@ -227,6 +228,7 @@ $(function() {
         },
         {
             duration: pointInLinesDuration * 2,
+            delay: $("#text1").width(),
             easing: "linear",
             complete: function() {
 
@@ -602,7 +604,7 @@ $(function() {
         if (windowWidth >= 700) {
             barHeight = 200;
             contentWidth = 500;
-            debugSlow = 10;
+            debugSlow = 16;
         }
 
         finishPointInLinesDuration = pointInLinesSize * debugSlow;
