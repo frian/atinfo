@@ -34,45 +34,42 @@ body {
   width: 30px;
   height: 2px;
   background-color: red;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 #point1 {
   position: absolute;
-  left: -30px;
-  width: 30px;
-  height: 2px;
   background-color: red;
 }
 
-/* line 56, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 #point2 {
   position: absolute;
-  left: -30px;
   width: 30px;
   height: 2px;
   background-color: red;
 }
 
-/* line 64, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 #point3 {
   position: absolute;
-  left: -30px;
   width: 30px;
   height: 2px;
   background-color: red;
 }
 
-/* line 72, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 #point4 {
   position: absolute;
-  left: -30px;
   width: 30px;
   height: 2px;
   background-color: red;
 }
 
-/* line 89, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 #indexContent {
   position: absolute;
   top: 50%;
@@ -81,10 +78,9 @@ body {
   width: 300px;
   margin-top: -150px;
   margin-left: -150px;
-  border: 1px solid #aaa;
 }
 
-/* line 105, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 #root {
   position: absolute;
   top: 50%;
@@ -95,7 +91,7 @@ body {
   background-color: #ccc;
 }
 
-/* line 116, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 #bar {
   position: absolute;
   top: 50%;
@@ -106,7 +102,7 @@ body {
   background-color: #ccc;
 }
 
-/* line 133, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 #branch1 {
   margin-left: 1px;
   margin-top: -50px;
@@ -117,7 +113,7 @@ body {
   background-color: #ccc;
 }
 
-/* line 139, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 #branch2 {
   margin-left: 1px;
   margin-top: 48px;
@@ -128,7 +124,7 @@ body {
   background-color: #ccc;
 }
 
-/* line 152, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 #hline {
   position: absolute;
   top: 50%;
@@ -138,7 +134,7 @@ body {
   background-color: #ccc;
 }
 
-/* line 162, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 #hline1 {
   position: absolute;
   top: 50%;
@@ -149,7 +145,7 @@ body {
   background-color: #ccc;
 }
 
-/* line 169, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 #hline2 {
   position: absolute;
   top: 50%;
@@ -160,7 +156,7 @@ body {
   background-color: #ccc;
 }
 
-/* line 177, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 #atinfo {
   position: absolute;
   height: 40px;
@@ -174,7 +170,7 @@ body {
   font-family: 'LeagueGothic', sans-serif;
 }
 
-/* line 208, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 #text1 {
   margin-top: -62px;
   letter-spacing: 1px;
@@ -190,7 +186,7 @@ body {
   white-space: nowrap;
 }
 
-/* line 214, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 #text2 {
   margin-top: 35px;
   letter-spacing: 3px;
@@ -206,7 +202,7 @@ body {
   white-space: nowrap;
 }
 
-/* line 233, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 #link1 {
   margin-top: -25px;
   position: absolute;
@@ -221,7 +217,7 @@ body {
   text-align: center;
 }
 
-/* line 238, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 #link2 {
   margin-top: 5px;
   position: absolute;
@@ -237,39 +233,39 @@ body {
 }
 
 @media all and (min-width: 40em) {
-  /* line 252, ../sass/screen.scss */
+  /* line 245, ../sass/screen.scss */
   #hline1 {
     margin-top: -100px;
     margin-left: 250px;
   }
 
-  /* line 257, ../sass/screen.scss */
+  /* line 250, ../sass/screen.scss */
   #hline2 {
     margin-left: 250px;
     margin-top: 98px;
   }
 
-  /* line 262, ../sass/screen.scss */
+  /* line 255, ../sass/screen.scss */
   #branch1 {
     margin-top: -100px;
   }
 
-  /* line 266, ../sass/screen.scss */
+  /* line 259, ../sass/screen.scss */
   #branch2 {
     margin-top: 98px;
   }
 
-  /* line 270, ../sass/screen.scss */
+  /* line 263, ../sass/screen.scss */
   #text1 {
     margin-top: -112px;
   }
 
-  /* line 274, ../sass/screen.scss */
+  /* line 267, ../sass/screen.scss */
   #text2 {
     margin-top: 85px;
   }
 
-  /* line 278, ../sass/screen.scss */
+  /* line 271, ../sass/screen.scss */
   #indexContent {
     height: 500px;
     width: 500px;
@@ -277,7 +273,7 @@ body {
     margin-left: -250px;
   }
 
-  /* line 285, ../sass/screen.scss */
+  /* line 278, ../sass/screen.scss */
   #atinfo {
     height: 40px;
     width: 235px;
@@ -286,7 +282,7 @@ body {
     font-size: 160px;
   }
 
-  /* line 300, ../sass/screen.scss */
+  /* line 293, ../sass/screen.scss */
   #text1 {
     margin-top: -112px;
     width: 210px;
@@ -295,7 +291,7 @@ body {
     font-size: 50px;
   }
 
-  /* line 305, ../sass/screen.scss */
+  /* line 298, ../sass/screen.scss */
   #text2 {
     margin-top: 85px;
     letter-spacing: 6px;

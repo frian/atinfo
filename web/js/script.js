@@ -235,24 +235,20 @@ $(function() {
             easing: "linear",
             complete: function() {
 
+                var point = $("<div>", {id: "point"});
+                point.css('width', 0);
+                point.css('left', 0);
+
                 if (lineLength < 20 ) {
 
                     $("#atinfo").css('color', '#0072BC')
 
-                    var div = $("<div>", {id: "point"});
-                    div.css('width', 0);
-                    div.css('left', 0);
-                    root.append(div);
+                    root.append(point);
                     drawPointInRoot();
-                    return;
                 }
                 else {
-                    var point = $("<div>", {id: "point"});
-                    point.css('width', 0);
-                    point.css('left', 0);
                     line.append(point);
                     startdrawPointInLine();
-                    return;
                 }
             }
         });
@@ -322,7 +318,7 @@ $(function() {
                 root.append(div);
                 drawPointInRoot();
             }
-        });
+        });1
     }
 
     function drawPointInRoot() {

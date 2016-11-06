@@ -38,24 +38,19 @@ body {
 
 #point {
     position : absolute;
-    // left: -30px;
     width: 30px;
     height: 2px;
     background-color: red;
-    // @include single-box-shadow(red, 0px, 0px, 1px, 1px);
+    @include border-radius(50%);
 }
 
 #point1 {
     position : absolute;
-    left: -30px;
-    width: 30px;
-    height: 2px;
     background-color: red;
 }
 
 #point2 {
     position : absolute;
-    left: -30px;
     width: 30px;
     height: 2px;
     background-color: red;
@@ -63,7 +58,6 @@ body {
 
 #point3 {
     position : absolute;
-    left: -30px;
     width: 30px;
     height: 2px;
     background-color: red;
@@ -71,7 +65,6 @@ body {
 
 #point4 {
     position : absolute;
-    left: -30px;
     width: 30px;
     height: 2px;
     background-color: red;
@@ -92,7 +85,7 @@ $indexContent-height :300px;
     width: $indexContent-width;
     margin-top: - $indexContent-height / 2;
     margin-left: - $indexContent-width / 2;
-    @include debug(#aaa);
+    // @include debug(#aaa);
 }
 
 $bar-size: 2px;
