@@ -108,11 +108,11 @@ $(function() {
 
     var pointInLinesSize = 30;
 
-    var debugSlow = 8;
+    var debugSlow;
 
-    var finishPointInLinesDuration = pointInLinesSize * debugSlow;
-    var rootDuration = 10 * 2 * debugSlow;
-    var branchDuration = rootDuration * 2 * debugSlow;
+    var finishPointInLinesDuration;
+    var rootDuration;
+    var branchDuration;
     var barDuration;
 
     var pointInLinesDuration;
@@ -187,7 +187,7 @@ $(function() {
     }
 
     function drawBranches() {
-console.log(rootDuration);
+
         branches.velocity(
           {
             width: 10
@@ -197,7 +197,23 @@ console.log(rootDuration);
             easing: "linear",
             complete: function() {
                $("#text1, #text2").css('color', '#ccc');
-               drawLines();
+               if (lineLength < 20 ) {
+
+                   setTimeout(function() {
+
+                       $("#atinfo").css('color', '#0072BC')
+
+                       var div = $("<div>", {id: "point"});
+                       div.css('width', 0);
+                       div.css('left', 0);
+                       root.append(div);
+
+                       drawPointInRoot();
+                   }, 300);
+               }
+               else {
+                   drawLines();
+               }
             }
           }
         );
@@ -294,7 +310,7 @@ console.log(rootDuration);
                 var div = $("<div>", {id: "point"});
                 div.css('width', 0);
                 div.css('left', 0);
-                $("#root").append(div);
+                root.append(div);
                 drawPointInRoot();
             }
         });
@@ -570,6 +586,8 @@ console.log(rootDuration);
 
         $("#hline, #hline1, #hline2, #root, #branch1, #branch2, #bar").velocity("stop");
 
+        $("#point, #point1, #point2, #point3, #point4").remove();
+
         $("#atinfo, #text1, #text2").css('color', '#fff');
     }
 
@@ -584,8 +602,12 @@ console.log(rootDuration);
         if (windowWidth >= 700) {
             barHeight = 200;
             contentWidth = 500;
-            debugSlow = 8;
+            debugSlow = 10;
         }
+
+        finishPointInLinesDuration = pointInLinesSize * debugSlow;
+        rootDuration = 10 * 2 * debugSlow;
+        branchDuration = rootDuration * 2 * debugSlow;
 
         lineLength = ((window.innerWidth - contentWidth) / 2) - 20; // -20 margin
 
@@ -604,7 +626,7 @@ console.log(rootDuration);
     // start the cycle
     setTimeout(function() {
         drawLine();
-    }, 500);
+    }, 300);
 
 
     /*
