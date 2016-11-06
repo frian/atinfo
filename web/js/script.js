@@ -106,6 +106,8 @@ $(function() {
 
     var windowWidth, lineLength, barHeight, contentWidth;
 
+    var pointInBarSpeed;
+
     var line = $("#hline");
     var line1 = $("#hline1");
     var line2 = $("#hline2");
@@ -119,7 +121,11 @@ $(function() {
     function drawLine() {
 
         if (lineLength < 20 ) {
-            drawRoot();
+            setTimeout(function() {
+                $("#atinfo").css('color', '#ddd')
+                drawRoot();
+            }, 200);
+
             return;
         }
 
@@ -197,9 +203,26 @@ $(function() {
             duration: 1000,
             easing: "linear",
             complete: function() {
-                var point = $("<div>", {id: "point"});
-                line.append(point);
-                drawPointInLine()
+
+                if (lineLength < 20 ) {
+
+                    $("#atinfo").css('color', '#0072BC')
+
+                    var div = $("<div>", {id: "point"});
+                    div.css('width', 0);
+                    div.css('left', 0);
+                    root.append(div);
+                    drawPointInRoot();
+                    return;
+                }
+                else {
+                    var point = $("<div>", {id: "point"});
+                    point.css('width', 30);
+                    point.css('left', 0);
+                    line.append(point);
+                    drawPointInLine()
+                    return;
+                }
             }
         });
     }
@@ -215,7 +238,7 @@ $(function() {
             translateX: lineLength - 30
         },
         {
-            duration: lineSpeed,
+            duration: lineLength - 30,
             easing: "linear",
             complete: function() {
 
@@ -234,7 +257,7 @@ $(function() {
             translateX: lineLength
         },
         {
-            duration: lineSpeed / ( lineLength / 30 ),
+            duration: 10,
             easing: "linear",
             complete: function() {
 
@@ -260,7 +283,7 @@ $(function() {
             width: 10
         },
         {
-            duration: lineSpeed / ( lineLength / 10 ),
+            duration: 10,
             easing: "linear",
             complete: function() {
 
@@ -295,7 +318,7 @@ $(function() {
             translateX: 10
         },
         {
-            duration: lineSpeed / ( lineLength / 30 ),
+            duration: 10 * 2,
             easing: "linear",
             complete: function() {
 
@@ -308,7 +331,7 @@ $(function() {
             top: (barHeight / 2) - 5
         },
         {
-            duration: lineSpeed / ( lineLength / 30 ),
+            duration: 10 * 2,
             easing: "linear",
             complete: function() {
                 drawPointInBar();
@@ -328,7 +351,7 @@ $(function() {
             top: 0
         },
         {
-            duration: lineSpeed / ( lineLength / barHeight ),
+            duration: barHeight,
             easing: "linear",
             complete: function() {
                 point.remove();
@@ -340,7 +363,7 @@ $(function() {
             top: barHeight - 10
         },
         {
-            duration: lineSpeed / ( lineLength / barHeight ),
+            duration: barHeight,
             easing: "linear",
             complete: function() {
 
@@ -372,7 +395,7 @@ $(function() {
             height: 0
         },
         {
-            duration: lineSpeed / (barHeight / 10),
+            duration: 10 * 2,
             easing: "linear",
             complete: function() {
                 point1.remove();
@@ -385,7 +408,7 @@ $(function() {
             translateY: 10
         },
         {
-            duration: lineSpeed / (barHeight / 10),
+            duration: 10 * 2,
             easing: "linear",
             complete: function() {
 
@@ -398,7 +421,7 @@ $(function() {
             width: 10
         },
         {
-            duration: lineSpeed / (barHeight / 10),
+            duration: 10 * 2,
             easing: "linear",
             complete: function() {
                 // point1.remove();
@@ -416,7 +439,7 @@ $(function() {
             translateX: 10
         },
         {
-            duration: lineSpeed / (lineLength / 10),
+            duration: 10 * 2,
             easing: "linear",
             complete: function() {
 
@@ -424,18 +447,23 @@ $(function() {
 
                 $("#text1, #text2").css('color', '#ED1C24');
 
-                var div = $("<div>", {id: "point"});
-                div.css('width', 30);
-                div.css('left', 0);
+                if (lineLength < 20 ) {
+                    light();
+                }
+                else {
+                    var div = $("<div>", {id: "point"});
+                    div.css('width', 30);
+                    div.css('left', 0);
 
-                var div2 = $("<div>", {id: "point2"});
-                div2.css('width', 30);
-                div2.css('left', 0);
+                    var div2 = $("<div>", {id: "point2"});
+                    div2.css('width', 30);
+                    div2.css('left', 0);
 
-                $("#hline1").append(div);
-                $("#hline2").append(div2);
+                    $("#hline1").append(div);
+                    $("#hline2").append(div2);
 
-                drawPointInLines();
+                    drawPointInLines();
+                }
             }
         });
     }
@@ -449,7 +477,7 @@ $(function() {
             translateX: lineLength - 30
         },
         {
-            duration: lineSpeed,
+            duration: lineLength - 30,
             easing: "linear",
             complete: function() {
                 light();
@@ -468,7 +496,7 @@ $(function() {
             translateX: lineLength
         },
         {
-            duration: lineSpeed / ( lineLength / 30 ),
+            duration: Math.abs(lineSpeed / ( lineLength / 30 )),
             easing: "linear",
             complete: function() {
                 points.remove();
@@ -514,7 +542,16 @@ $(function() {
         }
 
         lineLength = ((window.innerWidth - contentWidth) / 2) - 20; // -20 margin
+
+        pointInBarSpeed = Math.abs(lineSpeed / ( lineLength / 30 ));
+
+        if (lineLength < 20 ) {
+            pointInBarSpeed = 600;
+        }
+
         console.log(lineLength);
+
+
     }
 
     config();
