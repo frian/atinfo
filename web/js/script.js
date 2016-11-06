@@ -146,7 +146,6 @@ $(function() {
             duration: pointInLinesDuration * 2,
             easing: "linear",
             complete: function() {
-                console.timeEnd('someFunction');
                 $("#atinfo").css('color', '#ddd')
                 drawRoot();
             }
@@ -161,7 +160,7 @@ $(function() {
           },
           {
             duration: rootDuration * 2,
-            delay: $("#atinfo").width(),
+            delay: $("#atinfo").width() * debugSlow,
             easing: "linear",
             complete: function() {
                drawBar();
@@ -228,7 +227,7 @@ $(function() {
         },
         {
             duration: pointInLinesDuration * 2,
-            delay: $("#text1").width(),
+            delay: $("#text1").width() * debugSlow,
             easing: "linear",
             complete: function() {
 
@@ -604,7 +603,7 @@ $(function() {
         if (windowWidth >= 700) {
             barHeight = 200;
             contentWidth = 500;
-            debugSlow = 16;
+            debugSlow = 1;
         }
 
         finishPointInLinesDuration = pointInLinesSize * debugSlow;
