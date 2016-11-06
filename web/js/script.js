@@ -108,7 +108,8 @@ $(function() {
 
     var pointInLinesSize = 30;
 
-    var debugSlow;
+    var debugSlow, debugSlowLine;
+
 
     var finishPointInLinesDuration;
     var rootDuration;
@@ -127,6 +128,9 @@ $(function() {
     var branches = $("#branch1, #branch2");
     var bar = $("#bar");
 
+    /**
+     * -- DRAW LINES ----------------------------------------------------------
+     */
     function drawLine() {
 
         if (lineLength < 20 ) {
@@ -160,7 +164,7 @@ $(function() {
           },
           {
             duration: rootDuration * 2,
-            delay: $("#atinfo").width() * debugSlow,
+            delay: $("#atinfo").width() * debugSlowLine,
             easing: "linear",
             complete: function() {
                drawBar();
@@ -227,7 +231,7 @@ $(function() {
         },
         {
             duration: pointInLinesDuration * 2,
-            delay: $("#text1").width() * debugSlow,
+            delay: $("#text1").width() * debugSlowLine,
             easing: "linear",
             complete: function() {
 
@@ -254,6 +258,10 @@ $(function() {
         });
     }
 
+
+    /**
+     * -- DRAW POINTS ---------------------------------------------------------
+     */
     function startdrawPointInLine() {
 
         var point = $("#point");
@@ -327,6 +335,7 @@ $(function() {
         },
         {
             duration: rootDuration,
+            delay: $("#atinfo").width() / 2 * debugSlowLine,
             easing: "linear",
             complete: function() {
 
@@ -370,8 +379,8 @@ $(function() {
 
         points.velocity(
         {
-            height: 10,
-            top: (barHeight / 2) - 5
+            height: 30,
+            top: (barHeight / 2) - 15
         },
         {
             duration: rootDuration,
@@ -403,7 +412,7 @@ $(function() {
 
         point2.velocity(
         {
-            top: barHeight - 10
+            top: barHeight - 30
         },
         {
             duration: barDuration,
@@ -448,7 +457,7 @@ $(function() {
         point2.velocity(
         {
             height: 0,
-            translateY: 10
+            translateY: 30
         },
         {
             duration: rootDuration,
@@ -521,6 +530,7 @@ $(function() {
         },
         {
             duration: finishPointInLinesDuration,
+            delay: $("#text1").width() / 2 * debugSlowLine,
             easing: "linear",
             complete: function() {
 
@@ -599,14 +609,19 @@ $(function() {
         barHeight = 100;
         contentWidth = 300;
         debugSlow = 4;
+        debugSlow = 4;
 
         if (windowWidth >= 700) {
             barHeight = 200;
             contentWidth = 500;
-            debugSlow = 1;
+            debugSlow = 2;
+            debugSlowLine = 2;
         }
 
-        finishPointInLinesDuration = pointInLinesSize * debugSlow;
+        if (windowWidth >= 1200) {
+            debugSlowLine = 1;
+        }
+
         rootDuration = 10 * 2 * debugSlow;
         branchDuration = rootDuration * 2 * debugSlow;
 
@@ -614,9 +629,9 @@ $(function() {
 
         barDuration = barHeight / 2 * debugSlow;
 
-        pointInLinesDuration = (lineLength - pointInLinesSize) * debugSlow;
+        pointInLinesDuration = (lineLength - pointInLinesSize) * debugSlowLine;
 
-        finishPointInLinesDuration = pointInLinesSize * debugSlow;
+        finishPointInLinesDuration = pointInLinesSize * debugSlowLine;
     }
 
     config();

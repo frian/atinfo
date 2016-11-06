@@ -42,6 +42,7 @@ body {
     width: 30px;
     height: 2px;
     background-color: red;
+    // @include single-box-shadow(red, 0px, 0px, 1px, 1px);
 }
 
 #point1 {
@@ -91,7 +92,7 @@ $indexContent-height :300px;
     width: $indexContent-width;
     margin-top: - $indexContent-height / 2;
     margin-left: - $indexContent-width / 2;
-    // @include debug(#aaa);
+    @include debug(#aaa);
 }
 
 $bar-size: 2px;
