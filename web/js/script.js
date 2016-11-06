@@ -204,6 +204,8 @@ $(function() {
         });
     }
 
+    var lineSpeed = 600;
+
     function drawPointInLine() {
 
         var point = $("#point");
@@ -213,7 +215,7 @@ $(function() {
             translateX: lineLength - 30
         },
         {
-            duration: 600,
+            duration: lineSpeed,
             easing: "linear",
             complete: function() {
 
@@ -232,7 +234,7 @@ $(function() {
             translateX: lineLength
         },
         {
-            duration: 600 / ( lineLength / 30 ),
+            duration: lineSpeed / ( lineLength / 30 ),
             easing: "linear",
             complete: function() {
 
@@ -249,7 +251,6 @@ $(function() {
         });
     }
 
-
     function drawPointInRoot() {
 
         var point = $("#point");
@@ -259,10 +260,9 @@ $(function() {
             width: 10
         },
         {
-            duration: 200,
+            duration: lineSpeed / ( lineLength / 10 ),
             easing: "linear",
             complete: function() {
-                // point.remove();
 
                 var div = $("<div>", {id: "point1"});
                 div.css('width', 2);
@@ -275,7 +275,6 @@ $(function() {
                 div2.css('height', 0);
                 div2.css('left', 0);
                 div2.css('top', (barHeight / 2) - 0);
-
 
                 $("#bar").append(div, div2);
 
@@ -296,7 +295,7 @@ $(function() {
             translateX: 10
         },
         {
-            duration: 200,
+            duration: lineSpeed / ( lineLength / 30 ),
             easing: "linear",
             complete: function() {
 
@@ -309,7 +308,7 @@ $(function() {
             top: (barHeight / 2) - 5
         },
         {
-            duration: 200,
+            duration: lineSpeed / ( lineLength / 30 ),
             easing: "linear",
             complete: function() {
                 drawPointInBar();
@@ -317,7 +316,6 @@ $(function() {
         });
 
     }
-
 
     function drawPointInBar() {
 
@@ -330,7 +328,7 @@ $(function() {
             top: 0
         },
         {
-            duration: 2000,
+            duration: lineSpeed / ( lineLength / barHeight ),
             easing: "linear",
             complete: function() {
                 point.remove();
@@ -342,7 +340,7 @@ $(function() {
             top: barHeight - 10
         },
         {
-            duration: 2000,
+            duration: lineSpeed / ( lineLength / barHeight ),
             easing: "linear",
             complete: function() {
 
@@ -362,7 +360,6 @@ $(function() {
         });
     }
 
-
     function finishPointInBar() {
 
         var point1 = $("#point1");
@@ -375,7 +372,7 @@ $(function() {
             height: 0
         },
         {
-            duration: 2000 / (barHeight / 10),
+            duration: lineSpeed / (barHeight / 10),
             easing: "linear",
             complete: function() {
                 point1.remove();
@@ -388,7 +385,7 @@ $(function() {
             translateY: 10
         },
         {
-            duration: 2000 / (barHeight / 10),
+            duration: lineSpeed / (barHeight / 10),
             easing: "linear",
             complete: function() {
 
@@ -401,7 +398,7 @@ $(function() {
             width: 10
         },
         {
-            duration: 2000 / (barHeight / 10),
+            duration: lineSpeed / (barHeight / 10),
             easing: "linear",
             complete: function() {
                 // point1.remove();
@@ -419,7 +416,7 @@ $(function() {
             translateX: 10
         },
         {
-            duration: 2000 / (barHeight / 10),
+            duration: lineSpeed / (lineLength / 10),
             easing: "linear",
             complete: function() {
 
@@ -452,7 +449,7 @@ $(function() {
             translateX: lineLength - 30
         },
         {
-            duration: 2000,
+            duration: lineSpeed,
             easing: "linear",
             complete: function() {
                 light();
@@ -471,7 +468,7 @@ $(function() {
             translateX: lineLength
         },
         {
-            duration: 2000 / ( lineLength / 30 ),
+            duration: lineSpeed / ( lineLength / 30 ),
             easing: "linear",
             complete: function() {
                 points.remove();
@@ -479,7 +476,6 @@ $(function() {
             }
         });
     }
-
 
     function light() {
 
