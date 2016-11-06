@@ -205,6 +205,7 @@ $(function() {
 
                    setTimeout(function() {
 
+                       $("#link1 a, #link2 a").css('color', '#ccc');
                        $("#atinfo").css('color', '#0072BC')
 
                        var div = $("<div>", {id: "point"});
@@ -234,6 +235,8 @@ $(function() {
             delay: $("#text1").width() * debugSlowLine,
             easing: "linear",
             complete: function() {
+
+                $("#link1 a, #link2 a").css('color', '#ccc');
 
                 var point = $("<div>", {id: "point"});
                 point.css('width', 0);
@@ -576,7 +579,10 @@ $(function() {
 
         $("#hline, #root, #bar, #branch1, #branch2, #hline1, #hline2").css({'background-color': "#999"});
         $("#hline, #root, #bar, #branch1, #branch2, #hline1, #hline2").delay(100).velocity({'background-color': "#ccc"}, 1000);
-        console.timeEnd('fn1')
+        $("#link1 a, #link2 a").css({'color': "#111"});
+        $("#link1 a, #link2 a").delay(500).velocity({'color': "#ccc"}, 1000);
+        $("#link1 a, #link2 a").velocity({'color': "#666"}, 500);
+        console.timeEnd('fn1');
     }
 
     function resetAnim() {
@@ -591,11 +597,11 @@ $(function() {
         branch1.css('width' , 0);
         branch2.css('width' , 0);
 
-        $("#hline, #hline1, #hline2, #root, #branch1, #branch2, #bar").velocity("stop");
+        $("#hline, #hline1, #hline2, #root, #branch1, #branch2, #bar, #link1 a, #link2 a").velocity("stop");
 
         $("#point, #point1, #point2, #point3, #point4").remove();
 
-        $("#atinfo, #text1, #text2").css('color', '#fff');
+        $("#atinfo, #text1, #text2, #link1 a, #link2 a").css('color', '#fff');
     }
 
     function config() {

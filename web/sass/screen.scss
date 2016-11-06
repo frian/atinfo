@@ -30,6 +30,14 @@ body {
     // background: url('/img/bg.png');
 }
 
+a {
+    text-decoration: none;
+}
+
+a.index {
+    color: #fff;
+}
+
 @mixin abs-centered() {
     position: absolute;
     top: 50%;
@@ -214,13 +222,14 @@ $hline-margin: $indexContent-width / 2;
     position: absolute;
     height: 20px;
     width: - $margin-left + ($indexContent-width / 2) - ( 2 * $root-width) - 50px;
-    right: 50px;
+    left: ($indexContent-width / 2) + $root-width;
     line-height: 20px;
     top: 50%;
     font-size: 100%;
-    color: #666;
+    color: #fff;
     font-family: 'Muli', sans-serif;
-    text-align: center;
+    padding-left: 10px;
+    // @include debug(green);
 }
 
 #link1 {
@@ -299,5 +308,22 @@ $hline-margin: $indexContent-width / 2;
         margin-top: -15px + ($bar-height / 2);
         letter-spacing: 6px;
         @include text-tmpl();
+    }
+
+    @mixin link-tmpl() {
+        font-size: 200%;
+        width: - $margin-left + ($indexContent-width / 2) - ( 2 * $root-width) - 50px;
+        left: ($indexContent-width / 2) + $root-width;
+        padding-left: 15px;
+    }
+
+    #link1 {
+        margin-top: -15px - ($bar-height / 2) + ($bar-height / 2) - 25px;
+        @include link-tmpl;
+    }
+
+    #link2 {
+        margin-top: -15px - ($bar-height / 2) + ($bar-height / 2) + 35px;
+        @include link-tmpl;
     }
 }
