@@ -108,7 +108,7 @@ $(function() {
 
     var pointInLinesSize = 30;
 
-    var debugSlow = 1;
+    var debugSlow = 8;
 
     var finishPointInLinesDuration = pointInLinesSize * debugSlow;
     var rootDuration = 10 * 2 * debugSlow;
@@ -187,13 +187,13 @@ $(function() {
     }
 
     function drawBranches() {
-
+console.log(rootDuration);
         branches.velocity(
           {
             width: 10
           },
           {
-            duration: rootDuration * 2,
+            duration: rootDuration,
             easing: "linear",
             complete: function() {
                $("#text1, #text2").css('color', '#ccc');
@@ -227,12 +227,30 @@ $(function() {
                 }
                 else {
                     var point = $("<div>", {id: "point"});
-                    point.css('width', 30);
+                    point.css('width', 0);
                     point.css('left', 0);
                     line.append(point);
-                    drawPointInLine()
+                    startdrawPointInLine();
                     return;
                 }
+            }
+        });
+    }
+
+    function startdrawPointInLine() {
+
+        var point = $("#point");
+
+        point.velocity(
+        {
+            width: 30
+        },
+        {
+            duration: finishPointInLinesDuration,
+            easing: "linear",
+            complete: function() {
+
+                drawPointInLine();
             }
         });
     }
@@ -460,18 +478,36 @@ $(function() {
                 }
                 else {
                     var div = $("<div>", {id: "point"});
-                    div.css('width', 30);
+                    div.css('width', 0);
                     div.css('left', 0);
 
                     var div2 = $("<div>", {id: "point2"});
-                    div2.css('width', 30);
+                    div2.css('width', 0);
                     div2.css('left', 0);
 
                     $("#hline1").append(div);
                     $("#hline2").append(div2);
 
-                    drawPointInLines();
+                    startPointInLines();
                 }
+            }
+        });
+    }
+
+    function startPointInLines() {
+
+        var points = $("#point, #point2");
+
+        points.velocity(
+        {
+            width: 30
+        },
+        {
+            duration: finishPointInLinesDuration,
+            easing: "linear",
+            complete: function() {
+
+                drawPointInLines();
             }
         });
     }
@@ -548,12 +584,12 @@ $(function() {
         if (windowWidth >= 700) {
             barHeight = 200;
             contentWidth = 500;
-            debugSlow = 1
+            debugSlow = 8;
         }
 
         lineLength = ((window.innerWidth - contentWidth) / 2) - 20; // -20 margin
 
-        barDuration = barHeight * debugSlow;
+        barDuration = barHeight / 2 * debugSlow;
 
         pointInLinesDuration = (lineLength - pointInLinesSize) * debugSlow;
 
