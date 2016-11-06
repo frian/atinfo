@@ -106,7 +106,16 @@ $(function() {
 
     var windowWidth, lineLength, barHeight, contentWidth;
 
-    var pointInBarSpeed;
+    var pointInLinesSize = 30;
+
+    var debugSlow = 1;
+
+    var finishPointInLinesDuration = pointInLinesSize * debugSlow;
+    var rootDuration = 10 * 2 * debugSlow;
+    var branchDuration = rootDuration * 2 * debugSlow;
+    var barDuration;
+
+    var pointInLinesDuration;
 
     var line = $("#hline");
     var line1 = $("#hline1");
@@ -134,9 +143,10 @@ $(function() {
             width: lineLength
         },
         {
-            duration: 1000,
+            duration: pointInLinesDuration * 2,
             easing: "linear",
             complete: function() {
+                console.timeEnd('someFunction');
                 $("#atinfo").css('color', '#ddd')
                 drawRoot();
             }
@@ -150,7 +160,7 @@ $(function() {
             width: 10
           },
           {
-            duration: 200,
+            duration: rootDuration * 2,
             easing: "linear",
             complete: function() {
                drawBar();
@@ -167,7 +177,7 @@ $(function() {
             "margin-top" : -(barHeight / 2)
         },
         {
-            duration: 500,
+            duration: barDuration * 2,
             easing: "linear",
             complete: function() {
                 drawBranches()
@@ -183,7 +193,7 @@ $(function() {
             width: 10
           },
           {
-            duration: 100,
+            duration: rootDuration * 2,
             easing: "linear",
             complete: function() {
                $("#text1, #text2").css('color', '#ccc');
@@ -200,7 +210,7 @@ $(function() {
             width: lineLength
         },
         {
-            duration: 1000,
+            duration: pointInLinesDuration * 2,
             easing: "linear",
             complete: function() {
 
@@ -227,8 +237,6 @@ $(function() {
         });
     }
 
-    var lineSpeed = 600;
-
     function drawPointInLine() {
 
         var point = $("#point");
@@ -238,7 +246,7 @@ $(function() {
             translateX: lineLength - 30
         },
         {
-            duration: lineLength - 30,
+            duration: pointInLinesDuration,
             easing: "linear",
             complete: function() {
 
@@ -257,7 +265,7 @@ $(function() {
             translateX: lineLength
         },
         {
-            duration: 10,
+            duration: finishPointInLinesDuration,
             easing: "linear",
             complete: function() {
 
@@ -283,7 +291,7 @@ $(function() {
             width: 10
         },
         {
-            duration: 10,
+            duration: rootDuration,
             easing: "linear",
             complete: function() {
 
@@ -318,7 +326,7 @@ $(function() {
             translateX: 10
         },
         {
-            duration: 10 * 2,
+            duration: rootDuration,
             easing: "linear",
             complete: function() {
 
@@ -331,7 +339,7 @@ $(function() {
             top: (barHeight / 2) - 5
         },
         {
-            duration: 10 * 2,
+            duration: rootDuration,
             easing: "linear",
             complete: function() {
                 drawPointInBar();
@@ -351,7 +359,7 @@ $(function() {
             top: 0
         },
         {
-            duration: barHeight,
+            duration: barDuration,
             easing: "linear",
             complete: function() {
                 point.remove();
@@ -363,7 +371,7 @@ $(function() {
             top: barHeight - 10
         },
         {
-            duration: barHeight,
+            duration: barDuration,
             easing: "linear",
             complete: function() {
 
@@ -395,7 +403,7 @@ $(function() {
             height: 0
         },
         {
-            duration: 10 * 2,
+            duration: rootDuration,
             easing: "linear",
             complete: function() {
                 point1.remove();
@@ -408,7 +416,7 @@ $(function() {
             translateY: 10
         },
         {
-            duration: 10 * 2,
+            duration: rootDuration,
             easing: "linear",
             complete: function() {
 
@@ -421,7 +429,7 @@ $(function() {
             width: 10
         },
         {
-            duration: 10 * 2,
+            duration: rootDuration,
             easing: "linear",
             complete: function() {
                 // point1.remove();
@@ -439,7 +447,7 @@ $(function() {
             translateX: 10
         },
         {
-            duration: 10 * 2,
+            duration: rootDuration,
             easing: "linear",
             complete: function() {
 
@@ -477,7 +485,7 @@ $(function() {
             translateX: lineLength - 30
         },
         {
-            duration: lineLength - 30,
+            duration: pointInLinesDuration,
             easing: "linear",
             complete: function() {
                 light();
@@ -496,7 +504,7 @@ $(function() {
             translateX: lineLength
         },
         {
-            duration: Math.abs(lineSpeed / ( lineLength / 30 )),
+            duration: finishPointInLinesDuration,
             easing: "linear",
             complete: function() {
                 points.remove();
@@ -535,23 +543,21 @@ $(function() {
 
         barHeight = 100;
         contentWidth = 300;
+        debugSlow = 4;
 
         if (windowWidth >= 700) {
             barHeight = 200;
             contentWidth = 500;
+            debugSlow = 1
         }
 
         lineLength = ((window.innerWidth - contentWidth) / 2) - 20; // -20 margin
 
-        pointInBarSpeed = Math.abs(lineSpeed / ( lineLength / 30 ));
+        barDuration = barHeight * debugSlow;
 
-        if (lineLength < 20 ) {
-            pointInBarSpeed = 600;
-        }
+        pointInLinesDuration = (lineLength - pointInLinesSize) * debugSlow;
 
-        console.log(lineLength);
-
-
+        finishPointInLinesDuration = pointInLinesSize * debugSlow;
     }
 
     config();
@@ -560,7 +566,10 @@ $(function() {
 
     console.time('fn1')
     // start the cycle
-    drawLine();
+    setTimeout(function() {
+        drawLine();
+    }, 500);
+
 
     /*
     *  on resize
