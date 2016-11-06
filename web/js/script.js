@@ -129,6 +129,7 @@ $(function() {
         },
         {
             duration: 1000,
+            easing: "linear",
             complete: function() {
                 $("#atinfo").css('color', '#ddd')
                 drawRoot();
@@ -144,6 +145,7 @@ $(function() {
           },
           {
             duration: 200,
+            easing: "linear",
             complete: function() {
                drawBar();
             }
@@ -160,6 +162,7 @@ $(function() {
         },
         {
             duration: 500,
+            easing: "linear",
             complete: function() {
                 drawBranches()
             }
@@ -175,6 +178,7 @@ $(function() {
           },
           {
             duration: 100,
+            easing: "linear",
             complete: function() {
                $("#text1, #text2").css('color', '#ccc');
                drawLines();
@@ -191,6 +195,7 @@ $(function() {
         },
         {
             duration: 1000,
+            easing: "linear",
             complete: function() {
                 var point = $("<div>", {id: "point"});
                 line.append(point);
@@ -211,6 +216,26 @@ $(function() {
             duration: 600,
             easing: "linear",
             complete: function() {
+
+                finishPointInLine();
+            }
+        });
+    }
+
+    function finishPointInLine() {
+
+        var point = $("#point");
+
+        point.velocity(
+        {
+            width: 0,
+            translateX: lineLength
+        },
+        {
+            duration: 600 / ( lineLength / 30 ),
+            easing: "linear",
+            complete: function() {
+
                 point.remove();
 
                 $("#atinfo").css('color', '#0072BC')
@@ -224,6 +249,7 @@ $(function() {
         });
     }
 
+
     function drawPointInRoot() {
 
         var point = $("#point");
@@ -233,43 +259,78 @@ $(function() {
             width: 10
         },
         {
-            duration: 300,
+            duration: 200,
             easing: "linear",
             complete: function() {
-                point.remove();
+                // point.remove();
 
-                var div = $("<div>", {id: "point"});
+                var div = $("<div>", {id: "point1"});
                 div.css('width', 2);
-                div.css('height', 10);
+                div.css('height', 0);
                 div.css('left', 0);
-                div.css('top', (barHeight / 2) - 5);
+                div.css('top', (barHeight / 2) - 0);
 
                 var div2 = $("<div>", {id: "point2"});
                 div2.css('width', 2);
-                div2.css('height', 10);
+                div2.css('height', 0);
                 div2.css('left', 0);
-                div2.css('top', (barHeight / 2) - 5);
+                div2.css('top', (barHeight / 2) - 0);
 
 
                 $("#bar").append(div, div2);
 
-                drawPointInBar();
+                finishPointInRoot();
             }
         });
     }
 
-    function drawPointInBar() {
+    function finishPointInRoot() {
 
         var point = $("#point");
-        var point2 = $("#point2");
+        var points = $("#point1, #point2");
 
 
         point.velocity(
         {
+            width: 0,
+            translateX: 10
+        },
+        {
+            duration: 200,
+            easing: "linear",
+            complete: function() {
+
+            }
+        });
+
+        points.velocity(
+        {
+            height: 10,
+            top: (barHeight / 2) - 5
+        },
+        {
+            duration: 200,
+            easing: "linear",
+            complete: function() {
+                drawPointInBar();
+            }
+        });
+
+    }
+
+
+    function drawPointInBar() {
+
+        var point1 = $("#point1");
+        var point2 = $("#point2");
+
+
+        point1.velocity(
+        {
             top: 0
         },
         {
-            duration: 300,
+            duration: 2000,
             easing: "linear",
             complete: function() {
                 point.remove();
@@ -281,39 +342,84 @@ $(function() {
             top: barHeight - 10
         },
         {
-            duration: 300,
+            duration: 2000,
             easing: "linear",
             complete: function() {
 
-                point.remove();
-                point2.remove();
-
-                var div = $("<div>", {id: "point"});
+                var div = $("<div>", {id: "point3"});
                 div.css('width', 0);
                 div.css('left', 0);
 
-                var div2 = $("<div>", {id: "point2"});
+                var div2 = $("<div>", {id: "point4"});
                 div2.css('width', 0);
                 div2.css('left', 0);
 
                 $("#branch1").append(div);
                 $("#branch2").append(div2);
 
-                drawPointsInBranches();
+                finishPointInBar();
             }
         });
     }
 
-    function drawPointsInBranches() {
 
-        var points = $("#point, #point2");
+    function finishPointInBar() {
+
+        var point1 = $("#point1");
+        var point2 = $("#point2");
+
+        var points = $("#point3, #point4");
+
+        point1.velocity(
+        {
+            height: 0
+        },
+        {
+            duration: 2000 / (barHeight / 10),
+            easing: "linear",
+            complete: function() {
+                point1.remove();
+            }
+        });
+
+        point2.velocity(
+        {
+            height: 0,
+            translateY: 10
+        },
+        {
+            duration: 2000 / (barHeight / 10),
+            easing: "linear",
+            complete: function() {
+
+                drawPointsInBranches();
+            }
+        });
 
         points.velocity(
         {
             width: 10
         },
         {
-            duration: 100,
+            duration: 2000 / (barHeight / 10),
+            easing: "linear",
+            complete: function() {
+                // point1.remove();
+            }
+        });
+    }
+
+    function drawPointsInBranches() {
+
+        var points = $("#point3, #point4");
+
+        points.velocity(
+        {
+            width: 0,
+            translateX: 10
+        },
+        {
+            duration: 2000 / (barHeight / 10),
             easing: "linear",
             complete: function() {
 
@@ -343,22 +449,42 @@ $(function() {
 
         points.velocity(
         {
-            translateX: lineLength
+            translateX: lineLength - 30
         },
         {
-            duration: 600,
+            duration: 2000,
             easing: "linear",
             complete: function() {
-                points.remove();
                 light();
+                finishPointInLines();
             }
         });
     }
 
+    function finishPointInLines() {
+
+        var points = $("#point, #point2");
+
+        points.velocity(
+        {
+            width: 0,
+            translateX: lineLength
+        },
+        {
+            duration: 2000 / ( lineLength / 30 ),
+            easing: "linear",
+            complete: function() {
+                points.remove();
+                // light();
+            }
+        });
+    }
+
+
     function light() {
 
         $("#hline, #root, #bar, #branch1, #branch2, #hline1, #hline2").css({'background-color': "#999"});
-        $("#hline, #root, #bar, #branch1, #branch2, #hline1, #hline2").delay(100).animate({'background-color': "#ccc"}, 1000);
+        $("#hline, #root, #bar, #branch1, #branch2, #hline1, #hline2").delay(100).velocity({'background-color': "#ccc"}, 1000);
         console.timeEnd('fn1')
     }
 
@@ -396,7 +522,6 @@ $(function() {
     }
 
     config();
-
 
     resetAnim();
 

@@ -44,6 +44,14 @@ body {
     background-color: red;
 }
 
+#point1 {
+    position : absolute;
+    left: -30px;
+    width: 30px;
+    height: 2px;
+    background-color: red;
+}
+
 #point2 {
     position : absolute;
     left: -30px;
@@ -52,6 +60,21 @@ body {
     background-color: red;
 }
 
+#point3 {
+    position : absolute;
+    left: -30px;
+    width: 30px;
+    height: 2px;
+    background-color: red;
+}
+
+#point4 {
+    position : absolute;
+    left: -30px;
+    width: 30px;
+    height: 2px;
+    background-color: red;
+}
 
 $lineColor: #ccc;
 @mixin line-color {
