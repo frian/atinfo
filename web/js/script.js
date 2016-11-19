@@ -41,7 +41,7 @@ $(function() {
 
 	// handle link clicks
 	$(".menu li a").click(function(e) {
-
+console.log('clicked');
 		if ( $("#top").length ) {
 			$("#top").remove();
 		}
@@ -51,7 +51,7 @@ $(function() {
 		var old = current;
 
 		current = '#' + $(this).text().toLowerCase();
-
+console.log(current);
 		$(current).css( "opacity" , 0 );
 
 
@@ -103,7 +103,6 @@ $(function() {
     /**
      * -- Animation
      */
-
     var windowWidth, lineLength, barHeight, contentWidth;
 
     var pointInLinesSize = 30;
