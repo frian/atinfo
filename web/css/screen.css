@@ -411,15 +411,14 @@ a.index {
   width: 100%;
   display: block !important;
   height: 40px;
-  background-color: #eee;
-  border-bottom: 1px solid black;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid white;
   /* 	@include debug(white); */
 }
 
 /* line 79, ../sass/screen.scss */
 ul.menu {
   display: table;
-  border: 1px solid red;
 }
 
 /* line 84, ../sass/screen.scss */
@@ -430,10 +429,11 @@ ul.menu li {
 
 /* line 89, ../sass/screen.scss */
 ul.menu li a {
+  color: #333;
   font-family: 'Muli', sans-serif;
 }
 
-/* line 93, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .screen {
   display: table;
   width: 100%;
@@ -443,21 +443,21 @@ ul.menu li a {
   border: 1px solid red;
 }
 
-/* line 102, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 .cell {
   width: 100% !important;
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 110, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 #contact .page {
   border: 1px solid red;
   line-height: 2em;
   text-align: left;
 }
 
-/* line 117, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 ul.menu li {
   height: 40px;
   line-height: 40px;
@@ -466,7 +466,7 @@ ul.menu li {
 /*
 	-- FORMS ------------------------------------------------------------------
 */
-/* line 127, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 [type="text"], [type="email"], textarea {
   font-family: Muli;
   color: #222;
@@ -478,17 +478,17 @@ ul.menu li {
   box-shadow: none;
 }
 
-/* line 138, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 [type="text"]:focus, [type="email"]:focus, textarea:focus {
   background-color: #eee;
 }
 
-/* line 142, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 textarea {
   width: 100%;
 }
 
-/* line 146, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 .formErrors {
   color: red;
   font-size: 80%;
@@ -496,14 +496,14 @@ textarea {
 }
 
 @media all and (min-width: 40em) {
-  /* line 154, ../sass/screen.scss */
+  /* line 155, ../sass/screen.scss */
   #contact .page, #services .page {
     font-size: 200%;
     width: 600px;
     margin: auto;
   }
 
-  /* line 160, ../sass/screen.scss */
+  /* line 161, ../sass/screen.scss */
   [type="text"], [type="email"], textarea {
     font-size: 70%;
   }

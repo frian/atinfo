@@ -41,7 +41,7 @@ $(function() {
 
 	// handle link clicks
 	$(".menu li a").click(function(e) {
-console.log('clicked');
+
 		if ( $("#top").length ) {
 			$("#top").remove();
 		}
@@ -51,7 +51,7 @@ console.log('clicked');
 		var old = current;
 
 		current = '#' + $(this).text().toLowerCase();
-console.log(current);
+
 		$(current).css( "opacity" , 0 );
 
 

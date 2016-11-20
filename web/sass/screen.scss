@@ -71,14 +71,14 @@ $topBarHeight : 40px;
 	width : 100%;
 	display : block!important;
 	height : $topBarHeight;
-	background-color : #eee;
-	border-bottom : 1px solid black;
+	background-color : #f0f0f0;
+	border-bottom : 1px solid white;
 /* 	@include debug(white); */
 }
 
 ul.menu {
     display: table;
-    @include debug(red);
+    // @include debug(red);
 }
 
 ul.menu li {
@@ -87,6 +87,7 @@ ul.menu li {
 }
 
 ul.menu li a {
+    color: #333;
     font-family: 'Muli', sans-serif;
 }
 
