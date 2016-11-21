@@ -48,7 +48,7 @@ $indexContent-height :300px;
     width: $indexContent-width;
     margin-top: - $indexContent-height / 2;
     margin-left: - $indexContent-width / 2;
-    @include debug(#aaa);
+    // @include debug(#aaa);
 }
 
 $bar-size: 2px;

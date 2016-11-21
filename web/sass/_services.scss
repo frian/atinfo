@@ -1,0 +1,279 @@
+/*
+	-- TOP AND BOTTOM MASKS ------------------------------------------------------
+*/
+.mask {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: $bg-color;
+    z-index: 10;
+}
+#mask {
+    margin-top: 250px;
+}
+
+#mask2 {
+    margin-top: -250px;
+    transform-origin: 0% 0%;
+    @include transform(rotateX(180deg)  );
+}
+
+.mask2Container {
+    @include transform(rotateX(180deg));
+}
+
+
+/*
+	-- TRUNK ---------------------------------------------------------------------
+*/
+#trunk {
+  height: 2000px;
+  width: 2000px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  margin: auto;
+  margin-left: -282px;
+  border: 2px solid #333;
+  @include border-left-radius(1000px);
+}
+
+#trunkMask {
+    width: 50px;
+    height: 500px;
+    margin-top: -250px;
+    margin-left: -290px;
+    background-color: $bg-color;
+    @include abs-centered();
+    @include animation('growTrunk 4s linear forwards');
+}
+
+@include keyframes(growTrunk) {
+  0%   { margin-top: -250px; }
+  100% { margin-top: -750px; }
+}
+
+
+/*
+	-- LEAVES --------------------------------------------------------------------
+*/
+.leaf {
+    @include border-radius(1% 90%);
+    border: 2px solid $bg-color;
+    height: 100px;
+    margin: auto;
+    width: 100px;
+    position: absolute;
+    left: 0px;
+    transform-origin: left top;
+
+    background-color: #080;
+}
+
+#leaf1 {
+    top: 500px;
+    @include transform(rotateZ(180deg));
+    @include animation('leafGrow1 6s ease-out forwards');
+}
+
+#leaf2 {
+    top: 500px;
+    @include transform(rotateX(180deg) scale(0.01));
+    @include animation('leafGrow2 6s ease-out 1s forwards');
+}
+
+#leaf3 {
+    top: 350px;
+    left: -26px;
+    @include transform(rotateZ(180deg) scale(0.01));
+    @include animation('leafGrow3 6s ease-out 2s forwards');
+}
+
+#leaf4 {
+    top: 250px;
+    left: -34px;
+    @include transform(rotateX(180deg) scale(0.01));
+    @include animation('leafGrow4 6s ease-out 3s forwards');
+}
+
+
+@include keyframes(leafGrow1) {
+    from {
+        @include transform(scale(0.01) rotateZ(180deg));
+
+    }
+    to {
+        @include transform(scale(1) rotateZ(180deg));
+    }
+}
+
+@include keyframes(leafGrow2) {
+    from {
+        @include transform(scale(0.01) rotateX(180deg));
+
+    }
+    to {
+        @include transform(scale(1) rotateX(180deg));
+    }
+}
+
+@include keyframes(leafGrow3) {
+    from {
+        @include transform(scale(0.01) rotateX(180deg));
+
+    }
+    to {
+        @include transform(scale(0.8) rotateX(180deg));
+    }
+}
+
+@include keyframes(leafGrow4) {
+    from {
+        @include transform(scale(0.01) rotateZ(180deg));
+
+    }
+    to {
+        @include transform(scale(0.6) rotateZ(180deg));
+    }
+}
+
+
+/*
+	-- CENTER --------------------------------------------------------------------
+*/
+$bgGrey1: #fff;
+$bgGrey2: #ddd;
+$bgColor1: #0ac;
+$bgColor2: #0072BC;
+
+$centerSize: 40px;
+#center {
+    position: absolute;
+    border: 2px solid $bg-color;
+    background-color: $bgColor2;
+    width: $centerSize;
+    height: $centerSize;
+    top: -$centerSize / 2;
+    left: -$centerSize / 2;
+    z-index: 50;
+    @include border-radius($centerSize);
+    @include transform(scale(0));
+    @include animation('centerGrow 4s ease-out 4s forwards');
+}
+
+@include keyframes(centerGrow) {
+    from {
+        @include transform(scale(0));
+    }
+    to {
+        @include transform(scale(1));
+    }
+}
+
+
+/*
+	-- PETALS --------------------------------------------------------------------
+*/
+.petal {
+    position: absolute;
+    top: 1px;
+    left: 3px;
+    border-radius: 50% 90% 10% 95%;
+    border-top: 2px solid $bg-color;
+    border-right: 2px solid $bg-color;
+    height: 50px;
+    margin: auto;
+    width: 50px;
+    transform-origin: left top;
+    opacity: 0;
+    z-index: 20;
+}
+
+
+// animation
+@mixin defineAnim($anim) {
+    @include animation("#{$anim} 6s ease-out 4s forwards");
+}
+
+// create petal ids and add animation
+@for $i from 1 through 18 {
+    #no#{$i} { @include defineAnim( "spin#{$i}") }
+}
+
+// start angle
+$angleOffset: -5deg;
+$angleStep: 20deg;
+
+// petal angles
+$spin1Angle:  $angleStep * 18;
+$spin2Angle:  $angleStep * 17;
+$spin3Angle:  $angleStep * 16;
+$spin4Angle:  $angleStep * 15;
+$spin5Angle:  $angleStep * 14;
+$spin6Angle:  $angleStep * 13;
+$spin7Angle:  $angleStep * 12;
+$spin8Angle:  $angleStep * 11;
+$spin9Angle:  $angleStep * 10;
+$spin10Angle: $angleStep * 9;
+$spin11Angle: $angleStep * 8;
+$spin12Angle: $angleStep * 7;
+$spin13Angle: $angleStep * 6;
+$spin14Angle: $angleStep * 5;
+$spin15Angle: $angleStep * 4;
+$spin16Angle: $angleStep * 3;
+$spin17Angle: $angleStep * 2;
+$spin18Angle: $angleStep;
+
+@mixin animStart {
+    opacity: 0;
+    @include transform(rotate($angleOffset) scale(0.01));
+}
+
+@mixin animEnd($angle,$scale) {
+    opacity: 1;
+    @include transform(rotate($angle) scale($scale));
+}
+
+@mixin createAnim($name, $angle, $startColor, $endColor) {
+
+    @include keyframes(#{$name}) {
+        0% {
+            @include animStart;
+        }
+        50% {
+            @include animEnd($angle, 1);
+            background-color: $startColor;
+        }
+        60% {
+            @include animEnd($angle, 1);
+            background-color: $endColor;
+        }
+        100% {
+            @include animEnd($angle, 2);
+            background-color: $endColor;
+            opacity: 0.5;
+        }
+    }
+}
+
+@include createAnim("spin1", $angleOffset - $spin1Angle, $bgGrey1, $bgColor1);
+@include createAnim("spin2", $angleOffset - $spin2Angle, $bgGrey2, $bgColor2);
+@include createAnim("spin3", $angleOffset - $spin3Angle, $bgGrey1, $bgColor1);
+@include createAnim("spin4", $angleOffset - $spin4Angle, $bgGrey2, $bgColor2);
+@include createAnim("spin5", $angleOffset - $spin5Angle, $bgGrey1, $bgColor1);
+@include createAnim("spin6", $angleOffset - $spin6Angle, $bgGrey2, $bgColor2);
+@include createAnim("spin7", $angleOffset - $spin7Angle, $bgGrey1, $bgColor1);
+@include createAnim("spin8", $angleOffset - $spin8Angle, $bgGrey2, $bgColor2);
+@include createAnim("spin9", $angleOffset - $spin9Angle, $bgGrey1, $bgColor1);
+@include createAnim("spin10", $angleOffset - $spin10Angle, $bgGrey2, $bgColor2);
+@include createAnim("spin11", $angleOffset - $spin11Angle, $bgGrey1, $bgColor1);
+@include createAnim("spin12", $angleOffset - $spin12Angle, $bgGrey2, $bgColor2);
+@include createAnim("spin13", $angleOffset - $spin13Angle, $bgGrey1, $bgColor1);
+@include createAnim("spin14", $angleOffset - $spin14Angle, $bgGrey2, $bgColor2);
+@include createAnim("spin15", $angleOffset - $spin15Angle, $bgGrey1, $bgColor1);
+@include createAnim("spin16", $angleOffset - $spin16Angle, $bgGrey2, $bgColor2);
+@include createAnim("spin17", $angleOffset - $spin17Angle, $bgGrey1, $bgColor1);
+@include createAnim("spin18", $angleOffset - $spin18Angle, $bgGrey2, $bgColor2);

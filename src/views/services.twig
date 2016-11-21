@@ -12,12 +12,24 @@
 	</div>
 
     <div class="mask" id="mask"></div><div  class="mask" id="mask2"><div class="mask2Container"></div></div>
-    <div class="serviceContainer">
+    <div id="trunk">
 
     </div>
     <div id="trunkMask"></div>
-    <div id="indexContent">
 
+
+    <div id="indexContent">
+        <div id="center"></div>
+
+        {# CREATE PETALS #}
+        {% for i in 1..18 %}
+            <div id="no{{ i }}" class="petal"></div>
+        {% endfor %}
+
+        {# CREATE LEAVES #}
+        {% for i in 1..4 %}
+            <div id="leaf{{ i }}" class="leaf"></div>
+        {% endfor %}
     </div>
 </div>
 
