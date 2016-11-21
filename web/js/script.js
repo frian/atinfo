@@ -119,4 +119,26 @@ $(function() {
         }, 30);
     });
 
+
+    // var sign = $("#sign");
+    //
+    // sign.css("transform", "rotateZ(0deg) translateX(-150px) rotateZ(0deg)");
+    // //
+    // sign.velocity(
+    // {
+    //     rotateZ: "360deg",
+    //     translateX: "-150px",
+    //     // translateY: "-150px",
+    //     rotateZ: "-360deg",
+    // },
+    // {
+    //     duration: 2000,
+    //     easing: "linear",
+    //     // complete: function() {
+    //     //     $("#atinfo").css('color', '#ddd')
+    //     //     drawRoot();
+    //     // }
+    // });
+
+
 });

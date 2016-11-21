@@ -25,6 +25,12 @@
   background-image: -ms-#{$image}; // Vendor prefixes for IE 10.
 }
 
+@mixin abs-centered() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
 @mixin keyframes( $name )
 {
     @-webkit-keyframes #{$name} {
@@ -50,6 +56,23 @@ $default-animation-direction: normal;
 $default-animation-play-state: running;
 $default-animation-delay: 0s;
 $default-animation-fill-mode: forwards;
+
+@mixin animation($animate...) {
+    $max: length($animate);
+    $animations: '';
+
+    @for $i from 1 through $max {
+        $animations: #{$animations + nth($animate, $i)};
+
+        @if $i < $max {
+            $animations: #{$animations + ", "};
+        }
+    }
+    -webkit-animation: $animations;
+    -moz-animation:    $animations;
+    -o-animation:      $animations;
+    animation:         $animations;
+}
 
 /* Simple animation with named arguments */
 @mixin animation-simple(

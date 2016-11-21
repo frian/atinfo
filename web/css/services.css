@@ -1,0 +1,170 @@
+/* atinfo base scss */
+/* COMPASS IMPORTS */
+/* line 5, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* OWN MIXINS */
+/* Simple animation with named arguments */
+/* line 4, ../sass/services.scss */
+.mask {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  z-index: 10;
+}
+
+/* line 12, ../sass/services.scss */
+#mask {
+  margin-top: 250px;
+}
+
+/* line 16, ../sass/services.scss */
+#mask2 {
+  margin-top: -250px;
+  transform-origin: 0% 0%;
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+/* line 22, ../sass/services.scss */
+#trunkMask {
+  width: 50px;
+  height: 500px;
+  margin-top: -250px;
+  margin-left: -290px;
+  background-color: #eee;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-animation: growTrunk 2s linear forwards;
+  -moz-animation: growTrunk 2s linear forwards;
+  -o-animation: growTrunk 2s linear forwards;
+  animation: growTrunk 2s linear forwards;
+}
+
+/* line 36, ../sass/services.scss */
+.mask2Container {
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+/* line 41, ../sass/services.scss */
+.serviceContainer {
+  height: 2000px;
+  width: 2000px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  margin: auto;
+  margin-left: -282px;
+  border: 2px solid #333;
+  -moz-border-radius-topleft: 1000px;
+  -webkit-border-top-left-radius: 1000px;
+  border-top-left-radius: 1000px;
+  -moz-border-radius-bottomleft: 1000px;
+  -webkit-border-bottom-left-radius: 1000px;
+  border-bottom-left-radius: 1000px;
+}
+
+@-webkit-keyframes growTrunk {
+  0% {
+    margin-top: -250px;
+  }
+  100% {
+    margin-top: -750px;
+  }
+}
+@-moz-keyframes growTrunk {
+  0% {
+    margin-top: -250px;
+  }
+  100% {
+    margin-top: -750px;
+  }
+}
+@-o-keyframes growTrunk {
+  0% {
+    margin-top: -250px;
+  }
+  100% {
+    margin-top: -750px;
+  }
+}
+@keyframes $growTrunk {
+  0% {
+    margin-top: -250px;
+  }
+  100% {
+    margin-top: -750px;
+  }
+}
