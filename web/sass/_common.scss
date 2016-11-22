@@ -1,0 +1,15 @@
+$bgGrey1: #fff;
+$bgGrey2: #ddd;
+$bgColor1: #0ac;
+$bgColor2: #0072BC;
+
+$bg-color: #eee;
+
+$main-font: 'Gruppo', sans-serif;
+
+
+@mixin abs-centered() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}

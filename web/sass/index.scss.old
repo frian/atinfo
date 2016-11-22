@@ -1,0 +1,286 @@
+
+#point {
+    position : absolute;
+    width: 30px;
+    height: 2px;
+    background-color: red;
+    @include border-radius(50%);
+}
+
+#point1 {
+    position : absolute;
+    background-color: red;
+}
+
+#point2 {
+    position : absolute;
+    width: 30px;
+    height: 2px;
+    background-color: red;
+}
+
+#point3 {
+    position : absolute;
+    width: 30px;
+    height: 2px;
+    background-color: red;
+}
+
+#point4 {
+    position : absolute;
+    width: 30px;
+    height: 2px;
+    background-color: red;
+}
+
+$lineColor: #ccc;
+@mixin line-color {
+    background-color: $lineColor;
+}
+
+
+$indexContent-width : 300px;
+$indexContent-height :300px;
+
+#indexContent {
+    @include abs-centered();
+    height: $indexContent-height;
+    width: $indexContent-width;
+    margin-top: - $indexContent-height / 2;
+    margin-left: - $indexContent-width / 2;
+    // @include debug(#aaa);
+}
+
+$bar-size: 2px;
+$root-width: 10px;
+$root-height: $bar-size;
+
+$margin-left: 0px;
+
+
+#root {
+    @include abs-centered();
+    margin-top: - $root-height / 2;
+    margin-left: $margin-left - $root-width - ($bar-size / 2);
+    // width: $root-width;
+    height: $root-height;
+    @include line-color();
+}
+
+$bar-height: 100px;
+
+#bar {
+    @include abs-centered();
+    margin-top: - $bar-height / 2;
+    margin-left: $margin-left - $bar-size / 2;
+    width: $bar-size;
+    // height: $bar-height;
+    @include line-color();
+}
+
+
+@mixin branch-tmpl() {
+    @include abs-centered();
+    // width: $root-width;
+    height: $root-height;
+    @include line-color();
+}
+
+#branch1 {
+    margin-left: $margin-left + $bar-size / 2;
+    margin-top: - $bar-height / 2;
+    @include branch-tmpl();
+}
+
+#branch2 {
+    margin-left: $margin-left + $bar-size / 2;
+    margin-top: ($bar-height / 2) - $bar-size ;
+    @include branch-tmpl();
+}
+
+@mixin hline-tmpl {
+
+    // width: 1000px;
+    height: $root-height;
+    @include line-color();
+}
+
+#hline {
+    position: absolute;
+    top: 50%;
+    left : 0px;
+    margin-top: - $root-height / 2;
+    // margin-left: -1000px;
+    @include hline-tmpl();
+}
+
+$hline-margin: $indexContent-width / 2;
+#hline1 {
+    @include abs-centered();;
+    margin-left: $hline-margin;
+    margin-top: - $bar-height / 2;
+    @include hline-tmpl();
+}
+
+#hline2 {
+    @include abs-centered();
+    margin-left: $hline-margin;
+    margin-top: ($bar-height / 2) - $bar-size ;
+    @include hline-tmpl();
+}
+
+
+#atinfo {
+    position: absolute;
+    height: 40px;
+    width: $margin-left + ($indexContent-width / 2) - ( 2 * $root-width) + 5px;
+    text-align: right;
+    line-height: 40px;
+    top: 50%;
+    margin-top: -18px;
+    font-size: 90px;
+    // color : #0072BC;
+    color : #fff;
+    font-family: 'LeagueGothic', sans-serif;
+    // @include debug(green);
+}
+
+@mixin text-tmpl() {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: - $margin-left + ($indexContent-width / 2) - ( 2 * $root-width) - 20px;
+    height: 30px;
+    line-height: 30px;
+
+    font-size: 25px;
+    // color: #ED1C24;
+    color: #fff;
+    font-family: 'BebasNeue', sans-serif;
+    white-space:nowrap;
+    // @include debug(green);
+}
+
+#text1 {
+    margin-top: -12px - ($bar-height / 2);
+    letter-spacing: 1px;
+    @include text-tmpl();
+}
+
+#text2 {
+    margin-top: -15px + ($bar-height / 2);
+    letter-spacing: 3px;
+    @include text-tmpl();
+}
+
+@mixin link-tmpl() {
+    position: absolute;
+    height: 20px;
+    width: - $margin-left + ($indexContent-width / 2) - ( 2 * $root-width) - 50px;
+    left: ($indexContent-width / 2) + $root-width;
+    line-height: 20px;
+    top: 50%;
+    font-size: 100%;
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+    padding-left: 10px;
+    // @include debug(green);
+}
+
+#link1 {
+    margin-top: -15px - ($bar-height / 2) + ($bar-height / 2) - 10px;
+    @include link-tmpl;
+}
+
+#link2 {
+    margin-top: -15px - ($bar-height / 2) + ($bar-height / 2) + 20px;
+    @include link-tmpl;
+}
+
+
+
+@media all and (min-width: 40em) {
+
+    $bar-height: 200px;
+
+    $indexContent-width : 500px;
+    $indexContent-height :500px;
+
+    $hline-margin: $indexContent-width / 2;
+
+    #hline1 {
+        margin-top: - $bar-height / 2;
+        margin-left: $hline-margin;
+    }
+
+    #hline2 {
+        margin-left: $hline-margin;
+        margin-top: ($bar-height / 2) - $bar-size ;
+    }
+
+    #branch1 {
+        margin-top: - $bar-height / 2;
+    }
+
+    #branch2 {
+        margin-top: ($bar-height / 2) - $bar-size ;
+    }
+
+    #text1 {
+        margin-top: -12px - ($bar-height / 2);
+    }
+
+    #text2 {
+        margin-top: -15px + ($bar-height / 2);
+    }
+
+    #indexContent {
+        height: $indexContent-height;
+        width: $indexContent-width;
+        margin-top: - $indexContent-height / 2;
+        margin-left: - $indexContent-width / 2;
+    }
+
+    #atinfo {
+        height: 40px;
+        width: $margin-left + ($indexContent-width / 2) - ( 2 * $root-width) + 5px;
+        line-height: 40px;
+        margin-top: -18px;
+        font-size: 160px;
+    }
+
+    @mixin text-tmpl() {
+        width: - $margin-left + ($indexContent-width / 2) - ( 2 * $root-width) - 20px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 50px;
+    }
+
+    #text1 {
+        margin-top: -12px - ($bar-height / 2);
+        @include text-tmpl();
+    }
+
+    #text2 {
+        margin-top: -15px + ($bar-height / 2);
+        letter-spacing: 6px;
+        @include text-tmpl();
+    }
+
+    @mixin link-tmpl() {
+        font-size: 200%;
+        width: - $margin-left + ($indexContent-width / 2) - ( 2 * $root-width) - 50px;
+        left: ($indexContent-width / 2) + $root-width;
+        padding-left: 15px;
+    }
+
+    #link1 {
+        margin-top: -15px - ($bar-height / 2) + ($bar-height / 2) - 25px;
+        @include link-tmpl;
+    }
+
+    #link2 {
+        margin-top: -15px - ($bar-height / 2) + ($bar-height / 2) + 35px;
+        @include link-tmpl;
+    }
+}

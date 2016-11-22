@@ -1,3 +1,6 @@
+@import "base";
+@import "common";
+
 /*
 	-- TOP AND BOTTOM MASKS ------------------------------------------------------
 */
@@ -144,13 +147,13 @@
 /*
 	-- CENTER --------------------------------------------------------------------
 */
-$bgGrey1: #fff;
-$bgGrey2: #ddd;
-$bgColor1: #0ac;
-$bgColor2: #0072BC;
+// $bgGrey1: #fff;
+// $bgGrey2: #ddd;
+// $bgColor1: #0ac;
+// $bgColor2: #0072BC;
 
 $centerSize: 40px;
-#center {
+#serviceCenter {
     position: absolute;
     border: 2px solid $bg-color;
     background-color: $bgColor2;
@@ -177,7 +180,7 @@ $centerSize: 40px;
 /*
 	-- PETALS --------------------------------------------------------------------
 */
-.petal {
+.servicePetal {
     position: absolute;
     top: 1px;
     left: 3px;
@@ -194,86 +197,86 @@ $centerSize: 40px;
 
 
 // animation
-@mixin defineAnim($anim) {
+@mixin defineServicePetalAnim($anim) {
     @include animation("#{$anim} 6s ease-out 4s forwards");
 }
 
 // create petal ids and add animation
 @for $i from 1 through 18 {
-    #no#{$i} { @include defineAnim( "spin#{$i}") }
+    #servicePetal#{$i} { @include defineServicePetalAnim( "spin#{$i}") }
 }
 
 // start angle
-$angleOffset: -5deg;
-$angleStep: 20deg;
+$serviceAngleOffset: -5deg;
+$serviceAngleStep: 20deg;
 
 // petal angles
-$spin1Angle:  $angleStep * 18;
-$spin2Angle:  $angleStep * 17;
-$spin3Angle:  $angleStep * 16;
-$spin4Angle:  $angleStep * 15;
-$spin5Angle:  $angleStep * 14;
-$spin6Angle:  $angleStep * 13;
-$spin7Angle:  $angleStep * 12;
-$spin8Angle:  $angleStep * 11;
-$spin9Angle:  $angleStep * 10;
-$spin10Angle: $angleStep * 9;
-$spin11Angle: $angleStep * 8;
-$spin12Angle: $angleStep * 7;
-$spin13Angle: $angleStep * 6;
-$spin14Angle: $angleStep * 5;
-$spin15Angle: $angleStep * 4;
-$spin16Angle: $angleStep * 3;
-$spin17Angle: $angleStep * 2;
-$spin18Angle: $angleStep;
+$serviceSpin1Angle:  $serviceAngleStep * 18;
+$serviceSpin2Angle:  $serviceAngleStep * 17;
+$serviceSpin3Angle:  $serviceAngleStep * 16;
+$serviceSpin4Angle:  $serviceAngleStep * 15;
+$serviceSpin5Angle:  $serviceAngleStep * 14;
+$serviceSpin6Angle:  $serviceAngleStep * 13;
+$serviceSpin7Angle:  $serviceAngleStep * 12;
+$serviceSpin8Angle:  $serviceAngleStep * 11;
+$serviceSpin9Angle:  $serviceAngleStep * 10;
+$serviceSpin10Angle: $serviceAngleStep * 9;
+$serviceSpin11Angle: $serviceAngleStep * 8;
+$serviceSpin12Angle: $serviceAngleStep * 7;
+$serviceSpin13Angle: $serviceAngleStep * 6;
+$serviceSpin14Angle: $serviceAngleStep * 5;
+$serviceSpin15Angle: $serviceAngleStep * 4;
+$serviceSpin16Angle: $serviceAngleStep * 3;
+$serviceSpin17Angle: $serviceAngleStep * 2;
+$serviceSpin18Angle: $serviceAngleStep;
 
-@mixin animStart {
+@mixin serviceAnimStart {
     opacity: 0;
-    @include transform(rotate($angleOffset) scale(0.01));
+    @include transform(rotate($serviceAngleOffset) scale(0.01));
 }
 
-@mixin animEnd($angle,$scale) {
+@mixin serviceAnimEnd($angle,$scale) {
     opacity: 1;
     @include transform(rotate($angle) scale($scale));
 }
 
-@mixin createAnim($name, $angle, $startColor, $endColor) {
+@mixin createServiceAnim($name, $angle, $startColor, $endColor) {
 
     @include keyframes(#{$name}) {
         0% {
-            @include animStart;
+            @include serviceAnimStart;
         }
         50% {
-            @include animEnd($angle, 1);
+            @include serviceAnimEnd($angle, 1);
             background-color: $startColor;
         }
         60% {
-            @include animEnd($angle, 1);
+            @include serviceAnimEnd($angle, 1);
             background-color: $endColor;
         }
         100% {
-            @include animEnd($angle, 2);
+            @include serviceAnimEnd($angle, 2);
             background-color: $endColor;
             opacity: 0.5;
         }
     }
 }
 
-@include createAnim("spin1", $angleOffset - $spin1Angle, $bgGrey1, $bgColor1);
-@include createAnim("spin2", $angleOffset - $spin2Angle, $bgGrey2, $bgColor2);
-@include createAnim("spin3", $angleOffset - $spin3Angle, $bgGrey1, $bgColor1);
-@include createAnim("spin4", $angleOffset - $spin4Angle, $bgGrey2, $bgColor2);
-@include createAnim("spin5", $angleOffset - $spin5Angle, $bgGrey1, $bgColor1);
-@include createAnim("spin6", $angleOffset - $spin6Angle, $bgGrey2, $bgColor2);
-@include createAnim("spin7", $angleOffset - $spin7Angle, $bgGrey1, $bgColor1);
-@include createAnim("spin8", $angleOffset - $spin8Angle, $bgGrey2, $bgColor2);
-@include createAnim("spin9", $angleOffset - $spin9Angle, $bgGrey1, $bgColor1);
-@include createAnim("spin10", $angleOffset - $spin10Angle, $bgGrey2, $bgColor2);
-@include createAnim("spin11", $angleOffset - $spin11Angle, $bgGrey1, $bgColor1);
-@include createAnim("spin12", $angleOffset - $spin12Angle, $bgGrey2, $bgColor2);
-@include createAnim("spin13", $angleOffset - $spin13Angle, $bgGrey1, $bgColor1);
-@include createAnim("spin14", $angleOffset - $spin14Angle, $bgGrey2, $bgColor2);
-@include createAnim("spin15", $angleOffset - $spin15Angle, $bgGrey1, $bgColor1);
-@include createAnim("spin16", $angleOffset - $spin16Angle, $bgGrey2, $bgColor2);
-@include createAnim("spin17", $angleOffset - $spin17Angle, $bgGrey1, $bgColor1);
-@include createAnim("spin18", $angleOffset - $spin18Angle, $bgGrey2, $bgColor2);
+@include createServiceAnim("spin101", $serviceAngleOffset - $serviceSpin1Angle, $bgGrey1, $bgColor1);
+@include createServiceAnim("spin102", $serviceAngleOffset - $serviceSpin2Angle, $bgGrey2, $bgColor2);
+@include createServiceAnim("spin103", $serviceAngleOffset - $serviceSpin3Angle, $bgGrey1, $bgColor1);
+@include createServiceAnim("spin104", $serviceAngleOffset - $serviceSpin4Angle, $bgGrey2, $bgColor2);
+@include createServiceAnim("spin105", $serviceAngleOffset - $serviceSpin5Angle, $bgGrey1, $bgColor1);
+@include createServiceAnim("spin106", $serviceAngleOffset - $serviceSpin6Angle, $bgGrey2, $bgColor2);
+@include createServiceAnim("spin107", $serviceAngleOffset - $serviceSpin7Angle, $bgGrey1, $bgColor1);
+@include createServiceAnim("spin108", $serviceAngleOffset - $serviceSpin8Angle, $bgGrey2, $bgColor2);
+@include createServiceAnim("spin109", $serviceAngleOffset - $serviceSpin9Angle, $bgGrey1, $bgColor1);
+@include createServiceAnim("spin110", $serviceAngleOffset - $serviceSpin10Angle, $bgGrey2, $bgColor2);
+@include createServiceAnim("spin111", $serviceAngleOffset - $serviceSpin11Angle, $bgGrey1, $bgColor1);
+@include createServiceAnim("spin112", $serviceAngleOffset - $serviceSpin12Angle, $bgGrey2, $bgColor2);
+@include createServiceAnim("spin113", $serviceAngleOffset - $serviceSpin13Angle, $bgGrey1, $bgColor1);
+@include createServiceAnim("spin114", $serviceAngleOffset - $serviceSpin14Angle, $bgGrey2, $bgColor2);
+@include createServiceAnim("spin115", $serviceAngleOffset - $serviceSpin15Angle, $bgGrey1, $bgColor1);
+@include createServiceAnim("spin116", $serviceAngleOffset - $serviceSpin16Angle, $bgGrey2, $bgColor2);
+@include createServiceAnim("spin117", $serviceAngleOffset - $serviceSpin17Angle, $bgGrey1, $bgColor1);
+@include createServiceAnim("spin118", $serviceAngleOffset - $serviceSpin18Angle, $bgGrey2, $bgColor2);

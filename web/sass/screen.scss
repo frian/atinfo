@@ -4,6 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "base";
+@import "common";
 
 /*
  * - FONTS --------------------------------------------------------------------
@@ -23,10 +24,6 @@
     font-style: normal;
     src: url("/fonts/leaguegothic-condensed-regular-webfont.ttf") format("truetype");
 }
-
-$bg-color: #eee;
-
-$main-font: 'Gruppo', sans-serif;
 
 
 html,
@@ -51,12 +48,6 @@ a.index {
 .text-center {
     text-align: center
 }
-
-
-
-
-@import "index";
-@import "services";
 
 
 

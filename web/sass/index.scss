@@ -1,43 +1,5 @@
-
-#point {
-    position : absolute;
-    width: 30px;
-    height: 2px;
-    background-color: red;
-    @include border-radius(50%);
-}
-
-#point1 {
-    position : absolute;
-    background-color: red;
-}
-
-#point2 {
-    position : absolute;
-    width: 30px;
-    height: 2px;
-    background-color: red;
-}
-
-#point3 {
-    position : absolute;
-    width: 30px;
-    height: 2px;
-    background-color: red;
-}
-
-#point4 {
-    position : absolute;
-    width: 30px;
-    height: 2px;
-    background-color: red;
-}
-
-$lineColor: #ccc;
-@mixin line-color {
-    background-color: $lineColor;
-}
-
+@import "base";
+@import "common";
 
 $indexContent-width : 300px;
 $indexContent-height :300px;
@@ -48,239 +10,137 @@ $indexContent-height :300px;
     width: $indexContent-width;
     margin-top: - $indexContent-height / 2;
     margin-left: - $indexContent-width / 2;
-    // @include debug(#aaa);
+    // @include debug(#999);
 }
 
-$bar-size: 2px;
-$root-width: 10px;
-$root-height: $bar-size;
-
-$margin-left: 0px;
-
-
-#root {
-    @include abs-centered();
-    margin-top: - $root-height / 2;
-    margin-left: $margin-left - $root-width - ($bar-size / 2);
-    // width: $root-width;
-    height: $root-height;
-    @include line-color();
-}
-
-$bar-height: 100px;
-
-#bar {
-    @include abs-centered();
-    margin-top: - $bar-height / 2;
-    margin-left: $margin-left - $bar-size / 2;
-    width: $bar-size;
-    // height: $bar-height;
-    @include line-color();
-}
-
-
-@mixin branch-tmpl() {
-    @include abs-centered();
-    // width: $root-width;
-    height: $root-height;
-    @include line-color();
-}
-
-#branch1 {
-    margin-left: $margin-left + $bar-size / 2;
-    margin-top: - $bar-height / 2;
-    @include branch-tmpl();
-}
-
-#branch2 {
-    margin-left: $margin-left + $bar-size / 2;
-    margin-top: ($bar-height / 2) - $bar-size ;
-    @include branch-tmpl();
-}
-
-@mixin hline-tmpl {
-
-    // width: 1000px;
-    height: $root-height;
-    @include line-color();
-}
-
-#hline {
+#flowerContainer {
+    @include debug(red);
+    width: 1px;
+    height: 1px;
     position: absolute;
     top: 50%;
-    left : 0px;
-    margin-top: - $root-height / 2;
-    // margin-left: -1000px;
-    @include hline-tmpl();
-}
-
-$hline-margin: $indexContent-width / 2;
-#hline1 {
-    @include abs-centered();;
-    margin-left: $hline-margin;
-    margin-top: - $bar-height / 2;
-    @include hline-tmpl();
-}
-
-#hline2 {
-    @include abs-centered();
-    margin-left: $hline-margin;
-    margin-top: ($bar-height / 2) - $bar-size ;
-    @include hline-tmpl();
+    left: 50%;
 }
 
 
-#atinfo {
+/*
+	-- PETALS --------------------------------------------------------------------
+*/
+.indexPetal {
     position: absolute;
-    height: 40px;
-    width: $margin-left + ($indexContent-width / 2) - ( 2 * $root-width) + 5px;
-    text-align: right;
-    line-height: 40px;
-    top: 50%;
-    margin-top: -18px;
-    font-size: 90px;
-    // color : #0072BC;
-    color : #fff;
-    font-family: 'LeagueGothic', sans-serif;
-    // @include debug(green);
+    top: 0;
+    left: 0;
+    border-radius: 10% 90% 10% 95%;
+    border-top: 2px solid $bg-color;
+    border-right: 2px solid $bg-color;
+    height: 150px;
+    margin: auto;
+    width: 50px;
+    transform-origin: left top;
+    // opacity: 0;
+    // background-color: red;
+
+    z-index: 20;
 }
 
-@mixin text-tmpl() {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    width: - $margin-left + ($indexContent-width / 2) - ( 2 * $root-width) - 20px;
-    height: 30px;
-    line-height: 30px;
 
-    font-size: 25px;
-    // color: #ED1C24;
-    color: #fff;
-    font-family: 'BebasNeue', sans-serif;
-    white-space:nowrap;
-    // @include debug(green);
+
+// animation
+@mixin defineIndexPetalAnim($anim) {
+    @include animation("#{$anim} 4s ease-out 1s forwards");
 }
 
-#text1 {
-    margin-top: -12px - ($bar-height / 2);
-    letter-spacing: 1px;
-    @include text-tmpl();
+// create petal ids and add animation
+@for $i from 1 through 18 {
+    #indexPetal#{$i} { @include defineIndexPetalAnim( "spin#{$i}") }
 }
 
-#text2 {
-    margin-top: -15px + ($bar-height / 2);
-    letter-spacing: 3px;
-    @include text-tmpl();
+// start angle
+$serviceAngleOffset: 110deg;
+$serviceAngleStep: 15deg;
+
+// petal angles
+$serviceSpin1Angle:  $serviceAngleStep * 18;
+$serviceSpin2Angle:  $serviceAngleStep * 17;
+$serviceSpin3Angle:  $serviceAngleStep * 16;
+$serviceSpin4Angle:  $serviceAngleStep * 15;
+$serviceSpin5Angle:  $serviceAngleStep * 14;
+$serviceSpin6Angle:  $serviceAngleStep * 13;
+$serviceSpin7Angle:  $serviceAngleStep * 12;
+$serviceSpin8Angle:  $serviceAngleStep * 11;
+$serviceSpin9Angle:  $serviceAngleStep * 10;
+$serviceSpin10Angle: $serviceAngleStep * 9;
+$serviceSpin11Angle: $serviceAngleStep * 8;
+$serviceSpin12Angle: $serviceAngleStep * 7;
+$serviceSpin13Angle: $serviceAngleStep * 6;
+$serviceSpin14Angle: $serviceAngleStep * 5;
+$serviceSpin15Angle: $serviceAngleStep * 4;
+$serviceSpin16Angle: $serviceAngleStep * 3;
+$serviceSpin17Angle: $serviceAngleStep * 2;
+$serviceSpin18Angle: $serviceAngleStep;
+
+@mixin indexAnimStart {
+    opacity: 0;
+    @include transform(rotate($serviceAngleOffset) scale(0.01));
 }
 
-@mixin link-tmpl() {
-    position: absolute;
-    height: 20px;
-    width: - $margin-left + ($indexContent-width / 2) - ( 2 * $root-width) - 50px;
-    left: ($indexContent-width / 2) + $root-width;
-    line-height: 20px;
-    top: 50%;
-    font-size: 100%;
-    color: #fff;
-    font-family: 'Muli', sans-serif;
-    padding-left: 10px;
-    // @include debug(green);
+@mixin indexAnimEnd($angle,$scale) {
+    opacity: 1;
+    @include transform(rotate($angle) scale($scale));
 }
 
-#link1 {
-    margin-top: -15px - ($bar-height / 2) + ($bar-height / 2) - 10px;
-    @include link-tmpl;
+@mixin createIndexAnim($name, $angle, $startColor, $endColor) {
+
+    @include keyframes(#{$name}) {
+        0% {
+            @include indexAnimStart;
+        }
+        50% {
+            @include indexAnimEnd($angle, 1);
+            background-color: $startColor;
+        }
+        60% {
+            @include indexAnimEnd($angle, 1);
+            background-color: $endColor;
+        }
+        100% {
+            @include indexAnimEnd($angle, 2);
+            background-color: $endColor;
+            opacity: 0.5;
+        }
+    }
 }
 
-#link2 {
-    margin-top: -15px - ($bar-height / 2) + ($bar-height / 2) + 20px;
-    @include link-tmpl;
-}
+@include createIndexAnim("spin1", $serviceAngleOffset - $serviceSpin1Angle, $bgGrey1, $bgColor1);
+@include createIndexAnim("spin2", $serviceAngleOffset - $serviceSpin2Angle, $bgGrey2, $bgColor2);
+@include createIndexAnim("spin3", $serviceAngleOffset - $serviceSpin3Angle, $bgGrey1, $bgColor1);
+@include createIndexAnim("spin4", $serviceAngleOffset - $serviceSpin4Angle, $bgGrey2, $bgColor2);
+@include createIndexAnim("spin5", $serviceAngleOffset - $serviceSpin5Angle, $bgGrey1, $bgColor1);
+@include createIndexAnim("spin6", $serviceAngleOffset - $serviceSpin6Angle, $bgGrey2, $bgColor2);
+@include createIndexAnim("spin7", $serviceAngleOffset - $serviceSpin7Angle, $bgGrey1, $bgColor1);
+@include createIndexAnim("spin8", $serviceAngleOffset - $serviceSpin8Angle, $bgGrey2, $bgColor2);
+@include createIndexAnim("spin9", $serviceAngleOffset - $serviceSpin9Angle, $bgGrey1, $bgColor1);
+@include createIndexAnim("spin10", $serviceAngleOffset - $serviceSpin10Angle, $bgGrey2, $bgColor2);
+@include createIndexAnim("spin11", $serviceAngleOffset - $serviceSpin11Angle, $bgGrey1, $bgColor1);
+@include createIndexAnim("spin12", $serviceAngleOffset - $serviceSpin12Angle, $bgGrey2, $bgColor2);
+@include createIndexAnim("spin13", $serviceAngleOffset - $serviceSpin13Angle, $bgGrey1, $bgColor1);
+@include createIndexAnim("spin14", $serviceAngleOffset - $serviceSpin14Angle, $bgGrey2, $bgColor2);
+@include createIndexAnim("spin15", $serviceAngleOffset - $serviceSpin15Angle, $bgGrey1, $bgColor1);
+@include createIndexAnim("spin16", $serviceAngleOffset - $serviceSpin16Angle, $bgGrey2, $bgColor2);
+@include createIndexAnim("spin17", $serviceAngleOffset - $serviceSpin17Angle, $bgGrey1, $bgColor1);
+@include createIndexAnim("spin18", $serviceAngleOffset - $serviceSpin18Angle, $bgGrey2, $bgColor2);
 
 
 
 @media all and (min-width: 40em) {
 
-    $bar-height: 200px;
-
     $indexContent-width : 500px;
     $indexContent-height :500px;
-
-    $hline-margin: $indexContent-width / 2;
-
-    #hline1 {
-        margin-top: - $bar-height / 2;
-        margin-left: $hline-margin;
-    }
-
-    #hline2 {
-        margin-left: $hline-margin;
-        margin-top: ($bar-height / 2) - $bar-size ;
-    }
-
-    #branch1 {
-        margin-top: - $bar-height / 2;
-    }
-
-    #branch2 {
-        margin-top: ($bar-height / 2) - $bar-size ;
-    }
-
-    #text1 {
-        margin-top: -12px - ($bar-height / 2);
-    }
-
-    #text2 {
-        margin-top: -15px + ($bar-height / 2);
-    }
 
     #indexContent {
         height: $indexContent-height;
         width: $indexContent-width;
         margin-top: - $indexContent-height / 2;
         margin-left: - $indexContent-width / 2;
-    }
-
-    #atinfo {
-        height: 40px;
-        width: $margin-left + ($indexContent-width / 2) - ( 2 * $root-width) + 5px;
-        line-height: 40px;
-        margin-top: -18px;
-        font-size: 160px;
-    }
-
-    @mixin text-tmpl() {
-        width: - $margin-left + ($indexContent-width / 2) - ( 2 * $root-width) - 20px;
-        height: 30px;
-        line-height: 30px;
-        font-size: 50px;
-    }
-
-    #text1 {
-        margin-top: -12px - ($bar-height / 2);
-        @include text-tmpl();
-    }
-
-    #text2 {
-        margin-top: -15px + ($bar-height / 2);
-        letter-spacing: 6px;
-        @include text-tmpl();
-    }
-
-    @mixin link-tmpl() {
-        font-size: 200%;
-        width: - $margin-left + ($indexContent-width / 2) - ( 2 * $root-width) - 50px;
-        left: ($indexContent-width / 2) + $root-width;
-        padding-left: 15px;
-    }
-
-    #link1 {
-        margin-top: -15px - ($bar-height / 2) + ($bar-height / 2) - 25px;
-        @include link-tmpl;
-    }
-
-    #link2 {
-        margin-top: -15px - ($bar-height / 2) + ($bar-height / 2) + 35px;
-        @include link-tmpl;
     }
 }
