@@ -76,7 +76,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 300px;
   margin-top: -150px;
   margin-left: -150px;
-  border: 1px solid red;
 }
 
 /* line 17, ../sass/index.scss */
@@ -3315,53 +3314,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     height: 500px;
   }
 
-  /* line 275, ../sass/index.scss */
-  #atinfo {
-    height: 80px;
-    line-height: 30px;
-    line-height: 80px;
-    margin-top: 100px;
-    font-size: 120px;
-    margin-bottom: 30px;
-  }
-
-  /* line 284, ../sass/index.scss */
-  .indexText {
-    padding: 10px;
-    font-size: 30px;
-  }
-
-  /* line 289, ../sass/index.scss */
-  .nav {
-    padding: 10px;
-  }
-
-  /* line 293, ../sass/index.scss */
-  .nav a {
-    color: #333;
-    font-size: 100%;
-  }
-
-  /* line 298, ../sass/index.scss */
-  .info {
-    color: #999;
-    padding: 5px;
-    font-family: 'Muli', sans-serif;
-    font-size: 90%;
-  }
-
-  /* line 305, ../sass/index.scss */
-  .indexPetal {
-    height: 150px;
-    width: 50px;
-  }
-
   @-webkit-keyframes animIndexMask {
     0% {
       top: 50%;
       left: 50%;
-      margin-top: -185px;
-      margin-left: -185px;
+      margin-top: -250px;
+      margin-left: -250px;
     }
     100% {
       top: -170px;
@@ -3374,8 +3332,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     0% {
       top: 50%;
       left: 50%;
-      margin-top: -185px;
-      margin-left: -185px;
+      margin-top: -250px;
+      margin-left: -250px;
     }
     100% {
       top: -170px;
@@ -3388,8 +3346,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     0% {
       top: 50%;
       left: 50%;
-      margin-top: -185px;
-      margin-left: -185px;
+      margin-top: -250px;
+      margin-left: -250px;
     }
     100% {
       top: -170px;
@@ -3402,8 +3360,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     0% {
       top: 50%;
       left: 50%;
-      margin-top: -185px;
-      margin-left: -185px;
+      margin-top: -250px;
+      margin-left: -250px;
     }
     100% {
       top: -170px;
@@ -3411,5 +3369,45 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       margin-top: 0px;
       margin-left: 0px;
     }
+  }
+  /* line 290, ../sass/index.scss */
+  #atinfo {
+    height: 80px;
+    line-height: 30px;
+    line-height: 80px;
+    margin-top: 100px;
+    font-size: 120px;
+    margin-bottom: 30px;
+  }
+
+  /* line 299, ../sass/index.scss */
+  .indexText {
+    padding: 10px;
+    font-size: 30px;
+  }
+
+  /* line 304, ../sass/index.scss */
+  .nav {
+    padding: 10px;
+  }
+
+  /* line 308, ../sass/index.scss */
+  .nav a {
+    color: #333;
+    font-size: 100%;
+  }
+
+  /* line 313, ../sass/index.scss */
+  .info {
+    color: #999;
+    padding: 5px;
+    font-family: 'Muli', sans-serif;
+    font-size: 90%;
+  }
+
+  /* line 320, ../sass/index.scss */
+  .indexPetal {
+    height: 150px;
+    width: 50px;
   }
 }

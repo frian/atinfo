@@ -11,15 +11,15 @@
     height: 100%;
     background-color: $bg-color;
     z-index: 10;
-    background-color: $bg-color;
+    // background-color: red;
 }
 
 #mask {
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 #mask2 {
-    margin-top: -100px;
+    margin-top: -50px;
     transform-origin: 0% 0%;
     @include transform(rotateX(180deg)  );
 }
@@ -34,9 +34,9 @@ $servicesContentSize: 200px;
     @include abs-centered();
     height: $servicesContentSize;
     width: $servicesContentSize;
-    margin-top: - $servicesContentSize / 2;
+    margin-top: - ($servicesContentSize / 2) + 50;
     margin-left: - $servicesContentSize / 2;
-    @include debug(red);
+    // @include debug(red);
 }
 
 
@@ -47,12 +47,12 @@ $servicesContentSize: 200px;
   height: 2000px;
   width: 2000px;
   position: absolute;
-  top: 0;
+  top: 100px;
   bottom: 0;
   left: 50%;
   right: 0;
   margin: auto;
-  margin-left: -100px;
+  margin-left: -105px;
   border: 2px solid #333;
   @include border-left-radius(1000px);
 }
@@ -60,15 +60,15 @@ $servicesContentSize: 200px;
 #trunkMask {
     width: 50px;
     height: 200px;
-    margin-top: -100px;
+    margin-top: -50px;
     margin-left: -120px;
     background-color: $bg-color;
     @include abs-centered();
-    @include animation('growTrunk 4s linear forwards');
+    @include animation('growTrunk 2s linear forwards');
 }
 
 @include keyframes(growTrunk) {
-  0%   { margin-top: -100px; }
+  0%   { margin-top: -50px; }
   100% { margin-top: -300px; }
 }
 
@@ -83,7 +83,7 @@ $servicesContentSize: 200px;
     margin: auto;
     width: 50px;
     position: absolute;
-    left: 4px;
+    left: 0px;
     transform-origin: left top;
 
     background-color: #080;
@@ -92,27 +92,27 @@ $servicesContentSize: 200px;
 #leaf1 {
     top: 200px;
     @include transform(rotateZ(180deg));
-    @include animation('leafGrow1 6s ease-out forwards');
+    @include animation('leafGrow1 4s ease-out forwards');
 }
 
 #leaf2 {
     top: 200px;
     @include transform(rotateX(180deg) scale(0.01));
-    @include animation('leafGrow2 6s ease-out 1s forwards');
+    @include animation('leafGrow2 4s ease-out 1s forwards');
 }
 
 #leaf3 {
     top: 125px;
-    left: 4px;
+    left: -4px;
     @include transform(rotateZ(180deg) scale(0.01));
-    @include animation('leafGrow3 6s ease-out 2s forwards');
+    @include animation('leafGrow3 3s ease-out 2s forwards');
 }
 
 #leaf4 {
     top: 100px;
-    left: -2px;
+    left: -6px;
     @include transform(rotateX(180deg) scale(0.01));
-    @include animation('leafGrow4 6s ease-out 3s forwards');
+    @include animation('leafGrow4 3s ease-out 3s forwards');
 }
 
 
@@ -165,7 +165,7 @@ $servicesContentSize: 200px;
 // $bgColor1: #0ac;
 // $bgColor2: #0072BC;
 
-$centerSize: 2  0px;
+$centerSize: 20px;
 #serviceCenter {
     position: absolute;
     border: 2px solid $bg-color;
@@ -177,7 +177,7 @@ $centerSize: 2  0px;
     z-index: 50;
     @include border-radius($centerSize);
     @include transform(scale(0));
-    @include animation('centerGrow 4s ease-out 4s forwards');
+    @include animation('centerGrow 2s ease-out 2s forwards');
 }
 
 @include keyframes(centerGrow) {
@@ -211,7 +211,7 @@ $centerSize: 2  0px;
 
 // animation
 @mixin defineServicePetalAnim($anim) {
-    @include animation("#{$anim} 6s ease-out 4s forwards");
+    @include animation("#{$anim} 4s ease-out 2s forwards");
 }
 
 // create petal ids and add animation
@@ -298,11 +298,11 @@ $serviceSpin18Angle: $serviceAngleStep;
 @media all and (min-width: 40em) {
 
     #mask {
-        margin-top: 250px;
+        margin-top: 300px;
     }
 
     #mask2 {
-        margin-top: -250px;
+        margin-top: -200px;
     }
 
     #trunk {
@@ -328,28 +328,20 @@ $serviceSpin18Angle: $serviceAngleStep;
 
     #leaf1 {
         top: 500px;
-        @include transform(rotateZ(180deg));
-        @include animation('leafGrow1 6s ease-out forwards');
     }
 
     #leaf2 {
         top: 500px;
-        @include transform(rotateX(180deg) scale(0.01));
-        @include animation('leafGrow2 6s ease-out 1s forwards');
     }
 
     #leaf3 {
         top: 350px;
         left: -26px;
-        @include transform(rotateZ(180deg) scale(0.01));
-        @include animation('leafGrow3 6s ease-out 2s forwards');
     }
 
     #leaf4 {
         top: 250px;
         left: -34px;
-        @include transform(rotateX(180deg) scale(0.01));
-        @include animation('leafGrow4 6s ease-out 3s forwards');
     }
 
     .servicePetal {
@@ -375,7 +367,7 @@ $serviceSpin18Angle: $serviceAngleStep;
     #servicesContent {
         height: $servicesContentSize;
         width: $servicesContentSize;
-        margin-top: - $servicesContentSize / 2;
+        margin-top: - ($servicesContentSize / 2) + 50;
         margin-left: - $servicesContentSize / 2;
     }
 }

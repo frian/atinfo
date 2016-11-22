@@ -78,17 +78,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 100%;
   background-color: #eee;
   z-index: 10;
-  background-color: #eee;
 }
 
 /* line 17, ../sass/services.scss */
 #mask {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 /* line 21, ../sass/services.scss */
 #mask2 {
-  margin-top: -100px;
+  margin-top: -50px;
   transform-origin: 0% 0%;
   -moz-transform: rotateX(180deg);
   -ms-transform: rotateX(180deg);
@@ -111,9 +110,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   left: 50%;
   height: 200px;
   width: 200px;
-  margin-top: -100px;
+  margin-top: -50px;
   margin-left: -100px;
-  border: 1px solid red;
 }
 
 /*
@@ -124,12 +122,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 2000px;
   width: 2000px;
   position: absolute;
-  top: 0;
+  top: 100px;
   bottom: 0;
   left: 50%;
   right: 0;
   margin: auto;
-  margin-left: -100px;
+  margin-left: -105px;
   border: 2px solid #333;
   -moz-border-radius-topleft: 1000px;
   -webkit-border-top-left-radius: 1000px;
@@ -143,21 +141,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 #trunkMask {
   width: 50px;
   height: 200px;
-  margin-top: -100px;
+  margin-top: -50px;
   margin-left: -120px;
   background-color: #eee;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-animation: growTrunk 4s linear forwards;
-  -moz-animation: growTrunk 4s linear forwards;
-  -o-animation: growTrunk 4s linear forwards;
-  animation: growTrunk 4s linear forwards;
+  -webkit-animation: growTrunk 2s linear forwards;
+  -moz-animation: growTrunk 2s linear forwards;
+  -o-animation: growTrunk 2s linear forwards;
+  animation: growTrunk 2s linear forwards;
 }
 
 @-webkit-keyframes growTrunk {
   0% {
-    margin-top: -100px;
+    margin-top: -50px;
   }
   100% {
     margin-top: -300px;
@@ -165,7 +163,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 @-moz-keyframes growTrunk {
   0% {
-    margin-top: -100px;
+    margin-top: -50px;
   }
   100% {
     margin-top: -300px;
@@ -173,7 +171,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 @-o-keyframes growTrunk {
   0% {
-    margin-top: -100px;
+    margin-top: -50px;
   }
   100% {
     margin-top: -300px;
@@ -181,7 +179,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 @keyframes $growTrunk {
   0% {
-    margin-top: -100px;
+    margin-top: -50px;
   }
   100% {
     margin-top: -300px;
@@ -200,7 +198,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin: auto;
   width: 50px;
   position: absolute;
-  left: 4px;
+  left: 0px;
   transform-origin: left top;
   background-color: #080;
 }
@@ -212,10 +210,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotateZ(180deg);
   -webkit-transform: rotateZ(180deg);
   transform: rotateZ(180deg);
-  -webkit-animation: leafGrow1 6s ease-out forwards;
-  -moz-animation: leafGrow1 6s ease-out forwards;
-  -o-animation: leafGrow1 6s ease-out forwards;
-  animation: leafGrow1 6s ease-out forwards;
+  -webkit-animation: leafGrow1 4s ease-out forwards;
+  -moz-animation: leafGrow1 4s ease-out forwards;
+  -o-animation: leafGrow1 4s ease-out forwards;
+  animation: leafGrow1 4s ease-out forwards;
 }
 
 /* line 98, ../sass/services.scss */
@@ -225,38 +223,38 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotateX(180deg) scale(0.01);
   -webkit-transform: rotateX(180deg) scale(0.01);
   transform: rotateX(180deg) scale(0.01);
-  -webkit-animation: leafGrow2 6s ease-out 1s forwards;
-  -moz-animation: leafGrow2 6s ease-out 1s forwards;
-  -o-animation: leafGrow2 6s ease-out 1s forwards;
-  animation: leafGrow2 6s ease-out 1s forwards;
+  -webkit-animation: leafGrow2 4s ease-out 1s forwards;
+  -moz-animation: leafGrow2 4s ease-out 1s forwards;
+  -o-animation: leafGrow2 4s ease-out 1s forwards;
+  animation: leafGrow2 4s ease-out 1s forwards;
 }
 
 /* line 104, ../sass/services.scss */
 #leaf3 {
   top: 125px;
-  left: 4px;
+  left: -4px;
   -moz-transform: rotateZ(180deg) scale(0.01);
   -ms-transform: rotateZ(180deg) scale(0.01);
   -webkit-transform: rotateZ(180deg) scale(0.01);
   transform: rotateZ(180deg) scale(0.01);
-  -webkit-animation: leafGrow3 6s ease-out 2s forwards;
-  -moz-animation: leafGrow3 6s ease-out 2s forwards;
-  -o-animation: leafGrow3 6s ease-out 2s forwards;
-  animation: leafGrow3 6s ease-out 2s forwards;
+  -webkit-animation: leafGrow3 3s ease-out 2s forwards;
+  -moz-animation: leafGrow3 3s ease-out 2s forwards;
+  -o-animation: leafGrow3 3s ease-out 2s forwards;
+  animation: leafGrow3 3s ease-out 2s forwards;
 }
 
 /* line 111, ../sass/services.scss */
 #leaf4 {
   top: 100px;
-  left: -2px;
+  left: -6px;
   -moz-transform: rotateX(180deg) scale(0.01);
   -ms-transform: rotateX(180deg) scale(0.01);
   -webkit-transform: rotateX(180deg) scale(0.01);
   transform: rotateX(180deg) scale(0.01);
-  -webkit-animation: leafGrow4 6s ease-out 3s forwards;
-  -moz-animation: leafGrow4 6s ease-out 3s forwards;
-  -o-animation: leafGrow4 6s ease-out 3s forwards;
-  animation: leafGrow4 6s ease-out 3s forwards;
+  -webkit-animation: leafGrow4 3s ease-out 3s forwards;
+  -moz-animation: leafGrow4 3s ease-out 3s forwards;
+  -o-animation: leafGrow4 3s ease-out 3s forwards;
+  animation: leafGrow4 3s ease-out 3s forwards;
 }
 
 @-webkit-keyframes leafGrow1 {
@@ -491,22 +489,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: absolute;
   border: 2px solid #eee;
   background-color: #0072BC;
-  width: 2 0px;
-  height: 2 0px;
-  top: -2 0px/2;
-  left: -2 0px/2;
+  width: 20px;
+  height: 20px;
+  top: -10px;
+  left: -10px;
   z-index: 50;
-  -moz-border-radius: 2 0px;
-  -webkit-border-radius: 2;
-  border-radius: 2 0px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
   -moz-transform: scale(0);
   -ms-transform: scale(0);
   -webkit-transform: scale(0);
   transform: scale(0);
-  -webkit-animation: centerGrow 4s ease-out 4s forwards;
-  -moz-animation: centerGrow 4s ease-out 4s forwards;
-  -o-animation: centerGrow 4s ease-out 4s forwards;
-  animation: centerGrow 4s ease-out 4s forwards;
+  -webkit-animation: centerGrow 2s ease-out 2s forwards;
+  -moz-animation: centerGrow 2s ease-out 2s forwards;
+  -o-animation: centerGrow 2s ease-out 2s forwards;
+  animation: centerGrow 2s ease-out 2s forwards;
 }
 
 @-webkit-keyframes centerGrow {
@@ -586,146 +584,146 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 219, ../sass/services.scss */
 #servicePetal101 {
-  -webkit-animation: spin101 6s ease-out 4s forwards;
-  -moz-animation: spin101 6s ease-out 4s forwards;
-  -o-animation: spin101 6s ease-out 4s forwards;
-  animation: spin101 6s ease-out 4s forwards;
+  -webkit-animation: spin101 4s ease-out 2s forwards;
+  -moz-animation: spin101 4s ease-out 2s forwards;
+  -o-animation: spin101 4s ease-out 2s forwards;
+  animation: spin101 4s ease-out 2s forwards;
 }
 
 /* line 219, ../sass/services.scss */
 #servicePetal102 {
-  -webkit-animation: spin102 6s ease-out 4s forwards;
-  -moz-animation: spin102 6s ease-out 4s forwards;
-  -o-animation: spin102 6s ease-out 4s forwards;
-  animation: spin102 6s ease-out 4s forwards;
+  -webkit-animation: spin102 4s ease-out 2s forwards;
+  -moz-animation: spin102 4s ease-out 2s forwards;
+  -o-animation: spin102 4s ease-out 2s forwards;
+  animation: spin102 4s ease-out 2s forwards;
 }
 
 /* line 219, ../sass/services.scss */
 #servicePetal103 {
-  -webkit-animation: spin103 6s ease-out 4s forwards;
-  -moz-animation: spin103 6s ease-out 4s forwards;
-  -o-animation: spin103 6s ease-out 4s forwards;
-  animation: spin103 6s ease-out 4s forwards;
+  -webkit-animation: spin103 4s ease-out 2s forwards;
+  -moz-animation: spin103 4s ease-out 2s forwards;
+  -o-animation: spin103 4s ease-out 2s forwards;
+  animation: spin103 4s ease-out 2s forwards;
 }
 
 /* line 219, ../sass/services.scss */
 #servicePetal104 {
-  -webkit-animation: spin104 6s ease-out 4s forwards;
-  -moz-animation: spin104 6s ease-out 4s forwards;
-  -o-animation: spin104 6s ease-out 4s forwards;
-  animation: spin104 6s ease-out 4s forwards;
+  -webkit-animation: spin104 4s ease-out 2s forwards;
+  -moz-animation: spin104 4s ease-out 2s forwards;
+  -o-animation: spin104 4s ease-out 2s forwards;
+  animation: spin104 4s ease-out 2s forwards;
 }
 
 /* line 219, ../sass/services.scss */
 #servicePetal105 {
-  -webkit-animation: spin105 6s ease-out 4s forwards;
-  -moz-animation: spin105 6s ease-out 4s forwards;
-  -o-animation: spin105 6s ease-out 4s forwards;
-  animation: spin105 6s ease-out 4s forwards;
+  -webkit-animation: spin105 4s ease-out 2s forwards;
+  -moz-animation: spin105 4s ease-out 2s forwards;
+  -o-animation: spin105 4s ease-out 2s forwards;
+  animation: spin105 4s ease-out 2s forwards;
 }
 
 /* line 219, ../sass/services.scss */
 #servicePetal106 {
-  -webkit-animation: spin106 6s ease-out 4s forwards;
-  -moz-animation: spin106 6s ease-out 4s forwards;
-  -o-animation: spin106 6s ease-out 4s forwards;
-  animation: spin106 6s ease-out 4s forwards;
+  -webkit-animation: spin106 4s ease-out 2s forwards;
+  -moz-animation: spin106 4s ease-out 2s forwards;
+  -o-animation: spin106 4s ease-out 2s forwards;
+  animation: spin106 4s ease-out 2s forwards;
 }
 
 /* line 219, ../sass/services.scss */
 #servicePetal107 {
-  -webkit-animation: spin107 6s ease-out 4s forwards;
-  -moz-animation: spin107 6s ease-out 4s forwards;
-  -o-animation: spin107 6s ease-out 4s forwards;
-  animation: spin107 6s ease-out 4s forwards;
+  -webkit-animation: spin107 4s ease-out 2s forwards;
+  -moz-animation: spin107 4s ease-out 2s forwards;
+  -o-animation: spin107 4s ease-out 2s forwards;
+  animation: spin107 4s ease-out 2s forwards;
 }
 
 /* line 219, ../sass/services.scss */
 #servicePetal108 {
-  -webkit-animation: spin108 6s ease-out 4s forwards;
-  -moz-animation: spin108 6s ease-out 4s forwards;
-  -o-animation: spin108 6s ease-out 4s forwards;
-  animation: spin108 6s ease-out 4s forwards;
+  -webkit-animation: spin108 4s ease-out 2s forwards;
+  -moz-animation: spin108 4s ease-out 2s forwards;
+  -o-animation: spin108 4s ease-out 2s forwards;
+  animation: spin108 4s ease-out 2s forwards;
 }
 
 /* line 219, ../sass/services.scss */
 #servicePetal109 {
-  -webkit-animation: spin109 6s ease-out 4s forwards;
-  -moz-animation: spin109 6s ease-out 4s forwards;
-  -o-animation: spin109 6s ease-out 4s forwards;
-  animation: spin109 6s ease-out 4s forwards;
+  -webkit-animation: spin109 4s ease-out 2s forwards;
+  -moz-animation: spin109 4s ease-out 2s forwards;
+  -o-animation: spin109 4s ease-out 2s forwards;
+  animation: spin109 4s ease-out 2s forwards;
 }
 
 /* line 219, ../sass/services.scss */
 #servicePetal110 {
-  -webkit-animation: spin110 6s ease-out 4s forwards;
-  -moz-animation: spin110 6s ease-out 4s forwards;
-  -o-animation: spin110 6s ease-out 4s forwards;
-  animation: spin110 6s ease-out 4s forwards;
+  -webkit-animation: spin110 4s ease-out 2s forwards;
+  -moz-animation: spin110 4s ease-out 2s forwards;
+  -o-animation: spin110 4s ease-out 2s forwards;
+  animation: spin110 4s ease-out 2s forwards;
 }
 
 /* line 219, ../sass/services.scss */
 #servicePetal111 {
-  -webkit-animation: spin111 6s ease-out 4s forwards;
-  -moz-animation: spin111 6s ease-out 4s forwards;
-  -o-animation: spin111 6s ease-out 4s forwards;
-  animation: spin111 6s ease-out 4s forwards;
+  -webkit-animation: spin111 4s ease-out 2s forwards;
+  -moz-animation: spin111 4s ease-out 2s forwards;
+  -o-animation: spin111 4s ease-out 2s forwards;
+  animation: spin111 4s ease-out 2s forwards;
 }
 
 /* line 219, ../sass/services.scss */
 #servicePetal112 {
-  -webkit-animation: spin112 6s ease-out 4s forwards;
-  -moz-animation: spin112 6s ease-out 4s forwards;
-  -o-animation: spin112 6s ease-out 4s forwards;
-  animation: spin112 6s ease-out 4s forwards;
+  -webkit-animation: spin112 4s ease-out 2s forwards;
+  -moz-animation: spin112 4s ease-out 2s forwards;
+  -o-animation: spin112 4s ease-out 2s forwards;
+  animation: spin112 4s ease-out 2s forwards;
 }
 
 /* line 219, ../sass/services.scss */
 #servicePetal113 {
-  -webkit-animation: spin113 6s ease-out 4s forwards;
-  -moz-animation: spin113 6s ease-out 4s forwards;
-  -o-animation: spin113 6s ease-out 4s forwards;
-  animation: spin113 6s ease-out 4s forwards;
+  -webkit-animation: spin113 4s ease-out 2s forwards;
+  -moz-animation: spin113 4s ease-out 2s forwards;
+  -o-animation: spin113 4s ease-out 2s forwards;
+  animation: spin113 4s ease-out 2s forwards;
 }
 
 /* line 219, ../sass/services.scss */
 #servicePetal114 {
-  -webkit-animation: spin114 6s ease-out 4s forwards;
-  -moz-animation: spin114 6s ease-out 4s forwards;
-  -o-animation: spin114 6s ease-out 4s forwards;
-  animation: spin114 6s ease-out 4s forwards;
+  -webkit-animation: spin114 4s ease-out 2s forwards;
+  -moz-animation: spin114 4s ease-out 2s forwards;
+  -o-animation: spin114 4s ease-out 2s forwards;
+  animation: spin114 4s ease-out 2s forwards;
 }
 
 /* line 219, ../sass/services.scss */
 #servicePetal115 {
-  -webkit-animation: spin115 6s ease-out 4s forwards;
-  -moz-animation: spin115 6s ease-out 4s forwards;
-  -o-animation: spin115 6s ease-out 4s forwards;
-  animation: spin115 6s ease-out 4s forwards;
+  -webkit-animation: spin115 4s ease-out 2s forwards;
+  -moz-animation: spin115 4s ease-out 2s forwards;
+  -o-animation: spin115 4s ease-out 2s forwards;
+  animation: spin115 4s ease-out 2s forwards;
 }
 
 /* line 219, ../sass/services.scss */
 #servicePetal116 {
-  -webkit-animation: spin116 6s ease-out 4s forwards;
-  -moz-animation: spin116 6s ease-out 4s forwards;
-  -o-animation: spin116 6s ease-out 4s forwards;
-  animation: spin116 6s ease-out 4s forwards;
+  -webkit-animation: spin116 4s ease-out 2s forwards;
+  -moz-animation: spin116 4s ease-out 2s forwards;
+  -o-animation: spin116 4s ease-out 2s forwards;
+  animation: spin116 4s ease-out 2s forwards;
 }
 
 /* line 219, ../sass/services.scss */
 #servicePetal117 {
-  -webkit-animation: spin117 6s ease-out 4s forwards;
-  -moz-animation: spin117 6s ease-out 4s forwards;
-  -o-animation: spin117 6s ease-out 4s forwards;
-  animation: spin117 6s ease-out 4s forwards;
+  -webkit-animation: spin117 4s ease-out 2s forwards;
+  -moz-animation: spin117 4s ease-out 2s forwards;
+  -o-animation: spin117 4s ease-out 2s forwards;
+  animation: spin117 4s ease-out 2s forwards;
 }
 
 /* line 219, ../sass/services.scss */
 #servicePetal118 {
-  -webkit-animation: spin118 6s ease-out 4s forwards;
-  -moz-animation: spin118 6s ease-out 4s forwards;
-  -o-animation: spin118 6s ease-out 4s forwards;
-  animation: spin118 6s ease-out 4s forwards;
+  -webkit-animation: spin118 4s ease-out 2s forwards;
+  -moz-animation: spin118 4s ease-out 2s forwards;
+  -o-animation: spin118 4s ease-out 2s forwards;
+  animation: spin118 4s ease-out 2s forwards;
 }
 
 @-webkit-keyframes spin101 {
@@ -3179,12 +3177,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media all and (min-width: 40em) {
   /* line 300, ../sass/services.scss */
   #mask {
-    margin-top: 250px;
+    margin-top: 300px;
   }
 
   /* line 304, ../sass/services.scss */
   #mask2 {
-    margin-top: -250px;
+    margin-top: -200px;
   }
 
   /* line 308, ../sass/services.scss */
@@ -3241,58 +3239,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   /* line 329, ../sass/services.scss */
   #leaf1 {
     top: 500px;
-    -moz-transform: rotateZ(180deg);
-    -ms-transform: rotateZ(180deg);
-    -webkit-transform: rotateZ(180deg);
-    transform: rotateZ(180deg);
-    -webkit-animation: leafGrow1 6s ease-out forwards;
-    -moz-animation: leafGrow1 6s ease-out forwards;
-    -o-animation: leafGrow1 6s ease-out forwards;
-    animation: leafGrow1 6s ease-out forwards;
   }
 
-  /* line 335, ../sass/services.scss */
+  /* line 333, ../sass/services.scss */
   #leaf2 {
     top: 500px;
-    -moz-transform: rotateX(180deg) scale(0.01);
-    -ms-transform: rotateX(180deg) scale(0.01);
-    -webkit-transform: rotateX(180deg) scale(0.01);
-    transform: rotateX(180deg) scale(0.01);
-    -webkit-animation: leafGrow2 6s ease-out 1s forwards;
-    -moz-animation: leafGrow2 6s ease-out 1s forwards;
-    -o-animation: leafGrow2 6s ease-out 1s forwards;
-    animation: leafGrow2 6s ease-out 1s forwards;
   }
 
-  /* line 341, ../sass/services.scss */
+  /* line 337, ../sass/services.scss */
   #leaf3 {
     top: 350px;
     left: -26px;
-    -moz-transform: rotateZ(180deg) scale(0.01);
-    -ms-transform: rotateZ(180deg) scale(0.01);
-    -webkit-transform: rotateZ(180deg) scale(0.01);
-    transform: rotateZ(180deg) scale(0.01);
-    -webkit-animation: leafGrow3 6s ease-out 2s forwards;
-    -moz-animation: leafGrow3 6s ease-out 2s forwards;
-    -o-animation: leafGrow3 6s ease-out 2s forwards;
-    animation: leafGrow3 6s ease-out 2s forwards;
   }
 
-  /* line 348, ../sass/services.scss */
+  /* line 342, ../sass/services.scss */
   #leaf4 {
     top: 250px;
     left: -34px;
-    -moz-transform: rotateX(180deg) scale(0.01);
-    -ms-transform: rotateX(180deg) scale(0.01);
-    -webkit-transform: rotateX(180deg) scale(0.01);
-    transform: rotateX(180deg) scale(0.01);
-    -webkit-animation: leafGrow4 6s ease-out 3s forwards;
-    -moz-animation: leafGrow4 6s ease-out 3s forwards;
-    -o-animation: leafGrow4 6s ease-out 3s forwards;
-    animation: leafGrow4 6s ease-out 3s forwards;
   }
 
-  /* line 355, ../sass/services.scss */
+  /* line 347, ../sass/services.scss */
   .servicePetal {
     top: 1px;
     left: 3px;
@@ -3302,7 +3268,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 50px;
   }
 
-  /* line 365, ../sass/services.scss */
+  /* line 357, ../sass/services.scss */
   #serviceCenter {
     width: 40px;
     height: 40px;
@@ -3313,11 +3279,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-radius: 40px;
   }
 
-  /* line 375, ../sass/services.scss */
+  /* line 367, ../sass/services.scss */
   #servicesContent {
     height: 500px;
     width: 500px;
-    margin-top: -250px;
+    margin-top: -200px;
     margin-left: -250px;
   }
 }

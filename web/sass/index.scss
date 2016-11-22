@@ -11,7 +11,7 @@ $indexContentSize: 300px;
     width: $indexContent-width;
     margin-top: - $indexContent-height / 2;
     margin-left: - $indexContent-width / 2;
-    @include debug(red);
+    // @include debug(red);
 }
 
 #flowerContainer {
@@ -272,6 +272,21 @@ $indexSpin36Angle: $indexAngleStep;
         height: $indexContentSize;
     }
 
+    @include keyframes(animIndexMask) {
+        0% {
+            top: 50%;
+            left: 50%;
+            margin-top: -$indexContentSize/2;
+            margin-left: -$indexContentSize/2;
+        }
+        100% {
+            top: -170px;
+            left: -200px;
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+    }
+
     #atinfo {
         height: 80px;
         line-height: 30px;
@@ -307,18 +322,5 @@ $indexSpin36Angle: $indexAngleStep;
         width: 50px;
     }
 
-    @include keyframes(animIndexMask) {
-        0% {
-            top: 50%;
-            left: 50%;
-            margin-top: -185px;
-            margin-left: -185px;
-        }
-        100% {
-            top: -170px;
-            left: -200px;
-            margin-top: 0px;
-            margin-left: 0px;
-        }
-    }
+
 }
