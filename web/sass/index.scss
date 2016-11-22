@@ -3,6 +3,7 @@
 
 $indexContent-width : 300px;
 $indexContent-height :300px;
+$indexContentSize: 300px;
 
 #indexContent {
     @include abs-centered();
@@ -10,7 +11,7 @@ $indexContent-height :300px;
     width: $indexContent-width;
     margin-top: - $indexContent-height / 2;
     margin-left: - $indexContent-width / 2;
-    // @include debug(#999);
+    // @include debug(red);
 }
 
 #flowerContainer {
@@ -19,21 +20,20 @@ $indexContent-height :300px;
     position: absolute;
     top: 50%;
     left: 50%;
-@include debug(red);
+    margin-top: 20px;
+    margin-left: 20px;
+    // @include debug(red);
 }
 
 #indexMask {
     position: absolute;
-    // top: -120px;
-    // left: -120px;
     top: 50%;
     left: 50%;
-    margin-top: -185px;
-    margin-left: -195px;
-    width: 390px;
-    height: 370px;
+    margin-top: -$indexContentSize/4;
+    margin-left: -$indexContentSize/4;
+    width: $indexContentSize/2;
+    height: $indexContentSize/2;
     background-color: $bg-color;
-    // z-index: 50;
     text-align: center;
     @include animation("animIndexMask 1s ease-out 1s forwards");
     // @include debug(red);
@@ -43,12 +43,12 @@ $indexContent-height :300px;
     0% {
         top: 50%;
         left: 50%;
-        margin-top: -185px;
-        margin-left: -185px;
+        margin-top: -$indexContentSize/4;
+        margin-left: -$indexContentSize/4;
     }
     100% {
-        top: -120px;
-        left: -140px;
+        top: 0px;
+        left: 0px;
         margin-top: 0px;
         margin-left: 0px;
     }
@@ -56,12 +56,12 @@ $indexContent-height :300px;
 
 #atinfo {
     position: relative;
-    height: 80px;
+    height: 30px;
     width: 100%;
-    line-height: 80px;
-    margin-top: 40px;
-    font-size: 120px;
-    margin-bottom: 30px;
+    line-height: 30px;
+    margin-top: 0px;
+    font-size: 60px;
+    margin-bottom: 20px;
     color : #222;
     font-family: 'Gruppo', sans-serif;
     // @include debug(green);
@@ -81,8 +81,8 @@ $indexContent-height :300px;
 .indexText {
     position: relative;
     font-family: 'BebasNeue', sans-serif;
-    padding: 10px;
-    font-size: 30px;
+    padding: 5px;
+    font-size: 20px;
     // @include debug(green);
 }
 
@@ -99,18 +99,19 @@ $indexContent-height :300px;
     text-align: center;
     letter-spacing: 1px;
     // @include debug(green);
-    padding: 10px;
+    padding: 2px 0 5px;
 }
 
 .nav a {
     color: #333;
+    font-size: 80%;
 }
 
 .info {
     color: #999;
-    padding: 10px;
+    padding: 5px;
     font-family: 'Muli', sans-serif;
-    font-size: 90%;
+    font-size: 70%;
 }
 
 /*
@@ -123,9 +124,9 @@ $indexContent-height :300px;
     border-radius: 10% 90% 10% 95%;
     border-top: 1px solid $bg-color;
     border-left: 1px solid $bg-color;
-    height: 150px;
+    height: 60px;
     margin: auto;
-    width: 50px;
+    width: 20px;
     transform-origin: left top;
     @include transform(scale(0));
     // opacity: 0;
@@ -255,11 +256,69 @@ $indexSpin36Angle: $indexAngleStep;
 
     $indexContent-width : 500px;
     $indexContent-height :500px;
+    $indexContentSize: 500px;
 
     #indexContent {
         height: $indexContent-height;
         width: $indexContent-width;
         margin-top: - $indexContent-height / 2;
         margin-left: - $indexContent-width / 2;
+    }
+
+    #indexMask {
+        margin-top: -$indexContentSize/2;
+        margin-left: -$indexContentSize/2;
+        width: $indexContentSize;
+        height: $indexContentSize;
+    }
+
+    #atinfo {
+        height: 80px;
+        line-height: 30px;
+        line-height: 80px;
+        margin-top: 100px;
+        font-size: 120px;
+        margin-bottom: 30px;
+    }
+
+    .indexText {
+        padding: 10px;
+        font-size: 30px;
+    }
+
+    .nav {
+        padding: 10px;
+    }
+
+    .nav a {
+        color: #333;
+        font-size: 100%;
+    }
+
+    .info {
+        color: #999;
+        padding: 5px;
+        font-family: 'Muli', sans-serif;
+        font-size: 90%;
+    }
+
+    .indexPetal {
+        height: 150px;
+        width: 50px;
+    }
+
+    @include keyframes(animIndexMask) {
+        0% {
+            top: 50%;
+            left: 50%;
+            margin-top: -185px;
+            margin-left: -185px;
+        }
+        100% {
+            top: -170px;
+            left: -200px;
+            margin-top: 0px;
+            margin-left: 0px;
+        }
     }
 }
