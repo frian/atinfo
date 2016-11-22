@@ -19,7 +19,7 @@ $indexContent-height :300px;
     position: absolute;
     top: 50%;
     left: 50%;
-
+@include debug(red);
 }
 
 #indexMask {
@@ -29,13 +29,14 @@ $indexContent-height :300px;
     top: 50%;
     left: 50%;
     margin-top: -185px;
-    margin-left: -185px;
-    width: 370px;
+    margin-left: -195px;
+    width: 390px;
     height: 370px;
     background-color: $bg-color;
     // z-index: 50;
     text-align: center;
     @include animation("animIndexMask 1s ease-out 1s forwards");
+    // @include debug(red);
 }
 
 @include keyframes(animIndexMask) {
@@ -47,7 +48,7 @@ $indexContent-height :300px;
     }
     100% {
         top: -120px;
-        left: -120px;
+        left: -140px;
         margin-top: 0px;
         margin-left: 0px;
     }
@@ -60,7 +61,7 @@ $indexContent-height :300px;
     line-height: 80px;
     margin-top: 40px;
     font-size: 120px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color : #222;
     font-family: 'Gruppo', sans-serif;
     // @include debug(green);
@@ -107,7 +108,7 @@ $indexContent-height :300px;
 
 .info {
     color: #999;
-    padding: 5px;
+    padding: 10px;
     font-family: 'Muli', sans-serif;
     font-size: 90%;
 }
@@ -126,7 +127,8 @@ $indexContent-height :300px;
     margin: auto;
     width: 50px;
     transform-origin: left top;
-    opacity: 0;
+    @include transform(scale(0));
+    // opacity: 0;
     // background-color: red;
     z-index: 20;
 }
