@@ -40,52 +40,52 @@ $(function() {
 
 
 	// handle link clicks
-	$(".menu li a").click(function(e) {
-
-		if ( $("#top").length ) {
-			$("#top").remove();
-		}
-
-		e.preventDefault();
-
-		var old = current;
-
-		current = '#' + $(this).text().toLowerCase();
-
-		$(current).css( "opacity" , 0 );
-
-
-		$(old).animate({
-			opacity: 0,
-		}, 250, function() {
-			// Animation complete.
-			$(old).css( "display" , "none" );
-
-			$(current).css( "display" , "table" );
-
-			$(current).animate({
-				opacity: 1,
-			}, 250);
-
-
-			$(current).css( "display" , "table" );
-
-			setTimeout(function() {
-
-
-				// if scroll add link to top
-				if ( $(document).height() > $(window).height()  ) {
-
-					if ( ! $("#top").length ) {
-						var top = $("<div/>").attr('id', 'top').html("<i class='icon-up-open-big'></i>");
-						$(current + " .cell").append(top);
-					}
-				}
-			}, 100);
-
-	    });
-
-	});
+	// $(".menu li a").click(function(e) {
+    //
+	// 	if ( $("#top").length ) {
+	// 		$("#top").remove();
+	// 	}
+    //
+	// 	e.preventDefault();
+    //
+	// 	var old = current;
+    //
+	// 	current = '#' + $(this).text().toLowerCase();
+    //
+	// 	$(current).css( "opacity" , 0 );
+    //
+    //
+	// 	$(old).animate({
+	// 		opacity: 0,
+	// 	}, 250, function() {
+	// 		// Animation complete.
+	// 		$(old).css( "display" , "none" );
+    //
+	// 		$(current).css( "display" , "table" );
+    //
+	// 		$(current).animate({
+	// 			opacity: 1,
+	// 		}, 250);
+    //
+    //
+	// 		$(current).css( "display" , "table" );
+    //
+	// 		setTimeout(function() {
+    //
+    //
+	// 			// if scroll add link to top
+	// 			if ( $(document).height() > $(window).height()  ) {
+    //
+	// 				if ( ! $("#top").length ) {
+	// 					var top = $("<div/>").attr('id', 'top').html("<i class='icon-up-open-big'></i>");
+	// 					$(current + " .cell").append(top);
+	// 				}
+	// 			}
+	// 		}, 100);
+    //
+	//     });
+    //
+	// });
 
 	// handle link clicks
 	$(document).on("click","#top",function(e) {

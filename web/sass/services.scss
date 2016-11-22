@@ -39,6 +39,68 @@ $servicesContentSize: 200px;
     // @include debug(red);
 }
 
+#servicesContentText {
+
+    position: relative;
+    left: 60px;
+    top: 50px;
+    width: 140px;
+    font-size: 34px;
+    // @include debug(red);
+    // font-family: 'BebasNeue', sans-serif;
+}
+
+
+.indexSpan {
+    @include opacity(0);
+}
+
+
+// animation
+@mixin defineIndexSpanAnim($anim, $delay) {
+    @include animation("#{$anim} 3s ease-out #{$delay}s forwards");
+}
+
+$i: 1;
+
+@for $i from 1 through 6 {
+    #indexSpan#{$i} { @include defineIndexSpanAnim( "indexSpan#{$i}", $i - 1 ) }
+    $i: $i + 1;
+}
+
+
+#indexSpan1, #indexSpan2, #indexSpan5 {
+    color: #888;
+}
+
+#indexSpan6 {
+    color: #0a0;
+    font-size: 40px;
+}
+
+
+@mixin createIndexSpanAnim($name) {
+
+    @include keyframes(#{$name}) {
+        0% {
+            @include opacity(0);
+        }
+        100% {
+            @include opacity(1);
+        }
+    }
+}
+
+@for $i from 1 through 6 {
+    #indexSpan#{$i} { @include defineIndexSpanAnim( "indexSpan#{$i}", $i) }
+    $i: $i + 1;
+}
+
+
+
+@for $i from 1 through 6 {
+    @include createIndexSpanAnim("indexSpan#{$i}");
+}
 
 /*
 	-- TRUNK ---------------------------------------------------------------------
@@ -65,6 +127,7 @@ $servicesContentSize: 200px;
     background-color: $bg-color;
     @include abs-centered();
     @include animation('growTrunk 2s linear forwards');
+    // background-color: red;
 }
 
 @include keyframes(growTrunk) {
@@ -85,7 +148,7 @@ $servicesContentSize: 200px;
     position: absolute;
     left: 0px;
     transform-origin: left top;
-
+    @include opacity(0);
     background-color: #080;
 }
 
@@ -119,40 +182,44 @@ $servicesContentSize: 200px;
 @include keyframes(leafGrow1) {
     from {
         @include transform(scale(0.01) rotateZ(180deg));
-
+        @include opacity(1);
     }
     to {
         @include transform(scale(1) rotateZ(180deg));
+        @include opacity(1);
     }
 }
 
 @include keyframes(leafGrow2) {
     from {
         @include transform(scale(0.01) rotateX(180deg));
-
+        @include opacity(1);
     }
     to {
         @include transform(scale(1) rotateX(180deg));
+        @include opacity(1);
     }
 }
 
 @include keyframes(leafGrow3) {
     from {
         @include transform(scale(0.01) rotateX(180deg));
-
+        @include opacity(1);
     }
     to {
         @include transform(scale(0.8) rotateX(180deg));
+        @include opacity(1);
     }
 }
 
 @include keyframes(leafGrow4) {
     from {
         @include transform(scale(0.01) rotateZ(180deg));
-
+        @include opacity(1);
     }
     to {
         @include transform(scale(0.6) rotateZ(180deg));
+        @include opacity(1);
     }
 }
 
@@ -169,7 +236,7 @@ $centerSize: 20px;
 #serviceCenter {
     position: absolute;
     border: 2px solid $bg-color;
-    background-color: $bgColor2;
+    background-color: black;
     width: $centerSize;
     height: $centerSize;
     top: -$centerSize / 2;
@@ -220,7 +287,7 @@ $centerSize: 20px;
 }
 
 // start angle
-$serviceAngleOffset: -5deg;
+$serviceAngleOffset: 235deg;
 $serviceAngleStep: 20deg;
 
 // petal angles
@@ -270,29 +337,29 @@ $serviceSpin18Angle: $serviceAngleStep;
         100% {
             @include serviceAnimEnd($angle, 2);
             background-color: $endColor;
-            opacity: 0.5;
+            opacity: 0.6;
         }
     }
 }
 
-@include createServiceAnim("spin101", $serviceAngleOffset - $serviceSpin1Angle, $bgGrey1, $bgColor1);
-@include createServiceAnim("spin102", $serviceAngleOffset - $serviceSpin2Angle, $bgGrey2, $bgColor2);
-@include createServiceAnim("spin103", $serviceAngleOffset - $serviceSpin3Angle, $bgGrey1, $bgColor1);
-@include createServiceAnim("spin104", $serviceAngleOffset - $serviceSpin4Angle, $bgGrey2, $bgColor2);
-@include createServiceAnim("spin105", $serviceAngleOffset - $serviceSpin5Angle, $bgGrey1, $bgColor1);
-@include createServiceAnim("spin106", $serviceAngleOffset - $serviceSpin6Angle, $bgGrey2, $bgColor2);
-@include createServiceAnim("spin107", $serviceAngleOffset - $serviceSpin7Angle, $bgGrey1, $bgColor1);
-@include createServiceAnim("spin108", $serviceAngleOffset - $serviceSpin8Angle, $bgGrey2, $bgColor2);
-@include createServiceAnim("spin109", $serviceAngleOffset - $serviceSpin9Angle, $bgGrey1, $bgColor1);
-@include createServiceAnim("spin110", $serviceAngleOffset - $serviceSpin10Angle, $bgGrey2, $bgColor2);
-@include createServiceAnim("spin111", $serviceAngleOffset - $serviceSpin11Angle, $bgGrey1, $bgColor1);
-@include createServiceAnim("spin112", $serviceAngleOffset - $serviceSpin12Angle, $bgGrey2, $bgColor2);
-@include createServiceAnim("spin113", $serviceAngleOffset - $serviceSpin13Angle, $bgGrey1, $bgColor1);
-@include createServiceAnim("spin114", $serviceAngleOffset - $serviceSpin14Angle, $bgGrey2, $bgColor2);
-@include createServiceAnim("spin115", $serviceAngleOffset - $serviceSpin15Angle, $bgGrey1, $bgColor1);
-@include createServiceAnim("spin116", $serviceAngleOffset - $serviceSpin16Angle, $bgGrey2, $bgColor2);
-@include createServiceAnim("spin117", $serviceAngleOffset - $serviceSpin17Angle, $bgGrey1, $bgColor1);
-@include createServiceAnim("spin118", $serviceAngleOffset - $serviceSpin18Angle, $bgGrey2, $bgColor2);
+@include createServiceAnim("spin101", $serviceAngleOffset - $serviceSpin1Angle, $bgGrey1, hsl(0, 100%, 50%));
+@include createServiceAnim("spin102", $serviceAngleOffset - $serviceSpin2Angle, $bgGrey2, hsl(20, 100%, 50%));
+@include createServiceAnim("spin103", $serviceAngleOffset - $serviceSpin3Angle, $bgGrey1, hsl(40, 100%, 50%));
+@include createServiceAnim("spin104", $serviceAngleOffset - $serviceSpin4Angle, $bgGrey2, hsl(60, 100%, 50%));
+@include createServiceAnim("spin105", $serviceAngleOffset - $serviceSpin5Angle, $bgGrey1, hsl(80, 100%, 50%));
+@include createServiceAnim("spin106", $serviceAngleOffset - $serviceSpin6Angle, $bgGrey2, hsl(100, 100%, 50%));
+@include createServiceAnim("spin107", $serviceAngleOffset - $serviceSpin7Angle, $bgGrey1, hsl(120, 100%, 50%));
+@include createServiceAnim("spin108", $serviceAngleOffset - $serviceSpin8Angle, $bgGrey2, hsl(140, 100%, 50%));
+@include createServiceAnim("spin109", $serviceAngleOffset - $serviceSpin9Angle, $bgGrey1, hsl(160, 100%, 50%));
+@include createServiceAnim("spin110", $serviceAngleOffset - $serviceSpin10Angle, $bgGrey2, hsl(180, 100%, 50%));
+@include createServiceAnim("spin111", $serviceAngleOffset - $serviceSpin11Angle, $bgGrey1, hsl(200, 100%, 50%));
+@include createServiceAnim("spin112", $serviceAngleOffset - $serviceSpin12Angle, $bgGrey2, hsl(220, 100%, 50%));
+@include createServiceAnim("spin113", $serviceAngleOffset - $serviceSpin13Angle, $bgGrey1, hsl(240, 100%, 50%));
+@include createServiceAnim("spin114", $serviceAngleOffset - $serviceSpin14Angle, $bgGrey2, hsl(260, 100%, 50%));
+@include createServiceAnim("spin115", $serviceAngleOffset - $serviceSpin15Angle, $bgGrey1, hsl(280, 100%, 50%));
+@include createServiceAnim("spin116", $serviceAngleOffset - $serviceSpin16Angle, $bgGrey2, hsl(300, 100%, 50%));
+@include createServiceAnim("spin117", $serviceAngleOffset - $serviceSpin17Angle, $bgGrey1, hsl(320, 100%, 50%));
+@include createServiceAnim("spin118", $serviceAngleOffset - $serviceSpin18Angle, $bgGrey2, hsl(340, 100%, 50%));
 
 
 @media all and (min-width: 40em) {
@@ -311,12 +378,12 @@ $serviceSpin18Angle: $serviceAngleStep;
 
     #trunkMask {
         height: 500px;
-        margin-top: -750px;
+        margin-top: -200px;
         margin-left: -290px;
     }
 
     @include keyframes(growTrunk) {
-      0%   { margin-top: -250px; }
+      0%   { margin-top: -200px; }
       100% { margin-top: -750px; }
     }
 
@@ -369,5 +436,17 @@ $serviceSpin18Angle: $serviceAngleStep;
         width: $servicesContentSize;
         margin-top: - ($servicesContentSize / 2) + 50;
         margin-left: - $servicesContentSize / 2;
+    }
+
+    #servicesContentText {
+
+        left: 120px;
+        top: 120px;
+        width: 380px;
+        font-size: 94px;
+    }
+
+    #indexSpan6 {
+        font-size: 110px;
     }
 }

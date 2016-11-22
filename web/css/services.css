@@ -114,10 +114,372 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-left: -100px;
 }
 
+/* line 42, ../sass/services.scss */
+#servicesContentText {
+  position: relative;
+  left: 60px;
+  top: 50px;
+  width: 140px;
+  font-size: 34px;
+}
+
+/* line 54, ../sass/services.scss */
+.indexSpan {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
+/* line 67, ../sass/services.scss */
+#indexSpan1 {
+  -webkit-animation: indexSpan1 3s ease-out 0s forwards;
+  -moz-animation: indexSpan1 3s ease-out 0s forwards;
+  -o-animation: indexSpan1 3s ease-out 0s forwards;
+  animation: indexSpan1 3s ease-out 0s forwards;
+}
+
+/* line 67, ../sass/services.scss */
+#indexSpan2 {
+  -webkit-animation: indexSpan2 3s ease-out 1s forwards;
+  -moz-animation: indexSpan2 3s ease-out 1s forwards;
+  -o-animation: indexSpan2 3s ease-out 1s forwards;
+  animation: indexSpan2 3s ease-out 1s forwards;
+}
+
+/* line 67, ../sass/services.scss */
+#indexSpan3 {
+  -webkit-animation: indexSpan3 3s ease-out 2s forwards;
+  -moz-animation: indexSpan3 3s ease-out 2s forwards;
+  -o-animation: indexSpan3 3s ease-out 2s forwards;
+  animation: indexSpan3 3s ease-out 2s forwards;
+}
+
+/* line 67, ../sass/services.scss */
+#indexSpan4 {
+  -webkit-animation: indexSpan4 3s ease-out 3s forwards;
+  -moz-animation: indexSpan4 3s ease-out 3s forwards;
+  -o-animation: indexSpan4 3s ease-out 3s forwards;
+  animation: indexSpan4 3s ease-out 3s forwards;
+}
+
+/* line 67, ../sass/services.scss */
+#indexSpan5 {
+  -webkit-animation: indexSpan5 3s ease-out 4s forwards;
+  -moz-animation: indexSpan5 3s ease-out 4s forwards;
+  -o-animation: indexSpan5 3s ease-out 4s forwards;
+  animation: indexSpan5 3s ease-out 4s forwards;
+}
+
+/* line 67, ../sass/services.scss */
+#indexSpan6 {
+  -webkit-animation: indexSpan6 3s ease-out 5s forwards;
+  -moz-animation: indexSpan6 3s ease-out 5s forwards;
+  -o-animation: indexSpan6 3s ease-out 5s forwards;
+  animation: indexSpan6 3s ease-out 5s forwards;
+}
+
+/* line 72, ../sass/services.scss */
+#indexSpan1, #indexSpan2, #indexSpan5 {
+  color: #888;
+}
+
+/* line 76, ../sass/services.scss */
+#indexSpan6 {
+  color: #0a0;
+  font-size: 40px;
+}
+
+/* line 95, ../sass/services.scss */
+#indexSpan1 {
+  -webkit-animation: indexSpan1 3s ease-out 1s forwards;
+  -moz-animation: indexSpan1 3s ease-out 1s forwards;
+  -o-animation: indexSpan1 3s ease-out 1s forwards;
+  animation: indexSpan1 3s ease-out 1s forwards;
+}
+
+/* line 95, ../sass/services.scss */
+#indexSpan2 {
+  -webkit-animation: indexSpan2 3s ease-out 2s forwards;
+  -moz-animation: indexSpan2 3s ease-out 2s forwards;
+  -o-animation: indexSpan2 3s ease-out 2s forwards;
+  animation: indexSpan2 3s ease-out 2s forwards;
+}
+
+/* line 95, ../sass/services.scss */
+#indexSpan3 {
+  -webkit-animation: indexSpan3 3s ease-out 3s forwards;
+  -moz-animation: indexSpan3 3s ease-out 3s forwards;
+  -o-animation: indexSpan3 3s ease-out 3s forwards;
+  animation: indexSpan3 3s ease-out 3s forwards;
+}
+
+/* line 95, ../sass/services.scss */
+#indexSpan4 {
+  -webkit-animation: indexSpan4 3s ease-out 4s forwards;
+  -moz-animation: indexSpan4 3s ease-out 4s forwards;
+  -o-animation: indexSpan4 3s ease-out 4s forwards;
+  animation: indexSpan4 3s ease-out 4s forwards;
+}
+
+/* line 95, ../sass/services.scss */
+#indexSpan5 {
+  -webkit-animation: indexSpan5 3s ease-out 5s forwards;
+  -moz-animation: indexSpan5 3s ease-out 5s forwards;
+  -o-animation: indexSpan5 3s ease-out 5s forwards;
+  animation: indexSpan5 3s ease-out 5s forwards;
+}
+
+/* line 95, ../sass/services.scss */
+#indexSpan6 {
+  -webkit-animation: indexSpan6 3s ease-out 6s forwards;
+  -moz-animation: indexSpan6 3s ease-out 6s forwards;
+  -o-animation: indexSpan6 3s ease-out 6s forwards;
+  animation: indexSpan6 3s ease-out 6s forwards;
+}
+
+@-webkit-keyframes indexSpan1 {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@-moz-keyframes indexSpan1 {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@-o-keyframes indexSpan1 {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@keyframes $indexSpan1 {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes indexSpan2 {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@-moz-keyframes indexSpan2 {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@-o-keyframes indexSpan2 {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@keyframes $indexSpan2 {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes indexSpan3 {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@-moz-keyframes indexSpan3 {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@-o-keyframes indexSpan3 {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@keyframes $indexSpan3 {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes indexSpan4 {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@-moz-keyframes indexSpan4 {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@-o-keyframes indexSpan4 {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@keyframes $indexSpan4 {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes indexSpan5 {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@-moz-keyframes indexSpan5 {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@-o-keyframes indexSpan5 {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@keyframes $indexSpan5 {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes indexSpan6 {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@-moz-keyframes indexSpan6 {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@-o-keyframes indexSpan6 {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@keyframes $indexSpan6 {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
 /*
 	-- TRUNK ---------------------------------------------------------------------
 */
-/* line 46, ../sass/services.scss */
+/* line 108, ../sass/services.scss */
 #trunk {
   height: 2000px;
   width: 2000px;
@@ -137,7 +499,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-bottom-left-radius: 1000px;
 }
 
-/* line 60, ../sass/services.scss */
+/* line 122, ../sass/services.scss */
 #trunkMask {
   width: 50px;
   height: 200px;
@@ -188,7 +550,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*
 	-- LEAVES --------------------------------------------------------------------
 */
-/* line 79, ../sass/services.scss */
+/* line 142, ../sass/services.scss */
 .leaf {
   -moz-border-radius: 1% 90%;
   -webkit-border-radius: 1%;
@@ -200,10 +562,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: absolute;
   left: 0px;
   transform-origin: left top;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
   background-color: #080;
 }
 
-/* line 92, ../sass/services.scss */
+/* line 155, ../sass/services.scss */
 #leaf1 {
   top: 200px;
   -moz-transform: rotateZ(180deg);
@@ -216,7 +580,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: leafGrow1 4s ease-out forwards;
 }
 
-/* line 98, ../sass/services.scss */
+/* line 161, ../sass/services.scss */
 #leaf2 {
   top: 200px;
   -moz-transform: rotateX(180deg) scale(0.01);
@@ -229,7 +593,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: leafGrow2 4s ease-out 1s forwards;
 }
 
-/* line 104, ../sass/services.scss */
+/* line 167, ../sass/services.scss */
 #leaf3 {
   top: 125px;
   left: -4px;
@@ -243,7 +607,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: leafGrow3 3s ease-out 2s forwards;
 }
 
-/* line 111, ../sass/services.scss */
+/* line 174, ../sass/services.scss */
 #leaf4 {
   top: 100px;
   left: -6px;
@@ -263,12 +627,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -ms-transform: scale(0.01) rotateZ(180deg);
     -webkit-transform: scale(0.01) rotateZ(180deg);
     transform: scale(0.01) rotateZ(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
   to {
     -moz-transform: scale(1) rotateZ(180deg);
     -ms-transform: scale(1) rotateZ(180deg);
     -webkit-transform: scale(1) rotateZ(180deg);
     transform: scale(1) rotateZ(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
 }
 @-moz-keyframes leafGrow1 {
@@ -277,12 +645,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -ms-transform: scale(0.01) rotateZ(180deg);
     -webkit-transform: scale(0.01) rotateZ(180deg);
     transform: scale(0.01) rotateZ(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
   to {
     -moz-transform: scale(1) rotateZ(180deg);
     -ms-transform: scale(1) rotateZ(180deg);
     -webkit-transform: scale(1) rotateZ(180deg);
     transform: scale(1) rotateZ(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
 }
 @-o-keyframes leafGrow1 {
@@ -291,12 +663,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -ms-transform: scale(0.01) rotateZ(180deg);
     -webkit-transform: scale(0.01) rotateZ(180deg);
     transform: scale(0.01) rotateZ(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
   to {
     -moz-transform: scale(1) rotateZ(180deg);
     -ms-transform: scale(1) rotateZ(180deg);
     -webkit-transform: scale(1) rotateZ(180deg);
     transform: scale(1) rotateZ(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
 }
 @keyframes $leafGrow1 {
@@ -305,12 +681,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -ms-transform: scale(0.01) rotateZ(180deg);
     -webkit-transform: scale(0.01) rotateZ(180deg);
     transform: scale(0.01) rotateZ(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
   to {
     -moz-transform: scale(1) rotateZ(180deg);
     -ms-transform: scale(1) rotateZ(180deg);
     -webkit-transform: scale(1) rotateZ(180deg);
     transform: scale(1) rotateZ(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
 }
 @-webkit-keyframes leafGrow2 {
@@ -319,12 +699,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -ms-transform: scale(0.01) rotateX(180deg);
     -webkit-transform: scale(0.01) rotateX(180deg);
     transform: scale(0.01) rotateX(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
   to {
     -moz-transform: scale(1) rotateX(180deg);
     -ms-transform: scale(1) rotateX(180deg);
     -webkit-transform: scale(1) rotateX(180deg);
     transform: scale(1) rotateX(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
 }
 @-moz-keyframes leafGrow2 {
@@ -333,12 +717,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -ms-transform: scale(0.01) rotateX(180deg);
     -webkit-transform: scale(0.01) rotateX(180deg);
     transform: scale(0.01) rotateX(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
   to {
     -moz-transform: scale(1) rotateX(180deg);
     -ms-transform: scale(1) rotateX(180deg);
     -webkit-transform: scale(1) rotateX(180deg);
     transform: scale(1) rotateX(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
 }
 @-o-keyframes leafGrow2 {
@@ -347,12 +735,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -ms-transform: scale(0.01) rotateX(180deg);
     -webkit-transform: scale(0.01) rotateX(180deg);
     transform: scale(0.01) rotateX(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
   to {
     -moz-transform: scale(1) rotateX(180deg);
     -ms-transform: scale(1) rotateX(180deg);
     -webkit-transform: scale(1) rotateX(180deg);
     transform: scale(1) rotateX(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
 }
 @keyframes $leafGrow2 {
@@ -361,12 +753,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -ms-transform: scale(0.01) rotateX(180deg);
     -webkit-transform: scale(0.01) rotateX(180deg);
     transform: scale(0.01) rotateX(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
   to {
     -moz-transform: scale(1) rotateX(180deg);
     -ms-transform: scale(1) rotateX(180deg);
     -webkit-transform: scale(1) rotateX(180deg);
     transform: scale(1) rotateX(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
 }
 @-webkit-keyframes leafGrow3 {
@@ -375,12 +771,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -ms-transform: scale(0.01) rotateX(180deg);
     -webkit-transform: scale(0.01) rotateX(180deg);
     transform: scale(0.01) rotateX(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
   to {
     -moz-transform: scale(0.8) rotateX(180deg);
     -ms-transform: scale(0.8) rotateX(180deg);
     -webkit-transform: scale(0.8) rotateX(180deg);
     transform: scale(0.8) rotateX(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
 }
 @-moz-keyframes leafGrow3 {
@@ -389,12 +789,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -ms-transform: scale(0.01) rotateX(180deg);
     -webkit-transform: scale(0.01) rotateX(180deg);
     transform: scale(0.01) rotateX(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
   to {
     -moz-transform: scale(0.8) rotateX(180deg);
     -ms-transform: scale(0.8) rotateX(180deg);
     -webkit-transform: scale(0.8) rotateX(180deg);
     transform: scale(0.8) rotateX(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
 }
 @-o-keyframes leafGrow3 {
@@ -403,12 +807,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -ms-transform: scale(0.01) rotateX(180deg);
     -webkit-transform: scale(0.01) rotateX(180deg);
     transform: scale(0.01) rotateX(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
   to {
     -moz-transform: scale(0.8) rotateX(180deg);
     -ms-transform: scale(0.8) rotateX(180deg);
     -webkit-transform: scale(0.8) rotateX(180deg);
     transform: scale(0.8) rotateX(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
 }
 @keyframes $leafGrow3 {
@@ -417,12 +825,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -ms-transform: scale(0.01) rotateX(180deg);
     -webkit-transform: scale(0.01) rotateX(180deg);
     transform: scale(0.01) rotateX(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
   to {
     -moz-transform: scale(0.8) rotateX(180deg);
     -ms-transform: scale(0.8) rotateX(180deg);
     -webkit-transform: scale(0.8) rotateX(180deg);
     transform: scale(0.8) rotateX(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
 }
 @-webkit-keyframes leafGrow4 {
@@ -431,12 +843,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -ms-transform: scale(0.01) rotateZ(180deg);
     -webkit-transform: scale(0.01) rotateZ(180deg);
     transform: scale(0.01) rotateZ(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
   to {
     -moz-transform: scale(0.6) rotateZ(180deg);
     -ms-transform: scale(0.6) rotateZ(180deg);
     -webkit-transform: scale(0.6) rotateZ(180deg);
     transform: scale(0.6) rotateZ(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
 }
 @-moz-keyframes leafGrow4 {
@@ -445,12 +861,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -ms-transform: scale(0.01) rotateZ(180deg);
     -webkit-transform: scale(0.01) rotateZ(180deg);
     transform: scale(0.01) rotateZ(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
   to {
     -moz-transform: scale(0.6) rotateZ(180deg);
     -ms-transform: scale(0.6) rotateZ(180deg);
     -webkit-transform: scale(0.6) rotateZ(180deg);
     transform: scale(0.6) rotateZ(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
 }
 @-o-keyframes leafGrow4 {
@@ -459,12 +879,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -ms-transform: scale(0.01) rotateZ(180deg);
     -webkit-transform: scale(0.01) rotateZ(180deg);
     transform: scale(0.01) rotateZ(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
   to {
     -moz-transform: scale(0.6) rotateZ(180deg);
     -ms-transform: scale(0.6) rotateZ(180deg);
     -webkit-transform: scale(0.6) rotateZ(180deg);
     transform: scale(0.6) rotateZ(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
 }
 @keyframes $leafGrow4 {
@@ -473,22 +897,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -ms-transform: scale(0.01) rotateZ(180deg);
     -webkit-transform: scale(0.01) rotateZ(180deg);
     transform: scale(0.01) rotateZ(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
   to {
     -moz-transform: scale(0.6) rotateZ(180deg);
     -ms-transform: scale(0.6) rotateZ(180deg);
     -webkit-transform: scale(0.6) rotateZ(180deg);
     transform: scale(0.6) rotateZ(180deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
   }
 }
 /*
 	-- CENTER --------------------------------------------------------------------
 */
-/* line 169, ../sass/services.scss */
+/* line 236, ../sass/services.scss */
 #serviceCenter {
   position: absolute;
   border: 2px solid #eee;
-  background-color: #0072BC;
+  background-color: black;
   width: 20px;
   height: 20px;
   top: -10px;
@@ -566,7 +994,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*
 	-- PETALS --------------------------------------------------------------------
 */
-/* line 196, ../sass/services.scss */
+/* line 263, ../sass/services.scss */
 .servicePetal {
   position: absolute;
   top: 1px;
@@ -582,7 +1010,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   z-index: 20;
 }
 
-/* line 219, ../sass/services.scss */
+/* line 286, ../sass/services.scss */
 #servicePetal101 {
   -webkit-animation: spin101 4s ease-out 2s forwards;
   -moz-animation: spin101 4s ease-out 2s forwards;
@@ -590,7 +1018,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: spin101 4s ease-out 2s forwards;
 }
 
-/* line 219, ../sass/services.scss */
+/* line 286, ../sass/services.scss */
 #servicePetal102 {
   -webkit-animation: spin102 4s ease-out 2s forwards;
   -moz-animation: spin102 4s ease-out 2s forwards;
@@ -598,7 +1026,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: spin102 4s ease-out 2s forwards;
 }
 
-/* line 219, ../sass/services.scss */
+/* line 286, ../sass/services.scss */
 #servicePetal103 {
   -webkit-animation: spin103 4s ease-out 2s forwards;
   -moz-animation: spin103 4s ease-out 2s forwards;
@@ -606,7 +1034,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: spin103 4s ease-out 2s forwards;
 }
 
-/* line 219, ../sass/services.scss */
+/* line 286, ../sass/services.scss */
 #servicePetal104 {
   -webkit-animation: spin104 4s ease-out 2s forwards;
   -moz-animation: spin104 4s ease-out 2s forwards;
@@ -614,7 +1042,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: spin104 4s ease-out 2s forwards;
 }
 
-/* line 219, ../sass/services.scss */
+/* line 286, ../sass/services.scss */
 #servicePetal105 {
   -webkit-animation: spin105 4s ease-out 2s forwards;
   -moz-animation: spin105 4s ease-out 2s forwards;
@@ -622,7 +1050,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: spin105 4s ease-out 2s forwards;
 }
 
-/* line 219, ../sass/services.scss */
+/* line 286, ../sass/services.scss */
 #servicePetal106 {
   -webkit-animation: spin106 4s ease-out 2s forwards;
   -moz-animation: spin106 4s ease-out 2s forwards;
@@ -630,7 +1058,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: spin106 4s ease-out 2s forwards;
 }
 
-/* line 219, ../sass/services.scss */
+/* line 286, ../sass/services.scss */
 #servicePetal107 {
   -webkit-animation: spin107 4s ease-out 2s forwards;
   -moz-animation: spin107 4s ease-out 2s forwards;
@@ -638,7 +1066,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: spin107 4s ease-out 2s forwards;
 }
 
-/* line 219, ../sass/services.scss */
+/* line 286, ../sass/services.scss */
 #servicePetal108 {
   -webkit-animation: spin108 4s ease-out 2s forwards;
   -moz-animation: spin108 4s ease-out 2s forwards;
@@ -646,7 +1074,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: spin108 4s ease-out 2s forwards;
 }
 
-/* line 219, ../sass/services.scss */
+/* line 286, ../sass/services.scss */
 #servicePetal109 {
   -webkit-animation: spin109 4s ease-out 2s forwards;
   -moz-animation: spin109 4s ease-out 2s forwards;
@@ -654,7 +1082,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: spin109 4s ease-out 2s forwards;
 }
 
-/* line 219, ../sass/services.scss */
+/* line 286, ../sass/services.scss */
 #servicePetal110 {
   -webkit-animation: spin110 4s ease-out 2s forwards;
   -moz-animation: spin110 4s ease-out 2s forwards;
@@ -662,7 +1090,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: spin110 4s ease-out 2s forwards;
 }
 
-/* line 219, ../sass/services.scss */
+/* line 286, ../sass/services.scss */
 #servicePetal111 {
   -webkit-animation: spin111 4s ease-out 2s forwards;
   -moz-animation: spin111 4s ease-out 2s forwards;
@@ -670,7 +1098,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: spin111 4s ease-out 2s forwards;
 }
 
-/* line 219, ../sass/services.scss */
+/* line 286, ../sass/services.scss */
 #servicePetal112 {
   -webkit-animation: spin112 4s ease-out 2s forwards;
   -moz-animation: spin112 4s ease-out 2s forwards;
@@ -678,7 +1106,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: spin112 4s ease-out 2s forwards;
 }
 
-/* line 219, ../sass/services.scss */
+/* line 286, ../sass/services.scss */
 #servicePetal113 {
   -webkit-animation: spin113 4s ease-out 2s forwards;
   -moz-animation: spin113 4s ease-out 2s forwards;
@@ -686,7 +1114,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: spin113 4s ease-out 2s forwards;
 }
 
-/* line 219, ../sass/services.scss */
+/* line 286, ../sass/services.scss */
 #servicePetal114 {
   -webkit-animation: spin114 4s ease-out 2s forwards;
   -moz-animation: spin114 4s ease-out 2s forwards;
@@ -694,7 +1122,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: spin114 4s ease-out 2s forwards;
 }
 
-/* line 219, ../sass/services.scss */
+/* line 286, ../sass/services.scss */
 #servicePetal115 {
   -webkit-animation: spin115 4s ease-out 2s forwards;
   -moz-animation: spin115 4s ease-out 2s forwards;
@@ -702,7 +1130,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: spin115 4s ease-out 2s forwards;
 }
 
-/* line 219, ../sass/services.scss */
+/* line 286, ../sass/services.scss */
 #servicePetal116 {
   -webkit-animation: spin116 4s ease-out 2s forwards;
   -moz-animation: spin116 4s ease-out 2s forwards;
@@ -710,7 +1138,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: spin116 4s ease-out 2s forwards;
 }
 
-/* line 219, ../sass/services.scss */
+/* line 286, ../sass/services.scss */
 #servicePetal117 {
   -webkit-animation: spin117 4s ease-out 2s forwards;
   -moz-animation: spin117 4s ease-out 2s forwards;
@@ -718,7 +1146,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: spin117 4s ease-out 2s forwards;
 }
 
-/* line 219, ../sass/services.scss */
+/* line 286, ../sass/services.scss */
 #servicePetal118 {
   -webkit-animation: spin118 4s ease-out 2s forwards;
   -moz-animation: spin118 4s ease-out 2s forwards;
@@ -729,2477 +1157,2477 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-webkit-keyframes spin101 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-365deg) scale(1);
-    -ms-transform: rotate(-365deg) scale(1);
-    -webkit-transform: rotate(-365deg) scale(1);
-    transform: rotate(-365deg) scale(1);
+    -moz-transform: rotate(-125deg) scale(1);
+    -ms-transform: rotate(-125deg) scale(1);
+    -webkit-transform: rotate(-125deg) scale(1);
+    transform: rotate(-125deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-365deg) scale(1);
-    -ms-transform: rotate(-365deg) scale(1);
-    -webkit-transform: rotate(-365deg) scale(1);
-    transform: rotate(-365deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(-125deg) scale(1);
+    -ms-transform: rotate(-125deg) scale(1);
+    -webkit-transform: rotate(-125deg) scale(1);
+    transform: rotate(-125deg) scale(1);
+    background-color: red;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-365deg) scale(2);
-    -ms-transform: rotate(-365deg) scale(2);
-    -webkit-transform: rotate(-365deg) scale(2);
-    transform: rotate(-365deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(-125deg) scale(2);
+    -ms-transform: rotate(-125deg) scale(2);
+    -webkit-transform: rotate(-125deg) scale(2);
+    transform: rotate(-125deg) scale(2);
+    background-color: red;
+    opacity: 0.6;
   }
 }
 @-moz-keyframes spin101 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-365deg) scale(1);
-    -ms-transform: rotate(-365deg) scale(1);
-    -webkit-transform: rotate(-365deg) scale(1);
-    transform: rotate(-365deg) scale(1);
+    -moz-transform: rotate(-125deg) scale(1);
+    -ms-transform: rotate(-125deg) scale(1);
+    -webkit-transform: rotate(-125deg) scale(1);
+    transform: rotate(-125deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-365deg) scale(1);
-    -ms-transform: rotate(-365deg) scale(1);
-    -webkit-transform: rotate(-365deg) scale(1);
-    transform: rotate(-365deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(-125deg) scale(1);
+    -ms-transform: rotate(-125deg) scale(1);
+    -webkit-transform: rotate(-125deg) scale(1);
+    transform: rotate(-125deg) scale(1);
+    background-color: red;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-365deg) scale(2);
-    -ms-transform: rotate(-365deg) scale(2);
-    -webkit-transform: rotate(-365deg) scale(2);
-    transform: rotate(-365deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(-125deg) scale(2);
+    -ms-transform: rotate(-125deg) scale(2);
+    -webkit-transform: rotate(-125deg) scale(2);
+    transform: rotate(-125deg) scale(2);
+    background-color: red;
+    opacity: 0.6;
   }
 }
 @-o-keyframes spin101 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-365deg) scale(1);
-    -ms-transform: rotate(-365deg) scale(1);
-    -webkit-transform: rotate(-365deg) scale(1);
-    transform: rotate(-365deg) scale(1);
+    -moz-transform: rotate(-125deg) scale(1);
+    -ms-transform: rotate(-125deg) scale(1);
+    -webkit-transform: rotate(-125deg) scale(1);
+    transform: rotate(-125deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-365deg) scale(1);
-    -ms-transform: rotate(-365deg) scale(1);
-    -webkit-transform: rotate(-365deg) scale(1);
-    transform: rotate(-365deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(-125deg) scale(1);
+    -ms-transform: rotate(-125deg) scale(1);
+    -webkit-transform: rotate(-125deg) scale(1);
+    transform: rotate(-125deg) scale(1);
+    background-color: red;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-365deg) scale(2);
-    -ms-transform: rotate(-365deg) scale(2);
-    -webkit-transform: rotate(-365deg) scale(2);
-    transform: rotate(-365deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(-125deg) scale(2);
+    -ms-transform: rotate(-125deg) scale(2);
+    -webkit-transform: rotate(-125deg) scale(2);
+    transform: rotate(-125deg) scale(2);
+    background-color: red;
+    opacity: 0.6;
   }
 }
 @keyframes $spin101 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-365deg) scale(1);
-    -ms-transform: rotate(-365deg) scale(1);
-    -webkit-transform: rotate(-365deg) scale(1);
-    transform: rotate(-365deg) scale(1);
+    -moz-transform: rotate(-125deg) scale(1);
+    -ms-transform: rotate(-125deg) scale(1);
+    -webkit-transform: rotate(-125deg) scale(1);
+    transform: rotate(-125deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-365deg) scale(1);
-    -ms-transform: rotate(-365deg) scale(1);
-    -webkit-transform: rotate(-365deg) scale(1);
-    transform: rotate(-365deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(-125deg) scale(1);
+    -ms-transform: rotate(-125deg) scale(1);
+    -webkit-transform: rotate(-125deg) scale(1);
+    transform: rotate(-125deg) scale(1);
+    background-color: red;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-365deg) scale(2);
-    -ms-transform: rotate(-365deg) scale(2);
-    -webkit-transform: rotate(-365deg) scale(2);
-    transform: rotate(-365deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(-125deg) scale(2);
+    -ms-transform: rotate(-125deg) scale(2);
+    -webkit-transform: rotate(-125deg) scale(2);
+    transform: rotate(-125deg) scale(2);
+    background-color: red;
+    opacity: 0.6;
   }
 }
 @-webkit-keyframes spin102 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-345deg) scale(1);
-    -ms-transform: rotate(-345deg) scale(1);
-    -webkit-transform: rotate(-345deg) scale(1);
-    transform: rotate(-345deg) scale(1);
+    -moz-transform: rotate(-105deg) scale(1);
+    -ms-transform: rotate(-105deg) scale(1);
+    -webkit-transform: rotate(-105deg) scale(1);
+    transform: rotate(-105deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-345deg) scale(1);
-    -ms-transform: rotate(-345deg) scale(1);
-    -webkit-transform: rotate(-345deg) scale(1);
-    transform: rotate(-345deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(-105deg) scale(1);
+    -ms-transform: rotate(-105deg) scale(1);
+    -webkit-transform: rotate(-105deg) scale(1);
+    transform: rotate(-105deg) scale(1);
+    background-color: #ff5500;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-345deg) scale(2);
-    -ms-transform: rotate(-345deg) scale(2);
-    -webkit-transform: rotate(-345deg) scale(2);
-    transform: rotate(-345deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(-105deg) scale(2);
+    -ms-transform: rotate(-105deg) scale(2);
+    -webkit-transform: rotate(-105deg) scale(2);
+    transform: rotate(-105deg) scale(2);
+    background-color: #ff5500;
+    opacity: 0.6;
   }
 }
 @-moz-keyframes spin102 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-345deg) scale(1);
-    -ms-transform: rotate(-345deg) scale(1);
-    -webkit-transform: rotate(-345deg) scale(1);
-    transform: rotate(-345deg) scale(1);
+    -moz-transform: rotate(-105deg) scale(1);
+    -ms-transform: rotate(-105deg) scale(1);
+    -webkit-transform: rotate(-105deg) scale(1);
+    transform: rotate(-105deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-345deg) scale(1);
-    -ms-transform: rotate(-345deg) scale(1);
-    -webkit-transform: rotate(-345deg) scale(1);
-    transform: rotate(-345deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(-105deg) scale(1);
+    -ms-transform: rotate(-105deg) scale(1);
+    -webkit-transform: rotate(-105deg) scale(1);
+    transform: rotate(-105deg) scale(1);
+    background-color: #ff5500;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-345deg) scale(2);
-    -ms-transform: rotate(-345deg) scale(2);
-    -webkit-transform: rotate(-345deg) scale(2);
-    transform: rotate(-345deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(-105deg) scale(2);
+    -ms-transform: rotate(-105deg) scale(2);
+    -webkit-transform: rotate(-105deg) scale(2);
+    transform: rotate(-105deg) scale(2);
+    background-color: #ff5500;
+    opacity: 0.6;
   }
 }
 @-o-keyframes spin102 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-345deg) scale(1);
-    -ms-transform: rotate(-345deg) scale(1);
-    -webkit-transform: rotate(-345deg) scale(1);
-    transform: rotate(-345deg) scale(1);
+    -moz-transform: rotate(-105deg) scale(1);
+    -ms-transform: rotate(-105deg) scale(1);
+    -webkit-transform: rotate(-105deg) scale(1);
+    transform: rotate(-105deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-345deg) scale(1);
-    -ms-transform: rotate(-345deg) scale(1);
-    -webkit-transform: rotate(-345deg) scale(1);
-    transform: rotate(-345deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(-105deg) scale(1);
+    -ms-transform: rotate(-105deg) scale(1);
+    -webkit-transform: rotate(-105deg) scale(1);
+    transform: rotate(-105deg) scale(1);
+    background-color: #ff5500;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-345deg) scale(2);
-    -ms-transform: rotate(-345deg) scale(2);
-    -webkit-transform: rotate(-345deg) scale(2);
-    transform: rotate(-345deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(-105deg) scale(2);
+    -ms-transform: rotate(-105deg) scale(2);
+    -webkit-transform: rotate(-105deg) scale(2);
+    transform: rotate(-105deg) scale(2);
+    background-color: #ff5500;
+    opacity: 0.6;
   }
 }
 @keyframes $spin102 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-345deg) scale(1);
-    -ms-transform: rotate(-345deg) scale(1);
-    -webkit-transform: rotate(-345deg) scale(1);
-    transform: rotate(-345deg) scale(1);
+    -moz-transform: rotate(-105deg) scale(1);
+    -ms-transform: rotate(-105deg) scale(1);
+    -webkit-transform: rotate(-105deg) scale(1);
+    transform: rotate(-105deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-345deg) scale(1);
-    -ms-transform: rotate(-345deg) scale(1);
-    -webkit-transform: rotate(-345deg) scale(1);
-    transform: rotate(-345deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(-105deg) scale(1);
+    -ms-transform: rotate(-105deg) scale(1);
+    -webkit-transform: rotate(-105deg) scale(1);
+    transform: rotate(-105deg) scale(1);
+    background-color: #ff5500;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-345deg) scale(2);
-    -ms-transform: rotate(-345deg) scale(2);
-    -webkit-transform: rotate(-345deg) scale(2);
-    transform: rotate(-345deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(-105deg) scale(2);
+    -ms-transform: rotate(-105deg) scale(2);
+    -webkit-transform: rotate(-105deg) scale(2);
+    transform: rotate(-105deg) scale(2);
+    background-color: #ff5500;
+    opacity: 0.6;
   }
 }
 @-webkit-keyframes spin103 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-325deg) scale(1);
-    -ms-transform: rotate(-325deg) scale(1);
-    -webkit-transform: rotate(-325deg) scale(1);
-    transform: rotate(-325deg) scale(1);
+    -moz-transform: rotate(-85deg) scale(1);
+    -ms-transform: rotate(-85deg) scale(1);
+    -webkit-transform: rotate(-85deg) scale(1);
+    transform: rotate(-85deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-325deg) scale(1);
-    -ms-transform: rotate(-325deg) scale(1);
-    -webkit-transform: rotate(-325deg) scale(1);
-    transform: rotate(-325deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(-85deg) scale(1);
+    -ms-transform: rotate(-85deg) scale(1);
+    -webkit-transform: rotate(-85deg) scale(1);
+    transform: rotate(-85deg) scale(1);
+    background-color: #ffaa00;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-325deg) scale(2);
-    -ms-transform: rotate(-325deg) scale(2);
-    -webkit-transform: rotate(-325deg) scale(2);
-    transform: rotate(-325deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(-85deg) scale(2);
+    -ms-transform: rotate(-85deg) scale(2);
+    -webkit-transform: rotate(-85deg) scale(2);
+    transform: rotate(-85deg) scale(2);
+    background-color: #ffaa00;
+    opacity: 0.6;
   }
 }
 @-moz-keyframes spin103 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-325deg) scale(1);
-    -ms-transform: rotate(-325deg) scale(1);
-    -webkit-transform: rotate(-325deg) scale(1);
-    transform: rotate(-325deg) scale(1);
+    -moz-transform: rotate(-85deg) scale(1);
+    -ms-transform: rotate(-85deg) scale(1);
+    -webkit-transform: rotate(-85deg) scale(1);
+    transform: rotate(-85deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-325deg) scale(1);
-    -ms-transform: rotate(-325deg) scale(1);
-    -webkit-transform: rotate(-325deg) scale(1);
-    transform: rotate(-325deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(-85deg) scale(1);
+    -ms-transform: rotate(-85deg) scale(1);
+    -webkit-transform: rotate(-85deg) scale(1);
+    transform: rotate(-85deg) scale(1);
+    background-color: #ffaa00;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-325deg) scale(2);
-    -ms-transform: rotate(-325deg) scale(2);
-    -webkit-transform: rotate(-325deg) scale(2);
-    transform: rotate(-325deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(-85deg) scale(2);
+    -ms-transform: rotate(-85deg) scale(2);
+    -webkit-transform: rotate(-85deg) scale(2);
+    transform: rotate(-85deg) scale(2);
+    background-color: #ffaa00;
+    opacity: 0.6;
   }
 }
 @-o-keyframes spin103 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-325deg) scale(1);
-    -ms-transform: rotate(-325deg) scale(1);
-    -webkit-transform: rotate(-325deg) scale(1);
-    transform: rotate(-325deg) scale(1);
+    -moz-transform: rotate(-85deg) scale(1);
+    -ms-transform: rotate(-85deg) scale(1);
+    -webkit-transform: rotate(-85deg) scale(1);
+    transform: rotate(-85deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-325deg) scale(1);
-    -ms-transform: rotate(-325deg) scale(1);
-    -webkit-transform: rotate(-325deg) scale(1);
-    transform: rotate(-325deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(-85deg) scale(1);
+    -ms-transform: rotate(-85deg) scale(1);
+    -webkit-transform: rotate(-85deg) scale(1);
+    transform: rotate(-85deg) scale(1);
+    background-color: #ffaa00;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-325deg) scale(2);
-    -ms-transform: rotate(-325deg) scale(2);
-    -webkit-transform: rotate(-325deg) scale(2);
-    transform: rotate(-325deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(-85deg) scale(2);
+    -ms-transform: rotate(-85deg) scale(2);
+    -webkit-transform: rotate(-85deg) scale(2);
+    transform: rotate(-85deg) scale(2);
+    background-color: #ffaa00;
+    opacity: 0.6;
   }
 }
 @keyframes $spin103 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-325deg) scale(1);
-    -ms-transform: rotate(-325deg) scale(1);
-    -webkit-transform: rotate(-325deg) scale(1);
-    transform: rotate(-325deg) scale(1);
+    -moz-transform: rotate(-85deg) scale(1);
+    -ms-transform: rotate(-85deg) scale(1);
+    -webkit-transform: rotate(-85deg) scale(1);
+    transform: rotate(-85deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-325deg) scale(1);
-    -ms-transform: rotate(-325deg) scale(1);
-    -webkit-transform: rotate(-325deg) scale(1);
-    transform: rotate(-325deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(-85deg) scale(1);
+    -ms-transform: rotate(-85deg) scale(1);
+    -webkit-transform: rotate(-85deg) scale(1);
+    transform: rotate(-85deg) scale(1);
+    background-color: #ffaa00;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-325deg) scale(2);
-    -ms-transform: rotate(-325deg) scale(2);
-    -webkit-transform: rotate(-325deg) scale(2);
-    transform: rotate(-325deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(-85deg) scale(2);
+    -ms-transform: rotate(-85deg) scale(2);
+    -webkit-transform: rotate(-85deg) scale(2);
+    transform: rotate(-85deg) scale(2);
+    background-color: #ffaa00;
+    opacity: 0.6;
   }
 }
 @-webkit-keyframes spin104 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-305deg) scale(1);
-    -ms-transform: rotate(-305deg) scale(1);
-    -webkit-transform: rotate(-305deg) scale(1);
-    transform: rotate(-305deg) scale(1);
+    -moz-transform: rotate(-65deg) scale(1);
+    -ms-transform: rotate(-65deg) scale(1);
+    -webkit-transform: rotate(-65deg) scale(1);
+    transform: rotate(-65deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-305deg) scale(1);
-    -ms-transform: rotate(-305deg) scale(1);
-    -webkit-transform: rotate(-305deg) scale(1);
-    transform: rotate(-305deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(-65deg) scale(1);
+    -ms-transform: rotate(-65deg) scale(1);
+    -webkit-transform: rotate(-65deg) scale(1);
+    transform: rotate(-65deg) scale(1);
+    background-color: yellow;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-305deg) scale(2);
-    -ms-transform: rotate(-305deg) scale(2);
-    -webkit-transform: rotate(-305deg) scale(2);
-    transform: rotate(-305deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(-65deg) scale(2);
+    -ms-transform: rotate(-65deg) scale(2);
+    -webkit-transform: rotate(-65deg) scale(2);
+    transform: rotate(-65deg) scale(2);
+    background-color: yellow;
+    opacity: 0.6;
   }
 }
 @-moz-keyframes spin104 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-305deg) scale(1);
-    -ms-transform: rotate(-305deg) scale(1);
-    -webkit-transform: rotate(-305deg) scale(1);
-    transform: rotate(-305deg) scale(1);
+    -moz-transform: rotate(-65deg) scale(1);
+    -ms-transform: rotate(-65deg) scale(1);
+    -webkit-transform: rotate(-65deg) scale(1);
+    transform: rotate(-65deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-305deg) scale(1);
-    -ms-transform: rotate(-305deg) scale(1);
-    -webkit-transform: rotate(-305deg) scale(1);
-    transform: rotate(-305deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(-65deg) scale(1);
+    -ms-transform: rotate(-65deg) scale(1);
+    -webkit-transform: rotate(-65deg) scale(1);
+    transform: rotate(-65deg) scale(1);
+    background-color: yellow;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-305deg) scale(2);
-    -ms-transform: rotate(-305deg) scale(2);
-    -webkit-transform: rotate(-305deg) scale(2);
-    transform: rotate(-305deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(-65deg) scale(2);
+    -ms-transform: rotate(-65deg) scale(2);
+    -webkit-transform: rotate(-65deg) scale(2);
+    transform: rotate(-65deg) scale(2);
+    background-color: yellow;
+    opacity: 0.6;
   }
 }
 @-o-keyframes spin104 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-305deg) scale(1);
-    -ms-transform: rotate(-305deg) scale(1);
-    -webkit-transform: rotate(-305deg) scale(1);
-    transform: rotate(-305deg) scale(1);
+    -moz-transform: rotate(-65deg) scale(1);
+    -ms-transform: rotate(-65deg) scale(1);
+    -webkit-transform: rotate(-65deg) scale(1);
+    transform: rotate(-65deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-305deg) scale(1);
-    -ms-transform: rotate(-305deg) scale(1);
-    -webkit-transform: rotate(-305deg) scale(1);
-    transform: rotate(-305deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(-65deg) scale(1);
+    -ms-transform: rotate(-65deg) scale(1);
+    -webkit-transform: rotate(-65deg) scale(1);
+    transform: rotate(-65deg) scale(1);
+    background-color: yellow;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-305deg) scale(2);
-    -ms-transform: rotate(-305deg) scale(2);
-    -webkit-transform: rotate(-305deg) scale(2);
-    transform: rotate(-305deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(-65deg) scale(2);
+    -ms-transform: rotate(-65deg) scale(2);
+    -webkit-transform: rotate(-65deg) scale(2);
+    transform: rotate(-65deg) scale(2);
+    background-color: yellow;
+    opacity: 0.6;
   }
 }
 @keyframes $spin104 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-305deg) scale(1);
-    -ms-transform: rotate(-305deg) scale(1);
-    -webkit-transform: rotate(-305deg) scale(1);
-    transform: rotate(-305deg) scale(1);
+    -moz-transform: rotate(-65deg) scale(1);
+    -ms-transform: rotate(-65deg) scale(1);
+    -webkit-transform: rotate(-65deg) scale(1);
+    transform: rotate(-65deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-305deg) scale(1);
-    -ms-transform: rotate(-305deg) scale(1);
-    -webkit-transform: rotate(-305deg) scale(1);
-    transform: rotate(-305deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(-65deg) scale(1);
+    -ms-transform: rotate(-65deg) scale(1);
+    -webkit-transform: rotate(-65deg) scale(1);
+    transform: rotate(-65deg) scale(1);
+    background-color: yellow;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-305deg) scale(2);
-    -ms-transform: rotate(-305deg) scale(2);
-    -webkit-transform: rotate(-305deg) scale(2);
-    transform: rotate(-305deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(-65deg) scale(2);
+    -ms-transform: rotate(-65deg) scale(2);
+    -webkit-transform: rotate(-65deg) scale(2);
+    transform: rotate(-65deg) scale(2);
+    background-color: yellow;
+    opacity: 0.6;
   }
 }
 @-webkit-keyframes spin105 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-285deg) scale(1);
-    -ms-transform: rotate(-285deg) scale(1);
-    -webkit-transform: rotate(-285deg) scale(1);
-    transform: rotate(-285deg) scale(1);
+    -moz-transform: rotate(-45deg) scale(1);
+    -ms-transform: rotate(-45deg) scale(1);
+    -webkit-transform: rotate(-45deg) scale(1);
+    transform: rotate(-45deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-285deg) scale(1);
-    -ms-transform: rotate(-285deg) scale(1);
-    -webkit-transform: rotate(-285deg) scale(1);
-    transform: rotate(-285deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(-45deg) scale(1);
+    -ms-transform: rotate(-45deg) scale(1);
+    -webkit-transform: rotate(-45deg) scale(1);
+    transform: rotate(-45deg) scale(1);
+    background-color: #aaff00;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-285deg) scale(2);
-    -ms-transform: rotate(-285deg) scale(2);
-    -webkit-transform: rotate(-285deg) scale(2);
-    transform: rotate(-285deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(-45deg) scale(2);
+    -ms-transform: rotate(-45deg) scale(2);
+    -webkit-transform: rotate(-45deg) scale(2);
+    transform: rotate(-45deg) scale(2);
+    background-color: #aaff00;
+    opacity: 0.6;
   }
 }
 @-moz-keyframes spin105 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-285deg) scale(1);
-    -ms-transform: rotate(-285deg) scale(1);
-    -webkit-transform: rotate(-285deg) scale(1);
-    transform: rotate(-285deg) scale(1);
+    -moz-transform: rotate(-45deg) scale(1);
+    -ms-transform: rotate(-45deg) scale(1);
+    -webkit-transform: rotate(-45deg) scale(1);
+    transform: rotate(-45deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-285deg) scale(1);
-    -ms-transform: rotate(-285deg) scale(1);
-    -webkit-transform: rotate(-285deg) scale(1);
-    transform: rotate(-285deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(-45deg) scale(1);
+    -ms-transform: rotate(-45deg) scale(1);
+    -webkit-transform: rotate(-45deg) scale(1);
+    transform: rotate(-45deg) scale(1);
+    background-color: #aaff00;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-285deg) scale(2);
-    -ms-transform: rotate(-285deg) scale(2);
-    -webkit-transform: rotate(-285deg) scale(2);
-    transform: rotate(-285deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(-45deg) scale(2);
+    -ms-transform: rotate(-45deg) scale(2);
+    -webkit-transform: rotate(-45deg) scale(2);
+    transform: rotate(-45deg) scale(2);
+    background-color: #aaff00;
+    opacity: 0.6;
   }
 }
 @-o-keyframes spin105 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-285deg) scale(1);
-    -ms-transform: rotate(-285deg) scale(1);
-    -webkit-transform: rotate(-285deg) scale(1);
-    transform: rotate(-285deg) scale(1);
+    -moz-transform: rotate(-45deg) scale(1);
+    -ms-transform: rotate(-45deg) scale(1);
+    -webkit-transform: rotate(-45deg) scale(1);
+    transform: rotate(-45deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-285deg) scale(1);
-    -ms-transform: rotate(-285deg) scale(1);
-    -webkit-transform: rotate(-285deg) scale(1);
-    transform: rotate(-285deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(-45deg) scale(1);
+    -ms-transform: rotate(-45deg) scale(1);
+    -webkit-transform: rotate(-45deg) scale(1);
+    transform: rotate(-45deg) scale(1);
+    background-color: #aaff00;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-285deg) scale(2);
-    -ms-transform: rotate(-285deg) scale(2);
-    -webkit-transform: rotate(-285deg) scale(2);
-    transform: rotate(-285deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(-45deg) scale(2);
+    -ms-transform: rotate(-45deg) scale(2);
+    -webkit-transform: rotate(-45deg) scale(2);
+    transform: rotate(-45deg) scale(2);
+    background-color: #aaff00;
+    opacity: 0.6;
   }
 }
 @keyframes $spin105 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-285deg) scale(1);
-    -ms-transform: rotate(-285deg) scale(1);
-    -webkit-transform: rotate(-285deg) scale(1);
-    transform: rotate(-285deg) scale(1);
+    -moz-transform: rotate(-45deg) scale(1);
+    -ms-transform: rotate(-45deg) scale(1);
+    -webkit-transform: rotate(-45deg) scale(1);
+    transform: rotate(-45deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-285deg) scale(1);
-    -ms-transform: rotate(-285deg) scale(1);
-    -webkit-transform: rotate(-285deg) scale(1);
-    transform: rotate(-285deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(-45deg) scale(1);
+    -ms-transform: rotate(-45deg) scale(1);
+    -webkit-transform: rotate(-45deg) scale(1);
+    transform: rotate(-45deg) scale(1);
+    background-color: #aaff00;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-285deg) scale(2);
-    -ms-transform: rotate(-285deg) scale(2);
-    -webkit-transform: rotate(-285deg) scale(2);
-    transform: rotate(-285deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(-45deg) scale(2);
+    -ms-transform: rotate(-45deg) scale(2);
+    -webkit-transform: rotate(-45deg) scale(2);
+    transform: rotate(-45deg) scale(2);
+    background-color: #aaff00;
+    opacity: 0.6;
   }
 }
 @-webkit-keyframes spin106 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-265deg) scale(1);
-    -ms-transform: rotate(-265deg) scale(1);
-    -webkit-transform: rotate(-265deg) scale(1);
-    transform: rotate(-265deg) scale(1);
+    -moz-transform: rotate(-25deg) scale(1);
+    -ms-transform: rotate(-25deg) scale(1);
+    -webkit-transform: rotate(-25deg) scale(1);
+    transform: rotate(-25deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-265deg) scale(1);
-    -ms-transform: rotate(-265deg) scale(1);
-    -webkit-transform: rotate(-265deg) scale(1);
-    transform: rotate(-265deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(-25deg) scale(1);
+    -ms-transform: rotate(-25deg) scale(1);
+    -webkit-transform: rotate(-25deg) scale(1);
+    transform: rotate(-25deg) scale(1);
+    background-color: #55ff00;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-265deg) scale(2);
-    -ms-transform: rotate(-265deg) scale(2);
-    -webkit-transform: rotate(-265deg) scale(2);
-    transform: rotate(-265deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(-25deg) scale(2);
+    -ms-transform: rotate(-25deg) scale(2);
+    -webkit-transform: rotate(-25deg) scale(2);
+    transform: rotate(-25deg) scale(2);
+    background-color: #55ff00;
+    opacity: 0.6;
   }
 }
 @-moz-keyframes spin106 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-265deg) scale(1);
-    -ms-transform: rotate(-265deg) scale(1);
-    -webkit-transform: rotate(-265deg) scale(1);
-    transform: rotate(-265deg) scale(1);
+    -moz-transform: rotate(-25deg) scale(1);
+    -ms-transform: rotate(-25deg) scale(1);
+    -webkit-transform: rotate(-25deg) scale(1);
+    transform: rotate(-25deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-265deg) scale(1);
-    -ms-transform: rotate(-265deg) scale(1);
-    -webkit-transform: rotate(-265deg) scale(1);
-    transform: rotate(-265deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(-25deg) scale(1);
+    -ms-transform: rotate(-25deg) scale(1);
+    -webkit-transform: rotate(-25deg) scale(1);
+    transform: rotate(-25deg) scale(1);
+    background-color: #55ff00;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-265deg) scale(2);
-    -ms-transform: rotate(-265deg) scale(2);
-    -webkit-transform: rotate(-265deg) scale(2);
-    transform: rotate(-265deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(-25deg) scale(2);
+    -ms-transform: rotate(-25deg) scale(2);
+    -webkit-transform: rotate(-25deg) scale(2);
+    transform: rotate(-25deg) scale(2);
+    background-color: #55ff00;
+    opacity: 0.6;
   }
 }
 @-o-keyframes spin106 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-265deg) scale(1);
-    -ms-transform: rotate(-265deg) scale(1);
-    -webkit-transform: rotate(-265deg) scale(1);
-    transform: rotate(-265deg) scale(1);
+    -moz-transform: rotate(-25deg) scale(1);
+    -ms-transform: rotate(-25deg) scale(1);
+    -webkit-transform: rotate(-25deg) scale(1);
+    transform: rotate(-25deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-265deg) scale(1);
-    -ms-transform: rotate(-265deg) scale(1);
-    -webkit-transform: rotate(-265deg) scale(1);
-    transform: rotate(-265deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(-25deg) scale(1);
+    -ms-transform: rotate(-25deg) scale(1);
+    -webkit-transform: rotate(-25deg) scale(1);
+    transform: rotate(-25deg) scale(1);
+    background-color: #55ff00;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-265deg) scale(2);
-    -ms-transform: rotate(-265deg) scale(2);
-    -webkit-transform: rotate(-265deg) scale(2);
-    transform: rotate(-265deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(-25deg) scale(2);
+    -ms-transform: rotate(-25deg) scale(2);
+    -webkit-transform: rotate(-25deg) scale(2);
+    transform: rotate(-25deg) scale(2);
+    background-color: #55ff00;
+    opacity: 0.6;
   }
 }
 @keyframes $spin106 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-265deg) scale(1);
-    -ms-transform: rotate(-265deg) scale(1);
-    -webkit-transform: rotate(-265deg) scale(1);
-    transform: rotate(-265deg) scale(1);
+    -moz-transform: rotate(-25deg) scale(1);
+    -ms-transform: rotate(-25deg) scale(1);
+    -webkit-transform: rotate(-25deg) scale(1);
+    transform: rotate(-25deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-265deg) scale(1);
-    -ms-transform: rotate(-265deg) scale(1);
-    -webkit-transform: rotate(-265deg) scale(1);
-    transform: rotate(-265deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(-25deg) scale(1);
+    -ms-transform: rotate(-25deg) scale(1);
+    -webkit-transform: rotate(-25deg) scale(1);
+    transform: rotate(-25deg) scale(1);
+    background-color: #55ff00;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-265deg) scale(2);
-    -ms-transform: rotate(-265deg) scale(2);
-    -webkit-transform: rotate(-265deg) scale(2);
-    transform: rotate(-265deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(-25deg) scale(2);
+    -ms-transform: rotate(-25deg) scale(2);
+    -webkit-transform: rotate(-25deg) scale(2);
+    transform: rotate(-25deg) scale(2);
+    background-color: #55ff00;
+    opacity: 0.6;
   }
 }
 @-webkit-keyframes spin107 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-245deg) scale(1);
-    -ms-transform: rotate(-245deg) scale(1);
-    -webkit-transform: rotate(-245deg) scale(1);
-    transform: rotate(-245deg) scale(1);
+    -moz-transform: rotate(-5deg) scale(1);
+    -ms-transform: rotate(-5deg) scale(1);
+    -webkit-transform: rotate(-5deg) scale(1);
+    transform: rotate(-5deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-245deg) scale(1);
-    -ms-transform: rotate(-245deg) scale(1);
-    -webkit-transform: rotate(-245deg) scale(1);
-    transform: rotate(-245deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(-5deg) scale(1);
+    -ms-transform: rotate(-5deg) scale(1);
+    -webkit-transform: rotate(-5deg) scale(1);
+    transform: rotate(-5deg) scale(1);
+    background-color: lime;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-245deg) scale(2);
-    -ms-transform: rotate(-245deg) scale(2);
-    -webkit-transform: rotate(-245deg) scale(2);
-    transform: rotate(-245deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(-5deg) scale(2);
+    -ms-transform: rotate(-5deg) scale(2);
+    -webkit-transform: rotate(-5deg) scale(2);
+    transform: rotate(-5deg) scale(2);
+    background-color: lime;
+    opacity: 0.6;
   }
 }
 @-moz-keyframes spin107 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-245deg) scale(1);
-    -ms-transform: rotate(-245deg) scale(1);
-    -webkit-transform: rotate(-245deg) scale(1);
-    transform: rotate(-245deg) scale(1);
+    -moz-transform: rotate(-5deg) scale(1);
+    -ms-transform: rotate(-5deg) scale(1);
+    -webkit-transform: rotate(-5deg) scale(1);
+    transform: rotate(-5deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-245deg) scale(1);
-    -ms-transform: rotate(-245deg) scale(1);
-    -webkit-transform: rotate(-245deg) scale(1);
-    transform: rotate(-245deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(-5deg) scale(1);
+    -ms-transform: rotate(-5deg) scale(1);
+    -webkit-transform: rotate(-5deg) scale(1);
+    transform: rotate(-5deg) scale(1);
+    background-color: lime;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-245deg) scale(2);
-    -ms-transform: rotate(-245deg) scale(2);
-    -webkit-transform: rotate(-245deg) scale(2);
-    transform: rotate(-245deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(-5deg) scale(2);
+    -ms-transform: rotate(-5deg) scale(2);
+    -webkit-transform: rotate(-5deg) scale(2);
+    transform: rotate(-5deg) scale(2);
+    background-color: lime;
+    opacity: 0.6;
   }
 }
 @-o-keyframes spin107 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-245deg) scale(1);
-    -ms-transform: rotate(-245deg) scale(1);
-    -webkit-transform: rotate(-245deg) scale(1);
-    transform: rotate(-245deg) scale(1);
+    -moz-transform: rotate(-5deg) scale(1);
+    -ms-transform: rotate(-5deg) scale(1);
+    -webkit-transform: rotate(-5deg) scale(1);
+    transform: rotate(-5deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-245deg) scale(1);
-    -ms-transform: rotate(-245deg) scale(1);
-    -webkit-transform: rotate(-245deg) scale(1);
-    transform: rotate(-245deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(-5deg) scale(1);
+    -ms-transform: rotate(-5deg) scale(1);
+    -webkit-transform: rotate(-5deg) scale(1);
+    transform: rotate(-5deg) scale(1);
+    background-color: lime;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-245deg) scale(2);
-    -ms-transform: rotate(-245deg) scale(2);
-    -webkit-transform: rotate(-245deg) scale(2);
-    transform: rotate(-245deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(-5deg) scale(2);
+    -ms-transform: rotate(-5deg) scale(2);
+    -webkit-transform: rotate(-5deg) scale(2);
+    transform: rotate(-5deg) scale(2);
+    background-color: lime;
+    opacity: 0.6;
   }
 }
 @keyframes $spin107 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-245deg) scale(1);
-    -ms-transform: rotate(-245deg) scale(1);
-    -webkit-transform: rotate(-245deg) scale(1);
-    transform: rotate(-245deg) scale(1);
+    -moz-transform: rotate(-5deg) scale(1);
+    -ms-transform: rotate(-5deg) scale(1);
+    -webkit-transform: rotate(-5deg) scale(1);
+    transform: rotate(-5deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-245deg) scale(1);
-    -ms-transform: rotate(-245deg) scale(1);
-    -webkit-transform: rotate(-245deg) scale(1);
-    transform: rotate(-245deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(-5deg) scale(1);
+    -ms-transform: rotate(-5deg) scale(1);
+    -webkit-transform: rotate(-5deg) scale(1);
+    transform: rotate(-5deg) scale(1);
+    background-color: lime;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-245deg) scale(2);
-    -ms-transform: rotate(-245deg) scale(2);
-    -webkit-transform: rotate(-245deg) scale(2);
-    transform: rotate(-245deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(-5deg) scale(2);
+    -ms-transform: rotate(-5deg) scale(2);
+    -webkit-transform: rotate(-5deg) scale(2);
+    transform: rotate(-5deg) scale(2);
+    background-color: lime;
+    opacity: 0.6;
   }
 }
 @-webkit-keyframes spin108 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-225deg) scale(1);
-    -ms-transform: rotate(-225deg) scale(1);
-    -webkit-transform: rotate(-225deg) scale(1);
-    transform: rotate(-225deg) scale(1);
+    -moz-transform: rotate(15deg) scale(1);
+    -ms-transform: rotate(15deg) scale(1);
+    -webkit-transform: rotate(15deg) scale(1);
+    transform: rotate(15deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-225deg) scale(1);
-    -ms-transform: rotate(-225deg) scale(1);
-    -webkit-transform: rotate(-225deg) scale(1);
-    transform: rotate(-225deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(15deg) scale(1);
+    -ms-transform: rotate(15deg) scale(1);
+    -webkit-transform: rotate(15deg) scale(1);
+    transform: rotate(15deg) scale(1);
+    background-color: #00ff55;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-225deg) scale(2);
-    -ms-transform: rotate(-225deg) scale(2);
-    -webkit-transform: rotate(-225deg) scale(2);
-    transform: rotate(-225deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(15deg) scale(2);
+    -ms-transform: rotate(15deg) scale(2);
+    -webkit-transform: rotate(15deg) scale(2);
+    transform: rotate(15deg) scale(2);
+    background-color: #00ff55;
+    opacity: 0.6;
   }
 }
 @-moz-keyframes spin108 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-225deg) scale(1);
-    -ms-transform: rotate(-225deg) scale(1);
-    -webkit-transform: rotate(-225deg) scale(1);
-    transform: rotate(-225deg) scale(1);
+    -moz-transform: rotate(15deg) scale(1);
+    -ms-transform: rotate(15deg) scale(1);
+    -webkit-transform: rotate(15deg) scale(1);
+    transform: rotate(15deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-225deg) scale(1);
-    -ms-transform: rotate(-225deg) scale(1);
-    -webkit-transform: rotate(-225deg) scale(1);
-    transform: rotate(-225deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(15deg) scale(1);
+    -ms-transform: rotate(15deg) scale(1);
+    -webkit-transform: rotate(15deg) scale(1);
+    transform: rotate(15deg) scale(1);
+    background-color: #00ff55;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-225deg) scale(2);
-    -ms-transform: rotate(-225deg) scale(2);
-    -webkit-transform: rotate(-225deg) scale(2);
-    transform: rotate(-225deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(15deg) scale(2);
+    -ms-transform: rotate(15deg) scale(2);
+    -webkit-transform: rotate(15deg) scale(2);
+    transform: rotate(15deg) scale(2);
+    background-color: #00ff55;
+    opacity: 0.6;
   }
 }
 @-o-keyframes spin108 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-225deg) scale(1);
-    -ms-transform: rotate(-225deg) scale(1);
-    -webkit-transform: rotate(-225deg) scale(1);
-    transform: rotate(-225deg) scale(1);
+    -moz-transform: rotate(15deg) scale(1);
+    -ms-transform: rotate(15deg) scale(1);
+    -webkit-transform: rotate(15deg) scale(1);
+    transform: rotate(15deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-225deg) scale(1);
-    -ms-transform: rotate(-225deg) scale(1);
-    -webkit-transform: rotate(-225deg) scale(1);
-    transform: rotate(-225deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(15deg) scale(1);
+    -ms-transform: rotate(15deg) scale(1);
+    -webkit-transform: rotate(15deg) scale(1);
+    transform: rotate(15deg) scale(1);
+    background-color: #00ff55;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-225deg) scale(2);
-    -ms-transform: rotate(-225deg) scale(2);
-    -webkit-transform: rotate(-225deg) scale(2);
-    transform: rotate(-225deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(15deg) scale(2);
+    -ms-transform: rotate(15deg) scale(2);
+    -webkit-transform: rotate(15deg) scale(2);
+    transform: rotate(15deg) scale(2);
+    background-color: #00ff55;
+    opacity: 0.6;
   }
 }
 @keyframes $spin108 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-225deg) scale(1);
-    -ms-transform: rotate(-225deg) scale(1);
-    -webkit-transform: rotate(-225deg) scale(1);
-    transform: rotate(-225deg) scale(1);
+    -moz-transform: rotate(15deg) scale(1);
+    -ms-transform: rotate(15deg) scale(1);
+    -webkit-transform: rotate(15deg) scale(1);
+    transform: rotate(15deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-225deg) scale(1);
-    -ms-transform: rotate(-225deg) scale(1);
-    -webkit-transform: rotate(-225deg) scale(1);
-    transform: rotate(-225deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(15deg) scale(1);
+    -ms-transform: rotate(15deg) scale(1);
+    -webkit-transform: rotate(15deg) scale(1);
+    transform: rotate(15deg) scale(1);
+    background-color: #00ff55;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-225deg) scale(2);
-    -ms-transform: rotate(-225deg) scale(2);
-    -webkit-transform: rotate(-225deg) scale(2);
-    transform: rotate(-225deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(15deg) scale(2);
+    -ms-transform: rotate(15deg) scale(2);
+    -webkit-transform: rotate(15deg) scale(2);
+    transform: rotate(15deg) scale(2);
+    background-color: #00ff55;
+    opacity: 0.6;
   }
 }
 @-webkit-keyframes spin109 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-205deg) scale(1);
-    -ms-transform: rotate(-205deg) scale(1);
-    -webkit-transform: rotate(-205deg) scale(1);
-    transform: rotate(-205deg) scale(1);
+    -moz-transform: rotate(35deg) scale(1);
+    -ms-transform: rotate(35deg) scale(1);
+    -webkit-transform: rotate(35deg) scale(1);
+    transform: rotate(35deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-205deg) scale(1);
-    -ms-transform: rotate(-205deg) scale(1);
-    -webkit-transform: rotate(-205deg) scale(1);
-    transform: rotate(-205deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(35deg) scale(1);
+    -ms-transform: rotate(35deg) scale(1);
+    -webkit-transform: rotate(35deg) scale(1);
+    transform: rotate(35deg) scale(1);
+    background-color: #00ffaa;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-205deg) scale(2);
-    -ms-transform: rotate(-205deg) scale(2);
-    -webkit-transform: rotate(-205deg) scale(2);
-    transform: rotate(-205deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(35deg) scale(2);
+    -ms-transform: rotate(35deg) scale(2);
+    -webkit-transform: rotate(35deg) scale(2);
+    transform: rotate(35deg) scale(2);
+    background-color: #00ffaa;
+    opacity: 0.6;
   }
 }
 @-moz-keyframes spin109 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-205deg) scale(1);
-    -ms-transform: rotate(-205deg) scale(1);
-    -webkit-transform: rotate(-205deg) scale(1);
-    transform: rotate(-205deg) scale(1);
+    -moz-transform: rotate(35deg) scale(1);
+    -ms-transform: rotate(35deg) scale(1);
+    -webkit-transform: rotate(35deg) scale(1);
+    transform: rotate(35deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-205deg) scale(1);
-    -ms-transform: rotate(-205deg) scale(1);
-    -webkit-transform: rotate(-205deg) scale(1);
-    transform: rotate(-205deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(35deg) scale(1);
+    -ms-transform: rotate(35deg) scale(1);
+    -webkit-transform: rotate(35deg) scale(1);
+    transform: rotate(35deg) scale(1);
+    background-color: #00ffaa;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-205deg) scale(2);
-    -ms-transform: rotate(-205deg) scale(2);
-    -webkit-transform: rotate(-205deg) scale(2);
-    transform: rotate(-205deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(35deg) scale(2);
+    -ms-transform: rotate(35deg) scale(2);
+    -webkit-transform: rotate(35deg) scale(2);
+    transform: rotate(35deg) scale(2);
+    background-color: #00ffaa;
+    opacity: 0.6;
   }
 }
 @-o-keyframes spin109 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-205deg) scale(1);
-    -ms-transform: rotate(-205deg) scale(1);
-    -webkit-transform: rotate(-205deg) scale(1);
-    transform: rotate(-205deg) scale(1);
+    -moz-transform: rotate(35deg) scale(1);
+    -ms-transform: rotate(35deg) scale(1);
+    -webkit-transform: rotate(35deg) scale(1);
+    transform: rotate(35deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-205deg) scale(1);
-    -ms-transform: rotate(-205deg) scale(1);
-    -webkit-transform: rotate(-205deg) scale(1);
-    transform: rotate(-205deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(35deg) scale(1);
+    -ms-transform: rotate(35deg) scale(1);
+    -webkit-transform: rotate(35deg) scale(1);
+    transform: rotate(35deg) scale(1);
+    background-color: #00ffaa;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-205deg) scale(2);
-    -ms-transform: rotate(-205deg) scale(2);
-    -webkit-transform: rotate(-205deg) scale(2);
-    transform: rotate(-205deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(35deg) scale(2);
+    -ms-transform: rotate(35deg) scale(2);
+    -webkit-transform: rotate(35deg) scale(2);
+    transform: rotate(35deg) scale(2);
+    background-color: #00ffaa;
+    opacity: 0.6;
   }
 }
 @keyframes $spin109 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-205deg) scale(1);
-    -ms-transform: rotate(-205deg) scale(1);
-    -webkit-transform: rotate(-205deg) scale(1);
-    transform: rotate(-205deg) scale(1);
+    -moz-transform: rotate(35deg) scale(1);
+    -ms-transform: rotate(35deg) scale(1);
+    -webkit-transform: rotate(35deg) scale(1);
+    transform: rotate(35deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-205deg) scale(1);
-    -ms-transform: rotate(-205deg) scale(1);
-    -webkit-transform: rotate(-205deg) scale(1);
-    transform: rotate(-205deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(35deg) scale(1);
+    -ms-transform: rotate(35deg) scale(1);
+    -webkit-transform: rotate(35deg) scale(1);
+    transform: rotate(35deg) scale(1);
+    background-color: #00ffaa;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-205deg) scale(2);
-    -ms-transform: rotate(-205deg) scale(2);
-    -webkit-transform: rotate(-205deg) scale(2);
-    transform: rotate(-205deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(35deg) scale(2);
+    -ms-transform: rotate(35deg) scale(2);
+    -webkit-transform: rotate(35deg) scale(2);
+    transform: rotate(35deg) scale(2);
+    background-color: #00ffaa;
+    opacity: 0.6;
   }
 }
 @-webkit-keyframes spin110 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-185deg) scale(1);
-    -ms-transform: rotate(-185deg) scale(1);
-    -webkit-transform: rotate(-185deg) scale(1);
-    transform: rotate(-185deg) scale(1);
+    -moz-transform: rotate(55deg) scale(1);
+    -ms-transform: rotate(55deg) scale(1);
+    -webkit-transform: rotate(55deg) scale(1);
+    transform: rotate(55deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-185deg) scale(1);
-    -ms-transform: rotate(-185deg) scale(1);
-    -webkit-transform: rotate(-185deg) scale(1);
-    transform: rotate(-185deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(55deg) scale(1);
+    -ms-transform: rotate(55deg) scale(1);
+    -webkit-transform: rotate(55deg) scale(1);
+    transform: rotate(55deg) scale(1);
+    background-color: cyan;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-185deg) scale(2);
-    -ms-transform: rotate(-185deg) scale(2);
-    -webkit-transform: rotate(-185deg) scale(2);
-    transform: rotate(-185deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(55deg) scale(2);
+    -ms-transform: rotate(55deg) scale(2);
+    -webkit-transform: rotate(55deg) scale(2);
+    transform: rotate(55deg) scale(2);
+    background-color: cyan;
+    opacity: 0.6;
   }
 }
 @-moz-keyframes spin110 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-185deg) scale(1);
-    -ms-transform: rotate(-185deg) scale(1);
-    -webkit-transform: rotate(-185deg) scale(1);
-    transform: rotate(-185deg) scale(1);
+    -moz-transform: rotate(55deg) scale(1);
+    -ms-transform: rotate(55deg) scale(1);
+    -webkit-transform: rotate(55deg) scale(1);
+    transform: rotate(55deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-185deg) scale(1);
-    -ms-transform: rotate(-185deg) scale(1);
-    -webkit-transform: rotate(-185deg) scale(1);
-    transform: rotate(-185deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(55deg) scale(1);
+    -ms-transform: rotate(55deg) scale(1);
+    -webkit-transform: rotate(55deg) scale(1);
+    transform: rotate(55deg) scale(1);
+    background-color: cyan;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-185deg) scale(2);
-    -ms-transform: rotate(-185deg) scale(2);
-    -webkit-transform: rotate(-185deg) scale(2);
-    transform: rotate(-185deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(55deg) scale(2);
+    -ms-transform: rotate(55deg) scale(2);
+    -webkit-transform: rotate(55deg) scale(2);
+    transform: rotate(55deg) scale(2);
+    background-color: cyan;
+    opacity: 0.6;
   }
 }
 @-o-keyframes spin110 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-185deg) scale(1);
-    -ms-transform: rotate(-185deg) scale(1);
-    -webkit-transform: rotate(-185deg) scale(1);
-    transform: rotate(-185deg) scale(1);
+    -moz-transform: rotate(55deg) scale(1);
+    -ms-transform: rotate(55deg) scale(1);
+    -webkit-transform: rotate(55deg) scale(1);
+    transform: rotate(55deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-185deg) scale(1);
-    -ms-transform: rotate(-185deg) scale(1);
-    -webkit-transform: rotate(-185deg) scale(1);
-    transform: rotate(-185deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(55deg) scale(1);
+    -ms-transform: rotate(55deg) scale(1);
+    -webkit-transform: rotate(55deg) scale(1);
+    transform: rotate(55deg) scale(1);
+    background-color: cyan;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-185deg) scale(2);
-    -ms-transform: rotate(-185deg) scale(2);
-    -webkit-transform: rotate(-185deg) scale(2);
-    transform: rotate(-185deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(55deg) scale(2);
+    -ms-transform: rotate(55deg) scale(2);
+    -webkit-transform: rotate(55deg) scale(2);
+    transform: rotate(55deg) scale(2);
+    background-color: cyan;
+    opacity: 0.6;
   }
 }
 @keyframes $spin110 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-185deg) scale(1);
-    -ms-transform: rotate(-185deg) scale(1);
-    -webkit-transform: rotate(-185deg) scale(1);
-    transform: rotate(-185deg) scale(1);
+    -moz-transform: rotate(55deg) scale(1);
+    -ms-transform: rotate(55deg) scale(1);
+    -webkit-transform: rotate(55deg) scale(1);
+    transform: rotate(55deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-185deg) scale(1);
-    -ms-transform: rotate(-185deg) scale(1);
-    -webkit-transform: rotate(-185deg) scale(1);
-    transform: rotate(-185deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(55deg) scale(1);
+    -ms-transform: rotate(55deg) scale(1);
+    -webkit-transform: rotate(55deg) scale(1);
+    transform: rotate(55deg) scale(1);
+    background-color: cyan;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-185deg) scale(2);
-    -ms-transform: rotate(-185deg) scale(2);
-    -webkit-transform: rotate(-185deg) scale(2);
-    transform: rotate(-185deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(55deg) scale(2);
+    -ms-transform: rotate(55deg) scale(2);
+    -webkit-transform: rotate(55deg) scale(2);
+    transform: rotate(55deg) scale(2);
+    background-color: cyan;
+    opacity: 0.6;
   }
 }
 @-webkit-keyframes spin111 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-165deg) scale(1);
-    -ms-transform: rotate(-165deg) scale(1);
-    -webkit-transform: rotate(-165deg) scale(1);
-    transform: rotate(-165deg) scale(1);
+    -moz-transform: rotate(75deg) scale(1);
+    -ms-transform: rotate(75deg) scale(1);
+    -webkit-transform: rotate(75deg) scale(1);
+    transform: rotate(75deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-165deg) scale(1);
-    -ms-transform: rotate(-165deg) scale(1);
-    -webkit-transform: rotate(-165deg) scale(1);
-    transform: rotate(-165deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(75deg) scale(1);
+    -ms-transform: rotate(75deg) scale(1);
+    -webkit-transform: rotate(75deg) scale(1);
+    transform: rotate(75deg) scale(1);
+    background-color: #00aaff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-165deg) scale(2);
-    -ms-transform: rotate(-165deg) scale(2);
-    -webkit-transform: rotate(-165deg) scale(2);
-    transform: rotate(-165deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(75deg) scale(2);
+    -ms-transform: rotate(75deg) scale(2);
+    -webkit-transform: rotate(75deg) scale(2);
+    transform: rotate(75deg) scale(2);
+    background-color: #00aaff;
+    opacity: 0.6;
   }
 }
 @-moz-keyframes spin111 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-165deg) scale(1);
-    -ms-transform: rotate(-165deg) scale(1);
-    -webkit-transform: rotate(-165deg) scale(1);
-    transform: rotate(-165deg) scale(1);
+    -moz-transform: rotate(75deg) scale(1);
+    -ms-transform: rotate(75deg) scale(1);
+    -webkit-transform: rotate(75deg) scale(1);
+    transform: rotate(75deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-165deg) scale(1);
-    -ms-transform: rotate(-165deg) scale(1);
-    -webkit-transform: rotate(-165deg) scale(1);
-    transform: rotate(-165deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(75deg) scale(1);
+    -ms-transform: rotate(75deg) scale(1);
+    -webkit-transform: rotate(75deg) scale(1);
+    transform: rotate(75deg) scale(1);
+    background-color: #00aaff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-165deg) scale(2);
-    -ms-transform: rotate(-165deg) scale(2);
-    -webkit-transform: rotate(-165deg) scale(2);
-    transform: rotate(-165deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(75deg) scale(2);
+    -ms-transform: rotate(75deg) scale(2);
+    -webkit-transform: rotate(75deg) scale(2);
+    transform: rotate(75deg) scale(2);
+    background-color: #00aaff;
+    opacity: 0.6;
   }
 }
 @-o-keyframes spin111 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-165deg) scale(1);
-    -ms-transform: rotate(-165deg) scale(1);
-    -webkit-transform: rotate(-165deg) scale(1);
-    transform: rotate(-165deg) scale(1);
+    -moz-transform: rotate(75deg) scale(1);
+    -ms-transform: rotate(75deg) scale(1);
+    -webkit-transform: rotate(75deg) scale(1);
+    transform: rotate(75deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-165deg) scale(1);
-    -ms-transform: rotate(-165deg) scale(1);
-    -webkit-transform: rotate(-165deg) scale(1);
-    transform: rotate(-165deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(75deg) scale(1);
+    -ms-transform: rotate(75deg) scale(1);
+    -webkit-transform: rotate(75deg) scale(1);
+    transform: rotate(75deg) scale(1);
+    background-color: #00aaff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-165deg) scale(2);
-    -ms-transform: rotate(-165deg) scale(2);
-    -webkit-transform: rotate(-165deg) scale(2);
-    transform: rotate(-165deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(75deg) scale(2);
+    -ms-transform: rotate(75deg) scale(2);
+    -webkit-transform: rotate(75deg) scale(2);
+    transform: rotate(75deg) scale(2);
+    background-color: #00aaff;
+    opacity: 0.6;
   }
 }
 @keyframes $spin111 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-165deg) scale(1);
-    -ms-transform: rotate(-165deg) scale(1);
-    -webkit-transform: rotate(-165deg) scale(1);
-    transform: rotate(-165deg) scale(1);
+    -moz-transform: rotate(75deg) scale(1);
+    -ms-transform: rotate(75deg) scale(1);
+    -webkit-transform: rotate(75deg) scale(1);
+    transform: rotate(75deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-165deg) scale(1);
-    -ms-transform: rotate(-165deg) scale(1);
-    -webkit-transform: rotate(-165deg) scale(1);
-    transform: rotate(-165deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(75deg) scale(1);
+    -ms-transform: rotate(75deg) scale(1);
+    -webkit-transform: rotate(75deg) scale(1);
+    transform: rotate(75deg) scale(1);
+    background-color: #00aaff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-165deg) scale(2);
-    -ms-transform: rotate(-165deg) scale(2);
-    -webkit-transform: rotate(-165deg) scale(2);
-    transform: rotate(-165deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(75deg) scale(2);
+    -ms-transform: rotate(75deg) scale(2);
+    -webkit-transform: rotate(75deg) scale(2);
+    transform: rotate(75deg) scale(2);
+    background-color: #00aaff;
+    opacity: 0.6;
   }
 }
 @-webkit-keyframes spin112 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-145deg) scale(1);
-    -ms-transform: rotate(-145deg) scale(1);
-    -webkit-transform: rotate(-145deg) scale(1);
-    transform: rotate(-145deg) scale(1);
+    -moz-transform: rotate(95deg) scale(1);
+    -ms-transform: rotate(95deg) scale(1);
+    -webkit-transform: rotate(95deg) scale(1);
+    transform: rotate(95deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-145deg) scale(1);
-    -ms-transform: rotate(-145deg) scale(1);
-    -webkit-transform: rotate(-145deg) scale(1);
-    transform: rotate(-145deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(95deg) scale(1);
+    -ms-transform: rotate(95deg) scale(1);
+    -webkit-transform: rotate(95deg) scale(1);
+    transform: rotate(95deg) scale(1);
+    background-color: #0055ff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-145deg) scale(2);
-    -ms-transform: rotate(-145deg) scale(2);
-    -webkit-transform: rotate(-145deg) scale(2);
-    transform: rotate(-145deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(95deg) scale(2);
+    -ms-transform: rotate(95deg) scale(2);
+    -webkit-transform: rotate(95deg) scale(2);
+    transform: rotate(95deg) scale(2);
+    background-color: #0055ff;
+    opacity: 0.6;
   }
 }
 @-moz-keyframes spin112 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-145deg) scale(1);
-    -ms-transform: rotate(-145deg) scale(1);
-    -webkit-transform: rotate(-145deg) scale(1);
-    transform: rotate(-145deg) scale(1);
+    -moz-transform: rotate(95deg) scale(1);
+    -ms-transform: rotate(95deg) scale(1);
+    -webkit-transform: rotate(95deg) scale(1);
+    transform: rotate(95deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-145deg) scale(1);
-    -ms-transform: rotate(-145deg) scale(1);
-    -webkit-transform: rotate(-145deg) scale(1);
-    transform: rotate(-145deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(95deg) scale(1);
+    -ms-transform: rotate(95deg) scale(1);
+    -webkit-transform: rotate(95deg) scale(1);
+    transform: rotate(95deg) scale(1);
+    background-color: #0055ff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-145deg) scale(2);
-    -ms-transform: rotate(-145deg) scale(2);
-    -webkit-transform: rotate(-145deg) scale(2);
-    transform: rotate(-145deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(95deg) scale(2);
+    -ms-transform: rotate(95deg) scale(2);
+    -webkit-transform: rotate(95deg) scale(2);
+    transform: rotate(95deg) scale(2);
+    background-color: #0055ff;
+    opacity: 0.6;
   }
 }
 @-o-keyframes spin112 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-145deg) scale(1);
-    -ms-transform: rotate(-145deg) scale(1);
-    -webkit-transform: rotate(-145deg) scale(1);
-    transform: rotate(-145deg) scale(1);
+    -moz-transform: rotate(95deg) scale(1);
+    -ms-transform: rotate(95deg) scale(1);
+    -webkit-transform: rotate(95deg) scale(1);
+    transform: rotate(95deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-145deg) scale(1);
-    -ms-transform: rotate(-145deg) scale(1);
-    -webkit-transform: rotate(-145deg) scale(1);
-    transform: rotate(-145deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(95deg) scale(1);
+    -ms-transform: rotate(95deg) scale(1);
+    -webkit-transform: rotate(95deg) scale(1);
+    transform: rotate(95deg) scale(1);
+    background-color: #0055ff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-145deg) scale(2);
-    -ms-transform: rotate(-145deg) scale(2);
-    -webkit-transform: rotate(-145deg) scale(2);
-    transform: rotate(-145deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(95deg) scale(2);
+    -ms-transform: rotate(95deg) scale(2);
+    -webkit-transform: rotate(95deg) scale(2);
+    transform: rotate(95deg) scale(2);
+    background-color: #0055ff;
+    opacity: 0.6;
   }
 }
 @keyframes $spin112 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-145deg) scale(1);
-    -ms-transform: rotate(-145deg) scale(1);
-    -webkit-transform: rotate(-145deg) scale(1);
-    transform: rotate(-145deg) scale(1);
+    -moz-transform: rotate(95deg) scale(1);
+    -ms-transform: rotate(95deg) scale(1);
+    -webkit-transform: rotate(95deg) scale(1);
+    transform: rotate(95deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-145deg) scale(1);
-    -ms-transform: rotate(-145deg) scale(1);
-    -webkit-transform: rotate(-145deg) scale(1);
-    transform: rotate(-145deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(95deg) scale(1);
+    -ms-transform: rotate(95deg) scale(1);
+    -webkit-transform: rotate(95deg) scale(1);
+    transform: rotate(95deg) scale(1);
+    background-color: #0055ff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-145deg) scale(2);
-    -ms-transform: rotate(-145deg) scale(2);
-    -webkit-transform: rotate(-145deg) scale(2);
-    transform: rotate(-145deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(95deg) scale(2);
+    -ms-transform: rotate(95deg) scale(2);
+    -webkit-transform: rotate(95deg) scale(2);
+    transform: rotate(95deg) scale(2);
+    background-color: #0055ff;
+    opacity: 0.6;
   }
 }
 @-webkit-keyframes spin113 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-125deg) scale(1);
-    -ms-transform: rotate(-125deg) scale(1);
-    -webkit-transform: rotate(-125deg) scale(1);
-    transform: rotate(-125deg) scale(1);
+    -moz-transform: rotate(115deg) scale(1);
+    -ms-transform: rotate(115deg) scale(1);
+    -webkit-transform: rotate(115deg) scale(1);
+    transform: rotate(115deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-125deg) scale(1);
-    -ms-transform: rotate(-125deg) scale(1);
-    -webkit-transform: rotate(-125deg) scale(1);
-    transform: rotate(-125deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(115deg) scale(1);
+    -ms-transform: rotate(115deg) scale(1);
+    -webkit-transform: rotate(115deg) scale(1);
+    transform: rotate(115deg) scale(1);
+    background-color: blue;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-125deg) scale(2);
-    -ms-transform: rotate(-125deg) scale(2);
-    -webkit-transform: rotate(-125deg) scale(2);
-    transform: rotate(-125deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(115deg) scale(2);
+    -ms-transform: rotate(115deg) scale(2);
+    -webkit-transform: rotate(115deg) scale(2);
+    transform: rotate(115deg) scale(2);
+    background-color: blue;
+    opacity: 0.6;
   }
 }
 @-moz-keyframes spin113 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-125deg) scale(1);
-    -ms-transform: rotate(-125deg) scale(1);
-    -webkit-transform: rotate(-125deg) scale(1);
-    transform: rotate(-125deg) scale(1);
+    -moz-transform: rotate(115deg) scale(1);
+    -ms-transform: rotate(115deg) scale(1);
+    -webkit-transform: rotate(115deg) scale(1);
+    transform: rotate(115deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-125deg) scale(1);
-    -ms-transform: rotate(-125deg) scale(1);
-    -webkit-transform: rotate(-125deg) scale(1);
-    transform: rotate(-125deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(115deg) scale(1);
+    -ms-transform: rotate(115deg) scale(1);
+    -webkit-transform: rotate(115deg) scale(1);
+    transform: rotate(115deg) scale(1);
+    background-color: blue;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-125deg) scale(2);
-    -ms-transform: rotate(-125deg) scale(2);
-    -webkit-transform: rotate(-125deg) scale(2);
-    transform: rotate(-125deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(115deg) scale(2);
+    -ms-transform: rotate(115deg) scale(2);
+    -webkit-transform: rotate(115deg) scale(2);
+    transform: rotate(115deg) scale(2);
+    background-color: blue;
+    opacity: 0.6;
   }
 }
 @-o-keyframes spin113 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-125deg) scale(1);
-    -ms-transform: rotate(-125deg) scale(1);
-    -webkit-transform: rotate(-125deg) scale(1);
-    transform: rotate(-125deg) scale(1);
+    -moz-transform: rotate(115deg) scale(1);
+    -ms-transform: rotate(115deg) scale(1);
+    -webkit-transform: rotate(115deg) scale(1);
+    transform: rotate(115deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-125deg) scale(1);
-    -ms-transform: rotate(-125deg) scale(1);
-    -webkit-transform: rotate(-125deg) scale(1);
-    transform: rotate(-125deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(115deg) scale(1);
+    -ms-transform: rotate(115deg) scale(1);
+    -webkit-transform: rotate(115deg) scale(1);
+    transform: rotate(115deg) scale(1);
+    background-color: blue;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-125deg) scale(2);
-    -ms-transform: rotate(-125deg) scale(2);
-    -webkit-transform: rotate(-125deg) scale(2);
-    transform: rotate(-125deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(115deg) scale(2);
+    -ms-transform: rotate(115deg) scale(2);
+    -webkit-transform: rotate(115deg) scale(2);
+    transform: rotate(115deg) scale(2);
+    background-color: blue;
+    opacity: 0.6;
   }
 }
 @keyframes $spin113 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-125deg) scale(1);
-    -ms-transform: rotate(-125deg) scale(1);
-    -webkit-transform: rotate(-125deg) scale(1);
-    transform: rotate(-125deg) scale(1);
+    -moz-transform: rotate(115deg) scale(1);
+    -ms-transform: rotate(115deg) scale(1);
+    -webkit-transform: rotate(115deg) scale(1);
+    transform: rotate(115deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-125deg) scale(1);
-    -ms-transform: rotate(-125deg) scale(1);
-    -webkit-transform: rotate(-125deg) scale(1);
-    transform: rotate(-125deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(115deg) scale(1);
+    -ms-transform: rotate(115deg) scale(1);
+    -webkit-transform: rotate(115deg) scale(1);
+    transform: rotate(115deg) scale(1);
+    background-color: blue;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-125deg) scale(2);
-    -ms-transform: rotate(-125deg) scale(2);
-    -webkit-transform: rotate(-125deg) scale(2);
-    transform: rotate(-125deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(115deg) scale(2);
+    -ms-transform: rotate(115deg) scale(2);
+    -webkit-transform: rotate(115deg) scale(2);
+    transform: rotate(115deg) scale(2);
+    background-color: blue;
+    opacity: 0.6;
   }
 }
 @-webkit-keyframes spin114 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-105deg) scale(1);
-    -ms-transform: rotate(-105deg) scale(1);
-    -webkit-transform: rotate(-105deg) scale(1);
-    transform: rotate(-105deg) scale(1);
+    -moz-transform: rotate(135deg) scale(1);
+    -ms-transform: rotate(135deg) scale(1);
+    -webkit-transform: rotate(135deg) scale(1);
+    transform: rotate(135deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-105deg) scale(1);
-    -ms-transform: rotate(-105deg) scale(1);
-    -webkit-transform: rotate(-105deg) scale(1);
-    transform: rotate(-105deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(135deg) scale(1);
+    -ms-transform: rotate(135deg) scale(1);
+    -webkit-transform: rotate(135deg) scale(1);
+    transform: rotate(135deg) scale(1);
+    background-color: #5500ff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-105deg) scale(2);
-    -ms-transform: rotate(-105deg) scale(2);
-    -webkit-transform: rotate(-105deg) scale(2);
-    transform: rotate(-105deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(135deg) scale(2);
+    -ms-transform: rotate(135deg) scale(2);
+    -webkit-transform: rotate(135deg) scale(2);
+    transform: rotate(135deg) scale(2);
+    background-color: #5500ff;
+    opacity: 0.6;
   }
 }
 @-moz-keyframes spin114 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-105deg) scale(1);
-    -ms-transform: rotate(-105deg) scale(1);
-    -webkit-transform: rotate(-105deg) scale(1);
-    transform: rotate(-105deg) scale(1);
+    -moz-transform: rotate(135deg) scale(1);
+    -ms-transform: rotate(135deg) scale(1);
+    -webkit-transform: rotate(135deg) scale(1);
+    transform: rotate(135deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-105deg) scale(1);
-    -ms-transform: rotate(-105deg) scale(1);
-    -webkit-transform: rotate(-105deg) scale(1);
-    transform: rotate(-105deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(135deg) scale(1);
+    -ms-transform: rotate(135deg) scale(1);
+    -webkit-transform: rotate(135deg) scale(1);
+    transform: rotate(135deg) scale(1);
+    background-color: #5500ff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-105deg) scale(2);
-    -ms-transform: rotate(-105deg) scale(2);
-    -webkit-transform: rotate(-105deg) scale(2);
-    transform: rotate(-105deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(135deg) scale(2);
+    -ms-transform: rotate(135deg) scale(2);
+    -webkit-transform: rotate(135deg) scale(2);
+    transform: rotate(135deg) scale(2);
+    background-color: #5500ff;
+    opacity: 0.6;
   }
 }
 @-o-keyframes spin114 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-105deg) scale(1);
-    -ms-transform: rotate(-105deg) scale(1);
-    -webkit-transform: rotate(-105deg) scale(1);
-    transform: rotate(-105deg) scale(1);
+    -moz-transform: rotate(135deg) scale(1);
+    -ms-transform: rotate(135deg) scale(1);
+    -webkit-transform: rotate(135deg) scale(1);
+    transform: rotate(135deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-105deg) scale(1);
-    -ms-transform: rotate(-105deg) scale(1);
-    -webkit-transform: rotate(-105deg) scale(1);
-    transform: rotate(-105deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(135deg) scale(1);
+    -ms-transform: rotate(135deg) scale(1);
+    -webkit-transform: rotate(135deg) scale(1);
+    transform: rotate(135deg) scale(1);
+    background-color: #5500ff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-105deg) scale(2);
-    -ms-transform: rotate(-105deg) scale(2);
-    -webkit-transform: rotate(-105deg) scale(2);
-    transform: rotate(-105deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(135deg) scale(2);
+    -ms-transform: rotate(135deg) scale(2);
+    -webkit-transform: rotate(135deg) scale(2);
+    transform: rotate(135deg) scale(2);
+    background-color: #5500ff;
+    opacity: 0.6;
   }
 }
 @keyframes $spin114 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-105deg) scale(1);
-    -ms-transform: rotate(-105deg) scale(1);
-    -webkit-transform: rotate(-105deg) scale(1);
-    transform: rotate(-105deg) scale(1);
+    -moz-transform: rotate(135deg) scale(1);
+    -ms-transform: rotate(135deg) scale(1);
+    -webkit-transform: rotate(135deg) scale(1);
+    transform: rotate(135deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-105deg) scale(1);
-    -ms-transform: rotate(-105deg) scale(1);
-    -webkit-transform: rotate(-105deg) scale(1);
-    transform: rotate(-105deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(135deg) scale(1);
+    -ms-transform: rotate(135deg) scale(1);
+    -webkit-transform: rotate(135deg) scale(1);
+    transform: rotate(135deg) scale(1);
+    background-color: #5500ff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-105deg) scale(2);
-    -ms-transform: rotate(-105deg) scale(2);
-    -webkit-transform: rotate(-105deg) scale(2);
-    transform: rotate(-105deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(135deg) scale(2);
+    -ms-transform: rotate(135deg) scale(2);
+    -webkit-transform: rotate(135deg) scale(2);
+    transform: rotate(135deg) scale(2);
+    background-color: #5500ff;
+    opacity: 0.6;
   }
 }
 @-webkit-keyframes spin115 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-85deg) scale(1);
-    -ms-transform: rotate(-85deg) scale(1);
-    -webkit-transform: rotate(-85deg) scale(1);
-    transform: rotate(-85deg) scale(1);
+    -moz-transform: rotate(155deg) scale(1);
+    -ms-transform: rotate(155deg) scale(1);
+    -webkit-transform: rotate(155deg) scale(1);
+    transform: rotate(155deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-85deg) scale(1);
-    -ms-transform: rotate(-85deg) scale(1);
-    -webkit-transform: rotate(-85deg) scale(1);
-    transform: rotate(-85deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(155deg) scale(1);
+    -ms-transform: rotate(155deg) scale(1);
+    -webkit-transform: rotate(155deg) scale(1);
+    transform: rotate(155deg) scale(1);
+    background-color: #aa00ff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-85deg) scale(2);
-    -ms-transform: rotate(-85deg) scale(2);
-    -webkit-transform: rotate(-85deg) scale(2);
-    transform: rotate(-85deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(155deg) scale(2);
+    -ms-transform: rotate(155deg) scale(2);
+    -webkit-transform: rotate(155deg) scale(2);
+    transform: rotate(155deg) scale(2);
+    background-color: #aa00ff;
+    opacity: 0.6;
   }
 }
 @-moz-keyframes spin115 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-85deg) scale(1);
-    -ms-transform: rotate(-85deg) scale(1);
-    -webkit-transform: rotate(-85deg) scale(1);
-    transform: rotate(-85deg) scale(1);
+    -moz-transform: rotate(155deg) scale(1);
+    -ms-transform: rotate(155deg) scale(1);
+    -webkit-transform: rotate(155deg) scale(1);
+    transform: rotate(155deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-85deg) scale(1);
-    -ms-transform: rotate(-85deg) scale(1);
-    -webkit-transform: rotate(-85deg) scale(1);
-    transform: rotate(-85deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(155deg) scale(1);
+    -ms-transform: rotate(155deg) scale(1);
+    -webkit-transform: rotate(155deg) scale(1);
+    transform: rotate(155deg) scale(1);
+    background-color: #aa00ff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-85deg) scale(2);
-    -ms-transform: rotate(-85deg) scale(2);
-    -webkit-transform: rotate(-85deg) scale(2);
-    transform: rotate(-85deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(155deg) scale(2);
+    -ms-transform: rotate(155deg) scale(2);
+    -webkit-transform: rotate(155deg) scale(2);
+    transform: rotate(155deg) scale(2);
+    background-color: #aa00ff;
+    opacity: 0.6;
   }
 }
 @-o-keyframes spin115 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-85deg) scale(1);
-    -ms-transform: rotate(-85deg) scale(1);
-    -webkit-transform: rotate(-85deg) scale(1);
-    transform: rotate(-85deg) scale(1);
+    -moz-transform: rotate(155deg) scale(1);
+    -ms-transform: rotate(155deg) scale(1);
+    -webkit-transform: rotate(155deg) scale(1);
+    transform: rotate(155deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-85deg) scale(1);
-    -ms-transform: rotate(-85deg) scale(1);
-    -webkit-transform: rotate(-85deg) scale(1);
-    transform: rotate(-85deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(155deg) scale(1);
+    -ms-transform: rotate(155deg) scale(1);
+    -webkit-transform: rotate(155deg) scale(1);
+    transform: rotate(155deg) scale(1);
+    background-color: #aa00ff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-85deg) scale(2);
-    -ms-transform: rotate(-85deg) scale(2);
-    -webkit-transform: rotate(-85deg) scale(2);
-    transform: rotate(-85deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(155deg) scale(2);
+    -ms-transform: rotate(155deg) scale(2);
+    -webkit-transform: rotate(155deg) scale(2);
+    transform: rotate(155deg) scale(2);
+    background-color: #aa00ff;
+    opacity: 0.6;
   }
 }
 @keyframes $spin115 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-85deg) scale(1);
-    -ms-transform: rotate(-85deg) scale(1);
-    -webkit-transform: rotate(-85deg) scale(1);
-    transform: rotate(-85deg) scale(1);
+    -moz-transform: rotate(155deg) scale(1);
+    -ms-transform: rotate(155deg) scale(1);
+    -webkit-transform: rotate(155deg) scale(1);
+    transform: rotate(155deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-85deg) scale(1);
-    -ms-transform: rotate(-85deg) scale(1);
-    -webkit-transform: rotate(-85deg) scale(1);
-    transform: rotate(-85deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(155deg) scale(1);
+    -ms-transform: rotate(155deg) scale(1);
+    -webkit-transform: rotate(155deg) scale(1);
+    transform: rotate(155deg) scale(1);
+    background-color: #aa00ff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-85deg) scale(2);
-    -ms-transform: rotate(-85deg) scale(2);
-    -webkit-transform: rotate(-85deg) scale(2);
-    transform: rotate(-85deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(155deg) scale(2);
+    -ms-transform: rotate(155deg) scale(2);
+    -webkit-transform: rotate(155deg) scale(2);
+    transform: rotate(155deg) scale(2);
+    background-color: #aa00ff;
+    opacity: 0.6;
   }
 }
 @-webkit-keyframes spin116 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-65deg) scale(1);
-    -ms-transform: rotate(-65deg) scale(1);
-    -webkit-transform: rotate(-65deg) scale(1);
-    transform: rotate(-65deg) scale(1);
+    -moz-transform: rotate(175deg) scale(1);
+    -ms-transform: rotate(175deg) scale(1);
+    -webkit-transform: rotate(175deg) scale(1);
+    transform: rotate(175deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-65deg) scale(1);
-    -ms-transform: rotate(-65deg) scale(1);
-    -webkit-transform: rotate(-65deg) scale(1);
-    transform: rotate(-65deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(175deg) scale(1);
+    -ms-transform: rotate(175deg) scale(1);
+    -webkit-transform: rotate(175deg) scale(1);
+    transform: rotate(175deg) scale(1);
+    background-color: magenta;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-65deg) scale(2);
-    -ms-transform: rotate(-65deg) scale(2);
-    -webkit-transform: rotate(-65deg) scale(2);
-    transform: rotate(-65deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(175deg) scale(2);
+    -ms-transform: rotate(175deg) scale(2);
+    -webkit-transform: rotate(175deg) scale(2);
+    transform: rotate(175deg) scale(2);
+    background-color: magenta;
+    opacity: 0.6;
   }
 }
 @-moz-keyframes spin116 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-65deg) scale(1);
-    -ms-transform: rotate(-65deg) scale(1);
-    -webkit-transform: rotate(-65deg) scale(1);
-    transform: rotate(-65deg) scale(1);
+    -moz-transform: rotate(175deg) scale(1);
+    -ms-transform: rotate(175deg) scale(1);
+    -webkit-transform: rotate(175deg) scale(1);
+    transform: rotate(175deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-65deg) scale(1);
-    -ms-transform: rotate(-65deg) scale(1);
-    -webkit-transform: rotate(-65deg) scale(1);
-    transform: rotate(-65deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(175deg) scale(1);
+    -ms-transform: rotate(175deg) scale(1);
+    -webkit-transform: rotate(175deg) scale(1);
+    transform: rotate(175deg) scale(1);
+    background-color: magenta;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-65deg) scale(2);
-    -ms-transform: rotate(-65deg) scale(2);
-    -webkit-transform: rotate(-65deg) scale(2);
-    transform: rotate(-65deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(175deg) scale(2);
+    -ms-transform: rotate(175deg) scale(2);
+    -webkit-transform: rotate(175deg) scale(2);
+    transform: rotate(175deg) scale(2);
+    background-color: magenta;
+    opacity: 0.6;
   }
 }
 @-o-keyframes spin116 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-65deg) scale(1);
-    -ms-transform: rotate(-65deg) scale(1);
-    -webkit-transform: rotate(-65deg) scale(1);
-    transform: rotate(-65deg) scale(1);
+    -moz-transform: rotate(175deg) scale(1);
+    -ms-transform: rotate(175deg) scale(1);
+    -webkit-transform: rotate(175deg) scale(1);
+    transform: rotate(175deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-65deg) scale(1);
-    -ms-transform: rotate(-65deg) scale(1);
-    -webkit-transform: rotate(-65deg) scale(1);
-    transform: rotate(-65deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(175deg) scale(1);
+    -ms-transform: rotate(175deg) scale(1);
+    -webkit-transform: rotate(175deg) scale(1);
+    transform: rotate(175deg) scale(1);
+    background-color: magenta;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-65deg) scale(2);
-    -ms-transform: rotate(-65deg) scale(2);
-    -webkit-transform: rotate(-65deg) scale(2);
-    transform: rotate(-65deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(175deg) scale(2);
+    -ms-transform: rotate(175deg) scale(2);
+    -webkit-transform: rotate(175deg) scale(2);
+    transform: rotate(175deg) scale(2);
+    background-color: magenta;
+    opacity: 0.6;
   }
 }
 @keyframes $spin116 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-65deg) scale(1);
-    -ms-transform: rotate(-65deg) scale(1);
-    -webkit-transform: rotate(-65deg) scale(1);
-    transform: rotate(-65deg) scale(1);
+    -moz-transform: rotate(175deg) scale(1);
+    -ms-transform: rotate(175deg) scale(1);
+    -webkit-transform: rotate(175deg) scale(1);
+    transform: rotate(175deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-65deg) scale(1);
-    -ms-transform: rotate(-65deg) scale(1);
-    -webkit-transform: rotate(-65deg) scale(1);
-    transform: rotate(-65deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(175deg) scale(1);
+    -ms-transform: rotate(175deg) scale(1);
+    -webkit-transform: rotate(175deg) scale(1);
+    transform: rotate(175deg) scale(1);
+    background-color: magenta;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-65deg) scale(2);
-    -ms-transform: rotate(-65deg) scale(2);
-    -webkit-transform: rotate(-65deg) scale(2);
-    transform: rotate(-65deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(175deg) scale(2);
+    -ms-transform: rotate(175deg) scale(2);
+    -webkit-transform: rotate(175deg) scale(2);
+    transform: rotate(175deg) scale(2);
+    background-color: magenta;
+    opacity: 0.6;
   }
 }
 @-webkit-keyframes spin117 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-45deg) scale(1);
-    -ms-transform: rotate(-45deg) scale(1);
-    -webkit-transform: rotate(-45deg) scale(1);
-    transform: rotate(-45deg) scale(1);
+    -moz-transform: rotate(195deg) scale(1);
+    -ms-transform: rotate(195deg) scale(1);
+    -webkit-transform: rotate(195deg) scale(1);
+    transform: rotate(195deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-45deg) scale(1);
-    -ms-transform: rotate(-45deg) scale(1);
-    -webkit-transform: rotate(-45deg) scale(1);
-    transform: rotate(-45deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(195deg) scale(1);
+    -ms-transform: rotate(195deg) scale(1);
+    -webkit-transform: rotate(195deg) scale(1);
+    transform: rotate(195deg) scale(1);
+    background-color: #ff00aa;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-45deg) scale(2);
-    -ms-transform: rotate(-45deg) scale(2);
-    -webkit-transform: rotate(-45deg) scale(2);
-    transform: rotate(-45deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(195deg) scale(2);
+    -ms-transform: rotate(195deg) scale(2);
+    -webkit-transform: rotate(195deg) scale(2);
+    transform: rotate(195deg) scale(2);
+    background-color: #ff00aa;
+    opacity: 0.6;
   }
 }
 @-moz-keyframes spin117 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-45deg) scale(1);
-    -ms-transform: rotate(-45deg) scale(1);
-    -webkit-transform: rotate(-45deg) scale(1);
-    transform: rotate(-45deg) scale(1);
+    -moz-transform: rotate(195deg) scale(1);
+    -ms-transform: rotate(195deg) scale(1);
+    -webkit-transform: rotate(195deg) scale(1);
+    transform: rotate(195deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-45deg) scale(1);
-    -ms-transform: rotate(-45deg) scale(1);
-    -webkit-transform: rotate(-45deg) scale(1);
-    transform: rotate(-45deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(195deg) scale(1);
+    -ms-transform: rotate(195deg) scale(1);
+    -webkit-transform: rotate(195deg) scale(1);
+    transform: rotate(195deg) scale(1);
+    background-color: #ff00aa;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-45deg) scale(2);
-    -ms-transform: rotate(-45deg) scale(2);
-    -webkit-transform: rotate(-45deg) scale(2);
-    transform: rotate(-45deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(195deg) scale(2);
+    -ms-transform: rotate(195deg) scale(2);
+    -webkit-transform: rotate(195deg) scale(2);
+    transform: rotate(195deg) scale(2);
+    background-color: #ff00aa;
+    opacity: 0.6;
   }
 }
 @-o-keyframes spin117 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-45deg) scale(1);
-    -ms-transform: rotate(-45deg) scale(1);
-    -webkit-transform: rotate(-45deg) scale(1);
-    transform: rotate(-45deg) scale(1);
+    -moz-transform: rotate(195deg) scale(1);
+    -ms-transform: rotate(195deg) scale(1);
+    -webkit-transform: rotate(195deg) scale(1);
+    transform: rotate(195deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-45deg) scale(1);
-    -ms-transform: rotate(-45deg) scale(1);
-    -webkit-transform: rotate(-45deg) scale(1);
-    transform: rotate(-45deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(195deg) scale(1);
+    -ms-transform: rotate(195deg) scale(1);
+    -webkit-transform: rotate(195deg) scale(1);
+    transform: rotate(195deg) scale(1);
+    background-color: #ff00aa;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-45deg) scale(2);
-    -ms-transform: rotate(-45deg) scale(2);
-    -webkit-transform: rotate(-45deg) scale(2);
-    transform: rotate(-45deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(195deg) scale(2);
+    -ms-transform: rotate(195deg) scale(2);
+    -webkit-transform: rotate(195deg) scale(2);
+    transform: rotate(195deg) scale(2);
+    background-color: #ff00aa;
+    opacity: 0.6;
   }
 }
 @keyframes $spin117 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-45deg) scale(1);
-    -ms-transform: rotate(-45deg) scale(1);
-    -webkit-transform: rotate(-45deg) scale(1);
-    transform: rotate(-45deg) scale(1);
+    -moz-transform: rotate(195deg) scale(1);
+    -ms-transform: rotate(195deg) scale(1);
+    -webkit-transform: rotate(195deg) scale(1);
+    transform: rotate(195deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-45deg) scale(1);
-    -ms-transform: rotate(-45deg) scale(1);
-    -webkit-transform: rotate(-45deg) scale(1);
-    transform: rotate(-45deg) scale(1);
-    background-color: #0ac;
+    -moz-transform: rotate(195deg) scale(1);
+    -ms-transform: rotate(195deg) scale(1);
+    -webkit-transform: rotate(195deg) scale(1);
+    transform: rotate(195deg) scale(1);
+    background-color: #ff00aa;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-45deg) scale(2);
-    -ms-transform: rotate(-45deg) scale(2);
-    -webkit-transform: rotate(-45deg) scale(2);
-    transform: rotate(-45deg) scale(2);
-    background-color: #0ac;
-    opacity: 0.5;
+    -moz-transform: rotate(195deg) scale(2);
+    -ms-transform: rotate(195deg) scale(2);
+    -webkit-transform: rotate(195deg) scale(2);
+    transform: rotate(195deg) scale(2);
+    background-color: #ff00aa;
+    opacity: 0.6;
   }
 }
 @-webkit-keyframes spin118 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-25deg) scale(1);
-    -ms-transform: rotate(-25deg) scale(1);
-    -webkit-transform: rotate(-25deg) scale(1);
-    transform: rotate(-25deg) scale(1);
+    -moz-transform: rotate(215deg) scale(1);
+    -ms-transform: rotate(215deg) scale(1);
+    -webkit-transform: rotate(215deg) scale(1);
+    transform: rotate(215deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-25deg) scale(1);
-    -ms-transform: rotate(-25deg) scale(1);
-    -webkit-transform: rotate(-25deg) scale(1);
-    transform: rotate(-25deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(215deg) scale(1);
+    -ms-transform: rotate(215deg) scale(1);
+    -webkit-transform: rotate(215deg) scale(1);
+    transform: rotate(215deg) scale(1);
+    background-color: #ff0055;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-25deg) scale(2);
-    -ms-transform: rotate(-25deg) scale(2);
-    -webkit-transform: rotate(-25deg) scale(2);
-    transform: rotate(-25deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(215deg) scale(2);
+    -ms-transform: rotate(215deg) scale(2);
+    -webkit-transform: rotate(215deg) scale(2);
+    transform: rotate(215deg) scale(2);
+    background-color: #ff0055;
+    opacity: 0.6;
   }
 }
 @-moz-keyframes spin118 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-25deg) scale(1);
-    -ms-transform: rotate(-25deg) scale(1);
-    -webkit-transform: rotate(-25deg) scale(1);
-    transform: rotate(-25deg) scale(1);
+    -moz-transform: rotate(215deg) scale(1);
+    -ms-transform: rotate(215deg) scale(1);
+    -webkit-transform: rotate(215deg) scale(1);
+    transform: rotate(215deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-25deg) scale(1);
-    -ms-transform: rotate(-25deg) scale(1);
-    -webkit-transform: rotate(-25deg) scale(1);
-    transform: rotate(-25deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(215deg) scale(1);
+    -ms-transform: rotate(215deg) scale(1);
+    -webkit-transform: rotate(215deg) scale(1);
+    transform: rotate(215deg) scale(1);
+    background-color: #ff0055;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-25deg) scale(2);
-    -ms-transform: rotate(-25deg) scale(2);
-    -webkit-transform: rotate(-25deg) scale(2);
-    transform: rotate(-25deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(215deg) scale(2);
+    -ms-transform: rotate(215deg) scale(2);
+    -webkit-transform: rotate(215deg) scale(2);
+    transform: rotate(215deg) scale(2);
+    background-color: #ff0055;
+    opacity: 0.6;
   }
 }
 @-o-keyframes spin118 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-25deg) scale(1);
-    -ms-transform: rotate(-25deg) scale(1);
-    -webkit-transform: rotate(-25deg) scale(1);
-    transform: rotate(-25deg) scale(1);
+    -moz-transform: rotate(215deg) scale(1);
+    -ms-transform: rotate(215deg) scale(1);
+    -webkit-transform: rotate(215deg) scale(1);
+    transform: rotate(215deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-25deg) scale(1);
-    -ms-transform: rotate(-25deg) scale(1);
-    -webkit-transform: rotate(-25deg) scale(1);
-    transform: rotate(-25deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(215deg) scale(1);
+    -ms-transform: rotate(215deg) scale(1);
+    -webkit-transform: rotate(215deg) scale(1);
+    transform: rotate(215deg) scale(1);
+    background-color: #ff0055;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-25deg) scale(2);
-    -ms-transform: rotate(-25deg) scale(2);
-    -webkit-transform: rotate(-25deg) scale(2);
-    transform: rotate(-25deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(215deg) scale(2);
+    -ms-transform: rotate(215deg) scale(2);
+    -webkit-transform: rotate(215deg) scale(2);
+    transform: rotate(215deg) scale(2);
+    background-color: #ff0055;
+    opacity: 0.6;
   }
 }
 @keyframes $spin118 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(-5deg) scale(0.01);
-    -ms-transform: rotate(-5deg) scale(0.01);
-    -webkit-transform: rotate(-5deg) scale(0.01);
-    transform: rotate(-5deg) scale(0.01);
+    -moz-transform: rotate(235deg) scale(0.01);
+    -ms-transform: rotate(235deg) scale(0.01);
+    -webkit-transform: rotate(235deg) scale(0.01);
+    transform: rotate(235deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-25deg) scale(1);
-    -ms-transform: rotate(-25deg) scale(1);
-    -webkit-transform: rotate(-25deg) scale(1);
-    transform: rotate(-25deg) scale(1);
+    -moz-transform: rotate(215deg) scale(1);
+    -ms-transform: rotate(215deg) scale(1);
+    -webkit-transform: rotate(215deg) scale(1);
+    transform: rotate(215deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-25deg) scale(1);
-    -ms-transform: rotate(-25deg) scale(1);
-    -webkit-transform: rotate(-25deg) scale(1);
-    transform: rotate(-25deg) scale(1);
-    background-color: #0072BC;
+    -moz-transform: rotate(215deg) scale(1);
+    -ms-transform: rotate(215deg) scale(1);
+    -webkit-transform: rotate(215deg) scale(1);
+    transform: rotate(215deg) scale(1);
+    background-color: #ff0055;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-25deg) scale(2);
-    -ms-transform: rotate(-25deg) scale(2);
-    -webkit-transform: rotate(-25deg) scale(2);
-    transform: rotate(-25deg) scale(2);
-    background-color: #0072BC;
-    opacity: 0.5;
+    -moz-transform: rotate(215deg) scale(2);
+    -ms-transform: rotate(215deg) scale(2);
+    -webkit-transform: rotate(215deg) scale(2);
+    transform: rotate(215deg) scale(2);
+    background-color: #ff0055;
+    opacity: 0.6;
   }
 }
 @media all and (min-width: 40em) {
-  /* line 300, ../sass/services.scss */
+  /* line 367, ../sass/services.scss */
   #mask {
     margin-top: 300px;
   }
 
-  /* line 304, ../sass/services.scss */
+  /* line 371, ../sass/services.scss */
   #mask2 {
     margin-top: -200px;
   }
 
-  /* line 308, ../sass/services.scss */
+  /* line 375, ../sass/services.scss */
   #trunk {
     margin-left: -282px;
   }
 
-  /* line 312, ../sass/services.scss */
+  /* line 379, ../sass/services.scss */
   #trunkMask {
     height: 500px;
-    margin-top: -750px;
+    margin-top: -200px;
     margin-left: -290px;
   }
 
   @-webkit-keyframes growTrunk {
     0% {
-      margin-top: -250px;
+      margin-top: -200px;
     }
     100% {
       margin-top: -750px;
@@ -3207,7 +3635,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
   @-moz-keyframes growTrunk {
     0% {
-      margin-top: -250px;
+      margin-top: -200px;
     }
     100% {
       margin-top: -750px;
@@ -3215,7 +3643,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
   @-o-keyframes growTrunk {
     0% {
-      margin-top: -250px;
+      margin-top: -200px;
     }
     100% {
       margin-top: -750px;
@@ -3223,42 +3651,42 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
   @keyframes $growTrunk {
     0% {
-      margin-top: -250px;
+      margin-top: -200px;
     }
     100% {
       margin-top: -750px;
     }
   }
-  /* line 323, ../sass/services.scss */
+  /* line 390, ../sass/services.scss */
   .leaf {
     height: 100px;
     width: 100px;
     left: 0px;
   }
 
-  /* line 329, ../sass/services.scss */
+  /* line 396, ../sass/services.scss */
   #leaf1 {
     top: 500px;
   }
 
-  /* line 333, ../sass/services.scss */
+  /* line 400, ../sass/services.scss */
   #leaf2 {
     top: 500px;
   }
 
-  /* line 337, ../sass/services.scss */
+  /* line 404, ../sass/services.scss */
   #leaf3 {
     top: 350px;
     left: -26px;
   }
 
-  /* line 342, ../sass/services.scss */
+  /* line 409, ../sass/services.scss */
   #leaf4 {
     top: 250px;
     left: -34px;
   }
 
-  /* line 347, ../sass/services.scss */
+  /* line 414, ../sass/services.scss */
   .servicePetal {
     top: 1px;
     left: 3px;
@@ -3268,7 +3696,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 50px;
   }
 
-  /* line 357, ../sass/services.scss */
+  /* line 424, ../sass/services.scss */
   #serviceCenter {
     width: 40px;
     height: 40px;
@@ -3279,11 +3707,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-radius: 40px;
   }
 
-  /* line 367, ../sass/services.scss */
+  /* line 434, ../sass/services.scss */
   #servicesContent {
     height: 500px;
     width: 500px;
     margin-top: -200px;
     margin-left: -250px;
+  }
+
+  /* line 441, ../sass/services.scss */
+  #servicesContentText {
+    left: 120px;
+    top: 120px;
+    width: 380px;
+    font-size: 94px;
+  }
+
+  /* line 449, ../sass/services.scss */
+  #indexSpan6 {
+    font-size: 110px;
   }
 }
