@@ -14,14 +14,103 @@ $indexContent-height :300px;
 }
 
 #flowerContainer {
-    @include debug(red);
     width: 1px;
     height: 1px;
     position: absolute;
     top: 50%;
     left: 50%;
+
 }
 
+#indexMask {
+    position: absolute;
+    // top: -120px;
+    // left: -120px;
+    top: 50%;
+    left: 50%;
+    margin-top: -185px;
+    margin-left: -185px;
+    width: 370px;
+    height: 370px;
+    background-color: $bg-color;
+    // z-index: 50;
+    text-align: center;
+    @include animation("animIndexMask 1s ease-out 1s forwards");
+}
+
+@include keyframes(animIndexMask) {
+    0% {
+        top: 50%;
+        left: 50%;
+        margin-top: -185px;
+        margin-left: -185px;
+    }
+    100% {
+        top: -120px;
+        left: -120px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+}
+
+#atinfo {
+    position: relative;
+    height: 80px;
+    width: 100%;
+    line-height: 80px;
+    margin-top: 40px;
+    font-size: 120px;
+    margin-bottom: 20px;
+    color : #222;
+    font-family: 'Gruppo', sans-serif;
+    // @include debug(green);
+    @include animation("animAtinfo 1s ease-out 3s forwards");
+}
+
+@include keyframes(animAtinfo) {
+    0% {
+        color: #222;
+    }
+    100% {
+        color: #0072BC;
+    }
+}
+
+
+.indexText {
+    position: relative;
+    font-family: 'BebasNeue', sans-serif;
+    padding: 10px;
+    font-size: 30px;
+    // @include debug(green);
+}
+
+#indexText1 {
+    letter-spacing: 3px;
+}
+
+#indexText2 {
+    letter-spacing: 1px;
+}
+
+.nav {
+    font-family: 'Muli', sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    // @include debug(green);
+    padding: 10px;
+}
+
+.nav a {
+    color: #333;
+}
+
+.info {
+    color: #999;
+    padding: 5px;
+    font-family: 'Muli', sans-serif;
+    font-size: 90%;
+}
 
 /*
 	-- PETALS --------------------------------------------------------------------
@@ -31,15 +120,14 @@ $indexContent-height :300px;
     top: 0;
     left: 0;
     border-radius: 10% 90% 10% 95%;
-    border-top: 2px solid $bg-color;
-    border-right: 2px solid $bg-color;
+    border-top: 1px solid $bg-color;
+    border-left: 1px solid $bg-color;
     height: 150px;
     margin: auto;
     width: 50px;
     transform-origin: left top;
-    // opacity: 0;
+    opacity: 0;
     // background-color: red;
-
     z-index: 20;
 }
 
@@ -47,41 +135,59 @@ $indexContent-height :300px;
 
 // animation
 @mixin defineIndexPetalAnim($anim) {
-    @include animation("#{$anim} 4s ease-out 1s forwards");
+    @include animation("#{$anim} 1s ease-out 2s forwards");
 }
 
 // create petal ids and add animation
-@for $i from 1 through 18 {
+@for $i from 1 through 36 {
     #indexPetal#{$i} { @include defineIndexPetalAnim( "spin#{$i}") }
 }
 
 // start angle
-$serviceAngleOffset: 110deg;
-$serviceAngleStep: 15deg;
+$indexAngleOffset: 193deg;
+$indexAngleStep: 7.5deg;
 
 // petal angles
-$serviceSpin1Angle:  $serviceAngleStep * 18;
-$serviceSpin2Angle:  $serviceAngleStep * 17;
-$serviceSpin3Angle:  $serviceAngleStep * 16;
-$serviceSpin4Angle:  $serviceAngleStep * 15;
-$serviceSpin5Angle:  $serviceAngleStep * 14;
-$serviceSpin6Angle:  $serviceAngleStep * 13;
-$serviceSpin7Angle:  $serviceAngleStep * 12;
-$serviceSpin8Angle:  $serviceAngleStep * 11;
-$serviceSpin9Angle:  $serviceAngleStep * 10;
-$serviceSpin10Angle: $serviceAngleStep * 9;
-$serviceSpin11Angle: $serviceAngleStep * 8;
-$serviceSpin12Angle: $serviceAngleStep * 7;
-$serviceSpin13Angle: $serviceAngleStep * 6;
-$serviceSpin14Angle: $serviceAngleStep * 5;
-$serviceSpin15Angle: $serviceAngleStep * 4;
-$serviceSpin16Angle: $serviceAngleStep * 3;
-$serviceSpin17Angle: $serviceAngleStep * 2;
-$serviceSpin18Angle: $serviceAngleStep;
+$indexSpin1Angle:  $indexAngleStep * 36;
+$indexSpin2Angle:  $indexAngleStep * 35;
+$indexSpin3Angle:  $indexAngleStep * 34;
+$indexSpin4Angle:  $indexAngleStep * 33;
+$indexSpin5Angle:  $indexAngleStep * 32;
+$indexSpin6Angle:  $indexAngleStep * 31;
+$indexSpin7Angle:  $indexAngleStep * 30;
+$indexSpin8Angle:  $indexAngleStep * 29;
+$indexSpin9Angle:  $indexAngleStep * 28;
+$indexSpin10Angle: $indexAngleStep * 27;
+$indexSpin11Angle: $indexAngleStep * 26;
+$indexSpin12Angle: $indexAngleStep * 25;
+$indexSpin13Angle: $indexAngleStep * 24;
+$indexSpin14Angle: $indexAngleStep * 23;
+$indexSpin15Angle: $indexAngleStep * 22;
+$indexSpin16Angle: $indexAngleStep * 21;
+$indexSpin17Angle: $indexAngleStep * 20;
+$indexSpin18Angle: $indexAngleStep * 19;
+$indexSpin19Angle: $indexAngleStep * 18;
+$indexSpin20Angle: $indexAngleStep * 17;
+$indexSpin21Angle: $indexAngleStep * 16;
+$indexSpin22Angle: $indexAngleStep * 15;
+$indexSpin23Angle: $indexAngleStep * 14;
+$indexSpin24Angle: $indexAngleStep * 13;
+$indexSpin25Angle: $indexAngleStep * 12;
+$indexSpin26Angle: $indexAngleStep * 11;
+$indexSpin27Angle: $indexAngleStep * 10;
+$indexSpin28Angle: $indexAngleStep * 9;
+$indexSpin29Angle: $indexAngleStep * 8;
+$indexSpin30Angle: $indexAngleStep * 7;
+$indexSpin31Angle: $indexAngleStep * 6;
+$indexSpin32Angle: $indexAngleStep * 5;
+$indexSpin33Angle: $indexAngleStep * 4;
+$indexSpin34Angle: $indexAngleStep * 3;
+$indexSpin35Angle: $indexAngleStep * 2;
+$indexSpin36Angle: $indexAngleStep;
 
 @mixin indexAnimStart {
     opacity: 0;
-    @include transform(rotate($serviceAngleOffset) scale(0.01));
+    @include transform(rotate($indexAngleOffset) scale(0.01));
 }
 
 @mixin indexAnimEnd($angle,$scale) {
@@ -94,41 +200,52 @@ $serviceSpin18Angle: $serviceAngleStep;
     @include keyframes(#{$name}) {
         0% {
             @include indexAnimStart;
-        }
-        50% {
-            @include indexAnimEnd($angle, 1);
             background-color: $startColor;
-        }
-        60% {
-            @include indexAnimEnd($angle, 1);
-            background-color: $endColor;
         }
         100% {
             @include indexAnimEnd($angle, 2);
             background-color: $endColor;
-            opacity: 0.5;
+            opacity: 0.8;
         }
     }
 }
 
-@include createIndexAnim("spin1", $serviceAngleOffset - $serviceSpin1Angle, $bgGrey1, $bgColor1);
-@include createIndexAnim("spin2", $serviceAngleOffset - $serviceSpin2Angle, $bgGrey2, $bgColor2);
-@include createIndexAnim("spin3", $serviceAngleOffset - $serviceSpin3Angle, $bgGrey1, $bgColor1);
-@include createIndexAnim("spin4", $serviceAngleOffset - $serviceSpin4Angle, $bgGrey2, $bgColor2);
-@include createIndexAnim("spin5", $serviceAngleOffset - $serviceSpin5Angle, $bgGrey1, $bgColor1);
-@include createIndexAnim("spin6", $serviceAngleOffset - $serviceSpin6Angle, $bgGrey2, $bgColor2);
-@include createIndexAnim("spin7", $serviceAngleOffset - $serviceSpin7Angle, $bgGrey1, $bgColor1);
-@include createIndexAnim("spin8", $serviceAngleOffset - $serviceSpin8Angle, $bgGrey2, $bgColor2);
-@include createIndexAnim("spin9", $serviceAngleOffset - $serviceSpin9Angle, $bgGrey1, $bgColor1);
-@include createIndexAnim("spin10", $serviceAngleOffset - $serviceSpin10Angle, $bgGrey2, $bgColor2);
-@include createIndexAnim("spin11", $serviceAngleOffset - $serviceSpin11Angle, $bgGrey1, $bgColor1);
-@include createIndexAnim("spin12", $serviceAngleOffset - $serviceSpin12Angle, $bgGrey2, $bgColor2);
-@include createIndexAnim("spin13", $serviceAngleOffset - $serviceSpin13Angle, $bgGrey1, $bgColor1);
-@include createIndexAnim("spin14", $serviceAngleOffset - $serviceSpin14Angle, $bgGrey2, $bgColor2);
-@include createIndexAnim("spin15", $serviceAngleOffset - $serviceSpin15Angle, $bgGrey1, $bgColor1);
-@include createIndexAnim("spin16", $serviceAngleOffset - $serviceSpin16Angle, $bgGrey2, $bgColor2);
-@include createIndexAnim("spin17", $serviceAngleOffset - $serviceSpin17Angle, $bgGrey1, $bgColor1);
-@include createIndexAnim("spin18", $serviceAngleOffset - $serviceSpin18Angle, $bgGrey2, $bgColor2);
+@include createIndexAnim("spin1", $indexAngleOffset + $indexSpin1Angle, $bgGrey1, hsl(0, 100%, 50%));
+@include createIndexAnim("spin2", $indexAngleOffset + $indexSpin2Angle, $bgGrey2, hsl(10, 100%, 50%));
+@include createIndexAnim("spin3", $indexAngleOffset + $indexSpin3Angle, $bgGrey1, hsl(20, 100%, 50%));
+@include createIndexAnim("spin4", $indexAngleOffset + $indexSpin4Angle, $bgGrey2, hsl(30, 100%, 50%));
+@include createIndexAnim("spin5", $indexAngleOffset + $indexSpin5Angle, $bgGrey1, hsl(40, 100%, 50%));
+@include createIndexAnim("spin6", $indexAngleOffset + $indexSpin6Angle, $bgGrey2, hsl(50, 100%, 50%));
+@include createIndexAnim("spin7", $indexAngleOffset + $indexSpin7Angle, $bgGrey1, hsl(60, 100%, 50%));
+@include createIndexAnim("spin8", $indexAngleOffset + $indexSpin8Angle, $bgGrey2, hsl(70, 100%, 50%));
+@include createIndexAnim("spin9", $indexAngleOffset + $indexSpin9Angle, $bgGrey1, hsl(80, 100%, 50%));
+@include createIndexAnim("spin10", $indexAngleOffset + $indexSpin10Angle, $bgGrey2, hsl(90, 100%, 50%));
+@include createIndexAnim("spin11", $indexAngleOffset + $indexSpin11Angle, $bgGrey1, hsl(100, 100%, 50%));
+@include createIndexAnim("spin12", $indexAngleOffset + $indexSpin12Angle, $bgGrey2, hsl(110, 100%, 50%));
+@include createIndexAnim("spin13", $indexAngleOffset + $indexSpin13Angle, $bgGrey1, hsl(120, 100%, 50%));
+@include createIndexAnim("spin14", $indexAngleOffset + $indexSpin14Angle, $bgGrey2, hsl(130, 100%, 50%));
+@include createIndexAnim("spin15", $indexAngleOffset + $indexSpin15Angle, $bgGrey1, hsl(140, 100%, 50%));
+@include createIndexAnim("spin16", $indexAngleOffset + $indexSpin16Angle, $bgGrey2, hsl(150, 100%, 50%));
+@include createIndexAnim("spin17", $indexAngleOffset + $indexSpin17Angle, $bgGrey1, hsl(160, 100%, 50%));
+@include createIndexAnim("spin18", $indexAngleOffset + $indexSpin18Angle, $bgGrey2, hsl(170, 100%, 50%));
+@include createIndexAnim("spin19", $indexAngleOffset + $indexSpin19Angle, $bgGrey1, hsl(180, 100%, 50%));
+@include createIndexAnim("spin20", $indexAngleOffset + $indexSpin20Angle, $bgGrey2, hsl(190, 100%, 50%));
+@include createIndexAnim("spin21", $indexAngleOffset + $indexSpin21Angle, $bgGrey1, hsl(200, 100%, 50%));
+@include createIndexAnim("spin22", $indexAngleOffset + $indexSpin22Angle, $bgGrey2, hsl(210, 100%, 50%));
+@include createIndexAnim("spin23", $indexAngleOffset + $indexSpin23Angle, $bgGrey1, hsl(220, 100%, 50%));
+@include createIndexAnim("spin24", $indexAngleOffset + $indexSpin24Angle, $bgGrey2, hsl(230, 100%, 50%));
+@include createIndexAnim("spin25", $indexAngleOffset + $indexSpin25Angle, $bgGrey1, hsl(240, 100%, 50%));
+@include createIndexAnim("spin26", $indexAngleOffset + $indexSpin26Angle, $bgGrey2, hsl(250, 100%, 50%));
+@include createIndexAnim("spin27", $indexAngleOffset + $indexSpin27Angle, $bgGrey1, hsl(260, 100%, 50%));
+@include createIndexAnim("spin28", $indexAngleOffset + $indexSpin28Angle, $bgGrey2, hsl(270, 100%, 50%));
+@include createIndexAnim("spin29", $indexAngleOffset + $indexSpin29Angle, $bgGrey1, hsl(280, 100%, 50%));
+@include createIndexAnim("spin30", $indexAngleOffset + $indexSpin30Angle, $bgGrey2, hsl(290, 100%, 50%));
+@include createIndexAnim("spin31", $indexAngleOffset + $indexSpin31Angle, $bgGrey1, hsl(300, 100%, 50%));
+@include createIndexAnim("spin32", $indexAngleOffset + $indexSpin32Angle, $bgGrey2, hsl(310, 100%, 50%));
+@include createIndexAnim("spin33", $indexAngleOffset + $indexSpin33Angle, $bgGrey1, hsl(320, 100%, 50%));
+@include createIndexAnim("spin34", $indexAngleOffset + $indexSpin34Angle, $bgGrey2, hsl(330, 100%, 50%));
+@include createIndexAnim("spin35", $indexAngleOffset + $indexSpin35Angle, $bgGrey1, hsl(340, 100%, 50%));
+@include createIndexAnim("spin36", $indexAngleOffset + $indexSpin36Angle, $bgGrey2, hsl(350, 100%, 50%));
 
 
 

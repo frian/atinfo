@@ -202,7 +202,7 @@ $centerSize: 40px;
 }
 
 // create petal ids and add animation
-@for $i from 1 through 18 {
+@for $i from 101 through 118 {
     #servicePetal#{$i} { @include defineServicePetalAnim( "spin#{$i}") }
 }
 

@@ -1,7 +1,7 @@
 {% extends "layout.twig" %}
 
 {% block my_js %}
-<script src="/js/indexAnimation.js"></script>
+<!-- <script src="/js/indexAnimation.js"></script> -->
 {% endblock %}
 
 {% block content %}
@@ -9,9 +9,27 @@
 <div id="indexContent">
     <div id="center"></div>
 
+        <div id="indexMask">
+
+            <div id="atinfo">atinfo</div>
+            <div id="indexText1" class="indexText">
+                modern web
+            </div>
+            <div id="indexText2" class="indexText">
+                development
+            </div>
+            <div class="nav">
+                <a href="#">services</a>
+                <a href="#">contact</a>
+            </div>
+            <div class="info">
+                at-info.ch &copy; 2006-2016
+            </div>
+        </div>
+
         <div id="flowerContainer">
             {# CREATE PETALS #}
-            {% for i in 1..18 %}
+            {% for i in 1..36 %}
                 <div id="indexPetal{{ i }}" class="indexPetal"></div>
             {% endfor %}
         </div>
