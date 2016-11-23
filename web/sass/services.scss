@@ -150,7 +150,7 @@ $i: 1;
 */
 .leaf {
     @include border-radius(1% 90%);
-    border: 2px solid $bg-color;
+    border: 1px solid $bg-color;
     height: 50px;
     margin: auto;
     width: 50px;
@@ -175,7 +175,7 @@ $i: 1;
 
 #leaf3 {
     top: 125px;
-    left: -4px;
+    left: -2px;
     @include transform(rotateZ(180deg) scale(0.01));
     @include animation('leafGrow3 3s ease-out 2s forwards');
 }
@@ -235,50 +235,50 @@ $i: 1;
 
 .stem {
     position: absolute;
-    left: -15px;
-    top: 30px;
-    border-top: 4px solid #070;
+    width: 50px;
+    height: 5px;
+    left: -8px;
+    top: 15px;
+    border-top: 2px solid #070;
     border-radius:50%;
     @include transform(rotateZ(45deg));
-    width: 100px;
-    height: 10px;
     // @include debug(red);
 }
 
 .stem1 {
     position: absolute;
-    left: 20px;
-    top: 20px;
-    border-left: 3px solid #070;
+    width: 5px;
+    height: 10px;
+    left: 10px;
+    top: 8px;
+    border-left: 1px solid #070;
     border-radius:50%;
     // @include transform(rotateZ(10deg));
-    width: 10px;
-    height: 20px;
     // @include debug(red);
 }
 
 .stem2 {
     position: absolute;
-    right: 32px;
-    top: 30px;
-    border-left: 2px solid #070;
+    width: 5px;
+    height: 15px;
+    right: 20px;
+    top: 10px;
+    border-left: 1px solid #070;
     border-radius:50%;
     // @include transform(rotateY(90deg));
     @include transform(rotateZ(80deg));
-    width: 10px;
-    height: 30px;
     // @include debug(red);
 }
 
 .stem3 {
     position: absolute;
-    left: 60px;
-    top: 60px;
-    border-left: 2px solid #070;
+    width: 5px;
+    height: 15px;
+    left: 25px;
+    top: 25px;
+    border-left: 1px solid #070;
     border-radius:50%;
     // @include transform(rotateZ(10deg));
-    width: 10px;
-    height: 20px;
     // @include debug(red);
 }
 
@@ -481,6 +481,39 @@ $serviceSpin18Angle: $serviceAngleStep;
         height: 50px;
         width: 50px;
     }
+
+    .stem {
+        width: 100px;
+        height: 10px;
+        left: -15px;
+        top: 30px;
+        border-top: 4px solid #070;
+    }
+
+    .stem1 {
+        width: 10px;
+        height: 20px;
+        left: 20px;
+        top: 20px;
+        border-left: 3px solid #070;
+    }
+
+    .stem2 {
+        width: 10px;
+        height: 30px;
+        right: 32px;
+        top: 30px;
+        border-left: 2px solid #070;
+    }
+
+    .stem3 {
+        width: 10px;
+        height: 20px;
+        left: 60px;
+        top: 60px;
+        border-left: 2px solid #070;
+    }
+
 
     $centerSize: 40px;
     #serviceCenter {

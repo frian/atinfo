@@ -549,7 +549,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -moz-border-radius: 1% 90%;
   -webkit-border-radius: 1%;
   border-radius: 1% 90%;
-  border: 2px solid #eee;
+  border: 1px solid #eee;
   height: 50px;
   margin: auto;
   width: 50px;
@@ -590,7 +590,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 176, ../sass/services.scss */
 #leaf3 {
   top: 125px;
-  left: -4px;
+  left: -2px;
   -moz-transform: rotateZ(180deg) scale(0.01);
   -ms-transform: rotateZ(180deg) scale(0.01);
   -webkit-transform: rotateZ(180deg) scale(0.01);
@@ -906,53 +906,53 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 236, ../sass/services.scss */
 .stem {
   position: absolute;
-  left: -15px;
-  top: 30px;
-  border-top: 4px solid #070;
+  width: 50px;
+  height: 5px;
+  left: -8px;
+  top: 15px;
+  border-top: 2px solid #070;
   border-radius: 50%;
   -moz-transform: rotateZ(45deg);
   -ms-transform: rotateZ(45deg);
   -webkit-transform: rotateZ(45deg);
   transform: rotateZ(45deg);
-  width: 100px;
-  height: 10px;
 }
 
 /* line 248, ../sass/services.scss */
 .stem1 {
   position: absolute;
-  left: 20px;
-  top: 20px;
-  border-left: 3px solid #070;
+  width: 5px;
+  height: 10px;
+  left: 10px;
+  top: 8px;
+  border-left: 1px solid #070;
   border-radius: 50%;
-  width: 10px;
-  height: 20px;
 }
 
 /* line 260, ../sass/services.scss */
 .stem2 {
   position: absolute;
-  right: 32px;
-  top: 30px;
-  border-left: 2px solid #070;
+  width: 5px;
+  height: 15px;
+  right: 20px;
+  top: 10px;
+  border-left: 1px solid #070;
   border-radius: 50%;
   -moz-transform: rotateZ(80deg);
   -ms-transform: rotateZ(80deg);
   -webkit-transform: rotateZ(80deg);
   transform: rotateZ(80deg);
-  width: 10px;
-  height: 30px;
 }
 
 /* line 273, ../sass/services.scss */
 .stem3 {
   position: absolute;
-  left: 60px;
-  top: 60px;
-  border-left: 2px solid #070;
+  width: 5px;
+  height: 15px;
+  left: 25px;
+  top: 25px;
+  border-left: 1px solid #070;
   border-radius: 50%;
-  width: 10px;
-  height: 20px;
 }
 
 /*
@@ -3742,7 +3742,43 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 50px;
   }
 
-  /* line 486, ../sass/services.scss */
+  /* line 485, ../sass/services.scss */
+  .stem {
+    width: 100px;
+    height: 10px;
+    left: -15px;
+    top: 30px;
+    border-top: 4px solid #070;
+  }
+
+  /* line 493, ../sass/services.scss */
+  .stem1 {
+    width: 10px;
+    height: 20px;
+    left: 20px;
+    top: 20px;
+    border-left: 3px solid #070;
+  }
+
+  /* line 501, ../sass/services.scss */
+  .stem2 {
+    width: 10px;
+    height: 30px;
+    right: 32px;
+    top: 30px;
+    border-left: 2px solid #070;
+  }
+
+  /* line 509, ../sass/services.scss */
+  .stem3 {
+    width: 10px;
+    height: 20px;
+    left: 60px;
+    top: 60px;
+    border-left: 2px solid #070;
+  }
+
+  /* line 519, ../sass/services.scss */
   #serviceCenter {
     width: 40px;
     height: 40px;
@@ -3753,7 +3789,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-radius: 40px;
   }
 
-  /* line 496, ../sass/services.scss */
+  /* line 529, ../sass/services.scss */
   #servicesContent {
     height: 500px;
     width: 500px;
@@ -3761,7 +3797,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-left: -250px;
   }
 
-  /* line 503, ../sass/services.scss */
+  /* line 536, ../sass/services.scss */
   #servicesContentText {
     left: 120px;
     top: 120px;
@@ -3769,14 +3805,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-size: 94px;
   }
 
-  /* line 511, ../sass/services.scss */
+  /* line 544, ../sass/services.scss */
   #indexSpan3 {
     position: relative;
     display: inline-block;
     top: -30px;
   }
 
-  /* line 517, ../sass/services.scss */
+  /* line 550, ../sass/services.scss */
   #indexSpan4 {
     position: relative;
     display: inline-block;
