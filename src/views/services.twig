@@ -21,20 +21,24 @@
     <div id="servicesContent">
         <div id="serviceCenter"></div>
 
-        {# CREATE PETALS #}
-        {% for i in 1..18 %}
-            <div id="servicePetal{{ 100 + i }}" class="servicePetal"></div>
-        {% endfor %}
+        <div id="servicesFlowerContainer">
+            {# CREATE PETALS #}
+            {% for i in 1..18 %}
+                <div id="servicePetal{{ 100 + i }}" class="servicePetal"></div>
+            {% endfor %}
 
-        {# CREATE LEAVES #}
-        {% for i in 1..4 %}
-            <div id="leaf{{ i }}" class="leaf">
-                <div class="stem"></div>
-                <div class="stem1"></div>
-                <div class="stem2"></div>
-                <div class="stem3"></div>
-            </div>
-        {% endfor %}
+            {# CREATE LEAVES #}
+            {% for i in 1..4 %}
+                <div id="leaf{{ i }}" class="leaf">
+                    <div class="stem"></div>
+                    <div class="stem1"></div>
+                    <div class="stem2"></div>
+                    <div class="stem3"></div>
+                </div>
+            {% endfor %}
+        </div>
+
+
 
         <div id="servicesContentText">
             <span class="indexSpan" id="indexSpan1">We bring</span>
