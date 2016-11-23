@@ -161,34 +161,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: indexSpan4 3s ease-out 3s forwards;
 }
 
-/* line 67, ../sass/services.scss */
-#indexSpan5 {
-  -webkit-animation: indexSpan5 3s ease-out 4s forwards;
-  -moz-animation: indexSpan5 3s ease-out 4s forwards;
-  -o-animation: indexSpan5 3s ease-out 4s forwards;
-  animation: indexSpan5 3s ease-out 4s forwards;
-}
-
-/* line 67, ../sass/services.scss */
-#indexSpan6 {
-  -webkit-animation: indexSpan6 3s ease-out 5s forwards;
-  -moz-animation: indexSpan6 3s ease-out 5s forwards;
-  -o-animation: indexSpan6 3s ease-out 5s forwards;
-  animation: indexSpan6 3s ease-out 5s forwards;
-}
-
 /* line 72, ../sass/services.scss */
-#indexSpan1, #indexSpan2, #indexSpan5 {
+#indexSpan1, #indexSpan3 {
   color: #888;
 }
 
 /* line 76, ../sass/services.scss */
-#indexSpan6 {
+#indexSpan4 {
+  position: relative;
+  display: inline-block;
+  top: -10px;
   color: #0a0;
-  font-size: 40px;
+  font-size: 60px;
 }
 
-/* line 95, ../sass/services.scss */
+/* line 84, ../sass/services.scss */
+#indexSpan3 {
+  position: relative;
+  display: inline-block;
+  top: -10px;
+}
+
+/* line 104, ../sass/services.scss */
 #indexSpan1 {
   -webkit-animation: indexSpan1 3s ease-out 1s forwards;
   -moz-animation: indexSpan1 3s ease-out 1s forwards;
@@ -196,7 +190,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: indexSpan1 3s ease-out 1s forwards;
 }
 
-/* line 95, ../sass/services.scss */
+/* line 104, ../sass/services.scss */
 #indexSpan2 {
   -webkit-animation: indexSpan2 3s ease-out 2s forwards;
   -moz-animation: indexSpan2 3s ease-out 2s forwards;
@@ -204,7 +198,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: indexSpan2 3s ease-out 2s forwards;
 }
 
-/* line 95, ../sass/services.scss */
+/* line 104, ../sass/services.scss */
 #indexSpan3 {
   -webkit-animation: indexSpan3 3s ease-out 3s forwards;
   -moz-animation: indexSpan3 3s ease-out 3s forwards;
@@ -212,7 +206,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: indexSpan3 3s ease-out 3s forwards;
 }
 
-/* line 95, ../sass/services.scss */
+/* line 104, ../sass/services.scss */
 #indexSpan4 {
   -webkit-animation: indexSpan4 3s ease-out 4s forwards;
   -moz-animation: indexSpan4 3s ease-out 4s forwards;
@@ -220,7 +214,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: indexSpan4 3s ease-out 4s forwards;
 }
 
-/* line 95, ../sass/services.scss */
+/* line 104, ../sass/services.scss */
 #indexSpan5 {
   -webkit-animation: indexSpan5 3s ease-out 5s forwards;
   -moz-animation: indexSpan5 3s ease-out 5s forwards;
@@ -228,7 +222,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: indexSpan5 3s ease-out 5s forwards;
 }
 
-/* line 95, ../sass/services.scss */
+/* line 104, ../sass/services.scss */
 #indexSpan6 {
   -webkit-animation: indexSpan6 3s ease-out 6s forwards;
   -moz-animation: indexSpan6 3s ease-out 6s forwards;
@@ -479,7 +473,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*
 	-- TRUNK ---------------------------------------------------------------------
 */
-/* line 108, ../sass/services.scss */
+/* line 117, ../sass/services.scss */
 #trunk {
   height: 2000px;
   width: 2000px;
@@ -499,7 +493,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-bottom-left-radius: 1000px;
 }
 
-/* line 122, ../sass/services.scss */
+/* line 131, ../sass/services.scss */
 #trunkMask {
   width: 50px;
   height: 200px;
@@ -550,7 +544,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*
 	-- LEAVES --------------------------------------------------------------------
 */
-/* line 142, ../sass/services.scss */
+/* line 151, ../sass/services.scss */
 .leaf {
   -moz-border-radius: 1% 90%;
   -webkit-border-radius: 1%;
@@ -567,7 +561,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #080;
 }
 
-/* line 155, ../sass/services.scss */
+/* line 164, ../sass/services.scss */
 #leaf1 {
   top: 200px;
   -moz-transform: rotateZ(180deg);
@@ -580,7 +574,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: leafGrow1 4s ease-out forwards;
 }
 
-/* line 161, ../sass/services.scss */
+/* line 170, ../sass/services.scss */
 #leaf2 {
   top: 200px;
   -moz-transform: rotateX(180deg) scale(0.01);
@@ -593,7 +587,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: leafGrow2 4s ease-out 1s forwards;
 }
 
-/* line 167, ../sass/services.scss */
+/* line 176, ../sass/services.scss */
 #leaf3 {
   top: 125px;
   left: -4px;
@@ -607,7 +601,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: leafGrow3 3s ease-out 2s forwards;
 }
 
-/* line 174, ../sass/services.scss */
+/* line 183, ../sass/services.scss */
 #leaf4 {
   top: 100px;
   left: -6px;
@@ -909,10 +903,62 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     opacity: 1;
   }
 }
+/* line 236, ../sass/services.scss */
+.stem {
+  position: absolute;
+  left: -15px;
+  top: 30px;
+  border-top: 4px solid #070;
+  border-radius: 50%;
+  -moz-transform: rotateZ(45deg);
+  -ms-transform: rotateZ(45deg);
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+  width: 100px;
+  height: 10px;
+}
+
+/* line 248, ../sass/services.scss */
+.stem1 {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  border-left: 3px solid #070;
+  border-radius: 50%;
+  width: 10px;
+  height: 20px;
+}
+
+/* line 260, ../sass/services.scss */
+.stem2 {
+  position: absolute;
+  right: 32px;
+  top: 30px;
+  border-left: 2px solid #070;
+  border-radius: 50%;
+  -moz-transform: rotateZ(80deg);
+  -ms-transform: rotateZ(80deg);
+  -webkit-transform: rotateZ(80deg);
+  transform: rotateZ(80deg);
+  width: 10px;
+  height: 30px;
+}
+
+/* line 273, ../sass/services.scss */
+.stem3 {
+  position: absolute;
+  left: 60px;
+  top: 60px;
+  border-left: 2px solid #070;
+  border-radius: 50%;
+  width: 10px;
+  height: 20px;
+}
+
 /*
 	-- CENTER --------------------------------------------------------------------
 */
-/* line 236, ../sass/services.scss */
+/* line 295, ../sass/services.scss */
 #serviceCenter {
   position: absolute;
   border: 2px solid #eee;
@@ -994,7 +1040,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*
 	-- PETALS --------------------------------------------------------------------
 */
-/* line 263, ../sass/services.scss */
+/* line 322, ../sass/services.scss */
 .servicePetal {
   position: absolute;
   top: 1px;
@@ -1010,180 +1056,180 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   z-index: 20;
 }
 
-/* line 286, ../sass/services.scss */
+/* line 345, ../sass/services.scss */
 #servicePetal101 {
-  -webkit-animation: spin101 4s ease-out 2s forwards;
-  -moz-animation: spin101 4s ease-out 2s forwards;
-  -o-animation: spin101 4s ease-out 2s forwards;
-  animation: spin101 4s ease-out 2s forwards;
+  -webkit-animation: spin101 3s ease-out 2s forwards;
+  -moz-animation: spin101 3s ease-out 2s forwards;
+  -o-animation: spin101 3s ease-out 2s forwards;
+  animation: spin101 3s ease-out 2s forwards;
 }
 
-/* line 286, ../sass/services.scss */
+/* line 345, ../sass/services.scss */
 #servicePetal102 {
-  -webkit-animation: spin102 4s ease-out 2s forwards;
-  -moz-animation: spin102 4s ease-out 2s forwards;
-  -o-animation: spin102 4s ease-out 2s forwards;
-  animation: spin102 4s ease-out 2s forwards;
+  -webkit-animation: spin102 3s ease-out 2s forwards;
+  -moz-animation: spin102 3s ease-out 2s forwards;
+  -o-animation: spin102 3s ease-out 2s forwards;
+  animation: spin102 3s ease-out 2s forwards;
 }
 
-/* line 286, ../sass/services.scss */
+/* line 345, ../sass/services.scss */
 #servicePetal103 {
-  -webkit-animation: spin103 4s ease-out 2s forwards;
-  -moz-animation: spin103 4s ease-out 2s forwards;
-  -o-animation: spin103 4s ease-out 2s forwards;
-  animation: spin103 4s ease-out 2s forwards;
+  -webkit-animation: spin103 3s ease-out 2s forwards;
+  -moz-animation: spin103 3s ease-out 2s forwards;
+  -o-animation: spin103 3s ease-out 2s forwards;
+  animation: spin103 3s ease-out 2s forwards;
 }
 
-/* line 286, ../sass/services.scss */
+/* line 345, ../sass/services.scss */
 #servicePetal104 {
-  -webkit-animation: spin104 4s ease-out 2s forwards;
-  -moz-animation: spin104 4s ease-out 2s forwards;
-  -o-animation: spin104 4s ease-out 2s forwards;
-  animation: spin104 4s ease-out 2s forwards;
+  -webkit-animation: spin104 3s ease-out 2s forwards;
+  -moz-animation: spin104 3s ease-out 2s forwards;
+  -o-animation: spin104 3s ease-out 2s forwards;
+  animation: spin104 3s ease-out 2s forwards;
 }
 
-/* line 286, ../sass/services.scss */
+/* line 345, ../sass/services.scss */
 #servicePetal105 {
-  -webkit-animation: spin105 4s ease-out 2s forwards;
-  -moz-animation: spin105 4s ease-out 2s forwards;
-  -o-animation: spin105 4s ease-out 2s forwards;
-  animation: spin105 4s ease-out 2s forwards;
+  -webkit-animation: spin105 3s ease-out 2s forwards;
+  -moz-animation: spin105 3s ease-out 2s forwards;
+  -o-animation: spin105 3s ease-out 2s forwards;
+  animation: spin105 3s ease-out 2s forwards;
 }
 
-/* line 286, ../sass/services.scss */
+/* line 345, ../sass/services.scss */
 #servicePetal106 {
-  -webkit-animation: spin106 4s ease-out 2s forwards;
-  -moz-animation: spin106 4s ease-out 2s forwards;
-  -o-animation: spin106 4s ease-out 2s forwards;
-  animation: spin106 4s ease-out 2s forwards;
+  -webkit-animation: spin106 3s ease-out 2s forwards;
+  -moz-animation: spin106 3s ease-out 2s forwards;
+  -o-animation: spin106 3s ease-out 2s forwards;
+  animation: spin106 3s ease-out 2s forwards;
 }
 
-/* line 286, ../sass/services.scss */
+/* line 345, ../sass/services.scss */
 #servicePetal107 {
-  -webkit-animation: spin107 4s ease-out 2s forwards;
-  -moz-animation: spin107 4s ease-out 2s forwards;
-  -o-animation: spin107 4s ease-out 2s forwards;
-  animation: spin107 4s ease-out 2s forwards;
+  -webkit-animation: spin107 3s ease-out 2s forwards;
+  -moz-animation: spin107 3s ease-out 2s forwards;
+  -o-animation: spin107 3s ease-out 2s forwards;
+  animation: spin107 3s ease-out 2s forwards;
 }
 
-/* line 286, ../sass/services.scss */
+/* line 345, ../sass/services.scss */
 #servicePetal108 {
-  -webkit-animation: spin108 4s ease-out 2s forwards;
-  -moz-animation: spin108 4s ease-out 2s forwards;
-  -o-animation: spin108 4s ease-out 2s forwards;
-  animation: spin108 4s ease-out 2s forwards;
+  -webkit-animation: spin108 3s ease-out 2s forwards;
+  -moz-animation: spin108 3s ease-out 2s forwards;
+  -o-animation: spin108 3s ease-out 2s forwards;
+  animation: spin108 3s ease-out 2s forwards;
 }
 
-/* line 286, ../sass/services.scss */
+/* line 345, ../sass/services.scss */
 #servicePetal109 {
-  -webkit-animation: spin109 4s ease-out 2s forwards;
-  -moz-animation: spin109 4s ease-out 2s forwards;
-  -o-animation: spin109 4s ease-out 2s forwards;
-  animation: spin109 4s ease-out 2s forwards;
+  -webkit-animation: spin109 3s ease-out 2s forwards;
+  -moz-animation: spin109 3s ease-out 2s forwards;
+  -o-animation: spin109 3s ease-out 2s forwards;
+  animation: spin109 3s ease-out 2s forwards;
 }
 
-/* line 286, ../sass/services.scss */
+/* line 345, ../sass/services.scss */
 #servicePetal110 {
-  -webkit-animation: spin110 4s ease-out 2s forwards;
-  -moz-animation: spin110 4s ease-out 2s forwards;
-  -o-animation: spin110 4s ease-out 2s forwards;
-  animation: spin110 4s ease-out 2s forwards;
+  -webkit-animation: spin110 3s ease-out 2s forwards;
+  -moz-animation: spin110 3s ease-out 2s forwards;
+  -o-animation: spin110 3s ease-out 2s forwards;
+  animation: spin110 3s ease-out 2s forwards;
 }
 
-/* line 286, ../sass/services.scss */
+/* line 345, ../sass/services.scss */
 #servicePetal111 {
-  -webkit-animation: spin111 4s ease-out 2s forwards;
-  -moz-animation: spin111 4s ease-out 2s forwards;
-  -o-animation: spin111 4s ease-out 2s forwards;
-  animation: spin111 4s ease-out 2s forwards;
+  -webkit-animation: spin111 3s ease-out 2s forwards;
+  -moz-animation: spin111 3s ease-out 2s forwards;
+  -o-animation: spin111 3s ease-out 2s forwards;
+  animation: spin111 3s ease-out 2s forwards;
 }
 
-/* line 286, ../sass/services.scss */
+/* line 345, ../sass/services.scss */
 #servicePetal112 {
-  -webkit-animation: spin112 4s ease-out 2s forwards;
-  -moz-animation: spin112 4s ease-out 2s forwards;
-  -o-animation: spin112 4s ease-out 2s forwards;
-  animation: spin112 4s ease-out 2s forwards;
+  -webkit-animation: spin112 3s ease-out 2s forwards;
+  -moz-animation: spin112 3s ease-out 2s forwards;
+  -o-animation: spin112 3s ease-out 2s forwards;
+  animation: spin112 3s ease-out 2s forwards;
 }
 
-/* line 286, ../sass/services.scss */
+/* line 345, ../sass/services.scss */
 #servicePetal113 {
-  -webkit-animation: spin113 4s ease-out 2s forwards;
-  -moz-animation: spin113 4s ease-out 2s forwards;
-  -o-animation: spin113 4s ease-out 2s forwards;
-  animation: spin113 4s ease-out 2s forwards;
+  -webkit-animation: spin113 3s ease-out 2s forwards;
+  -moz-animation: spin113 3s ease-out 2s forwards;
+  -o-animation: spin113 3s ease-out 2s forwards;
+  animation: spin113 3s ease-out 2s forwards;
 }
 
-/* line 286, ../sass/services.scss */
+/* line 345, ../sass/services.scss */
 #servicePetal114 {
-  -webkit-animation: spin114 4s ease-out 2s forwards;
-  -moz-animation: spin114 4s ease-out 2s forwards;
-  -o-animation: spin114 4s ease-out 2s forwards;
-  animation: spin114 4s ease-out 2s forwards;
+  -webkit-animation: spin114 3s ease-out 2s forwards;
+  -moz-animation: spin114 3s ease-out 2s forwards;
+  -o-animation: spin114 3s ease-out 2s forwards;
+  animation: spin114 3s ease-out 2s forwards;
 }
 
-/* line 286, ../sass/services.scss */
+/* line 345, ../sass/services.scss */
 #servicePetal115 {
-  -webkit-animation: spin115 4s ease-out 2s forwards;
-  -moz-animation: spin115 4s ease-out 2s forwards;
-  -o-animation: spin115 4s ease-out 2s forwards;
-  animation: spin115 4s ease-out 2s forwards;
+  -webkit-animation: spin115 3s ease-out 2s forwards;
+  -moz-animation: spin115 3s ease-out 2s forwards;
+  -o-animation: spin115 3s ease-out 2s forwards;
+  animation: spin115 3s ease-out 2s forwards;
 }
 
-/* line 286, ../sass/services.scss */
+/* line 345, ../sass/services.scss */
 #servicePetal116 {
-  -webkit-animation: spin116 4s ease-out 2s forwards;
-  -moz-animation: spin116 4s ease-out 2s forwards;
-  -o-animation: spin116 4s ease-out 2s forwards;
-  animation: spin116 4s ease-out 2s forwards;
+  -webkit-animation: spin116 3s ease-out 2s forwards;
+  -moz-animation: spin116 3s ease-out 2s forwards;
+  -o-animation: spin116 3s ease-out 2s forwards;
+  animation: spin116 3s ease-out 2s forwards;
 }
 
-/* line 286, ../sass/services.scss */
+/* line 345, ../sass/services.scss */
 #servicePetal117 {
-  -webkit-animation: spin117 4s ease-out 2s forwards;
-  -moz-animation: spin117 4s ease-out 2s forwards;
-  -o-animation: spin117 4s ease-out 2s forwards;
-  animation: spin117 4s ease-out 2s forwards;
+  -webkit-animation: spin117 3s ease-out 2s forwards;
+  -moz-animation: spin117 3s ease-out 2s forwards;
+  -o-animation: spin117 3s ease-out 2s forwards;
+  animation: spin117 3s ease-out 2s forwards;
 }
 
-/* line 286, ../sass/services.scss */
+/* line 345, ../sass/services.scss */
 #servicePetal118 {
-  -webkit-animation: spin118 4s ease-out 2s forwards;
-  -moz-animation: spin118 4s ease-out 2s forwards;
-  -o-animation: spin118 4s ease-out 2s forwards;
-  animation: spin118 4s ease-out 2s forwards;
+  -webkit-animation: spin118 3s ease-out 2s forwards;
+  -moz-animation: spin118 3s ease-out 2s forwards;
+  -o-animation: spin118 3s ease-out 2s forwards;
+  animation: spin118 3s ease-out 2s forwards;
 }
 
 @-webkit-keyframes spin101 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-125deg) scale(1);
-    -ms-transform: rotate(-125deg) scale(1);
-    -webkit-transform: rotate(-125deg) scale(1);
-    transform: rotate(-125deg) scale(1);
+    -moz-transform: rotate(-115deg) scale(1);
+    -ms-transform: rotate(-115deg) scale(1);
+    -webkit-transform: rotate(-115deg) scale(1);
+    transform: rotate(-115deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-125deg) scale(1);
-    -ms-transform: rotate(-125deg) scale(1);
-    -webkit-transform: rotate(-125deg) scale(1);
-    transform: rotate(-125deg) scale(1);
+    -moz-transform: rotate(-115deg) scale(1);
+    -ms-transform: rotate(-115deg) scale(1);
+    -webkit-transform: rotate(-115deg) scale(1);
+    transform: rotate(-115deg) scale(1);
     background-color: red;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-125deg) scale(2);
-    -ms-transform: rotate(-125deg) scale(2);
-    -webkit-transform: rotate(-125deg) scale(2);
-    transform: rotate(-125deg) scale(2);
+    -moz-transform: rotate(-115deg) scale(2);
+    -ms-transform: rotate(-115deg) scale(2);
+    -webkit-transform: rotate(-115deg) scale(2);
+    transform: rotate(-115deg) scale(2);
     background-color: red;
     opacity: 0.6;
   }
@@ -1191,33 +1237,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-moz-keyframes spin101 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-125deg) scale(1);
-    -ms-transform: rotate(-125deg) scale(1);
-    -webkit-transform: rotate(-125deg) scale(1);
-    transform: rotate(-125deg) scale(1);
+    -moz-transform: rotate(-115deg) scale(1);
+    -ms-transform: rotate(-115deg) scale(1);
+    -webkit-transform: rotate(-115deg) scale(1);
+    transform: rotate(-115deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-125deg) scale(1);
-    -ms-transform: rotate(-125deg) scale(1);
-    -webkit-transform: rotate(-125deg) scale(1);
-    transform: rotate(-125deg) scale(1);
+    -moz-transform: rotate(-115deg) scale(1);
+    -ms-transform: rotate(-115deg) scale(1);
+    -webkit-transform: rotate(-115deg) scale(1);
+    transform: rotate(-115deg) scale(1);
     background-color: red;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-125deg) scale(2);
-    -ms-transform: rotate(-125deg) scale(2);
-    -webkit-transform: rotate(-125deg) scale(2);
-    transform: rotate(-125deg) scale(2);
+    -moz-transform: rotate(-115deg) scale(2);
+    -ms-transform: rotate(-115deg) scale(2);
+    -webkit-transform: rotate(-115deg) scale(2);
+    transform: rotate(-115deg) scale(2);
     background-color: red;
     opacity: 0.6;
   }
@@ -1225,33 +1271,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-o-keyframes spin101 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-125deg) scale(1);
-    -ms-transform: rotate(-125deg) scale(1);
-    -webkit-transform: rotate(-125deg) scale(1);
-    transform: rotate(-125deg) scale(1);
+    -moz-transform: rotate(-115deg) scale(1);
+    -ms-transform: rotate(-115deg) scale(1);
+    -webkit-transform: rotate(-115deg) scale(1);
+    transform: rotate(-115deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-125deg) scale(1);
-    -ms-transform: rotate(-125deg) scale(1);
-    -webkit-transform: rotate(-125deg) scale(1);
-    transform: rotate(-125deg) scale(1);
+    -moz-transform: rotate(-115deg) scale(1);
+    -ms-transform: rotate(-115deg) scale(1);
+    -webkit-transform: rotate(-115deg) scale(1);
+    transform: rotate(-115deg) scale(1);
     background-color: red;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-125deg) scale(2);
-    -ms-transform: rotate(-125deg) scale(2);
-    -webkit-transform: rotate(-125deg) scale(2);
-    transform: rotate(-125deg) scale(2);
+    -moz-transform: rotate(-115deg) scale(2);
+    -ms-transform: rotate(-115deg) scale(2);
+    -webkit-transform: rotate(-115deg) scale(2);
+    transform: rotate(-115deg) scale(2);
     background-color: red;
     opacity: 0.6;
   }
@@ -1259,33 +1305,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @keyframes $spin101 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-125deg) scale(1);
-    -ms-transform: rotate(-125deg) scale(1);
-    -webkit-transform: rotate(-125deg) scale(1);
-    transform: rotate(-125deg) scale(1);
+    -moz-transform: rotate(-115deg) scale(1);
+    -ms-transform: rotate(-115deg) scale(1);
+    -webkit-transform: rotate(-115deg) scale(1);
+    transform: rotate(-115deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-125deg) scale(1);
-    -ms-transform: rotate(-125deg) scale(1);
-    -webkit-transform: rotate(-125deg) scale(1);
-    transform: rotate(-125deg) scale(1);
+    -moz-transform: rotate(-115deg) scale(1);
+    -ms-transform: rotate(-115deg) scale(1);
+    -webkit-transform: rotate(-115deg) scale(1);
+    transform: rotate(-115deg) scale(1);
     background-color: red;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-125deg) scale(2);
-    -ms-transform: rotate(-125deg) scale(2);
-    -webkit-transform: rotate(-125deg) scale(2);
-    transform: rotate(-125deg) scale(2);
+    -moz-transform: rotate(-115deg) scale(2);
+    -ms-transform: rotate(-115deg) scale(2);
+    -webkit-transform: rotate(-115deg) scale(2);
+    transform: rotate(-115deg) scale(2);
     background-color: red;
     opacity: 0.6;
   }
@@ -1293,33 +1339,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-webkit-keyframes spin102 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-105deg) scale(1);
-    -ms-transform: rotate(-105deg) scale(1);
-    -webkit-transform: rotate(-105deg) scale(1);
-    transform: rotate(-105deg) scale(1);
+    -moz-transform: rotate(-95deg) scale(1);
+    -ms-transform: rotate(-95deg) scale(1);
+    -webkit-transform: rotate(-95deg) scale(1);
+    transform: rotate(-95deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-105deg) scale(1);
-    -ms-transform: rotate(-105deg) scale(1);
-    -webkit-transform: rotate(-105deg) scale(1);
-    transform: rotate(-105deg) scale(1);
+    -moz-transform: rotate(-95deg) scale(1);
+    -ms-transform: rotate(-95deg) scale(1);
+    -webkit-transform: rotate(-95deg) scale(1);
+    transform: rotate(-95deg) scale(1);
     background-color: #ff5500;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-105deg) scale(2);
-    -ms-transform: rotate(-105deg) scale(2);
-    -webkit-transform: rotate(-105deg) scale(2);
-    transform: rotate(-105deg) scale(2);
+    -moz-transform: rotate(-95deg) scale(2);
+    -ms-transform: rotate(-95deg) scale(2);
+    -webkit-transform: rotate(-95deg) scale(2);
+    transform: rotate(-95deg) scale(2);
     background-color: #ff5500;
     opacity: 0.6;
   }
@@ -1327,33 +1373,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-moz-keyframes spin102 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-105deg) scale(1);
-    -ms-transform: rotate(-105deg) scale(1);
-    -webkit-transform: rotate(-105deg) scale(1);
-    transform: rotate(-105deg) scale(1);
+    -moz-transform: rotate(-95deg) scale(1);
+    -ms-transform: rotate(-95deg) scale(1);
+    -webkit-transform: rotate(-95deg) scale(1);
+    transform: rotate(-95deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-105deg) scale(1);
-    -ms-transform: rotate(-105deg) scale(1);
-    -webkit-transform: rotate(-105deg) scale(1);
-    transform: rotate(-105deg) scale(1);
+    -moz-transform: rotate(-95deg) scale(1);
+    -ms-transform: rotate(-95deg) scale(1);
+    -webkit-transform: rotate(-95deg) scale(1);
+    transform: rotate(-95deg) scale(1);
     background-color: #ff5500;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-105deg) scale(2);
-    -ms-transform: rotate(-105deg) scale(2);
-    -webkit-transform: rotate(-105deg) scale(2);
-    transform: rotate(-105deg) scale(2);
+    -moz-transform: rotate(-95deg) scale(2);
+    -ms-transform: rotate(-95deg) scale(2);
+    -webkit-transform: rotate(-95deg) scale(2);
+    transform: rotate(-95deg) scale(2);
     background-color: #ff5500;
     opacity: 0.6;
   }
@@ -1361,33 +1407,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-o-keyframes spin102 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-105deg) scale(1);
-    -ms-transform: rotate(-105deg) scale(1);
-    -webkit-transform: rotate(-105deg) scale(1);
-    transform: rotate(-105deg) scale(1);
+    -moz-transform: rotate(-95deg) scale(1);
+    -ms-transform: rotate(-95deg) scale(1);
+    -webkit-transform: rotate(-95deg) scale(1);
+    transform: rotate(-95deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-105deg) scale(1);
-    -ms-transform: rotate(-105deg) scale(1);
-    -webkit-transform: rotate(-105deg) scale(1);
-    transform: rotate(-105deg) scale(1);
+    -moz-transform: rotate(-95deg) scale(1);
+    -ms-transform: rotate(-95deg) scale(1);
+    -webkit-transform: rotate(-95deg) scale(1);
+    transform: rotate(-95deg) scale(1);
     background-color: #ff5500;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-105deg) scale(2);
-    -ms-transform: rotate(-105deg) scale(2);
-    -webkit-transform: rotate(-105deg) scale(2);
-    transform: rotate(-105deg) scale(2);
+    -moz-transform: rotate(-95deg) scale(2);
+    -ms-transform: rotate(-95deg) scale(2);
+    -webkit-transform: rotate(-95deg) scale(2);
+    transform: rotate(-95deg) scale(2);
     background-color: #ff5500;
     opacity: 0.6;
   }
@@ -1395,33 +1441,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @keyframes $spin102 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-105deg) scale(1);
-    -ms-transform: rotate(-105deg) scale(1);
-    -webkit-transform: rotate(-105deg) scale(1);
-    transform: rotate(-105deg) scale(1);
+    -moz-transform: rotate(-95deg) scale(1);
+    -ms-transform: rotate(-95deg) scale(1);
+    -webkit-transform: rotate(-95deg) scale(1);
+    transform: rotate(-95deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-105deg) scale(1);
-    -ms-transform: rotate(-105deg) scale(1);
-    -webkit-transform: rotate(-105deg) scale(1);
-    transform: rotate(-105deg) scale(1);
+    -moz-transform: rotate(-95deg) scale(1);
+    -ms-transform: rotate(-95deg) scale(1);
+    -webkit-transform: rotate(-95deg) scale(1);
+    transform: rotate(-95deg) scale(1);
     background-color: #ff5500;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-105deg) scale(2);
-    -ms-transform: rotate(-105deg) scale(2);
-    -webkit-transform: rotate(-105deg) scale(2);
-    transform: rotate(-105deg) scale(2);
+    -moz-transform: rotate(-95deg) scale(2);
+    -ms-transform: rotate(-95deg) scale(2);
+    -webkit-transform: rotate(-95deg) scale(2);
+    transform: rotate(-95deg) scale(2);
     background-color: #ff5500;
     opacity: 0.6;
   }
@@ -1429,33 +1475,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-webkit-keyframes spin103 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-85deg) scale(1);
-    -ms-transform: rotate(-85deg) scale(1);
-    -webkit-transform: rotate(-85deg) scale(1);
-    transform: rotate(-85deg) scale(1);
+    -moz-transform: rotate(-75deg) scale(1);
+    -ms-transform: rotate(-75deg) scale(1);
+    -webkit-transform: rotate(-75deg) scale(1);
+    transform: rotate(-75deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-85deg) scale(1);
-    -ms-transform: rotate(-85deg) scale(1);
-    -webkit-transform: rotate(-85deg) scale(1);
-    transform: rotate(-85deg) scale(1);
+    -moz-transform: rotate(-75deg) scale(1);
+    -ms-transform: rotate(-75deg) scale(1);
+    -webkit-transform: rotate(-75deg) scale(1);
+    transform: rotate(-75deg) scale(1);
     background-color: #ffaa00;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-85deg) scale(2);
-    -ms-transform: rotate(-85deg) scale(2);
-    -webkit-transform: rotate(-85deg) scale(2);
-    transform: rotate(-85deg) scale(2);
+    -moz-transform: rotate(-75deg) scale(2);
+    -ms-transform: rotate(-75deg) scale(2);
+    -webkit-transform: rotate(-75deg) scale(2);
+    transform: rotate(-75deg) scale(2);
     background-color: #ffaa00;
     opacity: 0.6;
   }
@@ -1463,33 +1509,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-moz-keyframes spin103 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-85deg) scale(1);
-    -ms-transform: rotate(-85deg) scale(1);
-    -webkit-transform: rotate(-85deg) scale(1);
-    transform: rotate(-85deg) scale(1);
+    -moz-transform: rotate(-75deg) scale(1);
+    -ms-transform: rotate(-75deg) scale(1);
+    -webkit-transform: rotate(-75deg) scale(1);
+    transform: rotate(-75deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-85deg) scale(1);
-    -ms-transform: rotate(-85deg) scale(1);
-    -webkit-transform: rotate(-85deg) scale(1);
-    transform: rotate(-85deg) scale(1);
+    -moz-transform: rotate(-75deg) scale(1);
+    -ms-transform: rotate(-75deg) scale(1);
+    -webkit-transform: rotate(-75deg) scale(1);
+    transform: rotate(-75deg) scale(1);
     background-color: #ffaa00;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-85deg) scale(2);
-    -ms-transform: rotate(-85deg) scale(2);
-    -webkit-transform: rotate(-85deg) scale(2);
-    transform: rotate(-85deg) scale(2);
+    -moz-transform: rotate(-75deg) scale(2);
+    -ms-transform: rotate(-75deg) scale(2);
+    -webkit-transform: rotate(-75deg) scale(2);
+    transform: rotate(-75deg) scale(2);
     background-color: #ffaa00;
     opacity: 0.6;
   }
@@ -1497,33 +1543,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-o-keyframes spin103 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-85deg) scale(1);
-    -ms-transform: rotate(-85deg) scale(1);
-    -webkit-transform: rotate(-85deg) scale(1);
-    transform: rotate(-85deg) scale(1);
+    -moz-transform: rotate(-75deg) scale(1);
+    -ms-transform: rotate(-75deg) scale(1);
+    -webkit-transform: rotate(-75deg) scale(1);
+    transform: rotate(-75deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-85deg) scale(1);
-    -ms-transform: rotate(-85deg) scale(1);
-    -webkit-transform: rotate(-85deg) scale(1);
-    transform: rotate(-85deg) scale(1);
+    -moz-transform: rotate(-75deg) scale(1);
+    -ms-transform: rotate(-75deg) scale(1);
+    -webkit-transform: rotate(-75deg) scale(1);
+    transform: rotate(-75deg) scale(1);
     background-color: #ffaa00;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-85deg) scale(2);
-    -ms-transform: rotate(-85deg) scale(2);
-    -webkit-transform: rotate(-85deg) scale(2);
-    transform: rotate(-85deg) scale(2);
+    -moz-transform: rotate(-75deg) scale(2);
+    -ms-transform: rotate(-75deg) scale(2);
+    -webkit-transform: rotate(-75deg) scale(2);
+    transform: rotate(-75deg) scale(2);
     background-color: #ffaa00;
     opacity: 0.6;
   }
@@ -1531,33 +1577,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @keyframes $spin103 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-85deg) scale(1);
-    -ms-transform: rotate(-85deg) scale(1);
-    -webkit-transform: rotate(-85deg) scale(1);
-    transform: rotate(-85deg) scale(1);
+    -moz-transform: rotate(-75deg) scale(1);
+    -ms-transform: rotate(-75deg) scale(1);
+    -webkit-transform: rotate(-75deg) scale(1);
+    transform: rotate(-75deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-85deg) scale(1);
-    -ms-transform: rotate(-85deg) scale(1);
-    -webkit-transform: rotate(-85deg) scale(1);
-    transform: rotate(-85deg) scale(1);
+    -moz-transform: rotate(-75deg) scale(1);
+    -ms-transform: rotate(-75deg) scale(1);
+    -webkit-transform: rotate(-75deg) scale(1);
+    transform: rotate(-75deg) scale(1);
     background-color: #ffaa00;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-85deg) scale(2);
-    -ms-transform: rotate(-85deg) scale(2);
-    -webkit-transform: rotate(-85deg) scale(2);
-    transform: rotate(-85deg) scale(2);
+    -moz-transform: rotate(-75deg) scale(2);
+    -ms-transform: rotate(-75deg) scale(2);
+    -webkit-transform: rotate(-75deg) scale(2);
+    transform: rotate(-75deg) scale(2);
     background-color: #ffaa00;
     opacity: 0.6;
   }
@@ -1565,33 +1611,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-webkit-keyframes spin104 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-65deg) scale(1);
-    -ms-transform: rotate(-65deg) scale(1);
-    -webkit-transform: rotate(-65deg) scale(1);
-    transform: rotate(-65deg) scale(1);
+    -moz-transform: rotate(-55deg) scale(1);
+    -ms-transform: rotate(-55deg) scale(1);
+    -webkit-transform: rotate(-55deg) scale(1);
+    transform: rotate(-55deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-65deg) scale(1);
-    -ms-transform: rotate(-65deg) scale(1);
-    -webkit-transform: rotate(-65deg) scale(1);
-    transform: rotate(-65deg) scale(1);
+    -moz-transform: rotate(-55deg) scale(1);
+    -ms-transform: rotate(-55deg) scale(1);
+    -webkit-transform: rotate(-55deg) scale(1);
+    transform: rotate(-55deg) scale(1);
     background-color: yellow;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-65deg) scale(2);
-    -ms-transform: rotate(-65deg) scale(2);
-    -webkit-transform: rotate(-65deg) scale(2);
-    transform: rotate(-65deg) scale(2);
+    -moz-transform: rotate(-55deg) scale(2);
+    -ms-transform: rotate(-55deg) scale(2);
+    -webkit-transform: rotate(-55deg) scale(2);
+    transform: rotate(-55deg) scale(2);
     background-color: yellow;
     opacity: 0.6;
   }
@@ -1599,33 +1645,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-moz-keyframes spin104 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-65deg) scale(1);
-    -ms-transform: rotate(-65deg) scale(1);
-    -webkit-transform: rotate(-65deg) scale(1);
-    transform: rotate(-65deg) scale(1);
+    -moz-transform: rotate(-55deg) scale(1);
+    -ms-transform: rotate(-55deg) scale(1);
+    -webkit-transform: rotate(-55deg) scale(1);
+    transform: rotate(-55deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-65deg) scale(1);
-    -ms-transform: rotate(-65deg) scale(1);
-    -webkit-transform: rotate(-65deg) scale(1);
-    transform: rotate(-65deg) scale(1);
+    -moz-transform: rotate(-55deg) scale(1);
+    -ms-transform: rotate(-55deg) scale(1);
+    -webkit-transform: rotate(-55deg) scale(1);
+    transform: rotate(-55deg) scale(1);
     background-color: yellow;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-65deg) scale(2);
-    -ms-transform: rotate(-65deg) scale(2);
-    -webkit-transform: rotate(-65deg) scale(2);
-    transform: rotate(-65deg) scale(2);
+    -moz-transform: rotate(-55deg) scale(2);
+    -ms-transform: rotate(-55deg) scale(2);
+    -webkit-transform: rotate(-55deg) scale(2);
+    transform: rotate(-55deg) scale(2);
     background-color: yellow;
     opacity: 0.6;
   }
@@ -1633,33 +1679,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-o-keyframes spin104 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-65deg) scale(1);
-    -ms-transform: rotate(-65deg) scale(1);
-    -webkit-transform: rotate(-65deg) scale(1);
-    transform: rotate(-65deg) scale(1);
+    -moz-transform: rotate(-55deg) scale(1);
+    -ms-transform: rotate(-55deg) scale(1);
+    -webkit-transform: rotate(-55deg) scale(1);
+    transform: rotate(-55deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-65deg) scale(1);
-    -ms-transform: rotate(-65deg) scale(1);
-    -webkit-transform: rotate(-65deg) scale(1);
-    transform: rotate(-65deg) scale(1);
+    -moz-transform: rotate(-55deg) scale(1);
+    -ms-transform: rotate(-55deg) scale(1);
+    -webkit-transform: rotate(-55deg) scale(1);
+    transform: rotate(-55deg) scale(1);
     background-color: yellow;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-65deg) scale(2);
-    -ms-transform: rotate(-65deg) scale(2);
-    -webkit-transform: rotate(-65deg) scale(2);
-    transform: rotate(-65deg) scale(2);
+    -moz-transform: rotate(-55deg) scale(2);
+    -ms-transform: rotate(-55deg) scale(2);
+    -webkit-transform: rotate(-55deg) scale(2);
+    transform: rotate(-55deg) scale(2);
     background-color: yellow;
     opacity: 0.6;
   }
@@ -1667,33 +1713,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @keyframes $spin104 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-65deg) scale(1);
-    -ms-transform: rotate(-65deg) scale(1);
-    -webkit-transform: rotate(-65deg) scale(1);
-    transform: rotate(-65deg) scale(1);
+    -moz-transform: rotate(-55deg) scale(1);
+    -ms-transform: rotate(-55deg) scale(1);
+    -webkit-transform: rotate(-55deg) scale(1);
+    transform: rotate(-55deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-65deg) scale(1);
-    -ms-transform: rotate(-65deg) scale(1);
-    -webkit-transform: rotate(-65deg) scale(1);
-    transform: rotate(-65deg) scale(1);
+    -moz-transform: rotate(-55deg) scale(1);
+    -ms-transform: rotate(-55deg) scale(1);
+    -webkit-transform: rotate(-55deg) scale(1);
+    transform: rotate(-55deg) scale(1);
     background-color: yellow;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-65deg) scale(2);
-    -ms-transform: rotate(-65deg) scale(2);
-    -webkit-transform: rotate(-65deg) scale(2);
-    transform: rotate(-65deg) scale(2);
+    -moz-transform: rotate(-55deg) scale(2);
+    -ms-transform: rotate(-55deg) scale(2);
+    -webkit-transform: rotate(-55deg) scale(2);
+    transform: rotate(-55deg) scale(2);
     background-color: yellow;
     opacity: 0.6;
   }
@@ -1701,33 +1747,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-webkit-keyframes spin105 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-45deg) scale(1);
-    -ms-transform: rotate(-45deg) scale(1);
-    -webkit-transform: rotate(-45deg) scale(1);
-    transform: rotate(-45deg) scale(1);
+    -moz-transform: rotate(-35deg) scale(1);
+    -ms-transform: rotate(-35deg) scale(1);
+    -webkit-transform: rotate(-35deg) scale(1);
+    transform: rotate(-35deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-45deg) scale(1);
-    -ms-transform: rotate(-45deg) scale(1);
-    -webkit-transform: rotate(-45deg) scale(1);
-    transform: rotate(-45deg) scale(1);
+    -moz-transform: rotate(-35deg) scale(1);
+    -ms-transform: rotate(-35deg) scale(1);
+    -webkit-transform: rotate(-35deg) scale(1);
+    transform: rotate(-35deg) scale(1);
     background-color: #aaff00;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-45deg) scale(2);
-    -ms-transform: rotate(-45deg) scale(2);
-    -webkit-transform: rotate(-45deg) scale(2);
-    transform: rotate(-45deg) scale(2);
+    -moz-transform: rotate(-35deg) scale(2);
+    -ms-transform: rotate(-35deg) scale(2);
+    -webkit-transform: rotate(-35deg) scale(2);
+    transform: rotate(-35deg) scale(2);
     background-color: #aaff00;
     opacity: 0.6;
   }
@@ -1735,33 +1781,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-moz-keyframes spin105 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-45deg) scale(1);
-    -ms-transform: rotate(-45deg) scale(1);
-    -webkit-transform: rotate(-45deg) scale(1);
-    transform: rotate(-45deg) scale(1);
+    -moz-transform: rotate(-35deg) scale(1);
+    -ms-transform: rotate(-35deg) scale(1);
+    -webkit-transform: rotate(-35deg) scale(1);
+    transform: rotate(-35deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-45deg) scale(1);
-    -ms-transform: rotate(-45deg) scale(1);
-    -webkit-transform: rotate(-45deg) scale(1);
-    transform: rotate(-45deg) scale(1);
+    -moz-transform: rotate(-35deg) scale(1);
+    -ms-transform: rotate(-35deg) scale(1);
+    -webkit-transform: rotate(-35deg) scale(1);
+    transform: rotate(-35deg) scale(1);
     background-color: #aaff00;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-45deg) scale(2);
-    -ms-transform: rotate(-45deg) scale(2);
-    -webkit-transform: rotate(-45deg) scale(2);
-    transform: rotate(-45deg) scale(2);
+    -moz-transform: rotate(-35deg) scale(2);
+    -ms-transform: rotate(-35deg) scale(2);
+    -webkit-transform: rotate(-35deg) scale(2);
+    transform: rotate(-35deg) scale(2);
     background-color: #aaff00;
     opacity: 0.6;
   }
@@ -1769,33 +1815,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-o-keyframes spin105 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-45deg) scale(1);
-    -ms-transform: rotate(-45deg) scale(1);
-    -webkit-transform: rotate(-45deg) scale(1);
-    transform: rotate(-45deg) scale(1);
+    -moz-transform: rotate(-35deg) scale(1);
+    -ms-transform: rotate(-35deg) scale(1);
+    -webkit-transform: rotate(-35deg) scale(1);
+    transform: rotate(-35deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-45deg) scale(1);
-    -ms-transform: rotate(-45deg) scale(1);
-    -webkit-transform: rotate(-45deg) scale(1);
-    transform: rotate(-45deg) scale(1);
+    -moz-transform: rotate(-35deg) scale(1);
+    -ms-transform: rotate(-35deg) scale(1);
+    -webkit-transform: rotate(-35deg) scale(1);
+    transform: rotate(-35deg) scale(1);
     background-color: #aaff00;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-45deg) scale(2);
-    -ms-transform: rotate(-45deg) scale(2);
-    -webkit-transform: rotate(-45deg) scale(2);
-    transform: rotate(-45deg) scale(2);
+    -moz-transform: rotate(-35deg) scale(2);
+    -ms-transform: rotate(-35deg) scale(2);
+    -webkit-transform: rotate(-35deg) scale(2);
+    transform: rotate(-35deg) scale(2);
     background-color: #aaff00;
     opacity: 0.6;
   }
@@ -1803,33 +1849,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @keyframes $spin105 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-45deg) scale(1);
-    -ms-transform: rotate(-45deg) scale(1);
-    -webkit-transform: rotate(-45deg) scale(1);
-    transform: rotate(-45deg) scale(1);
+    -moz-transform: rotate(-35deg) scale(1);
+    -ms-transform: rotate(-35deg) scale(1);
+    -webkit-transform: rotate(-35deg) scale(1);
+    transform: rotate(-35deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-45deg) scale(1);
-    -ms-transform: rotate(-45deg) scale(1);
-    -webkit-transform: rotate(-45deg) scale(1);
-    transform: rotate(-45deg) scale(1);
+    -moz-transform: rotate(-35deg) scale(1);
+    -ms-transform: rotate(-35deg) scale(1);
+    -webkit-transform: rotate(-35deg) scale(1);
+    transform: rotate(-35deg) scale(1);
     background-color: #aaff00;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-45deg) scale(2);
-    -ms-transform: rotate(-45deg) scale(2);
-    -webkit-transform: rotate(-45deg) scale(2);
-    transform: rotate(-45deg) scale(2);
+    -moz-transform: rotate(-35deg) scale(2);
+    -ms-transform: rotate(-35deg) scale(2);
+    -webkit-transform: rotate(-35deg) scale(2);
+    transform: rotate(-35deg) scale(2);
     background-color: #aaff00;
     opacity: 0.6;
   }
@@ -1837,33 +1883,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-webkit-keyframes spin106 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-25deg) scale(1);
-    -ms-transform: rotate(-25deg) scale(1);
-    -webkit-transform: rotate(-25deg) scale(1);
-    transform: rotate(-25deg) scale(1);
+    -moz-transform: rotate(-15deg) scale(1);
+    -ms-transform: rotate(-15deg) scale(1);
+    -webkit-transform: rotate(-15deg) scale(1);
+    transform: rotate(-15deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-25deg) scale(1);
-    -ms-transform: rotate(-25deg) scale(1);
-    -webkit-transform: rotate(-25deg) scale(1);
-    transform: rotate(-25deg) scale(1);
+    -moz-transform: rotate(-15deg) scale(1);
+    -ms-transform: rotate(-15deg) scale(1);
+    -webkit-transform: rotate(-15deg) scale(1);
+    transform: rotate(-15deg) scale(1);
     background-color: #55ff00;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-25deg) scale(2);
-    -ms-transform: rotate(-25deg) scale(2);
-    -webkit-transform: rotate(-25deg) scale(2);
-    transform: rotate(-25deg) scale(2);
+    -moz-transform: rotate(-15deg) scale(2);
+    -ms-transform: rotate(-15deg) scale(2);
+    -webkit-transform: rotate(-15deg) scale(2);
+    transform: rotate(-15deg) scale(2);
     background-color: #55ff00;
     opacity: 0.6;
   }
@@ -1871,33 +1917,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-moz-keyframes spin106 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-25deg) scale(1);
-    -ms-transform: rotate(-25deg) scale(1);
-    -webkit-transform: rotate(-25deg) scale(1);
-    transform: rotate(-25deg) scale(1);
+    -moz-transform: rotate(-15deg) scale(1);
+    -ms-transform: rotate(-15deg) scale(1);
+    -webkit-transform: rotate(-15deg) scale(1);
+    transform: rotate(-15deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-25deg) scale(1);
-    -ms-transform: rotate(-25deg) scale(1);
-    -webkit-transform: rotate(-25deg) scale(1);
-    transform: rotate(-25deg) scale(1);
+    -moz-transform: rotate(-15deg) scale(1);
+    -ms-transform: rotate(-15deg) scale(1);
+    -webkit-transform: rotate(-15deg) scale(1);
+    transform: rotate(-15deg) scale(1);
     background-color: #55ff00;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-25deg) scale(2);
-    -ms-transform: rotate(-25deg) scale(2);
-    -webkit-transform: rotate(-25deg) scale(2);
-    transform: rotate(-25deg) scale(2);
+    -moz-transform: rotate(-15deg) scale(2);
+    -ms-transform: rotate(-15deg) scale(2);
+    -webkit-transform: rotate(-15deg) scale(2);
+    transform: rotate(-15deg) scale(2);
     background-color: #55ff00;
     opacity: 0.6;
   }
@@ -1905,33 +1951,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-o-keyframes spin106 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-25deg) scale(1);
-    -ms-transform: rotate(-25deg) scale(1);
-    -webkit-transform: rotate(-25deg) scale(1);
-    transform: rotate(-25deg) scale(1);
+    -moz-transform: rotate(-15deg) scale(1);
+    -ms-transform: rotate(-15deg) scale(1);
+    -webkit-transform: rotate(-15deg) scale(1);
+    transform: rotate(-15deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-25deg) scale(1);
-    -ms-transform: rotate(-25deg) scale(1);
-    -webkit-transform: rotate(-25deg) scale(1);
-    transform: rotate(-25deg) scale(1);
+    -moz-transform: rotate(-15deg) scale(1);
+    -ms-transform: rotate(-15deg) scale(1);
+    -webkit-transform: rotate(-15deg) scale(1);
+    transform: rotate(-15deg) scale(1);
     background-color: #55ff00;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-25deg) scale(2);
-    -ms-transform: rotate(-25deg) scale(2);
-    -webkit-transform: rotate(-25deg) scale(2);
-    transform: rotate(-25deg) scale(2);
+    -moz-transform: rotate(-15deg) scale(2);
+    -ms-transform: rotate(-15deg) scale(2);
+    -webkit-transform: rotate(-15deg) scale(2);
+    transform: rotate(-15deg) scale(2);
     background-color: #55ff00;
     opacity: 0.6;
   }
@@ -1939,33 +1985,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @keyframes $spin106 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-25deg) scale(1);
-    -ms-transform: rotate(-25deg) scale(1);
-    -webkit-transform: rotate(-25deg) scale(1);
-    transform: rotate(-25deg) scale(1);
+    -moz-transform: rotate(-15deg) scale(1);
+    -ms-transform: rotate(-15deg) scale(1);
+    -webkit-transform: rotate(-15deg) scale(1);
+    transform: rotate(-15deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-25deg) scale(1);
-    -ms-transform: rotate(-25deg) scale(1);
-    -webkit-transform: rotate(-25deg) scale(1);
-    transform: rotate(-25deg) scale(1);
+    -moz-transform: rotate(-15deg) scale(1);
+    -ms-transform: rotate(-15deg) scale(1);
+    -webkit-transform: rotate(-15deg) scale(1);
+    transform: rotate(-15deg) scale(1);
     background-color: #55ff00;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-25deg) scale(2);
-    -ms-transform: rotate(-25deg) scale(2);
-    -webkit-transform: rotate(-25deg) scale(2);
-    transform: rotate(-25deg) scale(2);
+    -moz-transform: rotate(-15deg) scale(2);
+    -ms-transform: rotate(-15deg) scale(2);
+    -webkit-transform: rotate(-15deg) scale(2);
+    transform: rotate(-15deg) scale(2);
     background-color: #55ff00;
     opacity: 0.6;
   }
@@ -1973,33 +2019,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-webkit-keyframes spin107 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-5deg) scale(1);
-    -ms-transform: rotate(-5deg) scale(1);
-    -webkit-transform: rotate(-5deg) scale(1);
-    transform: rotate(-5deg) scale(1);
+    -moz-transform: rotate(5deg) scale(1);
+    -ms-transform: rotate(5deg) scale(1);
+    -webkit-transform: rotate(5deg) scale(1);
+    transform: rotate(5deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-5deg) scale(1);
-    -ms-transform: rotate(-5deg) scale(1);
-    -webkit-transform: rotate(-5deg) scale(1);
-    transform: rotate(-5deg) scale(1);
+    -moz-transform: rotate(5deg) scale(1);
+    -ms-transform: rotate(5deg) scale(1);
+    -webkit-transform: rotate(5deg) scale(1);
+    transform: rotate(5deg) scale(1);
     background-color: lime;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-5deg) scale(2);
-    -ms-transform: rotate(-5deg) scale(2);
-    -webkit-transform: rotate(-5deg) scale(2);
-    transform: rotate(-5deg) scale(2);
+    -moz-transform: rotate(5deg) scale(2);
+    -ms-transform: rotate(5deg) scale(2);
+    -webkit-transform: rotate(5deg) scale(2);
+    transform: rotate(5deg) scale(2);
     background-color: lime;
     opacity: 0.6;
   }
@@ -2007,33 +2053,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-moz-keyframes spin107 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-5deg) scale(1);
-    -ms-transform: rotate(-5deg) scale(1);
-    -webkit-transform: rotate(-5deg) scale(1);
-    transform: rotate(-5deg) scale(1);
+    -moz-transform: rotate(5deg) scale(1);
+    -ms-transform: rotate(5deg) scale(1);
+    -webkit-transform: rotate(5deg) scale(1);
+    transform: rotate(5deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-5deg) scale(1);
-    -ms-transform: rotate(-5deg) scale(1);
-    -webkit-transform: rotate(-5deg) scale(1);
-    transform: rotate(-5deg) scale(1);
+    -moz-transform: rotate(5deg) scale(1);
+    -ms-transform: rotate(5deg) scale(1);
+    -webkit-transform: rotate(5deg) scale(1);
+    transform: rotate(5deg) scale(1);
     background-color: lime;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-5deg) scale(2);
-    -ms-transform: rotate(-5deg) scale(2);
-    -webkit-transform: rotate(-5deg) scale(2);
-    transform: rotate(-5deg) scale(2);
+    -moz-transform: rotate(5deg) scale(2);
+    -ms-transform: rotate(5deg) scale(2);
+    -webkit-transform: rotate(5deg) scale(2);
+    transform: rotate(5deg) scale(2);
     background-color: lime;
     opacity: 0.6;
   }
@@ -2041,33 +2087,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-o-keyframes spin107 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-5deg) scale(1);
-    -ms-transform: rotate(-5deg) scale(1);
-    -webkit-transform: rotate(-5deg) scale(1);
-    transform: rotate(-5deg) scale(1);
+    -moz-transform: rotate(5deg) scale(1);
+    -ms-transform: rotate(5deg) scale(1);
+    -webkit-transform: rotate(5deg) scale(1);
+    transform: rotate(5deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-5deg) scale(1);
-    -ms-transform: rotate(-5deg) scale(1);
-    -webkit-transform: rotate(-5deg) scale(1);
-    transform: rotate(-5deg) scale(1);
+    -moz-transform: rotate(5deg) scale(1);
+    -ms-transform: rotate(5deg) scale(1);
+    -webkit-transform: rotate(5deg) scale(1);
+    transform: rotate(5deg) scale(1);
     background-color: lime;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-5deg) scale(2);
-    -ms-transform: rotate(-5deg) scale(2);
-    -webkit-transform: rotate(-5deg) scale(2);
-    transform: rotate(-5deg) scale(2);
+    -moz-transform: rotate(5deg) scale(2);
+    -ms-transform: rotate(5deg) scale(2);
+    -webkit-transform: rotate(5deg) scale(2);
+    transform: rotate(5deg) scale(2);
     background-color: lime;
     opacity: 0.6;
   }
@@ -2075,33 +2121,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @keyframes $spin107 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(-5deg) scale(1);
-    -ms-transform: rotate(-5deg) scale(1);
-    -webkit-transform: rotate(-5deg) scale(1);
-    transform: rotate(-5deg) scale(1);
+    -moz-transform: rotate(5deg) scale(1);
+    -ms-transform: rotate(5deg) scale(1);
+    -webkit-transform: rotate(5deg) scale(1);
+    transform: rotate(5deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(-5deg) scale(1);
-    -ms-transform: rotate(-5deg) scale(1);
-    -webkit-transform: rotate(-5deg) scale(1);
-    transform: rotate(-5deg) scale(1);
+    -moz-transform: rotate(5deg) scale(1);
+    -ms-transform: rotate(5deg) scale(1);
+    -webkit-transform: rotate(5deg) scale(1);
+    transform: rotate(5deg) scale(1);
     background-color: lime;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(-5deg) scale(2);
-    -ms-transform: rotate(-5deg) scale(2);
-    -webkit-transform: rotate(-5deg) scale(2);
-    transform: rotate(-5deg) scale(2);
+    -moz-transform: rotate(5deg) scale(2);
+    -ms-transform: rotate(5deg) scale(2);
+    -webkit-transform: rotate(5deg) scale(2);
+    transform: rotate(5deg) scale(2);
     background-color: lime;
     opacity: 0.6;
   }
@@ -2109,33 +2155,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-webkit-keyframes spin108 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(15deg) scale(1);
-    -ms-transform: rotate(15deg) scale(1);
-    -webkit-transform: rotate(15deg) scale(1);
-    transform: rotate(15deg) scale(1);
+    -moz-transform: rotate(25deg) scale(1);
+    -ms-transform: rotate(25deg) scale(1);
+    -webkit-transform: rotate(25deg) scale(1);
+    transform: rotate(25deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(15deg) scale(1);
-    -ms-transform: rotate(15deg) scale(1);
-    -webkit-transform: rotate(15deg) scale(1);
-    transform: rotate(15deg) scale(1);
+    -moz-transform: rotate(25deg) scale(1);
+    -ms-transform: rotate(25deg) scale(1);
+    -webkit-transform: rotate(25deg) scale(1);
+    transform: rotate(25deg) scale(1);
     background-color: #00ff55;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(15deg) scale(2);
-    -ms-transform: rotate(15deg) scale(2);
-    -webkit-transform: rotate(15deg) scale(2);
-    transform: rotate(15deg) scale(2);
+    -moz-transform: rotate(25deg) scale(2);
+    -ms-transform: rotate(25deg) scale(2);
+    -webkit-transform: rotate(25deg) scale(2);
+    transform: rotate(25deg) scale(2);
     background-color: #00ff55;
     opacity: 0.6;
   }
@@ -2143,33 +2189,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-moz-keyframes spin108 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(15deg) scale(1);
-    -ms-transform: rotate(15deg) scale(1);
-    -webkit-transform: rotate(15deg) scale(1);
-    transform: rotate(15deg) scale(1);
+    -moz-transform: rotate(25deg) scale(1);
+    -ms-transform: rotate(25deg) scale(1);
+    -webkit-transform: rotate(25deg) scale(1);
+    transform: rotate(25deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(15deg) scale(1);
-    -ms-transform: rotate(15deg) scale(1);
-    -webkit-transform: rotate(15deg) scale(1);
-    transform: rotate(15deg) scale(1);
+    -moz-transform: rotate(25deg) scale(1);
+    -ms-transform: rotate(25deg) scale(1);
+    -webkit-transform: rotate(25deg) scale(1);
+    transform: rotate(25deg) scale(1);
     background-color: #00ff55;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(15deg) scale(2);
-    -ms-transform: rotate(15deg) scale(2);
-    -webkit-transform: rotate(15deg) scale(2);
-    transform: rotate(15deg) scale(2);
+    -moz-transform: rotate(25deg) scale(2);
+    -ms-transform: rotate(25deg) scale(2);
+    -webkit-transform: rotate(25deg) scale(2);
+    transform: rotate(25deg) scale(2);
     background-color: #00ff55;
     opacity: 0.6;
   }
@@ -2177,33 +2223,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-o-keyframes spin108 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(15deg) scale(1);
-    -ms-transform: rotate(15deg) scale(1);
-    -webkit-transform: rotate(15deg) scale(1);
-    transform: rotate(15deg) scale(1);
+    -moz-transform: rotate(25deg) scale(1);
+    -ms-transform: rotate(25deg) scale(1);
+    -webkit-transform: rotate(25deg) scale(1);
+    transform: rotate(25deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(15deg) scale(1);
-    -ms-transform: rotate(15deg) scale(1);
-    -webkit-transform: rotate(15deg) scale(1);
-    transform: rotate(15deg) scale(1);
+    -moz-transform: rotate(25deg) scale(1);
+    -ms-transform: rotate(25deg) scale(1);
+    -webkit-transform: rotate(25deg) scale(1);
+    transform: rotate(25deg) scale(1);
     background-color: #00ff55;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(15deg) scale(2);
-    -ms-transform: rotate(15deg) scale(2);
-    -webkit-transform: rotate(15deg) scale(2);
-    transform: rotate(15deg) scale(2);
+    -moz-transform: rotate(25deg) scale(2);
+    -ms-transform: rotate(25deg) scale(2);
+    -webkit-transform: rotate(25deg) scale(2);
+    transform: rotate(25deg) scale(2);
     background-color: #00ff55;
     opacity: 0.6;
   }
@@ -2211,33 +2257,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @keyframes $spin108 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(15deg) scale(1);
-    -ms-transform: rotate(15deg) scale(1);
-    -webkit-transform: rotate(15deg) scale(1);
-    transform: rotate(15deg) scale(1);
+    -moz-transform: rotate(25deg) scale(1);
+    -ms-transform: rotate(25deg) scale(1);
+    -webkit-transform: rotate(25deg) scale(1);
+    transform: rotate(25deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(15deg) scale(1);
-    -ms-transform: rotate(15deg) scale(1);
-    -webkit-transform: rotate(15deg) scale(1);
-    transform: rotate(15deg) scale(1);
+    -moz-transform: rotate(25deg) scale(1);
+    -ms-transform: rotate(25deg) scale(1);
+    -webkit-transform: rotate(25deg) scale(1);
+    transform: rotate(25deg) scale(1);
     background-color: #00ff55;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(15deg) scale(2);
-    -ms-transform: rotate(15deg) scale(2);
-    -webkit-transform: rotate(15deg) scale(2);
-    transform: rotate(15deg) scale(2);
+    -moz-transform: rotate(25deg) scale(2);
+    -ms-transform: rotate(25deg) scale(2);
+    -webkit-transform: rotate(25deg) scale(2);
+    transform: rotate(25deg) scale(2);
     background-color: #00ff55;
     opacity: 0.6;
   }
@@ -2245,33 +2291,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-webkit-keyframes spin109 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(35deg) scale(1);
-    -ms-transform: rotate(35deg) scale(1);
-    -webkit-transform: rotate(35deg) scale(1);
-    transform: rotate(35deg) scale(1);
+    -moz-transform: rotate(45deg) scale(1);
+    -ms-transform: rotate(45deg) scale(1);
+    -webkit-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(35deg) scale(1);
-    -ms-transform: rotate(35deg) scale(1);
-    -webkit-transform: rotate(35deg) scale(1);
-    transform: rotate(35deg) scale(1);
+    -moz-transform: rotate(45deg) scale(1);
+    -ms-transform: rotate(45deg) scale(1);
+    -webkit-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
     background-color: #00ffaa;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(35deg) scale(2);
-    -ms-transform: rotate(35deg) scale(2);
-    -webkit-transform: rotate(35deg) scale(2);
-    transform: rotate(35deg) scale(2);
+    -moz-transform: rotate(45deg) scale(2);
+    -ms-transform: rotate(45deg) scale(2);
+    -webkit-transform: rotate(45deg) scale(2);
+    transform: rotate(45deg) scale(2);
     background-color: #00ffaa;
     opacity: 0.6;
   }
@@ -2279,33 +2325,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-moz-keyframes spin109 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(35deg) scale(1);
-    -ms-transform: rotate(35deg) scale(1);
-    -webkit-transform: rotate(35deg) scale(1);
-    transform: rotate(35deg) scale(1);
+    -moz-transform: rotate(45deg) scale(1);
+    -ms-transform: rotate(45deg) scale(1);
+    -webkit-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(35deg) scale(1);
-    -ms-transform: rotate(35deg) scale(1);
-    -webkit-transform: rotate(35deg) scale(1);
-    transform: rotate(35deg) scale(1);
+    -moz-transform: rotate(45deg) scale(1);
+    -ms-transform: rotate(45deg) scale(1);
+    -webkit-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
     background-color: #00ffaa;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(35deg) scale(2);
-    -ms-transform: rotate(35deg) scale(2);
-    -webkit-transform: rotate(35deg) scale(2);
-    transform: rotate(35deg) scale(2);
+    -moz-transform: rotate(45deg) scale(2);
+    -ms-transform: rotate(45deg) scale(2);
+    -webkit-transform: rotate(45deg) scale(2);
+    transform: rotate(45deg) scale(2);
     background-color: #00ffaa;
     opacity: 0.6;
   }
@@ -2313,33 +2359,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-o-keyframes spin109 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(35deg) scale(1);
-    -ms-transform: rotate(35deg) scale(1);
-    -webkit-transform: rotate(35deg) scale(1);
-    transform: rotate(35deg) scale(1);
+    -moz-transform: rotate(45deg) scale(1);
+    -ms-transform: rotate(45deg) scale(1);
+    -webkit-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(35deg) scale(1);
-    -ms-transform: rotate(35deg) scale(1);
-    -webkit-transform: rotate(35deg) scale(1);
-    transform: rotate(35deg) scale(1);
+    -moz-transform: rotate(45deg) scale(1);
+    -ms-transform: rotate(45deg) scale(1);
+    -webkit-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
     background-color: #00ffaa;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(35deg) scale(2);
-    -ms-transform: rotate(35deg) scale(2);
-    -webkit-transform: rotate(35deg) scale(2);
-    transform: rotate(35deg) scale(2);
+    -moz-transform: rotate(45deg) scale(2);
+    -ms-transform: rotate(45deg) scale(2);
+    -webkit-transform: rotate(45deg) scale(2);
+    transform: rotate(45deg) scale(2);
     background-color: #00ffaa;
     opacity: 0.6;
   }
@@ -2347,33 +2393,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @keyframes $spin109 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(35deg) scale(1);
-    -ms-transform: rotate(35deg) scale(1);
-    -webkit-transform: rotate(35deg) scale(1);
-    transform: rotate(35deg) scale(1);
+    -moz-transform: rotate(45deg) scale(1);
+    -ms-transform: rotate(45deg) scale(1);
+    -webkit-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(35deg) scale(1);
-    -ms-transform: rotate(35deg) scale(1);
-    -webkit-transform: rotate(35deg) scale(1);
-    transform: rotate(35deg) scale(1);
+    -moz-transform: rotate(45deg) scale(1);
+    -ms-transform: rotate(45deg) scale(1);
+    -webkit-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
     background-color: #00ffaa;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(35deg) scale(2);
-    -ms-transform: rotate(35deg) scale(2);
-    -webkit-transform: rotate(35deg) scale(2);
-    transform: rotate(35deg) scale(2);
+    -moz-transform: rotate(45deg) scale(2);
+    -ms-transform: rotate(45deg) scale(2);
+    -webkit-transform: rotate(45deg) scale(2);
+    transform: rotate(45deg) scale(2);
     background-color: #00ffaa;
     opacity: 0.6;
   }
@@ -2381,33 +2427,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-webkit-keyframes spin110 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(55deg) scale(1);
-    -ms-transform: rotate(55deg) scale(1);
-    -webkit-transform: rotate(55deg) scale(1);
-    transform: rotate(55deg) scale(1);
+    -moz-transform: rotate(65deg) scale(1);
+    -ms-transform: rotate(65deg) scale(1);
+    -webkit-transform: rotate(65deg) scale(1);
+    transform: rotate(65deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(55deg) scale(1);
-    -ms-transform: rotate(55deg) scale(1);
-    -webkit-transform: rotate(55deg) scale(1);
-    transform: rotate(55deg) scale(1);
+    -moz-transform: rotate(65deg) scale(1);
+    -ms-transform: rotate(65deg) scale(1);
+    -webkit-transform: rotate(65deg) scale(1);
+    transform: rotate(65deg) scale(1);
     background-color: cyan;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(55deg) scale(2);
-    -ms-transform: rotate(55deg) scale(2);
-    -webkit-transform: rotate(55deg) scale(2);
-    transform: rotate(55deg) scale(2);
+    -moz-transform: rotate(65deg) scale(2);
+    -ms-transform: rotate(65deg) scale(2);
+    -webkit-transform: rotate(65deg) scale(2);
+    transform: rotate(65deg) scale(2);
     background-color: cyan;
     opacity: 0.6;
   }
@@ -2415,33 +2461,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-moz-keyframes spin110 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(55deg) scale(1);
-    -ms-transform: rotate(55deg) scale(1);
-    -webkit-transform: rotate(55deg) scale(1);
-    transform: rotate(55deg) scale(1);
+    -moz-transform: rotate(65deg) scale(1);
+    -ms-transform: rotate(65deg) scale(1);
+    -webkit-transform: rotate(65deg) scale(1);
+    transform: rotate(65deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(55deg) scale(1);
-    -ms-transform: rotate(55deg) scale(1);
-    -webkit-transform: rotate(55deg) scale(1);
-    transform: rotate(55deg) scale(1);
+    -moz-transform: rotate(65deg) scale(1);
+    -ms-transform: rotate(65deg) scale(1);
+    -webkit-transform: rotate(65deg) scale(1);
+    transform: rotate(65deg) scale(1);
     background-color: cyan;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(55deg) scale(2);
-    -ms-transform: rotate(55deg) scale(2);
-    -webkit-transform: rotate(55deg) scale(2);
-    transform: rotate(55deg) scale(2);
+    -moz-transform: rotate(65deg) scale(2);
+    -ms-transform: rotate(65deg) scale(2);
+    -webkit-transform: rotate(65deg) scale(2);
+    transform: rotate(65deg) scale(2);
     background-color: cyan;
     opacity: 0.6;
   }
@@ -2449,33 +2495,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-o-keyframes spin110 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(55deg) scale(1);
-    -ms-transform: rotate(55deg) scale(1);
-    -webkit-transform: rotate(55deg) scale(1);
-    transform: rotate(55deg) scale(1);
+    -moz-transform: rotate(65deg) scale(1);
+    -ms-transform: rotate(65deg) scale(1);
+    -webkit-transform: rotate(65deg) scale(1);
+    transform: rotate(65deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(55deg) scale(1);
-    -ms-transform: rotate(55deg) scale(1);
-    -webkit-transform: rotate(55deg) scale(1);
-    transform: rotate(55deg) scale(1);
+    -moz-transform: rotate(65deg) scale(1);
+    -ms-transform: rotate(65deg) scale(1);
+    -webkit-transform: rotate(65deg) scale(1);
+    transform: rotate(65deg) scale(1);
     background-color: cyan;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(55deg) scale(2);
-    -ms-transform: rotate(55deg) scale(2);
-    -webkit-transform: rotate(55deg) scale(2);
-    transform: rotate(55deg) scale(2);
+    -moz-transform: rotate(65deg) scale(2);
+    -ms-transform: rotate(65deg) scale(2);
+    -webkit-transform: rotate(65deg) scale(2);
+    transform: rotate(65deg) scale(2);
     background-color: cyan;
     opacity: 0.6;
   }
@@ -2483,33 +2529,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @keyframes $spin110 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(55deg) scale(1);
-    -ms-transform: rotate(55deg) scale(1);
-    -webkit-transform: rotate(55deg) scale(1);
-    transform: rotate(55deg) scale(1);
+    -moz-transform: rotate(65deg) scale(1);
+    -ms-transform: rotate(65deg) scale(1);
+    -webkit-transform: rotate(65deg) scale(1);
+    transform: rotate(65deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(55deg) scale(1);
-    -ms-transform: rotate(55deg) scale(1);
-    -webkit-transform: rotate(55deg) scale(1);
-    transform: rotate(55deg) scale(1);
+    -moz-transform: rotate(65deg) scale(1);
+    -ms-transform: rotate(65deg) scale(1);
+    -webkit-transform: rotate(65deg) scale(1);
+    transform: rotate(65deg) scale(1);
     background-color: cyan;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(55deg) scale(2);
-    -ms-transform: rotate(55deg) scale(2);
-    -webkit-transform: rotate(55deg) scale(2);
-    transform: rotate(55deg) scale(2);
+    -moz-transform: rotate(65deg) scale(2);
+    -ms-transform: rotate(65deg) scale(2);
+    -webkit-transform: rotate(65deg) scale(2);
+    transform: rotate(65deg) scale(2);
     background-color: cyan;
     opacity: 0.6;
   }
@@ -2517,33 +2563,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-webkit-keyframes spin111 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(75deg) scale(1);
-    -ms-transform: rotate(75deg) scale(1);
-    -webkit-transform: rotate(75deg) scale(1);
-    transform: rotate(75deg) scale(1);
+    -moz-transform: rotate(85deg) scale(1);
+    -ms-transform: rotate(85deg) scale(1);
+    -webkit-transform: rotate(85deg) scale(1);
+    transform: rotate(85deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(75deg) scale(1);
-    -ms-transform: rotate(75deg) scale(1);
-    -webkit-transform: rotate(75deg) scale(1);
-    transform: rotate(75deg) scale(1);
+    -moz-transform: rotate(85deg) scale(1);
+    -ms-transform: rotate(85deg) scale(1);
+    -webkit-transform: rotate(85deg) scale(1);
+    transform: rotate(85deg) scale(1);
     background-color: #00aaff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(75deg) scale(2);
-    -ms-transform: rotate(75deg) scale(2);
-    -webkit-transform: rotate(75deg) scale(2);
-    transform: rotate(75deg) scale(2);
+    -moz-transform: rotate(85deg) scale(2);
+    -ms-transform: rotate(85deg) scale(2);
+    -webkit-transform: rotate(85deg) scale(2);
+    transform: rotate(85deg) scale(2);
     background-color: #00aaff;
     opacity: 0.6;
   }
@@ -2551,33 +2597,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-moz-keyframes spin111 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(75deg) scale(1);
-    -ms-transform: rotate(75deg) scale(1);
-    -webkit-transform: rotate(75deg) scale(1);
-    transform: rotate(75deg) scale(1);
+    -moz-transform: rotate(85deg) scale(1);
+    -ms-transform: rotate(85deg) scale(1);
+    -webkit-transform: rotate(85deg) scale(1);
+    transform: rotate(85deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(75deg) scale(1);
-    -ms-transform: rotate(75deg) scale(1);
-    -webkit-transform: rotate(75deg) scale(1);
-    transform: rotate(75deg) scale(1);
+    -moz-transform: rotate(85deg) scale(1);
+    -ms-transform: rotate(85deg) scale(1);
+    -webkit-transform: rotate(85deg) scale(1);
+    transform: rotate(85deg) scale(1);
     background-color: #00aaff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(75deg) scale(2);
-    -ms-transform: rotate(75deg) scale(2);
-    -webkit-transform: rotate(75deg) scale(2);
-    transform: rotate(75deg) scale(2);
+    -moz-transform: rotate(85deg) scale(2);
+    -ms-transform: rotate(85deg) scale(2);
+    -webkit-transform: rotate(85deg) scale(2);
+    transform: rotate(85deg) scale(2);
     background-color: #00aaff;
     opacity: 0.6;
   }
@@ -2585,33 +2631,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-o-keyframes spin111 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(75deg) scale(1);
-    -ms-transform: rotate(75deg) scale(1);
-    -webkit-transform: rotate(75deg) scale(1);
-    transform: rotate(75deg) scale(1);
+    -moz-transform: rotate(85deg) scale(1);
+    -ms-transform: rotate(85deg) scale(1);
+    -webkit-transform: rotate(85deg) scale(1);
+    transform: rotate(85deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(75deg) scale(1);
-    -ms-transform: rotate(75deg) scale(1);
-    -webkit-transform: rotate(75deg) scale(1);
-    transform: rotate(75deg) scale(1);
+    -moz-transform: rotate(85deg) scale(1);
+    -ms-transform: rotate(85deg) scale(1);
+    -webkit-transform: rotate(85deg) scale(1);
+    transform: rotate(85deg) scale(1);
     background-color: #00aaff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(75deg) scale(2);
-    -ms-transform: rotate(75deg) scale(2);
-    -webkit-transform: rotate(75deg) scale(2);
-    transform: rotate(75deg) scale(2);
+    -moz-transform: rotate(85deg) scale(2);
+    -ms-transform: rotate(85deg) scale(2);
+    -webkit-transform: rotate(85deg) scale(2);
+    transform: rotate(85deg) scale(2);
     background-color: #00aaff;
     opacity: 0.6;
   }
@@ -2619,33 +2665,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @keyframes $spin111 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(75deg) scale(1);
-    -ms-transform: rotate(75deg) scale(1);
-    -webkit-transform: rotate(75deg) scale(1);
-    transform: rotate(75deg) scale(1);
+    -moz-transform: rotate(85deg) scale(1);
+    -ms-transform: rotate(85deg) scale(1);
+    -webkit-transform: rotate(85deg) scale(1);
+    transform: rotate(85deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(75deg) scale(1);
-    -ms-transform: rotate(75deg) scale(1);
-    -webkit-transform: rotate(75deg) scale(1);
-    transform: rotate(75deg) scale(1);
+    -moz-transform: rotate(85deg) scale(1);
+    -ms-transform: rotate(85deg) scale(1);
+    -webkit-transform: rotate(85deg) scale(1);
+    transform: rotate(85deg) scale(1);
     background-color: #00aaff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(75deg) scale(2);
-    -ms-transform: rotate(75deg) scale(2);
-    -webkit-transform: rotate(75deg) scale(2);
-    transform: rotate(75deg) scale(2);
+    -moz-transform: rotate(85deg) scale(2);
+    -ms-transform: rotate(85deg) scale(2);
+    -webkit-transform: rotate(85deg) scale(2);
+    transform: rotate(85deg) scale(2);
     background-color: #00aaff;
     opacity: 0.6;
   }
@@ -2653,33 +2699,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-webkit-keyframes spin112 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(95deg) scale(1);
-    -ms-transform: rotate(95deg) scale(1);
-    -webkit-transform: rotate(95deg) scale(1);
-    transform: rotate(95deg) scale(1);
+    -moz-transform: rotate(105deg) scale(1);
+    -ms-transform: rotate(105deg) scale(1);
+    -webkit-transform: rotate(105deg) scale(1);
+    transform: rotate(105deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(95deg) scale(1);
-    -ms-transform: rotate(95deg) scale(1);
-    -webkit-transform: rotate(95deg) scale(1);
-    transform: rotate(95deg) scale(1);
+    -moz-transform: rotate(105deg) scale(1);
+    -ms-transform: rotate(105deg) scale(1);
+    -webkit-transform: rotate(105deg) scale(1);
+    transform: rotate(105deg) scale(1);
     background-color: #0055ff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(95deg) scale(2);
-    -ms-transform: rotate(95deg) scale(2);
-    -webkit-transform: rotate(95deg) scale(2);
-    transform: rotate(95deg) scale(2);
+    -moz-transform: rotate(105deg) scale(2);
+    -ms-transform: rotate(105deg) scale(2);
+    -webkit-transform: rotate(105deg) scale(2);
+    transform: rotate(105deg) scale(2);
     background-color: #0055ff;
     opacity: 0.6;
   }
@@ -2687,33 +2733,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-moz-keyframes spin112 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(95deg) scale(1);
-    -ms-transform: rotate(95deg) scale(1);
-    -webkit-transform: rotate(95deg) scale(1);
-    transform: rotate(95deg) scale(1);
+    -moz-transform: rotate(105deg) scale(1);
+    -ms-transform: rotate(105deg) scale(1);
+    -webkit-transform: rotate(105deg) scale(1);
+    transform: rotate(105deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(95deg) scale(1);
-    -ms-transform: rotate(95deg) scale(1);
-    -webkit-transform: rotate(95deg) scale(1);
-    transform: rotate(95deg) scale(1);
+    -moz-transform: rotate(105deg) scale(1);
+    -ms-transform: rotate(105deg) scale(1);
+    -webkit-transform: rotate(105deg) scale(1);
+    transform: rotate(105deg) scale(1);
     background-color: #0055ff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(95deg) scale(2);
-    -ms-transform: rotate(95deg) scale(2);
-    -webkit-transform: rotate(95deg) scale(2);
-    transform: rotate(95deg) scale(2);
+    -moz-transform: rotate(105deg) scale(2);
+    -ms-transform: rotate(105deg) scale(2);
+    -webkit-transform: rotate(105deg) scale(2);
+    transform: rotate(105deg) scale(2);
     background-color: #0055ff;
     opacity: 0.6;
   }
@@ -2721,33 +2767,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-o-keyframes spin112 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(95deg) scale(1);
-    -ms-transform: rotate(95deg) scale(1);
-    -webkit-transform: rotate(95deg) scale(1);
-    transform: rotate(95deg) scale(1);
+    -moz-transform: rotate(105deg) scale(1);
+    -ms-transform: rotate(105deg) scale(1);
+    -webkit-transform: rotate(105deg) scale(1);
+    transform: rotate(105deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(95deg) scale(1);
-    -ms-transform: rotate(95deg) scale(1);
-    -webkit-transform: rotate(95deg) scale(1);
-    transform: rotate(95deg) scale(1);
+    -moz-transform: rotate(105deg) scale(1);
+    -ms-transform: rotate(105deg) scale(1);
+    -webkit-transform: rotate(105deg) scale(1);
+    transform: rotate(105deg) scale(1);
     background-color: #0055ff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(95deg) scale(2);
-    -ms-transform: rotate(95deg) scale(2);
-    -webkit-transform: rotate(95deg) scale(2);
-    transform: rotate(95deg) scale(2);
+    -moz-transform: rotate(105deg) scale(2);
+    -ms-transform: rotate(105deg) scale(2);
+    -webkit-transform: rotate(105deg) scale(2);
+    transform: rotate(105deg) scale(2);
     background-color: #0055ff;
     opacity: 0.6;
   }
@@ -2755,33 +2801,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @keyframes $spin112 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(95deg) scale(1);
-    -ms-transform: rotate(95deg) scale(1);
-    -webkit-transform: rotate(95deg) scale(1);
-    transform: rotate(95deg) scale(1);
+    -moz-transform: rotate(105deg) scale(1);
+    -ms-transform: rotate(105deg) scale(1);
+    -webkit-transform: rotate(105deg) scale(1);
+    transform: rotate(105deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(95deg) scale(1);
-    -ms-transform: rotate(95deg) scale(1);
-    -webkit-transform: rotate(95deg) scale(1);
-    transform: rotate(95deg) scale(1);
+    -moz-transform: rotate(105deg) scale(1);
+    -ms-transform: rotate(105deg) scale(1);
+    -webkit-transform: rotate(105deg) scale(1);
+    transform: rotate(105deg) scale(1);
     background-color: #0055ff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(95deg) scale(2);
-    -ms-transform: rotate(95deg) scale(2);
-    -webkit-transform: rotate(95deg) scale(2);
-    transform: rotate(95deg) scale(2);
+    -moz-transform: rotate(105deg) scale(2);
+    -ms-transform: rotate(105deg) scale(2);
+    -webkit-transform: rotate(105deg) scale(2);
+    transform: rotate(105deg) scale(2);
     background-color: #0055ff;
     opacity: 0.6;
   }
@@ -2789,33 +2835,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-webkit-keyframes spin113 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(115deg) scale(1);
-    -ms-transform: rotate(115deg) scale(1);
-    -webkit-transform: rotate(115deg) scale(1);
-    transform: rotate(115deg) scale(1);
+    -moz-transform: rotate(125deg) scale(1);
+    -ms-transform: rotate(125deg) scale(1);
+    -webkit-transform: rotate(125deg) scale(1);
+    transform: rotate(125deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(115deg) scale(1);
-    -ms-transform: rotate(115deg) scale(1);
-    -webkit-transform: rotate(115deg) scale(1);
-    transform: rotate(115deg) scale(1);
+    -moz-transform: rotate(125deg) scale(1);
+    -ms-transform: rotate(125deg) scale(1);
+    -webkit-transform: rotate(125deg) scale(1);
+    transform: rotate(125deg) scale(1);
     background-color: blue;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(115deg) scale(2);
-    -ms-transform: rotate(115deg) scale(2);
-    -webkit-transform: rotate(115deg) scale(2);
-    transform: rotate(115deg) scale(2);
+    -moz-transform: rotate(125deg) scale(2);
+    -ms-transform: rotate(125deg) scale(2);
+    -webkit-transform: rotate(125deg) scale(2);
+    transform: rotate(125deg) scale(2);
     background-color: blue;
     opacity: 0.6;
   }
@@ -2823,33 +2869,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-moz-keyframes spin113 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(115deg) scale(1);
-    -ms-transform: rotate(115deg) scale(1);
-    -webkit-transform: rotate(115deg) scale(1);
-    transform: rotate(115deg) scale(1);
+    -moz-transform: rotate(125deg) scale(1);
+    -ms-transform: rotate(125deg) scale(1);
+    -webkit-transform: rotate(125deg) scale(1);
+    transform: rotate(125deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(115deg) scale(1);
-    -ms-transform: rotate(115deg) scale(1);
-    -webkit-transform: rotate(115deg) scale(1);
-    transform: rotate(115deg) scale(1);
+    -moz-transform: rotate(125deg) scale(1);
+    -ms-transform: rotate(125deg) scale(1);
+    -webkit-transform: rotate(125deg) scale(1);
+    transform: rotate(125deg) scale(1);
     background-color: blue;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(115deg) scale(2);
-    -ms-transform: rotate(115deg) scale(2);
-    -webkit-transform: rotate(115deg) scale(2);
-    transform: rotate(115deg) scale(2);
+    -moz-transform: rotate(125deg) scale(2);
+    -ms-transform: rotate(125deg) scale(2);
+    -webkit-transform: rotate(125deg) scale(2);
+    transform: rotate(125deg) scale(2);
     background-color: blue;
     opacity: 0.6;
   }
@@ -2857,33 +2903,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-o-keyframes spin113 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(115deg) scale(1);
-    -ms-transform: rotate(115deg) scale(1);
-    -webkit-transform: rotate(115deg) scale(1);
-    transform: rotate(115deg) scale(1);
+    -moz-transform: rotate(125deg) scale(1);
+    -ms-transform: rotate(125deg) scale(1);
+    -webkit-transform: rotate(125deg) scale(1);
+    transform: rotate(125deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(115deg) scale(1);
-    -ms-transform: rotate(115deg) scale(1);
-    -webkit-transform: rotate(115deg) scale(1);
-    transform: rotate(115deg) scale(1);
+    -moz-transform: rotate(125deg) scale(1);
+    -ms-transform: rotate(125deg) scale(1);
+    -webkit-transform: rotate(125deg) scale(1);
+    transform: rotate(125deg) scale(1);
     background-color: blue;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(115deg) scale(2);
-    -ms-transform: rotate(115deg) scale(2);
-    -webkit-transform: rotate(115deg) scale(2);
-    transform: rotate(115deg) scale(2);
+    -moz-transform: rotate(125deg) scale(2);
+    -ms-transform: rotate(125deg) scale(2);
+    -webkit-transform: rotate(125deg) scale(2);
+    transform: rotate(125deg) scale(2);
     background-color: blue;
     opacity: 0.6;
   }
@@ -2891,33 +2937,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @keyframes $spin113 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(115deg) scale(1);
-    -ms-transform: rotate(115deg) scale(1);
-    -webkit-transform: rotate(115deg) scale(1);
-    transform: rotate(115deg) scale(1);
+    -moz-transform: rotate(125deg) scale(1);
+    -ms-transform: rotate(125deg) scale(1);
+    -webkit-transform: rotate(125deg) scale(1);
+    transform: rotate(125deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(115deg) scale(1);
-    -ms-transform: rotate(115deg) scale(1);
-    -webkit-transform: rotate(115deg) scale(1);
-    transform: rotate(115deg) scale(1);
+    -moz-transform: rotate(125deg) scale(1);
+    -ms-transform: rotate(125deg) scale(1);
+    -webkit-transform: rotate(125deg) scale(1);
+    transform: rotate(125deg) scale(1);
     background-color: blue;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(115deg) scale(2);
-    -ms-transform: rotate(115deg) scale(2);
-    -webkit-transform: rotate(115deg) scale(2);
-    transform: rotate(115deg) scale(2);
+    -moz-transform: rotate(125deg) scale(2);
+    -ms-transform: rotate(125deg) scale(2);
+    -webkit-transform: rotate(125deg) scale(2);
+    transform: rotate(125deg) scale(2);
     background-color: blue;
     opacity: 0.6;
   }
@@ -2925,33 +2971,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-webkit-keyframes spin114 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(135deg) scale(1);
-    -ms-transform: rotate(135deg) scale(1);
-    -webkit-transform: rotate(135deg) scale(1);
-    transform: rotate(135deg) scale(1);
+    -moz-transform: rotate(145deg) scale(1);
+    -ms-transform: rotate(145deg) scale(1);
+    -webkit-transform: rotate(145deg) scale(1);
+    transform: rotate(145deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(135deg) scale(1);
-    -ms-transform: rotate(135deg) scale(1);
-    -webkit-transform: rotate(135deg) scale(1);
-    transform: rotate(135deg) scale(1);
+    -moz-transform: rotate(145deg) scale(1);
+    -ms-transform: rotate(145deg) scale(1);
+    -webkit-transform: rotate(145deg) scale(1);
+    transform: rotate(145deg) scale(1);
     background-color: #5500ff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(135deg) scale(2);
-    -ms-transform: rotate(135deg) scale(2);
-    -webkit-transform: rotate(135deg) scale(2);
-    transform: rotate(135deg) scale(2);
+    -moz-transform: rotate(145deg) scale(2);
+    -ms-transform: rotate(145deg) scale(2);
+    -webkit-transform: rotate(145deg) scale(2);
+    transform: rotate(145deg) scale(2);
     background-color: #5500ff;
     opacity: 0.6;
   }
@@ -2959,33 +3005,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-moz-keyframes spin114 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(135deg) scale(1);
-    -ms-transform: rotate(135deg) scale(1);
-    -webkit-transform: rotate(135deg) scale(1);
-    transform: rotate(135deg) scale(1);
+    -moz-transform: rotate(145deg) scale(1);
+    -ms-transform: rotate(145deg) scale(1);
+    -webkit-transform: rotate(145deg) scale(1);
+    transform: rotate(145deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(135deg) scale(1);
-    -ms-transform: rotate(135deg) scale(1);
-    -webkit-transform: rotate(135deg) scale(1);
-    transform: rotate(135deg) scale(1);
+    -moz-transform: rotate(145deg) scale(1);
+    -ms-transform: rotate(145deg) scale(1);
+    -webkit-transform: rotate(145deg) scale(1);
+    transform: rotate(145deg) scale(1);
     background-color: #5500ff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(135deg) scale(2);
-    -ms-transform: rotate(135deg) scale(2);
-    -webkit-transform: rotate(135deg) scale(2);
-    transform: rotate(135deg) scale(2);
+    -moz-transform: rotate(145deg) scale(2);
+    -ms-transform: rotate(145deg) scale(2);
+    -webkit-transform: rotate(145deg) scale(2);
+    transform: rotate(145deg) scale(2);
     background-color: #5500ff;
     opacity: 0.6;
   }
@@ -2993,33 +3039,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-o-keyframes spin114 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(135deg) scale(1);
-    -ms-transform: rotate(135deg) scale(1);
-    -webkit-transform: rotate(135deg) scale(1);
-    transform: rotate(135deg) scale(1);
+    -moz-transform: rotate(145deg) scale(1);
+    -ms-transform: rotate(145deg) scale(1);
+    -webkit-transform: rotate(145deg) scale(1);
+    transform: rotate(145deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(135deg) scale(1);
-    -ms-transform: rotate(135deg) scale(1);
-    -webkit-transform: rotate(135deg) scale(1);
-    transform: rotate(135deg) scale(1);
+    -moz-transform: rotate(145deg) scale(1);
+    -ms-transform: rotate(145deg) scale(1);
+    -webkit-transform: rotate(145deg) scale(1);
+    transform: rotate(145deg) scale(1);
     background-color: #5500ff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(135deg) scale(2);
-    -ms-transform: rotate(135deg) scale(2);
-    -webkit-transform: rotate(135deg) scale(2);
-    transform: rotate(135deg) scale(2);
+    -moz-transform: rotate(145deg) scale(2);
+    -ms-transform: rotate(145deg) scale(2);
+    -webkit-transform: rotate(145deg) scale(2);
+    transform: rotate(145deg) scale(2);
     background-color: #5500ff;
     opacity: 0.6;
   }
@@ -3027,33 +3073,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @keyframes $spin114 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(135deg) scale(1);
-    -ms-transform: rotate(135deg) scale(1);
-    -webkit-transform: rotate(135deg) scale(1);
-    transform: rotate(135deg) scale(1);
+    -moz-transform: rotate(145deg) scale(1);
+    -ms-transform: rotate(145deg) scale(1);
+    -webkit-transform: rotate(145deg) scale(1);
+    transform: rotate(145deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(135deg) scale(1);
-    -ms-transform: rotate(135deg) scale(1);
-    -webkit-transform: rotate(135deg) scale(1);
-    transform: rotate(135deg) scale(1);
+    -moz-transform: rotate(145deg) scale(1);
+    -ms-transform: rotate(145deg) scale(1);
+    -webkit-transform: rotate(145deg) scale(1);
+    transform: rotate(145deg) scale(1);
     background-color: #5500ff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(135deg) scale(2);
-    -ms-transform: rotate(135deg) scale(2);
-    -webkit-transform: rotate(135deg) scale(2);
-    transform: rotate(135deg) scale(2);
+    -moz-transform: rotate(145deg) scale(2);
+    -ms-transform: rotate(145deg) scale(2);
+    -webkit-transform: rotate(145deg) scale(2);
+    transform: rotate(145deg) scale(2);
     background-color: #5500ff;
     opacity: 0.6;
   }
@@ -3061,33 +3107,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-webkit-keyframes spin115 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(155deg) scale(1);
-    -ms-transform: rotate(155deg) scale(1);
-    -webkit-transform: rotate(155deg) scale(1);
-    transform: rotate(155deg) scale(1);
+    -moz-transform: rotate(165deg) scale(1);
+    -ms-transform: rotate(165deg) scale(1);
+    -webkit-transform: rotate(165deg) scale(1);
+    transform: rotate(165deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(155deg) scale(1);
-    -ms-transform: rotate(155deg) scale(1);
-    -webkit-transform: rotate(155deg) scale(1);
-    transform: rotate(155deg) scale(1);
+    -moz-transform: rotate(165deg) scale(1);
+    -ms-transform: rotate(165deg) scale(1);
+    -webkit-transform: rotate(165deg) scale(1);
+    transform: rotate(165deg) scale(1);
     background-color: #aa00ff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(155deg) scale(2);
-    -ms-transform: rotate(155deg) scale(2);
-    -webkit-transform: rotate(155deg) scale(2);
-    transform: rotate(155deg) scale(2);
+    -moz-transform: rotate(165deg) scale(2);
+    -ms-transform: rotate(165deg) scale(2);
+    -webkit-transform: rotate(165deg) scale(2);
+    transform: rotate(165deg) scale(2);
     background-color: #aa00ff;
     opacity: 0.6;
   }
@@ -3095,33 +3141,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-moz-keyframes spin115 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(155deg) scale(1);
-    -ms-transform: rotate(155deg) scale(1);
-    -webkit-transform: rotate(155deg) scale(1);
-    transform: rotate(155deg) scale(1);
+    -moz-transform: rotate(165deg) scale(1);
+    -ms-transform: rotate(165deg) scale(1);
+    -webkit-transform: rotate(165deg) scale(1);
+    transform: rotate(165deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(155deg) scale(1);
-    -ms-transform: rotate(155deg) scale(1);
-    -webkit-transform: rotate(155deg) scale(1);
-    transform: rotate(155deg) scale(1);
+    -moz-transform: rotate(165deg) scale(1);
+    -ms-transform: rotate(165deg) scale(1);
+    -webkit-transform: rotate(165deg) scale(1);
+    transform: rotate(165deg) scale(1);
     background-color: #aa00ff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(155deg) scale(2);
-    -ms-transform: rotate(155deg) scale(2);
-    -webkit-transform: rotate(155deg) scale(2);
-    transform: rotate(155deg) scale(2);
+    -moz-transform: rotate(165deg) scale(2);
+    -ms-transform: rotate(165deg) scale(2);
+    -webkit-transform: rotate(165deg) scale(2);
+    transform: rotate(165deg) scale(2);
     background-color: #aa00ff;
     opacity: 0.6;
   }
@@ -3129,33 +3175,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-o-keyframes spin115 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(155deg) scale(1);
-    -ms-transform: rotate(155deg) scale(1);
-    -webkit-transform: rotate(155deg) scale(1);
-    transform: rotate(155deg) scale(1);
+    -moz-transform: rotate(165deg) scale(1);
+    -ms-transform: rotate(165deg) scale(1);
+    -webkit-transform: rotate(165deg) scale(1);
+    transform: rotate(165deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(155deg) scale(1);
-    -ms-transform: rotate(155deg) scale(1);
-    -webkit-transform: rotate(155deg) scale(1);
-    transform: rotate(155deg) scale(1);
+    -moz-transform: rotate(165deg) scale(1);
+    -ms-transform: rotate(165deg) scale(1);
+    -webkit-transform: rotate(165deg) scale(1);
+    transform: rotate(165deg) scale(1);
     background-color: #aa00ff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(155deg) scale(2);
-    -ms-transform: rotate(155deg) scale(2);
-    -webkit-transform: rotate(155deg) scale(2);
-    transform: rotate(155deg) scale(2);
+    -moz-transform: rotate(165deg) scale(2);
+    -ms-transform: rotate(165deg) scale(2);
+    -webkit-transform: rotate(165deg) scale(2);
+    transform: rotate(165deg) scale(2);
     background-color: #aa00ff;
     opacity: 0.6;
   }
@@ -3163,33 +3209,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @keyframes $spin115 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(155deg) scale(1);
-    -ms-transform: rotate(155deg) scale(1);
-    -webkit-transform: rotate(155deg) scale(1);
-    transform: rotate(155deg) scale(1);
+    -moz-transform: rotate(165deg) scale(1);
+    -ms-transform: rotate(165deg) scale(1);
+    -webkit-transform: rotate(165deg) scale(1);
+    transform: rotate(165deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(155deg) scale(1);
-    -ms-transform: rotate(155deg) scale(1);
-    -webkit-transform: rotate(155deg) scale(1);
-    transform: rotate(155deg) scale(1);
+    -moz-transform: rotate(165deg) scale(1);
+    -ms-transform: rotate(165deg) scale(1);
+    -webkit-transform: rotate(165deg) scale(1);
+    transform: rotate(165deg) scale(1);
     background-color: #aa00ff;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(155deg) scale(2);
-    -ms-transform: rotate(155deg) scale(2);
-    -webkit-transform: rotate(155deg) scale(2);
-    transform: rotate(155deg) scale(2);
+    -moz-transform: rotate(165deg) scale(2);
+    -ms-transform: rotate(165deg) scale(2);
+    -webkit-transform: rotate(165deg) scale(2);
+    transform: rotate(165deg) scale(2);
     background-color: #aa00ff;
     opacity: 0.6;
   }
@@ -3197,33 +3243,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-webkit-keyframes spin116 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(175deg) scale(1);
-    -ms-transform: rotate(175deg) scale(1);
-    -webkit-transform: rotate(175deg) scale(1);
-    transform: rotate(175deg) scale(1);
+    -moz-transform: rotate(185deg) scale(1);
+    -ms-transform: rotate(185deg) scale(1);
+    -webkit-transform: rotate(185deg) scale(1);
+    transform: rotate(185deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(175deg) scale(1);
-    -ms-transform: rotate(175deg) scale(1);
-    -webkit-transform: rotate(175deg) scale(1);
-    transform: rotate(175deg) scale(1);
+    -moz-transform: rotate(185deg) scale(1);
+    -ms-transform: rotate(185deg) scale(1);
+    -webkit-transform: rotate(185deg) scale(1);
+    transform: rotate(185deg) scale(1);
     background-color: magenta;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(175deg) scale(2);
-    -ms-transform: rotate(175deg) scale(2);
-    -webkit-transform: rotate(175deg) scale(2);
-    transform: rotate(175deg) scale(2);
+    -moz-transform: rotate(185deg) scale(2);
+    -ms-transform: rotate(185deg) scale(2);
+    -webkit-transform: rotate(185deg) scale(2);
+    transform: rotate(185deg) scale(2);
     background-color: magenta;
     opacity: 0.6;
   }
@@ -3231,33 +3277,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-moz-keyframes spin116 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(175deg) scale(1);
-    -ms-transform: rotate(175deg) scale(1);
-    -webkit-transform: rotate(175deg) scale(1);
-    transform: rotate(175deg) scale(1);
+    -moz-transform: rotate(185deg) scale(1);
+    -ms-transform: rotate(185deg) scale(1);
+    -webkit-transform: rotate(185deg) scale(1);
+    transform: rotate(185deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(175deg) scale(1);
-    -ms-transform: rotate(175deg) scale(1);
-    -webkit-transform: rotate(175deg) scale(1);
-    transform: rotate(175deg) scale(1);
+    -moz-transform: rotate(185deg) scale(1);
+    -ms-transform: rotate(185deg) scale(1);
+    -webkit-transform: rotate(185deg) scale(1);
+    transform: rotate(185deg) scale(1);
     background-color: magenta;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(175deg) scale(2);
-    -ms-transform: rotate(175deg) scale(2);
-    -webkit-transform: rotate(175deg) scale(2);
-    transform: rotate(175deg) scale(2);
+    -moz-transform: rotate(185deg) scale(2);
+    -ms-transform: rotate(185deg) scale(2);
+    -webkit-transform: rotate(185deg) scale(2);
+    transform: rotate(185deg) scale(2);
     background-color: magenta;
     opacity: 0.6;
   }
@@ -3265,33 +3311,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-o-keyframes spin116 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(175deg) scale(1);
-    -ms-transform: rotate(175deg) scale(1);
-    -webkit-transform: rotate(175deg) scale(1);
-    transform: rotate(175deg) scale(1);
+    -moz-transform: rotate(185deg) scale(1);
+    -ms-transform: rotate(185deg) scale(1);
+    -webkit-transform: rotate(185deg) scale(1);
+    transform: rotate(185deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(175deg) scale(1);
-    -ms-transform: rotate(175deg) scale(1);
-    -webkit-transform: rotate(175deg) scale(1);
-    transform: rotate(175deg) scale(1);
+    -moz-transform: rotate(185deg) scale(1);
+    -ms-transform: rotate(185deg) scale(1);
+    -webkit-transform: rotate(185deg) scale(1);
+    transform: rotate(185deg) scale(1);
     background-color: magenta;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(175deg) scale(2);
-    -ms-transform: rotate(175deg) scale(2);
-    -webkit-transform: rotate(175deg) scale(2);
-    transform: rotate(175deg) scale(2);
+    -moz-transform: rotate(185deg) scale(2);
+    -ms-transform: rotate(185deg) scale(2);
+    -webkit-transform: rotate(185deg) scale(2);
+    transform: rotate(185deg) scale(2);
     background-color: magenta;
     opacity: 0.6;
   }
@@ -3299,33 +3345,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @keyframes $spin116 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(175deg) scale(1);
-    -ms-transform: rotate(175deg) scale(1);
-    -webkit-transform: rotate(175deg) scale(1);
-    transform: rotate(175deg) scale(1);
+    -moz-transform: rotate(185deg) scale(1);
+    -ms-transform: rotate(185deg) scale(1);
+    -webkit-transform: rotate(185deg) scale(1);
+    transform: rotate(185deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(175deg) scale(1);
-    -ms-transform: rotate(175deg) scale(1);
-    -webkit-transform: rotate(175deg) scale(1);
-    transform: rotate(175deg) scale(1);
+    -moz-transform: rotate(185deg) scale(1);
+    -ms-transform: rotate(185deg) scale(1);
+    -webkit-transform: rotate(185deg) scale(1);
+    transform: rotate(185deg) scale(1);
     background-color: magenta;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(175deg) scale(2);
-    -ms-transform: rotate(175deg) scale(2);
-    -webkit-transform: rotate(175deg) scale(2);
-    transform: rotate(175deg) scale(2);
+    -moz-transform: rotate(185deg) scale(2);
+    -ms-transform: rotate(185deg) scale(2);
+    -webkit-transform: rotate(185deg) scale(2);
+    transform: rotate(185deg) scale(2);
     background-color: magenta;
     opacity: 0.6;
   }
@@ -3333,33 +3379,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-webkit-keyframes spin117 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(195deg) scale(1);
-    -ms-transform: rotate(195deg) scale(1);
-    -webkit-transform: rotate(195deg) scale(1);
-    transform: rotate(195deg) scale(1);
+    -moz-transform: rotate(205deg) scale(1);
+    -ms-transform: rotate(205deg) scale(1);
+    -webkit-transform: rotate(205deg) scale(1);
+    transform: rotate(205deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(195deg) scale(1);
-    -ms-transform: rotate(195deg) scale(1);
-    -webkit-transform: rotate(195deg) scale(1);
-    transform: rotate(195deg) scale(1);
+    -moz-transform: rotate(205deg) scale(1);
+    -ms-transform: rotate(205deg) scale(1);
+    -webkit-transform: rotate(205deg) scale(1);
+    transform: rotate(205deg) scale(1);
     background-color: #ff00aa;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(195deg) scale(2);
-    -ms-transform: rotate(195deg) scale(2);
-    -webkit-transform: rotate(195deg) scale(2);
-    transform: rotate(195deg) scale(2);
+    -moz-transform: rotate(205deg) scale(2);
+    -ms-transform: rotate(205deg) scale(2);
+    -webkit-transform: rotate(205deg) scale(2);
+    transform: rotate(205deg) scale(2);
     background-color: #ff00aa;
     opacity: 0.6;
   }
@@ -3367,33 +3413,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-moz-keyframes spin117 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(195deg) scale(1);
-    -ms-transform: rotate(195deg) scale(1);
-    -webkit-transform: rotate(195deg) scale(1);
-    transform: rotate(195deg) scale(1);
+    -moz-transform: rotate(205deg) scale(1);
+    -ms-transform: rotate(205deg) scale(1);
+    -webkit-transform: rotate(205deg) scale(1);
+    transform: rotate(205deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(195deg) scale(1);
-    -ms-transform: rotate(195deg) scale(1);
-    -webkit-transform: rotate(195deg) scale(1);
-    transform: rotate(195deg) scale(1);
+    -moz-transform: rotate(205deg) scale(1);
+    -ms-transform: rotate(205deg) scale(1);
+    -webkit-transform: rotate(205deg) scale(1);
+    transform: rotate(205deg) scale(1);
     background-color: #ff00aa;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(195deg) scale(2);
-    -ms-transform: rotate(195deg) scale(2);
-    -webkit-transform: rotate(195deg) scale(2);
-    transform: rotate(195deg) scale(2);
+    -moz-transform: rotate(205deg) scale(2);
+    -ms-transform: rotate(205deg) scale(2);
+    -webkit-transform: rotate(205deg) scale(2);
+    transform: rotate(205deg) scale(2);
     background-color: #ff00aa;
     opacity: 0.6;
   }
@@ -3401,33 +3447,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-o-keyframes spin117 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(195deg) scale(1);
-    -ms-transform: rotate(195deg) scale(1);
-    -webkit-transform: rotate(195deg) scale(1);
-    transform: rotate(195deg) scale(1);
+    -moz-transform: rotate(205deg) scale(1);
+    -ms-transform: rotate(205deg) scale(1);
+    -webkit-transform: rotate(205deg) scale(1);
+    transform: rotate(205deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(195deg) scale(1);
-    -ms-transform: rotate(195deg) scale(1);
-    -webkit-transform: rotate(195deg) scale(1);
-    transform: rotate(195deg) scale(1);
+    -moz-transform: rotate(205deg) scale(1);
+    -ms-transform: rotate(205deg) scale(1);
+    -webkit-transform: rotate(205deg) scale(1);
+    transform: rotate(205deg) scale(1);
     background-color: #ff00aa;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(195deg) scale(2);
-    -ms-transform: rotate(195deg) scale(2);
-    -webkit-transform: rotate(195deg) scale(2);
-    transform: rotate(195deg) scale(2);
+    -moz-transform: rotate(205deg) scale(2);
+    -ms-transform: rotate(205deg) scale(2);
+    -webkit-transform: rotate(205deg) scale(2);
+    transform: rotate(205deg) scale(2);
     background-color: #ff00aa;
     opacity: 0.6;
   }
@@ -3435,33 +3481,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @keyframes $spin117 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(195deg) scale(1);
-    -ms-transform: rotate(195deg) scale(1);
-    -webkit-transform: rotate(195deg) scale(1);
-    transform: rotate(195deg) scale(1);
+    -moz-transform: rotate(205deg) scale(1);
+    -ms-transform: rotate(205deg) scale(1);
+    -webkit-transform: rotate(205deg) scale(1);
+    transform: rotate(205deg) scale(1);
     background-color: #fff;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(195deg) scale(1);
-    -ms-transform: rotate(195deg) scale(1);
-    -webkit-transform: rotate(195deg) scale(1);
-    transform: rotate(195deg) scale(1);
+    -moz-transform: rotate(205deg) scale(1);
+    -ms-transform: rotate(205deg) scale(1);
+    -webkit-transform: rotate(205deg) scale(1);
+    transform: rotate(205deg) scale(1);
     background-color: #ff00aa;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(195deg) scale(2);
-    -ms-transform: rotate(195deg) scale(2);
-    -webkit-transform: rotate(195deg) scale(2);
-    transform: rotate(195deg) scale(2);
+    -moz-transform: rotate(205deg) scale(2);
+    -ms-transform: rotate(205deg) scale(2);
+    -webkit-transform: rotate(205deg) scale(2);
+    transform: rotate(205deg) scale(2);
     background-color: #ff00aa;
     opacity: 0.6;
   }
@@ -3469,33 +3515,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-webkit-keyframes spin118 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(215deg) scale(1);
-    -ms-transform: rotate(215deg) scale(1);
-    -webkit-transform: rotate(215deg) scale(1);
-    transform: rotate(215deg) scale(1);
+    -moz-transform: rotate(225deg) scale(1);
+    -ms-transform: rotate(225deg) scale(1);
+    -webkit-transform: rotate(225deg) scale(1);
+    transform: rotate(225deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(215deg) scale(1);
-    -ms-transform: rotate(215deg) scale(1);
-    -webkit-transform: rotate(215deg) scale(1);
-    transform: rotate(215deg) scale(1);
+    -moz-transform: rotate(225deg) scale(1);
+    -ms-transform: rotate(225deg) scale(1);
+    -webkit-transform: rotate(225deg) scale(1);
+    transform: rotate(225deg) scale(1);
     background-color: #ff0055;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(215deg) scale(2);
-    -ms-transform: rotate(215deg) scale(2);
-    -webkit-transform: rotate(215deg) scale(2);
-    transform: rotate(215deg) scale(2);
+    -moz-transform: rotate(225deg) scale(2);
+    -ms-transform: rotate(225deg) scale(2);
+    -webkit-transform: rotate(225deg) scale(2);
+    transform: rotate(225deg) scale(2);
     background-color: #ff0055;
     opacity: 0.6;
   }
@@ -3503,33 +3549,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-moz-keyframes spin118 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(215deg) scale(1);
-    -ms-transform: rotate(215deg) scale(1);
-    -webkit-transform: rotate(215deg) scale(1);
-    transform: rotate(215deg) scale(1);
+    -moz-transform: rotate(225deg) scale(1);
+    -ms-transform: rotate(225deg) scale(1);
+    -webkit-transform: rotate(225deg) scale(1);
+    transform: rotate(225deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(215deg) scale(1);
-    -ms-transform: rotate(215deg) scale(1);
-    -webkit-transform: rotate(215deg) scale(1);
-    transform: rotate(215deg) scale(1);
+    -moz-transform: rotate(225deg) scale(1);
+    -ms-transform: rotate(225deg) scale(1);
+    -webkit-transform: rotate(225deg) scale(1);
+    transform: rotate(225deg) scale(1);
     background-color: #ff0055;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(215deg) scale(2);
-    -ms-transform: rotate(215deg) scale(2);
-    -webkit-transform: rotate(215deg) scale(2);
-    transform: rotate(215deg) scale(2);
+    -moz-transform: rotate(225deg) scale(2);
+    -ms-transform: rotate(225deg) scale(2);
+    -webkit-transform: rotate(225deg) scale(2);
+    transform: rotate(225deg) scale(2);
     background-color: #ff0055;
     opacity: 0.6;
   }
@@ -3537,33 +3583,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-o-keyframes spin118 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(215deg) scale(1);
-    -ms-transform: rotate(215deg) scale(1);
-    -webkit-transform: rotate(215deg) scale(1);
-    transform: rotate(215deg) scale(1);
+    -moz-transform: rotate(225deg) scale(1);
+    -ms-transform: rotate(225deg) scale(1);
+    -webkit-transform: rotate(225deg) scale(1);
+    transform: rotate(225deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(215deg) scale(1);
-    -ms-transform: rotate(215deg) scale(1);
-    -webkit-transform: rotate(215deg) scale(1);
-    transform: rotate(215deg) scale(1);
+    -moz-transform: rotate(225deg) scale(1);
+    -ms-transform: rotate(225deg) scale(1);
+    -webkit-transform: rotate(225deg) scale(1);
+    transform: rotate(225deg) scale(1);
     background-color: #ff0055;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(215deg) scale(2);
-    -ms-transform: rotate(215deg) scale(2);
-    -webkit-transform: rotate(215deg) scale(2);
-    transform: rotate(215deg) scale(2);
+    -moz-transform: rotate(225deg) scale(2);
+    -ms-transform: rotate(225deg) scale(2);
+    -webkit-transform: rotate(225deg) scale(2);
+    transform: rotate(225deg) scale(2);
     background-color: #ff0055;
     opacity: 0.6;
   }
@@ -3571,54 +3617,54 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @keyframes $spin118 {
   0% {
     opacity: 0;
-    -moz-transform: rotate(235deg) scale(0.01);
-    -ms-transform: rotate(235deg) scale(0.01);
-    -webkit-transform: rotate(235deg) scale(0.01);
-    transform: rotate(235deg) scale(0.01);
+    -moz-transform: rotate(245deg) scale(0.01);
+    -ms-transform: rotate(245deg) scale(0.01);
+    -webkit-transform: rotate(245deg) scale(0.01);
+    transform: rotate(245deg) scale(0.01);
   }
   50% {
     opacity: 1;
-    -moz-transform: rotate(215deg) scale(1);
-    -ms-transform: rotate(215deg) scale(1);
-    -webkit-transform: rotate(215deg) scale(1);
-    transform: rotate(215deg) scale(1);
+    -moz-transform: rotate(225deg) scale(1);
+    -ms-transform: rotate(225deg) scale(1);
+    -webkit-transform: rotate(225deg) scale(1);
+    transform: rotate(225deg) scale(1);
     background-color: #ddd;
   }
   60% {
     opacity: 1;
-    -moz-transform: rotate(215deg) scale(1);
-    -ms-transform: rotate(215deg) scale(1);
-    -webkit-transform: rotate(215deg) scale(1);
-    transform: rotate(215deg) scale(1);
+    -moz-transform: rotate(225deg) scale(1);
+    -ms-transform: rotate(225deg) scale(1);
+    -webkit-transform: rotate(225deg) scale(1);
+    transform: rotate(225deg) scale(1);
     background-color: #ff0055;
   }
   100% {
     opacity: 1;
-    -moz-transform: rotate(215deg) scale(2);
-    -ms-transform: rotate(215deg) scale(2);
-    -webkit-transform: rotate(215deg) scale(2);
-    transform: rotate(215deg) scale(2);
+    -moz-transform: rotate(225deg) scale(2);
+    -ms-transform: rotate(225deg) scale(2);
+    -webkit-transform: rotate(225deg) scale(2);
+    transform: rotate(225deg) scale(2);
     background-color: #ff0055;
     opacity: 0.6;
   }
 }
 @media all and (min-width: 40em) {
-  /* line 367, ../sass/services.scss */
+  /* line 426, ../sass/services.scss */
   #mask {
     margin-top: 300px;
   }
 
-  /* line 371, ../sass/services.scss */
+  /* line 430, ../sass/services.scss */
   #mask2 {
     margin-top: -200px;
   }
 
-  /* line 375, ../sass/services.scss */
+  /* line 434, ../sass/services.scss */
   #trunk {
     margin-left: -282px;
   }
 
-  /* line 379, ../sass/services.scss */
+  /* line 438, ../sass/services.scss */
   #trunkMask {
     height: 500px;
     margin-top: -200px;
@@ -3657,36 +3703,36 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       margin-top: -750px;
     }
   }
-  /* line 390, ../sass/services.scss */
+  /* line 449, ../sass/services.scss */
   .leaf {
     height: 100px;
     width: 100px;
     left: 0px;
   }
 
-  /* line 396, ../sass/services.scss */
+  /* line 455, ../sass/services.scss */
   #leaf1 {
     top: 500px;
   }
 
-  /* line 400, ../sass/services.scss */
+  /* line 459, ../sass/services.scss */
   #leaf2 {
     top: 500px;
   }
 
-  /* line 404, ../sass/services.scss */
+  /* line 463, ../sass/services.scss */
   #leaf3 {
     top: 350px;
     left: -26px;
   }
 
-  /* line 409, ../sass/services.scss */
+  /* line 468, ../sass/services.scss */
   #leaf4 {
     top: 250px;
     left: -34px;
   }
 
-  /* line 414, ../sass/services.scss */
+  /* line 476, ../sass/services.scss */
   .servicePetal {
     top: 1px;
     left: 3px;
@@ -3696,7 +3742,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 50px;
   }
 
-  /* line 424, ../sass/services.scss */
+  /* line 486, ../sass/services.scss */
   #serviceCenter {
     width: 40px;
     height: 40px;
@@ -3707,7 +3753,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-radius: 40px;
   }
 
-  /* line 434, ../sass/services.scss */
+  /* line 496, ../sass/services.scss */
   #servicesContent {
     height: 500px;
     width: 500px;
@@ -3715,7 +3761,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-left: -250px;
   }
 
-  /* line 441, ../sass/services.scss */
+  /* line 503, ../sass/services.scss */
   #servicesContentText {
     left: 120px;
     top: 120px;
@@ -3723,8 +3769,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-size: 94px;
   }
 
-  /* line 449, ../sass/services.scss */
-  #indexSpan6 {
-    font-size: 110px;
+  /* line 511, ../sass/services.scss */
+  #indexSpan3 {
+    position: relative;
+    display: inline-block;
+    top: -30px;
+  }
+
+  /* line 517, ../sass/services.scss */
+  #indexSpan4 {
+    position: relative;
+    display: inline-block;
+    top: -30px;
+    font-size: 150px;
   }
 }

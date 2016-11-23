@@ -63,19 +63,28 @@ $servicesContentSize: 200px;
 
 $i: 1;
 
-@for $i from 1 through 6 {
+@for $i from 1 through 4 {
     #indexSpan#{$i} { @include defineIndexSpanAnim( "indexSpan#{$i}", $i - 1 ) }
     $i: $i + 1;
 }
 
 
-#indexSpan1, #indexSpan2, #indexSpan5 {
+#indexSpan1, #indexSpan3 {
     color: #888;
 }
 
-#indexSpan6 {
+#indexSpan4 {
+    position: relative;
+    display: inline-block;
+    top: -10px;
     color: #0a0;
-    font-size: 40px;
+    font-size: 60px;
+}
+
+#indexSpan3 {
+    position: relative;
+    display: inline-block;
+    top: -10px;
 }
 
 
@@ -224,6 +233,56 @@ $i: 1;
 }
 
 
+.stem {
+    position: absolute;
+    left: -15px;
+    top: 30px;
+    border-top: 4px solid #070;
+    border-radius:50%;
+    @include transform(rotateZ(45deg));
+    width: 100px;
+    height: 10px;
+    // @include debug(red);
+}
+
+.stem1 {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    border-left: 3px solid #070;
+    border-radius:50%;
+    // @include transform(rotateZ(10deg));
+    width: 10px;
+    height: 20px;
+    // @include debug(red);
+}
+
+.stem2 {
+    position: absolute;
+    right: 32px;
+    top: 30px;
+    border-left: 2px solid #070;
+    border-radius:50%;
+    // @include transform(rotateY(90deg));
+    @include transform(rotateZ(80deg));
+    width: 10px;
+    height: 30px;
+    // @include debug(red);
+}
+
+.stem3 {
+    position: absolute;
+    left: 60px;
+    top: 60px;
+    border-left: 2px solid #070;
+    border-radius:50%;
+    // @include transform(rotateZ(10deg));
+    width: 10px;
+    height: 20px;
+    // @include debug(red);
+}
+
+
 /*
 	-- CENTER --------------------------------------------------------------------
 */
@@ -278,7 +337,7 @@ $centerSize: 20px;
 
 // animation
 @mixin defineServicePetalAnim($anim) {
-    @include animation("#{$anim} 4s ease-out 2s forwards");
+    @include animation("#{$anim} 3s ease-out 2s forwards");
 }
 
 // create petal ids and add animation
@@ -287,7 +346,7 @@ $centerSize: 20px;
 }
 
 // start angle
-$serviceAngleOffset: 235deg;
+$serviceAngleOffset: 245deg;
 $serviceAngleStep: 20deg;
 
 // petal angles
@@ -411,6 +470,9 @@ $serviceSpin18Angle: $serviceAngleStep;
         left: -34px;
     }
 
+
+
+
     .servicePetal {
         top: 1px;
         left: 3px;
@@ -446,7 +508,16 @@ $serviceSpin18Angle: $serviceAngleStep;
         font-size: 94px;
     }
 
-    #indexSpan6 {
-        font-size: 110px;
+    #indexSpan3 {
+        position: relative;
+        display: inline-block;
+        top: -30px;
+    }
+
+    #indexSpan4 {
+        position: relative;
+        display: inline-block;
+        top: -30px;
+        font-size: 150px;
     }
 }
