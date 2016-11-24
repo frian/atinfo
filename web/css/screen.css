@@ -183,26 +183,26 @@ ul.menu li a {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
-  width: 80%;
+  width: 94%;
+  display: inline;
 }
 
-/* line 132, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 [type="text"]:focus, [type="email"]:focus, textarea:focus {
   background-color: #eee;
 }
 
-/* line 136, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 textarea {
-  width: 60%;
   resize: none;
 }
 
-/* line 141, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 [type="submit"] {
   width: 100%;
 }
 
-/* line 146, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 .formErrors {
   color: red;
   font-size: 80%;
@@ -210,36 +210,42 @@ textarea {
 }
 
 @media all and (min-width: 40em) {
-  /* line 154, ../sass/screen.scss */
+  /* line 155, ../sass/screen.scss */
   #contact .page, #services .page {
     font-size: 200%;
     width: 600px;
     margin: auto;
   }
 
-  /* line 160, ../sass/screen.scss */
+  /* line 161, ../sass/screen.scss */
   [type="text"], [type="email"], textarea {
     font-size: 70%;
   }
 
-  /* line 164, ../sass/screen.scss */
+  /* line 165, ../sass/screen.scss */
   [type="text"], [type="email"] {
     height: 50px;
-  }
-
-  /* line 168, ../sass/screen.scss */
-  p.name, p.email {
-    height: 100px;
-    line-height: 100px;
-    font-size: 100px;
     border: 1px solid red;
   }
 
-  /* line 175, ../sass/screen.scss */
-  p.message {
+  /* line 170, ../sass/screen.scss */
+  div.name, div.email {
+    height: 100px;
+    line-height: 100px;
+    border: 1px solid red;
+  }
+
+  /* line 177, ../sass/screen.scss */
+  div.message {
     height: 200px;
     line-height: 200px;
-    font-size: 200px;
+    border: 1px solid red;
+  }
+
+  /* line 184, ../sass/screen.scss */
+  textarea {
+    height: 150px;
+    margin: 25px 0;
     border: 1px solid red;
   }
 }

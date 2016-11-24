@@ -125,7 +125,8 @@ ul.menu li a {
     border: none;
     border: solid 1px #ccc;
     @include box-shadow(none);
-    width: 80%;
+    width: 94%;
+    display: inline;
 }
 
 
@@ -134,7 +135,7 @@ ul.menu li a {
 }
 
 textarea {
-    width: 60%;
+    // width: 60%;
     resize: none;
 }
 
@@ -163,19 +164,26 @@ textarea {
 
     [type="text"], [type="email"] {
         height: 50px;
-    }
-
-    p.name, p.email {
-        height: 100px;
-        line-height: 100px;
-        font-size: 100px;
         @include debug(red);
     }
 
-    p.message {
+    div.name, div.email {
+        height: 100px;
+        line-height: 100px;
+        // font-size: 100px;
+        @include debug(red);
+    }
+
+    div.message {
         height: 200px;
         line-height: 200px;
-        font-size: 200px;
+        // font-size: 200px;
+        @include debug(red);
+    }
+
+    textarea {
+        height: 150px;
+        margin: 25px 0;
         @include debug(red);
     }
 }

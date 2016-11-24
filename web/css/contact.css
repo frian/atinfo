@@ -539,64 +539,356 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #ff0066;
 }
 
-/* line 132, ../sass/contact.scss */
-.curly-brace {
-  height: 300px;
-  width: 20px;
-  position: absolute;
-  border: 1px solid red;
+/* line 134, ../sass/contact.scss */
+.open-brace-position {
+  float: left;
+  margin: 10px 0;
 }
 
-/* line 140, ../sass/contact.scss */
-.a1 {
-  width: 100%;
-  height: 10%;
-  border-right: 5px solid;
-  border-top-right-radius: 20px;
+/* line 139, ../sass/contact.scss */
+.close-brace-position {
+  float: right;
+  margin: 10px 0;
 }
 
 /* line 147, ../sass/contact.scss */
-.a2 {
-  width: 100%;
-  height: 30%;
-  border-right: 5px solid;
+.name-curly-brace-open {
+  height: 80px;
+  width: 10px;
+  display: inline-block;
 }
 
-/* line 153, ../sass/contact.scss */
-.a3 {
-  margin-left: 20px;
+/* line 154, ../sass/contact.scss */
+.name-curly-brace-open .b1 {
   width: 100%;
   height: 10%;
-  border-left: 5px solid;
-  border-bottom-left-radius: 20px;
+  border-left: 4px solid;
+  border-top-left-radius: 10px;
 }
 
 /* line 161, ../sass/contact.scss */
-.a4 {
-  margin-left: 20px;
-  width: 100%;
-  height: 10%;
-  border-left: 5px solid;
-  border-top-left-radius: 20px;
-}
-
-/* line 169, ../sass/contact.scss */
-.a5 {
+.name-curly-brace-open .b2 {
+  margin-left: -10px;
   width: 100%;
   height: 30%;
-  border-right: 5px solid;
+  border-right: 4px solid;
 }
 
-/* line 175, ../sass/contact.scss */
-.a6 {
+/* line 168, ../sass/contact.scss */
+.name-curly-brace-open .b3 {
+  margin-left: -10px;
   width: 100%;
   height: 10%;
-  border-right: 5px solid;
-  border-bottom-right-radius: 20px;
+  border-right: 4px solid;
+  border-bottom-right-radius: 10px;
+}
+
+/* line 176, ../sass/contact.scss */
+.name-curly-brace-open .b4 {
+  margin-left: -10px;
+  width: 100%;
+  height: 10%;
+  border-right: 4px solid;
+  border-top-right-radius: 10px;
+}
+
+/* line 184, ../sass/contact.scss */
+.name-curly-brace-open .b5 {
+  margin-left: -10px;
+  width: 100%;
+  height: 30%;
+  border-right: 4px solid;
+}
+
+/* line 191, ../sass/contact.scss */
+.name-curly-brace-open .b6 {
+  width: 100%;
+  height: 10%;
+  border-left: 4px solid;
+  border-bottom-left-radius: 10px;
+}
+
+/* line 203, ../sass/contact.scss */
+.name-curly-brace-close {
+  height: 80px;
+  width: 10px;
+  display: inline-block;
+}
+
+/* line 210, ../sass/contact.scss */
+.name-curly-brace-close .b1 {
+  width: 100%;
+  height: 10%;
+  border-right: 4px solid;
+  border-top-right-radius: 10px;
+}
+
+/* line 217, ../sass/contact.scss */
+.name-curly-brace-close .b2 {
+  width: 100%;
+  height: 30%;
+  border-right: 4px solid;
+}
+
+/* line 223, ../sass/contact.scss */
+.name-curly-brace-close .b3 {
+  margin-left: 10px;
+  width: 100%;
+  height: 10%;
+  border-left: 4px solid;
+  border-bottom-left-radius: 10px;
+}
+
+/* line 231, ../sass/contact.scss */
+.name-curly-brace-close .b4 {
+  margin-left: 10px;
+  width: 100%;
+  height: 10%;
+  border-left: 4px solid;
+  border-top-left-radius: 10px;
+}
+
+/* line 239, ../sass/contact.scss */
+.name-curly-brace-close .b5 {
+  width: 100%;
+  height: 30%;
+  border-right: 4px solid;
+}
+
+/* line 245, ../sass/contact.scss */
+.name-curly-brace-close .b6 {
+  width: 100%;
+  height: 10%;
+  border-right: 4px solid;
+  border-bottom-right-radius: 10px;
+}
+
+/* line 147, ../sass/contact.scss */
+.email-curly-brace-open {
+  height: 80px;
+  width: 10px;
+  display: inline-block;
+}
+
+/* line 154, ../sass/contact.scss */
+.email-curly-brace-open .b1 {
+  width: 100%;
+  height: 10%;
+  border-left: 4px solid;
+  border-top-left-radius: 10px;
+}
+
+/* line 161, ../sass/contact.scss */
+.email-curly-brace-open .b2 {
+  margin-left: -10px;
+  width: 100%;
+  height: 30%;
+  border-right: 4px solid;
+}
+
+/* line 168, ../sass/contact.scss */
+.email-curly-brace-open .b3 {
+  margin-left: -10px;
+  width: 100%;
+  height: 10%;
+  border-right: 4px solid;
+  border-bottom-right-radius: 10px;
+}
+
+/* line 176, ../sass/contact.scss */
+.email-curly-brace-open .b4 {
+  margin-left: -10px;
+  width: 100%;
+  height: 10%;
+  border-right: 4px solid;
+  border-top-right-radius: 10px;
+}
+
+/* line 184, ../sass/contact.scss */
+.email-curly-brace-open .b5 {
+  margin-left: -10px;
+  width: 100%;
+  height: 30%;
+  border-right: 4px solid;
+}
+
+/* line 191, ../sass/contact.scss */
+.email-curly-brace-open .b6 {
+  width: 100%;
+  height: 10%;
+  border-left: 4px solid;
+  border-bottom-left-radius: 10px;
+}
+
+/* line 203, ../sass/contact.scss */
+.email-curly-brace-close {
+  height: 80px;
+  width: 10px;
+  display: inline-block;
+}
+
+/* line 210, ../sass/contact.scss */
+.email-curly-brace-close .b1 {
+  width: 100%;
+  height: 10%;
+  border-right: 4px solid;
+  border-top-right-radius: 10px;
+}
+
+/* line 217, ../sass/contact.scss */
+.email-curly-brace-close .b2 {
+  width: 100%;
+  height: 30%;
+  border-right: 4px solid;
+}
+
+/* line 223, ../sass/contact.scss */
+.email-curly-brace-close .b3 {
+  margin-left: 10px;
+  width: 100%;
+  height: 10%;
+  border-left: 4px solid;
+  border-bottom-left-radius: 10px;
+}
+
+/* line 231, ../sass/contact.scss */
+.email-curly-brace-close .b4 {
+  margin-left: 10px;
+  width: 100%;
+  height: 10%;
+  border-left: 4px solid;
+  border-top-left-radius: 10px;
+}
+
+/* line 239, ../sass/contact.scss */
+.email-curly-brace-close .b5 {
+  width: 100%;
+  height: 30%;
+  border-right: 4px solid;
+}
+
+/* line 245, ../sass/contact.scss */
+.email-curly-brace-close .b6 {
+  width: 100%;
+  height: 10%;
+  border-right: 4px solid;
+  border-bottom-right-radius: 10px;
+}
+
+/* line 147, ../sass/contact.scss */
+.message-curly-brace-open {
+  height: 180px;
+  width: 10px;
+  display: inline-block;
+}
+
+/* line 154, ../sass/contact.scss */
+.message-curly-brace-open .b1 {
+  width: 100%;
+  height: 10%;
+  border-left: 4px solid;
+  border-top-left-radius: 10px;
+}
+
+/* line 161, ../sass/contact.scss */
+.message-curly-brace-open .b2 {
+  margin-left: -10px;
+  width: 100%;
+  height: 30%;
+  border-right: 4px solid;
+}
+
+/* line 168, ../sass/contact.scss */
+.message-curly-brace-open .b3 {
+  margin-left: -10px;
+  width: 100%;
+  height: 10%;
+  border-right: 4px solid;
+  border-bottom-right-radius: 10px;
+}
+
+/* line 176, ../sass/contact.scss */
+.message-curly-brace-open .b4 {
+  margin-left: -10px;
+  width: 100%;
+  height: 10%;
+  border-right: 4px solid;
+  border-top-right-radius: 10px;
+}
+
+/* line 184, ../sass/contact.scss */
+.message-curly-brace-open .b5 {
+  margin-left: -10px;
+  width: 100%;
+  height: 30%;
+  border-right: 4px solid;
+}
+
+/* line 191, ../sass/contact.scss */
+.message-curly-brace-open .b6 {
+  width: 100%;
+  height: 10%;
+  border-left: 4px solid;
+  border-bottom-left-radius: 10px;
+}
+
+/* line 203, ../sass/contact.scss */
+.message-curly-brace-close {
+  height: 180px;
+  width: 10px;
+  display: inline-block;
+}
+
+/* line 210, ../sass/contact.scss */
+.message-curly-brace-close .b1 {
+  width: 100%;
+  height: 10%;
+  border-right: 4px solid;
+  border-top-right-radius: 10px;
+}
+
+/* line 217, ../sass/contact.scss */
+.message-curly-brace-close .b2 {
+  width: 100%;
+  height: 30%;
+  border-right: 4px solid;
+}
+
+/* line 223, ../sass/contact.scss */
+.message-curly-brace-close .b3 {
+  margin-left: 10px;
+  width: 100%;
+  height: 10%;
+  border-left: 4px solid;
+  border-bottom-left-radius: 10px;
+}
+
+/* line 231, ../sass/contact.scss */
+.message-curly-brace-close .b4 {
+  margin-left: 10px;
+  width: 100%;
+  height: 10%;
+  border-left: 4px solid;
+  border-top-left-radius: 10px;
+}
+
+/* line 239, ../sass/contact.scss */
+.message-curly-brace-close .b5 {
+  width: 100%;
+  height: 30%;
+  border-right: 4px solid;
+}
+
+/* line 245, ../sass/contact.scss */
+.message-curly-brace-close .b6 {
+  width: 100%;
+  height: 10%;
+  border-right: 4px solid;
+  border-bottom-right-radius: 10px;
 }
 
 @media all and (min-width: 40em) {
-  /* line 187, ../sass/contact.scss */
+  /* line 272, ../sass/contact.scss */
   #contactContent {
     position: absolute;
     top: 50%;
@@ -608,79 +900,79 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border: 1px solid red;
   }
 
-  /* line 201, ../sass/contact.scss */
+  /* line 286, ../sass/contact.scss */
   #contactFlowerContainer1 {
     top: 0;
     left: 0px;
   }
 
-  /* line 201, ../sass/contact.scss */
+  /* line 286, ../sass/contact.scss */
   #contactFlowerContainer2 {
     top: 0;
     left: 200px;
   }
 
-  /* line 201, ../sass/contact.scss */
+  /* line 286, ../sass/contact.scss */
   #contactFlowerContainer3 {
     top: 0;
     left: 400px;
   }
 
-  /* line 201, ../sass/contact.scss */
+  /* line 286, ../sass/contact.scss */
   #contactFlowerContainer4 {
     top: 0;
     left: 600px;
   }
 
-  /* line 208, ../sass/contact.scss */
+  /* line 293, ../sass/contact.scss */
   #contactFlowerContainer5 {
     top: 200px;
     right: 0;
   }
 
-  /* line 208, ../sass/contact.scss */
+  /* line 293, ../sass/contact.scss */
   #contactFlowerContainer6 {
     top: 400px;
     right: 0;
   }
 
-  /* line 215, ../sass/contact.scss */
+  /* line 300, ../sass/contact.scss */
   #contactFlowerContainer7 {
     bottom: 0;
     right: 0px;
   }
 
-  /* line 215, ../sass/contact.scss */
+  /* line 300, ../sass/contact.scss */
   #contactFlowerContainer8 {
     bottom: 0;
     right: 200px;
   }
 
-  /* line 215, ../sass/contact.scss */
+  /* line 300, ../sass/contact.scss */
   #contactFlowerContainer9 {
     bottom: 0;
     right: 400px;
   }
 
-  /* line 215, ../sass/contact.scss */
+  /* line 300, ../sass/contact.scss */
   #contactFlowerContainer10 {
     bottom: 0;
     right: 600px;
   }
 
-  /* line 222, ../sass/contact.scss */
+  /* line 307, ../sass/contact.scss */
   #contactFlowerContainer11 {
     bottom: 200px;
     left: 0;
   }
 
-  /* line 222, ../sass/contact.scss */
+  /* line 307, ../sass/contact.scss */
   #contactFlowerContainer12 {
     bottom: 400px;
     left: 0;
   }
 
-  /* line 229, ../sass/contact.scss */
+  /* line 314, ../sass/contact.scss */
   .contactPetal {
     position: absolute;
     width: 60px;
