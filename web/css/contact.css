@@ -77,20 +77,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-top: -100px;
   margin-left: -150px;
   border: 1px solid red;
+  text-align: center;
 }
 
-/* line 18, ../sass/contact.scss */
+/* line 19, ../sass/contact.scss */
 #contactContent h1 {
   padding: 0 0 10px 0;
   font-size: 150%;
 }
 
-/* line 23, ../sass/contact.scss */
+/* line 24, ../sass/contact.scss */
 #contactContent p {
   padding: 5px 0;
 }
 
-/* line 28, ../sass/contact.scss */
+/* line 29, ../sass/contact.scss */
 .contactFlowerContainer {
   position: absolute;
   width: 0;
@@ -98,79 +99,79 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border: 1px solid red;
 }
 
-/* line 40, ../sass/contact.scss */
+/* line 41, ../sass/contact.scss */
 #contactFlowerContainer1 {
   top: 0;
   left: 0px;
 }
 
-/* line 40, ../sass/contact.scss */
+/* line 41, ../sass/contact.scss */
 #contactFlowerContainer2 {
   top: 0;
   left: 100px;
 }
 
-/* line 40, ../sass/contact.scss */
+/* line 41, ../sass/contact.scss */
 #contactFlowerContainer3 {
   top: 0;
   left: 200px;
 }
 
-/* line 40, ../sass/contact.scss */
+/* line 41, ../sass/contact.scss */
 #contactFlowerContainer4 {
   top: 0;
   left: 300px;
 }
 
-/* line 47, ../sass/contact.scss */
+/* line 48, ../sass/contact.scss */
 #contactFlowerContainer5 {
   top: 83.33333px;
   right: 0;
 }
 
-/* line 47, ../sass/contact.scss */
+/* line 48, ../sass/contact.scss */
 #contactFlowerContainer6 {
   top: 166.66667px;
   right: 0;
 }
 
-/* line 54, ../sass/contact.scss */
+/* line 55, ../sass/contact.scss */
 #contactFlowerContainer7 {
   bottom: 0;
   right: 0px;
 }
 
-/* line 54, ../sass/contact.scss */
+/* line 55, ../sass/contact.scss */
 #contactFlowerContainer8 {
   bottom: 0;
   right: 100px;
 }
 
-/* line 54, ../sass/contact.scss */
+/* line 55, ../sass/contact.scss */
 #contactFlowerContainer9 {
   bottom: 0;
   right: 200px;
 }
 
-/* line 54, ../sass/contact.scss */
+/* line 55, ../sass/contact.scss */
 #contactFlowerContainer10 {
   bottom: 0;
   right: 300px;
 }
 
-/* line 61, ../sass/contact.scss */
+/* line 62, ../sass/contact.scss */
 #contactFlowerContainer11 {
   bottom: 83.33333px;
   left: 0;
 }
 
-/* line 61, ../sass/contact.scss */
+/* line 62, ../sass/contact.scss */
 #contactFlowerContainer12 {
   bottom: 166.66667px;
   left: 0;
 }
 
-/* line 72, ../sass/contact.scss */
+/* line 73, ../sass/contact.scss */
 #contactFlowerContainer1 {
   -moz-transform: rotate(-91deg);
   -ms-transform: rotate(-91deg);
@@ -178,7 +179,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(-91deg);
 }
 
-/* line 72, ../sass/contact.scss */
+/* line 77, ../sass/contact.scss */
+#contactFlowerContainer1 .contactPetal {
+  background-color: red;
+}
+
+/* line 73, ../sass/contact.scss */
 #contactFlowerContainer4 {
   -moz-transform: rotate(-1deg);
   -ms-transform: rotate(-1deg);
@@ -186,7 +192,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(-1deg);
 }
 
-/* line 72, ../sass/contact.scss */
+/* line 77, ../sass/contact.scss */
+#contactFlowerContainer4 .contactPetal {
+  background-color: cyan;
+}
+
+/* line 73, ../sass/contact.scss */
 #contactFlowerContainer7 {
   -moz-transform: rotate(89deg);
   -ms-transform: rotate(89deg);
@@ -194,7 +205,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(89deg);
 }
 
-/* line 72, ../sass/contact.scss */
+/* line 77, ../sass/contact.scss */
+#contactFlowerContainer7 .contactPetal {
+  background-color: red;
+}
+
+/* line 73, ../sass/contact.scss */
 #contactFlowerContainer10 {
   -moz-transform: rotate(179deg);
   -ms-transform: rotate(179deg);
@@ -202,7 +218,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(179deg);
 }
 
-/* line 82, ../sass/contact.scss */
+/* line 77, ../sass/contact.scss */
+#contactFlowerContainer10 .contactPetal {
+  background-color: cyan;
+}
+
+/* line 87, ../sass/contact.scss */
 #contactFlowerContainer2 {
   -moz-transform: rotate(-1deg);
   -ms-transform: rotate(-1deg);
@@ -210,7 +231,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(-1deg);
 }
 
-/* line 82, ../sass/contact.scss */
+/* line 91, ../sass/contact.scss */
+#contactFlowerContainer2 .contactPetal {
+  background-color: yellow;
+}
+
+/* line 87, ../sass/contact.scss */
 #contactFlowerContainer3 {
   -moz-transform: rotate(-1deg);
   -ms-transform: rotate(-1deg);
@@ -218,7 +244,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(-1deg);
 }
 
-/* line 82, ../sass/contact.scss */
+/* line 91, ../sass/contact.scss */
+#contactFlowerContainer3 .contactPetal {
+  background-color: lime;
+}
+
+/* line 87, ../sass/contact.scss */
 #contactFlowerContainer5 {
   -moz-transform: rotate(89deg);
   -ms-transform: rotate(89deg);
@@ -226,7 +257,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(89deg);
 }
 
-/* line 82, ../sass/contact.scss */
+/* line 91, ../sass/contact.scss */
+#contactFlowerContainer5 .contactPetal {
+  background-color: blue;
+}
+
+/* line 87, ../sass/contact.scss */
 #contactFlowerContainer6 {
   -moz-transform: rotate(89deg);
   -ms-transform: rotate(89deg);
@@ -234,7 +270,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(89deg);
 }
 
-/* line 82, ../sass/contact.scss */
+/* line 91, ../sass/contact.scss */
+#contactFlowerContainer6 .contactPetal {
+  background-color: magenta;
+}
+
+/* line 87, ../sass/contact.scss */
 #contactFlowerContainer8 {
   -moz-transform: rotate(179deg);
   -ms-transform: rotate(179deg);
@@ -242,7 +283,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(179deg);
 }
 
-/* line 82, ../sass/contact.scss */
+/* line 91, ../sass/contact.scss */
+#contactFlowerContainer8 .contactPetal {
+  background-color: yellow;
+}
+
+/* line 87, ../sass/contact.scss */
 #contactFlowerContainer9 {
   -moz-transform: rotate(179deg);
   -ms-transform: rotate(179deg);
@@ -250,7 +296,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(179deg);
 }
 
-/* line 82, ../sass/contact.scss */
+/* line 91, ../sass/contact.scss */
+#contactFlowerContainer9 .contactPetal {
+  background-color: lime;
+}
+
+/* line 87, ../sass/contact.scss */
 #contactFlowerContainer11 {
   -moz-transform: rotate(269deg);
   -ms-transform: rotate(269deg);
@@ -258,7 +309,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(269deg);
 }
 
-/* line 82, ../sass/contact.scss */
+/* line 91, ../sass/contact.scss */
+#contactFlowerContainer11 .contactPetal {
+  background-color: blue;
+}
+
+/* line 87, ../sass/contact.scss */
 #contactFlowerContainer12 {
   -moz-transform: rotate(269deg);
   -ms-transform: rotate(269deg);
@@ -266,7 +322,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(269deg);
 }
 
-/* line 88, ../sass/contact.scss */
+/* line 91, ../sass/contact.scss */
+#contactFlowerContainer12 .contactPetal {
+  background-color: magenta;
+}
+
+/* line 97, ../sass/contact.scss */
 .contactPetal {
   -moz-transform-origin: left top;
   -ms-transform-origin: left top;
@@ -275,13 +336,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: absolute;
   width: 60px;
   height: 60px;
-  border: 1px solid red;
-  -moz-border-radius: 0% 100%;
-  -webkit-border-radius: 0%;
-  border-radius: 0% 100%;
+  border: 2px solid #eee;
+  -moz-border-radius: 5% 100%;
+  -webkit-border-radius: 5%;
+  border-radius: 5% 100%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
 }
 
-/* line 99, ../sass/contact.scss */
+/* line 109, ../sass/contact.scss */
 .contactPetal1 {
   -moz-transform: rotate(145deg);
   -ms-transform: rotate(145deg);
@@ -289,7 +352,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(145deg);
 }
 
-/* line 99, ../sass/contact.scss */
+/* line 109, ../sass/contact.scss */
 .contactPetal2 {
   -moz-transform: rotate(163deg);
   -ms-transform: rotate(163deg);
@@ -297,7 +360,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(163deg);
 }
 
-/* line 99, ../sass/contact.scss */
+/* line 109, ../sass/contact.scss */
 .contactPetal3 {
   -moz-transform: rotate(181deg);
   -ms-transform: rotate(181deg);
@@ -305,7 +368,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(181deg);
 }
 
-/* line 99, ../sass/contact.scss */
+/* line 109, ../sass/contact.scss */
 .contactPetal4 {
   -moz-transform: rotate(199deg);
   -ms-transform: rotate(199deg);
@@ -313,7 +376,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(199deg);
 }
 
-/* line 99, ../sass/contact.scss */
+/* line 109, ../sass/contact.scss */
 .contactPetal5 {
   -moz-transform: rotate(217deg);
   -ms-transform: rotate(217deg);
@@ -321,7 +384,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(217deg);
 }
 
-/* line 99, ../sass/contact.scss */
+/* line 109, ../sass/contact.scss */
 .contactPetal6 {
   -moz-transform: rotate(235deg);
   -ms-transform: rotate(235deg);
@@ -329,7 +392,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(235deg);
 }
 
-/* line 99, ../sass/contact.scss */
+/* line 109, ../sass/contact.scss */
 .contactPetal7 {
   -moz-transform: rotate(253deg);
   -ms-transform: rotate(253deg);
@@ -337,7 +400,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(253deg);
 }
 
-/* line 99, ../sass/contact.scss */
+/* line 109, ../sass/contact.scss */
 .contactPetal8 {
   -moz-transform: rotate(271deg);
   -ms-transform: rotate(271deg);
@@ -345,7 +408,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(271deg);
 }
 
-/* line 99, ../sass/contact.scss */
+/* line 109, ../sass/contact.scss */
 .contactPetal9 {
   -moz-transform: rotate(289deg);
   -ms-transform: rotate(289deg);
@@ -353,7 +416,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(289deg);
 }
 
-/* line 99, ../sass/contact.scss */
+/* line 109, ../sass/contact.scss */
 .contactPetal10 {
   -moz-transform: rotate(307deg);
   -ms-transform: rotate(307deg);
@@ -361,7 +424,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(307deg);
 }
 
-/* line 99, ../sass/contact.scss */
+/* line 109, ../sass/contact.scss */
 .contactPetal11 {
   -moz-transform: rotate(325deg);
   -ms-transform: rotate(325deg);
@@ -369,7 +432,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(325deg);
 }
 
-/* line 99, ../sass/contact.scss */
+/* line 109, ../sass/contact.scss */
 .contactPetal12 {
   -moz-transform: rotate(343deg);
   -ms-transform: rotate(343deg);
@@ -377,7 +440,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(343deg);
 }
 
-/* line 99, ../sass/contact.scss */
+/* line 109, ../sass/contact.scss */
 .contactPetal13 {
   -moz-transform: rotate(361deg);
   -ms-transform: rotate(361deg);
@@ -385,7 +448,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(361deg);
 }
 
-/* line 99, ../sass/contact.scss */
+/* line 109, ../sass/contact.scss */
 .contactPetal14 {
   -moz-transform: rotate(379deg);
   -ms-transform: rotate(379deg);
@@ -393,7 +456,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(379deg);
 }
 
-/* line 99, ../sass/contact.scss */
+/* line 109, ../sass/contact.scss */
 .contactPetal15 {
   -moz-transform: rotate(397deg);
   -ms-transform: rotate(397deg);
@@ -401,8 +464,139 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(397deg);
 }
 
+/* line 115, ../sass/contact.scss */
+.contactPetalAngleColor1 {
+  background-color: red;
+}
+
+/* line 115, ../sass/contact.scss */
+.contactPetalAngleColor2 {
+  background-color: #ff6600;
+}
+
+/* line 115, ../sass/contact.scss */
+.contactPetalAngleColor3 {
+  background-color: #ffcc00;
+}
+
+/* line 115, ../sass/contact.scss */
+.contactPetalAngleColor4 {
+  background-color: #ccff00;
+}
+
+/* line 115, ../sass/contact.scss */
+.contactPetalAngleColor5 {
+  background-color: #66ff00;
+}
+
+/* line 115, ../sass/contact.scss */
+.contactPetalAngleColor6 {
+  background-color: lime;
+}
+
+/* line 115, ../sass/contact.scss */
+.contactPetalAngleColor7 {
+  background-color: #00ff66;
+}
+
+/* line 115, ../sass/contact.scss */
+.contactPetalAngleColor8 {
+  background-color: #00ffcc;
+}
+
+/* line 115, ../sass/contact.scss */
+.contactPetalAngleColor9 {
+  background-color: #00ccff;
+}
+
+/* line 115, ../sass/contact.scss */
+.contactPetalAngleColor10 {
+  background-color: #0066ff;
+}
+
+/* line 115, ../sass/contact.scss */
+.contactPetalAngleColor11 {
+  background-color: blue;
+}
+
+/* line 115, ../sass/contact.scss */
+.contactPetalAngleColor12 {
+  background-color: #6600ff;
+}
+
+/* line 115, ../sass/contact.scss */
+.contactPetalAngleColor13 {
+  background-color: #cc00ff;
+}
+
+/* line 115, ../sass/contact.scss */
+.contactPetalAngleColor14 {
+  background-color: #ff00cc;
+}
+
+/* line 115, ../sass/contact.scss */
+.contactPetalAngleColor15 {
+  background-color: #ff0066;
+}
+
+/* line 132, ../sass/contact.scss */
+.curly-brace {
+  height: 300px;
+  width: 20px;
+  position: absolute;
+  border: 1px solid red;
+}
+
+/* line 140, ../sass/contact.scss */
+.a1 {
+  width: 100%;
+  height: 10%;
+  border-right: 5px solid;
+  border-top-right-radius: 20px;
+}
+
+/* line 147, ../sass/contact.scss */
+.a2 {
+  width: 100%;
+  height: 30%;
+  border-right: 5px solid;
+}
+
+/* line 153, ../sass/contact.scss */
+.a3 {
+  margin-left: 20px;
+  width: 100%;
+  height: 10%;
+  border-left: 5px solid;
+  border-bottom-left-radius: 20px;
+}
+
+/* line 161, ../sass/contact.scss */
+.a4 {
+  margin-left: 20px;
+  width: 100%;
+  height: 10%;
+  border-left: 5px solid;
+  border-top-left-radius: 20px;
+}
+
+/* line 169, ../sass/contact.scss */
+.a5 {
+  width: 100%;
+  height: 30%;
+  border-right: 5px solid;
+}
+
+/* line 175, ../sass/contact.scss */
+.a6 {
+  width: 100%;
+  height: 10%;
+  border-right: 5px solid;
+  border-bottom-right-radius: 20px;
+}
+
 @media all and (min-width: 40em) {
-  /* line 116, ../sass/contact.scss */
+  /* line 187, ../sass/contact.scss */
   #contactContent {
     position: absolute;
     top: 50%;
@@ -414,82 +608,82 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border: 1px solid red;
   }
 
-  /* line 130, ../sass/contact.scss */
+  /* line 201, ../sass/contact.scss */
   #contactFlowerContainer1 {
     top: 0;
     left: 0px;
   }
 
-  /* line 130, ../sass/contact.scss */
+  /* line 201, ../sass/contact.scss */
   #contactFlowerContainer2 {
     top: 0;
     left: 200px;
   }
 
-  /* line 130, ../sass/contact.scss */
+  /* line 201, ../sass/contact.scss */
   #contactFlowerContainer3 {
     top: 0;
     left: 400px;
   }
 
-  /* line 130, ../sass/contact.scss */
+  /* line 201, ../sass/contact.scss */
   #contactFlowerContainer4 {
     top: 0;
     left: 600px;
   }
 
-  /* line 137, ../sass/contact.scss */
+  /* line 208, ../sass/contact.scss */
   #contactFlowerContainer5 {
     top: 200px;
     right: 0;
   }
 
-  /* line 137, ../sass/contact.scss */
+  /* line 208, ../sass/contact.scss */
   #contactFlowerContainer6 {
     top: 400px;
     right: 0;
   }
 
-  /* line 144, ../sass/contact.scss */
+  /* line 215, ../sass/contact.scss */
   #contactFlowerContainer7 {
     bottom: 0;
     right: 0px;
   }
 
-  /* line 144, ../sass/contact.scss */
+  /* line 215, ../sass/contact.scss */
   #contactFlowerContainer8 {
     bottom: 0;
     right: 200px;
   }
 
-  /* line 144, ../sass/contact.scss */
+  /* line 215, ../sass/contact.scss */
   #contactFlowerContainer9 {
     bottom: 0;
     right: 400px;
   }
 
-  /* line 144, ../sass/contact.scss */
+  /* line 215, ../sass/contact.scss */
   #contactFlowerContainer10 {
     bottom: 0;
     right: 600px;
   }
 
-  /* line 151, ../sass/contact.scss */
+  /* line 222, ../sass/contact.scss */
   #contactFlowerContainer11 {
     bottom: 200px;
     left: 0;
   }
 
-  /* line 151, ../sass/contact.scss */
+  /* line 222, ../sass/contact.scss */
   #contactFlowerContainer12 {
     bottom: 400px;
     left: 0;
   }
 
-  /* line 158, ../sass/contact.scss */
+  /* line 229, ../sass/contact.scss */
   .contactPetal {
     position: absolute;
-    width: 120px;
-    height: 120px;
+    width: 60px;
+    height: 60px;
   }
 }

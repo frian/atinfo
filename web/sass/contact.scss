@@ -12,6 +12,7 @@ $contactContentHeight: 250px;
     margin-top: - ($contactContentHeight / 2) + 25px;
     margin-left: - $contactContentWidth / 2;
     @include debug(red);
+    text-align: center;
 }
 
 
@@ -72,6 +73,10 @@ $ids: 1,4,7,10;
     #contactFlowerContainer#{nth($ids, $i)} {
         @include transform(rotate(-91deg + ( ($i - 1) * 90deg) ));
     }
+
+    #contactFlowerContainer#{nth($ids, $i)} .contactPetal {
+        background-color: hsl(( ((nth($ids, $i) - 1) * 60 ) % 360 ), 100%, 50%);
+    }
 }
 
 $ids: 2,3,5,6,8,9,11,12;
@@ -82,6 +87,10 @@ $angles: -1,-1,89,89,179,179,269,269;
     #contactFlowerContainer#{nth($ids, $i)} {
         @include transform(rotate(nth($angles, $i)+deg));
     }
+
+    #contactFlowerContainer#{nth($ids, $i)} .contactPetal {
+        background-color: hsl(( ((nth($ids, $i) - 1) * 60 ) % 360 ), 100%, 50%);
+    }
 }
 
 
@@ -90,8 +99,9 @@ $angles: -1,-1,89,89,179,179,269,269;
     position: absolute;
     width: 60px;
     height: 60px;
-    @include debug(red);
-    @include border-radius(0% 100%);
+    border: 2px solid $bg-color;
+    @include border-radius(5% 100%);
+    @include opacity(0.7);
 }
 
 
@@ -101,12 +111,73 @@ $angles: -1,-1,89,89,179,179,269,269;
     }
 }
 
+@for $i from 1 through 15 {
+    .contactPetalAngleColor#{$i} {
+        background-color: hsl( (($i - 1) * 24 ) , 100%, 50%);
+    }
+}
+
+@for $i from 1 through 10 {
+    .contactPetalColor#{$i} {
+        // background-color: hsl( (($i - 1) * 36 ) , 100%, 50%);
+    }
+}
+
+
 // @for $i from 1 through 9 {
 //     .contactPetal#{$i} {
 //         @include transform(rotate((  (($i - 1) * 20) + 180 )+deg));
 //     }
 // }
+.curly-brace
+{
+  height: 300px;
+  width: 20px;
+  position: absolute;
+  @include debug(red);
+}
 
+.a1 {
+  width: 100%;
+  height: 10%;
+  border-right: 5px solid;
+  border-top-right-radius: 20px;
+}
+
+.a2 {
+  width: 100%;
+  height: 30%;
+  border-right: 5px solid;
+}
+
+.a3 {
+  margin-left: 20px;
+  width: 100%;
+  height: 10%;
+  border-left: 5px solid;
+  border-bottom-left-radius: 20px;
+}
+
+.a4 {
+  margin-left: 20px;
+  width: 100%;
+  height: 10%;
+  border-left: 5px solid;
+  border-top-left-radius: 20px;
+}
+
+.a5 {
+  width: 100%;
+  height: 30%;
+  border-right: 5px solid;
+}
+
+.a6 {
+  width: 100%;
+  height: 10%;
+  border-right: 5px solid;
+  border-bottom-right-radius: 20px;
+}
 
 @media all and (min-width: 40em) {
 
@@ -157,7 +228,7 @@ $angles: -1,-1,89,89,179,179,269,269;
 
     .contactPetal {
         position: absolute;
-        width: 120px;
-        height: 120px;
+        width: 60px;
+        height: 60px;
     }
 }

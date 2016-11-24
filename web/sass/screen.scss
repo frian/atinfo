@@ -116,24 +116,6 @@ ul.menu li a {
 	-- FORMS ---------------------------------------------------------------------
 */
 
-label {
-
-}
-
-.name input {
-    position: absolute;
-    right: 0;
-    width: 185px;
-}
-
-
-.email input {
-    position: absolute;
-    right: 0;
-    width: 150px;
-}
-
-
 [type="text"], [type="email"], textarea {
 
 	font-family : Muli;
@@ -141,8 +123,9 @@ label {
 	color : #222;
 	background-color : $bg-color;
     border: none;
-    border-bottom: solid 1px #ccc;
+    border: solid 1px #ccc;
     @include box-shadow(none);
+    width: 80%;
 }
 
 
@@ -151,7 +134,7 @@ label {
 }
 
 textarea {
-    width: 100%;
+    width: 60%;
     resize: none;
 }
 
@@ -176,5 +159,23 @@ textarea {
 
     [type="text"], [type="email"], textarea {
         font-size: 70%;
+    }
+
+    [type="text"], [type="email"] {
+        height: 50px;
+    }
+
+    p.name, p.email {
+        height: 100px;
+        line-height: 100px;
+        font-size: 100px;
+        @include debug(red);
+    }
+
+    p.message {
+        height: 200px;
+        line-height: 200px;
+        font-size: 200px;
+        @include debug(red);
     }
 }

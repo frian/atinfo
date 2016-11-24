@@ -172,50 +172,37 @@ ul.menu li a {
 /*
 	-- FORMS ---------------------------------------------------------------------
 */
-/* line 123, ../sass/screen.scss */
-.name input {
-  position: absolute;
-  right: 0;
-  width: 185px;
-}
-
-/* line 130, ../sass/screen.scss */
-.email input {
-  position: absolute;
-  right: 0;
-  width: 150px;
-}
-
-/* line 137, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 [type="text"], [type="email"], textarea {
   font-family: Muli;
   font-size: 80%;
   color: #222;
   background-color: #eee;
   border: none;
-  border-bottom: solid 1px #ccc;
+  border: solid 1px #ccc;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
+  width: 80%;
 }
 
-/* line 149, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 [type="text"]:focus, [type="email"]:focus, textarea:focus {
   background-color: #eee;
 }
 
-/* line 153, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 textarea {
-  width: 100%;
+  width: 60%;
   resize: none;
 }
 
-/* line 158, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 [type="submit"] {
   width: 100%;
 }
 
-/* line 163, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 .formErrors {
   color: red;
   font-size: 80%;
@@ -223,15 +210,36 @@ textarea {
 }
 
 @media all and (min-width: 40em) {
-  /* line 171, ../sass/screen.scss */
+  /* line 154, ../sass/screen.scss */
   #contact .page, #services .page {
     font-size: 200%;
     width: 600px;
     margin: auto;
   }
 
-  /* line 177, ../sass/screen.scss */
+  /* line 160, ../sass/screen.scss */
   [type="text"], [type="email"], textarea {
     font-size: 70%;
+  }
+
+  /* line 164, ../sass/screen.scss */
+  [type="text"], [type="email"] {
+    height: 50px;
+  }
+
+  /* line 168, ../sass/screen.scss */
+  p.name, p.email {
+    height: 100px;
+    line-height: 100px;
+    font-size: 100px;
+    border: 1px solid red;
+  }
+
+  /* line 175, ../sass/screen.scss */
+  p.message {
+    height: 200px;
+    line-height: 200px;
+    font-size: 200px;
+    border: 1px solid red;
   }
 }
