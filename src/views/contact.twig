@@ -10,54 +10,54 @@
 		  	<li><a href="/services">SERVICES</a></li>
 		</ul>
 	</div>
-	<div class="cell text-center">
 
-		<div class="page">
+    <div id="contactContent">
 
-			<h1>Bonjour,</h1>
+        <h1>Bonjour,</h1>
 
-			{{ form_start(form) }}
+        {{ form_start(form) }}
 
-            <p>
-                {{ form_label(form.name) }} {{ form_widget(form.name) }}
-            </p>
-            <p>
-                {{ form_label(form.email) }} {{ form_widget(form.email) }}
-            </p>
+        <p class="name">
+            {{ form_label(form.name) }} {{ form_widget(form.name) }}
+        </p>
+        <p class="email">
+            {{ form_label(form.email) }} {{ form_widget(form.email) }}
+        </p>
 
-            <p>
-                {{ form_label(form.message) }}
-            </p>
+        <p>
+            {{ form_label(form.message) }}
+        </p>
 
-            <p>
-                {{ form_widget(form.message) }}
-            </p>
+        <p>
+            {{ form_widget(form.message) }}
+        </p>
 
-            <div class="formErrors">
+        <div class="formErrors">
 
-                {% if form.name.vars.errors|length > 0 %}
-                    {% for error in form.name.vars.errors %}
-                        {{ error.message }}
-                    {% endfor %}
-                {% endif %}
+            {% if form.name.vars.errors|length > 0 %}
+                {% for error in form.name.vars.errors %}
+                    {{ error.message }}
+                {% endfor %}
+            {% endif %}
 
-                {% if form.message.vars.errors|length > 0 %}
-                    <br>
-                    {% for error in form.message.vars.errors %}
-                        {{ error.message }}
-                    {% endfor %}
-                {% endif %}
+            {% if form.message.vars.errors|length > 0 %}
+                <br>
+                {% for error in form.message.vars.errors %}
+                    {{ error.message }}
+                {% endfor %}
+            {% endif %}
 
-            </div>
+        </div>
 
 
-			{#{{ form_widget(form) }}#}
+        {#{{ form_widget(form) }}#}
 
-			<input type="submit" class="button large expanded" value="Envoyer">
+        <input type="submit" class="button large expanded" value="Envoyer">
 
-			{{ form_end(form) }}
-		</div>
-	</div>
+        {{ form_end(form) }}
+
+    </div>
+
 
 </div>
 

@@ -162,7 +162,30 @@ ul.menu li a {
   vertical-align: middle;
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
+#contactContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 250px;
+  width: 300px;
+  margin-top: -100px;
+  margin-left: -150px;
+  border: 1px solid red;
+}
+
+/* line 120, ../sass/screen.scss */
+#contactContent h1 {
+  padding: 0 0 10px 0;
+  font-size: 150%;
+}
+
+/* line 125, ../sass/screen.scss */
+#contactContent p {
+  padding: 5px 0;
+}
+
+/* line 129, ../sass/screen.scss */
 #contact .page {
   border: 1px solid red;
   line-height: 2em;
@@ -172,9 +195,24 @@ ul.menu li a {
 /*
 	-- FORMS ---------------------------------------------------------------------
 */
-/* line 119, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
+.name input {
+  position: absolute;
+  right: 0;
+  width: 185px;
+}
+
+/* line 152, ../sass/screen.scss */
+.email input {
+  position: absolute;
+  right: 0;
+  width: 150px;
+}
+
+/* line 159, ../sass/screen.scss */
 [type="text"], [type="email"], textarea {
   font-family: Muli;
+  font-size: 80%;
   color: #222;
   background-color: #eee;
   border: none;
@@ -184,17 +222,23 @@ ul.menu li a {
   box-shadow: none;
 }
 
-/* line 130, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 [type="text"]:focus, [type="email"]:focus, textarea:focus {
   background-color: #eee;
 }
 
-/* line 134, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 textarea {
+  width: 100%;
+  resize: none;
+}
+
+/* line 180, ../sass/screen.scss */
+[type="submit"] {
   width: 100%;
 }
 
-/* line 138, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 .formErrors {
   color: red;
   font-size: 80%;
@@ -202,14 +246,14 @@ textarea {
 }
 
 @media all and (min-width: 40em) {
-  /* line 146, ../sass/screen.scss */
+  /* line 193, ../sass/screen.scss */
   #contact .page, #services .page {
     font-size: 200%;
     width: 600px;
     margin: auto;
   }
 
-  /* line 152, ../sass/screen.scss */
+  /* line 199, ../sass/screen.scss */
   [type="text"], [type="email"], textarea {
     font-size: 70%;
   }

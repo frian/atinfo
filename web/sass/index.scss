@@ -11,7 +11,7 @@ $indexContentSize: 300px;
     width: $indexContent-width;
     margin-top: - $indexContent-height / 2;
     margin-left: - $indexContent-width / 2;
-    // @include debug(red);
+    @include debug(red);
 }
 
 #flowerContainer {

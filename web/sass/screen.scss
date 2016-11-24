@@ -104,6 +104,28 @@ ul.menu li a {
 }
 
 
+$contactContentWidth: 300px;
+$contactContentHeight: 250px;
+
+#contactContent {
+    @include abs-centered();
+    height: $contactContentHeight;
+    width: $contactContentWidth;
+    margin-top: - ($contactContentHeight / 2) + 25px;
+    margin-left: - $contactContentWidth / 2;
+    @include debug(red);
+}
+
+
+#contactContent h1 {
+    padding: 0 0 10px 0;
+    font-size: 150%;
+}
+
+#contactContent p {
+    padding: 5px 0;
+}
+
 #contact .page {
     @include debug(red);
     line-height: 2em;
@@ -116,9 +138,28 @@ ul.menu li a {
 	-- FORMS ---------------------------------------------------------------------
 */
 
+label {
+
+}
+
+.name input {
+    position: absolute;
+    right: 0;
+    width: 185px;
+}
+
+
+.email input {
+    position: absolute;
+    right: 0;
+    width: 150px;
+}
+
+
 [type="text"], [type="email"], textarea {
 
 	font-family : Muli;
+    font-size: 80%;
 	color : #222;
 	background-color : $bg-color;
     border: none;
@@ -133,6 +174,12 @@ ul.menu li a {
 
 textarea {
     width: 100%;
+    resize: none;
+}
+
+[type="submit"] {
+    width: 100%;
+    // @include debug(red);
 }
 
 .formErrors {
