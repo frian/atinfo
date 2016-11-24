@@ -58,8 +58,26 @@
 
 
         {# CREATE FLOWER CONTAINERS #}
-        {% for i in 1..12 %}
-            <div id="contactFlowerContainer{{ i }}" class="contactFlowerContainer"></div>
+        {% for i in [1,4,7,10] %}
+            <div id="contactFlowerContainer{{ i }}" class="contactFlowerContainer">
+
+                {# CREATE PETALS #}
+                {% for i in 1..10 %}
+                    <div class="contactPetal contactPetal{{ i }}"></div>
+                {% endfor %}
+
+            </div>
+        {% endfor %}
+
+        {% for i in [2,3,5,6,8,9,11,12] %}
+            <div id="contactFlowerContainer{{ i }}" class="contactFlowerContainer">
+
+                {# CREATE PETALS #}
+                {% for i in 1..6 %}
+                    <div class="contactPetal contactPetal{{ i }}"></div>
+                {% endfor %}
+
+            </div>
         {% endfor %}
 
     </div>

@@ -93,8 +93,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 28, ../sass/contact.scss */
 .contactFlowerContainer {
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 0;
+  height: 0;
   border: 1px solid red;
 }
 
@@ -170,8 +170,172 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   left: 0;
 }
 
+/* line 72, ../sass/contact.scss */
+#contactFlowerContainer1 {
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+/* line 72, ../sass/contact.scss */
+#contactFlowerContainer4 {
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+/* line 72, ../sass/contact.scss */
+#contactFlowerContainer7 {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 72, ../sass/contact.scss */
+#contactFlowerContainer10 {
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 82, ../sass/contact.scss */
+#contactFlowerContainer5 {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 82, ../sass/contact.scss */
+#contactFlowerContainer6 {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 82, ../sass/contact.scss */
+#contactFlowerContainer8 {
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 82, ../sass/contact.scss */
+#contactFlowerContainer9 {
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 82, ../sass/contact.scss */
+#contactFlowerContainer11 {
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+/* line 82, ../sass/contact.scss */
+#contactFlowerContainer12 {
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+/* line 89, ../sass/contact.scss */
+.contactPetal {
+  -moz-transform-origin: left top;
+  -ms-transform-origin: left top;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1px solid red;
+}
+
+/* line 99, ../sass/contact.scss */
+.contactPetal1 {
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 99, ../sass/contact.scss */
+.contactPetal2 {
+  -moz-transform: rotate(200deg);
+  -ms-transform: rotate(200deg);
+  -webkit-transform: rotate(200deg);
+  transform: rotate(200deg);
+}
+
+/* line 99, ../sass/contact.scss */
+.contactPetal3 {
+  -moz-transform: rotate(220deg);
+  -ms-transform: rotate(220deg);
+  -webkit-transform: rotate(220deg);
+  transform: rotate(220deg);
+}
+
+/* line 99, ../sass/contact.scss */
+.contactPetal4 {
+  -moz-transform: rotate(240deg);
+  -ms-transform: rotate(240deg);
+  -webkit-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+
+/* line 99, ../sass/contact.scss */
+.contactPetal5 {
+  -moz-transform: rotate(260deg);
+  -ms-transform: rotate(260deg);
+  -webkit-transform: rotate(260deg);
+  transform: rotate(260deg);
+}
+
+/* line 99, ../sass/contact.scss */
+.contactPetal6 {
+  -moz-transform: rotate(280deg);
+  -ms-transform: rotate(280deg);
+  -webkit-transform: rotate(280deg);
+  transform: rotate(280deg);
+}
+
+/* line 99, ../sass/contact.scss */
+.contactPetal7 {
+  -moz-transform: rotate(300deg);
+  -ms-transform: rotate(300deg);
+  -webkit-transform: rotate(300deg);
+  transform: rotate(300deg);
+}
+
+/* line 99, ../sass/contact.scss */
+.contactPetal8 {
+  -moz-transform: rotate(320deg);
+  -ms-transform: rotate(320deg);
+  -webkit-transform: rotate(320deg);
+  transform: rotate(320deg);
+}
+
+/* line 99, ../sass/contact.scss */
+.contactPetal9 {
+  -moz-transform: rotate(340deg);
+  -ms-transform: rotate(340deg);
+  -webkit-transform: rotate(340deg);
+  transform: rotate(340deg);
+}
+
 @media all and (min-width: 40em) {
-  /* line 75, ../sass/contact.scss */
+  /* line 116, ../sass/contact.scss */
   #contactContent {
     position: absolute;
     top: 50%;
@@ -183,75 +347,82 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border: 1px solid red;
   }
 
-  /* line 89, ../sass/contact.scss */
+  /* line 130, ../sass/contact.scss */
   #contactFlowerContainer1 {
     top: 0;
     left: 0px;
   }
 
-  /* line 89, ../sass/contact.scss */
+  /* line 130, ../sass/contact.scss */
   #contactFlowerContainer2 {
     top: 0;
     left: 200px;
   }
 
-  /* line 89, ../sass/contact.scss */
+  /* line 130, ../sass/contact.scss */
   #contactFlowerContainer3 {
     top: 0;
     left: 400px;
   }
 
-  /* line 89, ../sass/contact.scss */
+  /* line 130, ../sass/contact.scss */
   #contactFlowerContainer4 {
     top: 0;
     left: 600px;
   }
 
-  /* line 96, ../sass/contact.scss */
+  /* line 137, ../sass/contact.scss */
   #contactFlowerContainer5 {
     top: 200px;
     right: 0;
   }
 
-  /* line 96, ../sass/contact.scss */
+  /* line 137, ../sass/contact.scss */
   #contactFlowerContainer6 {
     top: 400px;
     right: 0;
   }
 
-  /* line 103, ../sass/contact.scss */
+  /* line 144, ../sass/contact.scss */
   #contactFlowerContainer7 {
     bottom: 0;
     right: 0px;
   }
 
-  /* line 103, ../sass/contact.scss */
+  /* line 144, ../sass/contact.scss */
   #contactFlowerContainer8 {
     bottom: 0;
     right: 200px;
   }
 
-  /* line 103, ../sass/contact.scss */
+  /* line 144, ../sass/contact.scss */
   #contactFlowerContainer9 {
     bottom: 0;
     right: 400px;
   }
 
-  /* line 103, ../sass/contact.scss */
+  /* line 144, ../sass/contact.scss */
   #contactFlowerContainer10 {
     bottom: 0;
     right: 600px;
   }
 
-  /* line 110, ../sass/contact.scss */
+  /* line 151, ../sass/contact.scss */
   #contactFlowerContainer11 {
     bottom: 200px;
     left: 0;
   }
 
-  /* line 110, ../sass/contact.scss */
+  /* line 151, ../sass/contact.scss */
   #contactFlowerContainer12 {
     bottom: 400px;
     left: 0;
+  }
+
+  /* line 158, ../sass/contact.scss */
+  .contactPetal {
+    position: absolute;
+    width: 80px;
+    height: 80px;
   }
 }
