@@ -172,166 +172,233 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 72, ../sass/contact.scss */
 #contactFlowerContainer1 {
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
+  -moz-transform: rotate(-91deg);
+  -ms-transform: rotate(-91deg);
+  -webkit-transform: rotate(-91deg);
+  transform: rotate(-91deg);
 }
 
 /* line 72, ../sass/contact.scss */
 #contactFlowerContainer4 {
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
+  -moz-transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
+  -webkit-transform: rotate(-1deg);
+  transform: rotate(-1deg);
 }
 
 /* line 72, ../sass/contact.scss */
 #contactFlowerContainer7 {
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
+  -moz-transform: rotate(89deg);
+  -ms-transform: rotate(89deg);
+  -webkit-transform: rotate(89deg);
+  transform: rotate(89deg);
 }
 
 /* line 72, ../sass/contact.scss */
 #contactFlowerContainer10 {
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+  -moz-transform: rotate(179deg);
+  -ms-transform: rotate(179deg);
+  -webkit-transform: rotate(179deg);
+  transform: rotate(179deg);
+}
+
+/* line 82, ../sass/contact.scss */
+#contactFlowerContainer2 {
+  -moz-transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
+  -webkit-transform: rotate(-1deg);
+  transform: rotate(-1deg);
+}
+
+/* line 82, ../sass/contact.scss */
+#contactFlowerContainer3 {
+  -moz-transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
+  -webkit-transform: rotate(-1deg);
+  transform: rotate(-1deg);
 }
 
 /* line 82, ../sass/contact.scss */
 #contactFlowerContainer5 {
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
+  -moz-transform: rotate(89deg);
+  -ms-transform: rotate(89deg);
+  -webkit-transform: rotate(89deg);
+  transform: rotate(89deg);
 }
 
 /* line 82, ../sass/contact.scss */
 #contactFlowerContainer6 {
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
+  -moz-transform: rotate(89deg);
+  -ms-transform: rotate(89deg);
+  -webkit-transform: rotate(89deg);
+  transform: rotate(89deg);
 }
 
 /* line 82, ../sass/contact.scss */
 #contactFlowerContainer8 {
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+  -moz-transform: rotate(179deg);
+  -ms-transform: rotate(179deg);
+  -webkit-transform: rotate(179deg);
+  transform: rotate(179deg);
 }
 
 /* line 82, ../sass/contact.scss */
 #contactFlowerContainer9 {
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+  -moz-transform: rotate(179deg);
+  -ms-transform: rotate(179deg);
+  -webkit-transform: rotate(179deg);
+  transform: rotate(179deg);
 }
 
 /* line 82, ../sass/contact.scss */
 #contactFlowerContainer11 {
-  -moz-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  -webkit-transform: rotate(270deg);
-  transform: rotate(270deg);
+  -moz-transform: rotate(269deg);
+  -ms-transform: rotate(269deg);
+  -webkit-transform: rotate(269deg);
+  transform: rotate(269deg);
 }
 
 /* line 82, ../sass/contact.scss */
 #contactFlowerContainer12 {
-  -moz-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  -webkit-transform: rotate(270deg);
-  transform: rotate(270deg);
+  -moz-transform: rotate(269deg);
+  -ms-transform: rotate(269deg);
+  -webkit-transform: rotate(269deg);
+  transform: rotate(269deg);
 }
 
-/* line 89, ../sass/contact.scss */
+/* line 88, ../sass/contact.scss */
 .contactPetal {
   -moz-transform-origin: left top;
   -ms-transform-origin: left top;
   -webkit-transform-origin: left top;
   transform-origin: left top;
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 60px;
+  height: 60px;
   border: 1px solid red;
+  -moz-border-radius: 0% 100%;
+  -webkit-border-radius: 0%;
+  border-radius: 0% 100%;
 }
 
 /* line 99, ../sass/contact.scss */
 .contactPetal1 {
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+  -moz-transform: rotate(145deg);
+  -ms-transform: rotate(145deg);
+  -webkit-transform: rotate(145deg);
+  transform: rotate(145deg);
 }
 
 /* line 99, ../sass/contact.scss */
 .contactPetal2 {
-  -moz-transform: rotate(200deg);
-  -ms-transform: rotate(200deg);
-  -webkit-transform: rotate(200deg);
-  transform: rotate(200deg);
+  -moz-transform: rotate(163deg);
+  -ms-transform: rotate(163deg);
+  -webkit-transform: rotate(163deg);
+  transform: rotate(163deg);
 }
 
 /* line 99, ../sass/contact.scss */
 .contactPetal3 {
-  -moz-transform: rotate(220deg);
-  -ms-transform: rotate(220deg);
-  -webkit-transform: rotate(220deg);
-  transform: rotate(220deg);
+  -moz-transform: rotate(181deg);
+  -ms-transform: rotate(181deg);
+  -webkit-transform: rotate(181deg);
+  transform: rotate(181deg);
 }
 
 /* line 99, ../sass/contact.scss */
 .contactPetal4 {
-  -moz-transform: rotate(240deg);
-  -ms-transform: rotate(240deg);
-  -webkit-transform: rotate(240deg);
-  transform: rotate(240deg);
+  -moz-transform: rotate(199deg);
+  -ms-transform: rotate(199deg);
+  -webkit-transform: rotate(199deg);
+  transform: rotate(199deg);
 }
 
 /* line 99, ../sass/contact.scss */
 .contactPetal5 {
-  -moz-transform: rotate(260deg);
-  -ms-transform: rotate(260deg);
-  -webkit-transform: rotate(260deg);
-  transform: rotate(260deg);
+  -moz-transform: rotate(217deg);
+  -ms-transform: rotate(217deg);
+  -webkit-transform: rotate(217deg);
+  transform: rotate(217deg);
 }
 
 /* line 99, ../sass/contact.scss */
 .contactPetal6 {
-  -moz-transform: rotate(280deg);
-  -ms-transform: rotate(280deg);
-  -webkit-transform: rotate(280deg);
-  transform: rotate(280deg);
+  -moz-transform: rotate(235deg);
+  -ms-transform: rotate(235deg);
+  -webkit-transform: rotate(235deg);
+  transform: rotate(235deg);
 }
 
 /* line 99, ../sass/contact.scss */
 .contactPetal7 {
-  -moz-transform: rotate(300deg);
-  -ms-transform: rotate(300deg);
-  -webkit-transform: rotate(300deg);
-  transform: rotate(300deg);
+  -moz-transform: rotate(253deg);
+  -ms-transform: rotate(253deg);
+  -webkit-transform: rotate(253deg);
+  transform: rotate(253deg);
 }
 
 /* line 99, ../sass/contact.scss */
 .contactPetal8 {
-  -moz-transform: rotate(320deg);
-  -ms-transform: rotate(320deg);
-  -webkit-transform: rotate(320deg);
-  transform: rotate(320deg);
+  -moz-transform: rotate(271deg);
+  -ms-transform: rotate(271deg);
+  -webkit-transform: rotate(271deg);
+  transform: rotate(271deg);
 }
 
 /* line 99, ../sass/contact.scss */
 .contactPetal9 {
-  -moz-transform: rotate(340deg);
-  -ms-transform: rotate(340deg);
-  -webkit-transform: rotate(340deg);
-  transform: rotate(340deg);
+  -moz-transform: rotate(289deg);
+  -ms-transform: rotate(289deg);
+  -webkit-transform: rotate(289deg);
+  transform: rotate(289deg);
+}
+
+/* line 99, ../sass/contact.scss */
+.contactPetal10 {
+  -moz-transform: rotate(307deg);
+  -ms-transform: rotate(307deg);
+  -webkit-transform: rotate(307deg);
+  transform: rotate(307deg);
+}
+
+/* line 99, ../sass/contact.scss */
+.contactPetal11 {
+  -moz-transform: rotate(325deg);
+  -ms-transform: rotate(325deg);
+  -webkit-transform: rotate(325deg);
+  transform: rotate(325deg);
+}
+
+/* line 99, ../sass/contact.scss */
+.contactPetal12 {
+  -moz-transform: rotate(343deg);
+  -ms-transform: rotate(343deg);
+  -webkit-transform: rotate(343deg);
+  transform: rotate(343deg);
+}
+
+/* line 99, ../sass/contact.scss */
+.contactPetal13 {
+  -moz-transform: rotate(361deg);
+  -ms-transform: rotate(361deg);
+  -webkit-transform: rotate(361deg);
+  transform: rotate(361deg);
+}
+
+/* line 99, ../sass/contact.scss */
+.contactPetal14 {
+  -moz-transform: rotate(379deg);
+  -ms-transform: rotate(379deg);
+  -webkit-transform: rotate(379deg);
+  transform: rotate(379deg);
+}
+
+/* line 99, ../sass/contact.scss */
+.contactPetal15 {
+  -moz-transform: rotate(397deg);
+  -ms-transform: rotate(397deg);
+  -webkit-transform: rotate(397deg);
+  transform: rotate(397deg);
 }
 
 @media all and (min-width: 40em) {
@@ -422,7 +489,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   /* line 158, ../sass/contact.scss */
   .contactPetal {
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
   }
 }
