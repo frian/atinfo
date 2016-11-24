@@ -104,28 +104,6 @@ ul.menu li a {
 }
 
 
-$contactContentWidth: 300px;
-$contactContentHeight: 250px;
-
-#contactContent {
-    @include abs-centered();
-    height: $contactContentHeight;
-    width: $contactContentWidth;
-    margin-top: - ($contactContentHeight / 2) + 25px;
-    margin-left: - $contactContentWidth / 2;
-    @include debug(red);
-}
-
-
-#contactContent h1 {
-    padding: 0 0 10px 0;
-    font-size: 150%;
-}
-
-#contactContent p {
-    padding: 5px 0;
-}
-
 #contact .page {
     @include debug(red);
     line-height: 2em;

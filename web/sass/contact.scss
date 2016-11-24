@@ -1,0 +1,115 @@
+@import "base";
+@import "common";
+
+
+$contactContentWidth: 300px;
+$contactContentHeight: 250px;
+
+#contactContent {
+    @include abs-centered();
+    height: $contactContentHeight;
+    width: $contactContentWidth;
+    margin-top: - ($contactContentHeight / 2) + 25px;
+    margin-left: - $contactContentWidth / 2;
+    @include debug(red);
+}
+
+
+#contactContent h1 {
+    padding: 0 0 10px 0;
+    font-size: 150%;
+}
+
+#contactContent p {
+    padding: 5px 0;
+}
+
+
+.contactFlowerContainer{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    @include debug(red);
+
+}
+
+$contactFlowerContainerWStep : $contactContentWidth / 3;
+$contactFlowerContainerHStep : $contactContentHeight / 3;
+
+@for $i from 1 through 4 {
+    #contactFlowerContainer#{$i} {
+        top: 0;
+        left: $contactFlowerContainerWStep * ($i - 1);
+    }
+}
+
+@for $i from 5 through 6 {
+    #contactFlowerContainer#{$i} {
+        top: $contactFlowerContainerHStep * ( $i - 4 );
+        right: 0;
+    }
+}
+
+@for $i from 7 through 10 {
+    #contactFlowerContainer#{$i} {
+        bottom: 0;
+        right: $contactFlowerContainerWStep * ($i - 6 - 1 );
+    }
+}
+
+@for $i from 11 through 12 {
+    #contactFlowerContainer#{$i} {
+        bottom: $contactFlowerContainerHStep * ( $i - 10);
+        left: 0;
+    }
+}
+
+
+
+
+@media all and (min-width: 40em) {
+
+    $contactContentWidth: 600px;
+    $contactContentHeight: 600px;
+
+    #contactContent {
+        @include abs-centered();
+        height: $contactContentHeight;
+        width: $contactContentWidth;
+        margin-top: - ($contactContentHeight / 2) + 25px;
+        margin-left: - $contactContentWidth / 2;
+        @include debug(red);
+    }
+
+
+    $contactFlowerContainerWStep : $contactContentWidth / 3;
+    $contactFlowerContainerHStep : $contactContentHeight / 3;
+
+    @for $i from 1 through 4 {
+        #contactFlowerContainer#{$i} {
+            top: 0;
+            left: $contactFlowerContainerWStep * ($i - 1);
+        }
+    }
+
+    @for $i from 5 through 6 {
+        #contactFlowerContainer#{$i} {
+            top: $contactFlowerContainerHStep * ( $i - 4 );
+            right: 0;
+        }
+    }
+
+    @for $i from 7 through 10 {
+        #contactFlowerContainer#{$i} {
+            bottom: 0;
+            right: $contactFlowerContainerWStep * ($i - 6 - 1 );
+        }
+    }
+
+    @for $i from 11 through 12 {
+        #contactFlowerContainer#{$i} {
+            bottom: $contactFlowerContainerHStep * ( $i - 10);
+            left: 0;
+        }
+    }
+}
