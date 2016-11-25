@@ -33,6 +33,7 @@
 html,
 body {
     height: 100%;
+    color: #333;
 }
 
 body {
@@ -124,6 +125,7 @@ textarea {
     color: red;
     font-size: 80%;
     line-height: 1em;
+    font-family: cd we;
 }
 
 div.name, div.email {
@@ -140,6 +142,19 @@ textarea {
     height: 60px;
     margin: 15px 0;
 }
+
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
+
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; }
+textarea:focus::-moz-placeholder { color:transparent; }
+textarea:focus:-ms-input-placeholder { color:transparent; }
+
 
 @media all and (min-width: 40em) {
 

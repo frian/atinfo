@@ -90,30 +90,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 html,
 body {
   height: 100%;
+  color: #333;
 }
 
-/* line 38, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 body {
   background-color: #eee;
   overflow: hidden;
 }
 
-/* line 43, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 a {
   text-decoration: none;
 }
 
-/* line 47, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 a.index {
   color: #fff;
 }
 
-/* line 51, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 59, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 .screenTopBar {
   position: absolute;
   top: 0;
@@ -125,12 +126,12 @@ a.index {
   z-index: 100;
 }
 
-/* line 70, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 ul.menu {
   display: table;
 }
 
-/* line 74, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 ul.menu li {
   display: table-cell;
   padding: 0 10px;
@@ -138,7 +139,7 @@ ul.menu li {
   line-height: 40px;
 }
 
-/* line 81, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 ul.menu li a {
   color: #333;
   font-family: 'Muli', sans-serif;
@@ -147,7 +148,7 @@ ul.menu li a {
 /*
 	-- FORMS ---------------------------------------------------------------------
 */
-/* line 91, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 [type="text"], [type="email"], textarea {
   font-family: Muli;
   font-size: 80%;
@@ -162,89 +163,130 @@ ul.menu li a {
   display: inline;
 }
 
-/* line 104, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 [type="text"], [type="email"] {
   height: 20px;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 [type="text"]:focus, [type="email"]:focus, textarea:focus {
   background-color: #eee;
 }
 
-/* line 113, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 textarea {
   resize: none;
 }
 
-/* line 117, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 [type="submit"] {
   line-height: 25px;
   width: 100%;
   font-family: 'Gruppo', sans-serif;
 }
 
-/* line 123, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .formErrors {
   color: red;
   font-size: 80%;
   line-height: 1em;
+  font-family: cd we;
 }
 
-/* line 129, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 div.name, div.email {
   height: 50px;
   line-height: 50px;
 }
 
-/* line 134, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 div.message {
   height: 100px;
   line-height: 100px;
 }
 
-/* line 139, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 textarea {
   height: 60px;
   margin: 15px 0;
 }
 
+/* line 147, ../sass/screen.scss */
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+/* line 148, ../sass/screen.scss */
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+
+/* line 149, ../sass/screen.scss */
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+/* line 150, ../sass/screen.scss */
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+/* line 153, ../sass/screen.scss */
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+/* line 154, ../sass/screen.scss */
+textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+
+/* line 155, ../sass/screen.scss */
+textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+
+/* line 156, ../sass/screen.scss */
+textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
 @media all and (min-width: 40em) {
-  /* line 146, ../sass/screen.scss */
+  /* line 161, ../sass/screen.scss */
   [type="text"], [type="email"], textarea {
     font-size: 200%;
   }
 
-  /* line 150, ../sass/screen.scss */
+  /* line 165, ../sass/screen.scss */
   [type="text"], [type="email"] {
     height: 50px;
   }
 
-  /* line 154, ../sass/screen.scss */
+  /* line 169, ../sass/screen.scss */
   [type="submit"] {
     line-height: 50px;
     font-size: 200%;
   }
 
-  /* line 159, ../sass/screen.scss */
+  /* line 174, ../sass/screen.scss */
   .formErrors {
     font-size: 150%;
     margin-bottom: 20px;
   }
 
-  /* line 164, ../sass/screen.scss */
+  /* line 179, ../sass/screen.scss */
   div.name, div.email {
     height: 100px;
     line-height: 100px;
   }
 
-  /* line 169, ../sass/screen.scss */
+  /* line 184, ../sass/screen.scss */
   div.message {
     height: 200px;
     line-height: 200px;
   }
 
-  /* line 174, ../sass/screen.scss */
+  /* line 189, ../sass/screen.scss */
   textarea {
     height: 150px;
     margin: 25px 0;
