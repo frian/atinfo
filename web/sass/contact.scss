@@ -20,117 +20,12 @@ $contactContentHeight: 300px;
     height: 25px;
     line-height: 25px;
     font-size: 150%;
+    font-family: 'Gruppo', sans-serif;
 }
 
 #contactContent p {
     padding: 5px 0;
 }
-
-
-.contactFlowerContainer{
-    position: absolute;
-    width: 0;
-    height: 0;
-    @include debug(red);
-
-}
-
-$contactFlowerContainerWStep : $contactContentWidth / 3;
-$contactFlowerContainerHStep : $contactContentHeight / 3;
-
-@for $i from 1 through 4 {
-    #contactFlowerContainer#{$i} {
-        top: 0;
-        left: $contactFlowerContainerWStep * ($i - 1);
-    }
-}
-
-@for $i from 5 through 6 {
-    #contactFlowerContainer#{$i} {
-        top: $contactFlowerContainerHStep * ( $i - 4 );
-        right: 0;
-    }
-}
-
-@for $i from 7 through 10 {
-    #contactFlowerContainer#{$i} {
-        bottom: 0;
-        right: $contactFlowerContainerWStep * ($i - 6 - 1 );
-    }
-}
-
-@for $i from 11 through 12 {
-    #contactFlowerContainer#{$i} {
-        bottom: $contactFlowerContainerHStep * ( $i - 10);
-        left: 0;
-    }
-}
-
-
-$ids: 1,4,7,10;
-
-@for $i from 1 through length($ids) {
-
-    #contactFlowerContainer#{nth($ids, $i)} {
-        @include transform(rotate(-91deg + ( ($i - 1) * 90deg) ));
-    }
-
-    #contactFlowerContainer#{nth($ids, $i)} .contactPetal {
-        background-color: hsl(( ((nth($ids, $i) - 1) * 60 ) % 360 ), 100%, 50%);
-    }
-}
-
-$ids: 2,3,5,6,8,9,11,12;
-$angles: -1,-1,89,89,179,179,269,269;
-
-@for $i from 1 through length($ids) {
-
-    #contactFlowerContainer#{nth($ids, $i)} {
-        @include transform(rotate(nth($angles, $i)+deg));
-    }
-
-    #contactFlowerContainer#{nth($ids, $i)} .contactPetal {
-        background-color: hsl(( ((nth($ids, $i) - 1) * 60 ) % 360 ), 100%, 50%);
-    }
-}
-
-
-.contactPetal {
-    @include transform-origin(left, top);
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    border: 2px solid $bg-color;
-    @include border-radius(5% 100%);
-    @include opacity(0.7);
-}
-
-
-@for $i from 1 through 15 {
-    .contactPetal#{$i} {
-        @include transform(rotate((  (($i - 1) * 18) + 145 )+deg));
-    }
-}
-
-@for $i from 1 through 15 {
-    .contactPetalAngleColor#{$i} {
-        background-color: hsl( (($i - 1) * 24 ) , 100%, 50%);
-    }
-}
-
-@for $i from 1 through 10 {
-    .contactPetalColor#{$i} {
-        // background-color: hsl( (($i - 1) * 36 ) , 100%, 50%);
-    }
-}
-
-
-// @for $i from 1 through 9 {
-//     .contactPetal#{$i} {
-//         @include transform(rotate((  (($i - 1) * 20) + 180 )+deg));
-//     }
-// }
-
 
 .open-brace-position {
     float: left;
@@ -284,44 +179,6 @@ $angles: -1,-1,89,89,179,179,269,269;
         font-size: 300%;
     }
 
-
-    $contactFlowerContainerWStep : $contactContentWidth / 3;
-    $contactFlowerContainerHStep : $contactContentHeight / 3;
-
-    @for $i from 1 through 4 {
-        #contactFlowerContainer#{$i} {
-            top: 0;
-            left: $contactFlowerContainerWStep * ($i - 1);
-        }
-    }
-
-    @for $i from 5 through 6 {
-        #contactFlowerContainer#{$i} {
-            top: $contactFlowerContainerHStep * ( $i - 4 );
-            right: 0;
-        }
-    }
-
-    @for $i from 7 through 10 {
-        #contactFlowerContainer#{$i} {
-            bottom: 0;
-            right: $contactFlowerContainerWStep * ($i - 6 - 1 );
-        }
-    }
-
-    @for $i from 11 through 12 {
-        #contactFlowerContainer#{$i} {
-            bottom: $contactFlowerContainerHStep * ( $i - 10);
-            left: 0;
-        }
-    }
-
-
-    .contactPetal {
-        position: absolute;
-        width: 60px;
-        height: 60px;
-    }
 
     .open-brace-position {
         float: left;

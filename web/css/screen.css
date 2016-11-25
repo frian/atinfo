@@ -98,22 +98,22 @@ body {
   overflow: hidden;
 }
 
-/* line 45, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 a {
   text-decoration: none;
 }
 
-/* line 49, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 a.index {
   color: #fff;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 61, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 .screenTopBar {
   position: absolute;
   top: 0;
@@ -122,16 +122,15 @@ a.index {
   height: 40px;
   background-color: #f0f0f0;
   border-bottom: 1px solid white;
-  /* 	@include debug(white); */
   z-index: 100;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 ul.menu {
   display: table;
 }
 
-/* line 78, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 ul.menu li {
   display: table-cell;
   padding: 0 10px;
@@ -139,40 +138,16 @@ ul.menu li {
   line-height: 40px;
 }
 
-/* line 85, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 ul.menu li a {
   color: #333;
   font-family: 'Muli', sans-serif;
 }
 
-/* line 90, ../sass/screen.scss */
-.screen {
-  display: table;
-  width: 100%;
-  height: 100% !important;
-  font-family: "Gruppo", sans-serif;
-  font-size: 100%;
-  border: 1px solid red;
-}
-
-/* line 99, ../sass/screen.scss */
-.cell {
-  width: 100% !important;
-  display: table-cell;
-  vertical-align: middle;
-}
-
-/* line 107, ../sass/screen.scss */
-#contact .page {
-  border: 1px solid red;
-  line-height: 2em;
-  text-align: left;
-}
-
 /*
 	-- FORMS ---------------------------------------------------------------------
 */
-/* line 119, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 [type="text"], [type="email"], textarea {
   font-family: Muli;
   font-size: 80%;
@@ -187,96 +162,89 @@ ul.menu li a {
   display: inline;
 }
 
-/* line 132, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 [type="text"], [type="email"] {
   height: 20px;
 }
 
-/* line 138, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 [type="text"]:focus, [type="email"]:focus, textarea:focus {
   background-color: #eee;
 }
 
-/* line 142, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 textarea {
   resize: none;
 }
 
-/* line 147, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 [type="submit"] {
   line-height: 25px;
   width: 100%;
   font-family: 'Gruppo', sans-serif;
 }
 
-/* line 154, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 .formErrors {
   color: red;
   font-size: 80%;
   line-height: 1em;
 }
 
-/* line 160, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 div.name, div.email {
   height: 50px;
   line-height: 50px;
 }
 
-/* line 167, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 div.message {
   height: 100px;
   line-height: 100px;
 }
 
-/* line 174, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 textarea {
   height: 60px;
   margin: 15px 0;
 }
 
 @media all and (min-width: 40em) {
-  /* line 182, ../sass/screen.scss */
-  #contact .page, #services .page {
-    font-size: 200%;
-    width: 600px;
-    margin: auto;
-  }
-
-  /* line 188, ../sass/screen.scss */
+  /* line 146, ../sass/screen.scss */
   [type="text"], [type="email"], textarea {
     font-size: 200%;
   }
 
-  /* line 192, ../sass/screen.scss */
+  /* line 150, ../sass/screen.scss */
   [type="text"], [type="email"] {
     height: 50px;
   }
 
-  /* line 197, ../sass/screen.scss */
+  /* line 154, ../sass/screen.scss */
   [type="submit"] {
     line-height: 50px;
     font-size: 200%;
   }
 
-  /* line 202, ../sass/screen.scss */
+  /* line 159, ../sass/screen.scss */
   .formErrors {
     font-size: 150%;
     margin-bottom: 20px;
   }
 
-  /* line 207, ../sass/screen.scss */
+  /* line 164, ../sass/screen.scss */
   div.name, div.email {
     height: 100px;
     line-height: 100px;
   }
 
-  /* line 214, ../sass/screen.scss */
+  /* line 169, ../sass/screen.scss */
   div.message {
     height: 200px;
     line-height: 200px;
   }
 
-  /* line 221, ../sass/screen.scss */
+  /* line 174, ../sass/screen.scss */
   textarea {
     height: 150px;
     margin: 25px 0;
