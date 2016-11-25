@@ -12,6 +12,7 @@ $contactContentHeight: 300px;
     margin-top: - ($contactContentHeight / 2) + 25px;
     margin-left: - $contactContentWidth / 2;
     text-align: center;
+    @include debug(red);
 }
 
 
@@ -34,9 +35,37 @@ $contactContentHeight: 300px;
 
 .close-brace-position {
     float: right;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
+
+.normalButton {
+    border:1px solid #aaa;
+    @include background-image(
+        linear-gradient(rgba(255,255,255, 1), rgba(0,0,0, 0.05))
+    );
+    color: #aaa;
+    background-color: #e9e9e9;
+}
+
+
+.activeButton {
+    color: #ccc;
+    background-color: #f00;
+    border-color: #a00;
+    @include background-image(
+        linear-gradient(rgba(255,255,255, 0.2), rgba(0,0,0, 0.2))
+    );
+}
+
+.activeButton:hover {
+    color: #ddd;
+    // background-color: red;
+    // border-color: #a00;
+    @include background-image(
+        linear-gradient(rgba(255,255,255, 0.2), rgba(0,0,0, 0.1))
+    );
+}
 
 @mixin curly-brace-open($name,$curly-brace-height: 200px, $curly-border-size: 5px, $curly-brace-width: 20px) {
 
@@ -158,6 +187,87 @@ $contactContentHeight: 300px;
 @include curly-brace-open("message", 80px, 2px, 5px);
 @include curly-brace-close("message", 80px, 2px, 5px);
 
+
+.name-curly-brace-open, .name-curly-brace-close {
+    @include animation("animBraces 3s ease-out forwards");
+}
+
+.email-curly-brace-open, .email-curly-brace-close {
+    @include animation("animBraces 4s ease-out forwards");
+}
+
+.message-curly-brace-open, .message-curly-brace-close {
+    @include animation("animBraces 5s ease-out forwards");
+}
+
+@include keyframes(animBraces) {
+
+    0% {
+        @include opacity(0);
+    }
+    25% {
+        @include opacity(0);
+    }
+    100% {
+        @include opacity(1);
+    }
+}
+
+
+@include keyframes(animButton) {
+
+    0% {
+        @include opacity(0);
+    }
+    60% {
+        @include opacity(0);
+    }
+    100% {
+        @include opacity(1);
+    }
+}
+input[type="submit"] {
+    margin: auto;
+    @include animation("animButton 6s ease-out forwards");
+}
+
+
+@include keyframes(formInputs) {
+
+    0% {
+        width: 0%;
+    }
+    40% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+};
+
+input[type="text"], input[type="email"], textarea {
+    @include animation("formInputs 4s ease-out forwards");
+}
+
+@include keyframes(placeholders) {
+
+    0% {
+        opacity: 0;
+        width: 90%;
+    }
+    20% {
+        opacity: 0;
+        width: 90%;
+    }
+    100% {
+        opacity: 1;
+        width: 90%;
+    }
+};
+
+input[type=text], input[type=email], textarea { @include animation("placeholders 2s ease-out 3s forwards"); }
+
+
 @media all and (min-width: 40em) {
 
     $contactContentWidth: 600px;
@@ -170,7 +280,11 @@ $contactContentHeight: 300px;
         margin-top: - ($contactContentHeight / 2) + 25px;
         margin-left: - $contactContentWidth / 2;
         // @include debug(red);
+
+        @include animation("animContactContainer 3s ease-in forwards");
     }
+
+
 
     #contactContent h1 {
         padding: 0 0 10px 0;
@@ -187,7 +301,7 @@ $contactContentHeight: 300px;
 
     .close-brace-position {
         float: right;
-        margin: 10px 0;
+        margin: 10px 5px 10px 0;
     }
 
     @include curly-brace-open("name", 80px, 4px, 10px);
@@ -199,4 +313,20 @@ $contactContentHeight: 300px;
     @include curly-brace-open("message", 180px, 4px, 10px);
     @include curly-brace-close("message", 180px, 4px, 10px);
 
+
+    @include keyframes(animContactContainer) {
+
+        0% {
+            margin-left: - ($contactContentWidth / 2) + 300px;
+            width: 40px;
+        }
+        80% {
+            margin-left: - ($contactContentWidth / 2) + 300px;
+            width: 40px;
+        }
+        100% {
+            margin-left: - ($contactContentWidth / 2);
+            width: 600px;
+        }
+    };
 }

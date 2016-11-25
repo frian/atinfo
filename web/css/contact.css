@@ -77,9 +77,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-top: -125px;
   margin-left: -150px;
   text-align: center;
+  border: 1px solid red;
 }
 
-/* line 18, ../sass/contact.scss */
+/* line 19, ../sass/contact.scss */
 #contactContent h1 {
   padding: 0 0 10px 0;
   height: 25px;
@@ -88,31 +89,68 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: 'Gruppo', sans-serif;
 }
 
-/* line 26, ../sass/contact.scss */
+/* line 27, ../sass/contact.scss */
 #contactContent p {
   padding: 5px 0;
 }
 
-/* line 30, ../sass/contact.scss */
+/* line 31, ../sass/contact.scss */
 .open-brace-position {
   float: left;
   margin: 5px 0;
 }
 
-/* line 35, ../sass/contact.scss */
+/* line 36, ../sass/contact.scss */
 .close-brace-position {
   float: right;
-  margin: 5px 0;
+  margin: 10px 0;
 }
 
-/* line 43, ../sass/contact.scss */
+/* line 42, ../sass/contact.scss */
+.normalButton {
+  border: 1px solid #aaa;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjA1Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, rgba(0, 0, 0, 0.05)));
+  background-image: -moz-linear-gradient(#ffffff, rgba(0, 0, 0, 0.05));
+  background-image: -webkit-linear-gradient(#ffffff, rgba(0, 0, 0, 0.05));
+  background-image: linear-gradient(#ffffff, rgba(0, 0, 0, 0.05));
+  color: #aaa;
+  background-color: #e9e9e9;
+}
+
+/* line 52, ../sass/contact.scss */
+.activeButton {
+  color: #ccc;
+  background-color: #f00;
+  border-color: #a00;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4yIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(100%, rgba(0, 0, 0, 0.2)));
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+/* line 61, ../sass/contact.scss */
+.activeButton:hover {
+  color: #ddd;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4xIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(100%, rgba(0, 0, 0, 0.1)));
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+}
+
+/* line 72, ../sass/contact.scss */
 .name-curly-brace-open {
   height: 40px;
   width: 10px;
   display: inline-block;
 }
 
-/* line 50, ../sass/contact.scss */
+/* line 79, ../sass/contact.scss */
 .name-curly-brace-open .b1 {
   width: 100%;
   height: 10%;
@@ -120,7 +158,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-top-left-radius: 10px;
 }
 
-/* line 57, ../sass/contact.scss */
+/* line 86, ../sass/contact.scss */
 .name-curly-brace-open .b2 {
   margin-left: -10px;
   width: 100%;
@@ -128,7 +166,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-right: 2px solid;
 }
 
-/* line 64, ../sass/contact.scss */
+/* line 93, ../sass/contact.scss */
 .name-curly-brace-open .b3 {
   margin-left: -10px;
   width: 100%;
@@ -137,7 +175,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-bottom-right-radius: 10px;
 }
 
-/* line 72, ../sass/contact.scss */
+/* line 101, ../sass/contact.scss */
 .name-curly-brace-open .b4 {
   margin-left: -10px;
   width: 100%;
@@ -146,7 +184,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-top-right-radius: 10px;
 }
 
-/* line 80, ../sass/contact.scss */
+/* line 109, ../sass/contact.scss */
 .name-curly-brace-open .b5 {
   margin-left: -10px;
   width: 100%;
@@ -154,7 +192,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-right: 2px solid;
 }
 
-/* line 87, ../sass/contact.scss */
+/* line 116, ../sass/contact.scss */
 .name-curly-brace-open .b6 {
   width: 100%;
   height: 10%;
@@ -162,14 +200,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-bottom-left-radius: 10px;
 }
 
-/* line 99, ../sass/contact.scss */
+/* line 128, ../sass/contact.scss */
 .name-curly-brace-close {
   height: 40px;
   width: 10px;
   display: inline-block;
 }
 
-/* line 106, ../sass/contact.scss */
+/* line 135, ../sass/contact.scss */
 .name-curly-brace-close .b1 {
   width: 100%;
   height: 10%;
@@ -177,14 +215,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-top-right-radius: 10px;
 }
 
-/* line 113, ../sass/contact.scss */
+/* line 142, ../sass/contact.scss */
 .name-curly-brace-close .b2 {
   width: 100%;
   height: 30%;
   border-right: 2px solid;
 }
 
-/* line 119, ../sass/contact.scss */
+/* line 148, ../sass/contact.scss */
 .name-curly-brace-close .b3 {
   margin-left: 10px;
   width: 100%;
@@ -193,7 +231,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-bottom-left-radius: 10px;
 }
 
-/* line 127, ../sass/contact.scss */
+/* line 156, ../sass/contact.scss */
 .name-curly-brace-close .b4 {
   margin-left: 10px;
   width: 100%;
@@ -202,14 +240,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-top-left-radius: 10px;
 }
 
-/* line 135, ../sass/contact.scss */
+/* line 164, ../sass/contact.scss */
 .name-curly-brace-close .b5 {
   width: 100%;
   height: 30%;
   border-right: 2px solid;
 }
 
-/* line 141, ../sass/contact.scss */
+/* line 170, ../sass/contact.scss */
 .name-curly-brace-close .b6 {
   width: 100%;
   height: 10%;
@@ -217,14 +255,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-bottom-right-radius: 10px;
 }
 
-/* line 43, ../sass/contact.scss */
+/* line 72, ../sass/contact.scss */
 .email-curly-brace-open {
   height: 40px;
   width: 10px;
   display: inline-block;
 }
 
-/* line 50, ../sass/contact.scss */
+/* line 79, ../sass/contact.scss */
 .email-curly-brace-open .b1 {
   width: 100%;
   height: 10%;
@@ -232,7 +270,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-top-left-radius: 10px;
 }
 
-/* line 57, ../sass/contact.scss */
+/* line 86, ../sass/contact.scss */
 .email-curly-brace-open .b2 {
   margin-left: -10px;
   width: 100%;
@@ -240,7 +278,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-right: 2px solid;
 }
 
-/* line 64, ../sass/contact.scss */
+/* line 93, ../sass/contact.scss */
 .email-curly-brace-open .b3 {
   margin-left: -10px;
   width: 100%;
@@ -249,7 +287,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-bottom-right-radius: 10px;
 }
 
-/* line 72, ../sass/contact.scss */
+/* line 101, ../sass/contact.scss */
 .email-curly-brace-open .b4 {
   margin-left: -10px;
   width: 100%;
@@ -258,7 +296,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-top-right-radius: 10px;
 }
 
-/* line 80, ../sass/contact.scss */
+/* line 109, ../sass/contact.scss */
 .email-curly-brace-open .b5 {
   margin-left: -10px;
   width: 100%;
@@ -266,7 +304,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-right: 2px solid;
 }
 
-/* line 87, ../sass/contact.scss */
+/* line 116, ../sass/contact.scss */
 .email-curly-brace-open .b6 {
   width: 100%;
   height: 10%;
@@ -274,14 +312,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-bottom-left-radius: 10px;
 }
 
-/* line 99, ../sass/contact.scss */
+/* line 128, ../sass/contact.scss */
 .email-curly-brace-close {
   height: 40px;
   width: 10px;
   display: inline-block;
 }
 
-/* line 106, ../sass/contact.scss */
+/* line 135, ../sass/contact.scss */
 .email-curly-brace-close .b1 {
   width: 100%;
   height: 10%;
@@ -289,14 +327,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-top-right-radius: 10px;
 }
 
-/* line 113, ../sass/contact.scss */
+/* line 142, ../sass/contact.scss */
 .email-curly-brace-close .b2 {
   width: 100%;
   height: 30%;
   border-right: 2px solid;
 }
 
-/* line 119, ../sass/contact.scss */
+/* line 148, ../sass/contact.scss */
 .email-curly-brace-close .b3 {
   margin-left: 10px;
   width: 100%;
@@ -305,7 +343,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-bottom-left-radius: 10px;
 }
 
-/* line 127, ../sass/contact.scss */
+/* line 156, ../sass/contact.scss */
 .email-curly-brace-close .b4 {
   margin-left: 10px;
   width: 100%;
@@ -314,14 +352,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-top-left-radius: 10px;
 }
 
-/* line 135, ../sass/contact.scss */
+/* line 164, ../sass/contact.scss */
 .email-curly-brace-close .b5 {
   width: 100%;
   height: 30%;
   border-right: 2px solid;
 }
 
-/* line 141, ../sass/contact.scss */
+/* line 170, ../sass/contact.scss */
 .email-curly-brace-close .b6 {
   width: 100%;
   height: 10%;
@@ -329,14 +367,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-bottom-right-radius: 10px;
 }
 
-/* line 43, ../sass/contact.scss */
+/* line 72, ../sass/contact.scss */
 .message-curly-brace-open {
   height: 80px;
   width: 5px;
   display: inline-block;
 }
 
-/* line 50, ../sass/contact.scss */
+/* line 79, ../sass/contact.scss */
 .message-curly-brace-open .b1 {
   width: 100%;
   height: 10%;
@@ -344,7 +382,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-top-left-radius: 5px;
 }
 
-/* line 57, ../sass/contact.scss */
+/* line 86, ../sass/contact.scss */
 .message-curly-brace-open .b2 {
   margin-left: -5px;
   width: 100%;
@@ -352,7 +390,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-right: 2px solid;
 }
 
-/* line 64, ../sass/contact.scss */
+/* line 93, ../sass/contact.scss */
 .message-curly-brace-open .b3 {
   margin-left: -5px;
   width: 100%;
@@ -361,7 +399,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-bottom-right-radius: 5px;
 }
 
-/* line 72, ../sass/contact.scss */
+/* line 101, ../sass/contact.scss */
 .message-curly-brace-open .b4 {
   margin-left: -5px;
   width: 100%;
@@ -370,7 +408,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-top-right-radius: 5px;
 }
 
-/* line 80, ../sass/contact.scss */
+/* line 109, ../sass/contact.scss */
 .message-curly-brace-open .b5 {
   margin-left: -5px;
   width: 100%;
@@ -378,7 +416,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-right: 2px solid;
 }
 
-/* line 87, ../sass/contact.scss */
+/* line 116, ../sass/contact.scss */
 .message-curly-brace-open .b6 {
   width: 100%;
   height: 10%;
@@ -386,14 +424,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-bottom-left-radius: 5px;
 }
 
-/* line 99, ../sass/contact.scss */
+/* line 128, ../sass/contact.scss */
 .message-curly-brace-close {
   height: 80px;
   width: 5px;
   display: inline-block;
 }
 
-/* line 106, ../sass/contact.scss */
+/* line 135, ../sass/contact.scss */
 .message-curly-brace-close .b1 {
   width: 100%;
   height: 10%;
@@ -401,14 +439,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-top-right-radius: 5px;
 }
 
-/* line 113, ../sass/contact.scss */
+/* line 142, ../sass/contact.scss */
 .message-curly-brace-close .b2 {
   width: 100%;
   height: 30%;
   border-right: 2px solid;
 }
 
-/* line 119, ../sass/contact.scss */
+/* line 148, ../sass/contact.scss */
 .message-curly-brace-close .b3 {
   margin-left: 5px;
   width: 100%;
@@ -417,7 +455,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-bottom-left-radius: 5px;
 }
 
-/* line 127, ../sass/contact.scss */
+/* line 156, ../sass/contact.scss */
 .message-curly-brace-close .b4 {
   margin-left: 5px;
   width: 100%;
@@ -426,14 +464,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-top-left-radius: 5px;
 }
 
-/* line 135, ../sass/contact.scss */
+/* line 164, ../sass/contact.scss */
 .message-curly-brace-close .b5 {
   width: 100%;
   height: 30%;
   border-right: 2px solid;
 }
 
-/* line 141, ../sass/contact.scss */
+/* line 170, ../sass/contact.scss */
 .message-curly-brace-close .b6 {
   width: 100%;
   height: 10%;
@@ -441,8 +479,269 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-bottom-right-radius: 5px;
 }
 
+/* line 191, ../sass/contact.scss */
+.name-curly-brace-open, .name-curly-brace-close {
+  -webkit-animation: animBraces 3s ease-out forwards;
+  -moz-animation: animBraces 3s ease-out forwards;
+  -o-animation: animBraces 3s ease-out forwards;
+  animation: animBraces 3s ease-out forwards;
+}
+
+/* line 195, ../sass/contact.scss */
+.email-curly-brace-open, .email-curly-brace-close {
+  -webkit-animation: animBraces 4s ease-out forwards;
+  -moz-animation: animBraces 4s ease-out forwards;
+  -o-animation: animBraces 4s ease-out forwards;
+  animation: animBraces 4s ease-out forwards;
+}
+
+/* line 199, ../sass/contact.scss */
+.message-curly-brace-open, .message-curly-brace-close {
+  -webkit-animation: animBraces 5s ease-out forwards;
+  -moz-animation: animBraces 5s ease-out forwards;
+  -o-animation: animBraces 5s ease-out forwards;
+  animation: animBraces 5s ease-out forwards;
+}
+
+@-webkit-keyframes animBraces {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  25% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@-moz-keyframes animBraces {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  25% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@-o-keyframes animBraces {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  25% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@keyframes $animBraces {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  25% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes animButton {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  60% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@-moz-keyframes animButton {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  60% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@-o-keyframes animButton {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  60% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@keyframes $animButton {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  60% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+/* line 229, ../sass/contact.scss */
+input[type="submit"] {
+  margin: auto;
+  -webkit-animation: animButton 6s ease-out forwards;
+  -moz-animation: animButton 6s ease-out forwards;
+  -o-animation: animButton 6s ease-out forwards;
+  animation: animButton 6s ease-out forwards;
+}
+
+@-webkit-keyframes formInputs {
+  0% {
+    width: 0%;
+  }
+  40% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@-moz-keyframes formInputs {
+  0% {
+    width: 0%;
+  }
+  40% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@-o-keyframes formInputs {
+  0% {
+    width: 0%;
+  }
+  40% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes $formInputs {
+  0% {
+    width: 0%;
+  }
+  40% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+/* line 248, ../sass/contact.scss */
+input[type="text"], input[type="email"], textarea {
+  -webkit-animation: formInputs 4s ease-out forwards;
+  -moz-animation: formInputs 4s ease-out forwards;
+  -o-animation: formInputs 4s ease-out forwards;
+  animation: formInputs 4s ease-out forwards;
+}
+
+@-webkit-keyframes placeholders {
+  0% {
+    opacity: 0;
+    width: 90%;
+  }
+  20% {
+    opacity: 0;
+    width: 90%;
+  }
+  100% {
+    opacity: 1;
+    width: 90%;
+  }
+}
+@-moz-keyframes placeholders {
+  0% {
+    opacity: 0;
+    width: 90%;
+  }
+  20% {
+    opacity: 0;
+    width: 90%;
+  }
+  100% {
+    opacity: 1;
+    width: 90%;
+  }
+}
+@-o-keyframes placeholders {
+  0% {
+    opacity: 0;
+    width: 90%;
+  }
+  20% {
+    opacity: 0;
+    width: 90%;
+  }
+  100% {
+    opacity: 1;
+    width: 90%;
+  }
+}
+@keyframes $placeholders {
+  0% {
+    opacity: 0;
+    width: 90%;
+  }
+  20% {
+    opacity: 0;
+    width: 90%;
+  }
+  100% {
+    opacity: 1;
+    width: 90%;
+  }
+}
+/* line 268, ../sass/contact.scss */
+input[type=text], input[type=email], textarea {
+  -webkit-animation: placeholders 2s ease-out 3s forwards;
+  -moz-animation: placeholders 2s ease-out 3s forwards;
+  -o-animation: placeholders 2s ease-out 3s forwards;
+  animation: placeholders 2s ease-out 3s forwards;
+}
+
 @media all and (min-width: 40em) {
-  /* line 166, ../sass/contact.scss */
+  /* line 276, ../sass/contact.scss */
   #contactContent {
     position: absolute;
     top: 50%;
@@ -451,9 +750,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 600px;
     margin-top: -275px;
     margin-left: -300px;
+    -webkit-animation: animContactContainer 3s ease-in forwards;
+    -moz-animation: animContactContainer 3s ease-in forwards;
+    -o-animation: animContactContainer 3s ease-in forwards;
+    animation: animContactContainer 3s ease-in forwards;
   }
 
-  /* line 175, ../sass/contact.scss */
+  /* line 289, ../sass/contact.scss */
   #contactContent h1 {
     padding: 0 0 10px 0;
     height: 50px;
@@ -461,26 +764,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-size: 300%;
   }
 
-  /* line 183, ../sass/contact.scss */
+  /* line 297, ../sass/contact.scss */
   .open-brace-position {
     float: left;
     margin: 10px 0;
   }
 
-  /* line 188, ../sass/contact.scss */
+  /* line 302, ../sass/contact.scss */
   .close-brace-position {
     float: right;
-    margin: 10px 0;
+    margin: 10px 5px 10px 0;
   }
 
-  /* line 43, ../sass/contact.scss */
+  /* line 72, ../sass/contact.scss */
   .name-curly-brace-open {
     height: 80px;
     width: 10px;
     display: inline-block;
   }
 
-  /* line 50, ../sass/contact.scss */
+  /* line 79, ../sass/contact.scss */
   .name-curly-brace-open .b1 {
     width: 100%;
     height: 10%;
@@ -488,7 +791,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-top-left-radius: 10px;
   }
 
-  /* line 57, ../sass/contact.scss */
+  /* line 86, ../sass/contact.scss */
   .name-curly-brace-open .b2 {
     margin-left: -10px;
     width: 100%;
@@ -496,7 +799,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-right: 4px solid;
   }
 
-  /* line 64, ../sass/contact.scss */
+  /* line 93, ../sass/contact.scss */
   .name-curly-brace-open .b3 {
     margin-left: -10px;
     width: 100%;
@@ -505,7 +808,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-bottom-right-radius: 10px;
   }
 
-  /* line 72, ../sass/contact.scss */
+  /* line 101, ../sass/contact.scss */
   .name-curly-brace-open .b4 {
     margin-left: -10px;
     width: 100%;
@@ -514,7 +817,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-top-right-radius: 10px;
   }
 
-  /* line 80, ../sass/contact.scss */
+  /* line 109, ../sass/contact.scss */
   .name-curly-brace-open .b5 {
     margin-left: -10px;
     width: 100%;
@@ -522,7 +825,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-right: 4px solid;
   }
 
-  /* line 87, ../sass/contact.scss */
+  /* line 116, ../sass/contact.scss */
   .name-curly-brace-open .b6 {
     width: 100%;
     height: 10%;
@@ -530,14 +833,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-bottom-left-radius: 10px;
   }
 
-  /* line 99, ../sass/contact.scss */
+  /* line 128, ../sass/contact.scss */
   .name-curly-brace-close {
     height: 80px;
     width: 10px;
     display: inline-block;
   }
 
-  /* line 106, ../sass/contact.scss */
+  /* line 135, ../sass/contact.scss */
   .name-curly-brace-close .b1 {
     width: 100%;
     height: 10%;
@@ -545,14 +848,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-top-right-radius: 10px;
   }
 
-  /* line 113, ../sass/contact.scss */
+  /* line 142, ../sass/contact.scss */
   .name-curly-brace-close .b2 {
     width: 100%;
     height: 30%;
     border-right: 4px solid;
   }
 
-  /* line 119, ../sass/contact.scss */
+  /* line 148, ../sass/contact.scss */
   .name-curly-brace-close .b3 {
     margin-left: 10px;
     width: 100%;
@@ -561,7 +864,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-bottom-left-radius: 10px;
   }
 
-  /* line 127, ../sass/contact.scss */
+  /* line 156, ../sass/contact.scss */
   .name-curly-brace-close .b4 {
     margin-left: 10px;
     width: 100%;
@@ -570,14 +873,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-top-left-radius: 10px;
   }
 
-  /* line 135, ../sass/contact.scss */
+  /* line 164, ../sass/contact.scss */
   .name-curly-brace-close .b5 {
     width: 100%;
     height: 30%;
     border-right: 4px solid;
   }
 
-  /* line 141, ../sass/contact.scss */
+  /* line 170, ../sass/contact.scss */
   .name-curly-brace-close .b6 {
     width: 100%;
     height: 10%;
@@ -585,14 +888,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-bottom-right-radius: 10px;
   }
 
-  /* line 43, ../sass/contact.scss */
+  /* line 72, ../sass/contact.scss */
   .email-curly-brace-open {
     height: 80px;
     width: 10px;
     display: inline-block;
   }
 
-  /* line 50, ../sass/contact.scss */
+  /* line 79, ../sass/contact.scss */
   .email-curly-brace-open .b1 {
     width: 100%;
     height: 10%;
@@ -600,7 +903,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-top-left-radius: 10px;
   }
 
-  /* line 57, ../sass/contact.scss */
+  /* line 86, ../sass/contact.scss */
   .email-curly-brace-open .b2 {
     margin-left: -10px;
     width: 100%;
@@ -608,7 +911,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-right: 4px solid;
   }
 
-  /* line 64, ../sass/contact.scss */
+  /* line 93, ../sass/contact.scss */
   .email-curly-brace-open .b3 {
     margin-left: -10px;
     width: 100%;
@@ -617,7 +920,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-bottom-right-radius: 10px;
   }
 
-  /* line 72, ../sass/contact.scss */
+  /* line 101, ../sass/contact.scss */
   .email-curly-brace-open .b4 {
     margin-left: -10px;
     width: 100%;
@@ -626,7 +929,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-top-right-radius: 10px;
   }
 
-  /* line 80, ../sass/contact.scss */
+  /* line 109, ../sass/contact.scss */
   .email-curly-brace-open .b5 {
     margin-left: -10px;
     width: 100%;
@@ -634,7 +937,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-right: 4px solid;
   }
 
-  /* line 87, ../sass/contact.scss */
+  /* line 116, ../sass/contact.scss */
   .email-curly-brace-open .b6 {
     width: 100%;
     height: 10%;
@@ -642,14 +945,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-bottom-left-radius: 10px;
   }
 
-  /* line 99, ../sass/contact.scss */
+  /* line 128, ../sass/contact.scss */
   .email-curly-brace-close {
     height: 80px;
     width: 10px;
     display: inline-block;
   }
 
-  /* line 106, ../sass/contact.scss */
+  /* line 135, ../sass/contact.scss */
   .email-curly-brace-close .b1 {
     width: 100%;
     height: 10%;
@@ -657,14 +960,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-top-right-radius: 10px;
   }
 
-  /* line 113, ../sass/contact.scss */
+  /* line 142, ../sass/contact.scss */
   .email-curly-brace-close .b2 {
     width: 100%;
     height: 30%;
     border-right: 4px solid;
   }
 
-  /* line 119, ../sass/contact.scss */
+  /* line 148, ../sass/contact.scss */
   .email-curly-brace-close .b3 {
     margin-left: 10px;
     width: 100%;
@@ -673,7 +976,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-bottom-left-radius: 10px;
   }
 
-  /* line 127, ../sass/contact.scss */
+  /* line 156, ../sass/contact.scss */
   .email-curly-brace-close .b4 {
     margin-left: 10px;
     width: 100%;
@@ -682,14 +985,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-top-left-radius: 10px;
   }
 
-  /* line 135, ../sass/contact.scss */
+  /* line 164, ../sass/contact.scss */
   .email-curly-brace-close .b5 {
     width: 100%;
     height: 30%;
     border-right: 4px solid;
   }
 
-  /* line 141, ../sass/contact.scss */
+  /* line 170, ../sass/contact.scss */
   .email-curly-brace-close .b6 {
     width: 100%;
     height: 10%;
@@ -697,14 +1000,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-bottom-right-radius: 10px;
   }
 
-  /* line 43, ../sass/contact.scss */
+  /* line 72, ../sass/contact.scss */
   .message-curly-brace-open {
     height: 180px;
     width: 10px;
     display: inline-block;
   }
 
-  /* line 50, ../sass/contact.scss */
+  /* line 79, ../sass/contact.scss */
   .message-curly-brace-open .b1 {
     width: 100%;
     height: 10%;
@@ -712,7 +1015,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-top-left-radius: 10px;
   }
 
-  /* line 57, ../sass/contact.scss */
+  /* line 86, ../sass/contact.scss */
   .message-curly-brace-open .b2 {
     margin-left: -10px;
     width: 100%;
@@ -720,7 +1023,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-right: 4px solid;
   }
 
-  /* line 64, ../sass/contact.scss */
+  /* line 93, ../sass/contact.scss */
   .message-curly-brace-open .b3 {
     margin-left: -10px;
     width: 100%;
@@ -729,7 +1032,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-bottom-right-radius: 10px;
   }
 
-  /* line 72, ../sass/contact.scss */
+  /* line 101, ../sass/contact.scss */
   .message-curly-brace-open .b4 {
     margin-left: -10px;
     width: 100%;
@@ -738,7 +1041,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-top-right-radius: 10px;
   }
 
-  /* line 80, ../sass/contact.scss */
+  /* line 109, ../sass/contact.scss */
   .message-curly-brace-open .b5 {
     margin-left: -10px;
     width: 100%;
@@ -746,7 +1049,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-right: 4px solid;
   }
 
-  /* line 87, ../sass/contact.scss */
+  /* line 116, ../sass/contact.scss */
   .message-curly-brace-open .b6 {
     width: 100%;
     height: 10%;
@@ -754,14 +1057,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-bottom-left-radius: 10px;
   }
 
-  /* line 99, ../sass/contact.scss */
+  /* line 128, ../sass/contact.scss */
   .message-curly-brace-close {
     height: 180px;
     width: 10px;
     display: inline-block;
   }
 
-  /* line 106, ../sass/contact.scss */
+  /* line 135, ../sass/contact.scss */
   .message-curly-brace-close .b1 {
     width: 100%;
     height: 10%;
@@ -769,14 +1072,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-top-right-radius: 10px;
   }
 
-  /* line 113, ../sass/contact.scss */
+  /* line 142, ../sass/contact.scss */
   .message-curly-brace-close .b2 {
     width: 100%;
     height: 30%;
     border-right: 4px solid;
   }
 
-  /* line 119, ../sass/contact.scss */
+  /* line 148, ../sass/contact.scss */
   .message-curly-brace-close .b3 {
     margin-left: 10px;
     width: 100%;
@@ -785,7 +1088,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-bottom-left-radius: 10px;
   }
 
-  /* line 127, ../sass/contact.scss */
+  /* line 156, ../sass/contact.scss */
   .message-curly-brace-close .b4 {
     margin-left: 10px;
     width: 100%;
@@ -794,18 +1097,75 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-top-left-radius: 10px;
   }
 
-  /* line 135, ../sass/contact.scss */
+  /* line 164, ../sass/contact.scss */
   .message-curly-brace-close .b5 {
     width: 100%;
     height: 30%;
     border-right: 4px solid;
   }
 
-  /* line 141, ../sass/contact.scss */
+  /* line 170, ../sass/contact.scss */
   .message-curly-brace-close .b6 {
     width: 100%;
     height: 10%;
     border-right: 4px solid;
     border-bottom-right-radius: 10px;
+  }
+
+  @-webkit-keyframes animContactContainer {
+    0% {
+      margin-left: 0px;
+      width: 40px;
+    }
+    80% {
+      margin-left: 0px;
+      width: 40px;
+    }
+    100% {
+      margin-left: -300px;
+      width: 600px;
+    }
+  }
+  @-moz-keyframes animContactContainer {
+    0% {
+      margin-left: 0px;
+      width: 40px;
+    }
+    80% {
+      margin-left: 0px;
+      width: 40px;
+    }
+    100% {
+      margin-left: -300px;
+      width: 600px;
+    }
+  }
+  @-o-keyframes animContactContainer {
+    0% {
+      margin-left: 0px;
+      width: 40px;
+    }
+    80% {
+      margin-left: 0px;
+      width: 40px;
+    }
+    100% {
+      margin-left: -300px;
+      width: 600px;
+    }
+  }
+  @keyframes $animContactContainer {
+    0% {
+      margin-left: 0px;
+      width: 40px;
+    }
+    80% {
+      margin-left: 0px;
+      width: 40px;
+    }
+    100% {
+      margin-left: -300px;
+      width: 600px;
+    }
   }
 }

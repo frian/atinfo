@@ -7,7 +7,7 @@ $(function() {
 
 	// set flag and hide content
 	if ( flash.length ) {
-		$('#home').css( "display" , "none" );
+		$('body').css( "display" , "none" );
 		hasFlash = 1;
 	}
 
@@ -87,18 +87,33 @@ $(function() {
     //
 	// });
 
+    console.log($("#polo").css("background-color"));
 
 
-    $("#form_name").on("input", null, null, function(e) {
+    // visual form validation
+    $("form input, form textarea").on("input", null, null, function(e) {
 
-        if ($(this).val().length >= 3) {
+        var minLengths = { "name" : 5, "email" : 7, "message": 15 };
 
-            var elem = $(this).closest('div').find('div');
-            var color = elem.attr('data-color');
-            $(this).closest('div').find('div').css('color', color);
+        var current = $(this).closest('div').first('div').attr('class');
+
+        if ($(this).val().length >= minLengths[current]) {
+            $(this).closest('div').find('div').css('color', '#d00');
         }
         else {
-            $(this).closest('div').find('div').css('color', '#333');
+            $(this).closest('div').find('div').css('color', $("html").css('color'));
+        }
+
+        if ( $("#form_name").val().length >= minLengths["name"] &&
+            $("#form_email").val().length >= minLengths["email"] &&
+            $("#form_message").val().length >= minLengths["message"]) {
+
+                $(":submit").addClass('activeButton');
+                $(":submit").removeClass('normalButton');
+        }
+        else {
+            $(":submit").removeClass('activeButton');
+            $(":submit").addClass('normalButton');
         }
 	});
 

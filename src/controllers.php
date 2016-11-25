@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -39,14 +39,14 @@ $app->match('/contact', function (Request $request) use ($app) {
 	$form = createForm($app);
 
 	$form->handleRequest($request);
-
+echo "prout";
 	if ($form->isValid()) {
-
+echo "prout1";
 		$data = $form->getData();
 
 		$message = \Swift_Message::newInstance()
 		->setSubject(sprintf('Contact from %s', $data['name']))
-		->setFrom(array($data['email']))
+		->setFrom(array('andre@at-info.ch'))
 		->setTo(array('andre@at-info.ch'))
 		->setBody($data['message']);
 

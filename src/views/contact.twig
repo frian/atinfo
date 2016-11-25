@@ -13,7 +13,7 @@
 
     <div id="contactContent">
 
-        <h1>message = </h1>
+        <!-- <h1>message = </h1> -->
 
         {{ form_start(form) }}
 
@@ -43,7 +43,7 @@
 
         <div class="email">
 
-            <div class="email-curly-brace-open open-brace-position" style="color: #0b0">
+            <div class="email-curly-brace-open open-brace-position" data-color="#0b0">
                 <div class="b1"></div>
                 <div class="b2"></div>
                 <div class="b3"></div>
@@ -54,7 +54,7 @@
 
             {{ form_widget(form.email) }}
 
-            <div class="email-curly-brace-close close-brace-position" style="color: #0b0">
+            <div class="email-curly-brace-close close-brace-position" data-color="#0b0">
                 <div class="b1"></div>
                 <div class="b2"></div>
                 <div class="b3"></div>
@@ -67,7 +67,7 @@
 
         <div class="message">
 
-            <div class="message-curly-brace-open open-brace-position" style="color: #00c">
+            <div class="message-curly-brace-open open-brace-position" data-color="#00c">
                 <div class="b1"></div>
                 <div class="b2"></div>
                 <div class="b3"></div>
@@ -78,7 +78,7 @@
 
             {{ form_widget(form.message) }}
 
-            <div class="message-curly-brace-close close-brace-position" style="color: #00c">
+            <div class="message-curly-brace-close close-brace-position" data-color="#00c">
                 <div class="b1"></div>
                 <div class="b2"></div>
                 <div class="b3"></div>
@@ -107,7 +107,7 @@
         </div>
 
 
-        <input type="submit" class="button large expanded" value="envoyer( message )">
+        <input id="polo" type="submit" class="button large expanded" value="envoyer">
 
         {{ form_end(form) }}
 
