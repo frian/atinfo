@@ -3,7 +3,7 @@
 
 
 $contactContentWidth: 300px;
-$contactContentHeight: 250px;
+$contactContentHeight: 300px;
 
 #contactContent {
     @include abs-centered();
@@ -11,13 +11,14 @@ $contactContentHeight: 250px;
     width: $contactContentWidth;
     margin-top: - ($contactContentHeight / 2) + 25px;
     margin-left: - $contactContentWidth / 2;
-    @include debug(red);
     text-align: center;
 }
 
 
 #contactContent h1 {
     padding: 0 0 10px 0;
+    height: 25px;
+    line-height: 25px;
     font-size: 150%;
 }
 
@@ -133,12 +134,12 @@ $angles: -1,-1,89,89,179,179,269,269;
 
 .open-brace-position {
     float: left;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .close-brace-position {
     float: right;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 
@@ -253,16 +254,14 @@ $angles: -1,-1,89,89,179,179,269,269;
 
 
 
-@include curly-brace-open("name", 80px, 4px, 10px);
+@include curly-brace-open("name", 40px, 2px, 10px);
+@include curly-brace-close("name", 40px, 2px, 10px);
 
-@include curly-brace-close("name", 80px, 4px, 10px);
+@include curly-brace-open("email", 40px, 2px, 10px);
+@include curly-brace-close("email", 40px, 2px, 10px);
 
-
-@include curly-brace-open("email", 80px, 4px, 10px);
-@include curly-brace-close("email", 80px, 4px, 10px);
-
-@include curly-brace-open("message", 180px, 4px, 10px);
-@include curly-brace-close("message", 180px, 4px, 10px);
+@include curly-brace-open("message", 80px, 2px, 5px);
+@include curly-brace-close("message", 80px, 2px, 5px);
 
 @media all and (min-width: 40em) {
 
@@ -275,7 +274,14 @@ $angles: -1,-1,89,89,179,179,269,269;
         width: $contactContentWidth;
         margin-top: - ($contactContentHeight / 2) + 25px;
         margin-left: - $contactContentWidth / 2;
-        @include debug(red);
+        // @include debug(red);
+    }
+
+    #contactContent h1 {
+        padding: 0 0 10px 0;
+        height: 50px;
+        line-height: 50px;
+        font-size: 300%;
     }
 
 
@@ -316,4 +322,24 @@ $angles: -1,-1,89,89,179,179,269,269;
         width: 60px;
         height: 60px;
     }
+
+    .open-brace-position {
+        float: left;
+        margin: 10px 0;
+    }
+
+    .close-brace-position {
+        float: right;
+        margin: 10px 0;
+    }
+
+    @include curly-brace-open("name", 80px, 4px, 10px);
+    @include curly-brace-close("name", 80px, 4px, 10px);
+
+    @include curly-brace-open("email", 80px, 4px, 10px);
+    @include curly-brace-close("email", 80px, 4px, 10px);
+
+    @include curly-brace-open("message", 180px, 4px, 10px);
+    @include curly-brace-close("message", 180px, 4px, 10px);
+
 }

@@ -72,26 +72,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 250px;
+  height: 300px;
   width: 300px;
-  margin-top: -100px;
+  margin-top: -125px;
   margin-left: -150px;
-  border: 1px solid red;
   text-align: center;
 }
 
-/* line 19, ../sass/contact.scss */
+/* line 18, ../sass/contact.scss */
 #contactContent h1 {
   padding: 0 0 10px 0;
+  height: 25px;
+  line-height: 25px;
   font-size: 150%;
 }
 
-/* line 24, ../sass/contact.scss */
+/* line 25, ../sass/contact.scss */
 #contactContent p {
   padding: 5px 0;
 }
 
-/* line 29, ../sass/contact.scss */
+/* line 30, ../sass/contact.scss */
 .contactFlowerContainer {
   position: absolute;
   width: 0;
@@ -99,79 +100,79 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border: 1px solid red;
 }
 
-/* line 41, ../sass/contact.scss */
+/* line 42, ../sass/contact.scss */
 #contactFlowerContainer1 {
   top: 0;
   left: 0px;
 }
 
-/* line 41, ../sass/contact.scss */
+/* line 42, ../sass/contact.scss */
 #contactFlowerContainer2 {
   top: 0;
   left: 100px;
 }
 
-/* line 41, ../sass/contact.scss */
+/* line 42, ../sass/contact.scss */
 #contactFlowerContainer3 {
   top: 0;
   left: 200px;
 }
 
-/* line 41, ../sass/contact.scss */
+/* line 42, ../sass/contact.scss */
 #contactFlowerContainer4 {
   top: 0;
   left: 300px;
 }
 
-/* line 48, ../sass/contact.scss */
+/* line 49, ../sass/contact.scss */
 #contactFlowerContainer5 {
-  top: 83.33333px;
+  top: 100px;
   right: 0;
 }
 
-/* line 48, ../sass/contact.scss */
+/* line 49, ../sass/contact.scss */
 #contactFlowerContainer6 {
-  top: 166.66667px;
+  top: 200px;
   right: 0;
 }
 
-/* line 55, ../sass/contact.scss */
+/* line 56, ../sass/contact.scss */
 #contactFlowerContainer7 {
   bottom: 0;
   right: 0px;
 }
 
-/* line 55, ../sass/contact.scss */
+/* line 56, ../sass/contact.scss */
 #contactFlowerContainer8 {
   bottom: 0;
   right: 100px;
 }
 
-/* line 55, ../sass/contact.scss */
+/* line 56, ../sass/contact.scss */
 #contactFlowerContainer9 {
   bottom: 0;
   right: 200px;
 }
 
-/* line 55, ../sass/contact.scss */
+/* line 56, ../sass/contact.scss */
 #contactFlowerContainer10 {
   bottom: 0;
   right: 300px;
 }
 
-/* line 62, ../sass/contact.scss */
+/* line 63, ../sass/contact.scss */
 #contactFlowerContainer11 {
-  bottom: 83.33333px;
+  bottom: 100px;
   left: 0;
 }
 
-/* line 62, ../sass/contact.scss */
+/* line 63, ../sass/contact.scss */
 #contactFlowerContainer12 {
-  bottom: 166.66667px;
+  bottom: 200px;
   left: 0;
 }
 
-/* line 73, ../sass/contact.scss */
+/* line 74, ../sass/contact.scss */
 #contactFlowerContainer1 {
   -moz-transform: rotate(-91deg);
   -ms-transform: rotate(-91deg);
@@ -179,12 +180,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(-91deg);
 }
 
-/* line 77, ../sass/contact.scss */
+/* line 78, ../sass/contact.scss */
 #contactFlowerContainer1 .contactPetal {
   background-color: red;
 }
 
-/* line 73, ../sass/contact.scss */
+/* line 74, ../sass/contact.scss */
 #contactFlowerContainer4 {
   -moz-transform: rotate(-1deg);
   -ms-transform: rotate(-1deg);
@@ -192,12 +193,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(-1deg);
 }
 
-/* line 77, ../sass/contact.scss */
+/* line 78, ../sass/contact.scss */
 #contactFlowerContainer4 .contactPetal {
   background-color: cyan;
 }
 
-/* line 73, ../sass/contact.scss */
+/* line 74, ../sass/contact.scss */
 #contactFlowerContainer7 {
   -moz-transform: rotate(89deg);
   -ms-transform: rotate(89deg);
@@ -205,12 +206,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(89deg);
 }
 
-/* line 77, ../sass/contact.scss */
+/* line 78, ../sass/contact.scss */
 #contactFlowerContainer7 .contactPetal {
   background-color: red;
 }
 
-/* line 73, ../sass/contact.scss */
+/* line 74, ../sass/contact.scss */
 #contactFlowerContainer10 {
   -moz-transform: rotate(179deg);
   -ms-transform: rotate(179deg);
@@ -218,12 +219,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(179deg);
 }
 
-/* line 77, ../sass/contact.scss */
+/* line 78, ../sass/contact.scss */
 #contactFlowerContainer10 .contactPetal {
   background-color: cyan;
 }
 
-/* line 87, ../sass/contact.scss */
+/* line 88, ../sass/contact.scss */
 #contactFlowerContainer2 {
   -moz-transform: rotate(-1deg);
   -ms-transform: rotate(-1deg);
@@ -231,12 +232,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(-1deg);
 }
 
-/* line 91, ../sass/contact.scss */
+/* line 92, ../sass/contact.scss */
 #contactFlowerContainer2 .contactPetal {
   background-color: yellow;
 }
 
-/* line 87, ../sass/contact.scss */
+/* line 88, ../sass/contact.scss */
 #contactFlowerContainer3 {
   -moz-transform: rotate(-1deg);
   -ms-transform: rotate(-1deg);
@@ -244,12 +245,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(-1deg);
 }
 
-/* line 91, ../sass/contact.scss */
+/* line 92, ../sass/contact.scss */
 #contactFlowerContainer3 .contactPetal {
   background-color: lime;
 }
 
-/* line 87, ../sass/contact.scss */
+/* line 88, ../sass/contact.scss */
 #contactFlowerContainer5 {
   -moz-transform: rotate(89deg);
   -ms-transform: rotate(89deg);
@@ -257,12 +258,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(89deg);
 }
 
-/* line 91, ../sass/contact.scss */
+/* line 92, ../sass/contact.scss */
 #contactFlowerContainer5 .contactPetal {
   background-color: blue;
 }
 
-/* line 87, ../sass/contact.scss */
+/* line 88, ../sass/contact.scss */
 #contactFlowerContainer6 {
   -moz-transform: rotate(89deg);
   -ms-transform: rotate(89deg);
@@ -270,12 +271,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(89deg);
 }
 
-/* line 91, ../sass/contact.scss */
+/* line 92, ../sass/contact.scss */
 #contactFlowerContainer6 .contactPetal {
   background-color: magenta;
 }
 
-/* line 87, ../sass/contact.scss */
+/* line 88, ../sass/contact.scss */
 #contactFlowerContainer8 {
   -moz-transform: rotate(179deg);
   -ms-transform: rotate(179deg);
@@ -283,12 +284,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(179deg);
 }
 
-/* line 91, ../sass/contact.scss */
+/* line 92, ../sass/contact.scss */
 #contactFlowerContainer8 .contactPetal {
   background-color: yellow;
 }
 
-/* line 87, ../sass/contact.scss */
+/* line 88, ../sass/contact.scss */
 #contactFlowerContainer9 {
   -moz-transform: rotate(179deg);
   -ms-transform: rotate(179deg);
@@ -296,12 +297,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(179deg);
 }
 
-/* line 91, ../sass/contact.scss */
+/* line 92, ../sass/contact.scss */
 #contactFlowerContainer9 .contactPetal {
   background-color: lime;
 }
 
-/* line 87, ../sass/contact.scss */
+/* line 88, ../sass/contact.scss */
 #contactFlowerContainer11 {
   -moz-transform: rotate(269deg);
   -ms-transform: rotate(269deg);
@@ -309,12 +310,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(269deg);
 }
 
-/* line 91, ../sass/contact.scss */
+/* line 92, ../sass/contact.scss */
 #contactFlowerContainer11 .contactPetal {
   background-color: blue;
 }
 
-/* line 87, ../sass/contact.scss */
+/* line 88, ../sass/contact.scss */
 #contactFlowerContainer12 {
   -moz-transform: rotate(269deg);
   -ms-transform: rotate(269deg);
@@ -322,12 +323,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(269deg);
 }
 
-/* line 91, ../sass/contact.scss */
+/* line 92, ../sass/contact.scss */
 #contactFlowerContainer12 .contactPetal {
   background-color: magenta;
 }
 
-/* line 97, ../sass/contact.scss */
+/* line 98, ../sass/contact.scss */
 .contactPetal {
   -moz-transform-origin: left top;
   -ms-transform-origin: left top;
@@ -344,7 +345,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   opacity: 0.7;
 }
 
-/* line 109, ../sass/contact.scss */
+/* line 110, ../sass/contact.scss */
 .contactPetal1 {
   -moz-transform: rotate(145deg);
   -ms-transform: rotate(145deg);
@@ -352,7 +353,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(145deg);
 }
 
-/* line 109, ../sass/contact.scss */
+/* line 110, ../sass/contact.scss */
 .contactPetal2 {
   -moz-transform: rotate(163deg);
   -ms-transform: rotate(163deg);
@@ -360,7 +361,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(163deg);
 }
 
-/* line 109, ../sass/contact.scss */
+/* line 110, ../sass/contact.scss */
 .contactPetal3 {
   -moz-transform: rotate(181deg);
   -ms-transform: rotate(181deg);
@@ -368,7 +369,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(181deg);
 }
 
-/* line 109, ../sass/contact.scss */
+/* line 110, ../sass/contact.scss */
 .contactPetal4 {
   -moz-transform: rotate(199deg);
   -ms-transform: rotate(199deg);
@@ -376,7 +377,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(199deg);
 }
 
-/* line 109, ../sass/contact.scss */
+/* line 110, ../sass/contact.scss */
 .contactPetal5 {
   -moz-transform: rotate(217deg);
   -ms-transform: rotate(217deg);
@@ -384,7 +385,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(217deg);
 }
 
-/* line 109, ../sass/contact.scss */
+/* line 110, ../sass/contact.scss */
 .contactPetal6 {
   -moz-transform: rotate(235deg);
   -ms-transform: rotate(235deg);
@@ -392,7 +393,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(235deg);
 }
 
-/* line 109, ../sass/contact.scss */
+/* line 110, ../sass/contact.scss */
 .contactPetal7 {
   -moz-transform: rotate(253deg);
   -ms-transform: rotate(253deg);
@@ -400,7 +401,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(253deg);
 }
 
-/* line 109, ../sass/contact.scss */
+/* line 110, ../sass/contact.scss */
 .contactPetal8 {
   -moz-transform: rotate(271deg);
   -ms-transform: rotate(271deg);
@@ -408,7 +409,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(271deg);
 }
 
-/* line 109, ../sass/contact.scss */
+/* line 110, ../sass/contact.scss */
 .contactPetal9 {
   -moz-transform: rotate(289deg);
   -ms-transform: rotate(289deg);
@@ -416,7 +417,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(289deg);
 }
 
-/* line 109, ../sass/contact.scss */
+/* line 110, ../sass/contact.scss */
 .contactPetal10 {
   -moz-transform: rotate(307deg);
   -ms-transform: rotate(307deg);
@@ -424,7 +425,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(307deg);
 }
 
-/* line 109, ../sass/contact.scss */
+/* line 110, ../sass/contact.scss */
 .contactPetal11 {
   -moz-transform: rotate(325deg);
   -ms-transform: rotate(325deg);
@@ -432,7 +433,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(325deg);
 }
 
-/* line 109, ../sass/contact.scss */
+/* line 110, ../sass/contact.scss */
 .contactPetal12 {
   -moz-transform: rotate(343deg);
   -ms-transform: rotate(343deg);
@@ -440,7 +441,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(343deg);
 }
 
-/* line 109, ../sass/contact.scss */
+/* line 110, ../sass/contact.scss */
 .contactPetal13 {
   -moz-transform: rotate(361deg);
   -ms-transform: rotate(361deg);
@@ -448,7 +449,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(361deg);
 }
 
-/* line 109, ../sass/contact.scss */
+/* line 110, ../sass/contact.scss */
 .contactPetal14 {
   -moz-transform: rotate(379deg);
   -ms-transform: rotate(379deg);
@@ -456,7 +457,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(379deg);
 }
 
-/* line 109, ../sass/contact.scss */
+/* line 110, ../sass/contact.scss */
 .contactPetal15 {
   -moz-transform: rotate(397deg);
   -ms-transform: rotate(397deg);
@@ -464,431 +465,431 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(397deg);
 }
 
-/* line 115, ../sass/contact.scss */
+/* line 116, ../sass/contact.scss */
 .contactPetalAngleColor1 {
   background-color: red;
 }
 
-/* line 115, ../sass/contact.scss */
+/* line 116, ../sass/contact.scss */
 .contactPetalAngleColor2 {
   background-color: #ff6600;
 }
 
-/* line 115, ../sass/contact.scss */
+/* line 116, ../sass/contact.scss */
 .contactPetalAngleColor3 {
   background-color: #ffcc00;
 }
 
-/* line 115, ../sass/contact.scss */
+/* line 116, ../sass/contact.scss */
 .contactPetalAngleColor4 {
   background-color: #ccff00;
 }
 
-/* line 115, ../sass/contact.scss */
+/* line 116, ../sass/contact.scss */
 .contactPetalAngleColor5 {
   background-color: #66ff00;
 }
 
-/* line 115, ../sass/contact.scss */
+/* line 116, ../sass/contact.scss */
 .contactPetalAngleColor6 {
   background-color: lime;
 }
 
-/* line 115, ../sass/contact.scss */
+/* line 116, ../sass/contact.scss */
 .contactPetalAngleColor7 {
   background-color: #00ff66;
 }
 
-/* line 115, ../sass/contact.scss */
+/* line 116, ../sass/contact.scss */
 .contactPetalAngleColor8 {
   background-color: #00ffcc;
 }
 
-/* line 115, ../sass/contact.scss */
+/* line 116, ../sass/contact.scss */
 .contactPetalAngleColor9 {
   background-color: #00ccff;
 }
 
-/* line 115, ../sass/contact.scss */
+/* line 116, ../sass/contact.scss */
 .contactPetalAngleColor10 {
   background-color: #0066ff;
 }
 
-/* line 115, ../sass/contact.scss */
+/* line 116, ../sass/contact.scss */
 .contactPetalAngleColor11 {
   background-color: blue;
 }
 
-/* line 115, ../sass/contact.scss */
+/* line 116, ../sass/contact.scss */
 .contactPetalAngleColor12 {
   background-color: #6600ff;
 }
 
-/* line 115, ../sass/contact.scss */
+/* line 116, ../sass/contact.scss */
 .contactPetalAngleColor13 {
   background-color: #cc00ff;
 }
 
-/* line 115, ../sass/contact.scss */
+/* line 116, ../sass/contact.scss */
 .contactPetalAngleColor14 {
   background-color: #ff00cc;
 }
 
-/* line 115, ../sass/contact.scss */
+/* line 116, ../sass/contact.scss */
 .contactPetalAngleColor15 {
   background-color: #ff0066;
 }
 
-/* line 134, ../sass/contact.scss */
+/* line 135, ../sass/contact.scss */
 .open-brace-position {
   float: left;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
-/* line 139, ../sass/contact.scss */
+/* line 140, ../sass/contact.scss */
 .close-brace-position {
   float: right;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
-/* line 147, ../sass/contact.scss */
+/* line 148, ../sass/contact.scss */
 .name-curly-brace-open {
-  height: 80px;
+  height: 40px;
   width: 10px;
   display: inline-block;
 }
 
-/* line 154, ../sass/contact.scss */
+/* line 155, ../sass/contact.scss */
 .name-curly-brace-open .b1 {
   width: 100%;
   height: 10%;
-  border-left: 4px solid;
+  border-left: 2px solid;
   border-top-left-radius: 10px;
 }
 
-/* line 161, ../sass/contact.scss */
+/* line 162, ../sass/contact.scss */
 .name-curly-brace-open .b2 {
   margin-left: -10px;
   width: 100%;
   height: 30%;
-  border-right: 4px solid;
+  border-right: 2px solid;
 }
 
-/* line 168, ../sass/contact.scss */
+/* line 169, ../sass/contact.scss */
 .name-curly-brace-open .b3 {
   margin-left: -10px;
   width: 100%;
   height: 10%;
-  border-right: 4px solid;
+  border-right: 2px solid;
   border-bottom-right-radius: 10px;
 }
 
-/* line 176, ../sass/contact.scss */
+/* line 177, ../sass/contact.scss */
 .name-curly-brace-open .b4 {
   margin-left: -10px;
   width: 100%;
   height: 10%;
-  border-right: 4px solid;
+  border-right: 2px solid;
   border-top-right-radius: 10px;
 }
 
-/* line 184, ../sass/contact.scss */
+/* line 185, ../sass/contact.scss */
 .name-curly-brace-open .b5 {
   margin-left: -10px;
   width: 100%;
   height: 30%;
-  border-right: 4px solid;
+  border-right: 2px solid;
 }
 
-/* line 191, ../sass/contact.scss */
+/* line 192, ../sass/contact.scss */
 .name-curly-brace-open .b6 {
   width: 100%;
   height: 10%;
-  border-left: 4px solid;
+  border-left: 2px solid;
   border-bottom-left-radius: 10px;
 }
 
-/* line 203, ../sass/contact.scss */
+/* line 204, ../sass/contact.scss */
 .name-curly-brace-close {
-  height: 80px;
+  height: 40px;
   width: 10px;
   display: inline-block;
 }
 
-/* line 210, ../sass/contact.scss */
+/* line 211, ../sass/contact.scss */
 .name-curly-brace-close .b1 {
   width: 100%;
   height: 10%;
-  border-right: 4px solid;
+  border-right: 2px solid;
   border-top-right-radius: 10px;
 }
 
-/* line 217, ../sass/contact.scss */
+/* line 218, ../sass/contact.scss */
 .name-curly-brace-close .b2 {
   width: 100%;
   height: 30%;
-  border-right: 4px solid;
+  border-right: 2px solid;
 }
 
-/* line 223, ../sass/contact.scss */
+/* line 224, ../sass/contact.scss */
 .name-curly-brace-close .b3 {
   margin-left: 10px;
   width: 100%;
   height: 10%;
-  border-left: 4px solid;
+  border-left: 2px solid;
   border-bottom-left-radius: 10px;
 }
 
-/* line 231, ../sass/contact.scss */
+/* line 232, ../sass/contact.scss */
 .name-curly-brace-close .b4 {
   margin-left: 10px;
   width: 100%;
   height: 10%;
-  border-left: 4px solid;
+  border-left: 2px solid;
   border-top-left-radius: 10px;
 }
 
-/* line 239, ../sass/contact.scss */
+/* line 240, ../sass/contact.scss */
 .name-curly-brace-close .b5 {
   width: 100%;
   height: 30%;
-  border-right: 4px solid;
+  border-right: 2px solid;
 }
 
-/* line 245, ../sass/contact.scss */
+/* line 246, ../sass/contact.scss */
 .name-curly-brace-close .b6 {
   width: 100%;
   height: 10%;
-  border-right: 4px solid;
+  border-right: 2px solid;
   border-bottom-right-radius: 10px;
 }
 
-/* line 147, ../sass/contact.scss */
+/* line 148, ../sass/contact.scss */
 .email-curly-brace-open {
-  height: 80px;
+  height: 40px;
   width: 10px;
   display: inline-block;
 }
 
-/* line 154, ../sass/contact.scss */
+/* line 155, ../sass/contact.scss */
 .email-curly-brace-open .b1 {
   width: 100%;
   height: 10%;
-  border-left: 4px solid;
+  border-left: 2px solid;
   border-top-left-radius: 10px;
 }
 
-/* line 161, ../sass/contact.scss */
+/* line 162, ../sass/contact.scss */
 .email-curly-brace-open .b2 {
   margin-left: -10px;
   width: 100%;
   height: 30%;
-  border-right: 4px solid;
+  border-right: 2px solid;
 }
 
-/* line 168, ../sass/contact.scss */
+/* line 169, ../sass/contact.scss */
 .email-curly-brace-open .b3 {
   margin-left: -10px;
   width: 100%;
   height: 10%;
-  border-right: 4px solid;
+  border-right: 2px solid;
   border-bottom-right-radius: 10px;
 }
 
-/* line 176, ../sass/contact.scss */
+/* line 177, ../sass/contact.scss */
 .email-curly-brace-open .b4 {
   margin-left: -10px;
   width: 100%;
   height: 10%;
-  border-right: 4px solid;
+  border-right: 2px solid;
   border-top-right-radius: 10px;
 }
 
-/* line 184, ../sass/contact.scss */
+/* line 185, ../sass/contact.scss */
 .email-curly-brace-open .b5 {
   margin-left: -10px;
   width: 100%;
   height: 30%;
-  border-right: 4px solid;
+  border-right: 2px solid;
 }
 
-/* line 191, ../sass/contact.scss */
+/* line 192, ../sass/contact.scss */
 .email-curly-brace-open .b6 {
   width: 100%;
   height: 10%;
-  border-left: 4px solid;
+  border-left: 2px solid;
   border-bottom-left-radius: 10px;
 }
 
-/* line 203, ../sass/contact.scss */
+/* line 204, ../sass/contact.scss */
 .email-curly-brace-close {
-  height: 80px;
+  height: 40px;
   width: 10px;
   display: inline-block;
 }
 
-/* line 210, ../sass/contact.scss */
+/* line 211, ../sass/contact.scss */
 .email-curly-brace-close .b1 {
   width: 100%;
   height: 10%;
-  border-right: 4px solid;
+  border-right: 2px solid;
   border-top-right-radius: 10px;
 }
 
-/* line 217, ../sass/contact.scss */
+/* line 218, ../sass/contact.scss */
 .email-curly-brace-close .b2 {
   width: 100%;
   height: 30%;
-  border-right: 4px solid;
+  border-right: 2px solid;
 }
 
-/* line 223, ../sass/contact.scss */
+/* line 224, ../sass/contact.scss */
 .email-curly-brace-close .b3 {
   margin-left: 10px;
   width: 100%;
   height: 10%;
-  border-left: 4px solid;
+  border-left: 2px solid;
   border-bottom-left-radius: 10px;
 }
 
-/* line 231, ../sass/contact.scss */
+/* line 232, ../sass/contact.scss */
 .email-curly-brace-close .b4 {
   margin-left: 10px;
   width: 100%;
   height: 10%;
-  border-left: 4px solid;
+  border-left: 2px solid;
   border-top-left-radius: 10px;
 }
 
-/* line 239, ../sass/contact.scss */
+/* line 240, ../sass/contact.scss */
 .email-curly-brace-close .b5 {
   width: 100%;
   height: 30%;
-  border-right: 4px solid;
+  border-right: 2px solid;
 }
 
-/* line 245, ../sass/contact.scss */
+/* line 246, ../sass/contact.scss */
 .email-curly-brace-close .b6 {
   width: 100%;
   height: 10%;
-  border-right: 4px solid;
+  border-right: 2px solid;
   border-bottom-right-radius: 10px;
 }
 
-/* line 147, ../sass/contact.scss */
+/* line 148, ../sass/contact.scss */
 .message-curly-brace-open {
-  height: 180px;
-  width: 10px;
+  height: 80px;
+  width: 5px;
   display: inline-block;
 }
 
-/* line 154, ../sass/contact.scss */
+/* line 155, ../sass/contact.scss */
 .message-curly-brace-open .b1 {
   width: 100%;
   height: 10%;
-  border-left: 4px solid;
-  border-top-left-radius: 10px;
+  border-left: 2px solid;
+  border-top-left-radius: 5px;
 }
 
-/* line 161, ../sass/contact.scss */
+/* line 162, ../sass/contact.scss */
 .message-curly-brace-open .b2 {
-  margin-left: -10px;
+  margin-left: -5px;
   width: 100%;
   height: 30%;
-  border-right: 4px solid;
+  border-right: 2px solid;
 }
 
-/* line 168, ../sass/contact.scss */
+/* line 169, ../sass/contact.scss */
 .message-curly-brace-open .b3 {
-  margin-left: -10px;
+  margin-left: -5px;
   width: 100%;
   height: 10%;
-  border-right: 4px solid;
-  border-bottom-right-radius: 10px;
+  border-right: 2px solid;
+  border-bottom-right-radius: 5px;
 }
 
-/* line 176, ../sass/contact.scss */
+/* line 177, ../sass/contact.scss */
 .message-curly-brace-open .b4 {
-  margin-left: -10px;
+  margin-left: -5px;
   width: 100%;
   height: 10%;
-  border-right: 4px solid;
-  border-top-right-radius: 10px;
+  border-right: 2px solid;
+  border-top-right-radius: 5px;
 }
 
-/* line 184, ../sass/contact.scss */
+/* line 185, ../sass/contact.scss */
 .message-curly-brace-open .b5 {
-  margin-left: -10px;
+  margin-left: -5px;
   width: 100%;
   height: 30%;
-  border-right: 4px solid;
+  border-right: 2px solid;
 }
 
-/* line 191, ../sass/contact.scss */
+/* line 192, ../sass/contact.scss */
 .message-curly-brace-open .b6 {
   width: 100%;
   height: 10%;
-  border-left: 4px solid;
-  border-bottom-left-radius: 10px;
+  border-left: 2px solid;
+  border-bottom-left-radius: 5px;
 }
 
-/* line 203, ../sass/contact.scss */
+/* line 204, ../sass/contact.scss */
 .message-curly-brace-close {
-  height: 180px;
-  width: 10px;
+  height: 80px;
+  width: 5px;
   display: inline-block;
 }
 
-/* line 210, ../sass/contact.scss */
+/* line 211, ../sass/contact.scss */
 .message-curly-brace-close .b1 {
   width: 100%;
   height: 10%;
-  border-right: 4px solid;
-  border-top-right-radius: 10px;
+  border-right: 2px solid;
+  border-top-right-radius: 5px;
 }
 
-/* line 217, ../sass/contact.scss */
+/* line 218, ../sass/contact.scss */
 .message-curly-brace-close .b2 {
   width: 100%;
   height: 30%;
-  border-right: 4px solid;
+  border-right: 2px solid;
 }
 
-/* line 223, ../sass/contact.scss */
+/* line 224, ../sass/contact.scss */
 .message-curly-brace-close .b3 {
-  margin-left: 10px;
+  margin-left: 5px;
   width: 100%;
   height: 10%;
-  border-left: 4px solid;
-  border-bottom-left-radius: 10px;
+  border-left: 2px solid;
+  border-bottom-left-radius: 5px;
 }
 
-/* line 231, ../sass/contact.scss */
+/* line 232, ../sass/contact.scss */
 .message-curly-brace-close .b4 {
-  margin-left: 10px;
+  margin-left: 5px;
   width: 100%;
   height: 10%;
-  border-left: 4px solid;
-  border-top-left-radius: 10px;
+  border-left: 2px solid;
+  border-top-left-radius: 5px;
 }
 
-/* line 239, ../sass/contact.scss */
+/* line 240, ../sass/contact.scss */
 .message-curly-brace-close .b5 {
   width: 100%;
   height: 30%;
-  border-right: 4px solid;
+  border-right: 2px solid;
 }
 
-/* line 245, ../sass/contact.scss */
+/* line 246, ../sass/contact.scss */
 .message-curly-brace-close .b6 {
   width: 100%;
   height: 10%;
-  border-right: 4px solid;
-  border-bottom-right-radius: 10px;
+  border-right: 2px solid;
+  border-bottom-right-radius: 5px;
 }
 
 @media all and (min-width: 40em) {
-  /* line 272, ../sass/contact.scss */
+  /* line 271, ../sass/contact.scss */
   #contactContent {
     position: absolute;
     top: 50%;
@@ -897,85 +898,440 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 600px;
     margin-top: -275px;
     margin-left: -300px;
-    border: 1px solid red;
   }
 
-  /* line 286, ../sass/contact.scss */
+  /* line 280, ../sass/contact.scss */
+  #contactContent h1 {
+    padding: 0 0 10px 0;
+    height: 50px;
+    line-height: 50px;
+    font-size: 300%;
+  }
+
+  /* line 292, ../sass/contact.scss */
   #contactFlowerContainer1 {
     top: 0;
     left: 0px;
   }
 
-  /* line 286, ../sass/contact.scss */
+  /* line 292, ../sass/contact.scss */
   #contactFlowerContainer2 {
     top: 0;
     left: 200px;
   }
 
-  /* line 286, ../sass/contact.scss */
+  /* line 292, ../sass/contact.scss */
   #contactFlowerContainer3 {
     top: 0;
     left: 400px;
   }
 
-  /* line 286, ../sass/contact.scss */
+  /* line 292, ../sass/contact.scss */
   #contactFlowerContainer4 {
     top: 0;
     left: 600px;
   }
 
-  /* line 293, ../sass/contact.scss */
+  /* line 299, ../sass/contact.scss */
   #contactFlowerContainer5 {
     top: 200px;
     right: 0;
   }
 
-  /* line 293, ../sass/contact.scss */
+  /* line 299, ../sass/contact.scss */
   #contactFlowerContainer6 {
     top: 400px;
     right: 0;
   }
 
-  /* line 300, ../sass/contact.scss */
+  /* line 306, ../sass/contact.scss */
   #contactFlowerContainer7 {
     bottom: 0;
     right: 0px;
   }
 
-  /* line 300, ../sass/contact.scss */
+  /* line 306, ../sass/contact.scss */
   #contactFlowerContainer8 {
     bottom: 0;
     right: 200px;
   }
 
-  /* line 300, ../sass/contact.scss */
+  /* line 306, ../sass/contact.scss */
   #contactFlowerContainer9 {
     bottom: 0;
     right: 400px;
   }
 
-  /* line 300, ../sass/contact.scss */
+  /* line 306, ../sass/contact.scss */
   #contactFlowerContainer10 {
     bottom: 0;
     right: 600px;
   }
 
-  /* line 307, ../sass/contact.scss */
+  /* line 313, ../sass/contact.scss */
   #contactFlowerContainer11 {
     bottom: 200px;
     left: 0;
   }
 
-  /* line 307, ../sass/contact.scss */
+  /* line 313, ../sass/contact.scss */
   #contactFlowerContainer12 {
     bottom: 400px;
     left: 0;
   }
 
-  /* line 314, ../sass/contact.scss */
+  /* line 320, ../sass/contact.scss */
   .contactPetal {
     position: absolute;
     width: 60px;
     height: 60px;
+  }
+
+  /* line 326, ../sass/contact.scss */
+  .open-brace-position {
+    float: left;
+    margin: 10px 0;
+  }
+
+  /* line 331, ../sass/contact.scss */
+  .close-brace-position {
+    float: right;
+    margin: 10px 0;
+  }
+
+  /* line 148, ../sass/contact.scss */
+  .name-curly-brace-open {
+    height: 80px;
+    width: 10px;
+    display: inline-block;
+  }
+
+  /* line 155, ../sass/contact.scss */
+  .name-curly-brace-open .b1 {
+    width: 100%;
+    height: 10%;
+    border-left: 4px solid;
+    border-top-left-radius: 10px;
+  }
+
+  /* line 162, ../sass/contact.scss */
+  .name-curly-brace-open .b2 {
+    margin-left: -10px;
+    width: 100%;
+    height: 30%;
+    border-right: 4px solid;
+  }
+
+  /* line 169, ../sass/contact.scss */
+  .name-curly-brace-open .b3 {
+    margin-left: -10px;
+    width: 100%;
+    height: 10%;
+    border-right: 4px solid;
+    border-bottom-right-radius: 10px;
+  }
+
+  /* line 177, ../sass/contact.scss */
+  .name-curly-brace-open .b4 {
+    margin-left: -10px;
+    width: 100%;
+    height: 10%;
+    border-right: 4px solid;
+    border-top-right-radius: 10px;
+  }
+
+  /* line 185, ../sass/contact.scss */
+  .name-curly-brace-open .b5 {
+    margin-left: -10px;
+    width: 100%;
+    height: 30%;
+    border-right: 4px solid;
+  }
+
+  /* line 192, ../sass/contact.scss */
+  .name-curly-brace-open .b6 {
+    width: 100%;
+    height: 10%;
+    border-left: 4px solid;
+    border-bottom-left-radius: 10px;
+  }
+
+  /* line 204, ../sass/contact.scss */
+  .name-curly-brace-close {
+    height: 80px;
+    width: 10px;
+    display: inline-block;
+  }
+
+  /* line 211, ../sass/contact.scss */
+  .name-curly-brace-close .b1 {
+    width: 100%;
+    height: 10%;
+    border-right: 4px solid;
+    border-top-right-radius: 10px;
+  }
+
+  /* line 218, ../sass/contact.scss */
+  .name-curly-brace-close .b2 {
+    width: 100%;
+    height: 30%;
+    border-right: 4px solid;
+  }
+
+  /* line 224, ../sass/contact.scss */
+  .name-curly-brace-close .b3 {
+    margin-left: 10px;
+    width: 100%;
+    height: 10%;
+    border-left: 4px solid;
+    border-bottom-left-radius: 10px;
+  }
+
+  /* line 232, ../sass/contact.scss */
+  .name-curly-brace-close .b4 {
+    margin-left: 10px;
+    width: 100%;
+    height: 10%;
+    border-left: 4px solid;
+    border-top-left-radius: 10px;
+  }
+
+  /* line 240, ../sass/contact.scss */
+  .name-curly-brace-close .b5 {
+    width: 100%;
+    height: 30%;
+    border-right: 4px solid;
+  }
+
+  /* line 246, ../sass/contact.scss */
+  .name-curly-brace-close .b6 {
+    width: 100%;
+    height: 10%;
+    border-right: 4px solid;
+    border-bottom-right-radius: 10px;
+  }
+
+  /* line 148, ../sass/contact.scss */
+  .email-curly-brace-open {
+    height: 80px;
+    width: 10px;
+    display: inline-block;
+  }
+
+  /* line 155, ../sass/contact.scss */
+  .email-curly-brace-open .b1 {
+    width: 100%;
+    height: 10%;
+    border-left: 4px solid;
+    border-top-left-radius: 10px;
+  }
+
+  /* line 162, ../sass/contact.scss */
+  .email-curly-brace-open .b2 {
+    margin-left: -10px;
+    width: 100%;
+    height: 30%;
+    border-right: 4px solid;
+  }
+
+  /* line 169, ../sass/contact.scss */
+  .email-curly-brace-open .b3 {
+    margin-left: -10px;
+    width: 100%;
+    height: 10%;
+    border-right: 4px solid;
+    border-bottom-right-radius: 10px;
+  }
+
+  /* line 177, ../sass/contact.scss */
+  .email-curly-brace-open .b4 {
+    margin-left: -10px;
+    width: 100%;
+    height: 10%;
+    border-right: 4px solid;
+    border-top-right-radius: 10px;
+  }
+
+  /* line 185, ../sass/contact.scss */
+  .email-curly-brace-open .b5 {
+    margin-left: -10px;
+    width: 100%;
+    height: 30%;
+    border-right: 4px solid;
+  }
+
+  /* line 192, ../sass/contact.scss */
+  .email-curly-brace-open .b6 {
+    width: 100%;
+    height: 10%;
+    border-left: 4px solid;
+    border-bottom-left-radius: 10px;
+  }
+
+  /* line 204, ../sass/contact.scss */
+  .email-curly-brace-close {
+    height: 80px;
+    width: 10px;
+    display: inline-block;
+  }
+
+  /* line 211, ../sass/contact.scss */
+  .email-curly-brace-close .b1 {
+    width: 100%;
+    height: 10%;
+    border-right: 4px solid;
+    border-top-right-radius: 10px;
+  }
+
+  /* line 218, ../sass/contact.scss */
+  .email-curly-brace-close .b2 {
+    width: 100%;
+    height: 30%;
+    border-right: 4px solid;
+  }
+
+  /* line 224, ../sass/contact.scss */
+  .email-curly-brace-close .b3 {
+    margin-left: 10px;
+    width: 100%;
+    height: 10%;
+    border-left: 4px solid;
+    border-bottom-left-radius: 10px;
+  }
+
+  /* line 232, ../sass/contact.scss */
+  .email-curly-brace-close .b4 {
+    margin-left: 10px;
+    width: 100%;
+    height: 10%;
+    border-left: 4px solid;
+    border-top-left-radius: 10px;
+  }
+
+  /* line 240, ../sass/contact.scss */
+  .email-curly-brace-close .b5 {
+    width: 100%;
+    height: 30%;
+    border-right: 4px solid;
+  }
+
+  /* line 246, ../sass/contact.scss */
+  .email-curly-brace-close .b6 {
+    width: 100%;
+    height: 10%;
+    border-right: 4px solid;
+    border-bottom-right-radius: 10px;
+  }
+
+  /* line 148, ../sass/contact.scss */
+  .message-curly-brace-open {
+    height: 180px;
+    width: 10px;
+    display: inline-block;
+  }
+
+  /* line 155, ../sass/contact.scss */
+  .message-curly-brace-open .b1 {
+    width: 100%;
+    height: 10%;
+    border-left: 4px solid;
+    border-top-left-radius: 10px;
+  }
+
+  /* line 162, ../sass/contact.scss */
+  .message-curly-brace-open .b2 {
+    margin-left: -10px;
+    width: 100%;
+    height: 30%;
+    border-right: 4px solid;
+  }
+
+  /* line 169, ../sass/contact.scss */
+  .message-curly-brace-open .b3 {
+    margin-left: -10px;
+    width: 100%;
+    height: 10%;
+    border-right: 4px solid;
+    border-bottom-right-radius: 10px;
+  }
+
+  /* line 177, ../sass/contact.scss */
+  .message-curly-brace-open .b4 {
+    margin-left: -10px;
+    width: 100%;
+    height: 10%;
+    border-right: 4px solid;
+    border-top-right-radius: 10px;
+  }
+
+  /* line 185, ../sass/contact.scss */
+  .message-curly-brace-open .b5 {
+    margin-left: -10px;
+    width: 100%;
+    height: 30%;
+    border-right: 4px solid;
+  }
+
+  /* line 192, ../sass/contact.scss */
+  .message-curly-brace-open .b6 {
+    width: 100%;
+    height: 10%;
+    border-left: 4px solid;
+    border-bottom-left-radius: 10px;
+  }
+
+  /* line 204, ../sass/contact.scss */
+  .message-curly-brace-close {
+    height: 180px;
+    width: 10px;
+    display: inline-block;
+  }
+
+  /* line 211, ../sass/contact.scss */
+  .message-curly-brace-close .b1 {
+    width: 100%;
+    height: 10%;
+    border-right: 4px solid;
+    border-top-right-radius: 10px;
+  }
+
+  /* line 218, ../sass/contact.scss */
+  .message-curly-brace-close .b2 {
+    width: 100%;
+    height: 30%;
+    border-right: 4px solid;
+  }
+
+  /* line 224, ../sass/contact.scss */
+  .message-curly-brace-close .b3 {
+    margin-left: 10px;
+    width: 100%;
+    height: 10%;
+    border-left: 4px solid;
+    border-bottom-left-radius: 10px;
+  }
+
+  /* line 232, ../sass/contact.scss */
+  .message-curly-brace-close .b4 {
+    margin-left: 10px;
+    width: 100%;
+    height: 10%;
+    border-left: 4px solid;
+    border-top-left-radius: 10px;
+  }
+
+  /* line 240, ../sass/contact.scss */
+  .message-curly-brace-close .b5 {
+    width: 100%;
+    height: 30%;
+    border-right: 4px solid;
+  }
+
+  /* line 246, ../sass/contact.scss */
+  .message-curly-brace-close .b6 {
+    width: 100%;
+    height: 10%;
+    border-right: 4px solid;
+    border-bottom-right-radius: 10px;
   }
 }
