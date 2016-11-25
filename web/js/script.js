@@ -87,6 +87,23 @@ $(function() {
     //
 	// });
 
+
+
+    $("#form_name").on("input", null, null, function(e) {
+
+        if ($(this).val().length >= 3) {
+
+            var elem = $(this).closest('div').find('div');
+            var color = elem.attr('data-color');
+            $(this).closest('div').find('div').css('color', color);
+        }
+        else {
+            $(this).closest('div').find('div').css('color', '#333');
+        }
+	});
+
+
+
 	// handle link clicks
 	$(document).on("click","#top",function(e) {
 
