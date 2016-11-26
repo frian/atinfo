@@ -102,12 +102,18 @@ $(function() {
 
     var minLengths = { "name" : 5, "email" : 7, "message": 15 };
 
-    $.each( minLengths, function( key, value ) {
-      console.log( $("#form_" + key).val().length + ' - '  + "#form_" + key);
-      if ($("#form_" + key).val().length >= value) {
-          $("#form_" + key).closest('div').find('div').css('color', '#d00');
-      }
-    });
+    console.log(window.location);
+
+    if (window.location.pathname == '/contacts') {
+
+        $.each( minLengths, function( key, value ) {
+          if ($("#form_" + key).val().length >= value) {
+              $("#form_" + key).closest('div').find('div').css('color', '#d00');
+          }
+        });
+    }
+
+
 
 
 

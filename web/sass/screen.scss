@@ -25,9 +25,9 @@
     src: url("/fonts/leaguegothic-condensed-regular-webfont.ttf") format("truetype");
 }
 
-* {
-    @include animation(none !important);
-}
+// * {
+//     @include animation(none !important);
+// }
 
 .noAnim {
     @include animation(none !important);

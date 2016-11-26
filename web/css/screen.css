@@ -86,14 +86,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-style: normal;
   src: url("/fonts/leaguegothic-condensed-regular-webfont.ttf") format("truetype");
 }
-/* line 28, ../sass/screen.scss */
-* {
-  -webkit-animation: none !important;
-  -moz-animation: none !important;
-  -o-animation: none !important;
-  animation: none !important;
-}
-
 /* line 32, ../sass/screen.scss */
 .noAnim {
   -webkit-animation: none !important;
