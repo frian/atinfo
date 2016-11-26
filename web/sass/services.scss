@@ -167,7 +167,7 @@ $trunkRadius: 2000px;
     position: absolute;
     left: 0px;
     transform-origin: left top;
-    @include opacity(0);
+    // @include opacity(0);
     background-color: #080;
 }
 
@@ -182,21 +182,20 @@ $trunkRadius: 2000px;
 #leaf2 {
     bottom: - $YOffset - 1px;
     left: 3px;
-    @include transform(rotateX(180deg) scale(0.01));
+    @include transform(rotateX(180deg));
     @include animation('leafGrow2 4s ease-out 1s forwards');
 }
 
 #leaf3 {
     bottom: - $YOffset + 60px;
-    left: 2px;
-    @include transform(rotateZ(180deg) scale(0.01));
+    @include transform(rotateZ(180deg) scale(0.8));
     @include animation('leafGrow3 3s ease-out 2s forwards');
 }
 
 #leaf4 {
     bottom: - $YOffset + 100px;
     left: -8px;
-    @include transform(rotateX(180deg) scale(0.01));
+    @include transform(rotateX(180deg) scale(0.6));
     @include animation('leafGrow4 3s ease-out 3s forwards');
 }
 
@@ -223,23 +222,23 @@ $trunkRadius: 2000px;
 }
 @include keyframes(leafGrow3) {
     from {
-        @include transform(scale(0.01) rotateX(180deg));
+        @include transform(scale(0.01) rotateZ(180deg));
         @include opacity(1);
         left: -2px
     }
     to {
-        @include transform(scale(0.8) rotateX(180deg));
+        @include transform(scale(0.8) rotateZ(180deg));
         @include opacity(1);
         left: 2px;
     }
 }
 @include keyframes(leafGrow4) {
     from {
-        @include transform(scale(0.01) rotateZ(180deg));
+        @include transform(scale(0.01) rotateX(180deg));
         @include opacity(1);
     }
     to {
-        @include transform(scale(0.6) rotateZ(180deg));
+        @include transform(scale(0.6) rotateX(180deg));
         @include opacity(1);
     }
 }
@@ -450,7 +449,7 @@ $serviceSpin18Angle: $serviceAngleStep;
 
     #trunkMask {
         height: 500px;
-        margin-top: -200px;
+        margin-top: -750px;
         margin-left: -290px;
     }
 
@@ -503,7 +502,7 @@ $serviceSpin18Angle: $serviceAngleStep;
         // left: -26px;
         position: absolute;
         bottom: -100px + 150px;
-        margin-left: -10px;
+        margin-left: -20px;
 
     }
 
@@ -511,7 +510,7 @@ $serviceSpin18Angle: $serviceAngleStep;
         // top: 250px;
         // left: -34px;
         bottom: -100px + 250px;
-        left: -20px;
+        left: -10px;
     }
 
 

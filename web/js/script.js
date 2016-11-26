@@ -1,17 +1,14 @@
 $(function() {
 
+    // on page reload disable animations
     if (performance.navigation.type  == 1 ) {
-        // $("*").addClass("noAnim");
-        console.log('page reloaded');
-    }
-
-    if (document.referrer == window.location.href) {
         $("*").addClass("noAnim");
     }
 
-
-console.log(document.referrer + ' / ' + window.location.href);
-// console.log(window.location.href);
+    // if we land on same page (form error) disable animations
+    if (document.referrer == window.location.href) {
+        $("*").addClass("noAnim");
+    }
 
 
 	// check if we have a flash message
