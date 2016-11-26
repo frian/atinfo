@@ -147,7 +147,7 @@ textarea {
 div.name, div.email {
     height: 50px;
     line-height: 50px;
-    @include debug(red);
+    // @include debug(red);
 }
 
 div.message {

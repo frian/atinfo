@@ -12,7 +12,7 @@ $contactContentHeight: 300px;
     margin-top: - ($contactContentHeight / 2) + 25px;
     margin-left: - $contactContentWidth / 2;
     text-align: center;
-    @include debug(red);
+    // @include debug(red);
 }
 
 
@@ -253,9 +253,13 @@ input[type="text"], input[type="email"], textarea {
 
     0% {
         opacity: 0;
-        width: 90%;
+        width: 0%;
     }
-    20% {
+    60% {
+        opacity: 0;
+        width: 0%;
+    }
+    90% {
         opacity: 0;
         width: 90%;
     }
@@ -265,7 +269,7 @@ input[type="text"], input[type="email"], textarea {
     }
 };
 
-input[type=text], input[type=email], textarea { @include animation("placeholders 2s ease-out 3s forwards"); }
+input[type=text], input[type=email], textarea { @include animation("placeholders 4s ease-out forwards"); }
 
 
 @media all and (min-width: 40em) {

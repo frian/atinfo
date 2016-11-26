@@ -77,7 +77,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-top: -125px;
   margin-left: -150px;
   text-align: center;
-  border: 1px solid red;
 }
 
 /* line 19, ../sass/contact.scss */
@@ -679,9 +678,13 @@ input[type="text"], input[type="email"], textarea {
 @-webkit-keyframes placeholders {
   0% {
     opacity: 0;
-    width: 90%;
+    width: 0%;
   }
-  20% {
+  60% {
+    opacity: 0;
+    width: 0%;
+  }
+  90% {
     opacity: 0;
     width: 90%;
   }
@@ -693,9 +696,13 @@ input[type="text"], input[type="email"], textarea {
 @-moz-keyframes placeholders {
   0% {
     opacity: 0;
-    width: 90%;
+    width: 0%;
   }
-  20% {
+  60% {
+    opacity: 0;
+    width: 0%;
+  }
+  90% {
     opacity: 0;
     width: 90%;
   }
@@ -707,9 +714,13 @@ input[type="text"], input[type="email"], textarea {
 @-o-keyframes placeholders {
   0% {
     opacity: 0;
-    width: 90%;
+    width: 0%;
   }
-  20% {
+  60% {
+    opacity: 0;
+    width: 0%;
+  }
+  90% {
     opacity: 0;
     width: 90%;
   }
@@ -721,9 +732,13 @@ input[type="text"], input[type="email"], textarea {
 @keyframes $placeholders {
   0% {
     opacity: 0;
-    width: 90%;
+    width: 0%;
   }
-  20% {
+  60% {
+    opacity: 0;
+    width: 0%;
+  }
+  90% {
     opacity: 0;
     width: 90%;
   }
@@ -732,16 +747,16 @@ input[type="text"], input[type="email"], textarea {
     width: 90%;
   }
 }
-/* line 268, ../sass/contact.scss */
+/* line 272, ../sass/contact.scss */
 input[type=text], input[type=email], textarea {
-  -webkit-animation: placeholders 2s ease-out 3s forwards;
-  -moz-animation: placeholders 2s ease-out 3s forwards;
-  -o-animation: placeholders 2s ease-out 3s forwards;
-  animation: placeholders 2s ease-out 3s forwards;
+  -webkit-animation: placeholders 4s ease-out forwards;
+  -moz-animation: placeholders 4s ease-out forwards;
+  -o-animation: placeholders 4s ease-out forwards;
+  animation: placeholders 4s ease-out forwards;
 }
 
 @media all and (min-width: 40em) {
-  /* line 276, ../sass/contact.scss */
+  /* line 280, ../sass/contact.scss */
   #contactContent {
     position: absolute;
     top: 50%;
@@ -756,7 +771,7 @@ input[type=text], input[type=email], textarea {
     animation: animContactContainer 3s ease-in forwards;
   }
 
-  /* line 289, ../sass/contact.scss */
+  /* line 293, ../sass/contact.scss */
   #contactContent h1 {
     padding: 0 0 10px 0;
     height: 50px;
@@ -764,13 +779,13 @@ input[type=text], input[type=email], textarea {
     font-size: 300%;
   }
 
-  /* line 297, ../sass/contact.scss */
+  /* line 301, ../sass/contact.scss */
   .open-brace-position {
     float: left;
     margin: 10px 0;
   }
 
-  /* line 302, ../sass/contact.scss */
+  /* line 306, ../sass/contact.scss */
   .close-brace-position {
     float: right;
     margin: 10px 5px 10px 0;

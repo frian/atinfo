@@ -291,6 +291,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin: auto;
   width: 20px;
   transform-origin: left top;
+  opacity: 0.8;
   background-color: red;
   z-index: 20;
 }
@@ -305,6 +306,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(463deg);
   -webkit-transform: rotate(463deg);
   transform: rotate(463deg);
+  background-color: red;
 }
 
 /* line 156, ../sass/index.scss */
@@ -317,6 +319,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(455.5deg);
   -webkit-transform: rotate(455.5deg);
   transform: rotate(455.5deg);
+  background-color: #ff2b00;
 }
 
 /* line 156, ../sass/index.scss */
@@ -329,6 +332,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(448deg);
   -webkit-transform: rotate(448deg);
   transform: rotate(448deg);
+  background-color: #ff5500;
 }
 
 /* line 156, ../sass/index.scss */
@@ -341,6 +345,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(440.5deg);
   -webkit-transform: rotate(440.5deg);
   transform: rotate(440.5deg);
+  background-color: #ff8000;
 }
 
 /* line 156, ../sass/index.scss */
@@ -353,6 +358,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(433deg);
   -webkit-transform: rotate(433deg);
   transform: rotate(433deg);
+  background-color: #ffaa00;
 }
 
 /* line 156, ../sass/index.scss */
@@ -365,6 +371,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(425.5deg);
   -webkit-transform: rotate(425.5deg);
   transform: rotate(425.5deg);
+  background-color: #ffd500;
 }
 
 /* line 156, ../sass/index.scss */
@@ -377,6 +384,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(418deg);
   -webkit-transform: rotate(418deg);
   transform: rotate(418deg);
+  background-color: yellow;
 }
 
 /* line 156, ../sass/index.scss */
@@ -389,6 +397,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(410.5deg);
   -webkit-transform: rotate(410.5deg);
   transform: rotate(410.5deg);
+  background-color: #d5ff00;
 }
 
 /* line 156, ../sass/index.scss */
@@ -401,6 +410,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(403deg);
   -webkit-transform: rotate(403deg);
   transform: rotate(403deg);
+  background-color: #aaff00;
 }
 
 /* line 156, ../sass/index.scss */
@@ -413,6 +423,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(395.5deg);
   -webkit-transform: rotate(395.5deg);
   transform: rotate(395.5deg);
+  background-color: #80ff00;
 }
 
 /* line 156, ../sass/index.scss */
@@ -425,6 +436,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(388deg);
   -webkit-transform: rotate(388deg);
   transform: rotate(388deg);
+  background-color: #55ff00;
 }
 
 /* line 156, ../sass/index.scss */
@@ -437,6 +449,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(380.5deg);
   -webkit-transform: rotate(380.5deg);
   transform: rotate(380.5deg);
+  background-color: #2bff00;
 }
 
 /* line 156, ../sass/index.scss */
@@ -449,6 +462,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(373deg);
   -webkit-transform: rotate(373deg);
   transform: rotate(373deg);
+  background-color: lime;
 }
 
 /* line 156, ../sass/index.scss */
@@ -461,6 +475,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(365.5deg);
   -webkit-transform: rotate(365.5deg);
   transform: rotate(365.5deg);
+  background-color: #00ff2b;
 }
 
 /* line 156, ../sass/index.scss */
@@ -473,6 +488,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(358deg);
   -webkit-transform: rotate(358deg);
   transform: rotate(358deg);
+  background-color: #00ff55;
 }
 
 /* line 156, ../sass/index.scss */
@@ -485,6 +501,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(350.5deg);
   -webkit-transform: rotate(350.5deg);
   transform: rotate(350.5deg);
+  background-color: #00ff80;
 }
 
 /* line 156, ../sass/index.scss */
@@ -497,6 +514,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(343deg);
   -webkit-transform: rotate(343deg);
   transform: rotate(343deg);
+  background-color: #00ffaa;
 }
 
 /* line 156, ../sass/index.scss */
@@ -509,6 +527,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(335.5deg);
   -webkit-transform: rotate(335.5deg);
   transform: rotate(335.5deg);
+  background-color: #00ffd5;
 }
 
 /* line 156, ../sass/index.scss */
@@ -521,6 +540,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(328deg);
   -webkit-transform: rotate(328deg);
   transform: rotate(328deg);
+  background-color: cyan;
 }
 
 /* line 156, ../sass/index.scss */
@@ -533,6 +553,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(320.5deg);
   -webkit-transform: rotate(320.5deg);
   transform: rotate(320.5deg);
+  background-color: #00d5ff;
 }
 
 /* line 156, ../sass/index.scss */
@@ -545,6 +566,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(313deg);
   -webkit-transform: rotate(313deg);
   transform: rotate(313deg);
+  background-color: #00aaff;
 }
 
 /* line 156, ../sass/index.scss */
@@ -557,6 +579,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(305.5deg);
   -webkit-transform: rotate(305.5deg);
   transform: rotate(305.5deg);
+  background-color: #0080ff;
 }
 
 /* line 156, ../sass/index.scss */
@@ -569,6 +592,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(298deg);
   -webkit-transform: rotate(298deg);
   transform: rotate(298deg);
+  background-color: #0055ff;
 }
 
 /* line 156, ../sass/index.scss */
@@ -581,6 +605,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(290.5deg);
   -webkit-transform: rotate(290.5deg);
   transform: rotate(290.5deg);
+  background-color: #002bff;
 }
 
 /* line 156, ../sass/index.scss */
@@ -593,6 +618,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(283deg);
   -webkit-transform: rotate(283deg);
   transform: rotate(283deg);
+  background-color: blue;
 }
 
 /* line 156, ../sass/index.scss */
@@ -605,6 +631,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(275.5deg);
   -webkit-transform: rotate(275.5deg);
   transform: rotate(275.5deg);
+  background-color: #2b00ff;
 }
 
 /* line 156, ../sass/index.scss */
@@ -617,6 +644,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(268deg);
   -webkit-transform: rotate(268deg);
   transform: rotate(268deg);
+  background-color: #5500ff;
 }
 
 /* line 156, ../sass/index.scss */
@@ -629,6 +657,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(260.5deg);
   -webkit-transform: rotate(260.5deg);
   transform: rotate(260.5deg);
+  background-color: #8000ff;
 }
 
 /* line 156, ../sass/index.scss */
@@ -641,6 +670,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(253deg);
   -webkit-transform: rotate(253deg);
   transform: rotate(253deg);
+  background-color: #aa00ff;
 }
 
 /* line 156, ../sass/index.scss */
@@ -653,6 +683,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(245.5deg);
   -webkit-transform: rotate(245.5deg);
   transform: rotate(245.5deg);
+  background-color: #d500ff;
 }
 
 /* line 156, ../sass/index.scss */
@@ -665,6 +696,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(238deg);
   -webkit-transform: rotate(238deg);
   transform: rotate(238deg);
+  background-color: magenta;
 }
 
 /* line 156, ../sass/index.scss */
@@ -677,6 +709,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(230.5deg);
   -webkit-transform: rotate(230.5deg);
   transform: rotate(230.5deg);
+  background-color: #ff00d5;
 }
 
 /* line 156, ../sass/index.scss */
@@ -689,6 +722,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(223deg);
   -webkit-transform: rotate(223deg);
   transform: rotate(223deg);
+  background-color: #ff00aa;
 }
 
 /* line 156, ../sass/index.scss */
@@ -701,6 +735,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(215.5deg);
   -webkit-transform: rotate(215.5deg);
   transform: rotate(215.5deg);
+  background-color: #ff0080;
 }
 
 /* line 156, ../sass/index.scss */
@@ -713,6 +748,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(208deg);
   -webkit-transform: rotate(208deg);
   transform: rotate(208deg);
+  background-color: #ff0055;
 }
 
 /* line 156, ../sass/index.scss */
@@ -725,6 +761,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: rotate(200.5deg);
   -webkit-transform: rotate(200.5deg);
   transform: rotate(200.5deg);
+  background-color: #ff002b;
 }
 
 @-webkit-keyframes spin1 {
@@ -4904,7 +4941,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @media all and (min-width: 40em) {
-  /* line 279, ../sass/index.scss */
+  /* line 280, ../sass/index.scss */
   #indexContent {
     height: 500px;
     width: 500px;
@@ -4912,7 +4949,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-left: -250px;
   }
 
-  /* line 286, ../sass/index.scss */
+  /* line 287, ../sass/index.scss */
   #indexMask {
     top: -170px;
     left: -200px;
@@ -5002,7 +5039,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       margin-left: 0px;
     }
   }
-  /* line 316, ../sass/index.scss */
+  /* line 317, ../sass/index.scss */
   #atinfo {
     height: 80px;
     line-height: 30px;
@@ -5012,24 +5049,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-bottom: 30px;
   }
 
-  /* line 325, ../sass/index.scss */
+  /* line 326, ../sass/index.scss */
   .indexText {
     padding: 10px;
     font-size: 30px;
   }
 
-  /* line 330, ../sass/index.scss */
+  /* line 331, ../sass/index.scss */
   .nav {
     padding: 10px;
   }
 
-  /* line 334, ../sass/index.scss */
+  /* line 335, ../sass/index.scss */
   .nav a {
     color: #333;
     font-size: 100%;
   }
 
-  /* line 339, ../sass/index.scss */
+  /* line 340, ../sass/index.scss */
   .info {
     color: #999;
     padding: 5px;
@@ -5037,7 +5074,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-size: 90%;
   }
 
-  /* line 346, ../sass/index.scss */
+  /* line 347, ../sass/index.scss */
   .indexPetal {
     height: 300px;
     width: 100px;

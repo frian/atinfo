@@ -217,7 +217,6 @@ textarea {
 div.name, div.email {
   height: 50px;
   line-height: 50px;
-  border: 1px solid red;
 }
 
 /* line 153, ../sass/screen.scss */

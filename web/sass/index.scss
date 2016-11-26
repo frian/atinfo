@@ -133,7 +133,7 @@ $indexContentSize: 300px;
     margin: auto;
     width: 20px;
     transform-origin: left top;
-    // opacity: 0;
+    opacity: 0.8;
     background-color: red;
     z-index: 20;
 }
@@ -156,6 +156,7 @@ $indexAngleStep: 7.5deg;
     #indexPetal#{$i} {
         @include defineIndexPetalAnim( "spin#{$i}");
         @include transform(rotate($indexAngleOffset + ( $indexAngleStep * ( 37 - $i) )));
+        background-color: hsl( ( ($i - 1) * 10 ), 100%, 50%);
     }
 }
 
