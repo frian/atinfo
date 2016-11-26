@@ -86,35 +86,43 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-style: normal;
   src: url("/fonts/leaguegothic-condensed-regular-webfont.ttf") format("truetype");
 }
-/* line 33, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
+.noAnim {
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  animation: none !important;
+}
+
+/* line 38, ../sass/screen.scss */
 html,
 body {
   height: 100%;
   color: #333;
 }
 
-/* line 39, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 body {
   background-color: #eee;
   overflow: hidden;
 }
 
-/* line 44, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 a {
   text-decoration: none;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 a.index {
   color: #fff;
 }
 
-/* line 52, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 60, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 .screenTopBar {
   position: absolute;
   top: 0;
@@ -126,12 +134,12 @@ a.index {
   z-index: 100;
 }
 
-/* line 71, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 ul.menu {
   display: table;
 }
 
-/* line 75, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 ul.menu li {
   display: table-cell;
   padding: 0 10px;
@@ -139,7 +147,7 @@ ul.menu li {
   line-height: 40px;
 }
 
-/* line 82, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 ul.menu li a {
   color: #333;
   font-family: 'Muli', sans-serif;
@@ -148,7 +156,7 @@ ul.menu li a {
 /*
 	-- FORMS ---------------------------------------------------------------------
 */
-/* line 92, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 [type="text"], [type="email"], textarea {
   font-family: Muli;
   font-size: 80%;
@@ -158,27 +166,27 @@ ul.menu li a {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
-  width: 0%;
+  width: 90%;
   display: inline;
 }
 
-/* line 105, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 [type="text"], [type="email"] {
   margin-top: 15px;
   height: 20px;
 }
 
-/* line 113, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 [type="text"]:focus, [type="email"]:focus, textarea:focus {
   background-color: #eee;
 }
 
-/* line 117, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 textarea {
   resize: none;
 }
 
-/* line 121, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 [type="submit"] {
   color: #ccc;
   line-height: 25px;
@@ -197,7 +205,7 @@ textarea {
   background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 .formErrors {
   color: red;
   font-size: 80%;
@@ -205,102 +213,102 @@ textarea {
   font-family: cd we;
 }
 
-/* line 142, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 div.name, div.email {
   height: 50px;
   line-height: 50px;
   border: 1px solid red;
 }
 
-/* line 148, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 div.message {
   height: 100px;
   line-height: 100px;
 }
 
-/* line 153, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 textarea {
   height: 60px;
   margin: 15px 0;
 }
 
-/* line 159, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 input:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-/* line 160, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 input:focus:-moz-placeholder {
   color: transparent;
 }
 
-/* line 161, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 input:focus::-moz-placeholder {
   color: transparent;
 }
 
-/* line 162, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 input:focus:-ms-input-placeholder {
   color: transparent;
 }
 
-/* line 165, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 textarea:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-/* line 166, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 textarea:focus:-moz-placeholder {
   color: transparent;
 }
 
-/* line 167, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 textarea:focus::-moz-placeholder {
   color: transparent;
 }
 
-/* line 168, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 textarea:focus:-ms-input-placeholder {
   color: transparent;
 }
 
 @media all and (min-width: 40em) {
-  /* line 173, ../sass/screen.scss */
+  /* line 178, ../sass/screen.scss */
   [type="text"], [type="email"], textarea {
     font-size: 200%;
   }
 
-  /* line 177, ../sass/screen.scss */
+  /* line 182, ../sass/screen.scss */
   [type="text"], [type="email"] {
     margin-top: 25px;
     height: 50px;
   }
 
-  /* line 182, ../sass/screen.scss */
+  /* line 187, ../sass/screen.scss */
   [type="submit"] {
     line-height: 50px;
     font-size: 200%;
   }
 
-  /* line 187, ../sass/screen.scss */
+  /* line 192, ../sass/screen.scss */
   .formErrors {
     font-size: 150%;
     margin-bottom: 20px;
   }
 
-  /* line 192, ../sass/screen.scss */
+  /* line 197, ../sass/screen.scss */
   div.name, div.email {
     height: 100px;
     line-height: 100px;
   }
 
-  /* line 197, ../sass/screen.scss */
+  /* line 202, ../sass/screen.scss */
   div.message {
     height: 200px;
     line-height: 200px;
   }
 
-  /* line 202, ../sass/screen.scss */
+  /* line 207, ../sass/screen.scss */
   textarea {
     height: 150px;
     margin: 25px 0;

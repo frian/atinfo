@@ -39,9 +39,9 @@ $app->match('/contact', function (Request $request) use ($app) {
 	$form = createForm($app);
 
 	$form->handleRequest($request);
-echo "prout";
+
 	if ($form->isValid()) {
-echo "prout1";
+
 		$data = $form->getData();
 
 		$message = \Swift_Message::newInstance()

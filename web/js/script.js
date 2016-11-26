@@ -1,5 +1,19 @@
 $(function() {
 
+    if (performance.navigation.type  == 1 ) {
+        console.log('page reloaded');
+    }
+
+    if (document.referrer == window.location.href) {
+        $("*").addClass("noAnim");
+    }
+
+
+
+console.log(document.referrer);
+
+console.log(window.location.href);
+
 	// check if we have a flash message
 	var flash = $('#flash');
 
@@ -145,9 +159,9 @@ $(function() {
 
         timer = window.setTimeout(function() {
 
-            config();
-            resetAnim();
-            drawLine();
+            // config();
+            // resetAnim();
+            // drawLine();
         }, 30);
     });
 

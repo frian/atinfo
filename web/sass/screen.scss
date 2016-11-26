@@ -25,7 +25,12 @@
     src: url("/fonts/leaguegothic-condensed-regular-webfont.ttf") format("truetype");
 }
 
-* {
+// * {
+//     @include animation(none !important);
+// }
+
+.noAnim {
+    @include animation(none !important);
     // -moz-animation: none !important;
     // animation: none !important;
 }
@@ -98,7 +103,7 @@ ul.menu li a {
     border: none;
     // border: solid 1px #ccc;
     @include box-shadow(none);
-    width: 0%;
+    width: 90%;
     display: inline;
 }
 

@@ -27,20 +27,25 @@ $indexContentSize: 300px;
 
 #indexMask {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -$indexContentSize/4;
-    margin-left: -$indexContentSize/4;
+    top: 0px;
+    left: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
     width: $indexContentSize/2;
     height: $indexContentSize/2;
     background-color: $bg-color;
     text-align: center;
-    @include animation("animIndexMask 1s ease-out 1s forwards");
-    // @include debug(red);
+    @include animation("animIndexMask 2s ease-out forwards");
 }
 
 @include keyframes(animIndexMask) {
     0% {
+        top: 50%;
+        left: 50%;
+        margin-top: -$indexContentSize/4;
+        margin-left: -$indexContentSize/4;
+    }
+    50% {
         top: 50%;
         left: 50%;
         margin-top: -$indexContentSize/4;
@@ -128,9 +133,8 @@ $indexContentSize: 300px;
     margin: auto;
     width: 20px;
     transform-origin: left top;
-    @include transform(scale(0));
     // opacity: 0;
-    // background-color: red;
+    background-color: red;
     z-index: 20;
 }
 
@@ -138,17 +142,24 @@ $indexContentSize: 300px;
 
 // animation
 @mixin defineIndexPetalAnim($anim) {
-    @include animation("#{$anim} 1s ease-out 2s forwards");
+    @include animation("#{$anim} 3s ease-out forwards");
 }
 
-// create petal ids and add animation
-@for $i from 1 through 36 {
-    #indexPetal#{$i} { @include defineIndexPetalAnim( "spin#{$i}") }
-}
 
 // start angle
 $indexAngleOffset: 193deg;
 $indexAngleStep: 7.5deg;
+
+
+// create petal ids and add animation
+@for $i from 1 through 36 {
+    #indexPetal#{$i} {
+        @include defineIndexPetalAnim( "spin#{$i}");
+        @include transform(rotate($indexAngleOffset + ( $indexAngleStep * ( 37 - $i) )));
+    }
+}
+
+
 
 // petal angles
 $indexSpin1Angle:  $indexAngleStep * 36;
@@ -204,9 +215,16 @@ $indexSpin36Angle: $indexAngleStep;
         0% {
             @include indexAnimStart;
             background-color: $startColor;
+            opacity: 0;
+        }
+        66% {
+            @include indexAnimStart;
+            background-color: $startColor;
+            opacity: 0;
+
         }
         100% {
-            @include indexAnimEnd($angle, 2);
+            @include indexAnimEnd($angle, 1);
             background-color: $endColor;
             opacity: 0.8;
         }
@@ -266,14 +284,22 @@ $indexSpin36Angle: $indexAngleStep;
     }
 
     #indexMask {
-        margin-top: -$indexContentSize/2;
-        margin-left: -$indexContentSize/2;
+        top: -170px;
+        left: -200px;
+        margin-top: 0px;
+        margin-left: 0px;
         width: $indexContentSize;
         height: $indexContentSize;
     }
 
     @include keyframes(animIndexMask) {
         0% {
+            top: 50%;
+            left: 50%;
+            margin-top: -$indexContentSize/2;
+            margin-left: -$indexContentSize/2;
+        }
+        50% {
             top: 50%;
             left: 50%;
             margin-top: -$indexContentSize/2;
@@ -318,8 +344,8 @@ $indexSpin36Angle: $indexAngleStep;
     }
 
     .indexPetal {
-        height: 150px;
-        width: 50px;
+        height: 300px;
+        width: 100px;
     }
 
 
