@@ -99,17 +99,32 @@ $(function() {
     //
 	// });
 
-    console.log($("#polo").css("background-color"));
+
+    var minLengths = { "name" : 5, "email" : 7, "message": 15 };
+
+    $.each( minLengths, function( key, value ) {
+      console.log( $("#form_" + key).val().length + ' - '  + "#form_" + key);
+      if ($("#form_" + key).val().length >= value) {
+          $("#form_" + key).closest('div').find('div').css('color', '#d00');
+      }
+    });
+
 
 
     // visual form validation
     $("form input, form textarea").on("input", null, null, function(e) {
+console.log('change');
 
-        var minLengths = { "name" : 5, "email" : 7, "message": 15 };
+
+console.log(minLengths);
 
         var current = $(this).closest('div').first('div').attr('class');
 
-        if ($(this).val().length >= minLengths[current]) {
+        current = current.split(' ');
+
+console.log($(this).val().length + ' - ' + minLengths[current[0]]);
+
+        if ($(this).val().length >= minLengths[current[0]]) {
             $(this).closest('div').find('div').css('color', '#d00');
         }
         else {

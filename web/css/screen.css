@@ -86,6 +86,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-style: normal;
   src: url("/fonts/leaguegothic-condensed-regular-webfont.ttf") format("truetype");
 }
+/* line 28, ../sass/screen.scss */
+* {
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  animation: none !important;
+}
+
 /* line 32, ../sass/screen.scss */
 .noAnim {
   -webkit-animation: none !important;
@@ -170,23 +178,23 @@ ul.menu li a {
   display: inline;
 }
 
-/* line 110, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 [type="text"], [type="email"] {
   margin-top: 15px;
   height: 20px;
 }
 
-/* line 118, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 [type="text"]:focus, [type="email"]:focus, textarea:focus {
   background-color: #eee;
 }
 
-/* line 122, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 textarea {
   resize: none;
 }
 
-/* line 126, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 [type="submit"] {
   color: #ccc;
   line-height: 25px;
@@ -205,7 +213,7 @@ textarea {
   background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
 }
 
-/* line 140, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .formErrors {
   color: red;
   font-size: 80%;
@@ -213,101 +221,101 @@ textarea {
   font-family: cd we;
 }
 
-/* line 147, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 div.name, div.email {
   height: 50px;
   line-height: 50px;
 }
 
-/* line 153, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 div.message {
   height: 100px;
   line-height: 100px;
 }
 
-/* line 158, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 textarea {
   height: 60px;
   margin: 15px 0;
 }
 
-/* line 164, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 input:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-/* line 165, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 input:focus:-moz-placeholder {
   color: transparent;
 }
 
-/* line 166, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 input:focus::-moz-placeholder {
   color: transparent;
 }
 
-/* line 167, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 input:focus:-ms-input-placeholder {
   color: transparent;
 }
 
-/* line 170, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 textarea:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-/* line 171, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 textarea:focus:-moz-placeholder {
   color: transparent;
 }
 
-/* line 172, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 textarea:focus::-moz-placeholder {
   color: transparent;
 }
 
-/* line 173, ../sass/screen.scss */
+/* line 174, ../sass/screen.scss */
 textarea:focus:-ms-input-placeholder {
   color: transparent;
 }
 
 @media all and (min-width: 40em) {
-  /* line 178, ../sass/screen.scss */
+  /* line 179, ../sass/screen.scss */
   [type="text"], [type="email"], textarea {
     font-size: 200%;
   }
 
-  /* line 182, ../sass/screen.scss */
+  /* line 183, ../sass/screen.scss */
   [type="text"], [type="email"] {
     margin-top: 25px;
     height: 50px;
   }
 
-  /* line 187, ../sass/screen.scss */
+  /* line 188, ../sass/screen.scss */
   [type="submit"] {
     line-height: 50px;
     font-size: 200%;
   }
 
-  /* line 192, ../sass/screen.scss */
+  /* line 193, ../sass/screen.scss */
   .formErrors {
     font-size: 150%;
     margin-bottom: 20px;
   }
 
-  /* line 197, ../sass/screen.scss */
+  /* line 198, ../sass/screen.scss */
   div.name, div.email {
     height: 100px;
     line-height: 100px;
   }
 
-  /* line 202, ../sass/screen.scss */
+  /* line 203, ../sass/screen.scss */
   div.message {
     height: 200px;
     line-height: 200px;
   }
 
-  /* line 207, ../sass/screen.scss */
+  /* line 208, ../sass/screen.scss */
   textarea {
     height: 150px;
     margin: 25px 0;

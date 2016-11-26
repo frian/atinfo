@@ -13,8 +13,24 @@ $contactContentHeight: 300px;
     margin-left: - $contactContentWidth / 2;
     text-align: center;
     // @include debug(red);
+    @include animation("animContactContainer 3s ease-in forwards");
 }
 
+@include keyframes(animContactContainer) {
+
+    0% {
+        margin-left: - ($contactContentWidth / 2) + 135px;
+        width: 30px;
+    }
+    80% {
+        margin-left: - ($contactContentWidth / 2) + 135px;
+        width: 30px;
+    }
+    100% {
+        margin-left: - ($contactContentWidth / 2);
+        width: 300px;
+    }
+};
 
 #contactContent h1 {
     padding: 0 0 10px 0;
@@ -30,12 +46,12 @@ $contactContentHeight: 300px;
 
 .open-brace-position {
     float: left;
-    margin: 5px 0;
+    margin: 5px -1px;
 }
 
 .close-brace-position {
     float: right;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 
@@ -321,11 +337,11 @@ input[type=text], input[type=email], textarea { @include animation("placeholders
     @include keyframes(animContactContainer) {
 
         0% {
-            margin-left: - ($contactContentWidth / 2) + 300px;
+            margin-left: - ($contactContentWidth / 2) + 280px;
             width: 40px;
         }
         80% {
-            margin-left: - ($contactContentWidth / 2) + 300px;
+            margin-left: - ($contactContentWidth / 2) + 280px;
             width: 40px;
         }
         100% {
