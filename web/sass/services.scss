@@ -175,69 +175,90 @@ $trunkRadius: 2000px;
     bottom: - $YOffset - 1px;
     left: -2px;
     @include transform(rotateZ(180deg));
-    @include animation('leafGrow1 4s ease-out forwards');
-    // border: 1px solid red;
+    @include animation('leafGrow1 6s ease-out forwards');
 }
 
 #leaf2 {
     bottom: - $YOffset - 1px;
     left: 3px;
     @include transform(rotateX(180deg));
-    @include animation('leafGrow2 4s ease-out 1s forwards');
+    @include animation('leafGrow2 6s ease-out forwards');
 }
 
 #leaf3 {
     bottom: - $YOffset + 60px;
     @include transform(rotateZ(180deg) scale(0.8));
-    @include animation('leafGrow3 3s ease-out 2s forwards');
+    @include animation('leafGrow3 6s ease-out forwards');
 }
 
 #leaf4 {
     bottom: - $YOffset + 100px;
     left: -8px;
     @include transform(rotateX(180deg) scale(0.6));
-    @include animation('leafGrow4 3s ease-out 3s forwards');
+    @include animation('leafGrow4 6s ease-out forwards');
 }
 
 
 @include keyframes(leafGrow1) {
-    from {
+    0% {
         @include transform(scale(0.01) rotateZ(180deg));
         @include opacity(1);
     }
-    to {
+    66.66% {
+        @include transform(scale(1) rotateZ(180deg));
+        @include opacity(1);
+    }
+    100% {
         @include transform(scale(1) rotateZ(180deg));
         @include opacity(1);
     }
 }
 @include keyframes(leafGrow2) {
-    from {
+    0% {
         @include transform(scale(0.01) rotateX(180deg));
         @include opacity(1);
     }
-    to {
+    16.66% {
+        @include transform(scale(0.01) rotateX(180deg));
+        @include opacity(1);
+    }
+    100% {
         @include transform(scale(1) rotateX(180deg));
         @include opacity(1);
     }
 }
 @include keyframes(leafGrow3) {
-    from {
+    0% {
         @include transform(scale(0.01) rotateZ(180deg));
         @include opacity(1);
         left: -2px
     }
-    to {
+    33.33% {
+        @include transform(scale(0.01) rotateZ(180deg));
+        @include opacity(1);
+        left: -2px
+    }
+    83.33% {
+        @include transform(scale(0.8) rotateZ(180deg));
+        @include opacity(1);
+        left: 2px;
+    }
+    100% {
         @include transform(scale(0.8) rotateZ(180deg));
         @include opacity(1);
         left: 2px;
     }
 }
 @include keyframes(leafGrow4) {
-    from {
+    0%{
         @include transform(scale(0.01) rotateX(180deg));
         @include opacity(1);
     }
-    to {
+    50% {
+        @include transform(scale(0.01) rotateX(180deg));
+        @include opacity(1);
+    }
+    100% {
         @include transform(scale(0.6) rotateX(180deg));
         @include opacity(1);
     }
@@ -314,7 +335,7 @@ $centerSize: 20px;
     left: -$centerSize / 2;
     z-index: 50;
     @include border-radius($centerSize);
-    @include transform(scale(0));
+    // @include transform(scale(0));
     @include animation('centerGrow 2s ease-out 2s forwards');
 }
 
