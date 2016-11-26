@@ -397,7 +397,7 @@ $serviceSpin18Angle: $serviceAngleStep;
 
 // animation
 @mixin defineServicePetalAnim($anim) {
-    @include animation("#{$anim} 5s ease-out forwards");
+    @include animation("#{$anim} 6s ease-out forwards");
 }
 
 // create petal ids and add animation
@@ -428,11 +428,14 @@ $serviceSpin18Angle: $serviceAngleStep;
             @include serviceAnimStart;
             background-color: $startColor;
         }
-        50% {
+        40% {
+            @include serviceAnimStart;
+            background-color: $startColor;        }
+        80% {
             @include serviceAnimEnd($angle, 0.5);
             background-color: $startColor;
         }
-        80% {
+        90% {
             @include serviceAnimEnd($angle, 0.5);
             background-color: $endColor;
         }
