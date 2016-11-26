@@ -10,6 +10,7 @@ $(function() {
         $("*").addClass("noAnim");
     }
 
+// console.log(document.referrer - window.location.href);
 
 	// check if we have a flash message
 	var flash = $('#flash');
