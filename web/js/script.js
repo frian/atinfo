@@ -100,7 +100,7 @@ $(function() {
 
     var minLengths = { "name" : 5, "email" : 7, "message": 15 };
 
-    if (window.location.pathname == '/contacts') {
+    if (window.location.pathname == '/contact') {
 
         $.each( minLengths, function( key, value ) {
           if ($("#form_" + key).val().length >= value) {
