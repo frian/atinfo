@@ -31,8 +31,6 @@
 
 .noAnim {
     @include animation(none !important);
-    // -moz-animation: none !important;
-    // animation: none !important;
 }
 
 html,
@@ -101,18 +99,14 @@ ul.menu li a {
 	color : #222;
 	background-color : $bg-color;
     border: none;
-    // border: solid 1px #ccc;
     @include box-shadow(none);
     width: 90%;
     display: inline;
-    // @include debug(red);
 }
 
 [type="text"], [type="email"] {
     margin-top: 15px;
-    // display: inline-block;
     height: 20px;
-
 }
 
 
@@ -135,7 +129,6 @@ textarea {
     @include background-image(
         linear-gradient(rgba(255,255,255, 0.2), rgba(0,0,0, 0.2))
     );
-    // background-color: #e9e9e9;
 }
 
 .formErrors {
@@ -148,7 +141,6 @@ textarea {
 div.name, div.email {
     height: 50px;
     line-height: 50px;
-    // @include debug(red);
 }
 
 div.message {

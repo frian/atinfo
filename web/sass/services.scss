@@ -11,8 +11,6 @@
     height: 100%;
     background-color: $bg-color;
     z-index: 10;
-    // background-color: red;
-    // @include debug(red);
 }
 
 $YOffset : 50px;
@@ -39,14 +37,12 @@ $servicesContentSize: 200px;
     width: $servicesContentSize;
     margin-top: - ($servicesContentSize / 2) + 50;
     margin-left: - $servicesContentSize / 2;
-    @include debug(red);
 }
 
 #servicesFlowerContainer {
     position: relative;
     width: 0px;
     height: 100%;
-    // @include debug(blue);
 }
 
 #servicesContentText {
@@ -56,8 +52,6 @@ $servicesContentSize: 200px;
     top: -145px;
     width: 140px;
     font-size: 34px;
-    @include debug(red);
-    // font-family: 'BebasNeue', sans-serif;
 }
 
 
@@ -134,7 +128,6 @@ $trunkRadius: 2000px;
   margin-left: -105px;
   margin-top: -($trunkRadius / 2) + $YOffset;
   @include border-left-radius($trunkRadius);
-  // background-color: red;
   @include abs-centered();
 }
 
@@ -146,7 +139,6 @@ $trunkRadius: 2000px;
     background-color: $bg-color;
     @include abs-centered();
     @include animation('growTrunk 2s linear forwards');
-    // background-color: red;
 }
 
 @include keyframes(growTrunk) {
@@ -167,7 +159,6 @@ $trunkRadius: 2000px;
     position: absolute;
     left: 0px;
     transform-origin: left top;
-    // @include opacity(0);
     background-color: #080;
 }
 
@@ -232,22 +223,18 @@ $trunkRadius: 2000px;
     0% {
         @include transform(scale(0.01) rotateZ(180deg));
         @include opacity(1);
-        // left: -2px;
     }
     33.33% {
         @include transform(scale(0.01) rotateZ(180deg));
         @include opacity(1);
-        // left: -2px;
     }
     83.33% {
         @include transform(scale(0.8) rotateZ(180deg));
         @include opacity(1);
-        // left: 2px;
     }
     100% {
         @include transform(scale(0.8) rotateZ(180deg));
         @include opacity(1);
-        // left: 2px;
     }
 }
 @include keyframes(leafGrow4) {
@@ -276,7 +263,6 @@ $stemColor: #090; // #070
     border-top: 2px solid #070;
     border-radius:50%;
     @include transform(rotateZ(38deg));
-    // @include debug(red);
 }
 
 .stem1 {
@@ -288,7 +274,6 @@ $stemColor: #090; // #070
     border-left: 1px solid $stemColor;
     border-radius:50%;
     @include transform(rotateZ(20deg));
-    // @include debug(red);
 }
 
 .stem2 {
@@ -299,9 +284,7 @@ $stemColor: #090; // #070
     top: 7px;
     border-left: 1px solid $stemColor;
     border-radius:50%;
-    // @include transform(rotateY(90deg));
     @include transform(rotateZ(60deg));
-    // @include debug(red);
 }
 
 .stem3 {
@@ -313,7 +296,6 @@ $stemColor: #090; // #070
     border-left: 1px solid $stemColor;
     border-radius:50%;
     @include transform(rotateZ(20deg));
-    // @include debug(red);
 }
 
 
@@ -332,7 +314,6 @@ $centerSize: 20px;
     left: -$centerSize / 2;
     z-index: 50;
     @include border-radius($centerSize);
-    // @include transform(scale(0));
     @include animation('centerGrow 4s ease-out forwards');
 }
 
@@ -477,10 +458,6 @@ $serviceSpin18Angle: $serviceAngleStep;
         margin-top: -250px + $YOffset;
     }
 
-    #trunk {
-    //   margin-left: -282px;
-    }
-
     #trunkMask {
         height: 500px;
         margin-top: -750px;
@@ -521,19 +498,15 @@ $serviceSpin18Angle: $serviceAngleStep;
     }
 
     #leaf1 {
-        // top: 500px;
         bottom: -100px;
         left: -5px;
     }
 
     #leaf2 {
-        // top: 500px;
         bottom: -100px;
     }
 
     #leaf3 {
-        // top: 350px;
-        // left: -26px;
         position: absolute;
         bottom: -100px + 150px;
         margin-left: -8px;
@@ -541,8 +514,6 @@ $serviceSpin18Angle: $serviceAngleStep;
     }
 
     #leaf4 {
-        // top: 250px;
-        // left: -34px;
         bottom: -100px + 250px;
         left: -10px;
     }

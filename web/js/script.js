@@ -10,8 +10,6 @@ $(function() {
         $("*").addClass("noAnim");
     }
 
-// console.log(document.referrer - window.location.href);
-
 	// check if we have a flash message
 	var flash = $('#flash');
 
@@ -102,8 +100,6 @@ $(function() {
 
     var minLengths = { "name" : 5, "email" : 7, "message": 15 };
 
-    console.log(window.location);
-
     if (window.location.pathname == '/contacts') {
 
         $.each( minLengths, function( key, value ) {
@@ -119,16 +115,10 @@ $(function() {
 
     // visual form validation
     $("form input, form textarea").on("input", null, null, function(e) {
-console.log('change');
-
-
-console.log(minLengths);
 
         var current = $(this).closest('div').first('div').attr('class');
 
         current = current.split(' ');
-
-console.log($(this).val().length + ' - ' + minLengths[current[0]]);
 
         if ($(this).val().length >= minLengths[current[0]]) {
             $(this).closest('div').find('div').css('color', '#d00');
@@ -178,32 +168,7 @@ console.log($(this).val().length + ' - ' + minLengths[current[0]]);
 
         timer = window.setTimeout(function() {
 
-            // config();
-            // resetAnim();
-            // drawLine();
         }, 30);
     });
-
-
-    // var sign = $("#sign");
-    //
-    // sign.css("transform", "rotateZ(0deg) translateX(-150px) rotateZ(0deg)");
-    // //
-    // sign.velocity(
-    // {
-    //     rotateZ: "360deg",
-    //     translateX: "-150px",
-    //     // translateY: "-150px",
-    //     rotateZ: "-360deg",
-    // },
-    // {
-    //     duration: 2000,
-    //     easing: "linear",
-    //     // complete: function() {
-    //     //     $("#atinfo").css('color', '#ddd')
-    //     //     drawRoot();
-    //     // }
-    // });
-
 
 });

@@ -11,7 +11,6 @@ $indexContentSize: 300px;
     width: $indexContent-width;
     margin-top: - $indexContent-height / 2;
     margin-left: - $indexContent-width / 2;
-    // @include debug(red);
 }
 
 #flowerContainer {
@@ -22,7 +21,6 @@ $indexContentSize: 300px;
     left: 50%;
     margin-top: 20px;
     margin-left: 20px;
-    // @include debug(red);
 }
 
 #indexMask {
@@ -69,7 +67,6 @@ $indexContentSize: 300px;
     margin-bottom: 20px;
     color : #222;
     font-family: 'Gruppo', sans-serif;
-    // @include debug(green);
     @include animation("animAtinfo 1s ease-out 3s forwards");
 }
 
@@ -88,7 +85,6 @@ $indexContentSize: 300px;
     font-family: 'BebasNeue', sans-serif;
     padding: 5px;
     font-size: 20px;
-    // @include debug(green);
 }
 
 #indexText1 {
@@ -103,7 +99,6 @@ $indexContentSize: 300px;
     font-family: 'Muli', sans-serif;
     text-align: center;
     letter-spacing: 1px;
-    // @include debug(green);
     padding: 2px 0 5px;
 }
 
@@ -348,6 +343,4 @@ $indexSpin36Angle: $indexAngleStep;
         height: 300px;
         width: 100px;
     }
-
-
 }

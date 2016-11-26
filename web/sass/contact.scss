@@ -9,10 +9,9 @@ $contactContentHeight: 300px;
     @include abs-centered();
     height: $contactContentHeight;
     width: $contactContentWidth;
-    margin-top: - ($contactContentHeight / 2) + 25px;
+    margin-top: - ($contactContentHeight / 2) + 50px;
     margin-left: - $contactContentWidth / 2;
     text-align: center;
-    // @include debug(red);
     @include animation("animContactContainer 3s ease-in forwards");
 }
 
@@ -300,8 +299,6 @@ input[type=text], input[type=email], textarea { @include animation("placeholders
         width: $contactContentWidth;
         margin-top: - ($contactContentHeight / 2) + 25px;
         margin-left: - $contactContentWidth / 2;
-        // @include debug(red);
-
         @include animation("animContactContainer 3s ease-in forwards");
     }
 
