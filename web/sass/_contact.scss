@@ -1,5 +1,5 @@
-@import "base";
-@import "common";
+// @import "base";
+// @import "common";
 
 
 $contactContentWidth: 300px;
@@ -288,7 +288,7 @@ input[type="text"], input[type="email"], textarea {
 input[type=text], input[type=email], textarea { @include animation("placeholders 4s ease-out forwards"); }
 
 
-@media all and (min-width: 40em) {
+@media all and (min-width: 50em) {
 
     $contactContentWidth: 600px;
     $contactContentHeight: 600px;

@@ -52,12 +52,11 @@ $servicesContentSize: 200px;
     top: -150px;
     width: 140px;
     font-size: 34px;
-    @include debug(red);
+    // @include debug(red);
 }
 
 
 .indexSpan {
-    // @include opacity(0);
     font-family: 'gruppo';
 }
 
