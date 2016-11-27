@@ -297,7 +297,7 @@ input[type=text], input[type=email], textarea { @include animation("placeholders
         @include abs-centered();
         height: $contactContentHeight;
         width: $contactContentWidth;
-        margin-top: - ($contactContentHeight / 2) + 25px;
+        margin-top: - ($contactContentHeight / 2) + 75px;
         margin-left: - $contactContentWidth / 2;
         @include animation("animContactContainer 3s ease-in forwards");
     }

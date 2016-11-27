@@ -49,20 +49,22 @@ $servicesContentSize: 200px;
 
     position: relative;
     left: 60px;
-    top: -145px;
+    top: -150px;
     width: 140px;
     font-size: 34px;
+    @include debug(red);
 }
 
 
 .indexSpan {
-    @include opacity(0);
+    // @include opacity(0);
+    font-family: 'gruppo';
 }
 
 
 // animation
 @mixin defineIndexSpanAnim($anim, $delay) {
-    @include animation("#{$anim} 3s ease-out #{$delay}s forwards");
+    @include animation("#{$anim} 6s ease-out forwards");
 }
 
 $i: 1;
@@ -92,27 +94,29 @@ $i: 1;
 }
 
 
-@mixin createIndexSpanAnim($name) {
+@mixin createIndexSpanAnim($name, $start) {
 
     @include keyframes(#{$name}) {
         0% {
             @include opacity(0);
         }
+
+        #{$start}0% {
+            @include opacity(0);
+        }
+        #{$start + 4}0% {
+            @include opacity(1);
+        }
+
         100% {
             @include opacity(1);
         }
     }
 }
 
-@for $i from 1 through 6 {
-    #indexSpan#{$i} { @include defineIndexSpanAnim( "indexSpan#{$i}", $i) }
-    $i: $i + 1;
-}
 
-
-
-@for $i from 1 through 6 {
-    @include createIndexSpanAnim("indexSpan#{$i}");
+@for $i from 1 through 4 {
+    @include createIndexSpanAnim("indexSpan#{$i}", $i + 2);
 }
 
 /*
@@ -575,7 +579,7 @@ $serviceSpin18Angle: $serviceAngleStep;
     #servicesContentText {
 
         left: 120px;
-        top: -380px;
+        top: -385px;
         width: 380px;
         font-size: 94px;
     }
