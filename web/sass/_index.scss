@@ -266,7 +266,7 @@ $indexSpin36Angle: $indexAngleStep;
 
 
 
-@media all and (min-width: 40em) {
+@media all and (min-width: $breadkpoint) and (min-height: $breadkpoint) {
 
     $indexContent-width : 500px;
     $indexContent-height :500px;

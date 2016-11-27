@@ -75,8 +75,6 @@ $contactContentHeight: 300px;
 
 .activeButton:hover {
     color: #ddd;
-    // background-color: red;
-    // border-color: #a00;
     @include background-image(
         linear-gradient(rgba(255,255,255, 0.2), rgba(0,0,0, 0.1))
     );
@@ -288,7 +286,7 @@ input[type="text"], input[type="email"], textarea {
 input[type=text], input[type=email], textarea { @include animation("placeholders 4s ease-out forwards"); }
 
 
-@media all and (min-width: 40em) {
+@media all and (min-width: $breadkpoint) and (min-height: $breadkpoint) {
 
     $contactContentWidth: 600px;
     $contactContentHeight: 600px;

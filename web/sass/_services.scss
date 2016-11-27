@@ -451,7 +451,7 @@ $serviceSpin18Angle: $serviceAngleStep;
 @include createServiceAnim("spin118", $serviceAngleOffset - $serviceSpin18Angle, $bgGrey2, hsl(340, 100%, 50%));
 
 
-@media all and (min-width: 40em) {
+@media all and (min-width: $breadkpoint) and (min-height: $breadkpoint) {
 
     #mask {
         margin-top: 250px + $YOffset;
