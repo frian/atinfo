@@ -6190,7 +6190,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   top: 50%;
   left: 50%;
   margin-top: 50px;
-  margin-left: 200px;
+  margin-left: 100px;
 }
 
 /* line 27, ../sass/_index.scss */
@@ -11092,9 +11092,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       margin-left: -250px;
     }
     100% {
-      top: -170px;
-      left: -200px;
-      margin-top: 0px;
+      top: 50%;
+      left: -125px;
+      margin-top: -250px;
       margin-left: 0px;
     }
   }
@@ -11112,9 +11112,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       margin-left: -250px;
     }
     100% {
-      top: -170px;
-      left: -200px;
-      margin-top: 0px;
+      top: 50%;
+      left: -125px;
+      margin-top: -250px;
       margin-left: 0px;
     }
   }
@@ -11132,9 +11132,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       margin-left: -250px;
     }
     100% {
-      top: -170px;
-      left: -200px;
-      margin-top: 0px;
+      top: 50%;
+      left: -125px;
+      margin-top: -250px;
       margin-left: 0px;
     }
   }
@@ -11152,13 +11152,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       margin-left: -250px;
     }
     100% {
-      top: -170px;
-      left: -200px;
-      margin-top: 0px;
+      top: 50%;
+      left: -125px;
+      margin-top: -250px;
       margin-left: 0px;
     }
   }
-  /* line 334, ../sass/_index.scss */
+  /* line 342, ../sass/_index.scss */
   #atinfo {
     position: absolute;
     top: 0px;
@@ -11167,32 +11167,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-size: 120px;
   }
 
-  /* line 343, ../sass/_index.scss */
+  /* line 351, ../sass/_index.scss */
   .indexText {
     height: 60px;
     line-height: 60px;
     font-size: 40px;
   }
 
-  /* line 351, ../sass/_index.scss */
+  /* line 359, ../sass/_index.scss */
   #indexText1 {
     top: 85px;
     letter-spacing: 3px;
   }
 
-  /* line 356, ../sass/_index.scss */
+  /* line 364, ../sass/_index.scss */
   #indexText2 {
     top: 145px;
     letter-spacing: 1px;
   }
 
-  /* line 361, ../sass/_index.scss */
+  /* line 369, ../sass/_index.scss */
   .nav {
     top: 400px;
     padding: 10px;
   }
 
-  /* line 366, ../sass/_index.scss */
+  /* line 374, ../sass/_index.scss */
   .nav a {
     color: #333;
     font-size: 100%;
@@ -11200,7 +11200,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     line-height: 40px;
   }
 
-  /* line 373, ../sass/_index.scss */
+  /* line 381, ../sass/_index.scss */
   .info {
     color: #999;
     padding: 5px;
@@ -11208,7 +11208,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-size: 90%;
   }
 
-  /* line 380, ../sass/_index.scss */
+  /* line 388, ../sass/_index.scss */
   .indexPetal {
     height: 200px;
     width: 66px;

@@ -21,7 +21,7 @@ $indexContentSize: 200px;
     top: 50%;
     left: 50%;
     margin-top: $indexContentSize / 4;
-    margin-left: $indexContentSize;
+    margin-left: $indexContentSize / 2;
 }
 
 #indexMask {
@@ -305,28 +305,36 @@ $indexSpin36Angle: $indexAngleStep;
         // top: -170px;
         // left: -200px;
         margin-top: 0px;
-        margin-left: -$indexContentSize/4;
+        margin-left: -$indexContentSize / 4;
         width: $indexContentSize;
-        height: $indexContentSize/2;
+        height: $indexContentSize / 2;
     }
+
+    // top: 0px;
+    // left: 0px;
+    // margin-top: 0px;
+    // margin-left: -$indexContentSize/4;
+    // width: $indexContentSize;
+    // height: $indexContentSize/2;
+
 
     @include keyframes(animIndexMask) {
         0% {
             top: 50%;
             left: 50%;
-            margin-top: -$indexContentSize/2;
-            margin-left: -$indexContentSize/2;
+            margin-top: -$indexContentSize / 2;
+            margin-left: -$indexContentSize / 2;
         }
         50% {
             top: 50%;
             left: 50%;
-            margin-top: -$indexContentSize/2;
-            margin-left: -$indexContentSize/2;
+            margin-top: -$indexContentSize / 2;
+            margin-left: -$indexContentSize / 2;
         }
         100% {
-            top: -170px;
-            left: -200px;
-            margin-top: 0px;
+            top: 50%;
+            left: -$indexContentSize / 4;;
+            margin-top: -$indexContentSize / 2;
             margin-left: 0px;
         }
     }
