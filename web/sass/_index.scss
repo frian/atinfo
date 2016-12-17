@@ -1,16 +1,16 @@
 @import "base";
 @import "common";
 
-$indexContent-width : 200px;
-$indexContent-height :200px;
+$indexContentSize : 200px;
+$indexContentSize :200px;
 $indexContentSize: 200px;
 
 #indexContent {
     @include abs-centered();
-    height: $indexContent-height;
-    width: $indexContent-width;
-    margin-top: - $indexContent-height / 2;
-    margin-left: - $indexContent-width / 2;
+    height: $indexContentSize;
+    width: $indexContentSize;
+    margin-top: - $indexContentSize / 2;
+    margin-left: - $indexContentSize / 2;
     @include debug(green);
 }
 
@@ -60,7 +60,7 @@ $indexContentSize: 200px;
 }
 
 #atinfo {
-    position: absolute;
+    position: relative;
     top: 0;
     height: 40px;
     line-height: 40px;
@@ -71,7 +71,7 @@ $indexContentSize: 200px;
     color : #222;
     font-family: 'Gruppo', sans-serif;
     @include animation("animAtinfo 1s ease-out 3s forwards");
-    @include debug(blue);
+    // @include debug(blue);
 }
 
 @include keyframes(animAtinfo) {
@@ -85,47 +85,52 @@ $indexContentSize: 200px;
 
 
 .indexText {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 30px;
     line-height: 30px;
     font-family: 'BebasNeue', sans-serif;
     // padding: 5px;
     font-size: 20px;
-    @include debug(pink);
+    @include debug(#0f0);
 }
 
 #indexText1 {
-    top:45px;
+    // top:45px;
     letter-spacing: 3px;
 }
 
 #indexText2 {
-    top: 75px;
+    // top: 75px;
     letter-spacing: 1px;
 }
 
 .nav {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 20px;
     line-height: 20px;
-    top: 105px;
+    // top: 105px;
     font-family: 'Muli', sans-serif;
     text-align: center;
     letter-spacing: 1px;
     // padding: 2px 0 5px;
-    @include debug(pink);
+    @include debug(black);
 }
 
 .nav a {
-    color: #333;
+    color: #555;
     font-size: 80%;
 }
 
+.nav a:hover {
+    color: #222;
+}
+
+
 .info {
-    position: absolute;
-    top: 125px;
+    position: realtive;
+    // top: 125px;
     width: 100%;
     height: 20px;
     line-height: 20px;
@@ -290,32 +295,32 @@ $indexSpin36Angle: $indexAngleStep;
 
 @media all and (min-width: $breadkpoint) and (min-height: $breadkpoint) {
 
-    $indexContent-width : 500px;
-    $indexContent-height :500px;
-    $indexContentSize: 500px;
+    $indexContentSize: 500px;                                       // 500
+
+    $indexMaskWidth:   $indexContentSize;                           // 500
+    $indexMaskWHeight: $indexContentSize / 2;                       // 250
+
+    $atinfoHeight:    $indexContentSize / 5;                        // 100
+    $atinfoTopMargin: $atinfoHeight / 5;                            //  20
+
+    $indexTextHeight: 100px;
+
+    $flowerContainerMargin: $indexContentSize / 10;                 //  50
+
 
     #indexContent {
-        height: $indexContent-height;
-        width: $indexContent-width;
-        margin-top: - $indexContent-height / 2;
-        margin-left: - $indexContent-width / 2;
+        width: $indexContentSize;
+        height: $indexContentSize;
+        margin-top: - $indexContentSize / 2;
+        margin-left: - $indexContentSize / 2;
     }
 
     #indexMask {
-        // top: -170px;
-        // left: -200px;
+        width: $indexMaskWidth;
+        height: $indexMaskWHeight;
         margin-top: 0px;
-        margin-left: -$indexContentSize / 4;
-        width: $indexContentSize;
-        height: $indexContentSize / 2;
+        margin-left: - $indexMaskWidth / 4;
     }
-
-    // top: 0px;
-    // left: 0px;
-    // margin-top: 0px;
-    // margin-left: -$indexContentSize/4;
-    // width: $indexContentSize;
-    // height: $indexContentSize/2;
 
 
     @include keyframes(animIndexMask) {
@@ -340,49 +345,55 @@ $indexSpin36Angle: $indexAngleStep;
     }
 
     #atinfo {
-        position: absolute;
-        top: 0px;
-        height: 80px;
-        line-height: 80px;
-        font-size: 120px;
+        margin-top: -$atinfoTopMargin;
+        height:         $atinfoHeight;
+        line-height:    $atinfoHeight;
+        font-size:              120px;
         // margin-bottom: 30px;
+        @include debug(blue);
     }
 
     .indexText {
         height: 60px;
         line-height: 60px;
         font-size: 40px;
-
     }
 
 
     #indexText1 {
-        top:85px;
         letter-spacing: 3px;
     }
 
     #indexText2 {
-        top: 145px;
         letter-spacing: 1px;
     }
 
     .nav {
-        top: 400px;
-        padding: 10px;
+        height: 25px;
+        line-height: 25px;
+        // top: 400px;
+        // padding: 10px;
     }
 
     .nav a {
-        color: #333;
-        font-size: 100%;
-        height: 40px;
-        line-height: 40px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 150%;
+        padding: 0 10px;
+        @include debug(red);
     }
 
     .info {
+        // top: 350px;
         color: #999;
         padding: 5px;
         font-family: 'Muli', sans-serif;
         font-size: 90%;
+    }
+
+    #flowerContainer {
+        margin-top:  $flowerContainerMargin;
+        margin-left: $flowerContainerMargin;
     }
 
     .indexPetal {

@@ -6293,7 +6293,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 62, ../sass/_index.scss */
 #atinfo {
-  position: absolute;
+  position: relative;
   top: 0;
   height: 40px;
   line-height: 40px;
@@ -6307,7 +6307,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -moz-animation: animAtinfo 1s ease-out 3s forwards;
   -o-animation: animAtinfo 1s ease-out 3s forwards;
   animation: animAtinfo 1s ease-out 3s forwards;
-  border: 1px solid blue;
 }
 
 @-webkit-keyframes animAtinfo {
@@ -6344,50 +6343,51 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 87, ../sass/_index.scss */
 .indexText {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 30px;
   line-height: 30px;
   font-family: 'BebasNeue', sans-serif;
   font-size: 20px;
-  border: 1px solid pink;
+  border: 1px solid #0f0;
 }
 
 /* line 98, ../sass/_index.scss */
 #indexText1 {
-  top: 45px;
   letter-spacing: 3px;
 }
 
 /* line 103, ../sass/_index.scss */
 #indexText2 {
-  top: 75px;
   letter-spacing: 1px;
 }
 
 /* line 108, ../sass/_index.scss */
 .nav {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 20px;
   line-height: 20px;
-  top: 105px;
   font-family: 'Muli', sans-serif;
   text-align: center;
   letter-spacing: 1px;
-  border: 1px solid pink;
+  border: 1px solid black;
 }
 
 /* line 121, ../sass/_index.scss */
 .nav a {
-  color: #333;
+  color: #555;
   font-size: 80%;
 }
 
 /* line 126, ../sass/_index.scss */
+.nav a:hover {
+  color: #222;
+}
+
+/* line 131, ../sass/_index.scss */
 .info {
-  position: absolute;
-  top: 125px;
+  position: realtive;
   width: 100%;
   height: 20px;
   line-height: 20px;
@@ -6400,7 +6400,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*
 	-- PETALS --------------------------------------------------------------------
 */
-/* line 142, ../sass/_index.scss */
+/* line 147, ../sass/_index.scss */
 .indexPetal {
   position: absolute;
   top: 0;
@@ -6417,7 +6417,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   z-index: 20;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal1 {
   -webkit-animation: spin1 3s ease-out forwards;
   -moz-animation: spin1 3s ease-out forwards;
@@ -6430,7 +6430,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: red;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal2 {
   -webkit-animation: spin2 3s ease-out forwards;
   -moz-animation: spin2 3s ease-out forwards;
@@ -6443,7 +6443,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #ff2b00;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal3 {
   -webkit-animation: spin3 3s ease-out forwards;
   -moz-animation: spin3 3s ease-out forwards;
@@ -6456,7 +6456,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #ff5500;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal4 {
   -webkit-animation: spin4 3s ease-out forwards;
   -moz-animation: spin4 3s ease-out forwards;
@@ -6469,7 +6469,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #ff8000;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal5 {
   -webkit-animation: spin5 3s ease-out forwards;
   -moz-animation: spin5 3s ease-out forwards;
@@ -6482,7 +6482,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #ffaa00;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal6 {
   -webkit-animation: spin6 3s ease-out forwards;
   -moz-animation: spin6 3s ease-out forwards;
@@ -6495,7 +6495,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #ffd500;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal7 {
   -webkit-animation: spin7 3s ease-out forwards;
   -moz-animation: spin7 3s ease-out forwards;
@@ -6508,7 +6508,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: yellow;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal8 {
   -webkit-animation: spin8 3s ease-out forwards;
   -moz-animation: spin8 3s ease-out forwards;
@@ -6521,7 +6521,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #d5ff00;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal9 {
   -webkit-animation: spin9 3s ease-out forwards;
   -moz-animation: spin9 3s ease-out forwards;
@@ -6534,7 +6534,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #aaff00;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal10 {
   -webkit-animation: spin10 3s ease-out forwards;
   -moz-animation: spin10 3s ease-out forwards;
@@ -6547,7 +6547,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #80ff00;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal11 {
   -webkit-animation: spin11 3s ease-out forwards;
   -moz-animation: spin11 3s ease-out forwards;
@@ -6560,7 +6560,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #55ff00;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal12 {
   -webkit-animation: spin12 3s ease-out forwards;
   -moz-animation: spin12 3s ease-out forwards;
@@ -6573,7 +6573,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #2bff00;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal13 {
   -webkit-animation: spin13 3s ease-out forwards;
   -moz-animation: spin13 3s ease-out forwards;
@@ -6586,7 +6586,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: lime;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal14 {
   -webkit-animation: spin14 3s ease-out forwards;
   -moz-animation: spin14 3s ease-out forwards;
@@ -6599,7 +6599,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #00ff2b;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal15 {
   -webkit-animation: spin15 3s ease-out forwards;
   -moz-animation: spin15 3s ease-out forwards;
@@ -6612,7 +6612,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #00ff55;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal16 {
   -webkit-animation: spin16 3s ease-out forwards;
   -moz-animation: spin16 3s ease-out forwards;
@@ -6625,7 +6625,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #00ff80;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal17 {
   -webkit-animation: spin17 3s ease-out forwards;
   -moz-animation: spin17 3s ease-out forwards;
@@ -6638,7 +6638,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #00ffaa;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal18 {
   -webkit-animation: spin18 3s ease-out forwards;
   -moz-animation: spin18 3s ease-out forwards;
@@ -6651,7 +6651,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #00ffd5;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal19 {
   -webkit-animation: spin19 3s ease-out forwards;
   -moz-animation: spin19 3s ease-out forwards;
@@ -6664,7 +6664,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: cyan;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal20 {
   -webkit-animation: spin20 3s ease-out forwards;
   -moz-animation: spin20 3s ease-out forwards;
@@ -6677,7 +6677,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #00d5ff;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal21 {
   -webkit-animation: spin21 3s ease-out forwards;
   -moz-animation: spin21 3s ease-out forwards;
@@ -6690,7 +6690,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #00aaff;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal22 {
   -webkit-animation: spin22 3s ease-out forwards;
   -moz-animation: spin22 3s ease-out forwards;
@@ -6703,7 +6703,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #0080ff;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal23 {
   -webkit-animation: spin23 3s ease-out forwards;
   -moz-animation: spin23 3s ease-out forwards;
@@ -6716,7 +6716,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #0055ff;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal24 {
   -webkit-animation: spin24 3s ease-out forwards;
   -moz-animation: spin24 3s ease-out forwards;
@@ -6729,7 +6729,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #002bff;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal25 {
   -webkit-animation: spin25 3s ease-out forwards;
   -moz-animation: spin25 3s ease-out forwards;
@@ -6742,7 +6742,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: blue;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal26 {
   -webkit-animation: spin26 3s ease-out forwards;
   -moz-animation: spin26 3s ease-out forwards;
@@ -6755,7 +6755,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #2b00ff;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal27 {
   -webkit-animation: spin27 3s ease-out forwards;
   -moz-animation: spin27 3s ease-out forwards;
@@ -6768,7 +6768,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #5500ff;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal28 {
   -webkit-animation: spin28 3s ease-out forwards;
   -moz-animation: spin28 3s ease-out forwards;
@@ -6781,7 +6781,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #8000ff;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal29 {
   -webkit-animation: spin29 3s ease-out forwards;
   -moz-animation: spin29 3s ease-out forwards;
@@ -6794,7 +6794,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #aa00ff;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal30 {
   -webkit-animation: spin30 3s ease-out forwards;
   -moz-animation: spin30 3s ease-out forwards;
@@ -6807,7 +6807,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #d500ff;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal31 {
   -webkit-animation: spin31 3s ease-out forwards;
   -moz-animation: spin31 3s ease-out forwards;
@@ -6820,7 +6820,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: magenta;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal32 {
   -webkit-animation: spin32 3s ease-out forwards;
   -moz-animation: spin32 3s ease-out forwards;
@@ -6833,7 +6833,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #ff00d5;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal33 {
   -webkit-animation: spin33 3s ease-out forwards;
   -moz-animation: spin33 3s ease-out forwards;
@@ -6846,7 +6846,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #ff00aa;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal34 {
   -webkit-animation: spin34 3s ease-out forwards;
   -moz-animation: spin34 3s ease-out forwards;
@@ -6859,7 +6859,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #ff0080;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal35 {
   -webkit-animation: spin35 3s ease-out forwards;
   -moz-animation: spin35 3s ease-out forwards;
@@ -6872,7 +6872,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #ff0055;
 }
 
-/* line 173, ../sass/_index.scss */
+/* line 178, ../sass/_index.scss */
 #indexPetal36 {
   -webkit-animation: spin36 3s ease-out forwards;
   -moz-animation: spin36 3s ease-out forwards;
@@ -11062,20 +11062,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @media all and (min-width: 40em) and (min-height: 40em) {
-  /* line 297, ../sass/_index.scss */
+  /* line 311, ../sass/_index.scss */
   #indexContent {
-    height: 500px;
     width: 500px;
+    height: 500px;
     margin-top: -250px;
     margin-left: -250px;
   }
 
-  /* line 304, ../sass/_index.scss */
+  /* line 318, ../sass/_index.scss */
   #indexMask {
-    margin-top: 0px;
-    margin-left: -125px;
     width: 500px;
     height: 250px;
+    margin-top: 0px;
+    margin-left: -125px;
   }
 
   @-webkit-keyframes animIndexMask {
@@ -11158,49 +11158,48 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       margin-left: 0px;
     }
   }
-  /* line 342, ../sass/_index.scss */
+  /* line 347, ../sass/_index.scss */
   #atinfo {
-    position: absolute;
-    top: 0px;
-    height: 80px;
-    line-height: 80px;
+    margin-top: -20px;
+    height: 100px;
+    line-height: 100px;
     font-size: 120px;
+    border: 1px solid blue;
   }
 
-  /* line 351, ../sass/_index.scss */
+  /* line 356, ../sass/_index.scss */
   .indexText {
     height: 60px;
     line-height: 60px;
     font-size: 40px;
   }
 
-  /* line 359, ../sass/_index.scss */
+  /* line 363, ../sass/_index.scss */
   #indexText1 {
-    top: 85px;
     letter-spacing: 3px;
   }
 
-  /* line 364, ../sass/_index.scss */
+  /* line 367, ../sass/_index.scss */
   #indexText2 {
-    top: 145px;
     letter-spacing: 1px;
   }
 
-  /* line 369, ../sass/_index.scss */
+  /* line 371, ../sass/_index.scss */
   .nav {
-    top: 400px;
-    padding: 10px;
+    height: 25px;
+    line-height: 25px;
   }
 
-  /* line 374, ../sass/_index.scss */
+  /* line 378, ../sass/_index.scss */
   .nav a {
-    color: #333;
-    font-size: 100%;
-    height: 40px;
-    line-height: 40px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 150%;
+    padding: 0 10px;
+    border: 1px solid red;
   }
 
-  /* line 381, ../sass/_index.scss */
+  /* line 386, ../sass/_index.scss */
   .info {
     color: #999;
     padding: 5px;
@@ -11208,7 +11207,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-size: 90%;
   }
 
-  /* line 388, ../sass/_index.scss */
+  /* line 394, ../sass/_index.scss */
+  #flowerContainer {
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+
+  /* line 399, ../sass/_index.scss */
   .indexPetal {
     height: 200px;
     width: 66px;
