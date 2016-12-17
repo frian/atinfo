@@ -1,74 +1,87 @@
 @import "base";
 @import "common";
 
-$indexContentSize : 200px;
-$indexContentSize :200px;
-$indexContentSize: 200px;
 
+$indexContentSize: 250px;                                       // 500
+
+$indexTextContainerWidth:   $indexContentSize;                  // 500
+$indexTextContainerHeight: $indexContentSize / 2;               // 250
+
+$atinfoHeight:    $indexContentSize / 5;                        // 100
+$atinfoTopMargin: $atinfoHeight / 5;                            //  20
+
+$indexTextHeight: $indexTextContainerHeight / 25 * 6;           //  60
+
+$navHeight: $indexTextContainerHeight / 10;                     //  25
+
+
+$flowerContainerMargin: $indexContentSize / 10;                 //  50
+
+$indexPetalHeight: $indexContentSize / 2;                       // 250
+$indexPetalWidth:  $indexContentSize / 7;                       //  71
+
+
+/* -- CONTENT -- */
 #indexContent {
     @include abs-centered();
-    height: $indexContentSize;
-    width: $indexContentSize;
-    margin-top: - $indexContentSize / 2;
+    width:             $indexContentSize;
+    height:            $indexContentSize;
+    margin-top:  - $indexContentSize / 2;
     margin-left: - $indexContentSize / 2;
-    @include debug(green);
+    // @include debug(green);
 }
 
-#flowerContainer {
-    width: 1px;
-    height: 1px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: $indexContentSize / 4;
-    margin-left: $indexContentSize / 2;
-}
 
-#indexMask {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    margin-top: 0px;
-    margin-left: -$indexContentSize/4;
-    width: $indexContentSize;
-    height: $indexContentSize/2;
-    background-color: $bg-color;
-    text-align: center;
-    @include animation("animIndexMask 2s ease-out forwards");
+/*
+	-- INDEX TEXT ----------------------------------------------------------------
+*/
+#indexTextContainer {
+    position:                          absolute;
+    top:                                    0px;
+    left:                                   0px;
+    width:             $indexTextContainerWidth;
+    height:           $indexTextContainerHeight;
+    margin-left: - $indexTextContainerWidth / 4;
+    margin-top:                             0px;
+    background-color:                 $bg-color;
+    text-align:                          center;
+    @include animation("animIndexTextContainer 2s ease-out forwards");
     @include debug(red);
 }
 
-@include keyframes(animIndexMask) {
+@include keyframes(animIndexTextContainer) {
     0% {
-        top: 50%;
-        left: 50%;
-        margin-top: -$indexContentSize/4;
-        margin-left: -$indexContentSize/4;
+        top:                             50%;
+        left:                            50%;
+        margin-top:  - $indexContentSize / 2;
+        margin-left: - $indexContentSize / 2;
     }
     50% {
-        top: 50%;
-        left: 50%;
-        margin-top: -$indexContentSize/4;
-        margin-left: -$indexContentSize/4;
+        top:                             50%;
+        left:                            50%;
+        margin-top:  - $indexContentSize / 2;
+        margin-left: - $indexContentSize / 2;
     }
     100% {
-        top: 0px;
-        left: 0px;
-        margin-top: 0px;
-        margin-left: 0px;
+        top:                             50%;
+        left:        - $indexContentSize / 4;
+        margin-top:  - $indexContentSize / 2;
+        margin-left:                     0px;
     }
 }
 
+
+/* -- atinfo -- */
 #atinfo {
-    position: relative;
-    top: 0;
-    height: 40px;
-    line-height: 40px;
-    width: 100%;
-    margin-top: 0px;
-    font-size: 50px;
-    text-align: center;
-    color : #222;
+    position:                relative;
+    top:                            0;
+    height:             $atinfoHeight;
+    line-height:        $atinfoHeight;
+    width:                       100%;
+    margin-top:     -$atinfoTopMargin;
+    font-size:                   50px;
+    text-align:                center;
+    color :                      #222;
     font-family: 'Gruppo', sans-serif;
     @include animation("animAtinfo 1s ease-out 3s forwards");
     // @include debug(blue);
@@ -84,43 +97,40 @@ $indexContentSize: 200px;
 }
 
 
+/* -- texts -- */
 .indexText {
-    position: relative;
-    width: 100%;
-    height: 30px;
-    line-height: 30px;
+    position:                   relative;
+    width:                          100%;
+    height:             $indexTextHeight;
+    line-height:        $indexTextHeight;
     font-family: 'BebasNeue', sans-serif;
-    // padding: 5px;
-    font-size: 20px;
+    font-size:                      20px;
     @include debug(#0f0);
 }
 
 #indexText1 {
-    // top:45px;
     letter-spacing: 3px;
 }
 
 #indexText2 {
-    // top: 75px;
     letter-spacing: 1px;
 }
 
+
+/* -- navigation -- */
 .nav {
-    position: relative;
-    width: 100%;
-    height: 20px;
-    line-height: 20px;
-    // top: 105px;
+    position:              relative;
+    width:                     100%;
+    height:              $navHeight;
     font-family: 'Muli', sans-serif;
-    text-align: center;
-    letter-spacing: 1px;
-    // padding: 2px 0 5px;
+    text-align:              center;
+    letter-spacing:             1px;
     @include debug(black);
 }
 
 .nav a {
-    color: #555;
-    font-size: 80%;
+    color:     #555;
+    font-size:  80%;
 }
 
 .nav a:hover {
@@ -128,36 +138,46 @@ $indexContentSize: 200px;
 }
 
 
+/* -- info -- */
 .info {
-    position: realtive;
-    // top: 125px;
-    width: 100%;
-    height: 20px;
-    line-height: 20px;
-    color: #999;
-    // padding: 5px;
+    position:              relative;
+    width:                     100%;
+    height:                    20px;
+    line-height:               20px;
+    color:                     #999;
     font-family: 'Muli', sans-serif;
-    font-size: 70%;
+    font-size:                  70%;
     @include debug(blue);
 }
 
+
 /*
-	-- PETALS --------------------------------------------------------------------
+	-- FLOWER --------------------------------------------------------------------
 */
+#flowerContainer {
+    position:                  absolute;
+    top:                            50%;
+    left:                           50%;
+    width:                          1px;
+    height:                         1px;
+    margin-top:  $flowerContainerMargin;
+    margin-left: $flowerContainerMargin;
+}
+
 .indexPetal {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 10% 90% 10% 95%;
-    border-top: 1px solid $bg-color;
-    border-left: 1px solid $bg-color;
-    height: 90px;
-    margin: auto;
-    width: 30px;
-    transform-origin: left top;
-    opacity: 0.8;
-    background-color: red;
-    z-index: 20;
+    position:                  absolute;
+    top:                              0;
+    left:                             0;
+    height:           $indexPetalHeight;
+    width:             $indexPetalWidth;
+    border-radius:     10% 90% 10% 95%;
+    border-top:     1px solid $bg-color;
+    border-left:    1px solid $bg-color;
+    margin:                        auto;
+    transform-origin:          left top;
+    opacity:                        0.8;
+    background-color:               red;
+    z-index:                         20;
 }
 
 
@@ -295,109 +315,5 @@ $indexSpin36Angle: $indexAngleStep;
 
 @media all and (min-width: $breadkpoint) and (min-height: $breadkpoint) {
 
-    $indexContentSize: 500px;                                       // 500
-
-    $indexMaskWidth:   $indexContentSize;                           // 500
-    $indexMaskWHeight: $indexContentSize / 2;                       // 250
-
-    $atinfoHeight:    $indexContentSize / 5;                        // 100
-    $atinfoTopMargin: $atinfoHeight / 5;                            //  20
-
-    $indexTextHeight: 100px;
-
-    $flowerContainerMargin: $indexContentSize / 10;                 //  50
-
-
-    #indexContent {
-        width: $indexContentSize;
-        height: $indexContentSize;
-        margin-top: - $indexContentSize / 2;
-        margin-left: - $indexContentSize / 2;
-    }
-
-    #indexMask {
-        width: $indexMaskWidth;
-        height: $indexMaskWHeight;
-        margin-top: 0px;
-        margin-left: - $indexMaskWidth / 4;
-    }
-
-
-    @include keyframes(animIndexMask) {
-        0% {
-            top: 50%;
-            left: 50%;
-            margin-top: -$indexContentSize / 2;
-            margin-left: -$indexContentSize / 2;
-        }
-        50% {
-            top: 50%;
-            left: 50%;
-            margin-top: -$indexContentSize / 2;
-            margin-left: -$indexContentSize / 2;
-        }
-        100% {
-            top: 50%;
-            left: -$indexContentSize / 4;;
-            margin-top: -$indexContentSize / 2;
-            margin-left: 0px;
-        }
-    }
-
-    #atinfo {
-        margin-top: -$atinfoTopMargin;
-        height:         $atinfoHeight;
-        line-height:    $atinfoHeight;
-        font-size:              120px;
-        // margin-bottom: 30px;
-        @include debug(blue);
-    }
-
-    .indexText {
-        height: 60px;
-        line-height: 60px;
-        font-size: 40px;
-    }
-
-
-    #indexText1 {
-        letter-spacing: 3px;
-    }
-
-    #indexText2 {
-        letter-spacing: 1px;
-    }
-
-    .nav {
-        height: 25px;
-        line-height: 25px;
-        // top: 400px;
-        // padding: 10px;
-    }
-
-    .nav a {
-        height: 25px;
-        line-height: 25px;
-        font-size: 150%;
-        padding: 0 10px;
-        @include debug(red);
-    }
-
-    .info {
-        // top: 350px;
-        color: #999;
-        padding: 5px;
-        font-family: 'Muli', sans-serif;
-        font-size: 90%;
-    }
-
-    #flowerContainer {
-        margin-top:  $flowerContainerMargin;
-        margin-left: $flowerContainerMargin;
-    }
-
-    .indexPetal {
-        height: 200px;
-        width: 66px;
-    }
+    @import "index_bp_1";
 }
