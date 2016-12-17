@@ -1,9 +1,9 @@
 @import "base";
 @import "common";
 
-$indexContent-width : 300px;
-$indexContent-height :300px;
-$indexContentSize: 300px;
+$indexContent-width : 200px;
+$indexContent-height :200px;
+$indexContentSize: 200px;
 
 #indexContent {
     @include abs-centered();
@@ -11,6 +11,7 @@ $indexContentSize: 300px;
     width: $indexContent-width;
     margin-top: - $indexContent-height / 2;
     margin-left: - $indexContent-width / 2;
+    @include debug(green);
 }
 
 #flowerContainer {
@@ -19,8 +20,8 @@ $indexContentSize: 300px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: $indexContentSize / 4;
+    margin-left: $indexContentSize;
 }
 
 #indexMask {
@@ -28,12 +29,13 @@ $indexContentSize: 300px;
     top: 0px;
     left: 0px;
     margin-top: 0px;
-    margin-left: 0px;
-    width: $indexContentSize/2;
+    margin-left: -$indexContentSize/4;
+    width: $indexContentSize;
     height: $indexContentSize/2;
     background-color: $bg-color;
     text-align: center;
     @include animation("animIndexMask 2s ease-out forwards");
+    @include debug(red);
 }
 
 @include keyframes(animIndexMask) {
@@ -58,16 +60,18 @@ $indexContentSize: 300px;
 }
 
 #atinfo {
-    position: relative;
-    height: 30px;
+    position: absolute;
+    top: 0;
+    height: 40px;
+    line-height: 40px;
     width: 100%;
-    line-height: 30px;
     margin-top: 0px;
-    font-size: 60px;
-    margin-bottom: 20px;
+    font-size: 50px;
+    text-align: center;
     color : #222;
     font-family: 'Gruppo', sans-serif;
     @include animation("animAtinfo 1s ease-out 3s forwards");
+    @include debug(blue);
 }
 
 @include keyframes(animAtinfo) {
@@ -81,25 +85,37 @@ $indexContentSize: 300px;
 
 
 .indexText {
-    position: relative;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
     font-family: 'BebasNeue', sans-serif;
-    padding: 5px;
+    // padding: 5px;
     font-size: 20px;
+    @include debug(pink);
 }
 
 #indexText1 {
+    top:45px;
     letter-spacing: 3px;
 }
 
 #indexText2 {
+    top: 75px;
     letter-spacing: 1px;
 }
 
 .nav {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    top: 105px;
     font-family: 'Muli', sans-serif;
     text-align: center;
     letter-spacing: 1px;
-    padding: 2px 0 5px;
+    // padding: 2px 0 5px;
+    @include debug(pink);
 }
 
 .nav a {
@@ -108,10 +124,16 @@ $indexContentSize: 300px;
 }
 
 .info {
+    position: absolute;
+    top: 125px;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
     color: #999;
-    padding: 5px;
+    // padding: 5px;
     font-family: 'Muli', sans-serif;
     font-size: 70%;
+    @include debug(blue);
 }
 
 /*
@@ -124,9 +146,9 @@ $indexContentSize: 300px;
     border-radius: 10% 90% 10% 95%;
     border-top: 1px solid $bg-color;
     border-left: 1px solid $bg-color;
-    height: 120px;
+    height: 90px;
     margin: auto;
-    width: 40px;
+    width: 30px;
     transform-origin: left top;
     opacity: 0.8;
     background-color: red;
@@ -280,12 +302,12 @@ $indexSpin36Angle: $indexAngleStep;
     }
 
     #indexMask {
-        top: -170px;
-        left: -200px;
+        // top: -170px;
+        // left: -200px;
         margin-top: 0px;
-        margin-left: 0px;
+        margin-left: -$indexContentSize/4;
         width: $indexContentSize;
-        height: $indexContentSize;
+        height: $indexContentSize/2;
     }
 
     @include keyframes(animIndexMask) {
@@ -310,26 +332,42 @@ $indexSpin36Angle: $indexAngleStep;
     }
 
     #atinfo {
+        position: absolute;
+        top: 0px;
         height: 80px;
-        line-height: 30px;
         line-height: 80px;
-        margin-top: 100px;
         font-size: 120px;
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
     }
 
     .indexText {
-        padding: 10px;
-        font-size: 30px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 40px;
+
+    }
+
+
+    #indexText1 {
+        top:85px;
+        letter-spacing: 3px;
+    }
+
+    #indexText2 {
+        top: 145px;
+        letter-spacing: 1px;
     }
 
     .nav {
+        top: 400px;
         padding: 10px;
     }
 
     .nav a {
         color: #333;
         font-size: 100%;
+        height: 40px;
+        line-height: 40px;
     }
 
     .info {
@@ -340,7 +378,7 @@ $indexSpin36Angle: $indexAngleStep;
     }
 
     .indexPetal {
-        height: 300px;
-        width: 100px;
+        height: 200px;
+        width: 66px;
     }
 }
