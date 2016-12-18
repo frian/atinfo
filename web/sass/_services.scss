@@ -1,5 +1,5 @@
-@import "base";
-@import "common";
+// @import "base";
+// @import "common";
 
 $YOffset : 50px;
 $XOffset : 20px;
@@ -67,7 +67,6 @@ $centerSize : $leafSize / 2;                                        //  20
     width:                          $servicesContentSize;
     margin-top:  - ($servicesContentSize / 2) + $YOffset;
     margin-left: - ($servicesContentSize / 2) + $XOffset;
-    @include debug(green);
 }
 
 #servicesContentText {
@@ -78,7 +77,6 @@ $centerSize : $leafSize / 2;                                        //  20
     width:  $servicesContentTextSize;
     height: $servicesContentTextSize;
     font-size:                  34px;
-    @include debug(red);
 }
 
 
@@ -89,7 +87,6 @@ $centerSize : $leafSize / 2;                                        //  20
     font-family: 'gruppo';
     position: relative;
     // display: inline-block;
-    @include debug(blue);
 }
 
 #indexSpan1, #indexSpan3 {
@@ -142,17 +139,11 @@ $centerSize : $leafSize / 2;                                        //  20
 }
 
 
-
-
-
-
 #servicesFlowerContainer {
     position: relative;
     width:           0;
     height:       100%;
 }
-
-
 
 
 /*
@@ -180,7 +171,6 @@ $trunkRadius: 2000px;
     background-color:            $bg-color;
     @include abs-centered();
     @include animation('growTrunk 2s linear forwards');
-    @include debug(red);
 }
 
 @include keyframes(growTrunk) {
@@ -337,7 +327,6 @@ $stemColor: #090; // #070
 /*
 	-- CENTER --------------------------------------------------------------------
 */
-
 #serviceCenter {
     position:          absolute;
     width:          $centerSize;

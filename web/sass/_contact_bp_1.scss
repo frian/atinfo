@@ -1,0 +1,52 @@
+
+$contactContentSize: 600px;
+
+$contactContentStartWidth: $contactContentSize / 10;
+
+$contactContentMargin: ($contactContentSize - $contactContentStartWidth) / 2 ;
+
+
+/*
+	-- CONTENT -------------------------------------------------------------------
+*/
+#contactContent {
+    height:                        $contactContentSize;
+    width:                         $contactContentSize;
+    margin-top: - ($contactContentSize / 2) + $YOffset;
+    margin-left:             - $contactContentSize / 2;
+    @include animation("animContactContent 3s ease-in forwards");
+}
+
+@include keyframes(animContactContent) {
+
+    0% {
+        margin-left: - ($contactContentSize / 2) + $contactContentMargin;
+        width: $contactContentStartWidth;
+    }
+    80% {
+        margin-left: - ($contactContentSize / 2) + $contactContentMargin;
+        width: $contactContentStartWidth;
+    }
+    100% {
+        margin-left: - ($contactContentSize / 2);
+        width: $contactContentSize;
+    }
+};
+
+
+.open-brace-position {
+    margin: 10px -1px;
+}
+
+.close-brace-position {
+    margin: 10px 4px 10px 0;
+}
+
+@include curly-brace-open("name", 80px, 4px, 10px);
+@include curly-brace-close("name", 80px, 4px, 10px);
+
+@include curly-brace-open("email", 80px, 4px, 10px);
+@include curly-brace-close("email", 80px, 4px, 10px);
+
+@include curly-brace-open("message", 180px, 4px, 10px);
+@include curly-brace-close("message", 180px, 4px, 10px);
