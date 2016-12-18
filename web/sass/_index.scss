@@ -12,7 +12,7 @@ $atinfoTopMargin: $atinfoHeight / 5;                            //  10
 
 $indexTextHeight: $indexTextContainerHeight / 25 * 6;           //  30
 
-$navHeight: $indexTextContainerHeight / 25 * 4;                 //  12.5
+$navHeight: $indexTextContainerHeight / 25 * 6;                 //  30
 
 
 $flowerContainerMargin: $indexContentSize / 10;                 //  25
@@ -27,8 +27,7 @@ $indexPetalWidth:  $indexContentSize / 7;                       //  35.5
     width:             $indexContentSize;
     height:            $indexContentSize;
     margin-top:  - $indexContentSize / 2;
-    margin-left: - $indexContentSize / 2;
-    @include debug(green);
+    margin-left: - ($indexContentSize / 2) - 10px;
 }
 
 
@@ -118,21 +117,25 @@ $indexPetalWidth:  $indexContentSize / 7;                       //  35.5
 /* -- navigation -- */
 .nav {
     position:              relative;
+    top:                      -10px;
     width:                     100%;
     height:              $navHeight;
     font-family: 'Muli', sans-serif;
     text-align:              center;
     letter-spacing:             1px;
-    @include debug(red);
+    // @include debug(red);
 
 }
 
 .nav a {
+    display:   inline-block;
     height:      $navHeight;
     line-height: $navHeight;
     color:             #555;
-    font-size:          80%;
-    padding:          0 5px;
+    font-size:          90%;
+    padding:          0 2px;
+    // @include border-radius(4px);
+    // border: 1px solid #ddd;
     @include debug(blue);
 }
 
@@ -150,6 +153,7 @@ $indexPetalWidth:  $indexContentSize / 7;                       //  35.5
     color:                     #999;
     font-family: 'Muli', sans-serif;
     font-size:                  60%;
+    top:                      -10px;
 }
 
 

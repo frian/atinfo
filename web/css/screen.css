@@ -6046,14 +6046,13 @@ input[type=text], input[type=email], textarea {
   width: 250px;
   height: 250px;
   margin-top: -125px;
-  margin-left: -125px;
-  border: 1px solid green;
+  margin-left: -135px;
 }
 
 /*
 	-- INDEX TEXT ----------------------------------------------------------------
 */
-/* line 38, ../sass/_index.scss */
+/* line 37, ../sass/_index.scss */
 #indexTextContainer {
   position: absolute;
   top: 0px;
@@ -6151,7 +6150,7 @@ input[type=text], input[type=email], textarea {
   }
 }
 /* -- atinfo -- */
-/* line 74, ../sass/_index.scss */
+/* line 73, ../sass/_index.scss */
 #atinfo {
   position: relative;
   top: 0;
@@ -6202,7 +6201,7 @@ input[type=text], input[type=email], textarea {
   }
 }
 /* -- texts -- */
-/* line 100, ../sass/_index.scss */
+/* line 99, ../sass/_index.scss */
 .indexText {
   position: relative;
   width: 100%;
@@ -6212,45 +6211,46 @@ input[type=text], input[type=email], textarea {
   font-size: 20px;
 }
 
-/* line 109, ../sass/_index.scss */
+/* line 108, ../sass/_index.scss */
 #indexText1 {
   letter-spacing: 3px;
 }
 
-/* line 113, ../sass/_index.scss */
+/* line 112, ../sass/_index.scss */
 #indexText2 {
   letter-spacing: 1px;
 }
 
 /* -- navigation -- */
-/* line 119, ../sass/_index.scss */
+/* line 118, ../sass/_index.scss */
 .nav {
   position: relative;
+  top: -10px;
   width: 100%;
-  height: 20px;
+  height: 30px;
   font-family: 'Muli', sans-serif;
   text-align: center;
   letter-spacing: 1px;
-  border: 1px solid red;
 }
 
 /* line 130, ../sass/_index.scss */
 .nav a {
-  height: 20px;
-  line-height: 20px;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
   color: #555;
-  font-size: 80%;
-  padding: 0 5px;
+  font-size: 90%;
+  padding: 0 2px;
   border: 1px solid blue;
 }
 
-/* line 139, ../sass/_index.scss */
+/* line 142, ../sass/_index.scss */
 .nav a:hover {
   color: #222;
 }
 
 /* -- info -- */
-/* line 145, ../sass/_index.scss */
+/* line 148, ../sass/_index.scss */
 .info {
   position: relative;
   width: 100%;
@@ -6259,12 +6259,13 @@ input[type=text], input[type=email], textarea {
   color: #999;
   font-family: 'Muli', sans-serif;
   font-size: 60%;
+  top: -10px;
 }
 
 /*
 	-- FLOWER --------------------------------------------------------------------
 */
-/* line 159, ../sass/_index.scss */
+/* line 163, ../sass/_index.scss */
 #flowerContainer {
   position: absolute;
   top: 50%;
@@ -6275,7 +6276,7 @@ input[type=text], input[type=email], textarea {
   margin-left: 25px;
 }
 
-/* line 169, ../sass/_index.scss */
+/* line 173, ../sass/_index.scss */
 .indexPetal {
   position: absolute;
   top: 0;
@@ -6292,7 +6293,7 @@ input[type=text], input[type=email], textarea {
   z-index: 20;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal1 {
   -webkit-animation: spin1 3s ease-out forwards;
   -moz-animation: spin1 3s ease-out forwards;
@@ -6305,7 +6306,7 @@ input[type=text], input[type=email], textarea {
   background-color: red;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal2 {
   -webkit-animation: spin2 3s ease-out forwards;
   -moz-animation: spin2 3s ease-out forwards;
@@ -6318,7 +6319,7 @@ input[type=text], input[type=email], textarea {
   background-color: #ff2b00;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal3 {
   -webkit-animation: spin3 3s ease-out forwards;
   -moz-animation: spin3 3s ease-out forwards;
@@ -6331,7 +6332,7 @@ input[type=text], input[type=email], textarea {
   background-color: #ff5500;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal4 {
   -webkit-animation: spin4 3s ease-out forwards;
   -moz-animation: spin4 3s ease-out forwards;
@@ -6344,7 +6345,7 @@ input[type=text], input[type=email], textarea {
   background-color: #ff8000;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal5 {
   -webkit-animation: spin5 3s ease-out forwards;
   -moz-animation: spin5 3s ease-out forwards;
@@ -6357,7 +6358,7 @@ input[type=text], input[type=email], textarea {
   background-color: #ffaa00;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal6 {
   -webkit-animation: spin6 3s ease-out forwards;
   -moz-animation: spin6 3s ease-out forwards;
@@ -6370,7 +6371,7 @@ input[type=text], input[type=email], textarea {
   background-color: #ffd500;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal7 {
   -webkit-animation: spin7 3s ease-out forwards;
   -moz-animation: spin7 3s ease-out forwards;
@@ -6383,7 +6384,7 @@ input[type=text], input[type=email], textarea {
   background-color: yellow;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal8 {
   -webkit-animation: spin8 3s ease-out forwards;
   -moz-animation: spin8 3s ease-out forwards;
@@ -6396,7 +6397,7 @@ input[type=text], input[type=email], textarea {
   background-color: #d5ff00;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal9 {
   -webkit-animation: spin9 3s ease-out forwards;
   -moz-animation: spin9 3s ease-out forwards;
@@ -6409,7 +6410,7 @@ input[type=text], input[type=email], textarea {
   background-color: #aaff00;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal10 {
   -webkit-animation: spin10 3s ease-out forwards;
   -moz-animation: spin10 3s ease-out forwards;
@@ -6422,7 +6423,7 @@ input[type=text], input[type=email], textarea {
   background-color: #80ff00;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal11 {
   -webkit-animation: spin11 3s ease-out forwards;
   -moz-animation: spin11 3s ease-out forwards;
@@ -6435,7 +6436,7 @@ input[type=text], input[type=email], textarea {
   background-color: #55ff00;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal12 {
   -webkit-animation: spin12 3s ease-out forwards;
   -moz-animation: spin12 3s ease-out forwards;
@@ -6448,7 +6449,7 @@ input[type=text], input[type=email], textarea {
   background-color: #2bff00;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal13 {
   -webkit-animation: spin13 3s ease-out forwards;
   -moz-animation: spin13 3s ease-out forwards;
@@ -6461,7 +6462,7 @@ input[type=text], input[type=email], textarea {
   background-color: lime;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal14 {
   -webkit-animation: spin14 3s ease-out forwards;
   -moz-animation: spin14 3s ease-out forwards;
@@ -6474,7 +6475,7 @@ input[type=text], input[type=email], textarea {
   background-color: #00ff2b;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal15 {
   -webkit-animation: spin15 3s ease-out forwards;
   -moz-animation: spin15 3s ease-out forwards;
@@ -6487,7 +6488,7 @@ input[type=text], input[type=email], textarea {
   background-color: #00ff55;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal16 {
   -webkit-animation: spin16 3s ease-out forwards;
   -moz-animation: spin16 3s ease-out forwards;
@@ -6500,7 +6501,7 @@ input[type=text], input[type=email], textarea {
   background-color: #00ff80;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal17 {
   -webkit-animation: spin17 3s ease-out forwards;
   -moz-animation: spin17 3s ease-out forwards;
@@ -6513,7 +6514,7 @@ input[type=text], input[type=email], textarea {
   background-color: #00ffaa;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal18 {
   -webkit-animation: spin18 3s ease-out forwards;
   -moz-animation: spin18 3s ease-out forwards;
@@ -6526,7 +6527,7 @@ input[type=text], input[type=email], textarea {
   background-color: #00ffd5;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal19 {
   -webkit-animation: spin19 3s ease-out forwards;
   -moz-animation: spin19 3s ease-out forwards;
@@ -6539,7 +6540,7 @@ input[type=text], input[type=email], textarea {
   background-color: cyan;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal20 {
   -webkit-animation: spin20 3s ease-out forwards;
   -moz-animation: spin20 3s ease-out forwards;
@@ -6552,7 +6553,7 @@ input[type=text], input[type=email], textarea {
   background-color: #00d5ff;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal21 {
   -webkit-animation: spin21 3s ease-out forwards;
   -moz-animation: spin21 3s ease-out forwards;
@@ -6565,7 +6566,7 @@ input[type=text], input[type=email], textarea {
   background-color: #00aaff;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal22 {
   -webkit-animation: spin22 3s ease-out forwards;
   -moz-animation: spin22 3s ease-out forwards;
@@ -6578,7 +6579,7 @@ input[type=text], input[type=email], textarea {
   background-color: #0080ff;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal23 {
   -webkit-animation: spin23 3s ease-out forwards;
   -moz-animation: spin23 3s ease-out forwards;
@@ -6591,7 +6592,7 @@ input[type=text], input[type=email], textarea {
   background-color: #0055ff;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal24 {
   -webkit-animation: spin24 3s ease-out forwards;
   -moz-animation: spin24 3s ease-out forwards;
@@ -6604,7 +6605,7 @@ input[type=text], input[type=email], textarea {
   background-color: #002bff;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal25 {
   -webkit-animation: spin25 3s ease-out forwards;
   -moz-animation: spin25 3s ease-out forwards;
@@ -6617,7 +6618,7 @@ input[type=text], input[type=email], textarea {
   background-color: blue;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal26 {
   -webkit-animation: spin26 3s ease-out forwards;
   -moz-animation: spin26 3s ease-out forwards;
@@ -6630,7 +6631,7 @@ input[type=text], input[type=email], textarea {
   background-color: #2b00ff;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal27 {
   -webkit-animation: spin27 3s ease-out forwards;
   -moz-animation: spin27 3s ease-out forwards;
@@ -6643,7 +6644,7 @@ input[type=text], input[type=email], textarea {
   background-color: #5500ff;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal28 {
   -webkit-animation: spin28 3s ease-out forwards;
   -moz-animation: spin28 3s ease-out forwards;
@@ -6656,7 +6657,7 @@ input[type=text], input[type=email], textarea {
   background-color: #8000ff;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal29 {
   -webkit-animation: spin29 3s ease-out forwards;
   -moz-animation: spin29 3s ease-out forwards;
@@ -6669,7 +6670,7 @@ input[type=text], input[type=email], textarea {
   background-color: #aa00ff;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal30 {
   -webkit-animation: spin30 3s ease-out forwards;
   -moz-animation: spin30 3s ease-out forwards;
@@ -6682,7 +6683,7 @@ input[type=text], input[type=email], textarea {
   background-color: #d500ff;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal31 {
   -webkit-animation: spin31 3s ease-out forwards;
   -moz-animation: spin31 3s ease-out forwards;
@@ -6695,7 +6696,7 @@ input[type=text], input[type=email], textarea {
   background-color: magenta;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal32 {
   -webkit-animation: spin32 3s ease-out forwards;
   -moz-animation: spin32 3s ease-out forwards;
@@ -6708,7 +6709,7 @@ input[type=text], input[type=email], textarea {
   background-color: #ff00d5;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal33 {
   -webkit-animation: spin33 3s ease-out forwards;
   -moz-animation: spin33 3s ease-out forwards;
@@ -6721,7 +6722,7 @@ input[type=text], input[type=email], textarea {
   background-color: #ff00aa;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal34 {
   -webkit-animation: spin34 3s ease-out forwards;
   -moz-animation: spin34 3s ease-out forwards;
@@ -6734,7 +6735,7 @@ input[type=text], input[type=email], textarea {
   background-color: #ff0080;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal35 {
   -webkit-animation: spin35 3s ease-out forwards;
   -moz-animation: spin35 3s ease-out forwards;
@@ -6747,7 +6748,7 @@ input[type=text], input[type=email], textarea {
   background-color: #ff0055;
 }
 
-/* line 200, ../sass/_index.scss */
+/* line 204, ../sass/_index.scss */
 #indexPetal36 {
   -webkit-animation: spin36 3s ease-out forwards;
   -moz-animation: spin36 3s ease-out forwards;
@@ -10943,7 +10944,7 @@ input[type=text], input[type=email], textarea {
     width: 500px;
     height: 500px;
     margin-top: -250px;
-    margin-left: -250px;
+    margin-left: -270px;
   }
 
   /*
@@ -11066,13 +11067,13 @@ input[type=text], input[type=email], textarea {
   /* -- navigation -- */
   /* line 89, ../sass/_index_bp_1.scss */
   .nav {
-    height: 25px;
+    height: 40px;
   }
 
   /* line 93, ../sass/_index_bp_1.scss */
   .nav a {
-    height: 25px;
-    line-height: 25px;
+    height: 40px;
+    line-height: 40px;
     font-size: 150%;
     padding: 0 10px;
   }
@@ -11082,18 +11083,19 @@ input[type=text], input[type=email], textarea {
   .info {
     padding: 5px;
     font-size: 90%;
+    top: 0;
   }
 
   /*
   	-- FLOWER --------------------------------------------------------------------
   */
-  /* line 113, ../sass/_index_bp_1.scss */
+  /* line 114, ../sass/_index_bp_1.scss */
   #flowerContainer {
     margin-top: 50px;
     margin-left: 50px;
   }
 
-  /* line 118, ../sass/_index_bp_1.scss */
+  /* line 119, ../sass/_index_bp_1.scss */
   .indexPetal {
     height: 250px;
     width: 71.42857px;
@@ -11156,104 +11158,105 @@ textarea {
   color: red;
   font-size: 80%;
   line-height: 1em;
-  font-family: cd we;
+  margin-bottom: 10px;
+  font-family: 'Muli', sans-serif;
 }
 
-/* line 149, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 div.name, div.email {
   height: 50px;
   line-height: 50px;
 }
 
-/* line 154, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 div.message {
   height: 100px;
   line-height: 100px;
 }
 
-/* line 159, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 textarea {
   height: 60px;
   margin: 15px 0;
 }
 
-/* line 165, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 input:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-/* line 166, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 input:focus:-moz-placeholder {
   color: transparent;
 }
 
-/* line 167, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 input:focus::-moz-placeholder {
   color: transparent;
 }
 
-/* line 168, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 input:focus:-ms-input-placeholder {
   color: transparent;
 }
 
-/* line 171, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 textarea:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-/* line 172, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 textarea:focus:-moz-placeholder {
   color: transparent;
 }
 
-/* line 173, ../sass/screen.scss */
+/* line 174, ../sass/screen.scss */
 textarea:focus::-moz-placeholder {
   color: transparent;
 }
 
-/* line 174, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 textarea:focus:-ms-input-placeholder {
   color: transparent;
 }
 
 @media all and (min-width: 40em) and (min-height: 40em) {
-  /* line 179, ../sass/screen.scss */
+  /* line 180, ../sass/screen.scss */
   [type="text"], [type="email"], textarea {
     font-size: 200%;
   }
 
-  /* line 183, ../sass/screen.scss */
+  /* line 184, ../sass/screen.scss */
   [type="text"], [type="email"] {
     margin-top: 25px;
     height: 50px;
   }
 
-  /* line 188, ../sass/screen.scss */
+  /* line 189, ../sass/screen.scss */
   [type="submit"] {
     line-height: 50px;
     font-size: 200%;
   }
 
-  /* line 193, ../sass/screen.scss */
+  /* line 194, ../sass/screen.scss */
   .formErrors {
     font-size: 150%;
     margin-bottom: 20px;
   }
 
-  /* line 198, ../sass/screen.scss */
+  /* line 199, ../sass/screen.scss */
   div.name, div.email {
     height: 100px;
     line-height: 100px;
   }
 
-  /* line 203, ../sass/screen.scss */
+  /* line 204, ../sass/screen.scss */
   div.message {
     height: 200px;
     line-height: 200px;
   }
 
-  /* line 208, ../sass/screen.scss */
+  /* line 209, ../sass/screen.scss */
   textarea {
     height: 150px;
     margin: 25px 0;

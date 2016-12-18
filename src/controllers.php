@@ -113,26 +113,28 @@ function createForm($app) {
 	return $app['form.factory']
 	->createBuilder(FormType::class)
 	->add('name', TextType::class, array(
+
 			'label' => 'Mon nom est ',
             'attr' => array('placeholder' => 'votre nom'),
 			'constraints' => array(new Assert\NotBlank(), new Assert\Length(array(
                 'min' => 5,
-                'minMessage' => 'le nom doit contenir au moins {{ limit }} caractères'
+                'minMessage' => 'Le nom doit contenir au moins {{ limit }} caractères'
             )))
 	))
 	->add('email', EmailType::class, array(
+
 			'label' => ' et voici mon email ',
             'attr' => array('placeholder' => 'votre email'),
 			'constraints' => array(new Assert\Email())
 	))
 	->add('message', TextareaType::class, array(
+        
 			'label' => 'Merci de me contacter au sujet de ',
             'attr' => array('placeholder' => 'votre demande'),
 			'constraints' => array(new Assert\NotBlank(), new Assert\Length(array(
                 'min' => 15,
-                'minMessage' => 'le message doit contenir au moins {{ limit }} caractères'
+                'minMessage' => 'Le message doit contenir au moins {{ limit }} caractères'
             )))
-
 	))
 	->getForm();
 }

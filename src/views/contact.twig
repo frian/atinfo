@@ -54,6 +54,7 @@
 
             {{ form_widget(form.email) }}
 
+
             <div class="email-curly-brace-close close-brace-position" data-color="#0b0">
                 <div class="b1"></div>
                 <div class="b2"></div>
@@ -90,20 +91,9 @@
         </div>
 
         <div class="formErrors">
-
-            {% if form.name.vars.errors|length > 0 %}
-                {% for error in form.name.vars.errors %}
-                    {{ error.message }}
-                {% endfor %}
-            {% endif %}
-
-            {% if form.message.vars.errors|length > 0 %}
-                <br>
-                {% for error in form.message.vars.errors %}
-                    {{ error.message }}
-                {% endfor %}
-            {% endif %}
-
+            {{ form_errors(form.name) }}
+            {{ form_errors(form.email) }}
+            {{ form_errors(form.message) }}
         </div>
 
 
