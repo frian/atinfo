@@ -52,13 +52,13 @@ $indexPetalWidth:  $indexContentSize / 7;                       //  35.5
     0% {
         top:                             50%;
         left:                            50%;
-        margin-top:  - $indexContentSize / 2;
+        margin-top:                    -75px;
         margin-left: - $indexContentSize / 2;
     }
     50% {
         top:                             50%;
         left:                            50%;
-        margin-top:  - $indexContentSize / 2;
+        margin-top:                    -75px;
         margin-left: - $indexContentSize / 2;
     }
     100% {
@@ -149,7 +149,7 @@ $indexPetalWidth:  $indexContentSize / 7;                       //  35.5
     line-height:               20px;
     color:                     #999;
     font-family: 'Muli', sans-serif;
-    font-size:                  70%;
+    font-size:                  60%;
 }
 
 

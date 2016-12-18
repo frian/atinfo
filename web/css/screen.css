@@ -6074,13 +6074,13 @@ input[type=text], input[type=email], textarea {
   0% {
     top: 50%;
     left: 50%;
-    margin-top: -125px;
+    margin-top: -75px;
     margin-left: -125px;
   }
   50% {
     top: 50%;
     left: 50%;
-    margin-top: -125px;
+    margin-top: -75px;
     margin-left: -125px;
   }
   100% {
@@ -6094,13 +6094,13 @@ input[type=text], input[type=email], textarea {
   0% {
     top: 50%;
     left: 50%;
-    margin-top: -125px;
+    margin-top: -75px;
     margin-left: -125px;
   }
   50% {
     top: 50%;
     left: 50%;
-    margin-top: -125px;
+    margin-top: -75px;
     margin-left: -125px;
   }
   100% {
@@ -6114,13 +6114,13 @@ input[type=text], input[type=email], textarea {
   0% {
     top: 50%;
     left: 50%;
-    margin-top: -125px;
+    margin-top: -75px;
     margin-left: -125px;
   }
   50% {
     top: 50%;
     left: 50%;
-    margin-top: -125px;
+    margin-top: -75px;
     margin-left: -125px;
   }
   100% {
@@ -6134,13 +6134,13 @@ input[type=text], input[type=email], textarea {
   0% {
     top: 50%;
     left: 50%;
-    margin-top: -125px;
+    margin-top: -75px;
     margin-left: -125px;
   }
   50% {
     top: 50%;
     left: 50%;
-    margin-top: -125px;
+    margin-top: -75px;
     margin-left: -125px;
   }
   100% {
@@ -6258,7 +6258,7 @@ input[type=text], input[type=email], textarea {
   line-height: 20px;
   color: #999;
   font-family: 'Muli', sans-serif;
-  font-size: 70%;
+  font-size: 60%;
 }
 
 /*
@@ -10960,13 +10960,13 @@ input[type=text], input[type=email], textarea {
     0% {
       top: 50%;
       left: 50%;
-      margin-top: -250px;
+      margin-top: -150px;
       margin-left: -250px;
     }
     50% {
       top: 50%;
       left: 50%;
-      margin-top: -250px;
+      margin-top: -150px;
       margin-left: -250px;
     }
     100% {
@@ -10980,13 +10980,13 @@ input[type=text], input[type=email], textarea {
     0% {
       top: 50%;
       left: 50%;
-      margin-top: -250px;
+      margin-top: -150px;
       margin-left: -250px;
     }
     50% {
       top: 50%;
       left: 50%;
-      margin-top: -250px;
+      margin-top: -150px;
       margin-left: -250px;
     }
     100% {
@@ -11000,13 +11000,13 @@ input[type=text], input[type=email], textarea {
     0% {
       top: 50%;
       left: 50%;
-      margin-top: -250px;
+      margin-top: -150px;
       margin-left: -250px;
     }
     50% {
       top: 50%;
       left: 50%;
-      margin-top: -250px;
+      margin-top: -150px;
       margin-left: -250px;
     }
     100% {
@@ -11020,13 +11020,13 @@ input[type=text], input[type=email], textarea {
     0% {
       top: 50%;
       left: 50%;
-      margin-top: -250px;
+      margin-top: -150px;
       margin-left: -250px;
     }
     50% {
       top: 50%;
       left: 50%;
-      margin-top: -250px;
+      margin-top: -150px;
       margin-left: -250px;
     }
     100% {
