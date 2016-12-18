@@ -1,18 +1,30 @@
+$XOffset: 50px;
 
 $servicesContentSize: 500px;                                        // 500
 
 $maskMargin: $servicesContentSize / 2;                              // 250
 
-$servicesContentTextSize: $servicesContentSize * 3 / 4;             // 375
-
-
-
-$trunkMaskWidth: 20px;
+$trunkMaskWidth: $servicesContentSize / 10;                         //  50
 
 $trunkMaskTopMargin: $servicesContentSize + $maskMargin - $YOffset; // 700
 $trunkMaskStartTopMargin: $maskMargin - $YOffset;                   // 200
 
 $trunkMaskLeftMargin: ($servicesContentSize / 2) + $trunkMaskWidth; // 270
+
+$servicesContentTextSize: $servicesContentSize * 3 / 4;             // 375
+
+$leafSize: $servicesContentSize / 5;                                // 100
+
+$leaf3Margin: $servicesContentSize / 10 * 3;                        // 150
+$leaf4Margin: $servicesContentSize / 2;                             // 250
+
+$bigStemSize: $servicesContentSize / 4;                             // 125
+
+$stemSize: $bigStemSize / 5;                                        //  25
+
+$stemWidth : $bigStemSize / 10;                                     //  12.5
+
+$centerSize : $leafSize / 2;                                        //  50
 
 
 /*
@@ -35,10 +47,10 @@ $trunkMaskLeftMargin: ($servicesContentSize / 2) + $trunkMaskWidth; // 270
 	-- CONTENT -------------------------------------------------------------------
 */
 #servicesContent {
-    height:                        $servicesContentSize;
-    width:                         $servicesContentSize;
-    margin-top: - ($servicesContentSize / 2) + $YOffset;
-    margin-left:             - $servicesContentSize / 2;
+    height:                         $servicesContentSize;
+    width:                          $servicesContentSize;
+    margin-top:  - ($servicesContentSize / 2) + $YOffset;
+    margin-left: - ($servicesContentSize / 2) + $XOffset;
 }
 
 #servicesContentText {
@@ -52,12 +64,22 @@ $trunkMaskLeftMargin: ($servicesContentSize / 2) + $trunkMaskWidth; // 270
 /*
 	-- INDEX SPANS ---------------------------------------------------------------
 */
+#indexSpan1 {
+    height: $servicesContentTextSize / 4;
+}
+
+#indexSpan2 {
+    height: $servicesContentTextSize / 2;
+}
+
 #indexSpan3 {
-    top: -30px;
+    height: $servicesContentTextSize / 4;
+    top: -40px;
 }
 
 #indexSpan4 {
-    top: -30px;
+    height: $servicesContentTextSize / 4;
+    top: -35px;
     font-size: 150px;
 }
 
@@ -72,7 +94,7 @@ $trunkRadius: 4000px;
   height:                       $trunkRadius;
   width:                        $trunkRadius;
   border:                     3px solid #333;
-  margin-left:                        -266px;
+  margin-left:             -266px + $XOffset;
   margin-top: -($trunkRadius / 2) + $YOffset;
   @include border-left-radius($trunkRadius);
 }
@@ -81,7 +103,7 @@ $trunkRadius: 4000px;
     height:        $servicesContentSize;
     width:              $trunkMaskWidth;
     margin-top:   - $trunkMaskTopMargin;
-    margin-left: - $trunkMaskLeftMargin;
+    margin-left: - $trunkMaskLeftMargin + $XOffset;
 }
 
 @include keyframes(growTrunk) {
@@ -94,71 +116,66 @@ $trunkRadius: 4000px;
 	-- LEAVES --------------------------------------------------------------------
 */
 .leaf {
-    height: 100px;
-    width: 100px;
-    left: 0px;
-    bottom: 0px;
+    height: $leafSize;
+    width:  $leafSize;
+    left:         0px;
+    bottom:       0px;
 }
 
 #leaf1 {
-    bottom: -100px;
-    left: -5px;
+    bottom: - $leafSize + 2;
+    left:              -8px;
 }
 
 #leaf2 {
-    bottom: -100px;
+    bottom: - $leafSize + 2;
+    left:               4px;
 }
 
 #leaf3 {
-    position: absolute;
-    bottom: -100px + 150px;
-    margin-left: -8px;
-
+    bottom: - $leafSize + $leaf3Margin;
+    margin-left: -10px;
 }
 
 #leaf4 {
-    bottom: -100px + 250px;
+    bottom: - $leafSize + $leaf4Margin;
     left: -10px;
 }
 
 
-.stem {
-    width: 100px;
-    height: 10px;
-    left: -18px;
-    top: 20px;
+#bigStem {
+    width:      $bigStemSize;
+    height:       $stemWidth;
+    left:              -25px;
+    top:                28px;
     border-top: 4px solid #070;
 }
 
+.stem {
+    width:                 $stemWidth;
+    height:                 $stemSize;
+    border-left: 2px solid $stemColor;
+}
+
 .stem1 {
-    width: 10px;
-    height: 20px;
     left: 15px;
     top: 15px;
-    border-left: 2px solid $stemColor;
 }
 
 .stem2 {
-    width: 10px;
-    height: 20px;
     left: 45px;
     top: 15px;
-    border-left: 2px solid $stemColor;
 }
 
 .stem3 {
-    width: 10px;
-    height: 30px;
     left: 50px;
     top: 40px;
-    border-left: 2px solid $stemColor;
 }
 
 
 /*
 	-- CENTER --------------------------------------------------------------------
 */
-$centerSize: 40px;
 #serviceCenter {
     width: $centerSize;
     height: $centerSize;
@@ -172,10 +189,8 @@ $centerSize: 40px;
 	-- PETALS --------------------------------------------------------------------
 */
 .servicePetal {
-    top: 1px;
-    left: 3px;
-    border-top: 2px solid $bg-color;
-    border-right: 2px solid $bg-color;
-    height: 100px;
-    width: 100px;
+    border-top:    2px solid $bg-color;
+    border-right:  2px solid $bg-color;
+    height:                  $leafSize;
+    width:                   $leafSize;
 }
