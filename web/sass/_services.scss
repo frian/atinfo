@@ -1,26 +1,33 @@
 @import "base";
 @import "common";
 
+$YOffset : 50px;
+
+$servicesContentSize: 200px;                                        // 200
+
+$maskMargin: $servicesContentSize / 2;                              // 100
+
+$servicesContentTextSize: $servicesContentSize * 3 / 4;             // 150
+
+
 /*
 	-- TOP AND BOTTOM MASKS ------------------------------------------------------
 */
 .mask {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 100%;
+    position:          absolute;
+    top:                    50%;
+    width:                 100%;
+    height:                100%;
     background-color: $bg-color;
-    z-index: 10;
+    z-index:                 10;
 }
 
-$YOffset : 50px;
-
 #mask {
-    margin-top: 100px + $YOffset;
+    margin-top: $maskMargin + $YOffset;
 }
 
 #mask2 {
-    margin-top: -100px + $YOffset;
+    margin-top: - $maskMargin + $YOffset;
     transform-origin: 0% 0%;
     @include transform(rotateX(180deg)  );
 }
@@ -29,70 +36,62 @@ $YOffset : 50px;
     @include transform(rotateX(180deg));
 }
 
-$servicesContentSize: 200px;
 
+/*
+	-- CONTENT -------------------------------------------------------------------
+*/
 #servicesContent {
     @include abs-centered();
-    height: $servicesContentSize;
-    width: $servicesContentSize;
-    margin-top: - ($servicesContentSize / 2) + 50;
-    margin-left: - $servicesContentSize / 2;
+    height:                        $servicesContentSize;
+    width:                         $servicesContentSize;
+    margin-top: - ($servicesContentSize / 2) + $YOffset;
+    margin-left:             - $servicesContentSize / 2;
     @include debug(green);
-}
-
-#servicesFlowerContainer {
-    position: relative;
-    width: 0px;
-    height: 100%;
 }
 
 #servicesContentText {
 
-    position: relative;
-    left: 60px;
-    top: -150px;
-    width: 140px;
-    font-size: 34px;
-    // @include debug(red);
+    position:               absolute;
+    right:                         0;
+    bottom:                        0;
+    width:  $servicesContentTextSize;
+    height: $servicesContentTextSize;
+    font-size:                  34px;
+    @include debug(red);
 }
 
 
+/*
+	-- INDEX SPANS ---------------------------------------------------------------
+*/
 .indexSpan {
     font-family: 'gruppo';
+    position: relative;
+    display: inline-block;
 }
-
-
-// animation
-@mixin defineIndexSpanAnim($anim, $delay) {
-    @include animation("#{$anim} 6s ease-out forwards");
-}
-
-$i: 1;
-
-@for $i from 1 through 4 {
-    #indexSpan#{$i} { @include defineIndexSpanAnim( "indexSpan#{$i}", $i - 1 ) }
-    $i: $i + 1;
-}
-
 
 #indexSpan1, #indexSpan3 {
     color: #888;
 }
 
 #indexSpan4 {
-    position: relative;
-    display: inline-block;
     top: -10px;
     color: #0a0;
     font-size: 60px;
 }
 
 #indexSpan3 {
-    position: relative;
-    display: inline-block;
     top: -10px;
 }
 
+// animation
+@mixin defineIndexSpanAnim($anim, $delay) {
+    @include animation("#{$anim} 6s ease-out forwards");
+}
+
+@for $i from 1 through 4 {
+    #indexSpan#{$i} { @include defineIndexSpanAnim( "indexSpan#{$i}", $i - 1 ) }
+}
 
 @mixin createIndexSpanAnim($name, $start) {
 
@@ -119,6 +118,20 @@ $i: 1;
     @include createIndexSpanAnim("indexSpan#{$i}", $i + 2);
 }
 
+
+
+
+
+
+#servicesFlowerContainer {
+    position: relative;
+    width: 0px;
+    height: 100%;
+}
+
+
+
+
 /*
 	-- TRUNK ---------------------------------------------------------------------
 */
@@ -135,6 +148,7 @@ $trunkRadius: 2000px;
   @include abs-centered();
 }
 
+/* -- TRUNK MASK -- */
 #trunkMask {
     width: 50px;
     height: 200px;
