@@ -2,23 +2,23 @@
 @import "common";
 
 
-$indexContentSize: 250px;                                       // 500
+$indexContentSize: 250px;                                       // 250
 
-$indexTextContainerWidth:   $indexContentSize;                  // 500
-$indexTextContainerHeight: $indexContentSize / 2;               // 250
+$indexTextContainerWidth:   $indexContentSize;                  // 250
+$indexTextContainerHeight: $indexContentSize / 2;               // 125
 
-$atinfoHeight:    $indexContentSize / 5;                        // 100
-$atinfoTopMargin: $atinfoHeight / 5;                            //  20
+$atinfoHeight:    $indexContentSize / 5;                        //  50
+$atinfoTopMargin: $atinfoHeight / 5;                            //  10
 
-$indexTextHeight: $indexTextContainerHeight / 25 * 6;           //  60
+$indexTextHeight: $indexTextContainerHeight / 25 * 6;           //  30
 
-$navHeight: $indexTextContainerHeight / 25 * 4;                 //  25
+$navHeight: $indexTextContainerHeight / 25 * 4;                 //  12.5
 
 
-$flowerContainerMargin: $indexContentSize / 10;                 //  50
+$flowerContainerMargin: $indexContentSize / 10;                 //  25
 
-$indexPetalHeight: $indexContentSize / 2;                       // 250
-$indexPetalWidth:  $indexContentSize / 7;                       //  71
+$indexPetalHeight: $indexContentSize / 2;                       // 125
+$indexPetalWidth:  $indexContentSize / 7;                       //  35.5
 
 
 /* -- CONTENT -- */
