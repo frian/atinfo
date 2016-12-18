@@ -64,8 +64,6 @@ $indexPetalWidth:  $indexContentSize / 7;                       //  71
     height:         $atinfoHeight;
     line-height:    $atinfoHeight;
     font-size:              120px;
-    // margin-bottom: 30px;
-    @include debug(blue);
 }
 
 
@@ -97,7 +95,6 @@ $indexPetalWidth:  $indexContentSize / 7;                       //  71
     line-height: $navHeight;
     font-size:         150%;
     padding:         0 10px;
-    @include debug(red);
 }
 
 
