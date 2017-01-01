@@ -6,6 +6,18 @@
 
 {% block content %}
 
+{# Check if we got some flash messages #}
+{% if app.session.flashbag.peekAll()|length > 0 %}
+    <div id="flash">
+        <div class="vertMiddle">
+        {% for message in app.session.getFlashBag.get('message') %}
+            {{ message }}
+        {% endfor %}
+        </div>
+    </div>
+{% endif %}
+
+
 <div id="indexContent">
     <div id="center"></div>
 
