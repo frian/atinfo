@@ -45,7 +45,7 @@ $app->match('/contact', function (Request $request) use ($app) {
 		$data = $form->getData();
 
 		$message = \Swift_Message::newInstance()
-		->setSubject(sprintf('Contact from %s', $data['name']))
+		->setSubject(sprintf('Contact from %s %s', $data['name'], $data['email']))
 		->setFrom(array('andre@at-info.ch'))
 		->setTo(array('andre@at-info.ch'))
 		->setBody($data['message']);
@@ -128,7 +128,7 @@ function createForm($app) {
 			'constraints' => array(new Assert\Email())
 	))
 	->add('message', TextareaType::class, array(
-        
+
 			'label' => 'Merci de me contacter au sujet de ',
             'attr' => array('placeholder' => 'votre demande'),
 			'constraints' => array(new Assert\NotBlank(), new Assert\Length(array(
