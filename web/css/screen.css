@@ -10996,6 +10996,70 @@ input[type=text], input[type=email], textarea {
     opacity: 0.8;
   }
 }
+/* line 334, ../sass/_index.scss */
+#flash {
+  font-size: 200%;
+  position: absolute;
+  display: table;
+  width: 320px;
+  height: 320px;
+  top: 50%;
+  left: 50%;
+  margin-top: -160px;
+  margin-left: -160px;
+  color: red;
+  z-index: 50;
+  border: 1px solid red;
+}
+
+/* line 349, ../sass/_index.scss */
+.vertMiddle {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 355, ../sass/_index.scss */
+.flashAnime {
+  -webkit-animation: message 1s ease-in 1s forwards normal;
+  -moz-animation: message 1s ease-in 1s forwards normal;
+  -ms-animation: message 1s ease-in 1s forwards normal;
+  -o-animation: message 1s ease-in 1s forwards normal;
+  animation: message 1s ease-in 1s forwards normal;
+}
+
+@-webkit-keyframes message {
+  to {
+    background: none;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+  }
+}
+@-moz-keyframes message {
+  to {
+    background: none;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+  }
+}
+@-o-keyframes message {
+  to {
+    background: none;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+  }
+}
+@keyframes $message {
+  to {
+    background: none;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+  }
+}
 @media all and (min-width: 30em) and (min-height: 30em) {
   /* -- CONTENT -- */
   /* line 22, ../sass/_index_bp_1.scss */

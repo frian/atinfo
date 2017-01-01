@@ -331,6 +331,38 @@ $indexSpin36Angle: $indexAngleStep;
 @include createIndexAnim("spin36", $indexAngleOffset + $indexSpin36Angle, $bgGrey2, hsl(350, 100%, 50%));
 
 
+#flash {
+	font-size : 200%;
+	position : absolute;
+	display : table;
+	width : 320px;
+	height : 320px;
+	top : 50%;
+	left : 50%;
+	margin-top : -160px;
+	margin-left : -160px;
+	color : red;
+    z-index: 50;
+    @include debug(red);
+}
+
+.vertMiddle {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.flashAnime { @include animation-simple(message, 1s, ease-in, 1s, forwards); }
+
+@include keyframes(message) {
+
+    to {
+		background : none;
+        visibility:hidden;
+        opacity:0;
+        top : 0;
+    }
+}
 
 @media all and (min-width: $breadkpoint) and (min-height: $breadkpoint) {
 
