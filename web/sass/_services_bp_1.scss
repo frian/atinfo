@@ -103,7 +103,7 @@ $trunkRadius: 4000px;
     height:        $servicesContentSize;
     width:              $trunkMaskWidth;
     margin-top:   - $trunkMaskTopMargin;
-    margin-left: - $trunkMaskLeftMargin + $XOffset;
+    margin-left: - $trunkMaskLeftMargin + $XOffset + 10;
 }
 
 @include keyframes(growTrunk) {
@@ -123,13 +123,15 @@ $trunkRadius: 4000px;
 }
 
 #leaf1 {
-    bottom: - $leafSize + 2;
-    left:              -8px;
+    bottom: - $leafSize + 5;
+    left:             -10px;
+    // display: none;
 }
 
 #leaf2 {
-    bottom: - $leafSize + 2;
-    left:               4px;
+    bottom: - $leafSize + 5;
+    left:               9px;
+    // display: none;
 }
 
 #leaf3 {
@@ -147,8 +149,9 @@ $trunkRadius: 4000px;
     width:      $bigStemSize;
     height:       $stemWidth;
     left:              -25px;
-    top:                28px;
+    top:                27px;
     border-top: 4px solid #070;
+    // z-index: 20;
 }
 
 .stem {
@@ -163,13 +166,13 @@ $trunkRadius: 4000px;
 }
 
 .stem2 {
-    left: 45px;
-    top: 15px;
+    left: 46px;
+    top: 14px;
 }
 
 .stem3 {
     left: 50px;
-    top: 40px;
+    top:  45px;
 }
 
 
