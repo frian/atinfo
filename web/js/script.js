@@ -10,6 +10,9 @@ $(function() {
         $("*").addClass("noAnim");
     }
 
+
+
+
 	// check if we have a flash message
 	var flash = $('#flash');
 
@@ -17,8 +20,9 @@ $(function() {
 
 	// set flag and hide content
 	if ( flash.length ) {
-		$('body').css( "display" , "none" );
+		$('#indexContent').css( "display" , "none" );
 		hasFlash = 1;
+        $(".indexPetal, #indexTextContainer").addClass("noAnim");
 	}
 
 	var current = '#home';
@@ -30,21 +34,21 @@ $(function() {
 		    $(flash).addClass("flashAnime");
 		 }
 
-		flash.one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+		flash.one('webkitAnimationEnd oanimationend animationend', function(e) {
 
 			flash.remove();
 
-			$('#home').css( "display" , "table" );
+			$('#indexContent').css( "display" , "block" );
 
-			$('#home').animate({
+			$('#indexContent').animate({
 				opacity: 1,
-			}, 250);
+			}, 1000);
 		  });
 	});
 
 	// click if flash
 	if ( hasFlash ) {
-		$('#home').css( "opacity" , 0 );
+		$('#indexContent').css( "opacity" , 0 );
 		flash.click();
 	}
 
