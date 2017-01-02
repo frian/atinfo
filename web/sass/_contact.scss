@@ -288,7 +288,7 @@ input[type=text], input[type=email], textarea { @include animation("placeholders
 
 
 
-@media all and (min-width: $breadkpoint) and (min-height: $breadkpoint) {
+@media all and (min-width: $breakpoint) and (min-height: $breakpoint) {
 
     @import "contact_bp_1";
 }

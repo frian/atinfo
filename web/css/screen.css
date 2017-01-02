@@ -898,7 +898,7 @@ input[type=text], input[type=email], textarea {
   background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
 }
 
-@media all and (min-width: 30em) and (min-height: 30em) {
+@media all and (min-width: 40em) and (min-height: 40em) {
   /*
   	-- CONTENT -------------------------------------------------------------------
   */
@@ -5827,7 +5827,7 @@ input[type=text], input[type=email], textarea {
     opacity: 0.6;
   }
 }
-@media all and (min-width: 30em) and (min-height: 30em) {
+@media all and (min-width: 40em) and (min-height: 40em) {
   /*
   	-- TOP AND BOTTOM MASKS ------------------------------------------------------
   */
@@ -11060,7 +11060,7 @@ input[type=text], input[type=email], textarea {
     top: 0;
   }
 }
-@media all and (min-width: 30em) and (min-height: 30em) {
+@media all and (min-width: 40em) and (min-height: 40em) {
   /* -- CONTENT -- */
   /* line 22, ../sass/_index_bp_1.scss */
   #indexContent {
@@ -11342,7 +11342,7 @@ textarea:focus:-ms-input-placeholder {
   color: transparent;
 }
 
-@media all and (min-width: 30em) and (min-height: 30em) {
+@media all and (min-width: 40em) and (min-height: 40em) {
   /* line 180, ../sass/screen.scss */
   [type="text"], [type="email"], textarea {
     font-size: 200%;

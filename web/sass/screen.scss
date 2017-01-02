@@ -175,7 +175,7 @@ textarea:focus::-moz-placeholder { color:transparent; }
 textarea:focus:-ms-input-placeholder { color:transparent; }
 
 
-@media all and (min-width: $breadkpoint) and (min-height: $breadkpoint) {
+@media all and (min-width: $breakpoint) and (min-height: $breakpoint) {
 
     [type="text"], [type="email"], textarea {
         font-size: 200%;
