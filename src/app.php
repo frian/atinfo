@@ -69,9 +69,13 @@ $app->before(function () use ($app) {
 	  __DIR__ . '/../vendor/symfony/validator/Resources/translations/validators.fr.xlf',
 	  'fr',
 	  'validators');
-    
+
 	  $app['translator']->setLocale('fr');
 });
+
+
+
+
 
 
 

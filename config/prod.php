@@ -2,7 +2,7 @@
 
 /*
  * configuration for production environment
- * 
+ *
  */
 
 // enable http caching
