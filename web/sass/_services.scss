@@ -67,6 +67,7 @@ $centerSize : $leafSize / 2;                                        //  20
     width:                          $servicesContentSize;
     margin-top:  - ($servicesContentSize / 2) + $YOffset;
     margin-left: - ($servicesContentSize / 2) + $XOffset;
+    @include debug(red);
 }
 
 #servicesContentText {

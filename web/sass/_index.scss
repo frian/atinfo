@@ -45,6 +45,7 @@ $indexPetalWidth:  $indexContentSize / 7;                       //  35.5
     background-color:                 $bg-color;
     text-align:                          center;
     @include animation("animIndexTextContainer 2s ease-out forwards");
+    @include debug(red);
 }
 
 @include keyframes(animIndexTextContainer) {
@@ -138,7 +139,10 @@ $indexPetalWidth:  $indexContentSize / 7;                       //  35.5
     font-size:          90%;
     padding:          0 2px;
     @include animation("animLinks 5s ease-out forwards");
+    border: 2px solid #d00;
+    @include border-radius(20px);
 }
+
 
 .nav a:hover {
     color: #222;
@@ -166,7 +170,7 @@ $indexPetalWidth:  $indexContentSize / 7;                       //  35.5
     color:                     #999;
     font-family: 'Muli', sans-serif;
     font-size:                  50%;
-    top:                      -12px;
+    // top:                      -12px;
 }
 
 
@@ -207,15 +211,15 @@ $indexPetalWidth:  $indexContentSize / 7;                       //  35.5
 }
 
 
-// start angle
+// -- start angle
 $indexAngleOffset: 193deg;
 $indexAngleStep: 7.5deg;
 
 
-// create petal ids and add animation
+// -- create petal ids and add animation
 @for $i from 1 through 36 {
     #indexPetal#{$i} {
-        @include defineIndexPetalAnim( "spin#{$i}");
+        // @include defineIndexPetalAnim( "spin#{$i}");
         @include transform(rotate($indexAngleOffset + ( $indexAngleStep * ( 37 - $i) )));
         background-color: hsl( ( ($i - 1) * 10 ), 100%, 50%);
     }

@@ -7,15 +7,17 @@
 
     <title>at-info.ch</title>
 
-    <script src="/js/vendor/jquery-1.12.4.min.js"></script>
+    <!-- <script src="/js/vendor/jquery-1.12.4.min.js"></script>
     <script src="/js/vendor/jquery.color.js"></script>
-    <script src="/js/vendor/velocity.min.js"></script>
+    <script src="/js/vendor/velocity.min.js"></script> -->
 
-    <script src="/js/script.js"></script>
+    <!-- <script src="/js/script.js"></script> -->
 
     {% block my_js %}{% endblock %}
 
-    <link rel="stylesheet" href="/css/screen.css">
+    {% block css %}
+        <link rel="stylesheet" href="/css/screen.css">
+    {% endblock %}
     <!-- <link rel="stylesheet" href="/css/services.css">
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/contact.css"> -->
