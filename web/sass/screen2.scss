@@ -31,7 +31,7 @@ section {
         margin-top:            -150px;
         z-index:                   10;
         border-bottom: 5px solid #c00;
-        
+
 
         @include transform(rotateZ(3deg));
 
@@ -104,6 +104,9 @@ section {
 
 }
 
+
+
+
 @mixin abs-centered() {
     position: absolute;
     top: 50%;
@@ -123,11 +126,8 @@ $leafSize: $servicesContentSize / 5;                                //  40
 $leaf3Margin: $servicesContentSize / 10 * 3;                        //  60
 $leaf4Margin: $servicesContentSize / 2;                             // 100
 $bigStemSize: $servicesContentSize / 4;                             //  50
-
 $stemSize: $bigStemSize / 5;                                        //  10
-
 $stemWidth : $bigStemSize / 10;                                     //   5
-
 $centerSize : $leafSize / 2;                                        //  20
 
 
@@ -137,7 +137,7 @@ $centerSize : $leafSize / 2;                                        //  20
     width:                          $servicesContentSize;
     margin-top:  - ($servicesContentSize / 2) + $YOffset;
     margin-left: - ($servicesContentSize / 2) + $XOffset;
-    // @include debug(black);
+    @include debug(black);
 }
 
 #servicesContentText {
@@ -148,7 +148,7 @@ $centerSize : $leafSize / 2;                                        //  20
     width:  $servicesContentTextSize;
     height: $servicesContentTextSize + 10;
     font-size:                  34px;
-    // @include debug(red);
+    @include debug(red);
 }
 
 #servicesFlowerContainer {
@@ -214,67 +214,6 @@ $centerSize : $leafSize / 2;                                        //  20
     // @include animation('leafGrow4 6s ease-out forwards');
 }
 
-
-@include keyframes(leafGrow1) {
-    0% {
-        @include transform(scale(0.01) rotateZ(180deg));
-        @include opacity(1);
-    }
-    66.66% {
-        @include transform(scale(1) rotateZ(180deg));
-        @include opacity(1);
-    }
-    100% {
-        @include transform(scale(1) rotateZ(180deg));
-        @include opacity(1);
-    }
-}
-@include keyframes(leafGrow2) {
-    0% {
-        @include transform(scale(0.01) rotateX(180deg));
-        @include opacity(1);
-    }
-    16.66% {
-        @include transform(scale(0.01) rotateX(180deg));
-        @include opacity(1);
-    }
-    100% {
-        @include transform(scale(1) rotateX(180deg));
-        @include opacity(1);
-    }
-}
-@include keyframes(leafGrow3) {
-    0% {
-        @include transform(scale(0.01) rotateZ(180deg));
-        @include opacity(1);
-    }
-    33.33% {
-        @include transform(scale(0.01) rotateZ(180deg));
-        @include opacity(1);
-    }
-    83.33% {
-        @include transform(scale(0.8) rotateZ(180deg));
-        @include opacity(1);
-    }
-    100% {
-        @include transform(scale(0.8) rotateZ(180deg));
-        @include opacity(1);
-    }
-}
-@include keyframes(leafGrow4) {
-    0%{
-        @include transform(scale(0.01) rotateX(180deg));
-        @include opacity(1);
-    }
-    50% {
-        @include transform(scale(0.01) rotateX(180deg));
-        @include opacity(1);
-    }
-    100% {
-        @include transform(scale(0.6) rotateX(180deg));
-        @include opacity(1);
-    }
-}
 
 $stemColor: #070; // #070
 
@@ -429,7 +368,180 @@ $serviceSpin18Angle: $serviceAngleStep;
     font-size: 60px;
 }
 
-@media all and (min-width: 40em) {
+@media all and (min-width: 60em) and (min-height: 40em) {
 
+
+    section {
+        &.service {
+            .container {
+
+                height: 1000px;
+            }
+        }
+    }
+
+
+
+    $YOffset : 50px;
+    $XOffset : 20px;
+
+    $servicesContentSize: 500px;                                        // 200
+    $servicesContentTextSize: $servicesContentSize * 0.70;             // 150
+    $leafSize: $servicesContentSize / 5;                                //  40
+    $leaf3Margin: $servicesContentSize / 10 * 3;                        //  60
+    $leaf4Margin: $servicesContentSize / 2;                             // 100
+    $bigStemSize: $servicesContentSize / 4;                             //  50
+    $stemSize: $bigStemSize / 5;                                        //  10
+    $stemWidth : $bigStemSize / 10;                                     //   5
+    $centerSize : $leafSize / 2;                                        //  20
+
+    /*
+    	-- CONTENT -------------------------------------------------------------------
+    */
+    #servicesContent {
+        height:                         $servicesContentSize;
+        width:                          $servicesContentSize;
+        margin-top:  - ($servicesContentSize / 2) + $YOffset;
+        margin-left: - ($servicesContentSize / 2) + $XOffset;
+    }
+
+    #servicesContentText {
+
+        width:  $servicesContentTextSize;
+        height: $servicesContentTextSize;
+        font-size:                  80px;
+    }
+
+
+    /*
+    	-- INDEX SPANS ---------------------------------------------------------------
+    */
+    #indexSpan1 {
+        height: $servicesContentTextSize / 4;
+    }
+
+    #indexSpan2 {
+        height: $servicesContentTextSize / 2;
+    }
+
+    #indexSpan3 {
+        height: $servicesContentTextSize / 4;
+        top: -40px;
+    }
+
+    #indexSpan4 {
+        height: $servicesContentTextSize / 4;
+        top: -35px;
+        font-size: 150px;
+    }
+
+
+    /*
+    	-- TRUNK ---------------------------------------------------------------------
+    */
+
+    $trunkRadius: 4000px;
+
+    #trunk {
+
+        position: absolute;
+        z-index: 10;
+        top: -500px;
+        // left: -2px;
+        height: 100%;
+        // @include debug(red, 5);
+        border-style: solid;
+        border-width: 0 2px 500px 2px;
+        border-color: transparent transparent black transparent;
+    }
+
+
+
+
+    /*
+    	-- LEAVES --------------------------------------------------------------------
+    */
+    .leaf {
+        height: $leafSize;
+        width:  $leafSize;
+        left:         0px;
+        bottom:       0px;
+    }
+
+    #leaf1 {
+        bottom: - $leafSize + 5;
+        left:             -10px;
+        // display: none;
+    }
+
+    #leaf2 {
+        bottom: - $leafSize + 5;
+        left:               9px;
+        // display: none;
+    }
+
+    #leaf3 {
+        bottom: - $leafSize + $leaf3Margin;
+        margin-left: -10px;
+    }
+
+    #leaf4 {
+        bottom: - $leafSize + $leaf4Margin;
+        left: -10px;
+    }
+
+
+    #bigStem {
+        width:      $bigStemSize;
+        height:       $stemWidth;
+        left:              -25px;
+        top:                27px;
+        border-top: 4px solid #070;
+        // z-index: 20;
+    }
+
+    .stem {
+        width:                 $stemWidth;
+        height:                 $stemSize;
+        border-left: 2px solid $stemColor;
+    }
+
+    .stem1 {
+        left: 15px;
+        top: 15px;
+    }
+
+    .stem2 {
+        left: 46px;
+        top: 14px;
+    }
+
+    .stem3 {
+        left: 50px;
+        top:  45px;
+    }
+
+
+    /*
+    	-- CENTER --------------------------------------------------------------------
+    */
+    #serviceCenter {
+        width: $centerSize;
+        height: $centerSize;
+        top: -$centerSize / 2;
+        left: -$centerSize / 2;
+        @include border-radius($centerSize);
+    }
+
+
+    /*
+    	-- PETALS --------------------------------------------------------------------
+    */
+    .servicePetal {
+        border-top:    2px solid $bg-color;
+        border-right:  2px solid $bg-color;
+        height:                  $leafSize;
+        width:                   $leafSize;
+    }
 
 }

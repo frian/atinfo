@@ -185,6 +185,7 @@ section.contact .container h1 {
   width: 200px;
   margin-top: -50px;
   margin-left: -80px;
+  border: 1px solid black;
 }
 
 /* line 143, ../sass/screen2.scss */
@@ -195,6 +196,7 @@ section.contact .container h1 {
   width: 140px;
   height: 150px;
   font-size: 34px;
+  border: 1px solid red;
 }
 
 /* line 154, ../sass/screen2.scss */
@@ -273,455 +275,7 @@ section.contact .container h1 {
   transform: rotateX(180deg) scale(0.6);
 }
 
-@-webkit-keyframes leafGrow1 {
-  0% {
-    -moz-transform: scale(0.01) rotateZ(180deg);
-    -ms-transform: scale(0.01) rotateZ(180deg);
-    -webkit-transform: scale(0.01) rotateZ(180deg);
-    transform: scale(0.01) rotateZ(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  66.66% {
-    -moz-transform: scale(1) rotateZ(180deg);
-    -ms-transform: scale(1) rotateZ(180deg);
-    -webkit-transform: scale(1) rotateZ(180deg);
-    transform: scale(1) rotateZ(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  100% {
-    -moz-transform: scale(1) rotateZ(180deg);
-    -ms-transform: scale(1) rotateZ(180deg);
-    -webkit-transform: scale(1) rotateZ(180deg);
-    transform: scale(1) rotateZ(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-}
-@-moz-keyframes leafGrow1 {
-  0% {
-    -moz-transform: scale(0.01) rotateZ(180deg);
-    -ms-transform: scale(0.01) rotateZ(180deg);
-    -webkit-transform: scale(0.01) rotateZ(180deg);
-    transform: scale(0.01) rotateZ(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  66.66% {
-    -moz-transform: scale(1) rotateZ(180deg);
-    -ms-transform: scale(1) rotateZ(180deg);
-    -webkit-transform: scale(1) rotateZ(180deg);
-    transform: scale(1) rotateZ(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  100% {
-    -moz-transform: scale(1) rotateZ(180deg);
-    -ms-transform: scale(1) rotateZ(180deg);
-    -webkit-transform: scale(1) rotateZ(180deg);
-    transform: scale(1) rotateZ(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-}
-@-o-keyframes leafGrow1 {
-  0% {
-    -moz-transform: scale(0.01) rotateZ(180deg);
-    -ms-transform: scale(0.01) rotateZ(180deg);
-    -webkit-transform: scale(0.01) rotateZ(180deg);
-    transform: scale(0.01) rotateZ(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  66.66% {
-    -moz-transform: scale(1) rotateZ(180deg);
-    -ms-transform: scale(1) rotateZ(180deg);
-    -webkit-transform: scale(1) rotateZ(180deg);
-    transform: scale(1) rotateZ(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  100% {
-    -moz-transform: scale(1) rotateZ(180deg);
-    -ms-transform: scale(1) rotateZ(180deg);
-    -webkit-transform: scale(1) rotateZ(180deg);
-    transform: scale(1) rotateZ(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-}
-@keyframes $leafGrow1 {
-  0% {
-    -moz-transform: scale(0.01) rotateZ(180deg);
-    -ms-transform: scale(0.01) rotateZ(180deg);
-    -webkit-transform: scale(0.01) rotateZ(180deg);
-    transform: scale(0.01) rotateZ(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  66.66% {
-    -moz-transform: scale(1) rotateZ(180deg);
-    -ms-transform: scale(1) rotateZ(180deg);
-    -webkit-transform: scale(1) rotateZ(180deg);
-    transform: scale(1) rotateZ(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  100% {
-    -moz-transform: scale(1) rotateZ(180deg);
-    -ms-transform: scale(1) rotateZ(180deg);
-    -webkit-transform: scale(1) rotateZ(180deg);
-    transform: scale(1) rotateZ(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes leafGrow2 {
-  0% {
-    -moz-transform: scale(0.01) rotateX(180deg);
-    -ms-transform: scale(0.01) rotateX(180deg);
-    -webkit-transform: scale(0.01) rotateX(180deg);
-    transform: scale(0.01) rotateX(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  16.66% {
-    -moz-transform: scale(0.01) rotateX(180deg);
-    -ms-transform: scale(0.01) rotateX(180deg);
-    -webkit-transform: scale(0.01) rotateX(180deg);
-    transform: scale(0.01) rotateX(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  100% {
-    -moz-transform: scale(1) rotateX(180deg);
-    -ms-transform: scale(1) rotateX(180deg);
-    -webkit-transform: scale(1) rotateX(180deg);
-    transform: scale(1) rotateX(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-}
-@-moz-keyframes leafGrow2 {
-  0% {
-    -moz-transform: scale(0.01) rotateX(180deg);
-    -ms-transform: scale(0.01) rotateX(180deg);
-    -webkit-transform: scale(0.01) rotateX(180deg);
-    transform: scale(0.01) rotateX(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  16.66% {
-    -moz-transform: scale(0.01) rotateX(180deg);
-    -ms-transform: scale(0.01) rotateX(180deg);
-    -webkit-transform: scale(0.01) rotateX(180deg);
-    transform: scale(0.01) rotateX(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  100% {
-    -moz-transform: scale(1) rotateX(180deg);
-    -ms-transform: scale(1) rotateX(180deg);
-    -webkit-transform: scale(1) rotateX(180deg);
-    transform: scale(1) rotateX(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-}
-@-o-keyframes leafGrow2 {
-  0% {
-    -moz-transform: scale(0.01) rotateX(180deg);
-    -ms-transform: scale(0.01) rotateX(180deg);
-    -webkit-transform: scale(0.01) rotateX(180deg);
-    transform: scale(0.01) rotateX(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  16.66% {
-    -moz-transform: scale(0.01) rotateX(180deg);
-    -ms-transform: scale(0.01) rotateX(180deg);
-    -webkit-transform: scale(0.01) rotateX(180deg);
-    transform: scale(0.01) rotateX(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  100% {
-    -moz-transform: scale(1) rotateX(180deg);
-    -ms-transform: scale(1) rotateX(180deg);
-    -webkit-transform: scale(1) rotateX(180deg);
-    transform: scale(1) rotateX(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-}
-@keyframes $leafGrow2 {
-  0% {
-    -moz-transform: scale(0.01) rotateX(180deg);
-    -ms-transform: scale(0.01) rotateX(180deg);
-    -webkit-transform: scale(0.01) rotateX(180deg);
-    transform: scale(0.01) rotateX(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  16.66% {
-    -moz-transform: scale(0.01) rotateX(180deg);
-    -ms-transform: scale(0.01) rotateX(180deg);
-    -webkit-transform: scale(0.01) rotateX(180deg);
-    transform: scale(0.01) rotateX(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  100% {
-    -moz-transform: scale(1) rotateX(180deg);
-    -ms-transform: scale(1) rotateX(180deg);
-    -webkit-transform: scale(1) rotateX(180deg);
-    transform: scale(1) rotateX(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes leafGrow3 {
-  0% {
-    -moz-transform: scale(0.01) rotateZ(180deg);
-    -ms-transform: scale(0.01) rotateZ(180deg);
-    -webkit-transform: scale(0.01) rotateZ(180deg);
-    transform: scale(0.01) rotateZ(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  33.33% {
-    -moz-transform: scale(0.01) rotateZ(180deg);
-    -ms-transform: scale(0.01) rotateZ(180deg);
-    -webkit-transform: scale(0.01) rotateZ(180deg);
-    transform: scale(0.01) rotateZ(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  83.33% {
-    -moz-transform: scale(0.8) rotateZ(180deg);
-    -ms-transform: scale(0.8) rotateZ(180deg);
-    -webkit-transform: scale(0.8) rotateZ(180deg);
-    transform: scale(0.8) rotateZ(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  100% {
-    -moz-transform: scale(0.8) rotateZ(180deg);
-    -ms-transform: scale(0.8) rotateZ(180deg);
-    -webkit-transform: scale(0.8) rotateZ(180deg);
-    transform: scale(0.8) rotateZ(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-}
-@-moz-keyframes leafGrow3 {
-  0% {
-    -moz-transform: scale(0.01) rotateZ(180deg);
-    -ms-transform: scale(0.01) rotateZ(180deg);
-    -webkit-transform: scale(0.01) rotateZ(180deg);
-    transform: scale(0.01) rotateZ(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  33.33% {
-    -moz-transform: scale(0.01) rotateZ(180deg);
-    -ms-transform: scale(0.01) rotateZ(180deg);
-    -webkit-transform: scale(0.01) rotateZ(180deg);
-    transform: scale(0.01) rotateZ(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  83.33% {
-    -moz-transform: scale(0.8) rotateZ(180deg);
-    -ms-transform: scale(0.8) rotateZ(180deg);
-    -webkit-transform: scale(0.8) rotateZ(180deg);
-    transform: scale(0.8) rotateZ(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  100% {
-    -moz-transform: scale(0.8) rotateZ(180deg);
-    -ms-transform: scale(0.8) rotateZ(180deg);
-    -webkit-transform: scale(0.8) rotateZ(180deg);
-    transform: scale(0.8) rotateZ(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-}
-@-o-keyframes leafGrow3 {
-  0% {
-    -moz-transform: scale(0.01) rotateZ(180deg);
-    -ms-transform: scale(0.01) rotateZ(180deg);
-    -webkit-transform: scale(0.01) rotateZ(180deg);
-    transform: scale(0.01) rotateZ(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  33.33% {
-    -moz-transform: scale(0.01) rotateZ(180deg);
-    -ms-transform: scale(0.01) rotateZ(180deg);
-    -webkit-transform: scale(0.01) rotateZ(180deg);
-    transform: scale(0.01) rotateZ(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  83.33% {
-    -moz-transform: scale(0.8) rotateZ(180deg);
-    -ms-transform: scale(0.8) rotateZ(180deg);
-    -webkit-transform: scale(0.8) rotateZ(180deg);
-    transform: scale(0.8) rotateZ(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  100% {
-    -moz-transform: scale(0.8) rotateZ(180deg);
-    -ms-transform: scale(0.8) rotateZ(180deg);
-    -webkit-transform: scale(0.8) rotateZ(180deg);
-    transform: scale(0.8) rotateZ(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-}
-@keyframes $leafGrow3 {
-  0% {
-    -moz-transform: scale(0.01) rotateZ(180deg);
-    -ms-transform: scale(0.01) rotateZ(180deg);
-    -webkit-transform: scale(0.01) rotateZ(180deg);
-    transform: scale(0.01) rotateZ(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  33.33% {
-    -moz-transform: scale(0.01) rotateZ(180deg);
-    -ms-transform: scale(0.01) rotateZ(180deg);
-    -webkit-transform: scale(0.01) rotateZ(180deg);
-    transform: scale(0.01) rotateZ(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  83.33% {
-    -moz-transform: scale(0.8) rotateZ(180deg);
-    -ms-transform: scale(0.8) rotateZ(180deg);
-    -webkit-transform: scale(0.8) rotateZ(180deg);
-    transform: scale(0.8) rotateZ(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  100% {
-    -moz-transform: scale(0.8) rotateZ(180deg);
-    -ms-transform: scale(0.8) rotateZ(180deg);
-    -webkit-transform: scale(0.8) rotateZ(180deg);
-    transform: scale(0.8) rotateZ(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes leafGrow4 {
-  0% {
-    -moz-transform: scale(0.01) rotateX(180deg);
-    -ms-transform: scale(0.01) rotateX(180deg);
-    -webkit-transform: scale(0.01) rotateX(180deg);
-    transform: scale(0.01) rotateX(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  50% {
-    -moz-transform: scale(0.01) rotateX(180deg);
-    -ms-transform: scale(0.01) rotateX(180deg);
-    -webkit-transform: scale(0.01) rotateX(180deg);
-    transform: scale(0.01) rotateX(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  100% {
-    -moz-transform: scale(0.6) rotateX(180deg);
-    -ms-transform: scale(0.6) rotateX(180deg);
-    -webkit-transform: scale(0.6) rotateX(180deg);
-    transform: scale(0.6) rotateX(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-}
-@-moz-keyframes leafGrow4 {
-  0% {
-    -moz-transform: scale(0.01) rotateX(180deg);
-    -ms-transform: scale(0.01) rotateX(180deg);
-    -webkit-transform: scale(0.01) rotateX(180deg);
-    transform: scale(0.01) rotateX(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  50% {
-    -moz-transform: scale(0.01) rotateX(180deg);
-    -ms-transform: scale(0.01) rotateX(180deg);
-    -webkit-transform: scale(0.01) rotateX(180deg);
-    transform: scale(0.01) rotateX(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  100% {
-    -moz-transform: scale(0.6) rotateX(180deg);
-    -ms-transform: scale(0.6) rotateX(180deg);
-    -webkit-transform: scale(0.6) rotateX(180deg);
-    transform: scale(0.6) rotateX(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-}
-@-o-keyframes leafGrow4 {
-  0% {
-    -moz-transform: scale(0.01) rotateX(180deg);
-    -ms-transform: scale(0.01) rotateX(180deg);
-    -webkit-transform: scale(0.01) rotateX(180deg);
-    transform: scale(0.01) rotateX(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  50% {
-    -moz-transform: scale(0.01) rotateX(180deg);
-    -ms-transform: scale(0.01) rotateX(180deg);
-    -webkit-transform: scale(0.01) rotateX(180deg);
-    transform: scale(0.01) rotateX(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  100% {
-    -moz-transform: scale(0.6) rotateX(180deg);
-    -ms-transform: scale(0.6) rotateX(180deg);
-    -webkit-transform: scale(0.6) rotateX(180deg);
-    transform: scale(0.6) rotateX(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-}
-@keyframes $leafGrow4 {
-  0% {
-    -moz-transform: scale(0.01) rotateX(180deg);
-    -ms-transform: scale(0.01) rotateX(180deg);
-    -webkit-transform: scale(0.01) rotateX(180deg);
-    transform: scale(0.01) rotateX(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  50% {
-    -moz-transform: scale(0.01) rotateX(180deg);
-    -ms-transform: scale(0.01) rotateX(180deg);
-    -webkit-transform: scale(0.01) rotateX(180deg);
-    transform: scale(0.01) rotateX(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-  100% {
-    -moz-transform: scale(0.6) rotateX(180deg);
-    -ms-transform: scale(0.6) rotateX(180deg);
-    -webkit-transform: scale(0.6) rotateX(180deg);
-    transform: scale(0.6) rotateX(180deg);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
-}
-/* line 281, ../sass/screen2.scss */
+/* line 220, ../sass/screen2.scss */
 #bigStem {
   position: absolute;
   width: 50px;
@@ -736,7 +290,7 @@ section.contact .container h1 {
   transform: rotateZ(40deg);
 }
 
-/* line 292, ../sass/screen2.scss */
+/* line 231, ../sass/screen2.scss */
 .stem {
   position: absolute;
   width: 5px;
@@ -745,7 +299,7 @@ section.contact .container h1 {
   border-left: 1px solid #070;
 }
 
-/* line 300, ../sass/screen2.scss */
+/* line 239, ../sass/screen2.scss */
 .stem1 {
   left: 7px;
   top: 7px;
@@ -755,7 +309,7 @@ section.contact .container h1 {
   transform: rotateZ(20deg);
 }
 
-/* line 306, ../sass/screen2.scss */
+/* line 245, ../sass/screen2.scss */
 .stem2 {
   left: 20px;
   top: 7px;
@@ -765,7 +319,7 @@ section.contact .container h1 {
   transform: rotateZ(60deg);
 }
 
-/* line 312, ../sass/screen2.scss */
+/* line 251, ../sass/screen2.scss */
 .stem3 {
   left: 22px;
   top: 20px;
@@ -778,7 +332,7 @@ section.contact .container h1 {
 /*
 	-- CENTER --------------------------------------------------------------------
 */
-/* line 322, ../sass/screen2.scss */
+/* line 261, ../sass/screen2.scss */
 #serviceCenter {
   position: absolute;
   width: 20px;
@@ -876,7 +430,7 @@ section.contact .container h1 {
 /*
 	-- PETALS --------------------------------------------------------------------
 */
-/* line 351, ../sass/screen2.scss */
+/* line 290, ../sass/screen2.scss */
 .servicePetal {
   position: absolute;
   top: 1px;
@@ -893,7 +447,7 @@ section.contact .container h1 {
   background-color: red;
 }
 
-/* line 402, ../sass/screen2.scss */
+/* line 341, ../sass/screen2.scss */
 #servicePetal101 {
   -webkit-animation: spin101 6s ease-out forwards;
   -moz-animation: spin101 6s ease-out forwards;
@@ -906,7 +460,7 @@ section.contact .container h1 {
   background-color: red;
 }
 
-/* line 402, ../sass/screen2.scss */
+/* line 341, ../sass/screen2.scss */
 #servicePetal102 {
   -webkit-animation: spin102 6s ease-out forwards;
   -moz-animation: spin102 6s ease-out forwards;
@@ -919,7 +473,7 @@ section.contact .container h1 {
   background-color: #ff5500;
 }
 
-/* line 402, ../sass/screen2.scss */
+/* line 341, ../sass/screen2.scss */
 #servicePetal103 {
   -webkit-animation: spin103 6s ease-out forwards;
   -moz-animation: spin103 6s ease-out forwards;
@@ -932,7 +486,7 @@ section.contact .container h1 {
   background-color: #ffaa00;
 }
 
-/* line 402, ../sass/screen2.scss */
+/* line 341, ../sass/screen2.scss */
 #servicePetal104 {
   -webkit-animation: spin104 6s ease-out forwards;
   -moz-animation: spin104 6s ease-out forwards;
@@ -945,7 +499,7 @@ section.contact .container h1 {
   background-color: yellow;
 }
 
-/* line 402, ../sass/screen2.scss */
+/* line 341, ../sass/screen2.scss */
 #servicePetal105 {
   -webkit-animation: spin105 6s ease-out forwards;
   -moz-animation: spin105 6s ease-out forwards;
@@ -958,7 +512,7 @@ section.contact .container h1 {
   background-color: #aaff00;
 }
 
-/* line 402, ../sass/screen2.scss */
+/* line 341, ../sass/screen2.scss */
 #servicePetal106 {
   -webkit-animation: spin106 6s ease-out forwards;
   -moz-animation: spin106 6s ease-out forwards;
@@ -971,7 +525,7 @@ section.contact .container h1 {
   background-color: #55ff00;
 }
 
-/* line 402, ../sass/screen2.scss */
+/* line 341, ../sass/screen2.scss */
 #servicePetal107 {
   -webkit-animation: spin107 6s ease-out forwards;
   -moz-animation: spin107 6s ease-out forwards;
@@ -984,7 +538,7 @@ section.contact .container h1 {
   background-color: lime;
 }
 
-/* line 402, ../sass/screen2.scss */
+/* line 341, ../sass/screen2.scss */
 #servicePetal108 {
   -webkit-animation: spin108 6s ease-out forwards;
   -moz-animation: spin108 6s ease-out forwards;
@@ -997,7 +551,7 @@ section.contact .container h1 {
   background-color: #00ff55;
 }
 
-/* line 402, ../sass/screen2.scss */
+/* line 341, ../sass/screen2.scss */
 #servicePetal109 {
   -webkit-animation: spin109 6s ease-out forwards;
   -moz-animation: spin109 6s ease-out forwards;
@@ -1010,7 +564,7 @@ section.contact .container h1 {
   background-color: #00ffaa;
 }
 
-/* line 402, ../sass/screen2.scss */
+/* line 341, ../sass/screen2.scss */
 #servicePetal110 {
   -webkit-animation: spin110 6s ease-out forwards;
   -moz-animation: spin110 6s ease-out forwards;
@@ -1023,7 +577,7 @@ section.contact .container h1 {
   background-color: cyan;
 }
 
-/* line 402, ../sass/screen2.scss */
+/* line 341, ../sass/screen2.scss */
 #servicePetal111 {
   -webkit-animation: spin111 6s ease-out forwards;
   -moz-animation: spin111 6s ease-out forwards;
@@ -1036,7 +590,7 @@ section.contact .container h1 {
   background-color: #00aaff;
 }
 
-/* line 402, ../sass/screen2.scss */
+/* line 341, ../sass/screen2.scss */
 #servicePetal112 {
   -webkit-animation: spin112 6s ease-out forwards;
   -moz-animation: spin112 6s ease-out forwards;
@@ -1049,7 +603,7 @@ section.contact .container h1 {
   background-color: #0055ff;
 }
 
-/* line 402, ../sass/screen2.scss */
+/* line 341, ../sass/screen2.scss */
 #servicePetal113 {
   -webkit-animation: spin113 6s ease-out forwards;
   -moz-animation: spin113 6s ease-out forwards;
@@ -1062,7 +616,7 @@ section.contact .container h1 {
   background-color: blue;
 }
 
-/* line 402, ../sass/screen2.scss */
+/* line 341, ../sass/screen2.scss */
 #servicePetal114 {
   -webkit-animation: spin114 6s ease-out forwards;
   -moz-animation: spin114 6s ease-out forwards;
@@ -1075,7 +629,7 @@ section.contact .container h1 {
   background-color: #5500ff;
 }
 
-/* line 402, ../sass/screen2.scss */
+/* line 341, ../sass/screen2.scss */
 #servicePetal115 {
   -webkit-animation: spin115 6s ease-out forwards;
   -moz-animation: spin115 6s ease-out forwards;
@@ -1088,7 +642,7 @@ section.contact .container h1 {
   background-color: #aa00ff;
 }
 
-/* line 402, ../sass/screen2.scss */
+/* line 341, ../sass/screen2.scss */
 #servicePetal116 {
   -webkit-animation: spin116 6s ease-out forwards;
   -moz-animation: spin116 6s ease-out forwards;
@@ -1101,7 +655,7 @@ section.contact .container h1 {
   background-color: magenta;
 }
 
-/* line 402, ../sass/screen2.scss */
+/* line 341, ../sass/screen2.scss */
 #servicePetal117 {
   -webkit-animation: spin117 6s ease-out forwards;
   -moz-animation: spin117 6s ease-out forwards;
@@ -1114,7 +668,7 @@ section.contact .container h1 {
   background-color: #ff00aa;
 }
 
-/* line 402, ../sass/screen2.scss */
+/* line 341, ../sass/screen2.scss */
 #servicePetal118 {
   -webkit-animation: spin118 6s ease-out forwards;
   -moz-animation: spin118 6s ease-out forwards;
@@ -1130,25 +684,184 @@ section.contact .container h1 {
 /*
 	-- INDEX SPANS ---------------------------------------------------------------
 */
-/* line 412, ../sass/screen2.scss */
+/* line 351, ../sass/screen2.scss */
 .indexSpan {
   font-family: 'gruppo';
   position: relative;
 }
 
-/* line 418, ../sass/screen2.scss */
+/* line 357, ../sass/screen2.scss */
 #indexSpan1, #indexSpan3 {
   color: #888;
 }
 
-/* line 422, ../sass/screen2.scss */
+/* line 361, ../sass/screen2.scss */
 #indexSpan3 {
   top: -10px;
 }
 
-/* line 426, ../sass/screen2.scss */
+/* line 365, ../sass/screen2.scss */
 #indexSpan4 {
   top: -8px;
   color: #0a0;
   font-size: 60px;
+}
+
+@media all and (min-width: 60em) and (min-height: 40em) {
+  /* line 376, ../sass/screen2.scss */
+  section.service .container {
+    height: 1000px;
+  }
+
+  /*
+  	-- CONTENT -------------------------------------------------------------------
+  */
+  /* line 401, ../sass/screen2.scss */
+  #servicesContent {
+    height: 500px;
+    width: 500px;
+    margin-top: -200px;
+    margin-left: -230px;
+  }
+
+  /* line 408, ../sass/screen2.scss */
+  #servicesContentText {
+    width: 350px;
+    height: 350px;
+    font-size: 80px;
+  }
+
+  /*
+  	-- INDEX SPANS ---------------------------------------------------------------
+  */
+  /* line 419, ../sass/screen2.scss */
+  #indexSpan1 {
+    height: 87.5px;
+  }
+
+  /* line 423, ../sass/screen2.scss */
+  #indexSpan2 {
+    height: 175px;
+  }
+
+  /* line 427, ../sass/screen2.scss */
+  #indexSpan3 {
+    height: 87.5px;
+    top: -40px;
+  }
+
+  /* line 432, ../sass/screen2.scss */
+  #indexSpan4 {
+    height: 87.5px;
+    top: -35px;
+    font-size: 150px;
+  }
+
+  /*
+  	-- TRUNK ---------------------------------------------------------------------
+  */
+  /* line 445, ../sass/screen2.scss */
+  #trunk {
+    position: absolute;
+    z-index: 10;
+    top: -500px;
+    height: 100%;
+    border-style: solid;
+    border-width: 0 2px 500px 2px;
+    border-color: transparent transparent black transparent;
+  }
+
+  /*
+  	-- LEAVES --------------------------------------------------------------------
+  */
+  /* line 464, ../sass/screen2.scss */
+  .leaf {
+    height: 100px;
+    width: 100px;
+    left: 0px;
+    bottom: 0px;
+  }
+
+  /* line 471, ../sass/screen2.scss */
+  #leaf1 {
+    bottom: -95px;
+    left: -10px;
+  }
+
+  /* line 477, ../sass/screen2.scss */
+  #leaf2 {
+    bottom: -95px;
+    left: 9px;
+  }
+
+  /* line 483, ../sass/screen2.scss */
+  #leaf3 {
+    bottom: 50px;
+    margin-left: -10px;
+  }
+
+  /* line 488, ../sass/screen2.scss */
+  #leaf4 {
+    bottom: 150px;
+    left: -10px;
+  }
+
+  /* line 494, ../sass/screen2.scss */
+  #bigStem {
+    width: 125px;
+    height: 12.5px;
+    left: -25px;
+    top: 27px;
+    border-top: 4px solid #070;
+  }
+
+  /* line 503, ../sass/screen2.scss */
+  .stem {
+    width: 12.5px;
+    height: 25px;
+    border-left: 2px solid #070;
+  }
+
+  /* line 509, ../sass/screen2.scss */
+  .stem1 {
+    left: 15px;
+    top: 15px;
+  }
+
+  /* line 514, ../sass/screen2.scss */
+  .stem2 {
+    left: 46px;
+    top: 14px;
+  }
+
+  /* line 519, ../sass/screen2.scss */
+  .stem3 {
+    left: 50px;
+    top: 45px;
+  }
+
+  /*
+  	-- CENTER --------------------------------------------------------------------
+  */
+  /* line 528, ../sass/screen2.scss */
+  #serviceCenter {
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: -25px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+  }
+
+  /*
+  	-- PETALS --------------------------------------------------------------------
+  */
+  /* line 540, ../sass/screen2.scss */
+  .servicePetal {
+    border-top: 2px solid #eee;
+    border-right: 2px solid #eee;
+    height: 100px;
+    width: 100px;
+  }
 }
