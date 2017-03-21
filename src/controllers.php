@@ -54,6 +54,12 @@ $app->match('/contact', function (Request $request) use ($app) {
 
 		$app['session']->getFlashBag()->add('message', 'Votre message à été envoyé !');
 
+
+        // ajax detection
+        if ($request->isXmlHttpRequest()) {
+            return $app['twig']->render( 'messageSent.twig');
+        }
+
 		return $app->redirect($app['url_generator']->generate(
 			'home'
 		));
@@ -62,6 +68,12 @@ $app->match('/contact', function (Request $request) use ($app) {
 		$sent = false; // needed due to validation
 	}
 
+    // ajax detection
+    if ($request->isXmlHttpRequest()) {
+        return $app['twig']->render( 'contact.twig', array(
+    		'form' => $form->createView()
+    	));
+    }
 
 	// handle form display
 	return $app['twig']->render('index1.twig', array(
@@ -116,7 +128,7 @@ function createForm($app) {
 
 			'label' => 'Mon nom est ',
             'attr' => array('placeholder' => 'votre nom'),
-			'constraints' => array(new Assert\NotBlank(), new Assert\Length(array(
+			'constraints' => array(new Assert\NotBlank( array('message' => "Le nom doit contenir au moins 5 caractères") ), new Assert\Length(array(
                 'min' => 5,
                 'minMessage' => 'Le nom doit contenir au moins {{ limit }} caractères'
             )))
@@ -125,13 +137,13 @@ function createForm($app) {
 
 			'label' => ' et voici mon email ',
             'attr' => array('placeholder' => 'votre email'),
-			'constraints' => array(new Assert\Email())
+			'constraints' => array(new Assert\NotBlank( array('message' => "L'email est requis") ), new Assert\Email())
 	))
 	->add('message', TextareaType::class, array(
 
 			'label' => 'Merci de me contacter au sujet de ',
             'attr' => array('placeholder' => 'votre demande'),
-			'constraints' => array(new Assert\NotBlank(), new Assert\Length(array(
+			'constraints' => array(new Assert\NotBlank( array('message' => "Le message doit contenir au moins 15 caractères") ), new Assert\Length(array(
                 'min' => 15,
                 'minMessage' => 'Le message doit contenir au moins {{ limit }} caractères'
             )))

@@ -345,9 +345,10 @@ $contactContentMargin: ($contactContentSize - $contactContentStartWidth) / 2 ;
 #contactContent {
     position: relative;
     margin: 20px auto;
-    height:                        $contactContentSize - 50px;
+    height:                        $contactContentSize;
     width:                         $contactContentSize;
     text-align:                                 center;
+    @include debug(red, 2);
 }
 
 
@@ -804,7 +805,7 @@ textarea:focus:-ms-input-placeholder { color:transparent; }
     	-- CONTENT -------------------------------------------------------------------
     */
     #contactContent {
-        height:                        $contactContentSize - 100px;
+        height:                        auto;
         width:                         $contactContentSize;
         margin: 70px auto 20px;
     }
