@@ -64,7 +64,7 @@ $app->match('/contact', function (Request $request) use ($app) {
 
 
 	// handle form display
-	return $app['twig']->render('contact.twig', array(
+	return $app['twig']->render('index1.twig', array(
 		'form' => $form->createView()
 	));
 })
@@ -136,5 +136,6 @@ function createForm($app) {
                 'minMessage' => 'Le message doit contenir au moins {{ limit }} caractères'
             )))
 	))
+    ->setAction('/contact')
 	->getForm();
 }

@@ -134,14 +134,11 @@ $centerSize : $leafSize / 2;                                        //  20
 
 
 #servicesContent {
-    // @include abs-centered();
     position: relative;
     margin: 70px auto 20px;
     height:                         $servicesContentSize;
     width:                          $servicesContentSize;
     left: 30px;
-    // margin-top:  - ($servicesContentSize / 2) + $YOffset;
-    // margin-left: - $XOffset;
     @include debug(black);
 }
 
@@ -168,9 +165,7 @@ $centerSize : $leafSize / 2;                                        //  20
     position: absolute;
     z-index: 10;
     top: -200px;
-    // left: -2px;
     height: 100%;
-    // @include debug(red, 5);
     border-style: solid;
     border-width: 0 2px 200px 2px;
     border-color: transparent transparent black transparent;
@@ -195,28 +190,24 @@ $centerSize : $leafSize / 2;                                        //  20
     bottom: - $leafSize + 3;
     left: -3px;
     @include transform(rotateZ(180deg));
-    // @include animation('leafGrow1 6s ease-out forwards');
 }
 
 #leaf2 {
     bottom: - $leafSize + 3;
     left: 7px;
     @include transform(rotateX(180deg));
-    // @include animation('leafGrow2 6s ease-out forwards');
 }
 
 #leaf3 {
     bottom: - $leafSize + $leaf3Margin;
     left: -2px;
     @include transform(rotateZ(180deg) scale(0.8));
-    // @include animation('leafGrow3 6s ease-out forwards');
 }
 
 #leaf4 {
     bottom: - $leafSize + $leaf4Margin;
     left: 5px;
     @include transform(rotateX(180deg) scale(0.6));
-    // @include animation('leafGrow4 6s ease-out forwards');
 }
 
 
@@ -273,20 +264,8 @@ $stemColor: #070; // #070
     background-color:     black;
     z-index:                 50;
     @include border-radius($centerSize);
-    // @include animation('centerGrow 4s ease-out forwards');
 }
 
-@include keyframes(centerGrow) {
-    0% {
-        @include transform(scale(0));
-    }
-    50% {
-        @include transform(scale(0));
-    }
-    100% {
-        @include transform(scale(1));
-    }
-}
 
 
 /*
@@ -314,37 +293,11 @@ $serviceAngleOffset: 245deg;
 $serviceAngleStep: 20deg;
 
 
-// petal angles
-$serviceSpin1Angle:  $serviceAngleStep * 18;
-$serviceSpin2Angle:  $serviceAngleStep * 17;
-$serviceSpin3Angle:  $serviceAngleStep * 16;
-$serviceSpin4Angle:  $serviceAngleStep * 15;
-$serviceSpin5Angle:  $serviceAngleStep * 14;
-$serviceSpin6Angle:  $serviceAngleStep * 13;
-$serviceSpin7Angle:  $serviceAngleStep * 12;
-$serviceSpin8Angle:  $serviceAngleStep * 11;
-$serviceSpin9Angle:  $serviceAngleStep * 10;
-$serviceSpin10Angle: $serviceAngleStep * 9;
-$serviceSpin11Angle: $serviceAngleStep * 8;
-$serviceSpin12Angle: $serviceAngleStep * 7;
-$serviceSpin13Angle: $serviceAngleStep * 6;
-$serviceSpin14Angle: $serviceAngleStep * 5;
-$serviceSpin15Angle: $serviceAngleStep * 4;
-$serviceSpin16Angle: $serviceAngleStep * 3;
-$serviceSpin17Angle: $serviceAngleStep * 2;
-$serviceSpin18Angle: $serviceAngleStep;
-
-
-// animation
-@mixin defineServicePetalAnim($anim) {
-    @include animation("#{$anim} 6s ease-out forwards");
-}
 
 // create petal ids and add animation
 @for $i from 101 through 118 {
     $index: $i - 100;
     #servicePetal#{$i} {
-        @include defineServicePetalAnim( "spin#{$i}");
         @include transform( rotate($serviceAngleOffset - (( 19 - $index  ) * 20) ) scale(1));
         background-color: hsl(($index - 1) * 20, 100%, 50%)
     }
@@ -356,7 +309,6 @@ $serviceSpin18Angle: $serviceAngleStep;
 .indexSpan {
     font-family: 'gruppo';
     position: relative;
-    // display: inline-block;
 }
 
 #indexSpan1, #indexSpan3 {
@@ -391,33 +343,13 @@ $contactContentMargin: ($contactContentSize - $contactContentStartWidth) / 2 ;
 	-- CONTENT -------------------------------------------------------------------
 */
 #contactContent {
-    // @include abs-centered();
     position: relative;
     margin: 20px auto;
     height:                        $contactContentSize - 50px;
     width:                         $contactContentSize;
-    // margin-top: - ($contactContentSize / 2) + $YOffset;
-    // margin-left:             - $contactContentSize / 2;
     text-align:                                 center;
-    // @include animation("animContactContent 3s ease-in forwards");
-    // @include debug(red, 3);
 }
 
-@include keyframes(animContactContent) {
-
-    0% {
-        margin-left: - ($contactContentSize / 2) + $contactContentMargin;
-        width: $contactContentStartWidth;
-    }
-    80% {
-        margin-left: - ($contactContentSize / 2) + $contactContentMargin;
-        width: $contactContentStartWidth;
-    }
-    100% {
-        margin-left: - ($contactContentSize / 2);
-        width: $contactContentSize;
-    }
-};
 
 
 /*
@@ -554,94 +486,9 @@ $contactContentMargin: ($contactContentSize - $contactContentStartWidth) / 2 ;
 @include curly-brace-close("message", 80px, 2px, 5px);
 
 
-.name-curly-brace-open, .name-curly-brace-close {
-    // @include animation("animBraces 3s ease-out forwards");
-}
-
-.email-curly-brace-open, .email-curly-brace-close {
-    // @include animation("animBraces 4s ease-out forwards");
-}
-
-.message-curly-brace-open, .message-curly-brace-close {
-    // @include animation("animBraces 5s ease-out forwards");
-}
-
-@include keyframes(animBraces) {
-
-    0% {
-        @include opacity(0);
-    }
-    25% {
-        @include opacity(0);
-    }
-    100% {
-        @include opacity(1);
-    }
-}
-
-
-
-@include keyframes(animButton) {
-
-    0% {
-        @include opacity(0);
-    }
-    70% {
-        @include opacity(0);
-    }
-    100% {
-        @include opacity(1);
-    }
-}
-
 input[type="submit"] {
     margin: auto;
-    // @include animation("animButton 6s ease-out forwards");
 }
-
-
-@include keyframes(formInputs) {
-
-    0% {
-        width: 0%;
-    }
-    40% {
-        width: 0%;
-    }
-    100% {
-        width: 90%;
-    }
-};
-
-input[type="text"], input[type="email"], textarea {
-    // @include animation("formInputs 4s ease-out forwards");
-}
-
-
-@include keyframes(placeholders) {
-
-    0% {
-        opacity: 0;
-        width: 0%;
-    }
-    60% {
-        opacity: 0;
-        width: 0%;
-    }
-    90% {
-        opacity: 0;
-        width: 90%;
-    }
-    100% {
-        opacity: 1;
-        width: 90%;
-    }
-};
-
-input[type=text], input[type=email], textarea {
-    // @include animation("placeholders 4s ease-out forwards");
-}
-
 
 .normalButton {
     color:               #aaa;
@@ -756,17 +603,6 @@ textarea:focus:-ms-input-placeholder { color:transparent; }
 @media all and (min-width: 60em) and (min-height: 40em) {
 
 
-    section {
-        &.service {
-            .container {
-
-                // height: 800px;
-            }
-        }
-    }
-
-
-
     $YOffset : 50px;
     $XOffset : 20px;
 
@@ -787,8 +623,6 @@ textarea:focus:-ms-input-placeholder { color:transparent; }
         height:                         $servicesContentSize;
         width:                          $servicesContentSize;
         margin: 200px auto 50px;
-        // margin-top:  - ($servicesContentSize / 2) + $YOffset;
-        // margin-left: - ($servicesContentSize / 2) + $XOffset;
     }
 
     #servicesContentText {
@@ -796,7 +630,6 @@ textarea:focus:-ms-input-placeholder { color:transparent; }
         width:  $servicesContentTextSize;
         height: $servicesContentTextSize;
         font-size:                  80px;
-
     }
 
 
@@ -827,16 +660,12 @@ textarea:focus:-ms-input-placeholder { color:transparent; }
     	-- TRUNK ---------------------------------------------------------------------
     */
 
-    $trunkRadius: 4000px;
-
     #trunk {
 
         position: absolute;
         z-index: 10;
         top: -500px;
-        // left: -2px;
         height: 100%;
-        // @include debug(red, 5);
         border-style: solid;
         border-width: 0 2px 500px 2px;
         border-color: transparent transparent black transparent;
@@ -858,13 +687,11 @@ textarea:focus:-ms-input-placeholder { color:transparent; }
     #leaf1 {
         bottom: - $leafSize + 5;
         left:             -10px;
-        // display: none;
     }
 
     #leaf2 {
         bottom: - $leafSize + 5;
         left:               9px;
-        // display: none;
     }
 
     #leaf3 {
@@ -884,7 +711,6 @@ textarea:focus:-ms-input-placeholder { color:transparent; }
         left:              -25px;
         top:                27px;
         border-top: 4px solid #070;
-        // z-index: 20;
     }
 
     .stem {
@@ -946,26 +772,7 @@ textarea:focus:-ms-input-placeholder { color:transparent; }
         height:                        $contactContentSize - 100px;
         width:                         $contactContentSize;
         margin: 70px auto 20px;
-        // margin-top: - ($contactContentSize / 2) + $YOffset;
-        // margin-left:             - $contactContentSize / 2;
-        // @include animation("animContactContent 3s ease-in forwards");
     }
-
-    @include keyframes(animContactContent) {
-
-        0% {
-            margin-left: - ($contactContentSize / 2) + $contactContentMargin;
-            width: $contactContentStartWidth;
-        }
-        80% {
-            margin-left: - ($contactContentSize / 2) + $contactContentMargin;
-            width: $contactContentStartWidth;
-        }
-        100% {
-            margin-left: - ($contactContentSize / 2);
-            width: $contactContentSize;
-        }
-    };
 
 
     .open-brace-position {
