@@ -30,7 +30,7 @@ section {
 
         margin-top:            -150px;
         z-index:                   10;
-        border-bottom: 5px solid #c00;
+        border-bottom: 5px solid #06a;
 
 
         @include transform(rotateZ(3deg));
@@ -41,25 +41,23 @@ section {
             @include transform(rotateZ(-3deg));
 
             h1 {
+                color: #06a;
                 font-family: 'Gruppo', sans-serif;
                 font-size: 500%;
-                // @include debug(red);
             }
 
             h2 {
-                color: #222;
+                color: #444;
                 padding: 10px 0;
                 font-family: 'Muli', sans-serif;
                 font-size: 110%;
-                // @include debug(blue);
             }
 
             p {
-                color: #444;
+                color: #666;
                 padding: 5px 0;
                 font-family: 'Lato', sans-serif;
                 font-size: 100%;
-                // @include debug(green);
             }
         }
     }
@@ -69,16 +67,16 @@ section {
         margin-top: -200px;
         @include transform(rotateZ(-2deg));
 
-        border-bottom: 5px solid #00c;
+        border-bottom: 5px solid #060;
 
         .container {
 
-            // height: 350px;
-
             h1 {
+                // display: inline-block;
+                color: #060;
                 font-family: 'Lato', sans-serif;
                 font-size: 200%;
-                // @include debug(red);
+                // border-bottom: 1px solid #060;
             }
 
             @include transform(rotateZ(2deg));
@@ -89,16 +87,18 @@ section {
         margin-top: -200px;
         @include transform(rotateZ(3deg));
 
-        border-bottom: 5px solid #090;
+        border-bottom: 5px solid #a00;
 
         .container {
 
             // height: 350px;
 
             h1 {
+                // display: inline-block;
+                color: #a00;
                 font-family: 'Lato', sans-serif;
                 font-size: 200%;
-                // @include debug(red);
+                // border-bottom: 1px solid #a00;
             }
             @include transform(rotateZ(-3deg));
         }
@@ -139,7 +139,7 @@ $centerSize : $leafSize / 2;                                        //  20
     height:                         $servicesContentSize;
     width:                          $servicesContentSize;
     left: 30px;
-    @include debug(black);
+    // @include debug(black);
 }
 
 #servicesContentText {
@@ -150,7 +150,7 @@ $centerSize : $leafSize / 2;                                        //  20
     width:  $servicesContentTextSize;
     height: $servicesContentTextSize + 10;
     font-size:                  34px;
-    @include debug(red);
+    // @include debug(red);
 }
 
 #servicesFlowerContainer {
@@ -332,7 +332,7 @@ $serviceAngleStep: 20deg;
 
 $YOffset : 50px;
 
-$contactContentSize: 300px;
+$contactContentSize: 260px;
 
 $contactContentStartWidth: $contactContentSize / 10;
 
@@ -551,9 +551,9 @@ textarea {
     line-height: 25px;
     width: 100%;
     font-family: 'muli', sans-serif;
-    background-color: red;
+    background-color: #a00;
     @include border-radius(4px);
-    border:1px solid #a00;
+    border:1px solid #600;
     @include background-image(
         linear-gradient(rgba(255,255,255, 0.2), rgba(0,0,0, 0.2))
     );
@@ -602,6 +602,41 @@ textarea:focus:-ms-input-placeholder { color:transparent; }
 
 @media all and (min-width: 60em) and (min-height: 40em) {
 
+
+    section {
+        &.index {
+            .container {
+                h1 {
+                    font-size: 1600%;
+                }
+                h2 {
+                    font-size: 360%;
+                    padding: 20px 0;
+                }
+                p {
+                    font-size: 280%;
+                    padding: 10px 0;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+        &.service {
+            .container {
+                h1 {
+                    font-size: 400%;
+                    margin: 20px 40px;
+                }
+            }
+        }
+        &.contact {
+            .container {
+                h1 {
+                    font-size: 400%;
+                    margin: 20px 40px;
+                }
+            }
+        }
+    }
 
     $YOffset : 50px;
     $XOffset : 20px;
@@ -667,7 +702,7 @@ textarea:focus:-ms-input-placeholder { color:transparent; }
         top: -500px;
         height: 100%;
         border-style: solid;
-        border-width: 0 2px 500px 2px;
+        border-width: 0 5px 500px 5px;
         border-color: transparent transparent black transparent;
     }
 
@@ -685,23 +720,23 @@ textarea:focus:-ms-input-placeholder { color:transparent; }
     }
 
     #leaf1 {
-        bottom: - $leafSize + 5;
-        left:             -10px;
+        bottom: - $leafSize + 8;
+        left:             -7px;
     }
 
     #leaf2 {
-        bottom: - $leafSize + 5;
-        left:               9px;
+        bottom: - $leafSize + 10;
+        left:               14px;
     }
 
     #leaf3 {
         bottom: - $leafSize + $leaf3Margin;
-        margin-left: -10px;
+        margin-left: -3px;
     }
 
     #leaf4 {
         bottom: - $leafSize + $leaf4Margin;
-        left: -10px;
+        left: 10px;
     }
 
 
