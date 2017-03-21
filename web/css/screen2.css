@@ -104,7 +104,7 @@ section.index {
   -webkit-transform: rotateZ(3deg);
   transform: rotateZ(3deg);
 }
-/* line 37, ../sass/screen2.scss */
+/* line 38, ../sass/screen2.scss */
 section.index .container {
   text-align: center;
   -moz-transform: rotateZ(-3deg);
@@ -112,26 +112,26 @@ section.index .container {
   -webkit-transform: rotateZ(-3deg);
   transform: rotateZ(-3deg);
 }
-/* line 42, ../sass/screen2.scss */
+/* line 43, ../sass/screen2.scss */
 section.index .container h1 {
   font-family: 'Gruppo', sans-serif;
   font-size: 500%;
 }
-/* line 48, ../sass/screen2.scss */
+/* line 49, ../sass/screen2.scss */
 section.index .container h2 {
   color: #222;
   padding: 10px 0;
   font-family: 'Muli', sans-serif;
   font-size: 110%;
 }
-/* line 56, ../sass/screen2.scss */
+/* line 57, ../sass/screen2.scss */
 section.index .container p {
   color: #444;
   padding: 5px 0;
   font-family: 'Lato', sans-serif;
   font-size: 100%;
 }
-/* line 66, ../sass/screen2.scss */
+/* line 67, ../sass/screen2.scss */
 section.service {
   z-index: 5;
   margin-top: -200px;
@@ -141,7 +141,7 @@ section.service {
   transform: rotateZ(-2deg);
   border-bottom: 5px solid #00c;
 }
-/* line 73, ../sass/screen2.scss */
+/* line 74, ../sass/screen2.scss */
 section.service .container {
   height: 350px;
   -moz-transform: rotateZ(2deg);
@@ -149,12 +149,12 @@ section.service .container {
   -webkit-transform: rotateZ(2deg);
   transform: rotateZ(2deg);
 }
-/* line 77, ../sass/screen2.scss */
+/* line 78, ../sass/screen2.scss */
 section.service .container h1 {
   font-family: 'Lato', sans-serif;
   font-size: 200%;
 }
-/* line 87, ../sass/screen2.scss */
+/* line 88, ../sass/screen2.scss */
 section.contact {
   margin-top: -200px;
   -moz-transform: rotateZ(3deg);
@@ -163,20 +163,20 @@ section.contact {
   transform: rotateZ(3deg);
   border-bottom: 5px solid #090;
 }
-/* line 93, ../sass/screen2.scss */
+/* line 94, ../sass/screen2.scss */
 section.contact .container {
   -moz-transform: rotateZ(-3deg);
   -ms-transform: rotateZ(-3deg);
   -webkit-transform: rotateZ(-3deg);
   transform: rotateZ(-3deg);
 }
-/* line 95, ../sass/screen2.scss */
+/* line 96, ../sass/screen2.scss */
 section.contact .container h1 {
   font-family: 'Lato', sans-serif;
   font-size: 200%;
 }
 
-/* line 132, ../sass/screen2.scss */
+/* line 134, ../sass/screen2.scss */
 #servicesContent {
   position: absolute;
   top: 50%;
@@ -185,20 +185,40 @@ section.contact .container h1 {
   width: 200px;
   margin-top: -50px;
   margin-left: -80px;
-  border: 1px solid red;
 }
 
-/* line 141, ../sass/screen2.scss */
+/* line 143, ../sass/screen2.scss */
+#servicesContentText {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 140px;
+  height: 150px;
+  font-size: 34px;
+}
+
+/* line 154, ../sass/screen2.scss */
 #servicesFlowerContainer {
   position: relative;
   width: 0;
   height: 100%;
 }
 
+/* line 161, ../sass/screen2.scss */
+#trunk {
+  position: absolute;
+  z-index: 10;
+  top: -200px;
+  height: 100%;
+  border-style: solid;
+  border-width: 0 2px 200px 2px;
+  border-color: transparent transparent black transparent;
+}
+
 /*
 	-- LEAVES --------------------------------------------------------------------
 */
-/* line 153, ../sass/screen2.scss */
+/* line 177, ../sass/screen2.scss */
 .leaf {
   position: absolute;
   height: 40px;
@@ -213,40 +233,40 @@ section.contact .container h1 {
   background-color: #080;
 }
 
-/* line 165, ../sass/screen2.scss */
+/* line 189, ../sass/screen2.scss */
 #leaf1 {
-  bottom: -39px;
-  left: -5px;
+  bottom: -37px;
+  left: -3px;
   -moz-transform: rotateZ(180deg);
   -ms-transform: rotateZ(180deg);
   -webkit-transform: rotateZ(180deg);
   transform: rotateZ(180deg);
 }
 
-/* line 172, ../sass/screen2.scss */
+/* line 196, ../sass/screen2.scss */
 #leaf2 {
-  bottom: -39px;
-  left: 6px;
+  bottom: -37px;
+  left: 7px;
   -moz-transform: rotateX(180deg);
   -ms-transform: rotateX(180deg);
   -webkit-transform: rotateX(180deg);
   transform: rotateX(180deg);
 }
 
-/* line 179, ../sass/screen2.scss */
+/* line 203, ../sass/screen2.scss */
 #leaf3 {
   bottom: 20px;
-  left: -8px;
+  left: -2px;
   -moz-transform: rotateZ(180deg) scale(0.8);
   -ms-transform: rotateZ(180deg) scale(0.8);
   -webkit-transform: rotateZ(180deg) scale(0.8);
   transform: rotateZ(180deg) scale(0.8);
 }
 
-/* line 186, ../sass/screen2.scss */
+/* line 210, ../sass/screen2.scss */
 #leaf4 {
   bottom: 60px;
-  left: 0px;
+  left: 5px;
   -moz-transform: rotateX(180deg) scale(0.6);
   -ms-transform: rotateX(180deg) scale(0.6);
   -webkit-transform: rotateX(180deg) scale(0.6);
@@ -701,7 +721,7 @@ section.contact .container h1 {
     opacity: 1;
   }
 }
-/* line 257, ../sass/screen2.scss */
+/* line 281, ../sass/screen2.scss */
 #bigStem {
   position: absolute;
   width: 50px;
@@ -716,7 +736,7 @@ section.contact .container h1 {
   transform: rotateZ(40deg);
 }
 
-/* line 268, ../sass/screen2.scss */
+/* line 292, ../sass/screen2.scss */
 .stem {
   position: absolute;
   width: 5px;
@@ -725,7 +745,7 @@ section.contact .container h1 {
   border-left: 1px solid #070;
 }
 
-/* line 276, ../sass/screen2.scss */
+/* line 300, ../sass/screen2.scss */
 .stem1 {
   left: 7px;
   top: 7px;
@@ -735,7 +755,7 @@ section.contact .container h1 {
   transform: rotateZ(20deg);
 }
 
-/* line 282, ../sass/screen2.scss */
+/* line 306, ../sass/screen2.scss */
 .stem2 {
   left: 20px;
   top: 7px;
@@ -745,7 +765,7 @@ section.contact .container h1 {
   transform: rotateZ(60deg);
 }
 
-/* line 288, ../sass/screen2.scss */
+/* line 312, ../sass/screen2.scss */
 .stem3 {
   left: 22px;
   top: 20px;
@@ -758,7 +778,7 @@ section.contact .container h1 {
 /*
 	-- CENTER --------------------------------------------------------------------
 */
-/* line 298, ../sass/screen2.scss */
+/* line 322, ../sass/screen2.scss */
 #serviceCenter {
   position: absolute;
   width: 20px;
@@ -856,7 +876,7 @@ section.contact .container h1 {
 /*
 	-- PETALS --------------------------------------------------------------------
 */
-/* line 327, ../sass/screen2.scss */
+/* line 351, ../sass/screen2.scss */
 .servicePetal {
   position: absolute;
   top: 1px;
@@ -873,7 +893,7 @@ section.contact .container h1 {
   background-color: red;
 }
 
-/* line 378, ../sass/screen2.scss */
+/* line 402, ../sass/screen2.scss */
 #servicePetal101 {
   -webkit-animation: spin101 6s ease-out forwards;
   -moz-animation: spin101 6s ease-out forwards;
@@ -886,7 +906,7 @@ section.contact .container h1 {
   background-color: red;
 }
 
-/* line 378, ../sass/screen2.scss */
+/* line 402, ../sass/screen2.scss */
 #servicePetal102 {
   -webkit-animation: spin102 6s ease-out forwards;
   -moz-animation: spin102 6s ease-out forwards;
@@ -899,7 +919,7 @@ section.contact .container h1 {
   background-color: #ff5500;
 }
 
-/* line 378, ../sass/screen2.scss */
+/* line 402, ../sass/screen2.scss */
 #servicePetal103 {
   -webkit-animation: spin103 6s ease-out forwards;
   -moz-animation: spin103 6s ease-out forwards;
@@ -912,7 +932,7 @@ section.contact .container h1 {
   background-color: #ffaa00;
 }
 
-/* line 378, ../sass/screen2.scss */
+/* line 402, ../sass/screen2.scss */
 #servicePetal104 {
   -webkit-animation: spin104 6s ease-out forwards;
   -moz-animation: spin104 6s ease-out forwards;
@@ -925,7 +945,7 @@ section.contact .container h1 {
   background-color: yellow;
 }
 
-/* line 378, ../sass/screen2.scss */
+/* line 402, ../sass/screen2.scss */
 #servicePetal105 {
   -webkit-animation: spin105 6s ease-out forwards;
   -moz-animation: spin105 6s ease-out forwards;
@@ -938,7 +958,7 @@ section.contact .container h1 {
   background-color: #aaff00;
 }
 
-/* line 378, ../sass/screen2.scss */
+/* line 402, ../sass/screen2.scss */
 #servicePetal106 {
   -webkit-animation: spin106 6s ease-out forwards;
   -moz-animation: spin106 6s ease-out forwards;
@@ -951,7 +971,7 @@ section.contact .container h1 {
   background-color: #55ff00;
 }
 
-/* line 378, ../sass/screen2.scss */
+/* line 402, ../sass/screen2.scss */
 #servicePetal107 {
   -webkit-animation: spin107 6s ease-out forwards;
   -moz-animation: spin107 6s ease-out forwards;
@@ -964,7 +984,7 @@ section.contact .container h1 {
   background-color: lime;
 }
 
-/* line 378, ../sass/screen2.scss */
+/* line 402, ../sass/screen2.scss */
 #servicePetal108 {
   -webkit-animation: spin108 6s ease-out forwards;
   -moz-animation: spin108 6s ease-out forwards;
@@ -977,7 +997,7 @@ section.contact .container h1 {
   background-color: #00ff55;
 }
 
-/* line 378, ../sass/screen2.scss */
+/* line 402, ../sass/screen2.scss */
 #servicePetal109 {
   -webkit-animation: spin109 6s ease-out forwards;
   -moz-animation: spin109 6s ease-out forwards;
@@ -990,7 +1010,7 @@ section.contact .container h1 {
   background-color: #00ffaa;
 }
 
-/* line 378, ../sass/screen2.scss */
+/* line 402, ../sass/screen2.scss */
 #servicePetal110 {
   -webkit-animation: spin110 6s ease-out forwards;
   -moz-animation: spin110 6s ease-out forwards;
@@ -1003,7 +1023,7 @@ section.contact .container h1 {
   background-color: cyan;
 }
 
-/* line 378, ../sass/screen2.scss */
+/* line 402, ../sass/screen2.scss */
 #servicePetal111 {
   -webkit-animation: spin111 6s ease-out forwards;
   -moz-animation: spin111 6s ease-out forwards;
@@ -1016,7 +1036,7 @@ section.contact .container h1 {
   background-color: #00aaff;
 }
 
-/* line 378, ../sass/screen2.scss */
+/* line 402, ../sass/screen2.scss */
 #servicePetal112 {
   -webkit-animation: spin112 6s ease-out forwards;
   -moz-animation: spin112 6s ease-out forwards;
@@ -1029,7 +1049,7 @@ section.contact .container h1 {
   background-color: #0055ff;
 }
 
-/* line 378, ../sass/screen2.scss */
+/* line 402, ../sass/screen2.scss */
 #servicePetal113 {
   -webkit-animation: spin113 6s ease-out forwards;
   -moz-animation: spin113 6s ease-out forwards;
@@ -1042,7 +1062,7 @@ section.contact .container h1 {
   background-color: blue;
 }
 
-/* line 378, ../sass/screen2.scss */
+/* line 402, ../sass/screen2.scss */
 #servicePetal114 {
   -webkit-animation: spin114 6s ease-out forwards;
   -moz-animation: spin114 6s ease-out forwards;
@@ -1055,7 +1075,7 @@ section.contact .container h1 {
   background-color: #5500ff;
 }
 
-/* line 378, ../sass/screen2.scss */
+/* line 402, ../sass/screen2.scss */
 #servicePetal115 {
   -webkit-animation: spin115 6s ease-out forwards;
   -moz-animation: spin115 6s ease-out forwards;
@@ -1068,7 +1088,7 @@ section.contact .container h1 {
   background-color: #aa00ff;
 }
 
-/* line 378, ../sass/screen2.scss */
+/* line 402, ../sass/screen2.scss */
 #servicePetal116 {
   -webkit-animation: spin116 6s ease-out forwards;
   -moz-animation: spin116 6s ease-out forwards;
@@ -1081,7 +1101,7 @@ section.contact .container h1 {
   background-color: magenta;
 }
 
-/* line 378, ../sass/screen2.scss */
+/* line 402, ../sass/screen2.scss */
 #servicePetal117 {
   -webkit-animation: spin117 6s ease-out forwards;
   -moz-animation: spin117 6s ease-out forwards;
@@ -1094,7 +1114,7 @@ section.contact .container h1 {
   background-color: #ff00aa;
 }
 
-/* line 378, ../sass/screen2.scss */
+/* line 402, ../sass/screen2.scss */
 #servicePetal118 {
   -webkit-animation: spin118 6s ease-out forwards;
   -moz-animation: spin118 6s ease-out forwards;
@@ -1105,4 +1125,30 @@ section.contact .container h1 {
   -webkit-transform: rotate(225deg) scale(1);
   transform: rotate(225deg) scale(1);
   background-color: #ff0055;
+}
+
+/*
+	-- INDEX SPANS ---------------------------------------------------------------
+*/
+/* line 412, ../sass/screen2.scss */
+.indexSpan {
+  font-family: 'gruppo';
+  position: relative;
+}
+
+/* line 418, ../sass/screen2.scss */
+#indexSpan1, #indexSpan3 {
+  color: #888;
+}
+
+/* line 422, ../sass/screen2.scss */
+#indexSpan3 {
+  top: -10px;
+}
+
+/* line 426, ../sass/screen2.scss */
+#indexSpan4 {
+  top: -8px;
+  color: #0a0;
+  font-size: 60px;
 }

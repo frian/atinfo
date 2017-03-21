@@ -31,6 +31,7 @@ section {
         margin-top:            -150px;
         z-index:                   10;
         border-bottom: 5px solid #c00;
+        
 
         @include transform(rotateZ(3deg));
 
@@ -117,6 +118,7 @@ $YOffset : 50px;
 $XOffset : 20px;
 
 $servicesContentSize: 200px;                                        // 200
+$servicesContentTextSize: $servicesContentSize * 0.70;             // 150
 $leafSize: $servicesContentSize / 5;                                //  40
 $leaf3Margin: $servicesContentSize / 10 * 3;                        //  60
 $leaf4Margin: $servicesContentSize / 2;                             // 100
@@ -135,7 +137,18 @@ $centerSize : $leafSize / 2;                                        //  20
     width:                          $servicesContentSize;
     margin-top:  - ($servicesContentSize / 2) + $YOffset;
     margin-left: - ($servicesContentSize / 2) + $XOffset;
-    @include debug(red);
+    // @include debug(black);
+}
+
+#servicesContentText {
+
+    position:               absolute;
+    right:                         0;
+    bottom:                        0;
+    width:  $servicesContentTextSize;
+    height: $servicesContentTextSize + 10;
+    font-size:                  34px;
+    // @include debug(red);
 }
 
 #servicesFlowerContainer {
@@ -145,7 +158,18 @@ $centerSize : $leafSize / 2;                                        //  20
 }
 
 
+#trunk {
 
+    position: absolute;
+    z-index: 10;
+    top: -200px;
+    // left: -2px;
+    height: 100%;
+    // @include debug(red, 5);
+    border-style: solid;
+    border-width: 0 2px 200px 2px;
+    border-color: transparent transparent black transparent;
+}
 
 /*
 	-- LEAVES --------------------------------------------------------------------
@@ -163,29 +187,29 @@ $centerSize : $leafSize / 2;                                        //  20
 }
 
 #leaf1 {
-    bottom: - $leafSize + 1;
-    left: -5px;
+    bottom: - $leafSize + 3;
+    left: -3px;
     @include transform(rotateZ(180deg));
     // @include animation('leafGrow1 6s ease-out forwards');
 }
 
 #leaf2 {
-    bottom: - $leafSize + 1;
-    left: 6px;
+    bottom: - $leafSize + 3;
+    left: 7px;
     @include transform(rotateX(180deg));
     // @include animation('leafGrow2 6s ease-out forwards');
 }
 
 #leaf3 {
     bottom: - $leafSize + $leaf3Margin;
-    left: -8px;
+    left: -2px;
     @include transform(rotateZ(180deg) scale(0.8));
     // @include animation('leafGrow3 6s ease-out forwards');
 }
 
 #leaf4 {
     bottom: - $leafSize + $leaf4Margin;
-    left: 0px;
+    left: 5px;
     @include transform(rotateX(180deg) scale(0.6));
     // @include animation('leafGrow4 6s ease-out forwards');
 }
@@ -300,7 +324,7 @@ $stemColor: #070; // #070
     width:          $centerSize;
     height:         $centerSize;
     top:      - $centerSize / 2;
-    left:     - $centerSize / 2;
+    left:     - $centerSize / 2 ;
     border: 2px solid $bg-color;
     background-color:     black;
     z-index:                 50;
@@ -382,7 +406,28 @@ $serviceSpin18Angle: $serviceAngleStep;
     }
 }
 
+/*
+	-- INDEX SPANS ---------------------------------------------------------------
+*/
+.indexSpan {
+    font-family: 'gruppo';
+    position: relative;
+    // display: inline-block;
+}
 
+#indexSpan1, #indexSpan3 {
+    color: #888;
+}
+
+#indexSpan3 {
+    top: -10px;
+}
+
+#indexSpan4 {
+    top: -8px;
+    color: #0a0;
+    font-size: 60px;
+}
 
 @media all and (min-width: 40em) {
 
