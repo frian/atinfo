@@ -12,7 +12,12 @@ use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 
 $app->get('/', function (Request $request) use ($app) {
 
-    return $app['twig']->render('index1.twig');
+    // create the form
+	$form = createForm($app);
+
+    return $app['twig']->render('index1.twig', array(
+		'form' => $form->createView()
+	));
 })
 ->bind('home');
 

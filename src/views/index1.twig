@@ -67,6 +67,98 @@
         <h1>
             contact
         </h1>
+
+        <div id="contactContent">
+
+            <!-- <h1>message = </h1> -->
+
+            {{ form_start(form) }}
+
+            <div class="name">
+
+                <div class="name-curly-brace-open open-brace-position" data-color="#c00">
+                    <div class="b1"></div>
+                    <div class="b2"></div>
+                    <div class="b3"></div>
+                    <div class="b4"></div>
+                    <div class="b5"></div>
+                    <div class="b6"></div>
+                </div>
+
+                {{ form_widget(form.name) }}
+
+                <div class="name-curly-brace-close close-brace-position" data-color="#c00">
+                    <div class="b1"></div>
+                    <div class="b2"></div>
+                    <div class="b3"></div>
+                    <div class="b4"></div>
+                    <div class="b5"></div>
+                    <div class="b6"></div>
+                </div>
+
+            </div>
+
+            <div class="email">
+
+                <div class="email-curly-brace-open open-brace-position" data-color="#0b0">
+                    <div class="b1"></div>
+                    <div class="b2"></div>
+                    <div class="b3"></div>
+                    <div class="b4"></div>
+                    <div class="b5"></div>
+                    <div class="b6"></div>
+                </div>
+
+                {{ form_widget(form.email) }}
+
+
+                <div class="email-curly-brace-close close-brace-position" data-color="#0b0">
+                    <div class="b1"></div>
+                    <div class="b2"></div>
+                    <div class="b3"></div>
+                    <div class="b4"></div>
+                    <div class="b5"></div>
+                    <div class="b6"></div>
+                </div>
+
+            </div>
+
+            <div class="message">
+
+                <div class="message-curly-brace-open open-brace-position" data-color="#00c">
+                    <div class="b1"></div>
+                    <div class="b2"></div>
+                    <div class="b3"></div>
+                    <div class="b4"></div>
+                    <div class="b5"></div>
+                    <div class="b6"></div>
+                </div>
+
+                {{ form_widget(form.message) }}
+
+                <div class="message-curly-brace-close close-brace-position" data-color="#00c">
+                    <div class="b1"></div>
+                    <div class="b2"></div>
+                    <div class="b3"></div>
+                    <div class="b4"></div>
+                    <div class="b5"></div>
+                    <div class="b6"></div>
+                </div>
+
+            </div>
+
+            <div class="formErrors">
+                {{ form_errors(form.name) }}
+                {{ form_errors(form.email) }}
+                {{ form_errors(form.message) }}
+            </div>
+
+
+            <input id="polo" type="submit" class="button large expanded" value="envoyer">
+
+            {{ form_end(form) }}
+
+        </div>
     </div>
 </section>
 
