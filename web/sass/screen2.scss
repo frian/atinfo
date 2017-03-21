@@ -348,8 +348,21 @@ $contactContentMargin: ($contactContentSize - $contactContentStartWidth) / 2 ;
     height:                        $contactContentSize;
     width:                         $contactContentSize;
     text-align:                                 center;
-    @include debug(red, 2);
+    // @include debug(red, 2);
 }
+
+.successMessage {
+    padding: 10px 0;
+    font-size: 200%;
+    font-family: 'Gruppo', sans-serif;
+}
+
+.successMessage:nth-of-type(2) {
+    color: #a00;
+    font-size: 400%;
+    margin-bottom: 200px;
+}
+
 
 
 
@@ -808,6 +821,17 @@ textarea:focus:-ms-input-placeholder { color:transparent; }
         height:                        auto;
         width:                         $contactContentSize;
         margin: 70px auto 20px;
+    }
+
+    .successMessage {
+        padding: 20px 0;
+        font-size: 300%;
+        font-family: 'Gruppo', sans-serif;
+    }
+
+    .successMessage:nth-of-type(2) {
+        font-size: 500%;
+        margin-bottom: 200px;
     }
 
 

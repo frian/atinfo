@@ -112,15 +112,12 @@
                 type: form.attr('method'),
                 url: form.attr('action'),
                 data: form.serialize(),
-                dataType: 'json',
+                dataType: 'html',
                 success: function(data) {
-                    console.log(data);
-                    console.log('success');
+                    $('#contactContent').html(data);
                 },
                 error:function(data) {
                     $('#contactContent').html(data.responseText);
-                    console.log(data.responseText);
-                    console.log('ERROR');
                 }
             });
         });
