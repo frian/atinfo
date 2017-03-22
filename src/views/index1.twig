@@ -78,9 +78,9 @@
     </div>
 </section>
 
-<div style="position: relative;">
-    polo
-</div>
+<footer>
+    created &copy; 2017
+</footer>
 
 
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
@@ -98,15 +98,11 @@
         });
 
 
-        $(document).on( 'click' , '#polo', function (e) {
+        $(document).on( 'click' , '#submitButton', function (e) {
+
             e.preventDefault();
-            console.log('fired');
 
             var form = $('form');
-
-            console.log(form);
-
-
 
             $.ajax({
                 type: form.attr('method'),
@@ -121,8 +117,6 @@
                 }
             });
         });
-
-
 
     });
 </script>

@@ -1091,28 +1091,39 @@ textarea:focus:-ms-input-placeholder {
   color: transparent;
 }
 
+/* line 613, ../sass/screen2.scss */
+footer {
+  color: #333;
+  background-color: #e9e9e9;
+  border-top: 1px solid #ddd;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+}
+
 @media all and (min-width: 60em) and (min-height: 40em) {
-  /* line 623, ../sass/screen2.scss */
+  /* line 631, ../sass/screen2.scss */
   section.index .container h1 {
     font-size: 1600%;
   }
-  /* line 626, ../sass/screen2.scss */
+  /* line 634, ../sass/screen2.scss */
   section.index .container h2 {
     font-size: 360%;
     padding: 20px 0;
   }
-  /* line 630, ../sass/screen2.scss */
+  /* line 638, ../sass/screen2.scss */
   section.index .container p {
     font-size: 280%;
     padding: 10px 0;
     margin-bottom: 50px;
   }
-  /* line 639, ../sass/screen2.scss */
+  /* line 647, ../sass/screen2.scss */
   section.service .container h1 {
     font-size: 400%;
     margin: 20px 40px;
   }
-  /* line 647, ../sass/screen2.scss */
+  /* line 655, ../sass/screen2.scss */
   section.contact .container h1 {
     font-size: 400%;
     margin: 20px 40px;
@@ -1121,14 +1132,14 @@ textarea:focus:-ms-input-placeholder {
   /*
   	-- CONTENT -------------------------------------------------------------------
   */
-  /* line 671, ../sass/screen2.scss */
+  /* line 679, ../sass/screen2.scss */
   #servicesContent {
     height: 500px;
     width: 500px;
     margin: 200px auto 50px;
   }
 
-  /* line 677, ../sass/screen2.scss */
+  /* line 685, ../sass/screen2.scss */
   #servicesContentText {
     width: 350px;
     height: 350px;
@@ -1138,23 +1149,23 @@ textarea:focus:-ms-input-placeholder {
   /*
   	-- INDEX SPANS ---------------------------------------------------------------
   */
-  /* line 688, ../sass/screen2.scss */
+  /* line 696, ../sass/screen2.scss */
   #indexSpan1 {
     height: 87.5px;
   }
 
-  /* line 692, ../sass/screen2.scss */
+  /* line 700, ../sass/screen2.scss */
   #indexSpan2 {
     height: 175px;
   }
 
-  /* line 696, ../sass/screen2.scss */
+  /* line 704, ../sass/screen2.scss */
   #indexSpan3 {
     height: 87.5px;
     top: -40px;
   }
 
-  /* line 701, ../sass/screen2.scss */
+  /* line 709, ../sass/screen2.scss */
   #indexSpan4 {
     height: 87.5px;
     top: -35px;
@@ -1164,7 +1175,7 @@ textarea:focus:-ms-input-placeholder {
   /*
   	-- TRUNK ---------------------------------------------------------------------
   */
-  /* line 712, ../sass/screen2.scss */
+  /* line 720, ../sass/screen2.scss */
   #trunk {
     position: absolute;
     z-index: 10;
@@ -1178,7 +1189,7 @@ textarea:focus:-ms-input-placeholder {
   /*
   	-- LEAVES --------------------------------------------------------------------
   */
-  /* line 729, ../sass/screen2.scss */
+  /* line 737, ../sass/screen2.scss */
   .leaf {
     height: 100px;
     width: 100px;
@@ -1186,31 +1197,31 @@ textarea:focus:-ms-input-placeholder {
     bottom: 0px;
   }
 
-  /* line 736, ../sass/screen2.scss */
+  /* line 744, ../sass/screen2.scss */
   #leaf1 {
     bottom: -92px;
     left: -7px;
   }
 
-  /* line 741, ../sass/screen2.scss */
+  /* line 749, ../sass/screen2.scss */
   #leaf2 {
     bottom: -90px;
     left: 14px;
   }
 
-  /* line 746, ../sass/screen2.scss */
+  /* line 754, ../sass/screen2.scss */
   #leaf3 {
     bottom: 50px;
     margin-left: -3px;
   }
 
-  /* line 751, ../sass/screen2.scss */
+  /* line 759, ../sass/screen2.scss */
   #leaf4 {
     bottom: 150px;
     left: 10px;
   }
 
-  /* line 757, ../sass/screen2.scss */
+  /* line 765, ../sass/screen2.scss */
   #bigStem {
     width: 125px;
     height: 12.5px;
@@ -1219,26 +1230,26 @@ textarea:focus:-ms-input-placeholder {
     border-top: 4px solid #070;
   }
 
-  /* line 765, ../sass/screen2.scss */
+  /* line 773, ../sass/screen2.scss */
   .stem {
     width: 12.5px;
     height: 25px;
     border-left: 2px solid #070;
   }
 
-  /* line 771, ../sass/screen2.scss */
+  /* line 779, ../sass/screen2.scss */
   .stem1 {
     left: 15px;
     top: 15px;
   }
 
-  /* line 776, ../sass/screen2.scss */
+  /* line 784, ../sass/screen2.scss */
   .stem2 {
     left: 46px;
     top: 14px;
   }
 
-  /* line 781, ../sass/screen2.scss */
+  /* line 789, ../sass/screen2.scss */
   .stem3 {
     left: 50px;
     top: 45px;
@@ -1247,7 +1258,7 @@ textarea:focus:-ms-input-placeholder {
   /*
   	-- CENTER --------------------------------------------------------------------
   */
-  /* line 790, ../sass/screen2.scss */
+  /* line 798, ../sass/screen2.scss */
   #serviceCenter {
     width: 50px;
     height: 50px;
@@ -1261,7 +1272,7 @@ textarea:focus:-ms-input-placeholder {
   /*
   	-- PETALS --------------------------------------------------------------------
   */
-  /* line 802, ../sass/screen2.scss */
+  /* line 810, ../sass/screen2.scss */
   .servicePetal {
     border-top: 2px solid #eee;
     border-right: 2px solid #eee;
@@ -1272,32 +1283,32 @@ textarea:focus:-ms-input-placeholder {
   /*
   	-- CONTENT -------------------------------------------------------------------
   */
-  /* line 820, ../sass/screen2.scss */
+  /* line 828, ../sass/screen2.scss */
   #contactContent {
     height: auto;
     width: 600px;
     margin: 70px auto 20px;
   }
 
-  /* line 826, ../sass/screen2.scss */
+  /* line 834, ../sass/screen2.scss */
   .successMessage {
     padding: 20px 0;
     font-size: 300%;
     font-family: 'Gruppo', sans-serif;
   }
 
-  /* line 832, ../sass/screen2.scss */
+  /* line 840, ../sass/screen2.scss */
   .successMessage:nth-of-type(2) {
     font-size: 500%;
     margin-bottom: 200px;
   }
 
-  /* line 838, ../sass/screen2.scss */
+  /* line 846, ../sass/screen2.scss */
   .open-brace-position {
     margin: 10px -1px;
   }
 
-  /* line 842, ../sass/screen2.scss */
+  /* line 850, ../sass/screen2.scss */
   .close-brace-position {
     margin: 10px 4px 10px 0;
   }
@@ -1638,42 +1649,42 @@ textarea:focus:-ms-input-placeholder {
     border-bottom-right-radius: 10px;
   }
 
-  /* line 855, ../sass/screen2.scss */
+  /* line 863, ../sass/screen2.scss */
   [type="text"], [type="email"], textarea {
     font-size: 200%;
   }
 
-  /* line 859, ../sass/screen2.scss */
+  /* line 867, ../sass/screen2.scss */
   [type="text"], [type="email"] {
     margin-top: 25px;
     height: 50px;
   }
 
-  /* line 864, ../sass/screen2.scss */
+  /* line 872, ../sass/screen2.scss */
   [type="submit"] {
     line-height: 50px;
     font-size: 200%;
   }
 
-  /* line 869, ../sass/screen2.scss */
+  /* line 877, ../sass/screen2.scss */
   .formErrors {
     font-size: 150%;
     margin-bottom: 20px;
   }
 
-  /* line 874, ../sass/screen2.scss */
+  /* line 882, ../sass/screen2.scss */
   div.name, div.email {
     height: 100px;
     line-height: 100px;
   }
 
-  /* line 879, ../sass/screen2.scss */
+  /* line 887, ../sass/screen2.scss */
   div.message {
     height: 200px;
     line-height: 200px;
   }
 
-  /* line 884, ../sass/screen2.scss */
+  /* line 892, ../sass/screen2.scss */
   textarea {
     height: 150px;
     margin: 25px 0;
