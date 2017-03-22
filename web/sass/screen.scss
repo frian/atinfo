@@ -345,7 +345,6 @@ $contactContentMargin: ($contactContentSize - $contactContentStartWidth) / 2 ;
 #contactContent {
     position: relative;
     margin: 20px auto;
-    height:                        $contactContentSize;
     width:                         $contactContentSize;
     text-align:                                 center;
     // @include debug(red, 2);

@@ -560,19 +560,18 @@ section.contact .container h1 {
 #contactContent {
   position: relative;
   margin: 20px auto;
-  height: 260px;
   width: 260px;
   text-align: center;
 }
 
-/* line 354, ../sass/screen.scss */
+/* line 353, ../sass/screen.scss */
 .successMessage {
   padding: 10px 0;
   font-size: 200%;
   font-family: 'Gruppo', sans-serif;
 }
 
-/* line 360, ../sass/screen.scss */
+/* line 359, ../sass/screen.scss */
 .successMessage:nth-of-type(2) {
   color: #a00;
   font-size: 400%;
@@ -582,26 +581,26 @@ section.contact .container h1 {
 /*
 	-- BRACES --------------------------------------------------------------------
 */
-/* line 372, ../sass/screen.scss */
+/* line 371, ../sass/screen.scss */
 .open-brace-position {
   float: left;
   margin: 5px -2px;
 }
 
-/* line 377, ../sass/screen.scss */
+/* line 376, ../sass/screen.scss */
 .close-brace-position {
   float: right;
   margin: 5px 0;
 }
 
-/* line 385, ../sass/screen.scss */
+/* line 384, ../sass/screen.scss */
 .name-curly-brace-open {
   height: 40px;
   width: 10px;
   display: inline-block;
 }
 
-/* line 392, ../sass/screen.scss */
+/* line 391, ../sass/screen.scss */
 .name-curly-brace-open .b1 {
   width: 100%;
   height: 10%;
@@ -609,7 +608,7 @@ section.contact .container h1 {
   border-top-left-radius: 10px;
 }
 
-/* line 399, ../sass/screen.scss */
+/* line 398, ../sass/screen.scss */
 .name-curly-brace-open .b2 {
   margin-left: -10px;
   width: 100%;
@@ -617,7 +616,7 @@ section.contact .container h1 {
   border-right: 2px solid;
 }
 
-/* line 406, ../sass/screen.scss */
+/* line 405, ../sass/screen.scss */
 .name-curly-brace-open .b3 {
   margin-left: -10px;
   width: 100%;
@@ -626,7 +625,7 @@ section.contact .container h1 {
   border-bottom-right-radius: 10px;
 }
 
-/* line 414, ../sass/screen.scss */
+/* line 413, ../sass/screen.scss */
 .name-curly-brace-open .b4 {
   margin-left: -10px;
   width: 100%;
@@ -635,7 +634,7 @@ section.contact .container h1 {
   border-top-right-radius: 10px;
 }
 
-/* line 422, ../sass/screen.scss */
+/* line 421, ../sass/screen.scss */
 .name-curly-brace-open .b5 {
   margin-left: -10px;
   width: 100%;
@@ -643,7 +642,7 @@ section.contact .container h1 {
   border-right: 2px solid;
 }
 
-/* line 429, ../sass/screen.scss */
+/* line 428, ../sass/screen.scss */
 .name-curly-brace-open .b6 {
   width: 100%;
   height: 10%;
@@ -651,14 +650,14 @@ section.contact .container h1 {
   border-bottom-left-radius: 10px;
 }
 
-/* line 441, ../sass/screen.scss */
+/* line 440, ../sass/screen.scss */
 .name-curly-brace-close {
   height: 40px;
   width: 10px;
   display: inline-block;
 }
 
-/* line 448, ../sass/screen.scss */
+/* line 447, ../sass/screen.scss */
 .name-curly-brace-close .b1 {
   width: 100%;
   height: 10%;
@@ -666,14 +665,14 @@ section.contact .container h1 {
   border-top-right-radius: 10px;
 }
 
-/* line 455, ../sass/screen.scss */
+/* line 454, ../sass/screen.scss */
 .name-curly-brace-close .b2 {
   width: 100%;
   height: 30%;
   border-right: 2px solid;
 }
 
-/* line 461, ../sass/screen.scss */
+/* line 460, ../sass/screen.scss */
 .name-curly-brace-close .b3 {
   margin-left: 10px;
   width: 100%;
@@ -682,7 +681,7 @@ section.contact .container h1 {
   border-bottom-left-radius: 10px;
 }
 
-/* line 469, ../sass/screen.scss */
+/* line 468, ../sass/screen.scss */
 .name-curly-brace-close .b4 {
   margin-left: 10px;
   width: 100%;
@@ -691,14 +690,14 @@ section.contact .container h1 {
   border-top-left-radius: 10px;
 }
 
-/* line 477, ../sass/screen.scss */
+/* line 476, ../sass/screen.scss */
 .name-curly-brace-close .b5 {
   width: 100%;
   height: 30%;
   border-right: 2px solid;
 }
 
-/* line 483, ../sass/screen.scss */
+/* line 482, ../sass/screen.scss */
 .name-curly-brace-close .b6 {
   width: 100%;
   height: 10%;
@@ -706,14 +705,14 @@ section.contact .container h1 {
   border-bottom-right-radius: 10px;
 }
 
-/* line 385, ../sass/screen.scss */
+/* line 384, ../sass/screen.scss */
 .email-curly-brace-open {
   height: 40px;
   width: 10px;
   display: inline-block;
 }
 
-/* line 392, ../sass/screen.scss */
+/* line 391, ../sass/screen.scss */
 .email-curly-brace-open .b1 {
   width: 100%;
   height: 10%;
@@ -721,7 +720,7 @@ section.contact .container h1 {
   border-top-left-radius: 10px;
 }
 
-/* line 399, ../sass/screen.scss */
+/* line 398, ../sass/screen.scss */
 .email-curly-brace-open .b2 {
   margin-left: -10px;
   width: 100%;
@@ -729,7 +728,7 @@ section.contact .container h1 {
   border-right: 2px solid;
 }
 
-/* line 406, ../sass/screen.scss */
+/* line 405, ../sass/screen.scss */
 .email-curly-brace-open .b3 {
   margin-left: -10px;
   width: 100%;
@@ -738,7 +737,7 @@ section.contact .container h1 {
   border-bottom-right-radius: 10px;
 }
 
-/* line 414, ../sass/screen.scss */
+/* line 413, ../sass/screen.scss */
 .email-curly-brace-open .b4 {
   margin-left: -10px;
   width: 100%;
@@ -747,7 +746,7 @@ section.contact .container h1 {
   border-top-right-radius: 10px;
 }
 
-/* line 422, ../sass/screen.scss */
+/* line 421, ../sass/screen.scss */
 .email-curly-brace-open .b5 {
   margin-left: -10px;
   width: 100%;
@@ -755,7 +754,7 @@ section.contact .container h1 {
   border-right: 2px solid;
 }
 
-/* line 429, ../sass/screen.scss */
+/* line 428, ../sass/screen.scss */
 .email-curly-brace-open .b6 {
   width: 100%;
   height: 10%;
@@ -763,14 +762,14 @@ section.contact .container h1 {
   border-bottom-left-radius: 10px;
 }
 
-/* line 441, ../sass/screen.scss */
+/* line 440, ../sass/screen.scss */
 .email-curly-brace-close {
   height: 40px;
   width: 10px;
   display: inline-block;
 }
 
-/* line 448, ../sass/screen.scss */
+/* line 447, ../sass/screen.scss */
 .email-curly-brace-close .b1 {
   width: 100%;
   height: 10%;
@@ -778,14 +777,14 @@ section.contact .container h1 {
   border-top-right-radius: 10px;
 }
 
-/* line 455, ../sass/screen.scss */
+/* line 454, ../sass/screen.scss */
 .email-curly-brace-close .b2 {
   width: 100%;
   height: 30%;
   border-right: 2px solid;
 }
 
-/* line 461, ../sass/screen.scss */
+/* line 460, ../sass/screen.scss */
 .email-curly-brace-close .b3 {
   margin-left: 10px;
   width: 100%;
@@ -794,7 +793,7 @@ section.contact .container h1 {
   border-bottom-left-radius: 10px;
 }
 
-/* line 469, ../sass/screen.scss */
+/* line 468, ../sass/screen.scss */
 .email-curly-brace-close .b4 {
   margin-left: 10px;
   width: 100%;
@@ -803,14 +802,14 @@ section.contact .container h1 {
   border-top-left-radius: 10px;
 }
 
-/* line 477, ../sass/screen.scss */
+/* line 476, ../sass/screen.scss */
 .email-curly-brace-close .b5 {
   width: 100%;
   height: 30%;
   border-right: 2px solid;
 }
 
-/* line 483, ../sass/screen.scss */
+/* line 482, ../sass/screen.scss */
 .email-curly-brace-close .b6 {
   width: 100%;
   height: 10%;
@@ -818,14 +817,14 @@ section.contact .container h1 {
   border-bottom-right-radius: 10px;
 }
 
-/* line 385, ../sass/screen.scss */
+/* line 384, ../sass/screen.scss */
 .message-curly-brace-open {
   height: 80px;
   width: 5px;
   display: inline-block;
 }
 
-/* line 392, ../sass/screen.scss */
+/* line 391, ../sass/screen.scss */
 .message-curly-brace-open .b1 {
   width: 100%;
   height: 10%;
@@ -833,7 +832,7 @@ section.contact .container h1 {
   border-top-left-radius: 5px;
 }
 
-/* line 399, ../sass/screen.scss */
+/* line 398, ../sass/screen.scss */
 .message-curly-brace-open .b2 {
   margin-left: -5px;
   width: 100%;
@@ -841,7 +840,7 @@ section.contact .container h1 {
   border-right: 2px solid;
 }
 
-/* line 406, ../sass/screen.scss */
+/* line 405, ../sass/screen.scss */
 .message-curly-brace-open .b3 {
   margin-left: -5px;
   width: 100%;
@@ -850,7 +849,7 @@ section.contact .container h1 {
   border-bottom-right-radius: 5px;
 }
 
-/* line 414, ../sass/screen.scss */
+/* line 413, ../sass/screen.scss */
 .message-curly-brace-open .b4 {
   margin-left: -5px;
   width: 100%;
@@ -859,7 +858,7 @@ section.contact .container h1 {
   border-top-right-radius: 5px;
 }
 
-/* line 422, ../sass/screen.scss */
+/* line 421, ../sass/screen.scss */
 .message-curly-brace-open .b5 {
   margin-left: -5px;
   width: 100%;
@@ -867,7 +866,7 @@ section.contact .container h1 {
   border-right: 2px solid;
 }
 
-/* line 429, ../sass/screen.scss */
+/* line 428, ../sass/screen.scss */
 .message-curly-brace-open .b6 {
   width: 100%;
   height: 10%;
@@ -875,14 +874,14 @@ section.contact .container h1 {
   border-bottom-left-radius: 5px;
 }
 
-/* line 441, ../sass/screen.scss */
+/* line 440, ../sass/screen.scss */
 .message-curly-brace-close {
   height: 80px;
   width: 5px;
   display: inline-block;
 }
 
-/* line 448, ../sass/screen.scss */
+/* line 447, ../sass/screen.scss */
 .message-curly-brace-close .b1 {
   width: 100%;
   height: 10%;
@@ -890,14 +889,14 @@ section.contact .container h1 {
   border-top-right-radius: 5px;
 }
 
-/* line 455, ../sass/screen.scss */
+/* line 454, ../sass/screen.scss */
 .message-curly-brace-close .b2 {
   width: 100%;
   height: 30%;
   border-right: 2px solid;
 }
 
-/* line 461, ../sass/screen.scss */
+/* line 460, ../sass/screen.scss */
 .message-curly-brace-close .b3 {
   margin-left: 5px;
   width: 100%;
@@ -906,7 +905,7 @@ section.contact .container h1 {
   border-bottom-left-radius: 5px;
 }
 
-/* line 469, ../sass/screen.scss */
+/* line 468, ../sass/screen.scss */
 .message-curly-brace-close .b4 {
   margin-left: 5px;
   width: 100%;
@@ -915,14 +914,14 @@ section.contact .container h1 {
   border-top-left-radius: 5px;
 }
 
-/* line 477, ../sass/screen.scss */
+/* line 476, ../sass/screen.scss */
 .message-curly-brace-close .b5 {
   width: 100%;
   height: 30%;
   border-right: 2px solid;
 }
 
-/* line 483, ../sass/screen.scss */
+/* line 482, ../sass/screen.scss */
 .message-curly-brace-close .b6 {
   width: 100%;
   height: 10%;
@@ -930,12 +929,12 @@ section.contact .container h1 {
   border-bottom-right-radius: 5px;
 }
 
-/* line 503, ../sass/screen.scss */
+/* line 502, ../sass/screen.scss */
 input[type="submit"] {
   margin: auto;
 }
 
-/* line 507, ../sass/screen.scss */
+/* line 506, ../sass/screen.scss */
 .normalButton {
   color: #aaa;
   background-color: #e9e9e9;
@@ -948,7 +947,7 @@ input[type="submit"] {
   background-image: linear-gradient(#ffffff, rgba(0, 0, 0, 0.05));
 }
 
-/* line 516, ../sass/screen.scss */
+/* line 515, ../sass/screen.scss */
 .activeButton {
   color: #ccc;
   background-color: #f00;
@@ -961,7 +960,7 @@ input[type="submit"] {
   background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
 }
 
-/* line 525, ../sass/screen.scss */
+/* line 524, ../sass/screen.scss */
 .activeButton:hover {
   color: #ddd;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4xIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
@@ -975,7 +974,7 @@ input[type="submit"] {
 /*
 	-- FORMS ---------------------------------------------------------------------
 */
-/* line 537, ../sass/screen.scss */
+/* line 536, ../sass/screen.scss */
 [type="text"], [type="email"], textarea {
   font-family: Muli;
   font-size: 80%;
@@ -989,23 +988,23 @@ input[type="submit"] {
   display: inline;
 }
 
-/* line 549, ../sass/screen.scss */
+/* line 548, ../sass/screen.scss */
 [type="text"], [type="email"] {
   margin-top: 15px;
   height: 20px;
 }
 
-/* line 555, ../sass/screen.scss */
+/* line 554, ../sass/screen.scss */
 [type="text"]:focus, [type="email"]:focus, textarea:focus {
   background-color: #eee;
 }
 
-/* line 559, ../sass/screen.scss */
+/* line 558, ../sass/screen.scss */
 textarea {
   resize: none;
 }
 
-/* line 563, ../sass/screen.scss */
+/* line 562, ../sass/screen.scss */
 [type="submit"] {
   color: #ccc;
   line-height: 25px;
@@ -1024,7 +1023,7 @@ textarea {
   background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
 }
 
-/* line 576, ../sass/screen.scss */
+/* line 575, ../sass/screen.scss */
 .formErrors {
   color: red;
   font-size: 80%;
@@ -1033,65 +1032,65 @@ textarea {
   font-family: 'Muli', sans-serif;
 }
 
-/* line 584, ../sass/screen.scss */
+/* line 583, ../sass/screen.scss */
 div.name, div.email {
   height: 50px;
   line-height: 50px;
 }
 
-/* line 589, ../sass/screen.scss */
+/* line 588, ../sass/screen.scss */
 div.message {
   height: 100px;
   line-height: 100px;
 }
 
-/* line 594, ../sass/screen.scss */
+/* line 593, ../sass/screen.scss */
 textarea {
   height: 60px;
   margin: 15px 0;
 }
 
-/* line 600, ../sass/screen.scss */
+/* line 599, ../sass/screen.scss */
 input:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-/* line 601, ../sass/screen.scss */
+/* line 600, ../sass/screen.scss */
 input:focus:-moz-placeholder {
   color: transparent;
 }
 
-/* line 602, ../sass/screen.scss */
+/* line 601, ../sass/screen.scss */
 input:focus::-moz-placeholder {
   color: transparent;
 }
 
-/* line 603, ../sass/screen.scss */
+/* line 602, ../sass/screen.scss */
 input:focus:-ms-input-placeholder {
   color: transparent;
 }
 
-/* line 606, ../sass/screen.scss */
+/* line 605, ../sass/screen.scss */
 textarea:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-/* line 607, ../sass/screen.scss */
+/* line 606, ../sass/screen.scss */
 textarea:focus:-moz-placeholder {
   color: transparent;
 }
 
-/* line 608, ../sass/screen.scss */
+/* line 607, ../sass/screen.scss */
 textarea:focus::-moz-placeholder {
   color: transparent;
 }
 
-/* line 609, ../sass/screen.scss */
+/* line 608, ../sass/screen.scss */
 textarea:focus:-ms-input-placeholder {
   color: transparent;
 }
 
-/* line 613, ../sass/screen.scss */
+/* line 612, ../sass/screen.scss */
 footer {
   color: #333;
   background-color: #e9e9e9;
@@ -1103,27 +1102,27 @@ footer {
 }
 
 @media all and (min-width: 60em) and (min-height: 40em) {
-  /* line 631, ../sass/screen.scss */
+  /* line 630, ../sass/screen.scss */
   section.index .container h1 {
     font-size: 1600%;
   }
-  /* line 634, ../sass/screen.scss */
+  /* line 633, ../sass/screen.scss */
   section.index .container h2 {
     font-size: 360%;
     padding: 20px 0;
   }
-  /* line 638, ../sass/screen.scss */
+  /* line 637, ../sass/screen.scss */
   section.index .container p {
     font-size: 280%;
     padding: 10px 0;
     margin-bottom: 50px;
   }
-  /* line 647, ../sass/screen.scss */
+  /* line 646, ../sass/screen.scss */
   section.service .container h1 {
     font-size: 400%;
     margin: 20px 40px;
   }
-  /* line 655, ../sass/screen.scss */
+  /* line 654, ../sass/screen.scss */
   section.contact .container h1 {
     font-size: 400%;
     margin: 20px 40px;
@@ -1132,14 +1131,14 @@ footer {
   /*
   	-- CONTENT -------------------------------------------------------------------
   */
-  /* line 679, ../sass/screen.scss */
+  /* line 678, ../sass/screen.scss */
   #servicesContent {
     height: 500px;
     width: 500px;
     margin: 200px auto 50px;
   }
 
-  /* line 685, ../sass/screen.scss */
+  /* line 684, ../sass/screen.scss */
   #servicesContentText {
     width: 350px;
     height: 350px;
@@ -1149,23 +1148,23 @@ footer {
   /*
   	-- INDEX SPANS ---------------------------------------------------------------
   */
-  /* line 696, ../sass/screen.scss */
+  /* line 695, ../sass/screen.scss */
   #indexSpan1 {
     height: 87.5px;
   }
 
-  /* line 700, ../sass/screen.scss */
+  /* line 699, ../sass/screen.scss */
   #indexSpan2 {
     height: 175px;
   }
 
-  /* line 704, ../sass/screen.scss */
+  /* line 703, ../sass/screen.scss */
   #indexSpan3 {
     height: 87.5px;
     top: -40px;
   }
 
-  /* line 709, ../sass/screen.scss */
+  /* line 708, ../sass/screen.scss */
   #indexSpan4 {
     height: 87.5px;
     top: -35px;
@@ -1175,7 +1174,7 @@ footer {
   /*
   	-- TRUNK ---------------------------------------------------------------------
   */
-  /* line 720, ../sass/screen.scss */
+  /* line 719, ../sass/screen.scss */
   #trunk {
     position: absolute;
     z-index: 10;
@@ -1189,7 +1188,7 @@ footer {
   /*
   	-- LEAVES --------------------------------------------------------------------
   */
-  /* line 737, ../sass/screen.scss */
+  /* line 736, ../sass/screen.scss */
   .leaf {
     height: 100px;
     width: 100px;
@@ -1197,31 +1196,31 @@ footer {
     bottom: 0px;
   }
 
-  /* line 744, ../sass/screen.scss */
+  /* line 743, ../sass/screen.scss */
   #leaf1 {
     bottom: -92px;
     left: -7px;
   }
 
-  /* line 749, ../sass/screen.scss */
+  /* line 748, ../sass/screen.scss */
   #leaf2 {
     bottom: -90px;
     left: 14px;
   }
 
-  /* line 754, ../sass/screen.scss */
+  /* line 753, ../sass/screen.scss */
   #leaf3 {
     bottom: 50px;
     margin-left: -3px;
   }
 
-  /* line 759, ../sass/screen.scss */
+  /* line 758, ../sass/screen.scss */
   #leaf4 {
     bottom: 150px;
     left: 10px;
   }
 
-  /* line 765, ../sass/screen.scss */
+  /* line 764, ../sass/screen.scss */
   #bigStem {
     width: 125px;
     height: 12.5px;
@@ -1230,26 +1229,26 @@ footer {
     border-top: 4px solid #070;
   }
 
-  /* line 773, ../sass/screen.scss */
+  /* line 772, ../sass/screen.scss */
   .stem {
     width: 12.5px;
     height: 25px;
     border-left: 2px solid #070;
   }
 
-  /* line 779, ../sass/screen.scss */
+  /* line 778, ../sass/screen.scss */
   .stem1 {
     left: 15px;
     top: 15px;
   }
 
-  /* line 784, ../sass/screen.scss */
+  /* line 783, ../sass/screen.scss */
   .stem2 {
     left: 46px;
     top: 14px;
   }
 
-  /* line 789, ../sass/screen.scss */
+  /* line 788, ../sass/screen.scss */
   .stem3 {
     left: 50px;
     top: 45px;
@@ -1258,7 +1257,7 @@ footer {
   /*
   	-- CENTER --------------------------------------------------------------------
   */
-  /* line 798, ../sass/screen.scss */
+  /* line 797, ../sass/screen.scss */
   #serviceCenter {
     width: 50px;
     height: 50px;
@@ -1272,7 +1271,7 @@ footer {
   /*
   	-- PETALS --------------------------------------------------------------------
   */
-  /* line 810, ../sass/screen.scss */
+  /* line 809, ../sass/screen.scss */
   .servicePetal {
     border-top: 2px solid #eee;
     border-right: 2px solid #eee;
@@ -1283,44 +1282,44 @@ footer {
   /*
   	-- CONTENT -------------------------------------------------------------------
   */
-  /* line 828, ../sass/screen.scss */
+  /* line 827, ../sass/screen.scss */
   #contactContent {
     height: auto;
     width: 600px;
     margin: 70px auto 20px;
   }
 
-  /* line 834, ../sass/screen.scss */
+  /* line 833, ../sass/screen.scss */
   .successMessage {
     padding: 20px 0;
     font-size: 300%;
     font-family: 'Gruppo', sans-serif;
   }
 
-  /* line 840, ../sass/screen.scss */
+  /* line 839, ../sass/screen.scss */
   .successMessage:nth-of-type(2) {
     font-size: 500%;
     margin-bottom: 200px;
   }
 
-  /* line 846, ../sass/screen.scss */
+  /* line 845, ../sass/screen.scss */
   .open-brace-position {
     margin: 10px -1px;
   }
 
-  /* line 850, ../sass/screen.scss */
+  /* line 849, ../sass/screen.scss */
   .close-brace-position {
     margin: 10px 4px 10px 0;
   }
 
-  /* line 385, ../sass/screen.scss */
+  /* line 384, ../sass/screen.scss */
   .name-curly-brace-open {
     height: 80px;
     width: 10px;
     display: inline-block;
   }
 
-  /* line 392, ../sass/screen.scss */
+  /* line 391, ../sass/screen.scss */
   .name-curly-brace-open .b1 {
     width: 100%;
     height: 10%;
@@ -1328,7 +1327,7 @@ footer {
     border-top-left-radius: 10px;
   }
 
-  /* line 399, ../sass/screen.scss */
+  /* line 398, ../sass/screen.scss */
   .name-curly-brace-open .b2 {
     margin-left: -10px;
     width: 100%;
@@ -1336,7 +1335,7 @@ footer {
     border-right: 4px solid;
   }
 
-  /* line 406, ../sass/screen.scss */
+  /* line 405, ../sass/screen.scss */
   .name-curly-brace-open .b3 {
     margin-left: -10px;
     width: 100%;
@@ -1345,7 +1344,7 @@ footer {
     border-bottom-right-radius: 10px;
   }
 
-  /* line 414, ../sass/screen.scss */
+  /* line 413, ../sass/screen.scss */
   .name-curly-brace-open .b4 {
     margin-left: -10px;
     width: 100%;
@@ -1354,7 +1353,7 @@ footer {
     border-top-right-radius: 10px;
   }
 
-  /* line 422, ../sass/screen.scss */
+  /* line 421, ../sass/screen.scss */
   .name-curly-brace-open .b5 {
     margin-left: -10px;
     width: 100%;
@@ -1362,7 +1361,7 @@ footer {
     border-right: 4px solid;
   }
 
-  /* line 429, ../sass/screen.scss */
+  /* line 428, ../sass/screen.scss */
   .name-curly-brace-open .b6 {
     width: 100%;
     height: 10%;
@@ -1370,14 +1369,14 @@ footer {
     border-bottom-left-radius: 10px;
   }
 
-  /* line 441, ../sass/screen.scss */
+  /* line 440, ../sass/screen.scss */
   .name-curly-brace-close {
     height: 80px;
     width: 10px;
     display: inline-block;
   }
 
-  /* line 448, ../sass/screen.scss */
+  /* line 447, ../sass/screen.scss */
   .name-curly-brace-close .b1 {
     width: 100%;
     height: 10%;
@@ -1385,14 +1384,14 @@ footer {
     border-top-right-radius: 10px;
   }
 
-  /* line 455, ../sass/screen.scss */
+  /* line 454, ../sass/screen.scss */
   .name-curly-brace-close .b2 {
     width: 100%;
     height: 30%;
     border-right: 4px solid;
   }
 
-  /* line 461, ../sass/screen.scss */
+  /* line 460, ../sass/screen.scss */
   .name-curly-brace-close .b3 {
     margin-left: 10px;
     width: 100%;
@@ -1401,7 +1400,7 @@ footer {
     border-bottom-left-radius: 10px;
   }
 
-  /* line 469, ../sass/screen.scss */
+  /* line 468, ../sass/screen.scss */
   .name-curly-brace-close .b4 {
     margin-left: 10px;
     width: 100%;
@@ -1410,14 +1409,14 @@ footer {
     border-top-left-radius: 10px;
   }
 
-  /* line 477, ../sass/screen.scss */
+  /* line 476, ../sass/screen.scss */
   .name-curly-brace-close .b5 {
     width: 100%;
     height: 30%;
     border-right: 4px solid;
   }
 
-  /* line 483, ../sass/screen.scss */
+  /* line 482, ../sass/screen.scss */
   .name-curly-brace-close .b6 {
     width: 100%;
     height: 10%;
@@ -1425,14 +1424,14 @@ footer {
     border-bottom-right-radius: 10px;
   }
 
-  /* line 385, ../sass/screen.scss */
+  /* line 384, ../sass/screen.scss */
   .email-curly-brace-open {
     height: 80px;
     width: 10px;
     display: inline-block;
   }
 
-  /* line 392, ../sass/screen.scss */
+  /* line 391, ../sass/screen.scss */
   .email-curly-brace-open .b1 {
     width: 100%;
     height: 10%;
@@ -1440,7 +1439,7 @@ footer {
     border-top-left-radius: 10px;
   }
 
-  /* line 399, ../sass/screen.scss */
+  /* line 398, ../sass/screen.scss */
   .email-curly-brace-open .b2 {
     margin-left: -10px;
     width: 100%;
@@ -1448,7 +1447,7 @@ footer {
     border-right: 4px solid;
   }
 
-  /* line 406, ../sass/screen.scss */
+  /* line 405, ../sass/screen.scss */
   .email-curly-brace-open .b3 {
     margin-left: -10px;
     width: 100%;
@@ -1457,7 +1456,7 @@ footer {
     border-bottom-right-radius: 10px;
   }
 
-  /* line 414, ../sass/screen.scss */
+  /* line 413, ../sass/screen.scss */
   .email-curly-brace-open .b4 {
     margin-left: -10px;
     width: 100%;
@@ -1466,7 +1465,7 @@ footer {
     border-top-right-radius: 10px;
   }
 
-  /* line 422, ../sass/screen.scss */
+  /* line 421, ../sass/screen.scss */
   .email-curly-brace-open .b5 {
     margin-left: -10px;
     width: 100%;
@@ -1474,7 +1473,7 @@ footer {
     border-right: 4px solid;
   }
 
-  /* line 429, ../sass/screen.scss */
+  /* line 428, ../sass/screen.scss */
   .email-curly-brace-open .b6 {
     width: 100%;
     height: 10%;
@@ -1482,14 +1481,14 @@ footer {
     border-bottom-left-radius: 10px;
   }
 
-  /* line 441, ../sass/screen.scss */
+  /* line 440, ../sass/screen.scss */
   .email-curly-brace-close {
     height: 80px;
     width: 10px;
     display: inline-block;
   }
 
-  /* line 448, ../sass/screen.scss */
+  /* line 447, ../sass/screen.scss */
   .email-curly-brace-close .b1 {
     width: 100%;
     height: 10%;
@@ -1497,14 +1496,14 @@ footer {
     border-top-right-radius: 10px;
   }
 
-  /* line 455, ../sass/screen.scss */
+  /* line 454, ../sass/screen.scss */
   .email-curly-brace-close .b2 {
     width: 100%;
     height: 30%;
     border-right: 4px solid;
   }
 
-  /* line 461, ../sass/screen.scss */
+  /* line 460, ../sass/screen.scss */
   .email-curly-brace-close .b3 {
     margin-left: 10px;
     width: 100%;
@@ -1513,7 +1512,7 @@ footer {
     border-bottom-left-radius: 10px;
   }
 
-  /* line 469, ../sass/screen.scss */
+  /* line 468, ../sass/screen.scss */
   .email-curly-brace-close .b4 {
     margin-left: 10px;
     width: 100%;
@@ -1522,14 +1521,14 @@ footer {
     border-top-left-radius: 10px;
   }
 
-  /* line 477, ../sass/screen.scss */
+  /* line 476, ../sass/screen.scss */
   .email-curly-brace-close .b5 {
     width: 100%;
     height: 30%;
     border-right: 4px solid;
   }
 
-  /* line 483, ../sass/screen.scss */
+  /* line 482, ../sass/screen.scss */
   .email-curly-brace-close .b6 {
     width: 100%;
     height: 10%;
@@ -1537,14 +1536,14 @@ footer {
     border-bottom-right-radius: 10px;
   }
 
-  /* line 385, ../sass/screen.scss */
+  /* line 384, ../sass/screen.scss */
   .message-curly-brace-open {
     height: 180px;
     width: 10px;
     display: inline-block;
   }
 
-  /* line 392, ../sass/screen.scss */
+  /* line 391, ../sass/screen.scss */
   .message-curly-brace-open .b1 {
     width: 100%;
     height: 10%;
@@ -1552,7 +1551,7 @@ footer {
     border-top-left-radius: 10px;
   }
 
-  /* line 399, ../sass/screen.scss */
+  /* line 398, ../sass/screen.scss */
   .message-curly-brace-open .b2 {
     margin-left: -10px;
     width: 100%;
@@ -1560,7 +1559,7 @@ footer {
     border-right: 4px solid;
   }
 
-  /* line 406, ../sass/screen.scss */
+  /* line 405, ../sass/screen.scss */
   .message-curly-brace-open .b3 {
     margin-left: -10px;
     width: 100%;
@@ -1569,7 +1568,7 @@ footer {
     border-bottom-right-radius: 10px;
   }
 
-  /* line 414, ../sass/screen.scss */
+  /* line 413, ../sass/screen.scss */
   .message-curly-brace-open .b4 {
     margin-left: -10px;
     width: 100%;
@@ -1578,7 +1577,7 @@ footer {
     border-top-right-radius: 10px;
   }
 
-  /* line 422, ../sass/screen.scss */
+  /* line 421, ../sass/screen.scss */
   .message-curly-brace-open .b5 {
     margin-left: -10px;
     width: 100%;
@@ -1586,7 +1585,7 @@ footer {
     border-right: 4px solid;
   }
 
-  /* line 429, ../sass/screen.scss */
+  /* line 428, ../sass/screen.scss */
   .message-curly-brace-open .b6 {
     width: 100%;
     height: 10%;
@@ -1594,14 +1593,14 @@ footer {
     border-bottom-left-radius: 10px;
   }
 
-  /* line 441, ../sass/screen.scss */
+  /* line 440, ../sass/screen.scss */
   .message-curly-brace-close {
     height: 180px;
     width: 10px;
     display: inline-block;
   }
 
-  /* line 448, ../sass/screen.scss */
+  /* line 447, ../sass/screen.scss */
   .message-curly-brace-close .b1 {
     width: 100%;
     height: 10%;
@@ -1609,14 +1608,14 @@ footer {
     border-top-right-radius: 10px;
   }
 
-  /* line 455, ../sass/screen.scss */
+  /* line 454, ../sass/screen.scss */
   .message-curly-brace-close .b2 {
     width: 100%;
     height: 30%;
     border-right: 4px solid;
   }
 
-  /* line 461, ../sass/screen.scss */
+  /* line 460, ../sass/screen.scss */
   .message-curly-brace-close .b3 {
     margin-left: 10px;
     width: 100%;
@@ -1625,7 +1624,7 @@ footer {
     border-bottom-left-radius: 10px;
   }
 
-  /* line 469, ../sass/screen.scss */
+  /* line 468, ../sass/screen.scss */
   .message-curly-brace-close .b4 {
     margin-left: 10px;
     width: 100%;
@@ -1634,14 +1633,14 @@ footer {
     border-top-left-radius: 10px;
   }
 
-  /* line 477, ../sass/screen.scss */
+  /* line 476, ../sass/screen.scss */
   .message-curly-brace-close .b5 {
     width: 100%;
     height: 30%;
     border-right: 4px solid;
   }
 
-  /* line 483, ../sass/screen.scss */
+  /* line 482, ../sass/screen.scss */
   .message-curly-brace-close .b6 {
     width: 100%;
     height: 10%;
@@ -1649,42 +1648,42 @@ footer {
     border-bottom-right-radius: 10px;
   }
 
-  /* line 863, ../sass/screen.scss */
+  /* line 862, ../sass/screen.scss */
   [type="text"], [type="email"], textarea {
     font-size: 200%;
   }
 
-  /* line 867, ../sass/screen.scss */
+  /* line 866, ../sass/screen.scss */
   [type="text"], [type="email"] {
     margin-top: 25px;
     height: 50px;
   }
 
-  /* line 872, ../sass/screen.scss */
+  /* line 871, ../sass/screen.scss */
   [type="submit"] {
     line-height: 50px;
     font-size: 200%;
   }
 
-  /* line 877, ../sass/screen.scss */
+  /* line 876, ../sass/screen.scss */
   .formErrors {
     font-size: 150%;
     margin-bottom: 20px;
   }
 
-  /* line 882, ../sass/screen.scss */
+  /* line 881, ../sass/screen.scss */
   div.name, div.email {
     height: 100px;
     line-height: 100px;
   }
 
-  /* line 887, ../sass/screen.scss */
+  /* line 886, ../sass/screen.scss */
   div.message {
     height: 200px;
     line-height: 200px;
   }
 
-  /* line 892, ../sass/screen.scss */
+  /* line 891, ../sass/screen.scss */
   textarea {
     height: 150px;
     margin: 25px 0;
