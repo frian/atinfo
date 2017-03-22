@@ -15,19 +15,11 @@ $app->get('/', function (Request $request) use ($app) {
     // create the form
 	$form = createForm($app);
 
-    return $app['twig']->render('index1.twig', array(
+    return $app['twig']->render('index.twig', array(
 		'form' => $form->createView()
 	));
 })
 ->bind('home');
-
-
-$app->get('/services', function () use ($app) {
-
-    return $app['twig']->render('services.twig', array());
-})
-->bind('services');
-
 
 
 /*
@@ -76,7 +68,7 @@ $app->match('/contact', function (Request $request) use ($app) {
     }
 
 	// handle form display
-	return $app['twig']->render('index1.twig', array(
+	return $app['twig']->render('index.twig', array(
 		'form' => $form->createView()
 	));
 })
