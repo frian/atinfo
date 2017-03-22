@@ -119,25 +119,25 @@ function createForm($app) {
 	->add('name', TextType::class, array(
 
 			'label' => 'Mon nom est ',
-            'attr' => array('placeholder' => 'votre nom'),
-			'constraints' => array(new Assert\NotBlank( array('message' => "Le nom doit contenir au moins 5 caractères") ), new Assert\Length(array(
+            'attr' => array('placeholder' => 'Name'),
+			'constraints' => array(new Assert\NotBlank( array('message' => "Name minimum length is 5 caracters") ), new Assert\Length(array(
                 'min' => 5,
-                'minMessage' => 'Le nom doit contenir au moins {{ limit }} caractères'
+                'minMessage' => 'Name minimum length is {{ limit }} caracters'
             )))
 	))
 	->add('email', EmailType::class, array(
 
 			'label' => ' et voici mon email ',
-            'attr' => array('placeholder' => 'votre email'),
-			'constraints' => array(new Assert\NotBlank( array('message' => "L'email est requis") ), new Assert\Email())
+            'attr' => array('placeholder' => 'Email'),
+			'constraints' => array(new Assert\NotBlank( array('message' => "Email is required") ), new Assert\Email())
 	))
 	->add('message', TextareaType::class, array(
 
 			'label' => 'Merci de me contacter au sujet de ',
-            'attr' => array('placeholder' => 'votre demande'),
-			'constraints' => array(new Assert\NotBlank( array('message' => "Le message doit contenir au moins 15 caractères") ), new Assert\Length(array(
+            'attr' => array('placeholder' => 'Message'),
+			'constraints' => array(new Assert\NotBlank( array('message' => "Name minimum length is 5 caracters") ), new Assert\Length(array(
                 'min' => 15,
-                'minMessage' => 'Le message doit contenir au moins {{ limit }} caractères'
+                'minMessage' => 'Name minimum length is {{ limit }} caracters'
             )))
 	))
     ->setAction('/contact')
